@@ -1,0 +1,151 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "홈즈, 시곗줄 금화와 탁자 위 물건들을 손에 들고 확인함",
+   "summary": "홈즈가 시곗줄에 달린 소버린 금화를 손끝으로 굴리고, 탁자 위의 사진과 자수정이 박힌 코담배 갑을 확인한다.",
+   "location_id": "LOC_001",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "NEW:시곗줄_달린_소버린_금화",
+    "OBJ_005",
+    "NEW:자수정이_박힌_코담배_갑"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "NEW:시곗줄_달린_소버린_금화",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "홈즈는 시곗줄에 달린 소버린 금화를 손끝으로 굴렸다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "NEW:시곗줄_달린_소버린_금화",
+     "source_text": "시곗줄에 달린 소버린 금화를 손끝으로 굴렸다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "이 금화를 성 모니카 교회 신부에게서 받았음",
+     "source_text": "성 모니카 교회에서 신부에게 받은 것이었다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "눈을 뜨지 않고도 대화·판단 가능 (호크버그의 지력·관찰력 전제)",
+     "source_text": "홈즈가 눈을 뜨지 않은 채 말했다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "장면 도입",
+   "result": "홈즈가 금화·사진·코담배 갑을 확인한다",
+   "source_text": "홈즈는 시곗줄에 달린 소버린 금화를 손끝으로 굴렸다. 성 모니카 교회에서 신부에게 받은 것이었다. 탁자 위에는 야회복 차림의 사진 한 장이 액자도 없이 놓여 있었고, 그 옆에 자수정이 박힌 코담배 갑이 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "왓슨이 코담배 갑을 집어 들었다 놓음",
+   "summary": "왓슨이 탁자 위의 자수정이 박힌 코담배 갑을 집어 들었다가, 홈즈가 보헤미아 쪽에서 왔다고 말한 뒤 제자리에 내려놓는다.",
+   "location_id": "LOC_001",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "NEW:자수정이_박힌_코담배_갑",
+    "LOC_001"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "코담배 갑의 외양(자수정 박힘)만으로는 출신을 단정할 수 없음 — 그래서 묻지 않고 놓음",
+     "source_text": "보헤미아 쪽에서 온 걸세"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "코담배 갑의 출처가 보헤미아라는 점",
+     "source_text": "보헤미아 쪽에서 온 걸세"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "이 코담배 갑에 대해 더 말할 의사가 없음",
+     "source_text": "그는 그 이상은 설명하지 않았다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "EVENT_6_1에서 탁자 위에 놓인 자수정 코담배 갑이 EVENT_6_2 시점에도 여전히 탁자 위에 존재한다",
+     "source_text": "그 옆에 자수정이 박힌 코담배 갑이 있었다. / 왓슨이 그것을 집어 들자"
+    },
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "EVENT_6_1의 왓슨은 호크버그의 '그 이상은 설명하지 않았다'에 대해 추가 질문을 하지 않기로 함",
+     "source_text": "왓슨도 더 묻지 않고 갑을 제자리에 놓았다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "자수정이 박힌 코담배 갑이 보헤미아에서 온 것",
+     "via": "told",
+     "retained": true,
+     "source_text": "보헤미아 쪽에서 온 걸세."
+    }
+   ],
+   "cause": "왓슨이 코담배 갑을 집어 듦",
+   "result": "홈즈가 보헤미아 출처를 밝히고, 왓슨은 더 묻지 않고 갑을 제자리에 놓음",
+   "source_text": "왓슨이 그것을 집어 들자 홈즈가 눈을 뜨지 않은 채 말했다. \"보헤미아 쪽에서 온 걸세.\" 그는 그 이상은 설명하지 않았다. 왓슨도 더 묻지 않고 갑을 제자리에 놓았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:07:04Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 11.82
+ }
+}

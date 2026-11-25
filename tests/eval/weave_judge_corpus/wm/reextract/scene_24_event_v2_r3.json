@@ -1,0 +1,254 @@
+{
+  "schema_version": 2,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 3,
+  "batch_id": "T2-R3-B",
+  "scene_id": "scene_24",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_24.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r2)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T13:26:33Z",
+  "episode": 6,
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:접속_시각과_미래세계_시각_동기화",
+      "content": "현실에서 접속한 시각과 미래 세계의 시각이 서로 대응한다.",
+      "description": "현실에서 밤에 접속하면 미래 세계도 밤이다. 화자가 이를 '성실한 세계'라 표현하며 인지한다.",
+      "source_text": "밤에 접속하면 밤이라니, 참 성실한 세계라니까.",
+      "certainty": "inferred"
+    },
+    {
+      "rule_id": "NEW:가로등_카메라_기록",
+      "content": "거리의 가로등에 카메라가 달려 있고, 그 영상이 어딘가의 저장소에 기록된다.",
+      "description": "화자가 가로등 카메라 아래를 지나며 '오늘의 나'가 저장소에 기록되고 있으리라 여긴다. 화자의 추측 형태로만 서술된다.",
+      "source_text": "가로등 카메라 아래를 지나며 괜히 손을 흔들어 보았다. / 어딘가의 저장소에 오늘의 나가 기록되고 있겠지.",
+      "certainty": "uncertain"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "현실에서 '오류'에 접속해 미래 세계의 신체로 활동하는 화자.",
+      "traits": [
+        {
+          "trait": "혼잣말로 세계를 논평하는 가벼운 말투",
+          "trait_type": "speech",
+          "source_text": "밤에 접속하면 밤이라니, 참 성실한 세계라니까.",
+          "certainty": "inferred"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S24_1",
+      "source_text": "저녁을 먹고 밤 열 시쯤 접속했다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_002",
+      "name": "플레이어의 집",
+      "description": "화자가 저녁을 먹고 모니터 앞에서 접속하는 현실의 공간.",
+      "source_text": "저녁을 먹고 밤 열 시쯤 접속했다. / 모니터가 밝아지자",
+      "certainty": "inferred"
+    },
+    {
+      "location_id": "LOC_011",
+      "name": "프리든 4번 방 (알파의 방)",
+      "description": "창이 없는 벽으로 둘러싸인 알파의 방. 접속 직후 화자가 위치한 곳.",
+      "source_text": "프리든 4번 방의 창 없는 벽 대신",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:프리든_복도",
+      "name": "프리든 복도",
+      "description": "4번 방에서 나오면 하늘이 올려다보이는 통로.",
+      "source_text": "복도로 나와 올려다본 하늘은 짙은 남색이었다.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "LOC_006",
+      "name": "1번가",
+      "description": "하얀 건물들이 늘어선 거리. 밤에는 조명이 건물을 은은하게 물들이며 낮보다 고요하다.",
+      "source_text": "거리의 조명이 하얀 건물들을 은은하게 물들이고, / 1번가는 낮보다 한층 고요했다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "NEW:가로등_카메라",
+      "name": "가로등 카메라",
+      "description": "1번가 가로등에 달린 카메라. 지나가는 대상이 저장소에 기록되는 것으로 서술된다.",
+      "first_appearance_event_id": "EVENT_S24_2",
+      "source_text": "가로등 카메라 아래를 지나며 괜히 손을 흔들어 보았다.",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [
+    {
+      "time_id": "NEW:현실_밤_10시_접속",
+      "expression": "저녁 식사 후 밤 열 시쯤",
+      "description": "화자가 현실에서 접속한 시각.",
+      "timeline": "real_present",
+      "source_text": "저녁을 먹고 밤 열 시쯤 접속했다.",
+      "certainty": "explicit"
+    },
+    {
+      "time_id": "NEW:접속_직후_미래세계_밤",
+      "expression": "접속 직후, 하늘이 짙은 남색인 밤",
+      "description": "접속 직후 미래 세계의 시각. 하늘이 짙은 남색이고 거리 조명이 켜져 있다.",
+      "timeline": "future_world",
+      "source_text": "복도로 나와 올려다본 하늘은 짙은 남색이었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S24_1",
+      "scene_id": "scene_24",
+      "order": 1,
+      "title": "밤 열 시의 접속",
+      "summary": "화자가 저녁 식사를 마치고 밤 열 시쯤 현실에서 '오류'에 접속한다. 모니터가 밝아진다.",
+      "location_id": "LOC_002",
+      "time_id": "NEW:현실_밤_10시_접속",
+      "timeline": "real_present",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["OBJ_002"],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "OBJ_002 ('오류' 게임 프로그램 — 접속에 사용)",
+          "source_text": "저녁을 먹고 밤 열 시쯤 접속했다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "'오류' 접속 절차 (별도 설명 없이 곧바로 접속함)",
+          "source_text": "저녁을 먹고 밤 열 시쯤 접속했다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "현실의 인간 신체 (식사를 하고 모니터 앞에 앉아 있음)",
+          "source_text": "저녁을 먹고 밤 열 시쯤 접속했다. / 모니터가 밝아지자"
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S24_2",
+          "assumes": "현실의 접속 시각(밤 열 시)과 미래 세계의 시각(짙은 남색 하늘의 밤)이 같은 시각을 가리켜야 한다",
+          "source_text": "저녁을 먹고 밤 열 시쯤 접속했다. / 복도로 나와 올려다본 하늘은 짙은 남색이었다."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "화자가 저녁 식사 후 미래 세계에 접속하기로 함",
+      "result": "모니터가 밝아지며 미래 세계로의 접속이 성립함",
+      "source_text": "저녁을 먹고 밤 열 시쯤 접속했다. 모니터가 밝아지자,",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_S24_2",
+      "scene_id": "scene_24",
+      "order": 2,
+      "title": "밤의 1번가 산책",
+      "summary": "접속한 화자가 프리든 4번 방에서 복도로 나와 짙은 남색 하늘을 올려다보고, 조명이 켜진 1번가를 걸으며 가로등 카메라에 손을 흔든다.",
+      "location_id": "LOC_006",
+      "time_id": "NEW:접속_직후_미래세계_밤",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["NEW:가로등_카메라"],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "location",
+          "from": "LOC_011",
+          "to": "LOC_006",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "프리든 4번 방의 창 없는 벽 대신 복도로 나와 / 1번가는 낮보다 한층 고요했다."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "미래 세계의 신체로 복도를 나와 걷고 손을 흔들 수 있는 상태 (팔·다리 사용 가능)",
+          "source_text": "복도로 나와 올려다본 하늘은 짙은 남색이었다. / 가로등 카메라 아래를 지나며 괜히 손을 흔들어 보았다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "현실에서의 접속을 통해 미래 세계의 신체를 조작 가능",
+          "source_text": "모니터가 밝아지자, 프리든 4번 방의 창 없는 벽 대신 복도로 나와"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "1번가의 위치와 낮의 모습 (낮과 비교해 '한층 고요하다'고 판단함)",
+          "source_text": "1번가는 낮보다 한층 고요했다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "가로등 카메라가 지나가는 대상을 어딘가의 저장소에 기록한다는 것",
+          "source_text": "어딘가의 저장소에 오늘의 나가 기록되고 있겠지."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "not_knows: 미래 세계의 밤 풍경 (밤 시간대 산책이 이번이 처음)",
+          "source_text": "밤 산책은 처음인가..."
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S24_1",
+          "assumes": "EVENT_S24_1의 접속 직후 시점이며, 접속과 복도로 나온 것 사이에 시간 경과가 없다",
+          "source_text": "모니터가 밝아지자, 프리든 4번 방의 창 없는 벽 대신 복도로 나와"
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "밤에 접속하면 미래 세계도 밤이다 (양쪽 시각이 대응함)",
+          "via": "direct",
+          "retained": true,
+          "source_text": "밤에 접속하면 밤이라니, 참 성실한 세계라니까."
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "밤의 1번가는 조명이 하얀 건물을 물들이고 낮보다 고요하다",
+          "via": "direct",
+          "retained": true,
+          "source_text": "거리의 조명이 하얀 건물들을 은은하게 물들이고, 1번가는 낮보다 한층 고요했다."
+        }
+      ],
+      "cause": "밤 시간대에 접속해 방 밖으로 나섬",
+      "result": "화자가 밤의 1번가를 걸으며 세계의 시각 동기화를 인지하고, 가로등 카메라에 기록되는 것에 든든함을 느낌",
+      "source_text": "복도로 나와 올려다본 하늘은 짙은 남색이었다. ... 가로등 카메라 아래를 지나며 괜히 손을 흔들어 보았다.",
+      "certainty": "explicit"
+    }
+  ]
+}

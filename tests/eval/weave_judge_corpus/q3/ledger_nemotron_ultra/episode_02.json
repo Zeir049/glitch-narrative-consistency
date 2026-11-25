@@ -1,0 +1,1507 @@
+{
+ "schema_version": 2,
+ "episode": 2,
+ "worldview_rules": [
+  {
+   "rule_id": "NEW:규정_12조_우선순위_역순",
+   "content": "규정 12조는 사람 생활을 줄여서 장비를 살리는 우선순위 역순을 규정한다",
+   "description": "기지장 서율이 언급한 규정으로, 인명보다 장비 보존을 우선하는 조항",
+   "source_text": "이건 규정 12조 우선순위 역순이야. 사람 생활을 줄여서 장비를 살리는 거야.",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:본부_승인본_관측_모듈_인수_조건",
+   "content": "본부 승인본에 '관측 모듈 장비의 온전한 상태로 인수'가 기지장 임무로 명시되어 있다",
+   "description": "가온이 인용한 본부 승인 문서의 조항",
+   "source_text": "본부 승인본에도 '관측 모듈 장비의 온전한 상태로 인수'라고 되어 있어요. 기지장님 임무예요.",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:4조_기록_본부_보고",
+   "content": "4조에 따라 부기지장의 기록은 본부로 보고된다",
+   "description": "마르타가 자신의 발언이 기록되어 본부로 갈 것임을 언급",
+   "source_text": "그리고 그 기록은 본부로 갑니다. 4조에 따라서.",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:규정7조_통신시간",
+   "content": "규정 7조에 따라 매일 22시 통신 창에서 40분간 통신 가능, 1인당 5분 상한",
+   "description": "기지 통신 규정. 본부에서 무인 전환 준비 서류 요청 시 가용 시간이 줄어듦",
+   "source_text": "규정 7조를 지키게 하려면 거기 있어야 했다. 22시 34분에 큐가 비었고... 5분 상한이지 5분 보장이 아니야",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:무인전환_준비서류",
+   "content": "본부에서 무인 전환 준비 서류를 요청하면 통신 데이터 할당량이 감소함",
+   "description": "통신 큐 시간 단축의 원인",
+   "source_text": "본부에서 무인 전환 준비 서류를 잔뜩 보내라고 해서요. 오늘도 남는 건 6분",
+   "certainty": "explicit"
+  }
+ ],
+ "characters": [
+  {
+   "character_id": "CHAR_001",
+   "name": "한서율",
+   "aliases": [
+    "서율",
+    "기지장"
+   ],
+   "entity_type": "person",
+   "description": "돔 C-4 기지장. 3년 차 월동 대원. 마르타와 3년 전 함께 일한 적 있음",
+   "traits": [
+    {
+     "trait": "일지에 의문을 적지 않고 속으로만 품음",
+     "trait_type": "habit",
+     "source_text": "서율은 그 의문을 일지에 적지 않았다",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "심리 점검에서 마지막 질문(화가 난 일)에 거짓말함",
+     "trait_type": "personality",
+     "source_text": "열두 개의 질문 중에 마지막 것만 거짓말이었다는 것을, 마르타는 아마 알았을 것이다",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_2_5",
+   "source_text": "돌아온 가온은 서율에게 보고했다",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_002",
+   "name": "카림 은다예",
+   "aliases": [
+    "카림"
+   ],
+   "entity_type": "person",
+   "description": "기지 대원. 격벽 관리, 연료 이송, 계량기 기록 담당. 서율의 의도를 파악하고 선제적으로 행동함",
+   "traits": [
+    {
+     "trait": "서율의 의중을 읽고 카드 기록 조회를 자제함",
+     "trait_type": "personality",
+     "source_text": "설비실 문 카드 기록. 도현한테 안 물어봤어요. 물어보면 도현이 알게 되니까",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "평시 규정대로 격벽을 열어 둠",
+     "trait_type": "habit",
+     "source_text": "카림이 평시 규정대로 격벽을 열어 두었기 때문에",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_2_5",
+   "source_text": "카림이 평시 규정대로 격벽을 열어 두었기 때문에",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_003",
+   "name": "윤도현",
+   "aliases": [
+    "도현"
+   ],
+   "entity_type": "person",
+   "description": "기지 대원. 통신실 콘솔 담당. 카드 기록 서버 관리자. 부산에 가족 있음",
+   "traits": [
+    {
+     "trait": "통신 시간 배분에 민감함",
+     "trait_type": "personality",
+     "source_text": "6분에 셋이 쓰면 2분씩이에요. 기지장님. 2분에 뭘 해요",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "카드 기록 서버 관리자",
+     "trait_type": "habit",
+     "source_text": "카드 기록은 도현의 서버에 있었고, 그것을 열어 보려면 도현에게 부탁해야 했고",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_2_7",
+   "source_text": "\"큐 34분이에요.\" 도현이 말했다",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_004",
+   "name": "마르타 레인",
+   "aliases": [
+    "마르타",
+    "부기지장",
+    "마르타 선생님"
+   ],
+   "entity_type": "person",
+   "description": "부기지장 겸 심리 점검 담당. 딸이 있음. 서율을 3년 전부터 알고 있음",
+   "traits": [
+    {
+     "trait": "서율을 '자르지 않는 사람'으로 평가함",
+     "trait_type": "personality",
+     "source_text": "자르지 않는 사람이 기지장을 하면, 누군가는 대신 잘라야 해. 내가 그 역할을 맡은 거야",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "딸이 있음",
+     "trait_type": "personality",
+     "source_text": "2분이면 딸한테 '살아 있다'는 쓸 수 있어요",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_2_6",
+   "source_text": "의무실 커튼 안쪽에서 마르타는 서율에게 열두 개의 질문을 했다",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_005",
+   "name": "이가온",
+   "aliases": [
+    "가온"
+   ],
+   "entity_type": "person",
+   "description": "기지 대원. 첫 월동. 관측 모듈 히터 모니터링 담당. 통신 안 씀",
+   "traits": [
+    {
+     "trait": "첫 월동 대원",
+     "trait_type": "personality",
+     "source_text": "첫 월동인 스물여섯이 3년치 데이터를",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "통신 안 씀",
+     "trait_type": "habit",
+     "source_text": "가온이는 안 써요. 밖에 쓸 사람 없대요",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_2_5",
+   "source_text": "가온은 통로를 지나 관측 모듈로 가서",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_006",
+   "name": "서민채",
+   "aliases": [
+    "민채"
+   ],
+   "entity_type": "person",
+   "description": "기지 대원. 30일 통신 순번에서 제외됨",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_2_7",
+   "source_text": "오늘 마르타 선생님, 내일 너, 모레 가온. 가온이는 안 써요",
+   "certainty": "inferred"
+  }
+ ],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "OBJ_018",
+   "name": "예비 부품 선반",
+   "description": "필터 상자, 벨트 상자, 배관 이음쇠, 황동 밸브 예비품 상자가 있음",
+   "first_appearance_event_id": "EVENT_2_8",
+   "source_text": "필터 상자, 벨트 상자, 배관 이음쇠. 그 옆에 황동 밸브 예비품이 든 작은 상자가 있었다",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "TIME_030",
+   "expression": "3월 26일 아침",
+   "description": "카림이 발전기실에서 서율에게 G1 수리 불가 보고",
+   "timeline": "main",
+   "source_text": "3월 26일 아침, 카림은 회의실이 아니라 발전기실에서 서율에게 결과를 말했다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_031",
+   "expression": "3월 26일 10시",
+   "description": "전체 회의에서 G1 수리 불가 발표 및 전력 삭감 계획 논의",
+   "timeline": "main",
+   "source_text": "같은 날 10시 회의. 서율은 G1이 수리 불가라는 것과 ... 발표했다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_032",
+   "expression": "3월 27일 정오",
+   "description": "2층 난방 차단 및 1층 이주 실행 시점",
+   "timeline": "main",
+   "source_text": "내일 27일 정오부로. 2층은 폐쇄하고, 전원 1층으로 내려옵니다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_033",
+   "expression": "9월 27일",
+   "description": "현재 전력 계획 유지 시 연료 바닥 예상일",
+   "timeline": "main",
+   "source_text": "3을 더하면 26이야. 하루 220리터. 9월 27일에 바닥나.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_034",
+   "expression": "3월 28일 정오",
+   "description": "광학부 히터 3kW 재개 결정 시점",
+   "timeline": "main",
+   "source_text": "관측 모듈 히터 회로 중 광학부 히터 3킬로와트를 28일 정오부로 재개합니다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_035",
+   "expression": "3월 29일",
+   "description": "첫 심리 점검일",
+   "timeline": "main",
+   "source_text": "3월 29일. 첫 심리 점검",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_036",
+   "expression": "3월 30일 22시",
+   "description": "통신 창 시각",
+   "timeline": "main",
+   "source_text": "3월 30일 22시. 통신실",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_037",
+   "expression": "4월 1일",
+   "description": "카림 일지 확인 및 카림 방문일",
+   "timeline": "main",
+   "source_text": "4월 1일. 카림의 일지에 적힌 관측 모듈 계량기 수치",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_038",
+   "expression": "4월 2일 밤",
+   "description": "바깥 기온 영하 61도, 해 뜬 시간 3시간",
+   "timeline": "main",
+   "source_text": "4월 2일 밤, 바깥 기온은 영하 61도였다",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-27T04:06:34Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": true,
+  "parse_retried": true,
+  "attempts": 1,
+  "elapsed_sec": 63.44
+ },
+ "_merge": {
+  "spec": "handoff/chunked_extract_spec.md",
+  "chunks": [
+   "episode_02_c01.json",
+   "episode_02_c02.json",
+   "episode_02_c03.json"
+  ],
+  "unmapped_new": [
+   "NEW:4조_기록_본부_보고",
+   "NEW:규정7조_통신시간",
+   "NEW:규정_12조_우선순위_역순",
+   "NEW:무인전환_준비서류",
+   "NEW:본부_승인본_관측_모듈_인수_조건"
+  ]
+ },
+ "events": [
+  {
+   "event_id": "EVENT_2_1",
+   "scene_id": "scene_2_1",
+   "order": 1,
+   "title": "발전기실에서 G1 수리 불가 보고 및 밸브 개방 확인",
+   "summary": "카림이 발전기실에서 서율에게 G1 헤드 변형으로 수리 불가 보고, 냉각수 배출 밸브가 1/4 열려 있었음을 발견, 3월 20일 정비 이후 누군가 고의로 열었을 가능성 논의",
+   "location_id": "LOC_007",
+   "time_id": "TIME_030",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_001",
+    "OBJ_003"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_001",
+     "field": "body_status",
+     "from": "가동 중",
+     "to": "헤드 개스킷 파손 및 헤드 휘어짐으로 수리 불가",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "헤드 개스킷이 나갔어요. 고온으로 뒤틀렸고요. 예비 개스킷은 있는데 헤드 자체가 휘었으면 소용없어요. 여기서 면 가공은 못 해요."
+    },
+    {
+     "entity": "OBJ_003",
+     "field": "body_status",
+     "from": "닫힘 (잠금 고리 걸림)",
+     "to": "4분의 1 열림 (잠금 고리 젖혀진 상태)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "이게 4분의 1쯤 열려 있었어요. ... 이 밸브는 안 풀려요. 잠금 고리가 있어요. 고리를 젖히고 돌려야 열려요."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "G1 냉각수 배출 밸브가 3월 20일 정비 이후 고의로 열렸을 가능성",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그 뒤로 누가 만졌다는 거야? ... 모르습니다. 제가 20일에 잘못 봤을 수도 있어요. 고리가 제대로 안 걸렸을 수도 있고."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "G1 냉각수 배출 밸브가 3월 20일 정비 이후 고의로 열렸을 가능성",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율은 카림이 무슨 말을 할지 이미 알 것 같았고, 그가 그 말을 하지 않을 것도 알 것 같았다. ... 너 20일에 잘못 본 거 아니야. 나는 그렇게 생각해."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_017 (정비 일지)",
+     "source_text": "3월 20일. 여름 시즌 마지막 정비. 그때 닫혀 있었어요. 제 일지에 있어요."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "G1 정비 이력 및 밸브 상태 확인 절차",
+     "source_text": "마지막으로 확인한 게 언제야. 3월 20일. 여름 시즌 마지막 정비. 그때 닫혀 있었어요. 제 일지에 있어요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "발전기실 내부에 카메라가 없고 설비실 문 카드 기록만 존재함",
+     "source_text": "발전기실엔 카메라가 없어요. 설비실 문 카드 기록은 있는데, 그건 도현 서버에 있고, 발전기실 안으로 들어온 건 기록이 안 돼요."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "발전기 진단 및 정비 능력 (헤드 변형 판정, 밸브 상태 확인)",
+     "source_text": "헤드 개스킷이 나갔어요. 고온으로 뒤틀렸고요. ... 이 밸브는 안 풀려요. 잠금 고리가 있어요."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "G1 헤드 변형으로 수리 불가, G2로 겨울 나야 함",
+     "via": "told",
+     "retained": true,
+     "source_text": "G2로 겨울 납니다. ... 못 고쳐요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "냉각수 배출 밸브가 1/4 열려 있어 냉각수 손실 발생, 잠금 고리가 있어 진동으로 풀릴 수 없음",
+     "via": "told",
+     "retained": true,
+     "source_text": "이게 4분의 1쯤 열려 있었어요. ... 이 밸브는 안 풀려요. 잠금 고리가 있어요. 고리를 젖히고 돌려야 열려요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "3월 20일 정비 당시 밸브는 닫혀 있었음 (카림 일지 확인)",
+     "via": "told",
+     "retained": true,
+     "source_text": "3월 20일. 여름 시즌 마지막 정비. 그때 닫혀 있었어요. 제 일지에 있어요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "발전기실 내부 카메라 없음, 설비실 문 카드 기록만 도현 서버에 있음",
+     "via": "told",
+     "retained": true,
+     "source_text": "발전기실엔 카메라가 없어요. 설비실 문 카드 기록은 있는데, 그건 도현 서버에 있고, 발전기실 안으로 들어온 건 기록이 안 돼요."
+    }
+   ],
+   "cause": "냉각수 배출 밸브가 고의로 열려 냉각수 손실 → 펌프 공기 흡입 → 과열 → 헤드 변형",
+   "result": "G1 수리 불가 확정, G2 단독 운용으로 겨울 버텨야 함, 밸브 조작자 미확인 상태로 남음",
+   "source_text": "3월 26일 아침, 카림은 회의실이 아니라 발전기실에서 서율에게 결과를 말했다. ... 아직 겨울이 200일 넘게 남아 있었고, 그 안에서 이 얘기는 어디로도 가지 않을 것이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_2",
+   "scene_id": "scene_2_2",
+   "order": 2,
+   "title": "10시 전체 회의 - G1 수리 불가 발표 및 전력 삭감 계획 확정",
+   "summary": "서율이 G1 수리 불가와 냉각수 손실 원인 발표, 가온 제안으로 분광계 광학부 히터 3kW 유지하며 2층 난방 차단 및 1층 이주 계획 확정, 9월 27일 연료 바닥 예측",
+   "location_id": "LOC_009",
+   "time_id": "TIME_031",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_003",
+    "CHAR_004",
+    "CHAR_005",
+    "CHAR_006"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_001",
+    "OBJ_002",
+    "OBJ_011",
+    "OBJ_014"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_001",
+     "field": "body_status",
+     "from": "헤드 개스킷 파손 및 헤드 휘어짐으로 수리 불가",
+     "to": "수리 불가 확정, 가동 중단",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율은 G1이 수리 불가라는 것과 ... 발표했다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "전력 삭감 계획: 2층 난방 6kW 차단, 2층 폐쇄 및 1층 이주, 분광계 광학부 히터 3kW 유지, 총 26kW 부하로 9월 27일 연료 바닥",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "2층 난방 6킬로와트를 끊습니다. 내일 27일 정오부로. 2층은 폐쇄하고, 전원 1층으로 내려옵니다. ... 3을 더하면 26이야. 하루 220리터. 9월 27일에 바닥나."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "from": "unknown",
+     "to": "전력 삭감 계획 및 분광계 광학부 동결 방지 필요성",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "히터 다섯 개 중에 광학부에 붙은 것만 살리면 3킬로와트예요. 분광계 광학부만 영하 20도 위로 유지하는 거예요. ... 무인 전환에도 필요한 거예요."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "from": "unknown",
+     "to": "전력 삭감 계획 및 분광계 광학부 동결 방지 필요성",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "히터 다섯 개 중에 광학부에 붙은 것만 살리면 3킬로와트예요. 분광계 광학부만 영하 20도 위로 유지하는 거예요. ... 무인 전환에도 필요한 거예요."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_010 (의무실 안쪽 병상 칸)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "마르타 선생님은 의무실 안쪽 병상 칸을 쓰시겠다고 하셨고요. ... 제가 제안한 겁니다. 병상 옆에서 자는 게 의사한텐 나쁘지 않아요."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_017 (S-1)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "S-1은 도현, S-2는 나, S-3은 가온."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_018 (S-2)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "S-1은 도현, S-2는 나, S-3은 가온."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_019 (S-3)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "S-1은 도현, S-2는 나, S-3은 가온."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_016",
+     "to": "LOC_016 (R-5 유지)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림은 지금 R-5 그대로."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_017 (수첩)",
+     "source_text": "카림은 고개를 숙이고 수첩만 보았다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "OBJ_011 (태블릿/서버 접근 권한)",
+     "source_text": "설비실 문 카드 기록은 있는데, 그건 도현 서버에 있고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "G2 단독 운용 시 하루 196리터, 부하 24kW 확정 계산",
+     "source_text": "G2로 갑니다. 그러니까 카림의 계산이 이제 확정 계산이에요. 하루 196리터. 부하 24킬로와트."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "전력 부하 계산 및 연료 소모 예측 능력",
+     "source_text": "서율은 화면에 부하 표를 띄웠다. 카림이 만든 것이었다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "분광계 광학부 동결 시 봄 정렬 필요, 자동 관측 이관 시 장비 생존 필요",
+     "source_text": "그냥 얼지만 않게. 그러면 봄에 정렬 안 해도 되고, 자동 관측으로 이관할 때도 장비가 살아 있어요. 무인 전환에도 필요한 거예요. 얼어붙은 분광계를 자동화해서 넘길 순 없잖아요."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "ability",
+     "assumes": "의료 업무 수행을 위한 병상 옆 상주 필요성 판단",
+     "source_text": "병상 옆에서 자는 게 의사한텐 나쁘지 않아요."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "통신실 콘솔 발열로 별도 난방 없이 영상 유지 가능",
+     "source_text": "통신실은 콘솔 발열이 있어서 별도 난방 없이도 영상 유지돼요. 카림이 확인했어요."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_1",
+     "assumes": "EVENT_2_1에서 확인된 밸브 개방 사실이 회의 발표 시 '냉각수 손실에 의한 고온 정지'로만 공유되고 고의 개방 가능성은 서율과 카림만 공유함",
+     "source_text": "다른 사람한테는 '냉각수 손실로 고온 정지'까지만 말해. 그 이상은 나한테만."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "G1 수리 불가, 냉각수 손실 원인, G2 단독 운용 전환",
+     "via": "direct",
+     "retained": true,
+     "source_text": "서율은 G1이 수리 불가라는 것과 '냉각수 손실에 의한 고온 정지'라는 원인을 발표했다."
+    },
+    {
+     "character_id": "CHAR_004",
+     "info": "G1 수리 불가, 냉각수 손실 원인, G2 단독 운용 전환",
+     "via": "direct",
+     "retained": true,
+     "source_text": "서율은 G1이 수리 불가라는 것과 '냉각수 손실에 의한 고온 정지'라는 원인을 발표했다."
+    },
+    {
+     "character_id": "CHAR_005",
+     "info": "G1 수리 불가, 냉각수 손실 원인, G2 단독 운용 전환, 전력 삭감 계획 상세",
+     "via": "direct",
+     "retained": true,
+     "source_text": "서율은 G1이 수리 불가라는 것과 '냉각수 손실에 의한 고온 정지'라는 원인을 발표했다. ... 3을 더하면 26이야. 하루 220리터. 9월 27일에 바닥나."
+    },
+    {
+     "character_id": "CHAR_006",
+     "info": "G1 수리 불가, 냉각수 손실 원인, G2 단독 운용 전환, 전력 삭감 계획 상세",
+     "via": "direct",
+     "retained": true,
+     "source_text": "서율은 G1이 수리 불가라는 것과 '냉각수 손실에 의한 고온 정지'라는 원인을 발표했다. ... 3을 더하면 26이야. 하루 220리터. 9월 27일에 바닥나."
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "전력 삭감 계획: 2층 난방 차단, 1층 이주, 분광계 광학부 3kW 유지, 9월 27일 연료 바닥",
+     "via": "direct",
+     "retained": true,
+     "source_text": "2층 난방 6킬로와트를 끊습니다. 내일 27일 정오부로. 2층은 폐쇄하고, 전원 1층으로 내려옵니다. ... 3을 더하면 26이야. 하루 220리터. 9월 27일에 바닥나."
+    },
+    {
+     "character_id": "CHAR_004",
+     "info": "전력 삭감 계획 및 본인 거처 의무실 병상 칸 배정",
+     "via": "direct",
+     "retained": true,
+     "source_text": "마르타 선생님은 의무실 안쪽 병상 칸을 쓰시겠다고 하셨고요. ... 3을 더하면 26이야. 하루 220리터. 9월 27일에 바닥나."
+    },
+    {
+     "character_id": "CHAR_005",
+     "info": "자신 거처 S-3 배정, 분광계 광학부 동결 방지 필요성",
+     "via": "direct",
+     "retained": true,
+     "source_text": "S-3은 가온. ... 히터 다섯 개 중에 광학부에 붙은 것만 살리면 3킬로와트예요. 분광계 광학부만 영하 20도 위로 유지하는 거예요."
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "자신 거처 S-1 배정",
+     "via": "direct",
+     "retained": true,
+     "source_text": "S-1은 도현"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "자신 거처 S-2 배정",
+     "via": "direct",
+     "retained": true,
+     "source_text": "S-2는 나"
+    }
+   ],
+   "cause": "G1 수리 불가로 G2 단독 운용 필수 → 전력 예산 24kW 초과 불가 → 2층 난방 차단 및 분광계 최소 유지로 26kW 조정",
+   "result": "2층 폐쇄 및 1층 이주 실행 결정 (27일 정오), 창고 S-1/2/3 숙소 전환, 통신실만 2층 잔류, 9월 27일 연료 바닥 예측 확정",
+   "source_text": "같은 날 10시 회의. 서율은 G1이 수리 불가라는 것과 ... 발표했다. ... 1층은 생활 최소치야.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_3",
+   "scene_id": "scene_2_1",
+   "order": 1,
+   "title": "전력 배분 회의 및 기지장 결정",
+   "summary": "가온이 2kW 절전안을 제시하고 마르타가 심리적 부담을 이유로 반대 의견을 기록으로 남기며, 서율이 광학부 히터 3kW 재개를 조건부로 결정한다",
+   "location_id": "LOC_009",
+   "time_id": "TIME_004",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_003",
+    "CHAR_004",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "가온의 2kW 절전안(오븐 금지, 온수 2시간, 조명 절반)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "가온이 화면을 가리켰다. \"주방 전기 오븐 1.5. 온수 히터 2. 조명 다 켜 놓으면 1.2. 오븐 안 쓰고, 온수는 하루 두 시간만, 조명 절반. 그러면 2는 나와요.\""
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "본부 승인본에 '관측 모듈 장비의 온전한 상태로 인수'가 기지장 임무로 명시됨",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "본부 승인본에도 '관측 모듈 장비의 온전한 상태로 인수'라고 되어 있어요. 기지장님 임무예요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "마르타가 규정 12조 엄수보다 5명의 210일 생존을 우선하며 이를 기록으로 본부에 보고하겠음",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "지금 이 방에서 규정 12조를 정확히 지키는 것과, 다섯 명이 210일을 같이 사는 것 중에 어느 쪽이 사람을 살리는 일인지, 나는 후자라고 봅니다. ... '부기지장은 관측 모듈 최소 난방 유지에 찬성했고, 기지장은 규정 12조를 근거로 반대했다.' 그렇게 적힐 겁니다. 그리고 그 기록은 본부로 갑니다. 4조에 따라서."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "from": "unknown",
+     "to": "서율이 광학부 히터 3kW를 28일 정오부터 재개하기로 결정함",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "관측 모듈 히터 회로 중 광학부 히터 3킬로와트를 28일 정오부로 재개합니다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "from": "unknown",
+     "to": "광학부 히터 3kW만 재개되며 장비 회로 손대면 즉시 차단됨, 카림이 매일 계량기 검침",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "3킬로와트는 광학부만이야. 장비 회로에 손대면 그날로 끊어. 카림이 매일 계량기 읽을 거야."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "assumes": "OBJ_011 (태블릿/화면)",
+     "source_text": "가온이 화면을 가리켰다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "전력 소비량 상세 내역(오븐 1.5, 온수 2, 조명 1.2 kW)",
+     "source_text": "카림이 고개를 들었다. \"나와요. 빠듯하게.\""
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "첫 월동 연구원의 심리 상태가 3년치 일을 이틀 만에 끝내면 악화될 것임",
+     "source_text": "그걸 지키자고 첫 월동인 연구원의 3년치 일을 이틀 만에 끝내 버리면, 나는 앞으로 200일 동안 이 사람의 심리 점검을 2주마다 해야 하는데, 그 결과가 어떻게 나올지 지금 예측할 수 있어요."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "ability",
+     "assumes": "의사로서 심리 점검 권한 및 기록 작성 권한 보유",
+     "source_text": "의사로서, 부기지장으로서. ... 나는 기록을 하는 사람이라고 첫날 말씀드렸어요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "자신의 손을 인식할 수 있는 정상 신체 상태",
+     "source_text": "서율은 탁자 위의 손을 보았다. 이번에는 자기 손이었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "가온의 2kW 절전안(오븐 금지, 온수 하루 2시간, 조명 절반)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "가온이 화면을 가리켰다. \"주방 전기 오븐 1.5. 온수 히터 2. 조명 다 켜 놓으면 1.2. 오븐 안 쓰고, 온수는 하루 두 시간만, 조명 절반. 그러면 2는 나와요.\""
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "본부 승인본에 관측 모듈 장비 온전 인수 조항이 있음",
+     "via": "told",
+     "retained": true,
+     "source_text": "본부 승인본에도 '관측 모듈 장비의 온전한 상태로 인수'라고 되어 있어요. 기지장님 임무예요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "마르타가 규정 12조보다 인원 생존을 우선하며 이를 본부에 기록 보고하겠음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "지금 이 방에서 규정 12조를 정확히 지키는 것과, 다섯 명이 210일을 같이 사는 것 중에 어느 쪽이 사람을 살리는 일인지, 나는 후자라고 봅니다. ... '부기지장은 관측 모듈 최소 난방 유지에 찬성했고, 기지장은 규정 12조를 근거로 반대했다.' 그렇게 적힐 겁니다."
+    },
+    {
+     "character_id": "CHAR_004",
+     "info": "기지장이 광학부 히터 3kW를 28일 정오부터 재개 결정함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "관측 모듈 히터 회로 중 광학부 히터 3킬로와트를 28일 정오부로 재개합니다."
+    },
+    {
+     "character_id": "CHAR_005",
+     "info": "광학부 히터 3kW만 허용, 장비 회로 건드리면 차단, 카림이 매일 계량기 검침",
+     "via": "direct",
+     "retained": true,
+     "source_text": "3킬로와트는 광학부만이야. 장비 회로에 손대면 그날로 끊어. 카림이 매일 계량기 읽을 거야."
+    }
+   ],
+   "cause": "전력 부족 상황에서 관측 모듈 장비 보존(규정 12조)과 인원 생존(난방 유지) 사이의 우선순위 충돌",
+   "result": "기지장이 광학부 히터 3kW만 28일 정오부터 재개하고, 장비 회로는 차단 유지, 1층 절전 조치(오븐 금지, 온수 2시간, 조명 절반) 시행 결정",
+   "source_text": "최소치 아니에요. 가온이 화면을 가리켰다. ... 결정합니다. 관측 모듈 히터 회로 중 광학부 히터 3킬로와트를 28일 정오부로 재개합니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_4",
+   "scene_id": "scene_2_2",
+   "order": 2,
+   "title": "창고 물자 이전 및 1층 거처 정착",
+   "summary": "3월 27일 오전 창고 S-1, S-2, S-3 물자를 2층으로 이전하고, 정오에 2층 난방 차단 후 다섯 명이 1층에 모여 생활하게 됨",
+   "location_id": "LOC_001",
+   "time_id": "TIME_005",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_003",
+    "CHAR_004",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_010",
+    "OBJ_003"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_017",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "도현은 S-1에서 잤다. 통조림 냄새가 배어 있는 방이었다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_019",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "가온은 S-3에서 잤다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_010",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "마르타는 의무실 안쪽의 병상 칸으로 옮겼다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_002",
+     "to": "LOC_013",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그날 저녁부터 서율은 주 모듈 1층 창고 S-2호에서 잤다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_003 (황동 밸브 등 소모품 몇 상자)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림은 그중 밤에 급히 필요할 수 있는 소모품 몇 상자만 자기 방 R-5로 가져갔다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "body_status",
+     "from": "정상",
+     "to": "계단 16회 왕복으로 피로 누적",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "정상",
+     "certainty": "inferred",
+     "source_text": "도현은 통조림 상자를 2층으로 나르면서 계단을 열여섯 번 오르내렸다고 했다."
+    },
+    {
+     "entity": "LOC_013",
+     "field": "condition",
+     "from": "예비 부품 창고",
+     "to": "서율 거처 겸 예비 부품 창고(간이침대 설치)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "예비 부품 선반이 벽 세 면을 차지하고 있었고, 남은 자리에 간이침대 하나가 겨우 들어갔다."
+    },
+    {
+     "entity": "LOC_019",
+     "field": "condition",
+     "from": "의류/침구 창고",
+     "to": "가온 거처(발전기실 폐열 배관으로 가장 따뜻함)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "S-3은 의류와 침구 창고였다. 가온이 쓰기로 했다. 가온은 그 방이 가장 작고 가장 따뜻하다고 말했다. 발전기실 폐열 배관이 벽 안쪽을 지나갔기 때문이었다."
+    },
+    {
+     "entity": "LOC_017",
+     "field": "condition",
+     "from": "식자재 창고",
+     "to": "도현 거처(통조림 냄새 배어 있음)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "도현은 S-1에서 잤다. 통조림 냄새가 배어 있는 방이었다."
+    },
+    {
+     "entity": "LOC_010",
+     "field": "condition",
+     "from": "의무실",
+     "to": "마르타 거처 겸 의무실(약품 냉장고 모터 소리)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "마르타는 의무실 안쪽의 병상 칸으로 옮겼다. 커튼 하나로 나뉜 공간이었고, 약품 냉장고의 모터 소리가 밤새 들렸다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "ability",
+     "assumes": "무거운 통조림 상자를 2층으로 16회 운반할 체력",
+     "source_text": "도현은 통조림 상자를 2층으로 나르면서 계단을 열여섯 번 오르내렸다고 했다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "큰 상자들을 2층으로 옮길 체력(카림과 둘이서)",
+     "source_text": "바닥에 쌓여 있던 큰 상자들은 카림과 둘이서 2층으로 옮겼고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "큰 상자들을 2층으로 옮길 체력(서율과 둘이서), 야간 소모품 필요성 판단 능력",
+     "source_text": "바닥에 쌓여 있던 큰 상자들은 카림과 둘이서 2층으로 옮겼고, 벽 선반의 작은 상자들 ... 카림은 그중 밤에 급히 필요할 수 있는 소모품 몇 상자만 자기 방 R-5로 가져갔다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "S-3이 발전기실 폐열로 가장 따뜻한 방임을 인지",
+     "source_text": "가온은 그 방이 가장 작고 가장 따뜻하다고 말했다. 발전기실 폐열 배관이 벽 안쪽을 지나갔기 때문이었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "봄에 다시 2층 R-1호로 올라갈 수 있을지 불확실함(봄에 다시 올라갈 것이라고 스스로에게 말하지 않음)",
+     "source_text": "서율은 벽에 빙하 코어 사진을 옮겨 붙이지 않았다. 2층 R-1호에 그대로 두고 왔다. 봄에 다시 올라갈 것이라고, 스스로에게 그렇게 말하지는 않았다. 다만 옮기지 않았다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "파카",
+     "source_text": "도현은 통신실에 파카를 걸어 두고 22시마다 올라갔다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_3",
+     "assumes": "EVENT_2_1에서 결정된 27일 2층 난방 차단 계획이 이 사건에서 실행됨",
+     "source_text": "27일은 이사와 2층 난방 차단으로 카림 손이 비지 않아요. / 정오에 카림이 2층 난방 회로를 내렸다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "S-2 창고에 간이침대 설치해 거처로 사용, 빙하 코어 사진은 2층 R-1에 두고 옴",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그날 저녁부터 서율은 주 모듈 1층 창고 S-2호에서 잤다. 예비 부품 선반이 벽 세 면을 차지하고 있었고, 남은 자리에 간이침대 하나가 겨우 들어갔다. 서율은 벽에 빙하 코어 사진을 옮겨 붙이지 않았다. 2층 R-1호에 그대로 두고 왔다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "2층 난방 차단 후 복도 온도 영하 5도 → 이틀 뒤 영하 18도, 통신실만 4도 유지",
+     "via": "direct",
+     "retained": true,
+     "source_text": "정오에 카림이 2층 난방 회로를 내렸다. 2층 복도 온도는 저녁까지 영하 5도로 내려갔고, 이틀 뒤에는 영하 18도가 되었다. 통신실만 예외였다. 콘솔과 서버의 발열로 통신실 온도는 4도 언저리에서 유지되었다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "2층 난방 차단 후 통신실만 4도 유지, 22시마다 통신실 올라가야 함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "도현은 통신실에 파카를 걸어 두고 22시마다 올라갔다."
+    },
+    {
+     "character_id": "CHAR_004",
+     "info": "의무실 병상 칸에서 약품 냉장고 모터 소리 들으며 지냄",
+     "via": "direct",
+     "retained": true,
+     "source_text": "마르타는 의무실 안쪽의 병상 칸으로 옮겼다. 커튼 하나로 나뉜 공간이었고, 약품 냉장고의 모터 소리가 밤새 들렸다. 마르타는 그 소리가 좋다고 했다."
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "S-1 창고에서 통조림 냄새 맡으며 지냄, 계단 16회 왕복으로 물자 이전함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "도현은 통조림 상자를 2층으로 나르면서 계단을 열여섯 번 오르내렸다고 했다. ... 도현은 S-1에서 잤다. 통조림 냄새가 배어 있는 방이었다."
+    },
+    {
+     "character_id": "CHAR_005",
+     "info": "S-3 창고가 발전기실 폐열로 가장 따뜻함, 거기서 지냄",
+     "via": "direct",
+     "retained": true,
+     "source_text": "가온은 S-3에서 잤다. ... 발전기실 폐열 배관이 벽 안쪽을 지나갔기 때문이었다."
+    }
+   ],
+   "cause": "3월 27일 이사 계획에 따른 창고 물자 이전 및 2층 난방 차단(전력 절약 결정 이행)",
+   "result": "다섯 명 전원이 1층에 거처를 마련해 열 걸음 안에 모이게 됨, 2층은 난방 차단으로 영하 18도까지 하강",
+   "source_text": "3월 27일. 이사는 오전 내내 걸렸다. ... 이렇게 다섯 사람이 1층에 모였다. 열 걸음 안에 모두가 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_5",
+   "scene_id": "scene_2_1",
+   "order": 1,
+   "title": "관측 모듈 히터 안정화 확인 및 보고",
+   "summary": "가온이 관측 모듈 광학부 히터가 영하 17도까지 안정됐음을 확인하고 서율에게 보고함. 카림이 격벽을 열어둬 도보 이동 가능했음",
+   "location_id": "LOC_003",
+   "time_id": "TIME_034",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_005",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "LOC_003",
+     "field": "condition",
+     "from": "광학부 온도 영하 31도, 히터 꺼짐",
+     "to": "광학부 온도 영하 17도, 히터 켜짐 안정",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "광학부 온도계가 영하 31도에서 영하 22도, 영하 17도로 올라오는 것을 세 시간 동안 지켜보았다. 광학부 영하 17도. 안정됐어요"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "assumes": "완전 방한복",
+     "source_text": "가온은 매번 완전 방한복을 입고 갔다"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "body_status",
+     "assumes": "영하 30도 통로 도보 이동 가능 신체",
+     "source_text": "지하 통로는 60미터였고... 통로 온도는 영하 30도였다. 가온은 매번 완전 방한복을 입고 갔다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "격벽 열쇠 (격벽 개방 권한)",
+     "source_text": "카림이 평시 규정대로 격벽을 열어 두었기 때문에"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "not_knows: 가온이 장비 회로를 건드렸는지 여부 (가온의 보고로 알게 됨)",
+     "source_text": "장비 회로는 안 건드렸어요. 네. 확인하세요"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "가온이 규정 준수 보고함",
+     "source_text": "가온은 규정을 지키겠다고 했고, 서율은 그 말을 믿지 않을 이유가 없었다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "관측 모듈 광학부 히터가 영하 17도로 안정됨, 장비 회로 미접촉",
+     "via": "told",
+     "retained": true,
+     "source_text": "광학부 영하 17도. 안정됐어요. 장비 회로는 안 건드렸어요"
+    }
+   ],
+   "cause": "카림이 평시 규정대로 격벽을 열어둠 + 가온이 3시간 모니터링",
+   "result": "히터 안정화 확인, 서율에게 보고 완료",
+   "source_text": "3월 28일. 관측 모듈 광학부 히터가 다시 켜졌다. 가온은 통로를 지나 관측 모듈로 가서 광학부 온도계가 영하 31도에서 영하 22도, 영하 17도로 올라오는 것을 세 시간 동안 지켜보았다. 돌아온 가온은 서율에게 보고했다. \"광학부 영하 17도. 안정됐어요. 장비 회로는 안 건드렸어요.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_6",
+   "scene_id": "scene_2_2",
+   "order": 2,
+   "title": "첫 심리 점검 (마르타-서율)",
+   "summary": "마르타가 서율에게 12개 질문 심리 점검 실시. 서율은 마지막 질문(화가 난 일)에 거짓말함. 마르타는 서율을 '자르지 않는 사람'으로 평가하며 자신이 자르는 역할임을 밝힘. 다음 점검 4월 12일 예고",
+   "location_id": "LOC_010",
+   "time_id": "TIME_035",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_004",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "마르타가 서율을 '자르지 않는 사람'으로 평가하며 자신이 자르는 역할을 맡았음",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "자르지 않는 사람이 기지장을 하면, 누군가는 대신 잘라야 해. 내가 그 역할을 맡은 거야. 좋아서가 아니라"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "다음 심리 점검은 4월 12일",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "다음 점검은 4월 12일"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "서율이 3년 전 마르타 밑에서 일하며 한 번도 말 자른 적 없음",
+     "source_text": "3년 전에 당신은 내 밑에서 일하면서 한 번도 내 말을 자른 적이 없었어"
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "서율이 26일 회의에서 마르타 말 자른 것 인지함",
+     "source_text": "26일 회의에서 내가 말 자를 때"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "26일 회의에서 마르타 말 자른 것이 '판단'이었음 (화가 아님)",
+     "source_text": "그건 화가 아니라 판단이었어요. 선생님이 그렇게 하기로 판단했다는 걸 이해했어요"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "마르타에게 딸이 있음 (이 시점엔 모름, 30일에 알게 됨)",
+     "source_text": "마르타에게 딸이 있다는 것을 서율은 그때 처음 알았다. 3년 전에도 몰랐다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "마르타가 서율을 '자르지 않는 사람'으로 평가하며 자신이 자르는 역할을 맡았음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "자르지 않는 사람이 기지장을 하면, 누군가는 대신 잘라야 해. 내가 그 역할을 맡은 거야"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "다음 심리 점검은 4월 12일",
+     "via": "told",
+     "retained": true,
+     "source_text": "다음 점검은 4월 12일"
+    },
+    {
+     "character_id": "CHAR_004",
+     "info": "서율의 수면 5시간, 식욕 보통, 두통 없음, 26일 회의에서 말 자른 것은 화가 아닌 판단이었음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "수면 다섯 시간, 식욕 보통, 두통 없음, 화가 난 일 없음. 그건 화가 아니라 판단이었어요"
+    }
+   ],
+   "cause": "이사 때문에 이틀 미뤄진 첫 심리 점검 실시",
+   "result": "심리 점검 완료, 다음 점검 4월 12일 예고, 서율의 거짓말(화가 난 일 없음) 마르타가 인지한 듯",
+   "source_text": "3월 29일. 첫 심리 점검. 이사 때문에 이틀 미뤄진 것이었다. 의무실 커튼 안쪽에서 마르타는 서율에게 열두 개의 질문을 했다... 서율은 커튼을 젖히고 나왔다. 열두 개의 질문 중에 마지막 것만 거짓말이었다는 것을, 마르타는 아마 알았을 것이다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_7",
+   "scene_id": "scene_2_3",
+   "order": 3,
+   "title": "3월 30일 22시 통신 창",
+   "summary": "서율, 도현, 마르타 통신실에서 22시 통신 창 참여. 본부 무인 전환 서류 요청으로 가용 시간 6분. 순번제 합의(마르타-도현-가온 이틀에 한 번). 서율 복도에서 도현의 통화 소리 들으며 기지장 역할 성찰. 마르타에게 딸 있음 최초 인지",
+   "location_id": "LOC_008",
+   "time_id": "TIME_036",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_003",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "마르타에게 딸이 있음",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "마르타에게 딸이 있다는 것을 서율은 그때 처음 알았다. 3년 전에도 몰랐다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "통신 순번제: 마르타-도현-가온 이틀에 한 번 (가온 통신 안 함)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "오늘 마르타 선생님, 내일 너, 모레 가온. 가온이는 안 써요. 그럼 이틀에 한 번"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "from": "unknown",
+     "to": "본부 무인 전환 준비 서류 요청으로 통신 데이터 6분만 남음",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "본부에서 무인 전환 준비 서류를 잔뜩 보내라고 해서요. 오늘도 남는 건 6분"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "파카",
+     "source_text": "서율은 파카를 입고 문 옆에 섰다"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "통신실 콘솔 접근 권한",
+     "source_text": "도현은 콘솔로 돌아섰다. 22시 34분에 큐가 비었고, 도현은 메시지 창을 열었다"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "부산에 있는 사람과 통신 중 (웃음 소리)",
+     "source_text": "부산에 있는 사람에게 웃어 보이는 소리였다"
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "통신 순번제 합의 내용 인지",
+     "source_text": "2분이면 딸한테 '살아 있다'는 쓸 수 있어요"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "도현이 카드 기록 서버 관리자임",
+     "source_text": "카드 기록은 도현의 서버에 있었고, 그것을 열어 보려면 도현에게 부탁해야 했고"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "마르타에게 딸이 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "마르타에게 딸이 있다는 것을 서율은 그때 처음 알았다. 3년 전에도 몰랐다"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "도현이 카드 기록 서버 관리자임 (카림 발언으로 추론)",
+     "via": "inference",
+     "retained": true,
+     "source_text": "카드 기록은 도현의 서버에 있었고, 그것을 열어 보려면 도현에게 부탁해야 했고, 부탁하는 순간... 기지의 다섯 명 중 한 명에게 알려지는 것이었다. 그리고 그 한 명은 카드 기록을 관리하는 사람이었다"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "본부에서 무인 전환 준비 서류 요청 중",
+     "via": "told",
+     "retained": true,
+     "source_text": "본부에서 무인 전환 준비 서류를 잔뜩 보내라고 해서요"
+    }
+   ],
+   "cause": "규정 7조 준수를 위한 일일 22시 통신 창 참여",
+   "result": "통신 6분 소진, 순번제 합의, 마르타 딸 존재 인지, 카림의 카드 기록 조회 자제 의도 파악",
+   "source_text": "3월 30일 22시. 통신실. 서율은 이제 매일 22시에 통신실에 올라갔다... 문 밖 복도에서 서율은 잠시 서 있었다... 내려가는 계단에서 마르타를 만났다. 마르타는 통신실로 올라가는 중이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_8",
+   "scene_id": "scene_2_4",
+   "order": 4,
+   "title": "4월 1일 카림 일지 확인 및 카림 방문",
+   "summary": "서율이 카림 일지 계량기 수치(71kWh) 확인 후 안심. 저녁 카림 방문: 연료 일일 탱크 이송량 203리터(계산 196리터, +7리터) 보고. 카림이 황동 밸브 사진 촬영 및 일지 기록, 설비실 카드 기록 조회 자제 보고. 서율 예비 부품 선반의 황동 밸브 예비품 상자 주시",
+   "location_id": "LOC_012",
+   "time_id": "TIME_037",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_003",
+    "OBJ_018"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "관측 모듈 계량기 수치 하루 71kWh (3kW × 24h = 72kWh 근사치, 정상)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림의 일지에 적힌 관측 모듈 계량기 수치는 하루 71킬로와트시였다. 3킬로와트에 24시간을 곱하면 72였다. 정확했다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "연료 일일 탱크 이송량 203리터 (계산 196리터 대비 +7리터 오차)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "연료 일일 탱크요. 오늘 이송량이 계산보다 조금 많아요. 하루 196이어야 하는데 203"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "황동 밸브 사진 촬영 및 일지 기록 완료",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "밸브요. 사진 찍어 놨어요. 일지에도. 기지장님이 말씀하신 대로"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "설비실 문 카드 기록 조회 시 도현에게 알려짐 (도현이 서버 관리자)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "설비실 문 카드 기록. 도현한테 안 물어봤어요. 물어보면 도현이 알게 되니까"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "카림이 설비실 카드 기록 조회를 자제했음 (서율 의도 파악)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율은 카림이 무슨 말을 하는지 정확히 이해했다. 카드 기록은 도현의 서버에 있었고... 그 한 명은 카드 기록을 관리하는 사람이었다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "황동 밸브 사진 기록",
+     "source_text": "밸브요. 사진 찍어 놨어요. 일지에도"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "서율의 의중(도현 모르게 카드 기록 확인)을 파악하고 선제적으로 자제함",
+     "source_text": "서율은 카림이 무슨 말을 하는지 정확히 이해했다... 카림이 무슨 말을 하는지 정확히 이해했다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "예비 부품 선반 접근 권한 (황동 밸브 예비품 상자 확인)",
+     "source_text": "그 옆에 황동 밸브 예비품이 든 작은 상자가 있었다. 서율은 그 상자를 오랫동안 보았다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "관측 모듈 계량기 수치 정상(71kWh)",
+     "via": "document",
+     "retained": true,
+     "source_text": "카림의 일지에 적힌 관측 모듈 계량기 수치는 하루 71킬로와트시였다. 3킬로와트에 24시간을 곱하면 72였다. 정확했다"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "연료 이송량 203리터 (예상 196리터 대비 +7리터)",
+     "via": "told",
+     "retained": true,
+     "source_text": "연료 일일 탱크요. 오늘 이송량이 계산보다 조금 많아요. 하루 196이어야 하는데 203"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "카림이 황동 밸브 사진 촬영 및 일지 기록함",
+     "via": "told",
+     "retained": true,
+     "source_text": "밸브요. 사진 찍어 놨어요. 일지에도. 기지장님이 말씀하신 대로"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "카림이 설비실 카드 기록 조회를 도현에게 알리지 않기 위해 자제함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "설비실 문 카드 기록. 도현한테 안 물어봤어요. 물어보면 도현이 알게 되니까"
+    }
+   ],
+   "cause": "일일 계량기/연료 수치 확인 루틴 + 카림의 자발적 보고",
+   "result": "계량기 정상 확인, 연료 이송량 오차 인지(며칠 더 관찰 결정), 카림의 밸브 기록 확인, 카드 기록 조회 보류",
+   "source_text": "4월 1일. 카림의 일지에 적힌 관측 모듈 계량기 수치는 하루 71킬로와트시였다... 같은 날 저녁, 카림이 서율의 방 S-2 문을 두드렸다. \"연료 일일 탱크요. 오늘 이송량이 계산보다 조금 많아요... 밸브요. 사진 찍어 놨어요. 일지에도... 그리고 설비실 문 카드 기록. 도현한테 안 물어봤어요.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_9",
+   "scene_id": "scene_2_5",
+   "order": 5,
+   "title": "4월 2일 밤 연료 이송량 205리터 기록",
+   "summary": "바깥 기온 영하 61도, 해 뜬 시간 3시간. 카림 일지에 연료 이송량 205리터 기록(전일 203리터에서 추가 증가)",
+   "location_id": "LOC_006",
+   "time_id": "TIME_038",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "연료 이송량 203리터 (4/1)",
+     "to": "연료 이송량 205리터 (4/2, 바깥 기온 영하 61도)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "4월 2일 밤, 바깥 기온은 영하 61도였다. 해는 아직 떴지만 지평선 위에 세 시간뿐이었다. 카림의 일지에 적힌 이송량은 205리터였다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "일지 기록 권한/습관",
+     "source_text": "카림의 일지에 적힌 이송량은 205리터였다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "바깥 기온 영하 61도, 일조 시간 3시간 인지",
+     "source_text": "바깥 기온은 영하 61도였다. 해는 아직 떴지만 지평선 위에 세 시간뿐이었다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_8",
+     "assumes": "연료 이송량 증가 추세(196→203→205)가 바깥 기온 하강(영하 61도)과 연관됨 - 이송관 보온 히터 가동 증가 가능성",
+     "source_text": "이송관 보온 히터가 밖 기온 따라 더 먹을 수 있어요. 며칠 더 봅니다. / 4월 2일 밤, 바깥 기온은 영하 61도였다... 이송량은 205리터였다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "4월 2일 연료 이송량 205리터, 바깥 기온 영하 61도",
+     "via": "document",
+     "retained": true,
+     "source_text": "카림의 일지에 적힌 이송량은 205리터였다. 바깥 기온은 영하 61도였다"
+    }
+   ],
+   "cause": "바깥 기온 급강하(영하 61도)로 인한 이송관 보온 히터 가동량 증가 추정",
+   "result": "연료 이송량 이틀 연속 계산치 초과(203→205), 추세 관찰 필요",
+   "source_text": "4월 2일 밤, 바깥 기온은 영하 61도였다. 해는 아직 떴지만 지평선 위에 세 시간뿐이었다. 카림의 일지에 적힌 이송량은 205리터였다.",
+   "certainty": "explicit"
+  }
+ ]
+}

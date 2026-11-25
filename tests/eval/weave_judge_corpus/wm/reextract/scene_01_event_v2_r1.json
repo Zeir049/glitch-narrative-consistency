@@ -1,0 +1,214 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 1,
+  "batch_id": "T2-R1-A",
+  "scene_id": "scene_01",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_01.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:31:05Z",
+  "worldview_rules": [],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "프리든 4번 방에서 짐을 정리하고 이전 사용자의 노트를 살펴보는 화자",
+      "traits": [
+        {
+          "trait": "남의 사적 기록을 훔쳐보는 데 거리낌을 느끼는 성격",
+          "trait_type": "personality",
+          "source_text": "남의 일기를 훔쳐보는 기분이 들어 조금 찝찝했지만,",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "스스로를 '문과'로 규정함 (기호·수식에 약하다는 자기 인식)",
+          "trait_type": "personality",
+          "source_text": "문과의 눈으로는 답이 없는 종류다.",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S01_1",
+      "source_text": "먼지를 후 불어내고 한 권을 꺼내 첫 장을 넘겼다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_007",
+      "name": "알라인 쉭살 (Allein Schicksal)",
+      "aliases": ["알라인"],
+      "entity_type": "person",
+      "description": "화자가 노트의 기호·숫자를 보여주면 알아볼 수도 있다고 떠올린 인물 (현장 부재, 언급만 됨)",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S01_1",
+      "source_text": "\"이건... 알라인한테 보여주면 알려나.\"",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "NEW:프리든_4번_방_이전_사용자",
+      "name": "프리든 4번 방의 이전 사용자",
+      "aliases": ["이전 사람", "주인"],
+      "entity_type": "unknown",
+      "description": "프리든 4번 방 책장에 기호와 숫자가 적힌 낡은 노트들을 남기고 떠난 인물. 현재 방에 없음",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S01_1",
+      "source_text": "문제는 이전 사람의 흔적이었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_011",
+      "name": "프리든 4번 방 (알파의 방)",
+      "description": "화자에게 배정된 방. 짐이라곤 옷 하나뿐이며, 책장에 이전 사용자의 낡은 노트들이 빼곡히 남아 있다",
+      "source_text": "프리든 4번 방에 짐이라곤 그 옷 하나뿐이라, 정리는 금방 끝났다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "NEW:이전_사용자의_낡은_노트",
+      "name": "낡은 노트들",
+      "description": "프리든 4번 방 책장에 빼곡히 꽂힌 낡은 노트. 알아볼 수 없는 기호와 숫자의 나열이 적혀 있다",
+      "first_appearance_event_id": "EVENT_S01_1",
+      "source_text": "책장에 빼곡히 꽂힌 낡은 노트들.",
+      "certainty": "explicit"
+    },
+    {
+      "object_id": "OBJ_008",
+      "name": "노이즈 무늬 옷",
+      "description": "프리든 4번 방에 있는 화자의 유일한 짐인 '그 옷'",
+      "first_appearance_event_id": "EVENT_S01_1",
+      "source_text": "짐이라곤 그 옷 하나뿐이라",
+      "certainty": "inferred"
+    }
+  ],
+  "times": [
+    {
+      "time_id": "NEW:프리든_4번_방_정리_당일",
+      "expression": "프리든 4번 방 정리를 마친 날",
+      "description": "화자가 배정된 방의 짐 정리를 끝내고 이전 사용자의 노트를 살펴본 뒤 접속을 종료하기로 한 날",
+      "timeline": "future_world",
+      "source_text": "오늘은 여기까지만 보고 접속을 종료하기로 했다.",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S01_1",
+      "scene_id": "scene_01",
+      "order": 1,
+      "title": "프리든 4번 방 정리와 이전 사용자의 노트 발견",
+      "summary": "화자는 프리든 4번 방의 짐 정리를 금방 끝내고, 책장에 남은 이전 사용자의 낡은 노트 한 권을 꺼내 첫 장을 넘긴다. 알아볼 수 없는 기호와 숫자뿐이라 알라인에게 보여줄 생각을 하고, 오늘은 여기까지만 보고 접속을 종료하기로 한다.",
+      "location_id": "LOC_011",
+      "time_id": "NEW:프리든_4번_방_정리_당일",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["NEW:이전_사용자의_낡은_노트", "OBJ_008"],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "from": "unknown",
+          "to": "NEW:이전_사용자의_낡은_노트",
+          "op": "add",
+          "volatility": "transient",
+          "decays_to": "unknown",
+          "certainty": "explicit",
+          "source_text": "먼지를 후 불어내고 한 권을 꺼내 첫 장을 넘겼다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "from": "unknown",
+          "to": "프리든 4번 방 책장에 이전 사용자가 남긴, 알아볼 수 없는 기호와 숫자가 적힌 낡은 노트들이 있음",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "책장에 빼곡히 꽂힌 낡은 노트들. / 알아볼 수 없는 기호와 숫자의 나열."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "OBJ_008 (프리든 4번 방에 있는 유일한 짐인 '그 옷')",
+          "source_text": "프리든 4번 방에 짐이라곤 그 옷 하나뿐이라, 정리는 금방 끝났다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "프리든 4번 방에 이전 사용자가 있었고 지금은 그 주인이 부재중임",
+          "source_text": "주인 없는 방에 남은 물건이니까, 뭐."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "알라인(CHAR_007)을 이미 알고 있으며, 노트를 보여주러 접촉할 수 있는 사이임",
+          "source_text": "\"이건... 알라인한테 보여주면 알려나.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "미래 세계 접속을 스스로 종료하는 방법을 알고 있음",
+          "source_text": "오늘은 여기까지만 보고 접속을 종료하기로 했다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "책장의 노트를 꺼내 넘기고 먼지를 불어낼 수 있는 신체 (양손 사용 및 입김을 부는 동작 가능)",
+          "source_text": "먼지를 후 불어내고 한 권을 꺼내 첫 장을 넘겼다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "노트에 적힌 기호·숫자 체계를 해독하지 못함",
+          "source_text": "알아볼 수 없는 기호와 숫자의 나열. / 문과의 눈으로는 답이 없는 종류다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "자신의 판단으로 접속을 중단·종료할 수 있음",
+          "source_text": "오늘은 여기까지만 보고 접속을 종료하기로 했다."
+        },
+        {
+          "entity": "NEW:프리든_4번_방_이전_사용자",
+          "field": "ability",
+          "assumes": "기호와 숫자로 이루어진 기록 체계를 사용해 노트를 작성할 수 있는 지식",
+          "source_text": "책장에 빼곡히 꽂힌 낡은 노트들. / 알아볼 수 없는 기호와 숫자의 나열."
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "프리든 4번 방에 이전 사용자가 남긴 낡은 노트들이 있으며, 그 내용이 해독 불가한 기호와 숫자의 나열임",
+          "via": "direct",
+          "retained": true,
+          "source_text": "먼지를 후 불어내고 한 권을 꺼내 첫 장을 넘겼다. / 알아볼 수 없는 기호와 숫자의 나열."
+        }
+      ],
+      "cause": "프리든 4번 방에 배정되어 짐을 정리하던 중 이전 사용자의 흔적인 노트들을 발견함",
+      "result": "노트의 내용을 해독하지 못해 알라인에게 보여줄 것을 떠올리고, 그날의 접속을 종료하기로 결정함",
+      "source_text": "프리든 4번 방에 짐이라곤 그 옷 하나뿐이라, 정리는 금방 끝났다. … 오늘은 여기까지만 보고 접속을 종료하기로 했다.",
+      "certainty": "explicit"
+    }
+  ]
+}

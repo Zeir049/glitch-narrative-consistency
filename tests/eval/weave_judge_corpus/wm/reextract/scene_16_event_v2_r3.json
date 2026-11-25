@@ -1,0 +1,172 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 3,
+  "batch_id": "T2-R3-B",
+  "scene_id": "scene_16",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_16.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r2)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T13:25:16Z",
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:현실_신상_비공유",
+      "content": "플레이어의 현실 세계 신상(모니터 이쪽의 이야기)은 이 세계의 누구에게도 말해진 적이 없다.",
+      "description": "플레이어가 접속하는 미래 세계의 인물들은 플레이어의 현실 측 정보를 전달받은 적이 없다고 화자가 서술한다.",
+      "source_text": "이 세계의 누구에게도 말한 적 없는, 모니터 이쪽의 이야기였다.",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "미래 세계에 접속해 병실 복도를 지나던 중 슐라우에게 자신의 현실 신상을 지적당한 인물.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S16_1",
+      "source_text": "병실 복도를 지나는데, 안쪽에서 목소리가 들렸다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_006",
+      "name": "슐라우 프로비에렌",
+      "aliases": ["슐라우"],
+      "entity_type": "person",
+      "description": "병실에서 깨어 있던 상태로 플레이어를 거부하며, 플레이어의 현실 신상을 언급한 인물.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S16_1",
+      "source_text": "슐라우가 깨어 있었다. 나를 발견한 그는 침상 끝으로 물러나며 낮게 내뱉었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_013",
+      "name": "헤일트라움 병실",
+      "description": "슐라우가 누워 있는 병실과 그 앞 복도.",
+      "source_text": "병실 복도를 지나는데, 안쪽에서 목소리가 들렸다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S16_1",
+      "scene_id": "scene_16",
+      "order": 1,
+      "title": "깨어난 슐라우가 플레이어의 현실 신상을 말하다",
+      "summary": "병실 복도를 지나던 플레이어를 깨어 있던 슐라우가 발견하고, 침상 끝으로 물러나며 '목요일마다 강의도 없는 한가한 대학생'이라고 플레이어의 현실 측 신상을 언급한다. 플레이어가 어떻게 아느냐고 묻자 슐라우는 대답 없이 이불을 뒤집어쓴다.",
+      "location_id": "LOC_013",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002", "CHAR_006"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_006",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "CHAR_006",
+          "field": "alive",
+          "from": "unconscious",
+          "to": "true",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "inferred",
+          "certainty_reason": "'깨어 있었다'는 각성 상태를 명시하나, 직전 값(unconscious)은 원문에 없는 정황 추정이다.",
+          "source_text": "슐라우가 깨어 있었다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "from": "unknown",
+          "to": "슐라우가 플레이어의 현실 신상(목요일 공강 대학생)을 알고 있음",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "목요일마다 강의도 없다면서. 한가한 대학생이, 왜 이런 짓까지 하는 건데."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_006",
+          "field": "knows",
+          "assumes": "플레이어(알파)가 현실에서 목요일에 강의가 없는 대학생이라는 신상 정보",
+          "source_text": "목요일마다 강의도 없다면서. 한가한 대학생이"
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "knows",
+          "assumes": "알파가 이 세계 바깥(모니터 이쪽)의 존재이며 별도의 현실 생활을 가진다는 것",
+          "source_text": "한가한 대학생이, 왜 이런 짓까지 하는 건데."
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "assumes": "침상 위에서 스스로 물러나고 이불을 끌어올릴 만큼 상반신 거동이 가능한 상태",
+          "source_text": "침상 끝으로 물러나며 / 슐라우는 대답 대신 이불을 뒤집어썼다."
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "ability",
+          "assumes": "의식이 명료하여 상대를 알아보고 발화할 수 있음",
+          "source_text": "나를 발견한 그는 침상 끝으로 물러나며 낮게 내뱉었다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "자신의 현실 신상(목요일 공강·대학생)을 이 세계의 누구에게도 말한 적이 없다는 사실",
+          "source_text": "이 세계의 누구에게도 말한 적 없는, 모니터 이쪽의 이야기였다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "not_knows: 슐라우가 자신의 현실 신상을 알게 된 경위",
+          "source_text": "\"너, 그걸 어떻게...\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "미래 세계의 신체(알파)로 병실 복도를 걸어 이동하는 중",
+          "source_text": "병실 복도를 지나는데, 안쪽에서 목소리가 들렸다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "미래 세계에서 음성으로 상대와 대화할 수 있음",
+          "source_text": "\"......뭐?\""
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우가 플레이어의 현실 측 신상(목요일 공강인 대학생)을 알고 있다",
+          "via": "direct",
+          "retained": true,
+          "source_text": "목요일마다 강의도 없다면서. 한가한 대학생이, 왜 이런 짓까지 하는 건데."
+        }
+      ],
+      "cause": "병실 복도를 지나던 플레이어를 깨어 있던 슐라우가 발견했다.",
+      "result": "플레이어는 자신의 현실 신상이 이 세계 인물에게 알려져 있음을 알게 되고, 슐라우는 이불을 뒤집어쓰며 대답을 거부했다.",
+      "source_text": "병실 복도를 지나는데, 안쪽에서 목소리가 들렸다. 슐라우가 깨어 있었다. ... \"오지 마. ......목요일마다 강의도 없다면서. 한가한 대학생이, 왜 이런 짓까지 하는 건데.\" ... 슐라우는 대답 대신 이불을 뒤집어썼다.",
+      "certainty": "explicit"
+    }
+  ]
+}

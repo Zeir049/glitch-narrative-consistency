@@ -1,0 +1,251 @@
+{
+  "schema_version": 2,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 3,
+  "batch_id": "T2-R3-B",
+  "scene_id": "scene_12",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_12.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r2)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T13:26:19Z",
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "폭발 사건의 수사 방향을 정리해 클라인에게 보고하는 화자.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S12_1",
+      "source_text": "수사 방향을 정리해 클라인에게 보고하던 중이었다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_001",
+      "name": "클라인 브루더 (Klein Bruder)",
+      "aliases": ["클라인"],
+      "entity_type": "person",
+      "description": "화자의 보고를 받는 상대. 폭발 사건을 처음 듣는다고 말한다.",
+      "traits": [
+        {
+          "trait": "'금시초문이군요', '허어...' 같은 격식 있는 존댓말과 감탄사를 쓰는 말투",
+          "trait_type": "speech",
+          "source_text": "헤일트라움에서 그런 일이 있었습니까? 금시초문이군요.",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S12_1",
+      "source_text": "\"잠깐만요. 폭발이라니요? 헤일트라움에서 그런 일이 있었습니까? 금시초문이군요.\"",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_002",
+      "name": "플레이어의 집",
+      "description": "통화를 마친 화자가 헤드셋을 벗고 천장을 올려다본 실내. 원문은 장소명을 명시하지 않는다.",
+      "source_text": "나는 헤드셋을 벗고 잠시 천장을 올려다보았다.",
+      "certainty": "inferred"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "NEW:헤드셋",
+      "name": "헤드셋",
+      "description": "화자가 통화 중 착용하고 있다가 대화가 끝난 뒤 벗은 기기.",
+      "first_appearance_event_id": "EVENT_S12_2",
+      "source_text": "나는 헤드셋을 벗고",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S12_1",
+      "scene_id": "scene_12",
+      "order": 1,
+      "title": "수사 보고 중 클라인이 폭발 사건을 금시초문이라 답함",
+      "summary": "화자가 폭발 사건 범인의 동선을 보급소 기록과 교차 확인하자고 클라인에게 보고하던 중, 클라인이 헤일트라움 폭발 자체를 처음 듣는다고 답한다. 화자가 창고 벽 파손과 자기 로봇 고장을 언급하자 클라인은 '그런 일이 있었군요'라며 놀란 기색을 보인다.",
+      "location_id": "unknown",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002", "CHAR_001"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "CHAR_001",
+          "field": "knows",
+          "from": "unknown",
+          "to": "헤일트라움 폭발 사건 발생",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "\"허어... 그런 일이 있었군요. 처음 듣는 이야기입니다.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "from": "unknown",
+          "to": "클라인이 폭발 사건을 모르고 있다는 사실",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "\"잠깐만요. 폭발이라니요? ... 금시초문이군요.\""
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "폭발 사건이 발생했고 그에 대한 수사가 진행 중이라는 사실",
+          "source_text": "수사 방향을 정리해 클라인에게 보고하던 중이었다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "폭발 사건 범인 쪽 동선 정보와 보급소 기록의 존재",
+          "source_text": "\"...그래서, 폭발 사건의 범인 쪽 동선은 보급소 기록이랑 교차 확인하는 게 좋을 것 같아요.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "창고 벽이 뚫린 것과 자신의 로봇이 고장 난 것을 이미 알고 있음",
+          "source_text": "\"아니, 그... 창고 벽이 뚫리고, 제 로봇도 고장 났었잖아요.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "클라인도 폭발 사건과 로봇 고장을 이미 알고 있다고 전제함 ('-잖아요'는 상대의 기지(旣知)를 전제하는 확인 어미)",
+          "source_text": "\"제 로봇도 고장 났었잖아요.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "자신의 신체와는 별개로 '제 로봇'이라 부르는 로봇 신체를 보유하고 있으며, 그 로봇이 고장 났던 상태",
+          "source_text": "\"제 로봇도 고장 났었잖아요.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "통신 수단을 통해 원거리의 클라인과 음성 대화가 가능함",
+          "source_text": "수화기 너머의 목소리는 진심으로 놀란 기색이었다."
+        },
+        {
+          "entity": "CHAR_001",
+          "field": "knows",
+          "assumes": "not_knows: 헤일트라움 폭발 사건 발생",
+          "source_text": "\"헤일트라움에서 그런 일이 있었습니까? 금시초문이군요.\""
+        },
+        {
+          "entity": "CHAR_001",
+          "field": "knows",
+          "assumes": "not_knows: 창고 벽 파손과 알파의 로봇 고장",
+          "source_text": "\"허어... 그런 일이 있었군요. 처음 듣는 이야기입니다.\""
+        },
+        {
+          "entity": "CHAR_001",
+          "field": "knows",
+          "assumes": "알파가 사건을 수사 중이며 자신이 그 보고를 받는 관계에 있음",
+          "source_text": "수사 방향을 정리해 클라인에게 보고하던 중이었다."
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S12_2",
+          "assumes": "이 통화 내내 화자는 EVENT_S12_2에서 벗게 되는 헤드셋을 착용한 채였고, 통화 종료 직후가 EVENT_S12_2 시점이다",
+          "source_text": "수화기 너머의 목소리는 진심으로 놀란 기색이었다. / 나는 헤드셋을 벗고 잠시 천장을 올려다보았다."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_001",
+          "info": "헤일트라움에서 폭발이 일어나 창고 벽이 뚫리고 알파의 로봇이 고장 났다는 사실",
+          "via": "told",
+          "retained": true,
+          "source_text": "\"허어... 그런 일이 있었군요. 처음 듣는 이야기입니다.\""
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "클라인이 폭발 사건을 전혀 모르고 있다는 사실",
+          "via": "told",
+          "retained": true,
+          "source_text": "\"잠깐만요. 폭발이라니요? 헤일트라움에서 그런 일이 있었습니까? 금시초문이군요.\""
+        }
+      ],
+      "cause": "화자가 폭발 사건 수사 방향을 정리해 클라인에게 보고했다.",
+      "result": "클라인이 폭발 사건 자체를 처음 듣는다고 답했고, 화자는 되묻는다.",
+      "source_text": "수사 방향을 정리해 클라인에게 보고하던 중이었다. ... \"허어... 그런 일이 있었군요. 처음 듣는 이야기입니다.\"",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_S12_2",
+      "scene_id": "scene_12",
+      "order": 2,
+      "title": "통화 후 헤드셋을 벗고 천장을 올려다봄",
+      "summary": "대화가 끝난 뒤 화자는 헤드셋을 벗고 잠시 천장을 올려다본다.",
+      "location_id": "LOC_002",
+      "time_id": "unknown",
+      "timeline": "real_present",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["NEW:헤드셋"],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "from": "헤드셋을 착용한 상태",
+          "to": "헤드셋을 벗은 상태",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "나는 헤드셋을 벗고 잠시 천장을 올려다보았다."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "NEW:헤드셋 (직전까지 착용 중이던 기기)",
+          "source_text": "나는 헤드셋을 벗고"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "헤드셋을 쓰고 벗을 수 있고 천장을 올려다볼 수 있는, 실내에 있는 신체 상태",
+          "source_text": "나는 헤드셋을 벗고 잠시 천장을 올려다보았다."
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S12_1",
+          "assumes": "EVENT_S12_1의 통화가 이 헤드셋을 통해 이루어졌고, 두 사건 사이에 시간 경과나 장소 이동이 없다",
+          "source_text": "수화기 너머의 목소리는 진심으로 놀란 기색이었다. / 나는 헤드셋을 벗고 잠시 천장을 올려다보았다."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "클라인이 폭발 사건을 모른다고 답해 대화가 끊겼다.",
+      "result": "화자가 헤드셋을 벗고 천장을 올려다본다.",
+      "source_text": "나는 헤드셋을 벗고 잠시 천장을 올려다보았다.",
+      "certainty": "explicit"
+    }
+  ]
+}

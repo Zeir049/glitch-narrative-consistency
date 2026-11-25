@@ -1,0 +1,146 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:5월 18일 오전",
+   "expression": "5월 18일 오전",
+   "description": "외출 승인 및 연료 저장고 이동 시각",
+   "timeline": "main",
+   "source_text": "5월 18일 오전, 외출을 승인한 서율은 카림과 2인 1조로 방한복을 입고 주 모듈 계단 아래의 설상차에 올랐다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "외출 승인 및 연료 저장고 이동",
+   "summary": "서율이 외출을 승인하고 카림과 함께 설상차를 타고 연료 저장고로 이동한다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:5월 18일 오전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_010"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_002",
+     "to": "LOC_020",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "외출을 승인한 서율은 카림과 2인 1조로 방한복을 입고 주 모듈 계단 아래의 설상차에 올랐다. ... 설상차가 눈 위를 달려 저장고 앞에 멈춰 섰다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_002",
+     "to": "LOC_020",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "외출을 승인한 서율은 카림과 2인 1조로 방한복을 입고 주 모듈 계단 아래의 설상차에 올랐다. ... 설상차가 눈 위를 달려 저장고 앞에 멈춰 섰다."
+    },
+    {
+     "entity": "OBJ_010",
+     "field": "location",
+     "from": "LOC_002",
+     "to": "LOC_020",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "보름 전 5월 3일 외출 때도 이 차로 다녀왔듯 두 사람은 설상차를 몰아 40미터 떨어진 연료 저장고로 향했다. ... 설상차가 눈 위를 달려 저장고 앞에 멈춰 섰다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_010 (설상차 탑승)",
+     "source_text": "외출을 승인한 서율은 카림과 2인 1조로 방한복을 입고 주 모듈 계단 아래의 설상차에 올랐다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_010 (설상차 운전)",
+     "source_text": "카림이 익숙한 손놀림으로 시동을 걸고 운전대를 잡았다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "설상차 운전 숙련",
+     "source_text": "카림이 익숙한 손놀림으로 시동을 걸고 운전대를 잡았다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "T-2 탱크 배관 상태 점검 필요, 외부 배관 연결부 하루 171리터 송출 확인 필요",
+     "source_text": "\"기지장님, 도착하면 T-2 탱크 배관 상태부터 볼게요.\" \"그래. 하루 171리터씩 보내는 외부 배관 연결부도 같이 확인해.\""
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "T-2 탱크 배관 상태 점검 필요, 외부 배관 연결부 하루 171리터 송출 확인 필요",
+     "source_text": "\"기지장님, 도착하면 T-2 탱크 배관 상태부터 볼게요.\" \"그래. 하루 171리터씩 보내는 외부 배관 연결부도 같이 확인해.\""
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "카림이 설상차 운전에 익숙함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "카림이 익숙한 손놀림으로 시동을 걸고 운전대를 잡았다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "보름 전(5월 3일)에도 이 설상차로 연료 저장고에 다녀옴",
+     "via": "direct",
+     "retained": true,
+     "source_text": "보름 전 5월 3일 외출 때도 이 차로 다녀왔듯 두 사람은 설상차를 몰아 40미터 떨어진 연료 저장고로 향했다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "T-2 탱크 배관 상태 점검 예정, 외부 배관 연결부 하루 171리터 송출 확인 예정",
+     "via": "direct",
+     "retained": true,
+     "source_text": "\"기지장님, 도착하면 T-2 탱크 배관 상태부터 볼게요.\" \"그래. 하루 171리터씩 보내는 외부 배관 연결부도 같이 확인해.\""
+    }
+   ],
+   "cause": "연료 저장고 T-2 탱크 배관 상태 및 외부 배관 연결부 점검을 위해 외출 승인 후 이동",
+   "result": "설상차로 연료 저장고 도착, 점검 준비 완료",
+   "source_text": "5월 18일 오전, 외출을 승인한 서율은 카림과 2인 1조로 방한복을 입고 주 모듈 계단 아래의 설상차에 올랐다. 카림이 익숙한 손놀림으로 시동을 걸고 운전대를 잡았다. 보름 전 5월 3일 외출 때도 이 차로 다녀왔듯 두 사람은 설상차를 몰아 40미터 떨어진 연료 저장고로 향했다. \"기지장님, 도착하면 T-2 탱크 배관 상태부터 볼게요.\" \"그래. 하루 171리터씩 보내는 외부 배관 연결부도 같이 확인해.\" 설상차가 눈 위를 달려 저장고 앞에 멈춰 섰다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T10:06:44Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 87.23
+ }
+}

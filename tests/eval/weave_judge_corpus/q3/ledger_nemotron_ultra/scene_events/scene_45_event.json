@@ -1,0 +1,90 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "이중문 안쪽 벽의 외출 목록 확인",
+   "summary": "서율이 이중문 안쪽 벽에 적힌 외출 장비 목록과 규칙(2인 1조, 기지장 승인)을 확인하고, 자신이 기지장이자 나가는 사람일 때의 승인 모순을 떠올린다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_012",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "외출 장비 목록(삼중 장갑, 안면 마스크, 고글, 헤드램프, 로프, 무전기 채널 3)과 규칙(2인 1조, 기지장 승인) 내용",
+     "source_text": "서율은 이중문 안쪽 벽의 목록을 손끝으로 짚어 내려갔다. 삼중 장갑, 안면 마스크, 고글, 헤드램프, 로프, 무전기 채널 3. 그 아래 두 줄이 더 있었다. 2인 1조. 기지장 승인."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "기지장이 나가는 사람일 때 승인 절차에 모순이 생김을 인지함",
+     "source_text": "승인하는 사람이 나가는 사람일 때는 어떻게 되는가."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "5월 3일에는 그 모순을 질문하지 않았음",
+     "source_text": "5월 3일에는 그 질문을 하지 않았다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "방한복 (첫 번째 문에 걸려 있음)",
+     "source_text": "서율은 목록에서 손을 떼고 첫 번째 문에 걸린 방한복을 보았다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "오늘은 외출할 일이 없음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "오늘은 나갈 일이 없었다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "나갈 일이 없는 날이 좋은 날이라는 판단",
+     "via": "inference",
+     "retained": true,
+     "source_text": "나갈 일이 없는 날이 좋은 날이었다."
+    }
+   ],
+   "cause": "기지장으로서 외출 절차와 장비 상태를 점검함",
+   "result": "외출 목록과 규칙을 확인하고, 오늘은 외출 없음을 확인함",
+   "source_text": "서율은 이중문 안쪽 벽의 목록을 손끝으로 짚어 내려갔다. 삼중 장갑, 안면 마스크, 고글, 헤드램프, 로프, 무전기 채널 3. 그 아래 두 줄이 더 있었다. 2인 1조. 기지장 승인. 승인하는 사람이 나가는 사람일 때는 어떻게 되는가. 5월 3일에는 그 질문을 하지 않았다. 서율은 목록에서 손을 떼고 첫 번째 문에 걸린 방한복을 보았다. 오늘은 나갈 일이 없었다. 나갈 일이 없는 날이 좋은 날이었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:58:38Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 55.83
+ }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [
+    {
+      "rule_id": "RULE_007",
+      "content": "상점에서 돈도 직원도 없이 신청한 만큼 물자를 받아 간다 (재확인)",
+      "description": "무료 보급 체계가 정상 작동하는 모습이 재차 목격됨.",
+      "source_text": "돈도, 직원도 없이. 신청하고, 받아 가고, 끝.",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [
+    {
+      "time_id": "NEW:공강일_낮",
+      "expression": "공강일 낮",
+      "description": "알파가 수사를 쉬고 산책한 날.",
+      "timeline": "future_world",
+      "source_text": "공강을 맞아 낮부터 접속했다.",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S05_1",
+      "order": 1,
+      "title": "1번가 무료 보급 풍경 관찰",
+      "summary": "공강일 낮에 접속한 알파가 1번가 상점에서 사람들이 대가 없이 필요한 만큼 물건을 받아 가는 풍경을 관찰한다. 아이가 로봇인 알파에게 인사한다.",
+      "location_id": "LOC_006",
+      "time_id": "NEW:공강일_낮",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "로봇 신체 (아이가 로봇으로 인식, 관절 소리)",
+          "source_text": "로봇인 나를 보고 꾸벅 인사를 했다. ... 관절이 삐걱, 소리를 냈다."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "휴일 산책",
+      "result": "평화로운 일상 확인",
+      "source_text": "돈도, 직원도 없이. 신청하고, 받아 가고, 끝.",
+      "certainty": "explicit"
+    }
+  ]
+}

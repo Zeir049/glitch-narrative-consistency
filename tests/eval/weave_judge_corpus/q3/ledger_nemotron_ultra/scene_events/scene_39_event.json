@@ -1,0 +1,90 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "서율, 도현이 넘긴 격벽 출입 기록 열람",
+   "summary": "서율이 태블릿에서 3월 18~25일 격벽 출입 기록을 확인한다. 카림의 출입이 다수이고, 서율·마르타·도현의 기록도 있으나 가온의 이름은 없다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_011"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "3월 18~25일 격벽 출입 기록 내용(카림 다수, 서율·마르타·도현 기록 있음, 가온 없음)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율은 태블릿에서 파일을 열었다. 4월 20일에 도현이 옮겨 준 목록이었다. 3월 18일부터 25일까지. 카림의 카드가 대부분이었다. 하루에 여섯 번, 일곱 번. 그 사이에 다른 이름이 있었다. 3월 21일 14시 05분, 한서율. 3월 22일 10시 40분, 마르타 레인. 3월 23일과 24일, 윤도현. 가온의 이름은 없었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_011 (태블릿)",
+     "source_text": "서율은 태블릿에서 파일을 열었다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "도현이 4월 20일에 격벽 출입 기록 파일을 넘겨주었다",
+     "source_text": "4월 20일에 도현이 옮겨 준 목록이었다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "태블릿으로 파일 열람 가능",
+     "source_text": "서율은 태블릿에서 파일을 열었다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "3월 18~25일 격벽 출입 기록: 카림 다수 출입, 서율(3/21 14:05), 마르타(3/22 10:40), 도현(3/23~24) 기록 존재, 가온 기록 없음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "서율은 태블릿에서 파일을 열었다. 4월 20일에 도현이 옮겨 준 목록이었다. 3월 18일부터 25일까지. 카림의 카드가 대부분이었다. 하루에 여섯 번, 일곱 번. 그 사이에 다른 이름이 있었다. 3월 21일 14시 05분, 한서율. 3월 22일 10시 40분, 마르타 레인. 3월 23일과 24일, 윤도현. 가온의 이름은 없었다."
+    }
+   ],
+   "cause": "도현이 4월 20일 넘긴 격벽 출입 기록 파일을 서율이 확인함",
+   "result": "서율이 해당 기간 출입 내역을 인지함(가온 기록 부재 확인 포함)",
+   "source_text": "서율은 태블릿에서 파일을 열었다. 4월 20일에 도현이 옮겨 준 목록이었다. 3월 18일부터 25일까지. 카림의 카드가 대부분이었다. 하루에 여섯 번, 일곱 번. 그 사이에 다른 이름이 있었다. 3월 21일 14시 05분, 한서율. 3월 22일 10시 40분, 마르타 레인. 3월 23일과 24일, 윤도현. 가온의 이름은 없었다. 서율은 목록을 닫았다가 다시 열었다. 세 번째였다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:56:49Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 38.78
+ }
+}

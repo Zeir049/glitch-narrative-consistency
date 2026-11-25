@@ -1,0 +1,264 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:보스콤_못_유치장_출소_당일_아침",
+   "expression": "보스콤 못 사건 직후 그날 아침",
+   "description": "세인트클레어가 유치장을 나서던 시각",
+   "timeline": "main",
+   "source_text": "세인트클레어는 유치장을 나서며 옷깃을 여몄다.",
+   "certainty": "inferred"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "세인트클레어의 유치장 출소",
+   "summary": "세인트클레어가 보스콤 못 유치장을 나서며 왓슨에게 이제 다시 시작해도 되겠다고 말한다.",
+   "location_id": "LOC_033",
+   "time_id": "NEW:보스콤_못_유치장_출소_당일_아침",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_019"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_019",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_019",
+     "field": "location",
+     "from": "LOC_033",
+     "to": "LOC_030",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "세인트클레어는 유치장을 나서며"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "from": "unknown",
+     "to": "not_knows: 추가 조건 (이제 조건이 없음)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "이제 아무 조건도 없으니"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "from": "unknown",
+     "to": "경찰의 사건 종결 보장",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "경찰이 덮어 준다고 했으니 그것으로 끝난 것 아닙니까."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_019",
+     "field": "body_status",
+     "assumes": "옷깃을 여밀 수 있는 신체의 기능 (치안기관 수속 후 통상 상태로 풀려남)",
+     "source_text": "세인트클레어는 유치장을 나서며 옷깃을 여몄다."
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "assumes": "브래드스트리트가 유치장 자리에서 했던 말의 내용",
+     "source_text": "브래드스트리트는 바로 그 자리에서 다른 말을 했었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "브래드스트리트가 바로 그 자리에서 다른 말을 했었다는 사실 (지목 인물의 동일성 인식)",
+     "source_text": "브래드스트리트는 바로 그 자리에서 다른 말을 했었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_019",
+     "info": "아무 조건 없이 다시 시작해도 된다는 점",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이제 아무 조건도 없으니 다시 시작해도 되겠지요."
+    },
+    {
+     "character_id": "CHAR_019",
+     "info": "경찰이 사건을 덮어 주기로 했고, 그로써 사건이 종결되었다는 점",
+     "via": "direct",
+     "retained": true,
+     "source_text": "경찰이 덮어 준다고 했으니 그것으로 끝난 것 아닙니까."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "세인트클레어가 더 이상 묶이는 조건이 없다고 판단한다는 점",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이제 아무 조건도 없으니 다시 시작해도 되겠지요."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "세인트클레어 사건이 경찰의 보장에 의해 종결되었다는 세인트클레어의 인식",
+     "via": "direct",
+     "retained": true,
+     "source_text": "경찰이 덮어 준다고 했으니 그것으로 끝난 것 아닙니까."
+    }
+   ],
+   "cause": "보스콤 못 사건(CHAR_019이 헛간에서 발견되었던 일련의 과정) 후속으로, 세인트클레어가 유치장에서 풀려남",
+   "result": "세인트클레어가 거리로 나서며 왓슨에게 사건 종결·재개의사를 밝힘",
+   "source_text": "세인트클레어는 유치장을 나서며 옷깃을 여몄다. \"이제 아무 조건도 없으니 다시 시작해도 되겠지요.\" 그가 말했다. \"경찰이 덮어 준다고 했으니 그것으로 끝난 것 아닙니까.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "브래드스트리트의 말 회상",
+   "summary": "왓슨은 세인트클레어의 발언을 듣고, 같은 자리에서 브래드스트리트가 했던 다른 말을 떠올린다.",
+   "location_id": "LOC_033",
+   "time_id": "NEW:보스콤_못_유치장_출소_당일_아침",
+   "timeline": "main",
+   "reality_status": "memory",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "브래드스트리트가 유치장 자리에서 어떤 다른 말을 했었다는 사실",
+     "source_text": "브래드스트리트는 바로 그 자리에서 다른 말을 했었다."
+    },
+    {
+     "entity": "CHAR_023",
+     "field": "knows",
+     "assumes": "사건에 관해 왓슨에게 직접 알린 내용이 있다",
+     "source_text": "브래드스트리트는 바로 그 자리에서 다른 말을 했었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "브래드스트리트가 '바로 그 자리'에서 말한 시점은 세인트클레어가 유치장을 나서기 전, 같은 유치장 위치(LOC_033)에서의 일이다",
+     "source_text": "브래드스트리트는 바로 그 자리에서 다른 말을 했었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "브래드스트리트가 같은 유치장 자리에서 다른 말을 했었다는 사실 (그 구체적 내용은 미회수)",
+     "via": "memory",
+     "retained": true,
+     "source_text": "브래드스트리트는 바로 그 자리에서 다른 말을 했었다."
+    }
+   ],
+   "cause": "세인트클레어의 '아무 조건도 없다'는 발언",
+   "result": "왓슨이 브래드스트리트의 다른 발언을 떠올림",
+   "source_text": "왓슨은 그를 돌아보았다. 브래드스트리트는 바로 그 자리에서 다른 말을 했었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_3",
+   "scene_id": "scene_6_1",
+   "order": 3,
+   "title": "유치장 밖 거리로 나온 세인트클레어와 왓슨",
+   "summary": "세인트클레어는 개의치 않는 얼굴로 거리를 내다보고, 왓슨이 그를 돌아본다. 아침 햇살이 돌바닥에 깔리고 마차 한 대가 모퉁이를 돌아 들어온다.",
+   "location_id": "LOC_030",
+   "time_id": "NEW:보스콤_못_유치장_출소_당일_아침",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_019",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_019",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_019",
+     "field": "body_status",
+     "from": "unknown",
+     "to": "거리로 나와 마차를 기다리는 상태",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "inferred",
+     "source_text": "세인트클레어는 개의치 않는 얼굴로 거리 쪽을 내다보았다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "assumes": "거리 쪽에 마차가 다가오고 있음을 인지",
+     "source_text": "마차 한 대가 모퉁이를 돌아 들어오고 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "세인트클레어를 돌아볼 수 있는 신체 기능 (서 있거나 이동 가능한 상태)",
+     "source_text": "왓슨은 그를 돌아보았다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "EVENT_6_1의 유치장 출소 직후의 연속된 같은 아침이며, 두 사건 사이에 유의미한 시간 경과가 없다",
+     "source_text": "세인트클레어는 유치장을 나서며 / 아침 햇살이 돌바닥에 길게 깔려 있었고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "세인트클레어가 개의치 않는 태도로 거리 쪽을 바라보고 있다는 점",
+     "via": "direct",
+     "retained": true,
+     "source_text": "세인트클레어는 개의치 않는 얼굴로 거리 쪽을 내다보았다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "마차 한 대가 모퉁이를 돌아 들어오고 있다는 점",
+     "via": "direct",
+     "retained": true,
+     "source_text": "마차 한 대가 모퉁이를 돌아 들어오고 있었다."
+    }
+   ],
+   "cause": "EVENT_6_1의 유치장 출소에 이어 같은 아침 거리에 나옴",
+   "result": "세인트클레어와 왓슨이 거리에서 마치려는 상황으로 이어짐",
+   "source_text": "세인트클레어는 개의치 않는 얼굴로 거리 쪽을 내다보았다. 아침 햇살이 돌바닥에 길게 깔려 있었고, 마차 한 대가 모퉁이를 돌아 들어오고 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-31T06:35:27Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 42.71
+ }
+}

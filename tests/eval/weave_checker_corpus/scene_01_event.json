@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [
+    {
+      "object_id": "NEW:이전_사용자의_노트들",
+      "name": "이전 사용자의 노트들",
+      "description": "4번 방 책장에 꽂힌 낡은 노트. 알아볼 수 없는 기호와 숫자가 적혀 있다.",
+      "first_appearance_event_id": "EVENT_S01_1",
+      "source_text": "책장에 빼곡히 꽂힌 낡은 노트들.",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S01_1",
+      "order": 1,
+      "title": "4번 방에서 이전 사용자의 노트 발견",
+      "summary": "알파가 4번 방 정리를 마치고 책장의 낡은 노트를 꺼내 살펴본다. 알아볼 수 없는 기호와 숫자뿐이라 알라인에게 보여줄 생각을 하고 접속을 종료한다.",
+      "location_id": "LOC_011",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [
+        "NEW:이전_사용자의_노트들"
+      ],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "NEW:이전_사용자의_노트들 (꺼내어 살펴봄)",
+          "source_text": "먼지를 후 불어내고 한 권을 꺼내 첫 장을 넘겼다."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "이전 사용자의 노트에 해독 불가능한 기호·숫자가 적혀 있음",
+          "via": "direct",
+          "source_text": "알아볼 수 없는 기호와 숫자의 나열."
+        }
+      ],
+      "cause": "방 정리 중 이전 사용자의 흔적 발견",
+      "result": "알라인에게 보여줄 계획, 접속 종료",
+      "source_text": "책장에 빼곡히 꽂힌 낡은 노트들.",
+      "certainty": "explicit"
+    }
+  ]
+}

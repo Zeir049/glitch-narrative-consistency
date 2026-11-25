@@ -1,0 +1,1430 @@
+{
+ "schema_version": 2,
+ "episode": 4,
+ "worldview_rules": [
+  {
+   "rule_id": "NEW:전력_등급_규정_12조",
+   "content": "전력 등급 2에서는 연구 장비 회로 차단, 장비 회로에 손대면 그날로 전력 차단",
+   "description": "기지장 서율이 가온에게 경고한 규정. 전력 등급 2 시 연구 장비 우선 차단, 무단 배선 시 전력 차단 권한 있음",
+   "source_text": "12조, 전력 등급 2, 연구 장비 차단. 그리고 기지장님이 '장비 회로에 손대면 그날로 끊는다'고 하신 것도 기억해요",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:연료_소비_계산_기준",
+   "content": "3kW 히터 + 2kW 분광계 = 일일 15리터 연료 소비",
+   "description": "가온이 계산한 관측 장비 가동 시 연료 소비량. 210일 기준 3,150리터 필요, 10월 4일 고갈 예상",
+   "source_text": "3킬로와트 히터에 분광계 2킬로와트 얹으면 하루 15리터. 210일 곱하면 3,150리터. 그러면 10월 4일에 바닥나요",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:서버_가동_시간_제한",
+   "content": "서버는 하루 4시간만 가동됨",
+   "description": "데이터 전송을 위해 서버 가동 시간이 제한되어 있어, 야간 관측 데이터는 로컬에만 저장됨",
+   "source_text": "서버는 하루 네 시간만 도니까, 보냈으면 도현이 알았을 거예요",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:수동_관측_중단_규정",
+   "content": "9월 1일부터 수동 관측 중단, 히터도 함께 끔",
+   "description": "극야 종료 후 9월 1일부터 수동 관측이 중단되며 이때 히터도 끄게 되어 있어 연료 절약 가능",
+   "source_text": "9월 1일부터 수동 관측 중단이니까 그때부턴 히터도 끄고. 그러면 맞아요",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "RULE_007",
+   "content": "기지장은 설비 담당의 격벽 관리 권한을 임시 변경할 수 있다",
+   "description": "기지장 지시로 격벽 열쇠 보관권과 개폐 시간을 변경함. 규정 3조(설비 담당 관리)를 기지장 지시로 임시 변경",
+   "source_text": "오늘부터 격벽 열쇠는 기지장이 보관한다. S-2 금고에. 격벽은 밤 21시부터 아침 07시까지 잠근다. 통로 출입은 낮에도 기지장 승인. 승인 없이 통로에 들어가면 규정 위반이야. 이건 오늘 저녁 게시판에 붙여. / 규정 3조요. 통로 격벽은 설비 담당이 관리한다. / 알아. 오늘부터 아니야. 기지장 지시로 임시 변경이야.",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "RULE_008",
+   "content": "설비실 출입 기록은 규정 3항에 따라 기지장 요청 시 마르타 입회 하에 열람한다",
+   "description": "서율이 도현에게 설비실 출입 카드 기록을 열라고 했고 마르타가 입회함",
+   "source_text": "서율은 통신실에서 도현에게 설비실 출입 카드 기록을 열라고 했다. 마르타가 입회했다. 3항에 따라서였다.",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:기지장_자문_표결_제안",
+   "content": "기지장 권한으로 구속력 없는 '자문 표결'을 도입할 수 있다. 5인 다수결로 표를 세고 기록하되 최종 결정은 기지장이 한다.",
+   "description": "마르타가 제안한 운영 회의 의결 기구화 방안. 규정 1조(기지장 최종 결정권)와 충돌하지 않는 범위에서 제안됨.",
+   "source_text": "기지장 권한으로 '자문 표결'을 도입해. 구속력 없이. 표를 세고, 그 결과를 기록하고, 그래도 기지장이 결정해.",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:극야_전_운영_합의_시한",
+   "content": "4월 28일(해가 마지막으로 뜨는 날)까지 기지 운영 방식을 합의해야 한다. 이후 극야(넉 달간 해가 안 뜸)에 들어가면 변경이 어렵다.",
+   "description": "마르타가 제시한 시한. 28일이 마지막 기회라고 못박음.",
+   "source_text": "28일까지. 28일이 마지막 해야. 그 뒤론 넉 달 동안 해가 안 떠. 극야에 들어가기 전에 이 기지가 어떻게 돌아가는지 다섯 명이 알아야 해.",
+   "certainty": "explicit"
+  }
+ ],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "OBJ_026",
+   "name": "점퍼 케이블 두 개",
+   "description": "카림의 예비품으로 S-2 상자에서 나온 배선용 점퍼 케이블. 히터 회로 계량기 앞과 장비 회로 차단기 뒤를 연결해 분광계 전력 우회에 사용",
+   "first_appearance_event_id": "EVENT_4_1",
+   "source_text": "히터 회로 계량기 앞에서 뽑아서, 장비 회로 차단기 뒤로 넣었어요. 점퍼 케이블 두 개. 제 예비품이에요. S-2에 있던 상자에서 나온 거예요",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_027",
+   "name": "카림의 노트북",
+   "description": "분광계 옆에 있는 잠기지 않은 노트북. 관측 로그 저장용. 3월 31일부터 매일 밤 관측 데이터가 로컬에 쌓임",
+   "first_appearance_event_id": "EVENT_4_1",
+   "source_text": "카림은 분광계 옆의 노트북을 열었다. 잠겨 있지 않았다. 관측 로그가 떠 있었다",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_028",
+   "name": "가온의 노트북",
+   "description": "가온이 3년간(2069, 2070, 2071년 3월 31일~4월 14일) 극야 진입기 15일치 관측 데이터를 보유한 노트북",
+   "first_appearance_event_id": "EVENT_4_2",
+   "source_text": "저는 15일치를 가졌어요. 2069년, 2070년, 그리고 2071년 3월 31일부터 4월 14일까지. 극야 진입기 15일. 그건 이제 제 노트북에 있고",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_029",
+   "name": "게시판 종이: 격벽 관리 임시 변경 (2071년 4월 15일부)",
+   "description": "격벽 열쇠 기지장 보관, 격벽 21:00~07:00 잠금, 통로 출입 기지장 승인 필요",
+   "first_appearance_event_id": "EVENT_4_7",
+   "source_text": "그날 저녁 식당 게시판에 세 번째 종이가 붙었다. 「격벽 관리 임시 변경 (2071년 4월 15일부, 기지장 한서율). 격벽 열쇠는 기지장이 보관한다. 격벽은 21:00~07:00 잠근다. 통로 출입은 기지장 승인을 받는다.」",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_030",
+   "name": "마르타의 두 번째 이의서",
+   "description": "격벽 관리 변경에 대한 이의. 설비 담당 관리 권한 박탈 근거 불충분, 기지장 통로 단독 통제는 비상시 대피 경로 위험 초래",
+   "first_appearance_event_id": "EVENT_4_7",
+   "source_text": "그날 밤 마르타의 두 번째 이의서가 그 옆에 붙었다. 「부기지장은 격벽 관리 변경에 이의를 기록한다. 사유: 설비 담당의 관리 권한 박탈은 근거가 불충분하며, 기지장의 통로 단독 통제는 비상시 대피 경로에 위험을 초래한다.」",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "TIME_048",
+   "expression": "4월 15일 07시",
+   "description": "서율과 카림이 지하 통로로 내려간 시각",
+   "timeline": "main",
+   "source_text": "4월 15일 07시. 서율과 카림은 완전 방한복을 입고 지하 통로로 내려갔다",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_053",
+   "expression": "3월 31일 23시 10분",
+   "description": "카림이 점퍼 케이블로 분광계 전력 우회를 시작한 시각",
+   "timeline": "main",
+   "source_text": "3월 31일 23시 10분부터. 매일 밤 23시부터 05시까지",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_054",
+   "expression": "4월 14일 밤",
+   "description": "노트북에 기록된 마지막 관측 데이터 날짜",
+   "timeline": "main",
+   "source_text": "4월 14일 밤의 관측 결과가 그래프로 떠 있었다",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_055",
+   "expression": "3월 26일 회의",
+   "description": "가온이 3kW 전력 요청했으나 12조 규정으로 거절된 회의",
+   "timeline": "main",
+   "source_text": "했잖아요. 26일 회의에서. 3킬로와트 달라고",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_056",
+   "expression": "4월 15일 정오",
+   "description": "관측 모듈 히터 회로 차단 시각",
+   "timeline": "main",
+   "source_text": "4월 15일 정오, 관측 모듈 히터 회로가 차단되었다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_057",
+   "expression": "4월 15일 오후",
+   "description": "서율이 카림을 설비실로 불러 격벽 열쇠를 회수한 시각",
+   "timeline": "main",
+   "source_text": "같은 날 오후, 서율은 카림을 설비실로 불렀다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_058",
+   "expression": "4월 15일 저녁",
+   "description": "게시판에 격벽 관리 임시 변경 공고와 마르타의 두 번째 이의서가 붙은 시각",
+   "timeline": "main",
+   "source_text": "그날 저녁 식당 게시판에 세 번째 종이가 붙었다. / 그날 밤 마르타의 두 번째 이의서가 그 옆에 붙었다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_009",
+   "expression": "4월 20일",
+   "description": "서율이 통신실에서 도현에게 설비실 출입 카드 기록을 열람한 날",
+   "timeline": "main",
+   "source_text": "4월 20일. 서율은 통신실에서 도현에게 설비실 출입 카드 기록을 열라고 했다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_059",
+   "expression": "3월 18일~3월 25일",
+   "description": "설비실 출입 기록 조회 기간",
+   "timeline": "main",
+   "source_text": "기간은요. / 3월 18일부터 3월 25일까지.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_060",
+   "expression": "3월 21일 14시 05분",
+   "description": "서율(마스터 카드)이 설비실 출입한 시각 - 예비 부품 목록 점검",
+   "timeline": "main",
+   "source_text": "3월 21일 14시 05분, 한서율. 마스터 카드. 예비 부품 목록 점검이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_061",
+   "expression": "3월 22일 10시 40분",
+   "description": "마르타 레인이 설비실 출입한 시각 - 의무실 산소통 이동",
+   "timeline": "main",
+   "source_text": "3월 22일 10시 40분, 마르타 레인. 의무실 산소통을 설비실 예비 저장 칸으로 옮긴 날이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_062",
+   "expression": "3월 23일 15시 20분",
+   "description": "윤도현이 설비실 출입한 시각 - 22분 체류",
+   "timeline": "main",
+   "source_text": "3월 23일 15시 20분, 윤도현. 22분 체류.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_063",
+   "expression": "3월 24일 01시 32분",
+   "description": "윤도현이 설비실 출입한 시각 - 19분 체류, 통신 서버 UPS 배터리 교체",
+   "timeline": "main",
+   "source_text": "3월 24일 01시 32분, 윤도현. 19분 체류. / 통신 서버 UPS요. 설비실 안쪽에 있어요. 배터리 경보가 울려서 내려갔어요. 경보 끄고 배터리 뱅크 하나 교체했어요.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_064",
+   "expression": "3월 24일 02시 14분",
+   "description": "카림 은다예가 설비실 출입한 시각",
+   "timeline": "main",
+   "source_text": "3월 24일 02시 14분, 카림 은다예.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_065",
+   "expression": "4월 26일. 세 번째 심리 점검",
+   "description": "마르타가 주관한 세 번째 심리 점검 일시",
+   "timeline": "main",
+   "source_text": "4월 26일. 세 번째 심리 점검.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_066",
+   "expression": "4월 28일 12시 40분, 해가 지평선 위로 마지막으로 떠올랐다. 스무 분 동안.",
+   "description": "극야 진입 전 마지막 해가 뜬 시각. 20분간 지속.",
+   "timeline": "main",
+   "source_text": "4월 28일 12시 40분, 해가 지평선 위로 마지막으로 떠올랐다. 스무 분 동안.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_067",
+   "expression": "4월 28일 밤 (카림의 쪽지 시각)",
+   "description": "카림이 쪽지를 남긴 시각. 4월 28일 해 진 후 밤.",
+   "timeline": "main",
+   "source_text": "그날 밤 카림의 쪽지에는 두 개의 숫자가 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-27T04:14:39Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 59.4
+ },
+ "_merge": {
+  "spec": "handoff/chunked_extract_spec.md",
+  "chunks": [
+   "episode_04_c01.json",
+   "episode_04_c02.json",
+   "episode_04_c03.json"
+  ],
+  "unmapped_new": [
+   "NEW:4월_15일_아침_이후",
+   "NEW:가온의_노트북 (3년간 극야 진입기 15일치 관측 데이터 저장)",
+   "NEW:극야_전_운영_합의_시한",
+   "NEW:기지장_자문_표결_제안",
+   "NEW:대화_시점_불명",
+   "NEW:서버_가동_시간_제한",
+   "NEW:수동_관측_중단_규정",
+   "NEW:연료_소비_계산_기준",
+   "NEW:전력_등급_규정_12조"
+  ]
+ },
+ "events": [
+  {
+   "event_id": "EVENT_4_1",
+   "scene_id": "scene_4_1",
+   "order": 1,
+   "title": "지하 통로 격벽 점검 및 관측 모듈 무단 배선 발견",
+   "summary": "서율과 카림이 지하 통로를 통해 관측 모듈로 이동, 격벽 열쇠 관리 실태 확인 후 관측 모듈에서 카림의 무단 점퍼 케이블 배선으로 분광계 야간 가동 사실 발견",
+   "location_id": "LOC_003",
+   "time_id": "TIME_048",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_007",
+    "OBJ_008",
+    "OBJ_014",
+    "OBJ_026",
+    "OBJ_027"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_026",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "점퍼 케이블 두 개. 제 예비품이에요. S-2에 있던 상자에서 나온 거예요"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "from": "정상",
+     "to": "무단 배선으로 분광계 야간 가동 중(3월 31일~)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "히터 회로 계량기 앞에서 뽑아서, 장비 회로 차단기 뒤로 넣었어요. 3월 31일 23시 10분부터. 매일 밤 23시부터 05시까지"
+    },
+    {
+     "entity": "OBJ_014",
+     "field": "body_status",
+     "from": "정상 가동",
+     "to": "무단 전력 우회로 야간 가동 중(히터 회로에서 전력 끌어옴)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "히터 회로 계량기 앞에서 뽑아서, 장비 회로 차단기 뒤로 넣었어요. 점퍼 케이블 두 개"
+    },
+    {
+     "entity": "OBJ_027",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "관측 로그 데이터(3월 31일~4월 14일 15일치)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "관측 로그가 떠 있었다. 4월 14일 밤의 관측 결과가 그래프로 떠 있었다. 15일 동안 매일 밤 여기서 쌓였다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_006 (마스터 카드)",
+     "source_text": "서율과 카림은 완전 방한복을 입고 지하 통로로 내려갔다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_007 (격벽 열쇠)",
+     "source_text": "격벽의 열쇠는 한 개뿐이었고, 카림이 보관했다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "격벽 열쇠판 열쇠가 자기 방 책상 위에 있고 방은 안 잠김",
+     "source_text": "열쇠판 열쇠가 제 방 책상 위에 있어요. 제 방은 안 잠그고요"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "전기 배선 작업 능력(점퍼 케이블로 회로 우회 배선 가능)",
+     "source_text": "히터 회로 계량기 앞에서 뽑아서, 장비 회로 차단기 뒤로 넣었어요. 점퍼 케이블 두 개"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "서버 가동 시간 하루 4시간, 야간 데이터 전송 시 도현이 알 것",
+     "source_text": "서버는 하루 네 시간만 도니까, 보냈으면 도현이 알았을 거예요. 아니면 도현이 알고 있거나"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "not_knows: 분전반 내부 정상/비정상 판별법",
+     "source_text": "서율은 그 안을 들여다보았지만 무엇이 정상이고 무엇이 아닌지 알 수 없었다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "카림이 3월 31일부터 점퍼 케이블로 분광계 야간 무단 가동 중(일일 15리터 연료 소비)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "3월 31일 23시 10분부터. 매일 밤 23시부터 05시까지. 여섯 시간. 하루 15리터씩, 225리터의 연료로"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "관측 데이터가 서버로 전송되지 않고 노트북 로컬에만 저장됨",
+     "via": "direct",
+     "retained": true,
+     "source_text": "여기 로컬에 쌓여요. 서버로 안 보내요"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "서버 가동 시간 하루 4시간 제한",
+     "via": "told",
+     "retained": true,
+     "source_text": "서버는 하루 네 시간만 도니까, 보냈으면 도현이 알았을 거예요"
+    }
+   ],
+   "cause": "서율과 카림이 관측 모듈 정기 점검차 지하 통로 이동",
+   "result": "카림의 무단 배선 및 15일간 야간 관측 데이터 은닉 사실 발견",
+   "source_text": "돔 C-4 — 4화. 열쇠 ... 카림은 분광계 옆의 노트북을 열었다. 잠겨 있지 않았다. 관측 로그가 떠 있었다. ... 3월 31일 23시 10분부터. 매일 밤 23시부터 05시까지. 여섯 시간. ... 4월 14일 밤의 관측 결과가 그래프로 떠 있었다. ... 하루 15리터씩, 225리터의 연료로",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_2",
+   "scene_id": "scene_4_2",
+   "order": 2,
+   "title": "서율, 가온 숙소에서 무단 관측 사실 추궁 및 자백 청취",
+   "summary": "서율이 가온의 방(S-3)을 찾아가 점퍼 케이블 제거 사실 알리고, 가온이 3월 26일 회의에서 3kW 요청 거절당해 자구책으로 무단 배선했음 자백. 3년간 극야 진입기 15일치 데이터 보유 사실 밝힘",
+   "location_id": "LOC_019",
+   "time_id": "NEW:4월_15일_아침_이후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [
+    "OBJ_028"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_014",
+     "field": "body_status",
+     "from": "무단 전력 우회로 야간 가동 중",
+     "to": "점퍼 케이블 제거됨, 히터만 정상 가동",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림이 점퍼를 뺐다. 분광계의 초록 표시등이 꺼졌다. 히터는 계속 돌았다"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "from": "unknown",
+     "to": "연료 계산: 일일 15리터, 210일 3,150리터 필요, 10월 4일 고갈, 9월 1일 관측 중단으로 연료 맞춤",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "계산했어요. 3킬로와트 히터에 분광계 2킬로와트 얹으면 하루 15리터. 210일 곱하면 3,150리터. 그러면 10월 4일에 바닥나요. ... 9월 1일부터 수동 관측 중단이니까 그때부턴 히터도 끄고. 그러면 맞아요"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "from": "unknown",
+     "to": "3년간(2069, 2070, 2071년 3/31~4/14) 극야 진입기 15일치 관측 데이터 보유",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "저는 15일치를 가졌어요. 2069년, 2070년, 그리고 2071년 3월 31일부터 4월 14일까지. 극야 진입기 15일. 그건 이제 제 노트북에 있고, 아무도 못 지워요"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "body_status",
+     "from": "정상",
+     "to": "규정 위반 상태(12조 전력 등급 2 위반, 장비 회로 무단 배선, 기지장 경고 무시)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "저는 규정을 어겼어요. 압니다. 12조, 전력 등급 2, 연구 장비 차단. 그리고 기지장님이 '장비 회로에 손대면 그날로 끊는다'고 하신 것도 기억해요"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "assumes": "NEW:가온의_노트북 (3년간 극야 진입기 15일치 관측 데이터 저장)",
+     "source_text": "그건 이제 제 노트북에 있고, 아무도 못 지워요"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "ability",
+     "assumes": "전기 배선 작업 능력(점퍼 배선 직접 함)",
+     "source_text": "점퍼 배선은 누가 했어. 제가요"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "3월 26일 회의에서 3kW 요청했으나 12조로 거절당함, 마르타가 발언 잘라 3kW만 배정됨",
+     "source_text": "했잖아요. 26일 회의에서. 3킬로와트 달라고. 기지장님은 12조라고 하셨고, 마르타 선생님이 말을 잘라서 3이 됐어요"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "기지장 서율이 원칙주의자라 남의 데이터 지우는 규정 없으면 안 지울 것임을 앎",
+     "source_text": "안 지우실 거예요. 기지장님은 원칙주의자니까. 남의 데이터를 지우는 규정은 없어요"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "가온이 3월 26일 회의에서 전력 요청했었음(당시 서율은 12조로 거절)",
+     "source_text": "했잖아요. 26일 회의에서. 3킬로와트 달라고. 기지장님은 12조라고 하셨고"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_1",
+     "assumes": "EVENT_4_1에서 카림이 점퍼 케이블을 제거한 직후 시점이며, 서율이 바로 가온 숙소로 이동함",
+     "source_text": "가온이랑 얘기하고 올게. 넌 여기 있어. ... 가온은 S-3에서 자고 있었다. 밤새 관측 모듈에 있다가 05시에 돌아온 것이었다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "가온이 3월 26일 회의에서 3kW 요청했으나 12조 규정으로 거절당해 자구책으로 무단 배선함",
+     "via": "told",
+     "retained": true,
+     "source_text": "했잖아요. 26일 회의에서. 3킬로와트 달라고. 기지장님은 12조라고 하셨고, 마르타 선생님이 말을 잘라서 3이 됐어요"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "가온이 3년간 극야 진입기 15일치 관측 데이터(오존 부분 압력, 에어로졸 산란 계수)를 노트북에 보유",
+     "via": "told",
+     "retained": true,
+     "source_text": "저는 15일치를 가졌어요. 2069년, 2070년, 그리고 2071년 3월 31일부터 4월 14일까지. 극야 진입기 15일. 그건 이제 제 노트북에 있고"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "가온의 연료 계산: 일일 15리터, 210일 3,150리터, 10월 4일 고갈, 9월 1일 관측 중단으로 연료 맞춤",
+     "via": "told",
+     "retained": true,
+     "source_text": "계산했어요. 3킬로와트 히터에 분광계 2킬로와트 얹으면 하루 15리터. 210일 곱하면 3,150리터. ... 9월 1일부터 수동 관측 중단이니까 그때부턴 히터도 끄고. 그러면 맞아요"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "가온이 점퍼 배선을 직접 수행함",
+     "via": "told",
+     "retained": true,
+     "source_text": "점퍼 배선은 누가 했어. 제가요"
+    }
+   ],
+   "cause": "서율이 관측 모듈 무단 배선 발견 후 가온에게 사실 확인 및 추궁",
+   "result": "가온 자백: 3월 26일 회의 거절로 인한 자구책, 3년간 데이터 확보, 연료 계산 완료, 규정 위반 인정",
+   "source_text": "가온은 S-3에서 자고 있었다. ... 점퍼 뗐어요? 뗐어. 그럼 광학부는요. 히터는 그대로야. ... 3월 31일부터. 15일. 하루 15리터. 225리터야. ... 계산했어요. 3킬로와트 히터에 분광계 2킬로와트 얹으면 하루 15리터. ... 저는 규정을 어겼어요. 압니다. 12조, 전력 등급 2, 연구 장비 차단. ... 저는 15일치를 가졌어요. 2069년, 2070년, 그리고 2071년 3월 31일부터 4월 14일까지",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_3",
+   "scene_id": "scene_4_1",
+   "order": 1,
+   "title": "가온과 서율의 대화 - 관측 모듈 히터 차단 지시",
+   "summary": "가온이 도현에게 배운 전기 지식으로 손만 댔다고 말하지만 서율은 믿지 않고, 관측 모듈 히터 회로 차단을 지시한다. 마르타가 전부 들은 얼굴로 서 있다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:대화_시점_불명",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [
+    "CHAR_004"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "전기 회로 연결 방법 (도현에게 그림으로 배움)",
+     "source_text": "도현이 알려 줬어요. 그림으로. 손은 제가 댔어요."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "도현이 전기 지식을 가지고 있음",
+     "source_text": "도현이 알려 줬어요. 그림으로."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "전기 회로도를 그릴 수 있는 지식 보유",
+     "source_text": "도현이 알고 있었다는 거야. / 도현은 그림만 그렸어요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "관측 모듈 히터 회로 차단 시 광학부가 얼어붙음",
+     "source_text": "오늘 정오부로 관측 모듈 히터 회로 차단해. 광학부 얼어."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "관측 모듈은 봄에 인수팀이 받을 무인 전환 자산이며 기지장 임무임",
+     "source_text": "그건 봄에 인수팀이 받을 자산이에요. 무인 전환 자산. 기지장님 임무예요."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "가온과 서율의 대화 내용 전부",
+     "source_text": "복도에서 마르타가 의무실 커튼을 열고 서 있었다. 전부 들은 얼굴이었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "가온이 도현에게 전기 회로도를 배워 직접 작업했음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "도현이 알려 줬어요. 그림으로. 손은 제가 댔어요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "도현이 전기 회로 지식을 가지고 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "도현이 알고 있었다는 거야."
+    },
+    {
+     "character_id": "CHAR_004",
+     "info": "가온이 도현에게 전기 지식을 배웠고 서율이 히터 차단을 지시함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "복도에서 마르타가 의무실 커튼을 열고 서 있었다. 전부 들은 얼굴이었다."
+    }
+   ],
+   "cause": "가온의 전기 작업 사실 확인 후 자원 절약을 위해 히터 차단 결정",
+   "result": "관측 모듈 히터 회로 차단 지시, 마르타가 대화 내용 전부 청취",
+   "source_text": "\"넌 전기를 몰라.\" / \"도현이 알려 줬어요. 그림으로. 손은 제가 댔어요.\" / \"도현이 알고 있었다는 거야.\" / \"도현은 그림만 그렸어요. 뭐에 쓸 건지는 안 물었고, 저도 안 말했어요.\" / 서율은 그 말을 믿지 않았다. 믿지 않았다는 것을 얼굴에 드러내지도 않았다. / \"오늘 정오부로 관측 모듈 히터 회로 차단해. 광학부 얼어.\" / 가온의 얼굴이 처음으로 움직였다. / \"……그건 봄에 인수팀이 받을 자산이에요. 무인 전환 자산. 기지장님 임무예요.\" / \"내 임무는 다섯 명을 10월 20일까지 살려서 넘기는 거야. 얼어붙은 분광계는 인수 보고서에 '동파'라고 쓰면 돼. 죽은 사람은 뭐라고 써.\" / \"아무도 안 죽어요.\" / \"아무도 안 죽게 하는 게 내 일이야.\" / 서율은 문을 닫았다. 복도에서 마르타가 의무실 커튼을 열고 서 있었다. 전부 들은 얼굴이었다. / \"기록하세요.\" / \"하고 있어.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_4",
+   "scene_id": "scene_4_2",
+   "order": 2,
+   "title": "4월 15일 정오 관측 모듈 히터 회로 차단 실행",
+   "summary": "카림이 발전기실 분전반에서 차단기를 내리고 관측 모듈 분전반 히터 회로 인입선을 뽑아 점퍼 우회 지점을 없앴다. 부하는 21kW로 감소, 연료 소모 하루 172L로 10월 20일까지 계산상 4000L 가까이 남음.",
+   "location_id": "LOC_007",
+   "time_id": "TIME_056",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "LOC_003",
+     "field": "condition",
+     "from": "히터 가동 중",
+     "to": "히터 회로 차단됨 (광학부 동결 진행)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "4월 15일 정오, 관측 모듈 히터 회로가 차단되었다. 카림이 발전기실 분전반에서 차단기를 내렸고, 이번에는 관측 모듈 쪽 분전반의 히터 회로 인입선도 뽑았다. 점퍼로 우회할 수 있는 지점을 없애기 위해서였다."
+    },
+    {
+     "entity": "LOC_007",
+     "field": "condition",
+     "from": "부하 높음",
+     "to": "부하 21킬로와트로 감소",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "부하는 21킬로와트로 내려갔다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "히터 차단으로 연료 하루 172리터 소모, 10월 20일까지 4000리터 가까이 남음 (잃어버린 225리터 회복 포함)",
+     "source_text": "하루 172리터. 10월 20일까지 계산상 4,000리터 가까이 남았다. 잃어버린 225리터를 되찾고도 남는 숫자였다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "발전기실 분전반 차단기 조작 권한/열쇠",
+     "source_text": "카림이 발전기실 분전반에서 차단기를 내렸고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "관측 모듈 분전반 접근 권한/열쇠",
+     "source_text": "관측 모듈 쪽 분전반의 히터 회로 인입선도 뽑았다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "전기 회로 차단 및 인입선 제거 기술 보유",
+     "source_text": "차단기를 내렸고, 이번에는 관측 모듈 쪽 분전반의 히터 회로 인입선도 뽑았다. 점퍼로 우회할 수 있는 지점을 없애기 위해서였다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "히터 차단으로 연료 소모량 감소 및 10월 20일까지 버틸 연료 확보 가능",
+     "via": "direct",
+     "retained": true,
+     "source_text": "부하는 21킬로와트로 내려갔다. 하루 172리터. 10월 20일까지 계산상 4,000리터 가까이 남았다. 잃어버린 225리터를 되찾고도 남는 숫자였다."
+    }
+   ],
+   "cause": "서율의 지시로 자원 절약을 위해 관측 모듈 히터 차단",
+   "result": "관측 모듈 광학부 동결 시작, 연료 소모량 대폭 감소",
+   "source_text": "4월 15일 정오, 관측 모듈 히터 회로가 차단되었다. 카림이 발전기실 분전반에서 차단기를 내렸고, 이번에는 관측 모듈 쪽 분전반의 히터 회로 인입선도 뽑았다. 점퍼로 우회할 수 있는 지점을 없애기 위해서였다. 부하는 21킬로와트로 내려갔다. 하루 172리터. 10월 20일까지 계산상 4,000리터 가까이 남았다. 잃어버린 225리터를 되찾고도 남는 숫자였다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_5",
+   "scene_id": "scene_4_3",
+   "order": 3,
+   "title": "서율이 카림에게 격벽 열쇠 회수 및 관리 권한 임시 변경",
+   "summary": "서율이 카림을 설비실로 불러 격벽 열쇠를 받아 S-2 금고에 보관하고, 격벽 개폐 시간(21:00~07:00)과 통로 출입 승인제를 게시판에 공고한다. 카림은 이의 없이 따른다.",
+   "location_id": "LOC_006",
+   "time_id": "TIME_057",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_007"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_007",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림은 열쇠판을 열고 열쇠를 꺼내 서율에게 건넸다. 아무 말 없이. 서율은 그것을 받으면서 자기가 지금 무엇을 하고 있는지 정확히 알았다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "OBJ_007",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림은 열쇠판을 열고 열쇠를 꺼내 서율에게 건넸다. 아무 말 없이."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "격벽 열쇠를 기지장이 보관하고 21:00~07:00 잠금, 통로 출입 승인제 시행",
+     "source_text": "오늘부터 격벽 열쇠는 기지장이 보관한다. S-2 금고에. 격벽은 밤 21시부터 아침 07시까지 잠근다. 통로 출입은 낮에도 기지장 승인. 승인 없이 통로에 들어가면 규정 위반이야. 이건 오늘 저녁 게시판에 붙여."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_007 (격벽 열쇠를 열쇠판에서 꺼내 소지 중)",
+     "source_text": "카림은 열쇠판을 열고 열쇠를 꺼내 서율에게 건넸다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "규정 3조: 통로 격벽은 설비 담당이 관리함",
+     "source_text": "규정 3조요. 통로 격벽은 설비 담당이 관리한다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "카림의 열쇠판 열쇠가 책상 위에 있고, 카림 방은 안 잠겨 있으며, 카림이 새벽 3시에 발전기실에 있음",
+     "source_text": "열쇠판 열쇠가 네 책상 위에 있고, 네 방은 안 잠기고, 넌 새벽 세 시에 발전기실에 있으니까."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "카림 혼자서는 발전기와 통로를 둘 다 지킬 수 없음",
+     "source_text": "너를 못 믿어서가 아니라, 네가 혼자서 발전기랑 통로를 둘 다 지킬 수 없어서야."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "기지장이 격벽 열쇠 관리권을 회수하고 야간 통행금지 및 승인제 시행",
+     "via": "direct",
+     "retained": true,
+     "source_text": "오늘부터 격벽 열쇠는 기지장이 보관한다. S-2 금고에. 격벽은 밤 21시부터 아침 07시까지 잠근다. 통로 출입은 낮에도 기지장 승인. 승인 없이 통로에 들어가면 규정 위반이야."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "카림이 새벽 3시에 발전기실에 있었고 열쇠 관리가 허술했음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "열쇠판 열쇠가 네 책상 위에 있고, 네 방은 안 잠기고, 넌 새벽 세 시에 발전기실에 있으니까."
+    }
+   ],
+   "cause": "카림의 열쇠 관리 허술함과 새벽 시간대 발전기실 근무로 통로 감시 공백 발생",
+   "result": "격벽 열쇠 기지장 회수, 야간 통행금지 및 승인제 시행, 게시판 공고 예정",
+   "source_text": "같은 날 오후, 서율은 카림을 설비실로 불렀다. / \"격벽 열쇠.\" / 카림은 열쇠판을 열고 열쇠를 꺼내 서율에게 건넸다. 아무 말 없이. 서율은 그것을 받으면서 자기가 지금 무엇을 하고 있는지 정확히 알았다. / \"오늘부터 격벽 열쇠는 기지장이 보관한다. S-2 금고에. 격벽은 밤 21시부터 아침 07시까지 잠근다. 통로 출입은 낮에도 기지장 승인. 승인 없이 통로에 들어가면 규정 위반이야. 이건 오늘 저녁 게시판에 붙여.\" / \"격벽은 제 관리예요.\" / 카림이 말했다. 목소리는 여전히 낮았다. / \"규정 3조요. 통로 격벽은 설비 담당이 관리한다.\" / \"알아. 오늘부터 아니야. 기지장 지시로 임시 변경이야.\" / \"제가 잘못한 게 있어요?\" / \"없어.\" / \"그럼 왜요.\" / \"열쇠판 열쇠가 네 책상 위에 있고, 네 방은 안 잠기고, 넌 새벽 세 시에 발전기실에 있으니까. 그 시간에 누가 통로를 지나가도 넌 몰라. 너를 못 믿어서가 아니라, 네가 혼자서 발전기랑 통로를 둘 다 지킬 수 없어서야.\" / 카림은 오랫동안 서율을 보았다. 그리고 말했다. / \"기지장님이 그렇게 말씀하시면 그렇게 되는 거죠.\" / \"카림.\" / \"괜찮아요. 열쇠 하나예요.\" / 카림은 설비실 안쪽 발전기실로 들어갔다. 서율은 손안의 열쇠를 보았다. 무겁지 않았다. 다만 이 겨울에 서율이 카림에게서 빼앗은 것은 열쇠가 아니라는 것을, 빼앗은 순간에 알았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_6",
+   "scene_id": "scene_4_4",
+   "order": 4,
+   "title": "게시판 공고 및 마르타의 두 번째 이의서 게시",
+   "summary": "저녁 식당 게시판에 격벽 관리 임시 변경 공고(3번째 종이)가 붙고, 기존 규정 7조 개정문, 마르타 이의서 사본과 함께 마르타의 두 번째 이의서가 나란히 게시됨.",
+   "location_id": "LOC_011",
+   "time_id": "TIME_058",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_023",
+    "OBJ_024",
+    "OBJ_029",
+    "OBJ_030"
+   ],
+   "state_changes": [
+    {
+     "entity": "LOC_011",
+     "field": "condition",
+     "from": "게시판에 규정 7조 개정문과 마르타 이의서 사본 2장 게시됨",
+     "to": "게시판에 격벽 관리 임시 변경 공고, 규정 7조 개정문, 마르타 이의서 사본, 마르타 두 번째 이의서 총 4장 나란히 게시됨",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그날 저녁 식당 게시판에 세 번째 종이가 붙었다. 「격벽 관리 임시 변경 (2071년 4월 15일부, 기지장 한서율). 격벽 열쇠는 기지장이 보관한다. 격벽은 21:00~07:00 잠근다. 통로 출입은 기지장 승인을 받는다.」 그 옆에 규정 7조 개정문과 마르타의 이의서가 있었다. 그날 밤 마르타의 두 번째 이의서가 그 옆에 붙었다. 네 장의 종이가 벽에 나란히 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "격벽 관리 변경이 설비 담당 권한 박탈이며 비상시 대피 경로에 위험 초래",
+     "source_text": "사유: 설비 담당의 관리 권한 박탈은 근거가 불충분하며, 기지장의 통로 단독 통제는 비상시 대피 경로에 위험을 초래한다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "마르타가 격벽 관리 변경에 공식 이의 제기 (두 번째 이의서)",
+     "via": "document",
+     "retained": true,
+     "source_text": "그날 밤 마르타의 두 번째 이의서가 그 옆에 붙었다. 「부기지장은 격벽 관리 변경에 이의를 기록한다. 사유: 설비 담당의 관리 권한 박탈은 근거가 불충분하며, 기지장의 통로 단독 통제는 비상시 대피 경로에 위험을 초래한다.」"
+    }
+   ],
+   "cause": "서율의 격벽 관리 임시 변경 지시 이행 및 마르타의 공식 이의 제기",
+   "result": "게시판에 4장 문서 나란히 게시, 격벽 관리 변경 공식화 및 이의 기록",
+   "source_text": "그날 저녁 식당 게시판에 세 번째 종이가 붙었다. 「격벽 관리 임시 변경 (2071년 4월 15일부, 기지장 한서율). 격벽 열쇠는 기지장이 보관한다. 격벽은 21:00~07:00 잠근다. 통로 출입은 기지장 승인을 받는다.」 그 옆에 규정 7조 개정문과 마르타의 이의서가 있었다. 그날 밤 마르타의 두 번째 이의서가 그 옆에 붙었다. 「부기지장은 격벽 관리 변경에 이의를 기록한다. 사유: 설비 담당의 관리 권한 박탈은 근거가 불충분하며, 기지장의 통로 단독 통제는 비상시 대피 경로에 위험을 초래한다.」 네 장의 종이가 벽에 나란히 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_7",
+   "scene_id": "scene_4_5",
+   "order": 5,
+   "title": "4월 20일 통신실에서 설비실 출입 카드 기록 열람",
+   "summary": "서율이 도현에게 3월 18일~25일 설비실 출입 기록을 열라고 하고 마르타가 입회한다. 카림의 카드가 대부분이고 서율(마스터 카드), 마르타, 도현의 출입 기록이 확인됨. 가온의 이름은 없음. 도현은 23~24일 UPS 배터리 점검/교체로 출입했음을 설명. 마르타는 22일 산소통 옮길 때 발전기실 문이 열려 있었음 증언.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_009",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_003",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_011"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "3월 18~25일 설비실 출입 기록: 카림 다수, 서율(마스터카드) 3/21, 마르타 3/22, 도현 3/23, 3/24(새벽 1:32, 2:14), 가온 없음",
+     "source_text": "화면에 목록이 떴다. 카림의 카드가 대부분이었다. 하루에 여섯 번, 일곱 번. 서율은 그 사이의 다른 이름들을 읽었다. / 3월 21일 14시 05분, 한서율. 마스터 카드. 예비 부품 목록 점검이었다. / 3월 22일 10시 40분, 마르타 레인. 의무실 산소통을 설비실 예비 저장 칸으로 옮긴 날이었다. / 3월 23일 15시 20분, 윤도현. 22분 체류. / 3월 24일 01시 32분, 윤도현. 19분 체류. / 3월 24일 02시 14분, 카림 은다예. / 가온의 이름은 없었다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "3월 23일 15:20 설비실 출입 (22분 체류) - UPS 배터리 상태 점검",
+     "source_text": "3월 23일 15시 20분, 윤도현. 22분 체류. / 같은 UPS. 배터리 상태 점검. 그때 경보가 한 번 울렸었어요."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "3월 24일 01:32 설비실 출입 (19분 체류) - UPS 배터리 경보 끄고 배터리 뱅크 교체",
+     "source_text": "3월 24일 01시 32분, 윤도현. 19분 체류. / 통신 서버 UPS요. 설비실 안쪽에 있어요. 배터리 경보가 울려서 내려갔어요. 경보 끄고 배터리 뱅크 하나 교체했어요."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "발전기실 문은 카림이 잠그지만 마르타 증언에 따르면 3/22에 열려 있었음",
+     "source_text": "그 문은 잠기지 않아. 내가 22일에 산소통 옮길 때 열려 있었어."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "설비실 출입 카드 (자신의 카드)",
+     "source_text": "3월 23일 15시 20분, 윤도현. / 3월 24일 01시 32분, 윤도현."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "통신 서버 UPS가 설비실 안쪽 벽에 위치, 배터리 경보 발생 시 직접 대응 가능",
+     "source_text": "통신 서버 UPS요. 설비실 안쪽에 있어요. 배터리 경보가 울려서 내려갔어요. 경보 끄고 배터리 뱅크 하나 교체했어요."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "UPS는 통신 장비라 자신의 관할이며 카림에게 알리지 않고 직접 처리함",
+     "source_text": "카림한테 안 알리고. / 카림 자고 있었어요. 새벽 한 시 반이었고요. UPS는 통신 장비니까 제 관할이에요."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "3월 22일 산소통 옮길 때 발전기실 문이 열려 있었음",
+     "source_text": "내가 22일에 산소통 옮길 때 열려 있었어."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "도현이 3/23, 3/24 새벽 설비실 출입 사실을 카림에게 알리지 않았음",
+     "source_text": "카림한테 안 알리고. / 카림이 없는 자리였다. 서율은 카림에게 이것을 나중에 확인할 것이었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "3월 18~25일 설비실 출입 기록 상세 내역 (카림 다수, 서율, 마르타, 도현, 가온 없음)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "화면에 목록이 떴다. 카림의 카드가 대부분이었다. 하루에 여섯 번, 일곱 번. 서율은 그 사이의 다른 이름들을 읽었다. / 3월 21일 14시 05분, 한서율. 마스터 카드. 예비 부품 목록 점검이었다. / 3월 22일 10시 40분, 마르타 레인. 의무실 산소통을 설비실 예비 저장 칸으로 옮긴 날이었다. / 3월 23일 15시 20분, 윤도현. 22분 체류. / 3월 24일 01시 32분, 윤도현. 19분 체류. / 3월 24일 02시 14분, 카림 은다예. / 가온의 이름은 없었다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "도현이 3/23, 3/24 새벽 UPS 배터리 점검/교체로 설비실 출입했고 카림에게 알리지 않음",
+     "via": "told",
+     "retained": true,
+     "source_text": "통신 서버 UPS요. 설비실 안쪽에 있어요. 배터리 경보가 울려서 내려갔어요. 경보 끄고 배터리 뱅크 하나 교체했어요. / 카림한테 안 알리고. / 카림 자고 있었어요. 새벽 한 시 반이었고요. UPS는 통신 장비니까 제 관할이에요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "마르타 증언: 3/22 산소통 옮길 때 발전기실 문이 열려 있었음",
+     "via": "told",
+     "retained": true,
+     "source_text": "그 문은 잠기지 않아. 내가 22일에 산소통 옮길 때 열려 있었어."
+    },
+    {
+     "character_id": "CHAR_004",
+     "info": "3월 18~25일 설비실 출입 기록 전체 내역",
+     "via": "direct",
+     "retained": true,
+     "source_text": "마르타가 입회했다. 3항에 따라서였다. / 화면에 목록이 떴다."
+    }
+   ],
+   "cause": "서율이 3월 24일 새벽 도현과 카림의 설비실/발전기실 출입 경위 파악 위해 기록 열람 요청",
+   "result": "출입 기록 확인, 도현의 UPS 작업 사실 및 카림 미보고 확인, 발전기실 문 개방 사실 확인",
+   "source_text": "4월 20일. 서율은 통신실에서 도현에게 설비실 출입 카드 기록을 열라고 했다. 마르타가 입회했다. 3항에 따라서였다. / \"기간은요.\" / \"3월 18일부터 3월 25일까지.\" / 도현은 서율을 한 번 보고, 마르타를 한 번 보고, 콘솔로 돌아섰다. 화면에 목록이 떴다. 카림의 카드가 대부분이었다. 하루에 여섯 번, 일곱 번. 서율은 그 사이의 다른 이름들을 읽었다. / 3월 21일 14시 05분, 한서율. 마스터 카드. 예비 부품 목록 점검이었다. 서율은 기억했다. / 3월 22일 10시 40분, 마르타 레인. 의무실 산소통을 설비실 예비 저장 칸으로 옮긴 날이었다. 마르타가 옆에서 말했다. \"맞아. 카림이 도와줬어.\" / 3월 23일 15시 20분, 윤도현. 22분 체류. / 3월 24일 01시 32분, 윤도현. 19분 체류. / 3월 24일 02시 14분, 카림 은다예. / 가온의 이름은 없었다. / \"24일 새벽 1시 32분.\" 서율이 말했다. / \"통신 서버 UPS요. 설비실 안쪽에 있어요. 배터리 경보가 울려서 내려갔어요. 경보 끄고 배터리 뱅크 하나 교체했어요.\" / \"카림한테 안 알리고.\" / \"카림 자고 있었어요. 새벽 한 시 반이었고요. UPS는 통신 장비니까 제 관할이에요.\" / \"23일 오후는.\" / \"같은 UPS. 배터리 상태 점검. 그때 경보가 한 번 울렸었어요.\" / 카림이 없는 자리였다. 서율은 카림에게 이것을 나중에 확인할 것이었다. 지금은 도현에게 물었다. / \"발전기실엔 들어갔어?\" / \"아니요. UPS는 설비실 안쪽 벽에 있어요. 발전기실은 문 하나 더 지나야 하고, 그 문은 카림이 잠가요.\" / \"그 문은 잠기지 않아.\" 마르타가 말했다. \"내가 22일에 산소통 옮길 때 열려 있었어.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_8",
+   "scene_id": "scene_4_1",
+   "order": 1,
+   "title": "도현과 마르타의 설비실 출입 기록 공방",
+   "summary": "도현이 설비실에 들어가지 않았다고 주장하나, 마르타는 문이 안 잠겼다고 기록돼 있다고 반박한다. 서율이 화면 목록을 저장하게 하고 도현은 통신실로 이동한다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_029",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_003",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [
+    "OBJ_011"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "LOC_008",
+     "to": "LOC_008",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "콘솔을 끄고 일어나서 통신실을 나갔다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "설비실 출입 기록(문이 안 잠김) 존재",
+     "source_text": "기록에는 그렇게 적혀."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "설비실 출입 기록(문이 안 잠김) 존재",
+     "source_text": "기록에는 그렇게 적혀."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_011 (태블릿, 파일 수신용)",
+     "source_text": "파일을 서율의 태블릿으로 옮겼고"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "도현이 설비실 출입 기록상 '문이 안 잠김'으로 기록됨",
+     "via": "direct",
+     "retained": true,
+     "source_text": "기록에는 그렇게 적혀."
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "자신의 설비실 출입 기록이 '문이 안 잠김'으로 돼 있음을 확인",
+     "via": "direct",
+     "retained": true,
+     "source_text": "기록에는 그렇게 적혀."
+    }
+   ],
+   "cause": "설비실 출입 기록 확인",
+   "result": "도현이 통신실로 이동, 서율이 기록 파일 확보",
+   "source_text": "도현이 마르타를 보았다. \"제가 안 들어갔다고요.\" \"들어갔다고 안 했어. 문이 안 잠긴다고 했어.\" 서율은 화면의 목록을 저장하라고 했다. 도현은 저장했고, 파일을 서율의 태블릿으로 옮겼고, 그러고는 콘솔을 끄고 일어나서 통신실을 나갔다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_9",
+   "scene_id": "scene_4_2",
+   "order": 2,
+   "title": "서율과 카림의 S-2 면담: 밸브 개방 시점 특정 및 열쇠 회수 배경",
+   "summary": "서율이 카림을 S-2로 불러 UPS 배터리 교체와 밸브 개방 시점을 추궁한다. 카림은 밸브가 3월 20~23일 사이 열렸음을 냉각수 누수 속도로 역산해 밝히고, 서율이 열쇠를 가져간 것을 이유로 전원(서율 본인 포함)을 용의선상에 올리며 사실을 털어놓는다.",
+   "location_id": "LOC_018",
+   "time_id": "TIME_029",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_007",
+    "OBJ_018"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "밸브 개방 시점: 3월 20일 오후~23일 저녁 사이, 냉각수 누수 속도 기준",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "밸브는 20일에서 23일 사이에 열렸어요. 제가 마지막으로 확인한 20일 오후 이후, 23일 저녁 이전에."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "밸브 개방 시점: 3월 20일 오후~23일 저녁 사이, 냉각수 누수 속도 기준",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "밸브는 20일에서 23일 사이에 열렸어요. 제가 마지막으로 확인한 20일 오후 이후, 23일 저녁 이전에."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "OBJ_007",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "기지장님이 저한테서 열쇠를 가져가신 건"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_007",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "열쇠를 가져가셨으니까요."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "냉각수 누수 속도(하루 몇 리터)와 경보선 도달 시간(반나절~사나흘) 지식",
+     "source_text": "냉각수는 하루에 몇 리터씩 새요. 경보선까지 내려가려면 빠르면 반나절, 보통은 사나흘 걸려요."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "3월 20일 오후 설비실 최종 확인 시 밸브 잠금 고리 상태 미확인(자신도 범위 내)",
+     "source_text": "20일 저녁에 제가 고리를 안 걸었을 수도 있어요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "3월 21일 14시 05분 설비실 출입 기록(자신) 존재",
+     "source_text": "서율은 목록을 떠올렸다. 3월 21일 14시 05분. 한서율."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "서율이 격벽 열쇠(OBJ_007)를 카림에게서 회수했음",
+     "source_text": "기지장님이 저한테서 열쇠를 가져가신 건"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "수면 부족 상태(3월 21~24일 하루 3시간 수면)",
+     "source_text": "21일부터 24일까지 여름 시즌 인수인계 때문에 하루 세 시간씩 잤어요."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "밸브 개방 시점이 3월 20일 오후~23일 저녁 사이로 특정됨(24일 새벽 아님)",
+     "via": "told",
+     "retained": true,
+     "source_text": "밸브는 20일에서 23일 사이에 열렸어요. 제가 마지막으로 확인한 20일 오후 이후, 23일 저녁 이전에."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "카림이 3월 20일 오후 설비실 최종 확인 당시 밸브 고리를 걸지 않았을 가능성 인정",
+     "via": "told",
+     "retained": true,
+     "source_text": "20일 저녁에 제가 고리를 안 걸었을 수도 있어요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "자신(서율)이 3월 21일 14시 05분 설비실 출입 기록에 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "서율은 목록을 떠올렸다. 3월 21일 14시 05분. 한서율."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "카림이 열쇠 회수를 이유로 전원(서율 포함)을 불신하며 사실 전면 공개",
+     "via": "direct",
+     "retained": true,
+     "source_text": "기지장님이 저한테서 열쇠를 가져가신 건, 저를 포함해서 아무도 안 믿는다는 뜻이에요."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "G2 진동 수치 증가(0.8→1.3), 베어링 문제 의심",
+     "via": "direct",
+     "retained": true,
+     "source_text": "G2 진동이 좀 늘었어요. 베어링일 수도 있어요. 내일 봅니다."
+    }
+   ],
+   "cause": "서율이 카림을 불러 밸브 개방 시점과 열쇠 회수 건 추궁",
+   "result": "밸브 개방 시점 20~23일 사이로 특정, 카림이 전원 용의선상 공개, 서율이 금고에서 열쇠 확인",
+   "source_text": "같은 날 밤, 서율은 카림을 S-2로 불렀다. 문을 닫았다. \"UPS 배터리. 3월 24일 새벽에 도현이 교체했다는데.\" ... \"열쇠를 가져가셨으니까요.\" 카림은 일어섰다. \"G2 진동이 좀 늘었어요. 베어링일 수도 있어요. 내일 봅니다.\" 문이 닫혔다. 서율은 금고를 열었다. 격벽 열쇠가 있었다. 서율은 그것을 꺼내 손에 쥐었다가 다시 넣었다. 21일 14시 05분에 자기가 설비실에서 무엇을 했는지 정확히 기억하려고 했다. 예비 부품 목록. 선반. 필터 상자. 발전기실 문. 그 문을 열었던가. 기억나지 않았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_10",
+   "scene_id": "scene_4_3",
+   "order": 3,
+   "title": "4월 26일 세 번째 심리 점검: 마르타의 자문 표결 제안",
+   "summary": "마르타가 심리 점검 후 기지 운영 회의를 의결 기구로 바꾸는 자문 표결 도입을 제안한다. 5인 다수결, 기지장은 의장·표 1표, 구속력 없으나 표결 기록 남김. 서율은 검토하겠다고 답한다. 마르타는 4월 28일까지 합의해야 한다고 못박는다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_065",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "from": "unknown",
+     "to": "기지 운영 불신 현황: 가온(히터), 도현(통신), 카림(열쇠), 마르타(이의서 2장) 모두 기지장 결정 불신",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "가온은 히터를 잃었고, 도현은 통신을 잃었고, 카림은 열쇠를 잃었고, 나는 이의서를 두 장 썼어. 당신 혼자 결정하고 넷이 따르는 구조는 이미 안 돌아가."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "마르타의 자문 표결 제안 내용(5인 다수결, 기지장 의장·1표, 구속력 없음, 기록 남김)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "기지장 권한으로 '자문 표결'을 도입해. 구속력 없이. 표를 세고, 그 결과를 기록하고, 그래도 기지장이 결정해."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "4월 28일까지 운영 방식 합의 필요(극야 진입 전)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "28일까지. 28일이 마지막 해야. 그 뒤론 넉 달 동안 해가 안 떠. 극야에 들어가기 전에 이 기지가 어떻게 돌아가는지 다섯 명이 알아야 해."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "규정 1조(기지장 최종 결정권) 내용 숙지",
+     "source_text": "규정 1조에 '기지장은 기지 운영에 관한 최종 결정권을 가진다'고 되어 있고, 나는 그걸 알아."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "규정 1조(기지장 최종 결정권) 내용 숙지",
+     "source_text": "규정 1조에 '기지장은 기지 운영에 관한 최종 결정권을 가진다'고 되어 있고, 나는 그걸 알아."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "각 대원의 불만 사유 구체적 파악(가온 히터, 도현 통신, 카림 열쇠, 자신 이의서)",
+     "source_text": "가온은 히터를 잃었고, 도현은 통신을 잃었고, 카림은 열쇠를 잃었고, 나는 이의서를 두 장 썼어."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "마르타의 자문 표결 제안(5인 다수결, 기지장 의장·1표, 구속력 없음, 기록 남김)",
+     "via": "told",
+     "retained": true,
+     "source_text": "기지장 권한으로 '자문 표결'을 도입해. 구속력 없이. 표를 세고, 그 결과를 기록하고, 그래도 기지장이 결정해."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "4월 28일까지 운영 방식 합의 필요(극야 진입 전)",
+     "via": "told",
+     "retained": true,
+     "source_text": "28일까지. 28일이 마지막 해야. 그 뒤론 넉 달 동안 해가 안 뜬. 극야에 들어가기 전에 이 기지가 어떻게 돌아가는지 다섯 명이 알아야 해."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "기지 내 4인(가온, 도현, 카림, 마르타)이 기지장 결정권 불신 중",
+     "via": "told",
+     "retained": true,
+     "source_text": "가온은 히터를 잃었고, 도현은 통신을 잃었고, 카림은 열쇠를 잃었고, 나는 이의서를 두 장 썼어. 당신 혼자 결정하고 넷이 따르는 구조는 이미 안 돌아가."
+    }
+   ],
+   "cause": "심리 점검 종료 후 마르타가 운영 개선안 제안",
+   "result": "서율이 검토 약속, 4월 28일 시한 인지",
+   "source_text": "4월 26일. 세 번째 심리 점검. \"제안이 하나 있어.\" 열두 개의 질문이 끝나고 마르타가 말했다. ... \"생각해 볼게요.\" \"28일까지. 28일이 마지막 해야. 그 뒤론 넉 달 동안 해가 안 떠. 극야에 들어가기 전에 이 기지가 어떻게 돌아가는지 다섯 명이 알아야 해.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_11",
+   "scene_id": "scene_4_4",
+   "order": 4,
+   "title": "4월 28일 마지막 해 관측: 5인 관측창 집결 및 서율의 거부",
+   "summary": "4월 28일 12시 40분 마지막 해가 20분간 뜸. 다섯 명이 관측창 앞에 각자 모이나 대화 없음. 마르타가 서율을 보고 결정 재촉하나 서율이 고개를 저어 거부.",
+   "location_id": "LOC_003",
+   "time_id": "TIME_066",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_003",
+    "CHAR_004",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "4월 28일이 극야 진입 전 마지막 합의 시한임을 인지",
+     "source_text": "28일까지. 28일이 마지막 해야. 그 뒤론 넉 달 동안 해가 안 떠."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "4월 28일이 극야 진입 전 마지막 합의 시한임을 인지",
+     "source_text": "28일까지. 28일이 마지막 해야. 그 뒤론 넉 달 동안 해가 안 떠."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "4월 28일이 극야 진입 전 마지막 합의 시한임을 인지",
+     "source_text": "다섯 명이 각자 다른 이유로 1층 복도 끝 관측창 앞에 모였다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "4월 28일이 극야 진입 전 마지막 합의 시한임을 인지",
+     "source_text": "다섯 명이 각자 다른 이유로 1층 복도 끝 관측창 앞에 모였다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "4월 28일이 극야 진입 전 마지막 합의 시한임을 인지",
+     "source_text": "다섯 명이 각자 다른 이유로 1층 복도 끝 관측창 앞에 모였다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_10",
+     "assumes": "EVENT_4_3에서 마르타가 제시한 4월 28일 시한이 이 사건의 관측창 집결 이유임",
+     "source_text": "28일까지. 28일이 마지막 해야. / 4월 28일 12시 40분, 해가 지평선 위로 마지막으로 떠올랐다. 스무 분 동안. 다섯 명이 각자 다른 이유로 1층 복도 끝 관측창 앞에 모였다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "다섯 명 전원이 관측창 앞에 모였으나 합의에 이르지 못함(서율 거부)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "마르타가 서율을 보았다. 서율은 고개를 저었다. 아직 아니었다."
+    },
+    {
+     "character_id": "CHAR_004",
+     "info": "서율이 아직 합의/결정할 준비가 안 됐음을 확인(고개 저음)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "마르타가 서율을 보았다. 서율은 고개를 저었다. 아직 아니었다."
+    }
+   ],
+   "cause": "극야 전 마지막 해 관측, 마르타의 28일 시한 도래",
+   "result": "5인 집결했으나 서율 거부로 합의 불발, 극야 진입",
+   "source_text": "4월 28일 12시 40분, 해가 지평선 위로 마지막으로 떠올랐다. 스무 분 동안. 다섯 명이 각자 다른 이유로 1층 복도 끝 관측창 앞에 모였다. 아무도 서로 말하지 않았다. 해가 내려가고 하늘이 남색으로 바뀌었을 때, 마르타가 서율을 보았다. 서율은 고개를 저었다. 아직 아니었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_12",
+   "scene_id": "scene_4_5",
+   "order": 5,
+   "title": "4월 28일 밤 카림의 쪽지: G2 진동 수치 기록",
+   "summary": "4월 28일 밤 카림이 쪽지에 G2 진동 수치 변화(0.8→1.3)를 기록해 남김.",
+   "location_id": "LOC_018",
+   "time_id": "TIME_067",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_020"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_020",
+     "field": "body_status",
+     "from": "빈 쪽지",
+     "to": "「173. G2 진동 0.8→1.3.」 기록됨",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그날 밤 카림의 쪽지에는 두 개의 숫자가 있었다. 「173. G2 진동 0.8→1.3.」"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "G2 진동 수치 0.8에서 1.3으로 증가함(베어링 문제 의심)",
+     "source_text": "G2 진동이 좀 늘었어요. 베어링일 수도 있어요. / 「173. G2 진동 0.8→1.3.」"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_020 (카림의 쪽지, 기록 매체)",
+     "source_text": "카림의 쪽지에는 두 개의 숫자가 있었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_9",
+     "assumes": "EVENT_4_2에서 카림이 'G2 진동 늘음, 베어링 의심, 내일 본다'고 한 내용이 이 쪽지 기록의 근거임",
+     "source_text": "G2 진동이 좀 늘었어요. 베어링일 수도 있어요. 내일 봅니다. / 그날 밤 카림의 쪽지에는 두 개의 숫자가 있었다. 「173. G2 진동 0.8→1.3.」"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "G2 진동 수치 0.8→1.3 증가 기록(베어링 문제 의심 정량화)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "「173. G2 진동 0.8→1.3.」"
+    }
+   ],
+   "cause": "G2 진동 증가 관측 후 정량 기록",
+   "result": "쪽지에 수치 기록 남김",
+   "source_text": "그날 밤 카림의 쪽지에는 두 개의 숫자가 있었다. 「173. G2 진동 0.8→1.3.」",
+   "certainty": "explicit"
+  }
+ ]
+}

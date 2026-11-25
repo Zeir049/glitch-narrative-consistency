@@ -1,0 +1,3822 @@
+{
+ "schema_version": 2,
+ "episode": 4,
+ "worldview_rules": [],
+ "characters": [
+  {
+   "character_id": "CHAR_037",
+   "name": "발라랏의 블랙 잭",
+   "aliases": [],
+   "entity_type": "person",
+   "description": "발라랏 갱의 두목. 존 터너의 과거 별명.",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_4_32",
+   "source_text": "나는 발라랏의 블랙 잭이라는 이름으로 통했고",
+   "certainty": "explicit"
+  }
+ ],
+ "locations": [
+  {
+   "location_id": "LOC_019",
+   "name": "스윈던",
+   "description": "기차 경유지",
+   "source_text": "스윈던에서 점심을 먹을 텐데, 이십 분 후면 도착할 것 같군.",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_020",
+   "name": "로스",
+   "description": "헤리퍼드셔의 작은 시골 마을, 사건 관련 지역",
+   "source_text": "마침내 우리가 로스라는 예쁜 작은 시골 마을에 도착했을 때는",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_021",
+   "name": "헤리퍼드 암스",
+   "description": "로스에 있는 호텔, 숙박 및 만남 장소",
+   "source_text": "그와 함께 우리는 이미 방이 예약되어 있는 헤리퍼드 암스로 마차를 몰았다.",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_022",
+   "name": "스트라우드 밸리",
+   "description": "기차로 통과한 강변 지역",
+   "source_text": "아름다운 스트라우드 밸리를 지나고 넓게 빛나는 세번강을 건넌 뒤",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_023",
+   "name": "세번강",
+   "description": "스트라우드 밸리에서 건넌 강",
+   "source_text": "넓게 빛나는 세번강을 건넌 뒤",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_024",
+   "name": "호텔 응접실",
+   "description": "호텔 안의 응접실. 홈즈와 왓슨이 점심을 먹고 장면이 벌어진 장소.",
+   "source_text": "점심이 차려져 있는 것을 발견했다",
+   "certainty": "inferred"
+  }
+ ],
+ "objects": [
+  {
+   "object_id": "OBJ_022",
+   "name": "헤리퍼드셔 지방 신문",
+   "description": "제임스 매카시의 검시 심리 보도가 실린 신문",
+   "first_appearance_event_id": "EVENT_4_12",
+   "source_text": "그는 뭉치에서 헤리퍼드셔 지방 신문 한 부를 꺼내",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_023",
+   "name": "휴대용 페트라르카 시집",
+   "description": "홈즈가 기차에서 읽으려 꺼낸 시집",
+   "first_appearance_event_id": "EVENT_4_14",
+   "source_text": "여기 내 휴대용 페트라르카 시집이 있으니, 우리가 현장에 도착할 때까지는 이 사건에 대해 더 이상 한마디도 하지 않겠네.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_024",
+   "name": "마차 (로스에서 예약된)",
+   "description": "레스트레이드가 미리 준비해 둔 마차",
+   "first_appearance_event_id": "EVENT_4_16",
+   "source_text": "마차를 준비해 두었습니다",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_025",
+   "name": "회색빛 외투/격자무늬 천 조각 (검시 진술 속 무언가)",
+   "description": "제임스 매카시가 진술에서 시신 곁에 있었다고 언급한 회색빛 무언가",
+   "first_appearance_event_id": "EVENT_4_12",
+   "source_text": "제 왼쪽 땅바닥에 무언가가 놓여 있었다는 막연한 인상은 있습니다. 그것은 어떤 종류의 외투나, 어쩌면 격자무늬 천 같은, 회색빛의 무언가로 보였습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_026",
+   "name": "살인 무기로 사용된 돌",
+   "description": "보스콤 못 부근 너도밤나무 아래에서 홈즈가 회수한 이끼 사이의 돌. 밑에서 풀이 자라고 있어 최근 놓인 것으로 추정됨.",
+   "first_appearance_event_id": "EVENT_4_29",
+   "source_text": "이끼 사이에 삐죽한 돌 하나가 놓여 있었는데, 그는 이것도 꼼꼼히 살펴보고는 챙겨 넣었다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_027",
+   "name": "빅토리아 식민지 지도",
+   "description": "홈즈가 브리스틀로 전보를 쳐서 받은 빅토리아 식민지 지도.",
+   "first_appearance_event_id": "EVENT_4_33",
+   "source_text": "이건 빅토리아 식민지의 지도일세, 어젯밤 브리스틀로 전보를 쳐서 받은 것일세",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_028",
+   "name": "터너의 자백서",
+   "description": "홈즈가 펜으로 적고 터너가 서명한 매카시 사건 자백서. 왓슨이 증인.",
+   "first_appearance_event_id": "EVENT_4_42",
+   "source_text": "그저 진실을 말씀해 주십시오, 제가 사실을 적어 두겠습니다. 서명하시면, 여기 왓슨이 증인이 되어 줄 겁니다.",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "TIME_029",
+   "expression": "보스콤 밸리 사건 전보 수신 당일 아침",
+   "description": "아내와 아침 식사 중 홈즈의 전보가 도착한 시점",
+   "timeline": "main",
+   "source_text": "아내와 나는 아침 식사를 하려고 자리에 앉아 있었는데, 하녀가 전보 한 통을 들고 들어왔다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_030",
+   "expression": "11시 15분 패딩턴 출발",
+   "description": "홈즈와 왓슨이 패딩턴 역을 떠나는 시각",
+   "timeline": "main",
+   "source_text": "11시 15분에 패딩턴을 떠나게.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_031",
+   "expression": "6월 3일 (지난 월요일) 오후 세 시",
+   "description": "찰스 매카시가 해서리 농가를 나서 보스콤 못으로 향한 시각",
+   "timeline": "main",
+   "source_text": "6월 3일, 그러니까 지난 월요일에, 매카시는 오후 세 시쯤 해서리의 집을 나서서 보스콤 못 쪽으로 걸어 내려갔네.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_032",
+   "expression": "보스콤 못 사건 직후 그날 저녁",
+   "description": "사냥터지기가 매카시 부자 목격에 대해 더 이상 마음에 두지 않았다가 저녁에 사건을 듣게 된 시점",
+   "timeline": "main",
+   "source_text": "그는 저녁에 그 비극적 사건에 대해 듣기 전까지는 그 일을 더 이상 마음에 두지 않았다고 하네.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_033",
+   "expression": "화요일 검시 심리",
+   "description": "제임스 매카시 체포 후 '고의 살인' 평결이 나온 심리",
+   "timeline": "main",
+   "source_text": "그 청년은 즉시 체포되었고, 화요일 검시 심리에서 '고의 살인'이라는 평결이 나온 뒤, 수요일에는 로스의 치안판사 앞에 서게 되었으며, 판사들은 이 사건을 다음 순회재판으로 넘겼네.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_034",
+   "expression": "수요일 (치안판사 법정)",
+   "description": "제임스 매카시가 로스 치안판사 앞에 선 시각",
+   "timeline": "main",
+   "source_text": "화요일 검시 심리에서 '고의 살인'이라는 평결이 나온 뒤, 수요일에는 로스의 치안판사 앞에 서게 되었으며, 판사들은 이 사건을 다음 순회재판으로 넘겼네.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_018",
+   "expression": "거의 네 시",
+   "description": "로스 도착 시각",
+   "timeline": "main",
+   "source_text": "로스라는 예쁜 작은 시골 마을에 도착했을 때는 거의 네 시가 다 되어 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_035",
+   "expression": "약 20분 후",
+   "description": "스윈던 도착 예정 시각",
+   "timeline": "main",
+   "source_text": "스윈던에서 점심을 먹을 텐데, 이십 분 후면 도착할 것 같군.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_036",
+   "expression": "오늘 밤",
+   "description": "홈즈가 레스트레이드와 함께 감옥에서 제임스 매카시를 만나러 헤리퍼드행 기차로 출발한 밤",
+   "timeline": "main",
+   "source_text": "그럼 오늘 밤 외출은 하지 않겠다는 결심을 다시 생각해 봐야겠군. 헤리퍼드행 기차를 타고 오늘 밤 그를 만날 시간은 아직 있나?",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_037",
+   "expression": "그 밤 늦게",
+   "description": "홈즈가 감옥 방문에서 돌아온 시각",
+   "timeline": "main",
+   "source_text": "셜록 홈즈가 돌아온 것은 밤이 늦어서였다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_011",
+   "expression": "아홉 시",
+   "description": "레스트레이드가 마차를 가지고 베이커가를 찾아온 시각.",
+   "timeline": "main",
+   "source_text": "아홉 시에 레스트레이드가 마차를 가지고 우리를 찾아왔고",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_038",
+   "expression": "점심 식후",
+   "description": "호텔에서 점심이 차려진 직후.",
+   "timeline": "main",
+   "source_text": "상[食]이 치워지자",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_039",
+   "expression": "60년대 초 (호주, 발라랏)",
+   "description": "터너가 채굴지에서 활동하던 과거 시점.",
+   "timeline": "main",
+   "source_text": "그건 60년대 초, 채굴지에서였소",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T15:48:55Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 55.96
+ },
+ "_merge": {
+  "spec": "handoff/chunked_extract_spec.md",
+  "chunks": [
+   "episode_04_c01.json",
+   "episode_04_c02.json",
+   "episode_04_c03.json",
+   "episode_04_c04.json",
+   "episode_04_c05.json",
+   "episode_04_c06.json"
+  ],
+  "name_resolved": {
+   "NEW:터너_양": "CHAR_017"
+  },
+  "unmapped_new": [
+   "NEW:검시관",
+   "NEW:경위",
+   "NEW:그날_오후_늦게",
+   "NEW:기차_객차",
+   "NEW:레딩_지나기_전후",
+   "NEW:로스(역)",
+   "NEW:로스_법정",
+   "NEW:마차_로스_예약 (범행 현장 다녀오기용으로 사전 준비)",
+   "NEW:매카시의_남자_하인",
+   "NEW:면담_이후_7개월_후",
+   "NEW:못에서의_만남_시점",
+   "NEW:문지기",
+   "NEW:보스콤_못_주변_숲",
+   "NEW:보스콤_못_주변_풀밭",
+   "NEW:보스콤_못_쪽_길",
+   "NEW:보스콤_밸리_주민",
+   "NEW:보스콤_호텔",
+   "NEW:사건_종결_이후_미래",
+   "NEW:서류_더미",
+   "NEW:숙녀_의뢰인",
+   "NEW:순회재판_시점",
+   "NEW:아홉_시_이후",
+   "NEW:앨리스_방문_당일",
+   "NEW:앨리스_퇴장_직후",
+   "NEW:앨리스_퇴장_직후_같은_저녁",
+   "NEW:여행_가방",
+   "NEW:여행용_망토",
+   "NEW:윌리엄_크라우더",
+   "NEW:이름_불명의_노파",
+   "NEW:전날_밤_대화_시각",
+   "NEW:전보",
+   "NEW:천_모자",
+   "NEW:총_(제임스)",
+   "NEW:치안판사",
+   "NEW:패딩턴_역_승강장",
+   "NEW:페이션스_모런",
+   "NEW:하녀",
+   "NEW:해서리에서_보스콤못으로_가는_길",
+   "NEW:헤리퍼드셔_지방_신문 (뭉치에 넣어 휴대)",
+   "NEW:현장_답사_시각",
+   "NEW:현장_답사_직후_귀환길",
+   "NEW:현장_진술_시점",
+   "NEW:휴대용_페트라르카_시집 (소지품에 시집을 넣어 휴대 중)"
+  ]
+ },
+ "events": [
+  {
+   "event_id": "EVENT_4_1",
+   "scene_id": "scene_4_1",
+   "order": 1,
+   "title": "홈즈의 전보 도착",
+   "summary": "아침 식사 중 홈즈로부터 보스콤 밸리 사건 조사에 동행해 달라는 전보가 도착한다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_029",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_001",
+    "CHAR_041"
+   ],
+   "witness_character_ids": [
+    "NEW:하녀"
+   ],
+   "main_actor_character_id": "NEW:하녀",
+   "objects": [
+    "NEW:전보"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "NEW:전보",
+     "field": "possesses",
+     "assumes": "발신자 정보 (셜록 홈즈)",
+     "source_text": "셜록 홈즈에게서 온 것으로, 이렇게 쓰여 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "보스콤 밸리 비극에 대해 아직 알지 못함",
+     "source_text": "보스콤 밸리 비극과 관련해 잉글랜드 서부에서 방금 전보로 불려 왔네."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "보스콤 밸리 비극 사건이 발생했고 홈즈가 패딩턴 11시 15분 출발로 동행을 요청함",
+     "via": "told",
+     "retained": true,
+     "source_text": "보스콤 밸리 비극과 관련해 잉글랜드 서부에서 방금 전보로 불려 왔네. 함께 와 준다면 기쁘겠네. 11시 15분에 패딩턴을 떠나게."
+    },
+    {
+     "character_id": "CHAR_041",
+     "info": "보스콤 밸리 비극 사건과 홈즈의 동행 요청",
+     "via": "told",
+     "retained": true,
+     "source_text": "보스콤 밸리 비극과 관련해 잉글랜드 서부에서 방금 전보로 불려 왔네."
+    }
+   ],
+   "cause": "보스콤 밸리 사건 발생",
+   "result": "왓슨이 동행하기로 결심하고 짐을 싸 출발 준비를 함",
+   "source_text": "하녀가 전보 한 통을 들고 들어왔다. 셜록 홈즈에게서 온 것으로, 이렇게 쓰여 있었다. \"이틀쯤 시간을 낼 수 있겠나? 보스콤 밸리 비극과 관련해 잉글랜드 서부에서 방금 전보로 불려 왔네. 함께 와 준다면 기쁘겠네. 공기와 경치는 더할 나위 없네. 11시 15분에 패딩턴을 떠나게.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_2",
+   "scene_id": "scene_4_2",
+   "order": 2,
+   "title": "패딩턴 역에서 홈즈와 합류",
+   "summary": "왓슨이 30분 만에 짐을 싸 패딩턴 역에 도착해 홈즈를 만나 함께 출발한다.",
+   "location_id": "NEW:패딩턴_역_승강장",
+   "time_id": "TIME_030",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "NEW:여행_가방",
+    "NEW:여행용_망토",
+    "NEW:천_모자",
+    "NEW:서류_더미"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "unknown",
+     "to": "NEW:패딩턴_역_승강장",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "셜록 홈즈는 승강장을 오가고 있었는데"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "NEW:서류_더미",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "홈즈가 가져온 어마어마한 서류 더미"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "여윈 체격 (키 크고 마른 몸)",
+     "source_text": "그의 크고 여윈 몸은 긴 회색 여행용 망토와 몸에 딱 붙는 천 모자 때문에 한층 더 여위고 커 보였다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "여행 가방",
+     "source_text": "정해진 시간보다도 짧은 시간 안에 나는 가방을 들고 마차에 올라"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "아프가니스탄 야영 경험으로 빠르고 준비성 있는 여행 가능",
+     "source_text": "아프가니스탄에서 야영 생활을 했던 경험은 적어도 나를 재빠르고 준비성 있는 여행자로 만드는 효과가 있었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_1",
+     "assumes": "EVENT_4_1의 전보 도착 이후 짐 싸기와 마차 이동이 30분 이내에 이루어짐",
+     "source_text": "가려면 지금 당장 짐을 싸야 해, 삼십 분밖에 없으니까."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "EVENT_4_1의 전보 수신",
+   "result": "홈즈와 왓슨이 기차에 탑승해 서부로 향함",
+   "source_text": "정해진 시간보다도 짧은 시간 안에 나는 가방을 들고 마차에 올라 덜컹거리며 패딩턴 역으로 향했다. 셜록 홈즈는 승강장을 오가고 있었는데",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_3",
+   "scene_id": "scene_4_3",
+   "order": 3,
+   "title": "기차 안에서 사건 개요 설명",
+   "summary": "기차 안에서 홈즈가 왓슨에게 보스콤 밸리 사건의 배경을 설명하고, 범인 단서가 없는 사건이라고 밝힌다.",
+   "location_id": "NEW:기차_객차",
+   "time_id": "NEW:레딩_지나기_전후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "NEW:서류_더미"
+   ],
+   "state_changes": [
+    {
+     "entity": "NEW:서류_더미",
+     "field": "location",
+     "from": "NEW:패딩턴_역_승강장",
+     "to": "NEW:기차_객차",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "홈즈가 가져온 어마어마한 서류 더미를 빼면 객차를 통째로 우리끼리만 썼다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "보스콤 밸리 사건의 세부 사항 (언론 보도 취합 결과)",
+     "source_text": "방금 세부 사항을 파악하려고 최근 신문들을 죄다 훑어봤네."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "not_knows: 보스콤 밸리 사건에 대해 들어본 적 없음",
+     "source_text": "\"한마디도 못 들었네. 요 며칠 신문을 못 봤거든.\""
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "보스콤 밸리 사건은 단순해 보이는 유형이라 오히려 어려운 사건임",
+     "via": "told",
+     "retained": true,
+     "source_text": "지극히 단순하면서도 그래서 오히려 지극히 어려운 그런 유형의 사건 같더군."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "범죄가 특징 없고 흔할수록 범인 잡기가 더 어려움",
+     "via": "told",
+     "retained": true,
+     "source_text": "범죄가 특징 없고 흔할수록, 범인을 잡아내기는 오히려 더 어려운 법이지."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "살해당한 남자의 아들에게 심각한 혐의가 씌워진 상태임",
+     "via": "told",
+     "retained": true,
+     "source_text": "이번 사건에서는, 살해당한 남자의 아들에게 아주 심각한 혐의를 씌워 놓았더군."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "보스콤 밸리 사건에는 레스트레이드가 관여하고 있음",
+     "via": "told",
+     "retained": true,
+     "source_text": "그 동네에는 몇몇 사람들이, 그중에서도 이웃 지주의 딸인 터너 양이, 그의 무죄를 믿고 있고, 그들은 그의 이익을 위해 사건을 조사하도록 레스트레이드를 고용했네"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "레스트레이드가 이 사건을 홈즈에게 넘김",
+     "via": "told",
+     "retained": true,
+     "source_text": "레스트레이드는 다소 당황해서 이 사건을 나에게 넘겼고"
+    }
+   ],
+   "cause": "패딩턴 출발 후 기차 안에서 대화",
+   "result": "왓슨이 사건 개요를 청취함",
+   "source_text": "\"이 사건에 대해 뭔가 들은 게 있나?\" 그가 물었다. \"한마디도 못 들었네. 요 며칠 신문을 못 봤거든.\" \"런던 언론은 아직 자세한 내용을 다루지 않았더군.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_4",
+   "scene_id": "scene_4_3",
+   "order": 4,
+   "title": "보스콤 밸리와 인물 소개",
+   "summary": "홈즈가 보스콤 밸리의 지주 존 터너, 소작인 찰스 매카시, 그리고 가솔·하인의 구성을 설명한다.",
+   "location_id": "NEW:기차_객차",
+   "time_id": "NEW:레딩_지나기_전후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "NEW:보스콤_밸리_주민",
+     "field": "knows",
+     "assumes": "매카시 부자가 동네 경마 대회에서 자주 눈에 띈다는 사실 (스포츠 선호)",
+     "source_text": "매카시 부자는 스포츠를 좋아해서 동네 경마 대회에서는 자주 눈에 띄었다고 하네."
+    },
+    {
+     "entity": "CHAR_016",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_006",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "터너 쪽이 아무래도 더 부유한 사람이라 매카시가 그의 소작인이 되었지만"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_3",
+     "assumes": "같은 기차 안에서의 연속된 서술이며 시간 경과가 없음",
+     "source_text": "내가 이해한 한도 안에서, 사정을 아주 간단히 설명해 줌세."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "보스콤 밸리는 헤리퍼드셔의 로스에서 멀지 않은 시골 지역",
+     "via": "told",
+     "retained": true,
+     "source_text": "보스콤 밸리는 헤리퍼드셔의 로스에서 그리 멀지 않은 시골 지역일세."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "가장 큰 지주는 오스트레일리아에서 돈을 벌고 돌아온 존 터너",
+     "via": "told",
+     "retained": true,
+     "source_text": "그 지역에서 가장 큰 지주는 존 터너라는 사람인데, 오스트레일리아에서 돈을 벌어서 몇 년 전 본국으로 돌아왔지."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "터너의 농장 중 해서리 농장은 오스트레일리아에서 돌아온 찰스 매카시에게 임대됨",
+     "via": "told",
+     "retained": true,
+     "source_text": "그가 소유한 농장 중 하나인 해서리 농장은 찰스 매카시라는 사람에게 임대되었는데, 그 역시 오스트레일리아에서 살다 온 사람이었네."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "터너와 매카시는 식민지에서 서로 알던 사이이며 대등한 관계를 유지함",
+     "via": "told",
+     "retained": true,
+     "source_text": "두 사람은 식민지에서 서로 알던 사이였고, 그러니 정착할 때 서로 가까이 자리 잡은 것도 자연스러운 일이었지. 터너 쪽이 아무래도 더 부유한 사람이라 매카시가 그의 소작인이 되었지만, 그럼에도 두 사람은 완전히 대등한 관계를 유지하는 것처럼 보였고, 자주 함께 어울렸다네."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "매카시에게는 열여덟 살 아들 하나, 터너에게는 같은 나이의 외동딸 하나가 있으며 모두 미혼",
+     "via": "told",
+     "retained": true,
+     "source_text": "매카시에게는 열여덟 살 난 아들이 하나 있었고, 터너에게는 같은 나이의 외동딸이 하나 있었는데, 둘 다 아내는 없었네."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "매카시 부자는 영국인 이웃 가문과의 교류를 피하고 은둔한 생활을 함",
+     "via": "told",
+     "retained": true,
+     "source_text": "그들은 이웃한 영국인 가문들과의 교류는 피하고 은둔한 생활을 한 것 같지만"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "매카시 집에는 남자 하나와 여자 하나, 총 두 명의 하인이 있음",
+     "via": "told",
+     "retained": true,
+     "source_text": "매카시는 하인 둘—남자 하나와 여자 하나—을 두었네."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "터너는 적어도 예닐곱 명의 가솔을 두고 있음",
+     "via": "told",
+     "retained": true,
+     "source_text": "터너는 상당한 규모의 가솔을 두었는데, 적어도 예닐곱은 되었지."
+    }
+   ],
+   "cause": "EVENT_4_3의 대화 계속",
+   "result": "왓슨이 보스콤 밸리 인물 관계를 청취함",
+   "source_text": "보스콤 밸리는 헤리퍼드셔의 로스에서 그리 멀지 않은 시골 지역일세. 그 지역에서 가장 큰 지주는 존 터너라는 사람인데",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_5",
+   "scene_id": "scene_4_3",
+   "order": 5,
+   "title": "6월 3일 오후 매카시의 외출과 약속",
+   "summary": "6월 3일 오후, 매카시는 하인과 함께 로스에 외출했다가 3시에 중요한 약속이 있다고 말하며 해서리를 나선다.",
+   "location_id": "LOC_007",
+   "time_id": "TIME_031",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_014"
+   ],
+   "witness_character_ids": [
+    "NEW:매카시의_남자_하인"
+   ],
+   "main_actor_character_id": "CHAR_014",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_014",
+     "field": "location",
+     "from": "LOC_007",
+     "to": "NEW:보스콤_못_쪽_길",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "매카시는 오후 세 시쯤 해서리의 집을 나서서 보스콤 못 쪽으로 걸어 내려갔네."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_014",
+     "field": "knows",
+     "assumes": "세 시에 중요한 약속이 있음",
+     "source_text": "세 시에 중요한 약속이 있으니 서둘러야 한다고 하인에게 말했다더군."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_4",
+     "assumes": "사건 배경 설명 중 매카시의 마지막 외출이 시간순으로 서술됨",
+     "source_text": "그 약속에서 그는 살아서 돌아오지 못했네."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "NEW:매카시의_남자_하인",
+     "info": "매카시가 세 시에 중요한 약속이 있다고 말함",
+     "via": "told",
+     "retained": true,
+     "source_text": "세 시에 중요한 약속이 있으니 서둘러야 한다고 하인에게 말했다더군."
+    }
+   ],
+   "cause": "매카시의 약속",
+   "result": "매카시가 보스콤 못 쪽으로 걸어 내려감",
+   "source_text": "6월 3일, 그러니까 지난 월요일에, 매카시는 오후 세 시쯤 해서리의 집을 나서서 보스콤 못 쪽으로 걸어 내려갔네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_6",
+   "scene_id": "scene_4_3",
+   "order": 6,
+   "title": "매카시 부자 목격 (사냥터지기 증언)",
+   "summary": "사냥터지기 윌리엄 크라우더가 매카시 부자가 같은 방향으로 걷는 것을 목격했다.",
+   "location_id": "NEW:해서리에서_보스콤못으로_가는_길",
+   "time_id": "TIME_031",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "NEW:윌리엄_크라우더"
+   ],
+   "witness_character_ids": [
+    "NEW:이름_불명의_노파"
+   ],
+   "main_actor_character_id": "NEW:윌리엄_크라우더",
+   "objects": [
+    "NEW:총_(제임스)"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "NEW:윌리엄_크라우더",
+     "field": "knows",
+     "assumes": "목격 시점에 매카시 부자가 같은 방향으로 이동 중이었음",
+     "source_text": "두 사람이 그가 이 길을 지나는 것을 보았네."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_5",
+     "assumes": "EVENT_4_5 직후 같은 시각의 연속된 이동 장면",
+     "source_text": "두 사람이 그가 이 길을 지나는 것을 보았네."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "NEW:윌리엄_크라우더",
+     "info": "매카시가 혼자 먼저 걷고 있었음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이 두 증인 모두 매카시 씨가 혼자 걷고 있었다고 증언했지."
+    },
+    {
+     "character_id": "NEW:윌리엄_크라우더",
+     "info": "몇 분 뒤 제임스 매카시가 팔 아래 총을 끼고 같은 방향으로 걸어감",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그의 아들인 제임스 매카시 씨가 팔 아래 총을 낀 채 같은 방향으로 가는 것을 보았다고 덧붙였네."
+    }
+   ],
+   "cause": "EVENT_4_5로 매카시가 집을 나선 직후",
+   "result": "사냥터지기의 증언이 확보됨",
+   "source_text": "한 사람은 이름이 밝혀지지 않은 노파였고, 다른 한 사람은 터너 씨 밑에서 일하는 사냥터지기 윌리엄 크라우더였네. 이 두 증인 모두 매카시 씨가 혼자 걷고 있었다고 증언했지.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_7",
+   "scene_id": "scene_4_3",
+   "order": 7,
+   "title": "보스콤 못 숲에서의 격렬한 말다툼 (페이션스 모런 목격)",
+   "summary": "보스콤 못 근처 숲에서 매카시 부자가 격렬하게 다투고 있었고, 아들이 아버지를 때리려는 듯 손을 드는 것이 14세 소녀 페이션스 모런에게 목격된다.",
+   "location_id": "NEW:보스콤_못_주변_숲",
+   "time_id": "TIME_031",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "NEW:페이션스_모런",
+    "CHAR_014",
+    "CHAR_015"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "NEW:페이션스_모런",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_015",
+     "field": "body_status",
+     "from": "unknown",
+     "to": "손을 들어 올린 상태 (때리는 듯한 제스처)",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "아들이 마치 아버지를 때리려는 듯 손을 들어 올리는 것을 보았다고 하네."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "NEW:페이션스_모런",
+     "field": "knows",
+     "assumes": "두 사람이 격렬하게 다투고 있다는 것을 지각함",
+     "source_text": "두 사람은 격렬한 말다툼을 하고 있는 것처럼 보였다고 하네."
+    },
+    {
+     "entity": "NEW:페이션스_모런",
+     "field": "body_status",
+     "assumes": "꽃을 꺾을 수 있는 일반적 신체 상태",
+     "source_text": "보스콤 밸리 영지의 문지기 딸인 열네 살 소녀 페이션스 모런이 숲 한쪽에서 꽃을 꺾고 있었네."
+    },
+    {
+     "entity": "NEW:페이션스_모런",
+     "field": "ability",
+     "assumes": "위험을 알아채고 달아날 수 있음",
+     "source_text": "그녀는 두 사람의 격렬함에 너무 놀라 달아났고"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_6",
+     "assumes": "사냥터지기가 시야에서 놓친 이후의 같은 장면의 다른 증인 시점",
+     "source_text": "두 매카시가 목격된 것은 사냥터지기 윌리엄 크라우더가 그들을 시야에서 놓친 이후였네."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "NEW:페이션스_모런",
+     "info": "매카시 부자가 격렬히 다투고 있고 아들이 아버지를 때리려는 듯 손을 들었음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "두 사람은 격렬한 말다툼을 하고 있는 것처럼 보였다고 하네. … 아들이 마치 아버지를 때리려는 듯 손을 들어 올리는 것을 보았다고 하네."
+    }
+   ],
+   "cause": "매카시 부자 사이의 다툼",
+   "result": "페이션스가 놀라 집으로 달아남",
+   "source_text": "보스콤 밸리 영지의 문지기 딸인 열네 살 소녀 페이션스 모런이 숲 한쪽에서 꽃을 꺾고 있었네. 그녀의 진술에 따르면, 거기 있는 동안 숲 가장자리, 호수 바로 옆에서 매카시 씨와 그 아들을 보았는데, 두 사람은 격렬한 말다툼을 하고 있는 것처럼 보였다고 하네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_8",
+   "scene_id": "scene_4_3",
+   "order": 8,
+   "title": "보스콤 못에서 매카시 시체 발견",
+   "summary": "제임스 매카시가 흥분한 상태로 문지기를 찾아와 숲에서 아버지 시체를 발견했다고 알리고, 총과 모자가 없는 채로 발견된다.",
+   "location_id": "NEW:보스콤_못_주변_풀밭",
+   "time_id": "NEW:그날_오후_늦게",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_015"
+   ],
+   "witness_character_ids": [
+    "NEW:문지기"
+   ],
+   "main_actor_character_id": "CHAR_015",
+   "objects": [
+    "NEW:총_(제임스)"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_014",
+     "field": "alive",
+     "from": "true",
+     "to": "false",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "못 옆 풀밭에 시체가 뻗어 있었네. 머리는 무겁고 무딘 무기로 여러 차례 얻어맞아 부서져 있었네."
+    },
+    {
+     "entity": "CHAR_014",
+     "field": "body_status",
+     "from": "건강",
+     "to": "머리가 무겁고 무딘 무기에 여러 차례 맞아 부서짐",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "머리는 무겁고 무딘 무기로 여러 차례 얻어맞아 부서져 있었네."
+    },
+    {
+     "entity": "NEW:총_(제임스)",
+     "field": "location",
+     "from": "CHAR_015",
+     "to": "NEW:보스콤_못_주변_풀밭",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그 총은 시체에서 몇 걸음 떨어진 풀밭에 놓여 있는 채로 발견되었네."
+    },
+    {
+     "entity": "CHAR_015",
+     "field": "body_status",
+     "from": "정상",
+     "to": "오른손과 소매에 갓 흘린 피의 흔적",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "총도 모자도 없었으며, 오른손과 소매에는 갓 흘린 피의 흔적이 있는 것이 목격되었네."
+    },
+    {
+     "entity": "CHAR_015",
+     "field": "possesses",
+     "from": "NEW:총_(제임스)",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "총도 모자도 없었으며"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_015",
+     "field": "knows",
+     "assumes": "아버지가 숲에서 죽어 있는 것을 발견함",
+     "source_text": "숲에서 아버지가 죽어 있는 것을 발견했다며 문지기의 도움을 청했다는 걸세."
+    },
+    {
+     "entity": "CHAR_015",
+     "field": "body_status",
+     "assumes": "몹시 흥분한 상태",
+     "source_text": "그는 몹시 흥분한 상태였고"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_7",
+     "assumes": "EVENT_4_7의 다툼 직후 같은 장면의 후속으로 시체 발견이 이루어짐",
+     "source_text": "그 말을 하자마자, 젊은 매카시 씨가 문지기 오두막으로 달려와서 숲에서 아버지가 죽어 있는 것을 발견했다며"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_015",
+     "info": "아버지가 숲에서 죽어 있는 것을 발견함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "숲에서 아버지가 죽어 있는 것을 발견했다며 문지기의 도움을 청했다는 걸세."
+    }
+   ],
+   "cause": "사건 발생",
+   "result": "제임스 매카시가 체포되어 법정에 서게 됨",
+   "source_text": "못 옆 풀밭에 시체가 뻗어 있었네. 머리는 무겁고 무딘 무기로 여러 차례 얻어맞아 부서져 있었네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_9",
+   "scene_id": "scene_4_3",
+   "order": 9,
+   "title": "제임스 매카시 체포와 검시 평결",
+   "summary": "제임스 매카시가 즉시 체포되어 화요일 검시 심리에서 '고의 살인' 평결을 받고, 수요일에 치안판사 앞에 선 뒤 다음 순회재판으로 회부된다.",
+   "location_id": "NEW:로스_법정",
+   "time_id": "TIME_033",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_015",
+    "NEW:검시관",
+    "NEW:치안판사"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "NEW:검시관",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_015",
+     "field": "body_status",
+     "from": "자유 상태",
+     "to": "체포 상태",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "이런 정황에서 그 청년은 즉시 체포되었고"
+    }
+   ],
+   "assumed_states": [],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_8",
+     "assumes": "EVENT_4_8의 시체 발견 직후 같은 사건의 후속 단계",
+     "source_text": "이런 정황에서 그 청년은 즉시 체포되었고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "NEW:검시관",
+     "info": "제임스 매카시에 대한 '고의 살인' 평결",
+     "via": "inference",
+     "retained": true,
+     "source_text": "화요일 검시 심리에서 '고의 살인'이라는 평결이 나온 뒤"
+    }
+   ],
+   "cause": "EVENT_4_8의 시체 발견 및 정황",
+   "result": "사건이 다음 순회재판으로 넘어감",
+   "source_text": "이런 정황에서 그 청년은 즉시 체포되었고, 화요일 검시 심리에서 '고의 살인'이라는 평결이 나온 뒤, 수요일에는 로스의 치안판사 앞에 서게 되었으며, 판사들은 이 사건을 다음 순회재판으로 넘겼네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_10",
+   "scene_id": "scene_4_3",
+   "order": 10,
+   "title": "레스트레이드의 개입과 사건 이관",
+   "summary": "터너 양 등 일부 주민이 제임스 매카시의 무죄를 믿어 레스트레이드를 고용했고, 레스트레이드가 사건을 홈즈에게 넘긴다.",
+   "location_id": "NEW:로스_법정",
+   "time_id": "TIME_034",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_017",
+    "CHAR_018",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_017",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_018",
+     "field": "body_status",
+     "from": "신뢰할 만한 상태",
+     "to": "당황한 상태",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "레스트레이드는 다소 당황해서 이 사건을 나에게 넘겼고"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_017",
+     "field": "knows",
+     "assumes": "제임스 매카시의 무죄를 믿음",
+     "source_text": "그 동네에는 몇몇 사람들이, 그중에서도 이웃 지주의 딸인 터너 양이, 그의 무죄를 믿고 있고"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_9",
+     "assumes": "EVENT_4_9의 순회재판 회부 결정 이후 사건이 레스트레이드에게로 넘어감",
+     "source_text": "그들은 그의 이익을 위해 사건을 조사하도록 레스트레이드를 고용했네"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "터너 양과 다른 주민들이 제임스 매카시의 무죄를 믿고 레스트레이드를 고용함",
+     "via": "told",
+     "retained": true,
+     "source_text": "그 동네에는 몇몇 사람들이, 그중에서도 이웃 지주의 딸인 터너 양이, 그의 무죄를 믿고 있고, 그들은 그의 이익을 위해 사건을 조사하도록 레스트레이드를 고용했네"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "레스트레이드가 사건을 홈즈에게 넘김",
+     "via": "told",
+     "retained": true,
+     "source_text": "레스트레이드는 다소 당황해서 이 사건을 나에게 넘겼고"
+    }
+   ],
+   "cause": "EVENT_4_9의 법정 절차",
+   "result": "홈즈가 사건 조사를 맡게 됨",
+   "source_text": "그 동네에는 몇몇 사람들이, 그중에서도 이웃 지주의 딸인 터너 양이, 그의 무죄를 믿고 있고, 그들은 그의 이익을 위해 사건을 조사하도록 레스트레이드를 고용했네—『주홍색 연구』와 관련해서 자네도 기억할 걸세. 레스트레이드는 다소 당황해서 이 사건을 나에게 넘겼고",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_11",
+   "scene_id": "scene_4_3",
+   "order": 11,
+   "title": "검시 심리의 사소한 점: 자업자득 발언",
+   "summary": "홈즈는 체포 통고를 들은 제임스 매카시가 '자업자득'이라고 말한 뒤 곧 무죄 항변을 이어간 점을 미묘한 정황으로 짚는다.",
+   "location_id": "NEW:로스_법정",
+   "time_id": "TIME_033",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_015",
+    "NEW:경위",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_015",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_015",
+     "field": "knows",
+     "assumes": "체포 통고에 놀라지 않고 자업자득이라고 반응함",
+     "source_text": "경위가 그에게 그가 체포되었다고 알렸을 때, 그는 그 말을 듣고도 놀랍지 않다고, 그건 자업자득이라고 말했다더군."
+    },
+    {
+     "entity": "CHAR_015",
+     "field": "knows",
+     "assumes": "그 발언 직후 곧 무죄를 항변함",
+     "source_text": "그 발언은 자연히 검시 배심원단의 마음에 남아 있을 법한 의심의 흔적을 지워 버리는 효과를 냈네. … 왜냐하면 그 뒤에 곧 무죄 항변이 이어졌으니까."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_9",
+     "assumes": "EVENT_4_9의 체포 절차 중 발생한 발화이며 시간 경과가 없음",
+     "source_text": "검시 심리에서 드러난 사소한 점이 한두 가지 있는데, 살펴볼 만한 가치가 있네."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "제임스 매카시가 체포 통고에 '자업자득'이라고 말했다가 곧 무죄 항변을 함",
+     "via": "told",
+     "retained": true,
+     "source_text": "그의 체포는 즉시 이루어진 게 아니라, 해서리 농장으로 돌아온 뒤에야 이루어졌던 것 같네. 경위가 그에게 그가 체포되었다고 알렸을 때, 그는 그 말을 듣고도 놀랍지 않다고, 그건 자업자득이라고 말했다더군. … 왜냐하면 그 뒤에 곧 무죄 항변이 이어졌으니까."
+    }
+   ],
+   "cause": "EVENT_4_9의 체포 과정",
+   "result": "홈즈가 이 사소한 점을 미묘한 단서로 포착함",
+   "source_text": "검시 심리에서 드러난 사소한 점이 한두 가지 있는데, 살펴볼 만한 가치가 있네. … 경위가 그에게 그가 체포되었다고 알렸을 때, 그는 그 말을 듣고도 놀랍지 않다고, 그건 자업자득이라고 말했다더군. 이 발언은 자연히 검시 배심원단의 마음에 남아 있을 법한 의심의 흔적을 지워 버리는 효과를 냈네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_12",
+   "scene_id": "scene_4_1",
+   "order": 1,
+   "title": "기차 안에서 제임스 매카시의 검시 진술 읽기",
+   "summary": "홈즈와 왓슨은 기차 안에서 헤리퍼드셔 지방 신문에 실린 제임스 매카시의 검시 진술과 그에 대한 검시관의 문답을 읽으며 논평한다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_022",
+    "OBJ_025"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_009 (사건 기록장 — 뭉치 속에 신문과 함께 넣어두고 꺼냄)",
+     "source_text": "그는 뭉치에서 헤리퍼드셔 지방 신문 한 부를 꺼내"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "NEW:헤리퍼드셔_지방_신문 (뭉치에 넣어 휴대)",
+     "source_text": "그는 뭉치에서 헤리퍼드셔 지방 신문 한 부를 꺼내"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "영문 신문 정독 가능",
+     "source_text": "나는 객차 구석에 자리를 잡고 앉아 아주 꼼꼼히 그것을 읽었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "보스콤 밸리 사건의 검시 결과(제임스 매카시 진술)를 이제 알게 됨",
+     "source_text": "나는 객차 구석에 자리를 잡고 앉아 아주 꼼꼼히 그것을 읽었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_14",
+     "assumes": "이 사건이 끝난 직후 같은 기차 안에서 홈즈가 페트라르카 시집을 꺼내며 사건 이야기를 멈추는 것으로 이어진다",
+     "source_text": "그가 헤리퍼드셔 지방 신문 한 부를 꺼내… 자, 여기 내 휴대용 페트라르카 시집이 있으니, 우리가 현장에 도착할 때까지는 이 사건에 대해 더 이상 한마디도 하지 않겠네."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "제임스 매카시가 검시에서 한 진술 전문 및 검시관과의 문답 내용",
+     "via": "document",
+     "retained": true,
+     "source_text": "나는 객차 구석에 자리를 잡고 앉아 아주 꼼꼼히 그것을 읽었다."
+    }
+   ],
+   "cause": "홈즈가 뭉치에서 신문을 꺼내 가리킴",
+   "result": "왓슨이 매카시 진술을 꼼꼼히 읽고 그 내용에 대해 논평함",
+   "source_text": "그는 뭉치에서 헤리퍼드셔 지방 신문 한 부를 꺼내, 그 불운한 청년이 자신이 겪은 일에 대해 진술한 부분을 접어서 가리켰다. 나는 객차 구석에 자리를 잡고 앉아 아주 꼼꼼히 그것을 읽었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_13",
+   "scene_id": "scene_4_1",
+   "order": 2,
+   "title": "검시 보도가 청년에게 불리하다는 점에 대한 왓슨과 홈즈의 논평",
+   "summary": "왓슨은 검시관의 마무리 발언이 매카시에게 엄격하다고 평하고, 홈즈는 오히려 그 엄격함 속의 빈틈을 지적한다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "보스콤 밸리 사건의 사실관계와 검시 진술 내용을 이미 숙지하고 있음",
+     "source_text": "자네가 그를 두고 번갈아 가며 상상력이 너무 많다고도 하고 너무 적다고도 하고 있다는 걸 못 느끼나?"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "매카시 진술의 표면적 모순점(아버지가 미리 신호했다는 점, 회색빛 천, 쥐에 관한 언급)들",
+     "source_text": "검시관 말대로 그건 전부 그 아들에게 아주 불리한 것들이지."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "관찰한 정황에서 피고인의 결백/유죄 여부를 논리적으로 추론할 수 있음",
+     "source_text": "나는 이 젊은이의 말이 사실이라는 관점에서 이 사건에 접근할 걸세"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_12",
+     "assumes": "이 사건은 EVENT_4_1의 진술 읽기 직후, 같은 기차 안에서 같은 신문을 매개로 이어지는 동일 위치·동일 시점의 대화다",
+     "source_text": "그렇군, 나는 그 지면을 훑어 내려가며 말했다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "왓슨이 검시관의 엄격함을 그대로 받아들이고 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "검시관 말대로 그건 전부 그 아들에게 아주 불리한 것들이지."
+    }
+   ],
+   "cause": "왓슨이 검시관의 엄격한 마무리 발언을 평함",
+   "result": "홈즈가 검시관과 왓슨이 청년에게 유리한 핵심을 빠뜨렸다고 반박함",
+   "source_text": "홈즈는 혼자 나직이 웃으며 쿠션 좌석에 몸을 뻗었다. '자네도 검시관도 상당한 수고를 들여,' 그가 말했다. '이 청년에게 가장 유리한 바로 그 점들을 콕 집어냈군.'",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_14",
+   "scene_id": "scene_4_1",
+   "order": 3,
+   "title": "홈즈가 페트라르카 시집을 꺼내 사건 논의를 중단 선언",
+   "summary": "홈즈는 페트라르카 시집을 꺼내 현장 도착 전까지 사건에 대해 한마디도 하지 않겠다며 기차 내 논의를 끝낸다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_023"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_023",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "여기 내 휴대용 페트라르카 시집이 있으니"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "페트라르카를 읽을 수 있음 (이탈리아어 원문 독해 가능)",
+     "source_text": "여기 내 휴대용 페트라르카 시집이 있으니"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "NEW:휴대용_페트라르카_시집 (소지품에 시집을 넣어 휴대 중)",
+     "source_text": "여기 내 휴대용 페트라르카 시집이 있으니"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_13",
+     "assumes": "이 사건은 EVENT_4_2의 논평 직후에 발생하며, 같은 기차·같은 자리에 있다",
+     "source_text": "스윈던에서 점심을 먹을 텐데, 이십 분 후면 도착할 것 같군."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "홈즈가 사건 논의를 닫고 싶어 함",
+   "result": "현장 도착 전까지 사건 관련 추가 발언이 중단됨",
+   "source_text": "여기 내 휴대용 페트라르카 시집이 있으니, 우리가 현장에 도착할 때까지는 이 사건에 대해 더 이상 한마디도 하지 않겠네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_15",
+   "scene_id": "scene_4_2",
+   "order": 4,
+   "title": "스트라우드 밸리와 세번강을 지나 로스에 도착",
+   "summary": "홈즈와 왓슨은 스트라우드 밸리를 지나 세번강을 건너 거의 네 시에 로스라는 시골 마을에 도착한다.",
+   "location_id": "LOC_020",
+   "time_id": "TIME_018",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_020",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "우리가 로스라는 예쁜 작은 시골 마을에 도착했을 때"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_020",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "우리가 로스라는 예쁜 작은 시골 마을에 도착했을 때"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "기차 여행을 마칠 수 있는 정상 상태",
+     "source_text": "아름다운 스트라우드 밸리를 지나고"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "로스가 시골 마을임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "로스라는 예쁜 작은 시골 마을에 도착했을 때"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "로스가 시골 마을임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "로스라는 예쁜 작은 시골 마을에 도착했을 때"
+    }
+   ],
+   "cause": "기차 여행의 계속",
+   "result": "로스 역에 도착함",
+   "source_text": "아름다운 스트라우드 밸리를 지나고 넓게 빛나는 세번강을 건넌 뒤, 마침내 우리가 로스라는 예쁜 작은 시골 마을에 도착했을 때는 거의 네 시가 다 되어 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_16",
+   "scene_id": "scene_4_2",
+   "order": 5,
+   "title": "승강장에서 레스트레이드와 만나 헤리퍼드 암스로 이동",
+   "summary": "로스 승강장에서 레스트레이드가 두 사람을 기다리고 있었고, 함께 마차를 타고 헤리퍼드 암스 호텔로 간다.",
+   "location_id": "LOC_021",
+   "time_id": "TIME_018",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_018"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_018",
+   "objects": [
+    "OBJ_024"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_018",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_020",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "승강장에는 여우처럼 마르고 은밀하며 교활해 보이는 남자가 우리를 기다리고 있었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "NEW:로스(역)",
+     "to": "LOC_021",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그와 함께 우리는 이미 방이 예약되어 있는 헤리퍼드 암스로 마차를 몰았다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "NEW:로스(역)",
+     "to": "LOC_021",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그와 함께 우리는 이미 방이 예약되어 있는 헤리퍼드 암스로 마차를 몰았다."
+    },
+    {
+     "entity": "CHAR_018",
+     "field": "location",
+     "from": "NEW:로스(역)",
+     "to": "LOC_021",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그와 함께 우리는 이미 방이 예약되어 있는 헤리퍼드 암스로 마차를 몰았다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_018",
+     "field": "possesses",
+     "assumes": "NEW:마차_로스_예약 (범행 현장 다녀오기용으로 사전 준비)",
+     "source_text": "마차를 준비해 두었습니다"
+    },
+    {
+     "entity": "CHAR_018",
+     "field": "knows",
+     "assumes": "보스콤 밸리 사건의 수사 진행 상황을 이미 파악하고 있음",
+     "source_text": "선생님의 활동적인 성격을 알고 있으니, 범행 현장에 다녀오시기 전까지는 마음이 편치 않으실 것 같아서요."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_15",
+     "assumes": "EVENT_4_4의 로스 도착 직후 승강장에서 레스트레이드가 대기 중이었음",
+     "source_text": "승강장에는… 우리가 기다리고 있었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "레스트레이드가 로스에서 자신을 기다리고 있었고 마차를 미리 준비해 둔 사실",
+     "via": "direct",
+     "retained": true,
+     "source_text": "마차를 준비해 두었습니다"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "레스트레이드가 로스에서 두 사람을 기다리고 있었다는 사실",
+     "via": "direct",
+     "retained": true,
+     "source_text": "승강장에는… 우리가 기다리고 있었다."
+    }
+   ],
+   "cause": "레스트레이드가 마차를 준비해 둔 상태에서 두 사람을 맞이함",
+   "result": "세 사람이 함께 헤리퍼드 암스로 이동함",
+   "source_text": "승강장에는… 레스트레이드임을 알아보았다. 그와 함께 우리는 이미 방이 예약되어 있는 헤리퍼드 암스로 마차를 몰았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_17",
+   "scene_id": "scene_4_3",
+   "order": 6,
+   "title": "헤리퍼드 암스에서 차를 마시며 레스트레이드와 대화",
+   "summary": "세 사람은 호텔 라운지에서 차를 마시며 보스콤 밸리 사건의 뻔한 점과 숙녀(숙녀 의뢰인)에 대해 이야기한다.",
+   "location_id": "LOC_021",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_018"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_018",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "보스콤 밸리 사건의 진행 상황에 대한 어느 정도의 사전 정보",
+     "source_text": "선생님은 틀림없이 이미 신문을 보고 결론을 내리셨겠지요"
+    },
+    {
+     "entity": "CHAR_018",
+     "field": "knows",
+     "assumes": "숙녀 의뢰인이 홈즈를 직접 만나 의견을 듣고 싶어 한다는 점",
+     "source_text": "그분은 선생님 이야기를 들으셨고 선생님의 의견을 듣고 싶어 하십니다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "보스콤 밸리 사건에 대해 단호한 숙녀 의뢰인이 있어 그를 직접 만나고 싶어 한다는 점",
+     "via": "told",
+     "retained": true,
+     "source_text": "그분은 선생님 이야기를 들으셨고 선생님의 의견을 듣고 싶어 하십니다"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "보스콤 밸리 사건에 대해 단호한 숙녀 의뢰인이 있다는 점",
+     "via": "told",
+     "retained": true,
+     "source_text": "그분은 선생님 이야기를 들으셨고 선생님의 의견을 듣고 싶어 하십니다"
+    }
+   ],
+   "cause": "레스트레이드가 마차를 준비해 둔 사실과 사건 상황을 브리핑함",
+   "result": "숙녀 의뢰인이 도착할 발판이 마련됨",
+   "source_text": "우리가 차를 마시며 앉아 있을 때 레스트레이드가 말했다. '마차를 준비해 두었습니다,'",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_18",
+   "scene_id": "scene_4_3",
+   "order": 7,
+   "title": "숙녀 의뢰인이 호텔 라운지로 들어옴",
+   "summary": "보랏빛 눈동자의 아름다운 젊은 여인이 흥분한 모습으로 호텔 방 안으로 뛰어들어 온다.",
+   "location_id": "LOC_021",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "NEW:숙녀_의뢰인"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_018"
+   ],
+   "main_actor_character_id": "NEW:숙녀_의뢰인",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "NEW:숙녀_의뢰인",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_021",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "저기 그분 마차가 문 앞에 왔군요. / 방 안으로 뛰어들어 왔다."
+    },
+    {
+     "entity": "NEW:숙녀_의뢰인",
+     "field": "body_status",
+     "from": "unknown",
+     "to": "흥분한 상태 (입술 벌어진 채, 뺨에 홍조)",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "평소의 조심스러움",
+     "certainty": "explicit",
+     "source_text": "입술은 살짝 벌어지고, 뺨에는 발그레한 홍조가 어려 있었으며, 압도적인 흥분과 걱정 속에서 평소의 조심스러움 따위는 전부 잊은 듯했다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "NEW:숙녀_의뢰인",
+     "field": "knows",
+     "assumes": "보스콤 밸리 사건의 의뢰인으로서 홈즈·레스트레이드를 만나러 왔다는 점",
+     "source_text": "저기 그분 마차가 문 앞에 왔군요. / 방 안으로 뛰어들어 왔다."
+    },
+    {
+     "entity": "NEW:숙녀_의뢰인",
+     "field": "body_status",
+     "assumes": "마차를 타고 도착할 수 있는 이동 가능 상태",
+     "source_text": "저기 그분 마차가 문 앞에 왔군요. / 방 안으로 뛰어들어 왔다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_17",
+     "assumes": "레스트레이드가 '저기 그분 마차가 문 앞에 왔군요'라고 말한 바로 그 대상이 이 사건의 등장인물",
+     "source_text": "그가 말을 마치기가 무섭게, 내 평생 본 가장 아름다운 젊은 여인 중 한 명이 방 안으로 뛰어들어 왔다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "의뢰인 숙녀가 방 안으로 들어왔다 (외모·흥분 상태 목격)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "내 평생 본 가장 아름다운 젊은 여인 중 한 명이 방 안으로 뛰어들어 왔다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "의뢰인 숙녀가 방 안으로 들어왔다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "방 안으로 뛰어들어 왔다."
+    }
+   ],
+   "cause": "의뢰인이 마차를 타고 호텔에 도착함",
+   "result": "사건 의뢰와 관련된 다음 장면으로 넘어갈 발판이 됨",
+   "source_text": "그가 말을 마치기가 무섭게, 내 평생 본 가장 아름다운 젊은 여인 중 한 명이 방 안으로 뛰어들어 왔다. 보랏빛 눈동자가 빛나고, 입술은 살짝 벌어지고, 뺨에는 발그레한 홍조가 어려 있었으며, 압도적인 흥분과 걱정 속에서 평소의 조심스러움 따위는 전부 잊은 듯했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_19",
+   "scene_id": "scene_4_1",
+   "order": 1,
+   "title": "앨리스의 방문과 제임스 매카시 무죄 호소",
+   "summary": "앨리스가 베이커가 응접실로 마차를 몰고 와서 셜록 홈즈에게 제임스 매카시의 무죄를 호소하고, 매카시 부자 간의 다툼이 자신과 관련된 일이라고 밝힌다.",
+   "location_id": "LOC_010",
+   "time_id": "NEW:앨리스_방문_당일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_017",
+    "CHAR_001",
+    "CHAR_018"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_017",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "제임스 매카시가 무죄라는 앨리스의 확신",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "저는 제임스가 그런 짓을 하지 않았다는 걸 알아요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "매카시 부자의 다툼이 앨리스와의 결혼 문제와 관련되었다는 점",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "아버지와 그의 다툼에 대해서는, 그가 검시관에게 그것에 대해 말하지 않으려 했던 이유가 저와 관계된 일이기 때문이었다고 저는 확신해요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "앨리스의 아버지(터너)가 빅토리아 금광에서 재산을 모았다는 점",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "네, 광산에서요. / 그렇군요, 금광에서, 제가 알기로 터너 씨가 재산을 모으신 곳이지요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "앨리스의 아버지가 건강이 나빠 자리에 누워 있다는 점",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "불쌍한 아버지는 몇 년째 건강이 좋지 않으셨는데, 이 일로 완전히 무너지셨어요. 자리에 누우셨고"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "매카시 씨가 빅토리아에서 앨리스의 아버지를 알던 유일한 생존자라는 점",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "매카시 씨는 옛날 빅토리아에서 아버지를 아셨던 유일하게 살아 있는 사람이었어요."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_017",
+     "field": "knows",
+     "assumes": "제임스 매카시의 성품과 결점을 어릴 때부터 알고 있다",
+     "source_text": "저희는 어릴 때부터 서로 알고 지냈고, 저는 그의 결점을 누구보다 잘 알아요"
+    },
+    {
+     "entity": "CHAR_017",
+     "field": "ability",
+     "assumes": "마차를 몰고 베이커가까지 직접 찾아올 수 있다",
+     "source_text": "그 말씀을 드리려고 여기까지 마차를 몰고 왔어요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "사건의 증거와 결론을 읽고 빈틈을 살필 수 있다",
+     "source_text": "증거는 읽어 보셨겠지요. 어떤 결론을 내리셨나요? 어떤 빈틈이나 허점이 보이지 않으세요?"
+    },
+    {
+     "entity": "CHAR_018",
+     "field": "body_status",
+     "assumes": "건강하여 현장 활동 가능",
+     "source_text": "레스트레이드가 어깨를 으쓱했다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "앨리스의 확신: 제임스 매카시는 무죄이다",
+     "via": "told",
+     "retained": true,
+     "source_text": "저는 제임스가 그런 짓을 하지 않았다는 걸 알아요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "매카시 부자의 최근 다툼은 앨리스와의 결혼 문제에 관한 것이었다",
+     "via": "told",
+     "retained": true,
+     "source_text": "제임스와 그의 아버지는 저를 두고 여러 번 의견 충돌이 있었어요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "앨리스의 아버지(터너)도 매카시 부자의 결혼에 반대했다",
+     "via": "told",
+     "retained": true,
+     "source_text": "아니요, 저희 아버지도 반대셨어요. 매카시 씨 말고는 아무도 찬성하지 않았어요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "터너 씨는 빅토리아 금광에서 재산을 모았다",
+     "via": "told",
+     "retained": true,
+     "source_text": "네, 광산에서요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "매카시 씨는 빅토리아에서 터너 씨를 알던 유일한 생존자다",
+     "via": "told",
+     "retained": true,
+     "source_text": "매카시 씨는 옛날 빅토리아에서 아버지를 아셨던 유일하게 살아 있는 사람이었어요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "앨리스의 아버지는 건강이 나빠 자리에 누워 있다",
+     "via": "told",
+     "retained": true,
+     "source_text": "불쌍한 아버지는 몇 년째 건강이 좋지 않으셨는데, 이 일로 완전히 무너지셨어요."
+    }
+   ],
+   "cause": "앨리스가 제임스 매카시의 무죄를 호소하기 위해 베이커가를 방문함",
+   "result": "홈즈가 앨리스에게 무죄 가능성이 높다고 말하며 희망을 줌",
+   "source_text": "“오, 셜록 홈즈 씨!” 그녀가 우리 둘을 번갈아 쳐다보다가, 마침내 여성 특유의 빠른 직감으로 내 친구에게 시선을 고정하며 외쳤다. “와 주셔서 정말 기뻐요. 그 말씀을 드리려고 여기까지 마차를 몰고 왔어요.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_20",
+   "scene_id": "scene_4_1",
+   "order": 2,
+   "title": "앨리스의 퇴장",
+   "summary": "앨리스가 방문 목적을 마치고 충동적으로 방을 나서며 마차로 떠난다.",
+   "location_id": "LOC_010",
+   "time_id": "NEW:앨리스_방문_당일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_017"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_018"
+   ],
+   "main_actor_character_id": "CHAR_017",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_017",
+     "field": "possesses",
+     "assumes": "외부 마차",
+     "source_text": "저기까지 마차를 몰고 왔어요."
+    },
+    {
+     "entity": "CHAR_017",
+     "field": "knows",
+     "assumes": "제임스가 현재 감옥에 수감되어 있다는 사실",
+     "source_text": "틀림없이 감옥에 제임스를 만나러 가시겠지요."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_19",
+     "assumes": "EVENT_4_1의 응접실 면담 직후의 연속된 상황이다",
+     "source_text": "그녀는 들어올 때처럼 충동적으로 방을 서둘러 나갔고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "앨리스가 제임스에게 무죄를 전할 것을 부탁했다",
+     "via": "told",
+     "retained": true,
+     "source_text": "가신다면, 홈즈 선생님, 부디 제가 그의 결백을 믿는다고 전해 주세요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "앨리스의 아버지는 앨리스가 곁에 없으면 몹시 그리워한다",
+     "via": "told",
+     "retained": true,
+     "source_text": "아버지가 몹시 편찮으시고, 제가 곁에 없으면 저를 몹시 그리워하시거든요."
+    }
+   ],
+   "cause": "면담이 끝나고 앨리스가 집에 돌아가야 했기 때문",
+   "result": "앨리스가 마차를 타고 베이커가를 떠남",
+   "source_text": "그녀는 들어올 때처럼 충동적으로 방을 서둘러 나갔고, 우리는 그녀의 마차 바퀴가 거리를 따라 덜컹거리며 멀어지는 소리를 들었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_21",
+   "scene_id": "scene_4_2",
+   "order": 3,
+   "title": "레스트레이드의 질책과 홈즈의 결심",
+   "summary": "앨리스 떠난 뒤 레스트레이드가 홈즈에게 희망을 준 것을 나무라고, 홈즈는 제임스 매카시를 무죄로 밝힐 방도가 보인다고 답한다.",
+   "location_id": "LOC_010",
+   "time_id": "NEW:앨리스_퇴장_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_018"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "레스트레이드와 본인만 감옥 면회 허가증을 가지고 있다는 점",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "있네, 하지만 자네와 나만 해당되는 걸세."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "제임스 매카시를 무죄로 밝힐 단서를 짚어낼 수 있는 통찰력",
+     "source_text": "나는 제임스 매카시를 무죄로 밝힐 방도가 보이는 것 같네"
+    },
+    {
+     "entity": "CHAR_018",
+     "field": "ability",
+     "assumes": "감옥 면회 허가증을 보유하고 있다",
+     "source_text": "감옥에서 그를 만날 수 있는 허가증이 있나? / 있네, 하지만 자네와 나만 해당되는 걸세."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "당일 야간 외출이 가능한 상태",
+     "source_text": "그럼 오늘 밤 외출은 하지 않겠다는 결심을 다시 생각해 봐야겠군."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_19",
+     "assumes": "앨리스 퇴장 직후의 대화의 연속이다",
+     "source_text": "“자네가 부끄럽군, 홈즈,” 몇 분간의 침묵 뒤 레스트레이드가 위엄 있게 말했다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "감옥 면회 허가증은 레스트레이드와 본인만 해당된다",
+     "via": "told",
+     "retained": true,
+     "source_text": "있네, 하지만 자네와 나만 해당되는 걸세."
+    }
+   ],
+   "cause": "앨리스가 떠난 뒤 레스트레이드가 홈즈의 발언에 대해 의견을 표시함",
+   "result": "홈즈가 오늘 밤 감옥에서 제임스 매카시를 만나기로 결심함",
+   "source_text": "“자네가 부끄럽군, 홈즈,” 몇 분간의 침묵 뒤 레스트레이드가 위엄 있게 말했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_22",
+   "scene_id": "scene_4_3",
+   "order": 4,
+   "title": "왓슨의 독백과 상처 분석",
+   "summary": "왓슨이 호텔로 돌아와 소설을 읽으려다 그만두고 그날 있었던 일들을 되짚으며 부검 진술에 대해 의학적으로 곱씹어본다.",
+   "location_id": "NEW:보스콤_호텔",
+   "time_id": "NEW:앨리스_퇴장_직후_같은_저녁",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_022"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_022",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "나는 초인종을 울려 주간 지역 신문을 가져다 달라고 했는데, 거기에는 검시 심리의 축어록이 실려 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "외과의사 진술: 왼쪽 두정골 뒷부분 3분의 1과 왼쪽 후두골 절반이 무딘 무기로 강타되어 산산조각 났다는 점",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "외과의사의 진술에는 왼쪽 두정골 뒷부분 3분의 1과 왼쪽 후두골 절반이 무딘 무기로 인한 강타에 산산조각 났다고 되어 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "임종 전 거론된 '쥐'에 관한 언급의 의미",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "그다음에는 그 기묘한 쥐에 관한 임종의 언급이 있었다. 그게 무슨 뜻일 수 있을까? 그것이 헛소리일 리는 없었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "오른손을 자유로이 사용할 수 있다 (지팡이 외 도구 없이 머리 위치를 짚음)",
+     "source_text": "나는 내 머리에서 그 지점을 짚어 보았다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "두개골 부위의 해부학적 명칭(두정골·후두골)과 그 위치",
+     "source_text": "왼쪽 두정골 뒷부분 3분의 1과 왼쪽 후두골 절반이 무딘 무기로 인한 강타에 산산조각 났다고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "의학적 직감으로 상처의 성격을 분석할 수 있다",
+     "source_text": "상처의 성격이 내 의학적 직감에 뭔가를 알려 주지는 않을까?"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "외과의사 검시 진술을 읽고 이해할 수 있다",
+     "source_text": "외과의사의 진술에는"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "사망 원인은 왼쪽 두정골 뒷부분 3분의 1·왼쪽 후두골 절반의 무딘 무기 강타로 인한 골절",
+     "via": "document",
+     "retained": true,
+     "source_text": "왼쪽 두정골 뒷부분 3분의 1과 왼쪽 후두골 절반이 무딘 무기로 인한 강타에 산산조각 났다고 되어 있었다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "다툼 시 제임스는 아버지와 마주 보고 있었다",
+     "via": "document",
+     "retained": true,
+     "source_text": "다투는 모습이 목격되었을 때 그는 아버지와 마주 보고 있었으니까."
+    }
+   ],
+   "cause": "역까지 함께 걸어간 뒤 왓슨이 호텔로 돌아와 소설을 읽다 그만뒀기 때문",
+   "result": "왓슨이 의학적으로 타격 방향을 추정하고 쥐·천 조각의 의미를 곱씹음",
+   "source_text": "나는 그들과 함께 역까지 걸어갔다가, 작은 마을의 거리를 이리저리 거닐다가, 마침내 호텔로 돌아와 소파에 누워 노란 표지의 소설에 마음을 붙여 보려 애썼다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_23",
+   "scene_id": "scene_4_4",
+   "order": 5,
+   "title": "홈즈의 귀환과 젊은 매카시에 대한 보고",
+   "summary": "밤늦게 홈즈가 감옥에서 돌아와 제임스 매카시는 범인에 대해 아는 바가 없고 단순한 청년이라고 보고한다.",
+   "location_id": "NEW:보스콤_호텔",
+   "time_id": "TIME_037",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "제임스 매카시는 범인을 알지 못하며 다른 사람들만큼이나 어리둥절해하고 있다는 점",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "지금은 그도 다른 모든 사람만큼이나 어리둥절해하고 있다고 확신하네."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "제임스 매카시가 브리스톨의 술집 여급과 등기소 결혼을 했다는 사실",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그 어리석은 자가 브리스톨에서 어느 술집 여급의 손아귀에 걸려들어 등기소에서 결혼을 해 버린 거야."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "제임스가 지난 사흘을 브리스톨에서 술집 여급 아내와 함께 보냈고, 아버지는 그가 어디 있는지 몰랐다는 점",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그가 지난 사흘을 브리스톨에서 보낸 것은 바로 그 술집 여급 아내와 함께였고, 그의 아버지는 그가 어디 있는지 몰랐네."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "술집 여급이 제임스 곤경 소식을 듣고 그를 버리고, 자신에게는 버뮤다 조선소 남편이 있어 무관계라는 편지를 보냈다는 점",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "바로 이런 종류의 순전한 광기 때문에, 마지막 만남에서 아버지가 그에게 터너 양에게 청혼하라고 몰아붙였을 때"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "제임스 매카시가 브리스톨 여급과 등기소 결혼을 했고 술집 여급이 그를 버렸다는 점",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그 어리석은 자가 브리스톨에서 어느 술집 여급의 손아귀에 걸려들어 등기소에서 결혼을 해 버린 거야."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "수감된 피의자를 만나 직접 심문할 수 있다",
+     "source_text": "나는 한때 그가 누가 그랬는지 알면서 그 사람을 감싸고 있는 게 아닌가 생각했었지만"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "긴 여행으로 지쳐 있음",
+     "source_text": "다른 한편으로, 그런 섬세한 작업을 위해서는 사람이 최상의 컨디션과 가장 예민한 상태여야 하는데, 긴 여행으로 지친 상태에서 하고 싶지는 않았네."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "소파에 누워 책과 사건을 곱씹을 수 있다",
+     "source_text": "나는 그들과 함께 역까지 걸어갔다가, 작은 마을의 거리를 이리저리 거닐다가"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "감옥 면회 허가증을 소지하고 있다 (본인 몫)",
+     "source_text": "있네, 하지만 자네와 나만 해당되는 걸세."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_21",
+     "assumes": "EVENT_4_3에서 결심한 오늘 밤 감옥 방문이 실행되어 돌아온 시점이다",
+     "source_text": "그럼 오늘 밤 외출은 하지 않겠다는 결심을 다시 생각해 봐야겠군. / 셜록 홈즈가 돌아온 것은 밤이 늦어서였다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "제임스 매카시는 범인에 대해 아는 바가 없고 단순한 청년으로 보인다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "지금은 그도 다른 모든 사람만큼이나 어리둥절해하고 있다고 확신하네. 그리 영민한 청년은 아니지만, 외모는 준수하고, 내 생각엔 심성은 곧은 것 같네."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "제임스는 약 2년 전 브리스톨 술집 여급과 몰래 결혼했다",
+     "via": "told",
+     "retained": true,
+     "source_text": "그 어리석은 자가 브리스톨에서 어느 술집 여급의 손아귀에 걸려들어 등기소에서 결혼을 해 버린 거야."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "제임스는 지난 사흘을 브리스톨에서 그 여자와 함께 보냈고 아버지는 그가 어디 있는지 몰랐다",
+     "via": "told",
+     "retained": true,
+     "source_text": "그가 지난 사흘을 브리스톨에서 보낸 것은 바로 그 술집 여급 아내와 함께였고, 그의 아버지는 그가 어디 있는지 몰랐네."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "그 술집 여급은 제임스의 곤경 소식을 듣고 그를 버리고 버뮤다 조선소 남편이 있다고 통보했다",
+     "via": "told",
+     "retained": true,
+     "source_text": "바로 이런 종류의 순전한 광기 때문에, 마지막 만남에서 아버지가 그에게 터너 양에게 청혼하라고 몰아붙였을 때"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "제임스는 약 2년 전 브리스톨 술집 여급과 몰래 결혼했다",
+     "via": "told",
+     "retained": true,
+     "source_text": "그 어리석은 자가 브리스톨에서 어느 술집 여급의 손아귀에 걸려들어 등기소에서 결혼을 해 버린 거야."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "그 술집 여급은 제임스의 곤경 소식을 듣고 그를 버렸다",
+     "via": "told",
+     "retained": true,
+     "source_text": "바로 이런 종류의 순전한 광기 때문에, 마지막 만남에서 아버지가 그에게 터너 양에게 청혼하라고 몰아붙였을 때"
+    }
+   ],
+   "cause": "홈즈가 감옥에서 제임스 매카시 면담을 마치고 호텔로 돌아옴",
+   "result": "왓슨이 제임스의 브리스톨 결혼 사실을 알게 됨",
+   "source_text": "“청우계는 여전히 아주 높은 수치를 유지하고 있군,” 그가 자리에 앉으며 말했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_24",
+   "scene_id": "scene_4_1",
+   "order": 1,
+   "title": "전날 밤 대화 — 살해 사건의 결정적 두 지점",
+   "summary": "홈즈가 두 가지 결정적 지점을 짚는다: 살해된 남자가 약속한 상대는 아들이 아니었고, 아들이 돌아오기 전 '쿠이!'라는 외침이 들렸다는 것.",
+   "location_id": "LOC_001",
+   "time_id": "NEW:전날_밤_대화_시각",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "살해된 남자(매카시 시니어)는 아들이 아닌 다른 누군가와 못에서 약속이 있었다",
+     "source_text": "살해된 남자가 그 못에서 누군가와 약속이 있었는데, 그 누군가가 그의 아들일 수는 없었다는 것일세"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "아들은 멀리 가 있었고 아버지는 아들의 귀가 시기를 몰랐다",
+     "source_text": "왜냐하면 아들은 멀리 가 있었고 언제 돌아올지 아버지가 몰랐으니까"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "아버지가 아들이 돌아온 것을 알기도 전에 '쿠이!'라는 외침이 들렸다",
+     "source_text": "살해된 남자가 아들이 돌아온 것을 알기도 전에 '쿠이!' 하고 외치는 소리가 들렸다는 걸세"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "전날 밤의 대화",
+   "result": "홈즈는 살해 사건의 두 결정적 지점을 짚고, '사소한 문제들은 내일로 미루자'고 결론짓는다.",
+   "source_text": "둘이 결점이네. 자, 이제 괜찮다면 조지 메러디스 얘기나 나누고, 사소한 문제들은 전부 내일로 미뤄 두세.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_25",
+   "scene_id": "scene_4_2",
+   "order": 2,
+   "title": "아침 — 맑은 날씨, 레스트레이드 방문",
+   "summary": "맑은 아침이 밝았고, 아홉 시에 레스트레이드가 마차를 가지고 와서 셋은 해서리 농장과 보스콤 못을 향해 출발한다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_011",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_018"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_018",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "전날 밤 홈즈의 예언",
+   "result": "셋은 마차를 타고 해서리 농장과 보스콤 못을 향해 출발한다.",
+   "source_text": "아침은 맑고 구름 한 점 없이 밝아 왔다. 아홉 시에 레스트레이드가 마차를 가지고 우리를 찾아왔고, 우리는 해서리 농장과 보스콤 못을 향해 출발했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_26",
+   "scene_id": "scene_4_3",
+   "order": 3,
+   "title": "마차 안 — 터너의 중태, 매카시에 대한 은인 역할",
+   "summary": "마차 안에서 레스트레이드는 터너의 중태를 알리고, 터너가 매카시에게 농장을 무상 제공할 정도로 큰 은인이었다고 말한다. 홈즈는 매카시의 자신만만함과 터너의 반대를 지적한다.",
+   "location_id": "unknown",
+   "time_id": "TIME_011",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_018"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_018",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "저택의 터너 씨가 몹시 위독하여 생명을 걱정해야 할 정도다",
+     "via": "told",
+     "retained": true,
+     "source_text": "저택의 터너 씨가 몹시 위독해서 생명을 걱정해야 할 정도라고 합니다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "터너는 매카시의 오랜 친구이자 은인으로, 매카시에게 해서리 농장을 무상으로 주었다",
+     "via": "told",
+     "retained": true,
+     "source_text": "매카시와는 오랜 친구셨고, 덧붙이자면 그에게 큰 은인이시기도 했습니다, 제가 알아본 바로는 그에게 해서리 농장을 무상으로 주셨으니까요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "터너 본인도 매카시 주니어의 딸과의 결혼에 반대했다",
+     "via": "told",
+     "retained": true,
+     "source_text": "터너 씨 본인이 그 생각에 반대였다는 걸 감안하면 더더욱 이상하지요. 그 딸도 우리에게 그렇게 말했습니다."
+    }
+   ],
+   "cause": "마차 안 대화",
+   "result": "홈즈는 매카시의 청혼이 '거절당하면서도 자신만만한' 태도라는 모순을 지적한다.",
+   "source_text": "그가 자기 아들을 장가보내겠다고 그토록 자신만만한 태도로 말하고 다녔다는 게, 마치 청혼만 하면 나머지는 저절로 따라올 것처럼 여겼다는 게 조금 특이하다고 여겨지지 않습니까?",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_27",
+   "scene_id": "scene_4_4",
+   "order": 4,
+   "title": "레스트레이드-홈즈 설전 — 매카시 부자 살인 결론",
+   "summary": "레스트레이드는 '매카시 시니어가 매카시 주니어의 손에 죽었다'는 결론을 사실상 정론으로 받아들이고 있으며, 홈즈는 그것이 '안개보다는 밝을 뿐'이라며 아이러니하게 받아친다. 그때 해서리 농장이 보인다.",
+   "location_id": "unknown",
+   "time_id": "TIME_011",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_018"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_018",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_018",
+     "field": "knows",
+     "assumes": "매카시 시니어가 매카시 주니어의 손에 죽었다 (반대 이론은 헛소리)",
+     "source_text": "매카시 시니어가 매카시 주니어의 손에 죽었고, 그 반대를 주장하는 이론들은 죄다 헛소리에 불과하다는 것 말일세."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "레스트레이드의 실무적 결론",
+   "result": "설전 끝에 '저기 왼쪽에 있는 게 해서리 농장'이라는 안내로 농장 도착 직전이 된다.",
+   "source_text": "매카시 시니어가 매카시 주니어의 손에 죽었고, 그 반대를 주장하는 이론들은 죄다 헛소리에 불과하다는 것 말일세.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_28",
+   "scene_id": "scene_4_5",
+   "order": 5,
+   "title": "해서리 농장 도착 — 하녀의 구두 두 켤레 시연",
+   "summary": "해서리 농장은 이 층짜리 슬레이트 지붕 건물로, 블라인드가 내려져 있고 굴뚝에 연기가 없다. 하녀가 죽은 주인의 구두와 아들의 구두 한 켤레(그날 것이 아닌)를 보여 주고, 홈즈는 이를 일고여덟 지점에서 정밀 측정한 뒤 마당으로 나가 보스콤 못으로 향하는 오솔길을 밟는다.",
+   "location_id": "LOC_007",
+   "time_id": "NEW:아홉_시_이후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_018"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_007",
+     "field": "alive",
+     "assumes": "false (사망 상태로 인정됨 — 하녀가 '죽은 주인' 표현을 사용하고 사건이 진행 중)",
+     "source_text": "하녀가 죽은 주인이 사망 당시 신고 있던 구두와"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "마차 이동의 종착",
+   "result": "홈즈는 보스콤 못으로 이어지는 오솔길로 향한다.",
+   "source_text": "우리가 문 앞에 도착하자, 홈즈의 요청에 따라 하녀가 죽은 주인이 사망 당시 신고 있던 구두와, 아들의 구두 한 켤레—다만 그날 신고 있던 것과 같은 켤레는 아니었다—를 보여 주었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_29",
+   "scene_id": "scene_4_6",
+   "order": 6,
+   "title": "사냥하는 홈즈 — 보스콤 못 현장 답사",
+   "summary": "홈즈는 '냄새를 뜨겁게 좇는' 사냥꾼으로 돌변해 오솔길과 숲을 종횡무진 누빈다. 보스콤 못에서 발자국을 추적해 시신 발견 지점을 파악하고, 왼발 자국이 안쪽으로 휘어 박혀 있는 것을 발견한다. 이어 '발끝'으로만 찍힌 각진 구두의 발자국을 발견하고, 너도밤나무 그늘까지 추적해 이끼 사이의 돌과 먼지 같은 것을 회수한다.",
+   "location_id": "LOC_006",
+   "time_id": "NEW:현장_답사_시각",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_018"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_026"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "강철 같은 집중력, 사냥 본능이 활성화된 상태 (베이커가에서와 다른 사람)",
+     "source_text": "셜록 홈즈는 이런 냄새를 뜨겁게 좇을 때면 완전히 다른 사람이 되었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "렌즈 (방수포 위에서 관찰 시 사용)",
+     "source_text": "그는 렌즈를 꺼내 방수포 위에 엎드려 더 잘 살펴보며"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "봉투 (먼지 같은 것을 담아 회수)",
+     "source_text": "나에게는 먼지처럼 보이는 것을 봉투에 모아 담았으며"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_30",
+     "assumes": "이 장면의 발자국 추적이 EVENT_4_7의 살인자 프로필 도출의 근거가 된다",
+     "source_text": "왔다가, 가고, 다시 오고—물론 그건 그 망토 때문이었겠지."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "보스콤 못 현장의 발자국 분포: 매카시 주니어의 발자국(두 번 걷고 한 번 뛴), 아버지의 왔다 갔다, 총 개머리판 자국, '발끝으로' 찍힌 각진 구두의 자국",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이건 젊은 매카시의 발자국이군. 두 번은 걸었고, 한 번은 빠르게 뛰었는데, 그래서 발바닥은 깊이 찍혔지만 뒤꿈치는 거의 보이지 않는군. 그건 그의 이야기와 맞아떨어지네. 아버지가 땅에 쓰러진 걸 보고 뛴 거지. 그다음, 여기 아버지가 왔다 갔다 걸었던 발자국이 있고. 그럼 이건 뭐지? 아들이 서서 듣고 있을 때 총 개머리판 자국이군. 그리고 이건? 하하! 이게 뭘까요? 발끝으로! 발끝으로! 게다가 각진, 아주 특이한 구두로군요!"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "레스트레이드는 못 주변을 갈퀴로 뒤질 때 왼발 자국을 남겼다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "안쪽으로 휘어진 당신의 왼발 자국이 온 사방에 나 있군요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "너도밤나무 그늘 아래의 돌이 이끼 사이에서 최근 놓인 흔적 (밑에서 풀이 자랐음)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이끼 사이에 삐죽한 돌 하나가 놓여 있었는데, 그는 이것도 꼼꼼히 살펴보고는 챙겨 넣었다."
+    }
+   ],
+   "cause": "보스콤 못 현장의 습지대, 다수 발자국 흔적",
+   "result": "홈즈는 살인 무기로 쓰인 돌과 먼지 같은 증거물을 회수하고, 살인자 특질을 추론한다.",
+   "source_text": "한 번은 초원 쪽으로 꽤 크게 우회하기도 했다. 레스트레이드와 나는 그의 뒤를 따라 걸었는데, 형사는 무관심하고 경멸하는 태도였던 반면, 나는 그의 모든 행동이 명확한 목적을 향하고 있다는 확신에서 오는 흥미로 내 친구를 지켜보았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_30",
+   "scene_id": "scene_4_7",
+   "order": 7,
+   "title": "돌의 의미 — 살인자 프로필 발표",
+   "summary": "마차 안에서 홈즈는 그 돌이 살인 무기라고 선언한다. 풀이 그 밑에서 자랐고 다른 무기 흔적이 없다는 것이 근거다. 이어 살인자 프로필을 발표한다: 키가 큰 남자, 왼손잡이, 오른쪽 다리 절음, 두꺼운 밑창의 사냥용 구두, 회색 망토, 인도산 시가, 시가 홀더, 무딘 주머니칼.",
+   "location_id": "unknown",
+   "time_id": "NEW:현장_답사_직후_귀환길",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_018"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_026"
+   ],
+   "state_changes": [],
+   "assumed_states": [],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_29",
+     "assumes": "이 사건의 살인자 프로필은 EVENT_4_6의 현장 답사에서 추출한 증거에 기반한다",
+     "source_text": "위 원문 전체가 이어진 하나의 답사-발표 시퀀스"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_018",
+     "info": "살인 무기는 이끼 사이의 돌이며, 밑에서 풀이 자랐고 다른 무기 흔적이 없다",
+     "via": "told",
+     "retained": true,
+     "source_text": "이 밑에서 풀이 자라고 있었습니다. 여기 놓인 지 며칠밖에 안 됐다는 뜻이지요. 그것이 있던 자리의 흔적도 없었습니다. 상처와도 일치합니다. 다른 무기의 흔적은 전혀 없습니다."
+    },
+    {
+     "character_id": "CHAR_018",
+     "info": "살인자 프로필: 키 큰 남자, 왼손잡이, 오른쪽 다리 절음, 두꺼운 밑창의 사냥용 구두, 회색 망토, 인도산 시가, 시가 홀더, 무딘 주머니칼",
+     "via": "told",
+     "retained": true,
+     "source_text": "키가 큰 남자로, 왼손잡이이고, 오른쪽 다리를 절며, 두꺼운 밑창의 사냥용 구두를 신고 회색 망토를 두르고 있고, 인도산 시가를 피우며, 시가 홀더를 사용하고, 주머니에 무딘 주머니칼을 지니고 있습니다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "살인 무기는 이끼 사이의 돌이며, 살인자 프로필이 도출됨",
+     "via": "direct",
+     "retained": true,
+     "source_text": "살인은 이것으로 저질러졌습니다."
+    }
+   ],
+   "cause": "보스콤 못 현장의 증거(돌, 발자국 분포)",
+   "result": "레스트레이드는 '스코틀랜드 야드의 웃음거리'가 될 것이라며 회의적 반응을 보인다. 홈즈는 '오늘 저녁 기차로 런던에 돌아가 사건을 끝내겠다'고 선언한다.",
+   "source_text": "키가 큰 남자로, 왼손잡이이고, 오른쪽 다리를 절며, 두꺼운 밑창의 사냥용 구두를 신고 회색 망토를 두르고 있고, 인도산 시가를 피우며, 시가 홀더를 사용하고, 주머니에 무딘 주머니칼을 지니고 있습니다. 그 밖에도 몇 가지 단서가 더 있지만, 이 정도면 우리 수사에 도움이 될 만큼은 될 겁니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_31",
+   "scene_id": "scene_4_7",
+   "order": 8,
+   "title": "레스트레이드의 회의와 사건 종결 선언",
+   "summary": "레스트레이드는 실무적이라며 다리 절고 왼손잡이인 사내를 시골에서 헤매며 찾을 수 없다고 말하고, '스코틀랜드 야드의 웃음거리'가 될 것이라 우려한다. 홈즈는 '오늘 저녁 기차로 런던에 돌아가 사건을 끝내겠다'고 답한다.",
+   "location_id": "unknown",
+   "time_id": "NEW:현장_답사_직후_귀환길",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_018"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_018",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_018",
+     "field": "knows",
+     "assumes": "not_knows: 살인자의 정체 (찾으려면 시골을 헤매야 하므로 회의적)",
+     "source_text": "왼손잡이에다 다리를 저는 신사를 찾겠다고 시골을 온통 헤매고 다닐 수는 정말 없습니다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_30",
+     "assumes": "EVENT_4_7의 살인자 프로필을 받아 이 사건의 회의가 발생한다",
+     "source_text": "여전히 회의적이라 죄송합니다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈는 오늘 저녁 기차로 런던에 돌아가 사건을 끝내겠다 (해결 선언)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "오늘 오후에는 바쁠 것 같고, 아마 저녁 기차로 런던으로 돌아갈 것 같습니다."
+    }
+   ],
+   "cause": "홈즈의 살인자 프로필 발표에 대한 레스트레이드의 반응",
+   "result": "레스트레이드는 어깨를 으쓱하며 회의적 태도를 유지한다.",
+   "source_text": "왼손잡이에다 다리를 저는 신사를 찾겠다고 시골을 온통 헤매고 다닐 수는 정말 없습니다. 스코틀랜드 야드의 웃음거리가 될 겁니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_32",
+   "scene_id": "scene_4_1",
+   "order": 1,
+   "title": "호텔에서 점심 식후 홈즈의 추리 설교",
+   "summary": "홈즈가 왓슨에게 매카시 사건의 두 단서('쿠이!'와 쥐)를 근거로 범인 프로필을 이끌어내는 방법을 설명한다.",
+   "location_id": "LOC_024",
+   "time_id": "TIME_038",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "범인은 오스트레일리아(발라랏) 출신의 회색 망토의 인물",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "회색 망토를 두른, 발라랏 출신의 오스트레일리아인이라는 명확한 개념에 이르게 된 걸세"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "오스트레일리아식 외침 '쿠이!'에 관한 지식",
+     "source_text": "뚜렷하게 오스트레일리아식 외침이고, 오스트레일리아인들 사이에서 쓰이는 것이지"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "자신은 매카시에게 불리하게 작용했다고 평가",
+     "source_text": "비록 그것이 나에게는 그에게 유리하게, 자네에게는 불리하게 작용했지만 말일세"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "'쿠이!'는 오스트레일리아식 외침이며 매카시의 만남 상대를 가리킨다",
+     "via": "told",
+     "retained": true,
+     "source_text": "'쿠이!'는 뚜렷하게 오스트레일리아식 외침이고"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "범인은 발라랏 출신의 오스트레일리아인이라는 프로필",
+     "via": "told",
+     "retained": true,
+     "source_text": "회색 망토를 두른, 발라랏 출신의 오스트레일리아인이라는 명확한 개념에 이르게 된 걸세"
+    }
+   ],
+   "cause": "매카시 사건의 '쿠이!' 외침과 쥐의 임종 언급이라는 두 단서",
+   "result": "범인 프로필(회색 망토, 발라랏 출신, 오스트레일리아인, 지역 사정 밝은 자)이 도출됨",
+   "source_text": "자네 조언이 소중할 것 같군. 시가에 불을 붙이고 내 설명을 들어 보게.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_33",
+   "scene_id": "scene_4_1",
+   "order": 2,
+   "title": "빅토리아 식민지 지도를 통한 '발라랏' 추론",
+   "summary": "홈즈가 빅토리아 식민지 지도를 펴서 'BALLARAT'를 가리키며, 매카시가 마지막에 내뱉은 단어가 '발라랛의 아무개'였음을 보여준다.",
+   "location_id": "LOC_024",
+   "time_id": "TIME_038",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_027"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_027",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "주머니에서 접힌 종이 한 장을 꺼내 탁자 위에 펼쳤다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "오스트레일리아 지리·지도 해독 능력",
+     "source_text": "이건 빅토리아 식민지의 지도일세"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "발라랏과 BALLARAT의 대응을 즉석에서 지도 가림으로 보여줄 수 있는 논증 능력",
+     "source_text": "ARAT / BALLARAT"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_32",
+     "assumes": "EVENT_4_1의 추리 설교가 지도 제시를 위한 도입부이며, 시간적 연속성이 있다",
+     "source_text": "자네 조언이 소중할 것 같군 / 주머니에서 접힌 종이 한 장을 꺼내"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "임종 직전 '쥐'가 아니라 '발라랏'이었다는 해석",
+     "via": "told",
+     "retained": true,
+     "source_text": "그게 그 남자가 내뱉은 단어였고, 그의 아들은 마지막 두 음절만 알아들은 것일세. 그는 자기 살인자의 이름을 말하려 애쓰고 있었네."
+    }
+   ],
+   "cause": "홈즈가 어젯밤 브리스틀로 전보를 쳐서 지도를 받아 둠",
+   "result": "임종 단서가 '쥐'가 아닌 '발라랛의 (이름)'임이 확정됨",
+   "source_text": "이건 빅토리아 식민지의 지도일세. 어젯밤 브리스틀로 전보를 쳐서 받은 것일세.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_34",
+   "scene_id": "scene_4_1",
+   "order": 3,
+   "title": "오늘 원정에서 얻은 범인 세부 정보 제시",
+   "summary": "홈즈가 오늘 보스콤 못 땅을 조사해 얻은 절름발이, 왼손잡이, 인도산 시가, 무딘 주머니칼이라는 세부 사항들을 왓슨에게 열거한다.",
+   "location_id": "LOC_024",
+   "time_id": "TIME_038",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "범인은 절름발이 왼손잡이, 인도산 시가 흡연, 무딘 주머니칼 소지",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "오른발 자국이 왼발 자국보다 언제나 덜 선명했네 / 검시 심리에서 외과의사가 기록한 상처 / 인도산 시가"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "구두 자국·보폭으로 키를 짐작할 수 있는 지식",
+     "source_text": "그의 키야 보폭의 길이로 대략 짐작할 수 있었겠지"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "담배 재 140종을 구분할 수 있는 지식 (논문 집필)",
+     "source_text": "파이프·시가·궐련 담배 140종의 재에 관한 짧은 논문을 쓴 적도 있네"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "이끼 사이에서 던져진 담배꽁초를 발견할 수 있는 현장 관찰 능력",
+     "source_text": "이끼 사이에서 찾아냈네"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_32",
+     "assumes": "EVENT_4_1의 추리(범인 프로필) 위에 '오늘 원정'이 얻은 세부 정보가 더해진다",
+     "source_text": "그다음이 오늘 우리의 원정일세"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "범인은 절름발이·왼손잡이·인도산 시가 흡연자·무딘 주머니칼 휴대자",
+     "via": "told",
+     "retained": true,
+     "source_text": "절름발이야 / 왼손잡이가 아니고서야 / 인도산 시가 / 무딘 주머니칼이라고 추리"
+    }
+   ],
+   "cause": "오늘의 보스콤 못 원정과 담배 재 분석",
+   "result": "범인 물리적 프로필이 확정됨",
+   "source_text": "그다음이 오늘 우리의 원정일세. 땅을 조사함으로써 나는 저 얼간이 레스트레이드에게 알려 준, 범인의 인물됨에 관한 사소한 세부 사항들을 얻었네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_35",
+   "scene_id": "scene_4_2",
+   "order": 4,
+   "title": "존 터너의 도착",
+   "summary": "호텔 급사가 응접실 문을 열고 존 터너를 안내한다. 그를 보고 왓슨은 그가 만성 병을 앓고 있음을 알아챈다.",
+   "location_id": "LOC_024",
+   "time_id": "TIME_038",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_016"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_016",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_016",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_024",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "호텔 급사가 우리 응접실 문을 열며 외치고는 손님 한 사람을 안내해 들였다"
+    },
+    {
+     "entity": "CHAR_016",
+     "field": "body_status",
+     "from": "unknown",
+     "to": "만성 질환(당뇨병) 앓는 중, 잿빛 얼굴, 푸르스름한 입술과 콧구멍",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "얼굴은 잿빛으로 창백했고, 입술과 콧구멍 가장자리에는 푸르스름한 기운이 서려 있었다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "의학 지식을 가진 관찰자(만성병·당뇨·생명 예후의 외적 징후 식별)",
+     "source_text": "그가 어떤 치명적이고 만성적인 병에 사로잡혀 있다는 것을 나는 한눈에 알 수 있었다"
+    },
+    {
+     "entity": "CHAR_016",
+     "field": "body_status",
+     "assumes": "오른발을 절음(절뚝거리는 걸음걸이)",
+     "source_text": "느리고 절뚝거리는 걸음걸이"
+    },
+    {
+     "entity": "CHAR_016",
+     "field": "body_status",
+     "assumes": "들어올 수 있을 정도의 잔존 체력(비범한 체력의 인상)",
+     "source_text": "그의 딱딱하고 깊은 주름이 새겨진 바위 같은 얼굴과 거대한 팔다리는 그가 비범한 체력과 강인한 성격을 지녔음을 보여 주었다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_34",
+     "assumes": "도착한 '존 터너'라는 남자가 EVENT_4_3에서 말한 절름발이·왼손잡이·인도산 시가 프로필과 동일 인물로 추정 가능해야 한다 (단, 본 사건에서는 '그'라고만 지칭되어 동일성을 강하게 시사)",
+     "source_text": "이 모든 게 가리키는 방향이 나에게도 보이는군. 범인은— / 존 터너 씨입니다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "도착한 남자는 존 터너라는 이름의 인물",
+     "via": "told",
+     "retained": true,
+     "source_text": "존 터너 씨입니다"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "존 터너는 만성·치명적 질환을 앓고 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그가 어떤 치명적이고 만성적인 병에 사로잡혀 있다는 것을 나는 한눈에 알 수 있었다"
+    }
+   ],
+   "cause": "앨리스(미상)가 부친에게 보낸 홈즈의 편지(문지기가 전달함)",
+   "result": "존 터너가 호텔 응접실로 들어옴",
+   "source_text": "호텔 급사가 우리 응접실 문을 열며 외치고는 손님 한 사람을 안내해 들였다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_36",
+   "scene_id": "scene_4_2",
+   "order": 5,
+   "title": "홈즈가 매카시에 대해 모두 안다고 고지",
+   "summary": "터너는 왜 자신을 불렀는지 묻고, 홈즈는 그의 눈빛에 대답하며 매카시에 관한 모든 것을 알고 있다고 밝힌다. 터너는 얼굴을 묻으며 신에게 매카시에게 한 일과 관계없다고 호소한다.",
+   "location_id": "LOC_024",
+   "time_id": "TIME_038",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_016"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "터너가 매카시와 직접 연관된 인물이며 매카시 진상의 전부",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "저는 매카시에 관해 모든 것을 알고 있습니다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_016",
+     "field": "knows",
+     "assumes": "자신이 부른 이유를 짐작하고 있음 (홈즈의 질문에 답을 안다는 듯)",
+     "source_text": "그는 이미 답을 알고 있다는 듯 지친 눈에 절망을 담고 내 친구를 건너다보았다"
+    },
+    {
+     "entity": "CHAR_016",
+     "field": "knows",
+     "assumes": "순회재판에서 젊은 매카시에게 불리한 정황이 돌아갔다는 사실",
+     "source_text": "순회재판에서 그에게 불리하게 돌아갔다면"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_35",
+     "assumes": "EVENT_4_4에서 들어온 남자가 본 사건의 터너 그 자체로 동일 인물",
+     "source_text": "그는 이미 답을 알고 있다는 듯"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "터너는 매카시 진상의 핵심 인물이며, 홈즈는 '모든 것을 안다'고 선언함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "저는 매카시에 관해 모든 것을 알고 있습니다"
+    }
+   ],
+   "cause": "홈즈의 보스콤 못 조사와 빅토리아 식민지 지도 분석",
+   "result": "터너가 자백을 시작하도록 동기가 부여됨",
+   "source_text": "저는 매카시에 관해 모든 것을 알고 있습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_37",
+   "scene_id": "scene_4_2",
+   "order": 6,
+   "title": "터너, 딸 앨리스 때문에 입을 못 열겠다고 말함",
+   "summary": "터너는 사랑하는 딸 앨리스가 자기의 체포 소식을 들으면 충격을 받을 것을 걱정해 입을 다물고 있었다고 고지한다.",
+   "location_id": "LOC_024",
+   "time_id": "TIME_038",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_016"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_016",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_016",
+     "field": "knows",
+     "from": "unknown",
+     "to": "딸 앨리스(미상 ID)에게는 자기가 체포되거나 진실이 알려지면 안 된다는 결심",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "지금이라도 말했을 거요, 사랑하는 내 딸만 아니었다면"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_016",
+     "field": "knows",
+     "assumes": "자신이 체포될 가능성이 있음(죄의식)",
+     "source_text": "내가 체포되었다는 소식을 들으면"
+    },
+    {
+     "entity": "CHAR_016",
+     "field": "knows",
+     "assumes": "딸의 감정 상태를 해치지 않아야 한다는 강한 동기",
+     "source_text": "그 애의 가슴을 찢어 놓을 거요"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_36",
+     "assumes": "EVENT_4_5에서 터너가 매카시 진상을 안 상태에서, 본 사건의 '체포 소식 우려'는 EVENT_4_5와 동시에 인식된 동일 사안의 연속 반응",
+     "source_text": "그렇습니다, 저는 매카시에 관해 모든 것을 알고 있습니다 / 지금이라도 말했을 거요"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "터너에게는 '사랑하는 내 딸'이라는 사람이 있음",
+     "via": "told",
+     "retained": true,
+     "source_text": "사랑하는 내 딸만 아니었다면"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "터너에게는 '사랑하는 내 딸'이 있다",
+     "via": "told",
+     "retained": true,
+     "source_text": "사랑하는 내 딸만 아니었다면"
+    }
+   ],
+   "cause": "터너의 딸에 대한 걱정",
+   "result": "터너가 자백을 망설이게 됨",
+   "source_text": "지금이라도 말했을 거요, 사랑하는 내 딸만 아니었다면. 그 애의 가슴을 찢어 놓을 거요—내가 체포되었다는 소식을 들으면 그 애 가슴이 찢어질 거요.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_38",
+   "scene_id": "scene_4_2",
+   "order": 7,
+   "title": "홈즈, 앨리스의 이익을 위해 움직인다고 단언",
+   "summary": "홈즈는 자신이 정식 수사관이 아니며, 앨리스의 이익을 위해 움직이고 있고 매카시는 반드시 풀려나야 한다고 분명히 한다.",
+   "location_id": "LOC_024",
+   "time_id": "TIME_038",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_016"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "자신은 정식 수사관이 아니며 앨리스(미상 ID)의 의뢰로 움직임",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "저는 정식 수사관이 아닙니다. 제가 알기로 저를 이곳으로 부른 것은 부인의 따님이었고, 저는 그녀의 이익을 위해 움직이고 있습니다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "앨리스가 자신을 부른 의뢰인이라는 사실",
+     "source_text": "부인의 따님이었고, 저는 그녀의 이익을 위해 움직이고 있습니다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_37",
+     "assumes": "EVENT_4_6에서 터너가 꺼낸 '사랑하는 내 딸'이 곧 '부인의 따님' 앨리스임",
+     "source_text": "그렇게 되지 않을 수도 있습니다 / 사랑하는 내 딸만 아니었다면"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_016",
+     "info": "홈즈는 앨리스(딸)의 의뢰로 움직이며, 매카시 무죄를 위해 일함",
+     "via": "told",
+     "retained": true,
+     "source_text": "저는 정식 수사관이 아닙니다. 앨리스의 이익을 위해 움직이고 있습니다. 젊은 매카시는 반드시 풀려나야 합니다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈는 앨리스의 의뢰로 움직이며 매카시 무죄를 위해 일함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "앨리스의 이익을 위해 움직이고 있습니다. 젊은 매카시는 반드시 풀려나야 합니다."
+    }
+   ],
+   "cause": "터너의 딸 걱정 발언",
+   "result": "홈즈가 자신의 위치(앨리스 의뢰)와 목적(매카시 석방)을 단언함",
+   "source_text": "저는 정식 수사관이 아닙니다. 앨리스의 이익을 위해 움직이고 있습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_39",
+   "scene_id": "scene_4_2",
+   "order": 8,
+   "title": "터너, 수년 당뇨병으로 한 달도 못 살겠다고 고지",
+   "summary": "터너는 수년간 당뇨병을 앓아 의사가 한 달 이상 못 산다고 말했으며, 감옥보다 집 지붕 아래서 죽고 싶다고 밝힌다.",
+   "location_id": "LOC_024",
+   "time_id": "TIME_038",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_016"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_016",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_016",
+     "field": "body_status",
+     "from": "만성 질환 앓는 중",
+     "to": "수년간의 당뇨병, 의사가 한 달을 더 살지 의문이라 함",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "나는 죽어 가는 사람이오. 수년간 당뇨병을 앓았소. 의사 말로는 내가 한 달을 더 살지 의문이라 하오."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_016",
+     "field": "knows",
+     "assumes": "자신이 한 달 이내 사망할 수 있다는 의사의 진단",
+     "source_text": "의사 말로는 내가 한 달을 더 살지 의문이라 하오"
+    },
+    {
+     "entity": "CHAR_016",
+     "field": "body_status",
+     "assumes": "스스로 '죽어 가는 사람'으로 자각할 정도의 심각한 상태",
+     "source_text": "나는 죽어 가는 사람이오"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_35",
+     "assumes": "EVENT_4_4의 '만성·치명적 병'과 본 사건의 '수년간 당뇨병·한 달 이내 사망 가능'이 동일인의 동일 병력",
+     "source_text": "얼굴은 잿빛으로 창백했고 / 수년간 당뇨병을 앓았소"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "터너는 수년간 당뇨병을 앓고 있으며 한 달 이내 사망 가능",
+     "via": "told",
+     "retained": true,
+     "source_text": "수년간 당뇨병을 앓았소. 의사 말로는 내가 한 달을 더 살지 의문이라 하오."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "터너는 수년간 당뇨병을 앓고 있으며 한 달 이내 사망 가능",
+     "via": "told",
+     "retained": true,
+     "source_text": "수년간 당뇨병을 앓았소. 의사 말로는 내가 한 달을 더 살지 의문이라 하오."
+    }
+   ],
+   "cause": "터너 자신의 병세 자각",
+   "result": "터너가 자백의 시급성(순회재판까지 생존 불확실)을 드러냄",
+   "source_text": "나는 죽어 가는 사람이오. 수년간 당뇨병을 앓았소.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_40",
+   "scene_id": "scene_4_2",
+   "order": 9,
+   "title": "홈즈, 자백서 작성 조건을 제안",
+   "summary": "홈즈가 진술을 적고 왓슨이 증인으로서 서명할 것을 제안하며, 최후의 순간에 매카시를 구하기 위한 자백서임을 약속한다.",
+   "location_id": "LOC_024",
+   "time_id": "TIME_038",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_016"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "펜과 종이 뭉치(필기 도구)",
+     "source_text": "펜을 손에 들고 종이 뭉치를 앞에 두고 탁자에 앉았다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "사실 기록·자백서 작성·증인 호출 절차 운용 능력",
+     "source_text": "그저 진실을 말씀해 주십시오, 제가 사실을 적어 두겠습니다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_39",
+     "assumes": "터너의 시한부 병세(EVENT_4_8)가 자백서를 '절대 필요할 때'로 보관해야 할 근거로 가정됨",
+     "source_text": "의사 말로는 내가 한 달을 더 살지 의문이라 하오 / 절대 필요할 때가 아니면 쓰지 않겠다고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_016",
+     "info": "홈즈의 제안: 자백서를 작성하고 왓슨이 증인 서명, 최후의 순간에 사용",
+     "via": "told",
+     "retained": true,
+     "source_text": "그저 진실을 말씀해 주십시오. 제가 사실을 적어 두겠습니다. 서명하시면, 여기 왓슨이 증인이 되어 줄 겁니다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "자신이 자백서 증인 역할을 맡게 됨",
+     "via": "direct",
+     "retained": true,
+     "source_text": "여기 왓슨이 증인이 되어 줄 겁니다"
+    }
+   ],
+   "cause": "터너의 병세(순회재판까지 생존 불확실) 및 홈즈의 매카시 무죄 입증 필요",
+   "result": "터너가 자백에 동의함",
+   "source_text": "그저 진실을 말씀해 주십시오. 절대 필요할 때가 아니면 쓰지 않겠다고 약속드립니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_41",
+   "scene_id": "scene_4_2",
+   "order": 10,
+   "title": "터너의 자백 동의",
+   "summary": "터너는 자백에 동의하되, 딸 앨리스에겐 충격을 주지 말아달라고 부탁한다. 이야기는 오래 걸렸지만 짧게 말하겠다고 예고한다.",
+   "location_id": "LOC_024",
+   "time_id": "TIME_038",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_016"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_016",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_016",
+     "field": "knows",
+     "from": "unknown",
+     "to": "자신의 과거(블랙잭 시절·매카시와의 관계·앨리스에 대한 의무)에 대한 입을 열겠다는 결심",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "내가 순회재판까지 살아 있을지도 의문이니 나에게는 별 상관이 없지만, 앨리스에게 충격을 주지 않았으면 하오. 이제 이 일을 분명히 밝히겠소."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_016",
+     "field": "knows",
+     "assumes": "자신의 과거 행위에 대한 진실(회상 가능한 일관된 서사)",
+     "source_text": "이 일이 벌어지기까지는 오래 걸렸지만, 이야기하는 데는 오래 걸리지 않을 것이오"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_40",
+     "assumes": "EVENT_4_9의 제안(자백서 + 왓슨 증인)에 본 사건의 '동의'가 이어짐",
+     "source_text": "그게 좋겠소"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "터너는 자백에 동의하고 앨리스 보호를 부탁함",
+     "via": "told",
+     "retained": true,
+     "source_text": "그게 좋겠소. 앨리스에게 충격을 주지 않았으면 하오"
+    }
+   ],
+   "cause": "홈즈의 자백서 제안(EVENT_4_9)과 터너의 병세(EVENT_4_8)",
+   "result": "자백 진술이 시작됨",
+   "source_text": "그게 좋겠소. 앨리스에게 충격을 주지 않았으면 하오.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_42",
+   "scene_id": "scene_4_2",
+   "order": 11,
+   "title": "자백서 작성 시작 — 매카시와의 첫 만남 회상",
+   "summary": "터너는 매카시를 '인간의 탈을 쓴 악마'로 규정하고, 60년대 초 호주 채굴지에서 발라랏 갱의 두목 '발라랏의 블랙 잭'으로 활동했다고 털어놓기 시작한다.",
+   "location_id": "LOC_024",
+   "time_id": "TIME_039",
+   "timeline": "main",
+   "reality_status": "memory",
+   "participant_character_ids": [
+    "CHAR_016",
+    "CHAR_015",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_016",
+   "objects": [
+    "OBJ_028"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_028",
+     "field": "body_status",
+     "from": "unknown",
+     "to": "자백 내용 기입 시작 (60년대 초~현재 회상)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "그저 진실을 말씀해 주십시오, 제가 사실을 적어 두겠습니다"
+    },
+    {
+     "entity": "CHAR_037",
+     "field": "body_status",
+     "from": "unknown",
+     "to": "젊은 시절, 혈기왕성하고 무모, 6인 무리 두목",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그때 나는 젊은 녀석이었소, 혈기왕성하고 무모했지, 뭐든 손댈 준비가 되어 있었소"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_016",
+     "field": "knows",
+     "assumes": "자신이 과거 발라랏의 블랙잭이었다는 사실",
+     "source_text": "나는 발라랏의 블랙 잭이라는 이름으로 통했고"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "터너의 진술을 받아 적는 속기/필기 능력",
+     "source_text": "그저 진실을 말씀해 주십시오, 제가 사실을 적어 두겠습니다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "자백서 증인으로서의 역할 수행 능력(판독·서명 가능)",
+     "source_text": "여기 왓슨이 증인이 되어 줄 겁니다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_41",
+     "assumes": "EVENT_4_10의 '동의' 직후 같은 자리·같은 시간에서 자백 진술이 개시됨",
+     "source_text": "그게 좋겠소 / 이제 이 일을 분명히 밝히겠소"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "터너는 과거 60년대 초 호주 채굴지에서 '발라랏의 블랙 잭'이라는 이름의 노상강도 두목이었다",
+     "via": "told",
+     "retained": true,
+     "source_text": "나는 발라랏의 블랙 잭이라는 이름으로 통했고, 우리 무리는 지금도 식민지에서 '발라랏 갱'으로 기억되고 있소"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "터너는 과거 '발라랏의 블랙 잭'으로 통하던 노상강도 두목이었다",
+     "via": "told",
+     "retained": true,
+     "source_text": "나는 발라랏의 블랙 잭이라는 이름으로 통했고"
+    }
+   ],
+   "cause": "터너의 자발적 회고 개시",
+   "result": "자백서의 첫 단락이 기록됨",
+   "source_text": "그건 60년대 초, 채굴지에서였소. 나는 발라랏의 블랙 잭이라는 이름으로 통했고",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_43",
+   "scene_id": "scene_4_1",
+   "order": 1,
+   "title": "터너의 자백 진술",
+   "summary": "존 터너가 리전트가에서 발라랏의 블랙 잭과 그의 아들을 처음 만났고, 그들이 줄곧 위협하며 착취해온 경위를 진술한다.",
+   "location_id": "LOC_001",
+   "time_id": "NEW:현장_진술_시점",
+   "timeline": "main",
+   "reality_status": "hearsay",
+   "participant_character_ids": [
+    "CHAR_016",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_016",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_016",
+     "field": "knows",
+     "from": "unknown",
+     "to": "발라랏의 블랙 잭과의 첫 만남 및 이후 착취 경위",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "나는 리전트가에서 그와 마주쳤소"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_016",
+     "field": "body_status",
+     "assumes": "독립적으로 이동·여행할 수 있는 신체 상태",
+     "source_text": "어느 투자 건으로 시내에 올라갔다가"
+    },
+    {
+     "entity": "CHAR_037",
+     "field": "body_status",
+     "assumes": "외투와 신발이 없을 정도로 형편이 궁핍함",
+     "source_text": "등에 걸칠 외투 한 벌도, 발에 신을 신발 한 짝도 제대로 없는 몰골로"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_46",
+     "assumes": "EVENT_4_1에서 발라랏의 블랙 잭이 위협한 '앨리스'와 EVENT_4_4에서 터너가 딸을 가리키는 '앨리스'와 EVENT_4_2의 '앨리스'는 동일인이다",
+     "source_text": "그는 앨리스를 요구했소"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "터너가 과거 발라랏의 블랙 잭에게 협박을 받아온 경위",
+     "via": "told",
+     "retained": true,
+     "source_text": "나는 리전트가에서 그와 마주쳤소"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "터너가 과거 발라랏의 블랙 잭에게 협박을 받아온 경위",
+     "via": "told",
+     "retained": true,
+     "source_text": "나는 리전트가에서 그와 마주쳤소"
+    }
+   ],
+   "cause": "홈즈가 추궁하여 터너가 자진 진술함",
+   "result": "터너가 과거의 착취 경위를 털어놓음",
+   "source_text": "어느 투자 건으로 시내에 올라갔다가, 나는 리전트가에서 그와 마주쳤소",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_44",
+   "scene_id": "scene_4_1",
+   "order": 2,
+   "title": "터너의 딸에 대한 위협",
+   "summary": "터너는 발라랏의 블랙 잭이 자신의 딸 앨리스를 아내로 요구했고, 이를 거절했음을 진술한다.",
+   "location_id": "LOC_001",
+   "time_id": "NEW:현장_진술_시점",
+   "timeline": "main",
+   "reality_status": "hearsay",
+   "participant_character_ids": [
+    "CHAR_016",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_016",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_016",
+     "field": "knows",
+     "from": "unknown",
+     "to": "앨리스가 매카시와의 결혼을 강요받았음",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그는 앨리스를 요구했소"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_016",
+     "field": "body_status",
+     "assumes": "말년에 건강이 약한 상태",
+     "source_text": "내가 건강이 약한 것으로 알려져 있었으니"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_45",
+     "assumes": "EVENT_4_2에서 거절한 매카시와 EVENT_4_3의 매카시는 동일인이며, EVENT_4_2의 '그의 아들'은 EVENT_4_3의 매카시 아들이다",
+     "source_text": "매카시는 위협했소"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "앨리스가 매카시와의 결혼을 강요받았고 터너가 거절했다는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "그는 앨리스를 요구했소"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "앨리스가 매카시와의 결혼을 강요받았고 터너가 거절했다는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "그는 앨리스를 요구했소"
+    }
+   ],
+   "cause": "터너의 거절로 매카시가 협박으로 나아감",
+   "result": "두 집 사이 중간 못에서 만나기로 함",
+   "source_text": "그는 앨리스를 요구했소",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_45",
+   "scene_id": "scene_4_1",
+   "order": 3,
+   "title": "못에서 매카시 살해",
+   "summary": "터너는 못에서 매카시와 아들이 결혼을 두고 이야기하는 것을 엿들은 뒤, 매카시를 죽였다고 자백한다.",
+   "location_id": "LOC_021",
+   "time_id": "NEW:못에서의_만남_시점",
+   "timeline": "main",
+   "reality_status": "hearsay",
+   "participant_character_ids": [
+    "CHAR_016",
+    "CHAR_015"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_016",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_015",
+     "field": "alive",
+     "from": "true",
+     "to": "false",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "나는 그를 쓰러뜨렸소"
+    },
+    {
+     "entity": "CHAR_016",
+     "field": "knows",
+     "from": "unknown",
+     "to": "자신이 매카시를 살해했다는 사실",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "나는 그를 쓰러뜨렸소"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_016",
+     "field": "ability",
+     "assumes": "숲 속으로 도주하고, 떨어뜨린 망토를 가지러 되돌아갈 수 있을 정도의 체력",
+     "source_text": "다만 도주하다가 떨어뜨린 그 망토를 가지러 되돌아가야 했지만 말이오"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_44",
+     "assumes": "EVENT_4_3의 살해 대상 매카시는 EVENT_4_2에서 결혼을 강요하던 매카시와 동일인이다",
+     "source_text": "매카시는 위협했소 / 나는 그를 쓰러뜨렸소"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "터너가 매카시를 살해한 경위",
+     "via": "told",
+     "retained": true,
+     "source_text": "나는 그를 쓰러뜨렸소"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "터너가 매카시를 살해한 경위",
+     "via": "told",
+     "retained": true,
+     "source_text": "나는 그를 쓰러뜨렸소"
+    }
+   ],
+   "cause": "매카시가 앨리스 결혼을 다시 강요하고 있었기 때문",
+   "result": "매카시 사망, 터너가 망토를 두고 도주",
+   "source_text": "나는 그를 쓰러뜨렸소",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_46",
+   "scene_id": "scene_4_1",
+   "order": 4,
+   "title": "자백서 서명과 보관",
+   "summary": "터너가 진술서에 서명하고, 홈즈는 매카시가 무죄가 될 경우에 대비해 자백서를 보관하겠다고 약속한다.",
+   "location_id": "LOC_001",
+   "time_id": "NEW:현장_진술_시점",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_016",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_028"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_028",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "저는 이 자백서를 보관해 두겠고"
+    },
+    {
+     "entity": "CHAR_016",
+     "field": "possesses",
+     "from": "OBJ_028",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "노인이 작성된 진술서에 서명하는 동안"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "펜을 쥐고 서명을 받을 수 있는 상태",
+     "source_text": "노인이 작성된 진술서에 서명하는 동안 홈즈가 말했다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "터너의 자백서가 자백의 기록임을 확정 지킴",
+     "via": "direct",
+     "retained": true,
+     "source_text": "저는 이 자백서를 보관해 두겠고"
+    }
+   ],
+   "cause": "터너의 자백 진술이 끝남",
+   "result": "자백서가 홈즈의 보관 하에 들어감",
+   "source_text": "저는 이 자백서를 보관해 두겠고",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_47",
+   "scene_id": "scene_4_1",
+   "order": 5,
+   "title": "터너의 퇴장",
+   "summary": "터너가 비틀거리며 방을 나가고, 홈즈는 운명의 잔인함에 대해 한탄한다.",
+   "location_id": "LOC_001",
+   "time_id": "NEW:현장_진술_시점",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_016",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_016",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_016",
+     "field": "location",
+     "from": "LOC_001",
+     "to": "unknown",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그는 천천히 비틀거리며 방을 나섰다"
+    },
+    {
+     "entity": "CHAR_016",
+     "field": "body_status",
+     "from": "비틀거림",
+     "to": "비틀거림 지속",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "거대한 몸이 온통 비틀거리고 떨리는 채로"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_016",
+     "field": "body_status",
+     "assumes": "전신이 떨리고 균형을 잃기 쉬운 노쇠한 상태",
+     "source_text": "거대한 몸이 온통 비틀거리고 떨리는 채로"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "터너가 면담 후 비틀거리며 떠난 모습",
+     "via": "direct",
+     "retained": true,
+     "source_text": "거대한 몸이 온통 비틀거리고 떨리는 채로, 그는 천천히 비틀거리며 방을 나섰다"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "터너가 면담 후 비틀거리며 떠난 모습",
+     "via": "direct",
+     "retained": true,
+     "source_text": "거대한 몸이 온통 비틀거리고 떨리는 채로, 그는 천천히 비틀거리며 방을 나섰다"
+    }
+   ],
+   "cause": "자백서 서명 완료",
+   "result": "터너 퇴장, 홈즈의 한탄",
+   "source_text": "그는 천천히 비틀거리며 방을 나섰다",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_48",
+   "scene_id": "scene_4_2",
+   "order": 6,
+   "title": "매카시 무죄 방면",
+   "summary": "제임스 매카시가 홈즈가 제출한 이의 제기 덕분에 순회재판에서 무죄 방면되었다.",
+   "location_id": "unknown",
+   "time_id": "NEW:순회재판_시점",
+   "timeline": "main",
+   "reality_status": "hearsay",
+   "participant_character_ids": [
+    "CHAR_015",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_015",
+     "field": "alive",
+     "from": "true",
+     "to": "true",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "제임스 매카시는 홈즈가 밝혀내어 변호인 측에 제출한 여러 이의 제기 덕분에 순회재판에서 무죄 방면되었다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "not_knows: 자백서(OBJ_028)는 이 사건에서 사용되지 않음(원문: 만약 매카시가 유죄판결을 받는다면 어쩔 수 없이 이걸 써야 할 것)",
+     "source_text": "만약 매카시가 유죄판결을 받는다면 어쩔 수 없이 이걸 써야 할 겁니다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "제임스 매카시가 무죄 방면되었다는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "제임스 매카시는 홈즈가 밝혀내어 변호인 측에 제출한 여러 이의 제기 덕분에 순회재판에서 무죄 방면되었다"
+    }
+   ],
+   "cause": "홈즈가 변호인 측에 이의 제기를 제출함",
+   "result": "제임스 매카시 무죄 방면",
+   "source_text": "제임스 매카시는 홈즈가 밝혀내어 변호인 측에 제출한 여러 이의 제기 덕분에 순회재판에서 무죄 방면되었다",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_49",
+   "scene_id": "scene_4_2",
+   "order": 7,
+   "title": "터너의 사망",
+   "summary": "터너는 면담 이후 일곱 달을 더 살다가 세상을 떠났다.",
+   "location_id": "unknown",
+   "time_id": "NEW:면담_이후_7개월_후",
+   "timeline": "main",
+   "reality_status": "hearsay",
+   "participant_character_ids": [
+    "CHAR_016"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_016",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_016",
+     "field": "alive",
+     "from": "true",
+     "to": "false",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "늙은 터너는 우리와의 그 면담 이후 일곱 달을 더 살았지만 지금은 세상을 떠났다"
+    }
+   ],
+   "assumed_states": [],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_46",
+     "assumes": "EVENT_4_7의 사망 시점은 EVENT_4_4의 자백서 서명 시점보다 7개월 이후다",
+     "source_text": "우리와의 그 면담 이후 일곱 달을 더 살았지만"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "터너가 면담 7개월 후 사망했다는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "늙은 터너는 우리와의 그 면담 이후 일곱 달을 더 살았지만 지금은 세상을 떠났다"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "터너가 면담 7개월 후 사망했다는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "늙은 터너는 우리와의 그 면담 이후 일곱 달을 더 살았지만 지금은 세상을 떠났다"
+    }
+   ],
+   "cause": "시간 경과",
+   "result": "터너 사망",
+   "source_text": "늙은 터너는 우리와의 그 면담 이후 일곱 달을 더 살았지만 지금은 세상을 떠났다",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_4_50",
+   "scene_id": "scene_4_2",
+   "order": 8,
+   "title": "아들과 딸의 미래",
+   "summary": "제임스 매카시와 앨리스는 과거의 비극을 모른 채 앞으로 행복하게 함께 살 가능성이 크다.",
+   "location_id": "unknown",
+   "time_id": "NEW:사건_종결_이후_미래",
+   "timeline": "main",
+   "reality_status": "hearsay",
+   "participant_character_ids": [
+    "CHAR_015",
+    "CHAR_017"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "unknown",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_015",
+     "field": "knows",
+     "from": "unknown",
+     "to": "not_knows: 아버지 매카시 살해 사건의 진실",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "아들과 딸이 그들의 과거에 드리운 그 검은 구름을 알지 못한 채"
+    },
+    {
+     "entity": "CHAR_017",
+     "field": "knows",
+     "from": "unknown",
+     "to": "not_knows: 아버지 터너가 매카시를 살해했다는 진실",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "아들과 딸이 그들의 과거에 드리운 그 검은 구름을 알지 못한 채"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_015",
+     "field": "alive",
+     "assumes": "true (현재까지 생존해 있음)",
+     "source_text": "앞으로 행복하게 함께 살아갈 가능성이 크다"
+    },
+    {
+     "entity": "CHAR_017",
+     "field": "alive",
+     "assumes": "true (현재까지 생존해 있음)",
+     "source_text": "앞으로 행복하게 함께 살아갈 가능성이 크다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_4_45",
+     "assumes": "EVENT_4_8의 '아들'은 EVENT_4_3의 매카시 아들이며 '딸'은 EVENT_4_3의 앨리스다",
+     "source_text": "아들과 딸이 그들의 과거에 드리운 그 검은 구름을 알지 못한 채"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "제임스 매카시와 앨리스가 진실을 모른 채 행복하게 살 가능성",
+     "via": "told",
+     "retained": true,
+     "source_text": "앞으로 행복하게 함께 살아갈 가능성이 크다"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "제임스 매카시와 앨리스가 진실을 모른 채 행복하게 살 가능성",
+     "via": "told",
+     "retained": true,
+     "source_text": "앞으로 행복하게 함께 살아갈 가능성이 크다"
+    }
+   ],
+   "cause": "터너 사망, 자백서 비공개 유지",
+   "result": "두 젊은 세대는 진실을 모른 채 살아갈 전망",
+   "source_text": "아들과 딸이 그들의 과거에 드리운 그 검은 구름을 알지 못한 채 앞으로 행복하게 함께 살아갈 가능성이 크다",
+   "certainty": "explicit"
+  }
+ ]
+}

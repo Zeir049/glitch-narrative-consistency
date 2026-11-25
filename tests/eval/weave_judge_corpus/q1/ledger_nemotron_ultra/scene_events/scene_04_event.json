@@ -1,0 +1,265 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "개장 및 첫 손님 입장",
+   "summary": "순덕이 정문을 열고 최영감이 들어와 남탕으로 들어감",
+   "location_id": "LOC_010",
+   "time_id": "NEW:여섯 시 정각",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_021"
+   ],
+   "state_changes": [
+    {
+     "entity": "LOC_010",
+     "field": "condition",
+     "from": "닫힘",
+     "to": "열림",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "여섯 시 정각에 순덕이 열쇠로 정문을 열었다"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "from": "LOC_010 밖",
+     "to": "LOC_005",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "최영감은 밖에서 기다리고 있다가 들어왔다. 문이 열리는 것과 동시였다. ... 남탕으로 들어갔다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_010",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "순덕은 카운터 의자에 앉았다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_021 (정문 열쇠)",
+     "source_text": "여섯 시 정각에 순덕이 열쇠로 정문을 열었다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "개장 시각이 여섯 시 정각임",
+     "source_text": "여섯 시 정각에 순덕이 열쇠로 정문을 열었다"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "개장 시각과 요금(육백 원)을 알고 있음",
+     "source_text": "최영감은 밖에서 기다리고 있다가 들어왔다. ... 최영감은 육백 원을 서랍에 넣고"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "열쇠로 정문을 여는 능력",
+     "source_text": "여섯 시 정각에 순덕이 열쇠로 정문을 열었다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "최영감이 첫 손님으로 입장함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "최영감은 밖에서 기다리고 있다가 들어왔다"
+    }
+   ],
+   "cause": "개장 시각 도래",
+   "result": "첫 손님 입장 및 영업 시작",
+   "source_text": "여섯 시 정각에 순덕이 열쇠로 정문을 열었다. 최영감은 밖에서 기다리고 있다가 들어왔다. 문이 열리는 것과 동시였다. \"오늘 물은.\" \"됐니더.\" 최영감은 육백 원을 서랍에 넣고 남탕으로 들어갔다. 그 말 말고는 아무 말도 하지 않았다. 순덕은 카운터 의자에 앉았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "개장 안내문 확인 및 보일러 가동 확인",
+   "summary": "순덕이 개장 안내문 상태를 확인하고 보일러가 돌아가는 것을 확인함",
+   "location_id": "LOC_002",
+   "time_id": "NEW:여섯 시 정각 직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_022",
+    "OBJ_004"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_022",
+     "field": "condition",
+     "from": "귀퉁이 들뜸",
+     "to": "귀퉁이 들뜸 (유지)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "유리문 안쪽에는 여섯 시 종이가 그대로 붙어 있었다. 며칠 전에 정호가 손바닥으로 눌러 붙였는데 귀퉁이가 또 들떠 있었다"
+    },
+    {
+     "entity": "OBJ_004",
+     "field": "condition",
+     "from": "세 시 반에 불 뗌",
+     "to": "가동 중 (물 데우는 중)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "지하에서는 세 시 반에 뗀 불이 돌고 있었다. 그 불이 이 시간에 물을 뜨겁게 했다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "정호가 며칠 전 개장 안내문을 붙였음",
+     "source_text": "며칠 전에 정호가 손바닥으로 눌러 붙였는데"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "보일러 불 때는 시각(세 시 반)과 물 데워지는 시간(여섯 시)을 알고 있음",
+     "source_text": "지하에서는 세 시 반에 뗀 불이 돌고 있었다. 그 불이 이 시간에 물을 뜨겁게 했다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "같은 장면(개장 시점)에서 순덕이 정문 개방 후 카운터에서 안내문과 보일러 상태를 확인함",
+     "source_text": "여섯 시 정각에 순덕이 열쇠로 정문을 열었다. ... 순덕은 카운터 의자에 앉았다. 유리문 안쪽에는 여섯 시 종이가 그대로 붙어 있었다. 지하에서는 세 시 반에 뗀 불이 돌고 있었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "개장 안내문 귀퉁이가 다시 들떠 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "유리문 안쪽에는 여섯 시 종이가 그대로 붙어 있었다. 며칠 전에 정호가 손바닥으로 눌러 붙였는데 귀퉁이가 또 들떠 있었다"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "보일러가 세 시 반에 때서 여섯 시에 물이 뜨거워짐",
+     "via": "direct",
+     "retained": true,
+     "source_text": "지하에서는 세 시 반에 뗀 불이 돌고 있었다. 그 불이 이 시간에 물을 뜨겁게 했다"
+    }
+   ],
+   "cause": "개장 후 카운터 착석",
+   "result": "시설 상태 확인 완료",
+   "source_text": "순덕은 카운터 의자에 앉았다. 유리문 안쪽에는 여섯 시 종이가 그대로 붙어 있었다. 며칠 전에 정호가 손바닥으로 눌러 붙였는데 귀퉁이가 또 들떠 있었다. 지하에서는 세 시 반에 뗀 불이 돌고 있었다. 그 불이 이 시간에 물을 뜨겁게 했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_3",
+   "scene_id": "scene_6_1",
+   "order": 3,
+   "title": "첫 손님 장부 기록",
+   "summary": "순덕이 장부를 펴고 첫 손님(어른 하나)을 기록함",
+   "location_id": "LOC_002",
+   "time_id": "NEW:여섯 시 정각 직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_002"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_002",
+     "field": "condition",
+     "from": "펼쳐지지 않음",
+     "to": "펼쳐짐 (첫 줄 기록됨)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "순덕은 장부를 펴 놓고 첫 줄에 어른 하나를 적었다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "장부 기록 방법(첫 줄에 어른 수 기입)을 알고 있음",
+     "source_text": "순덕은 장부를 펴 놓고 첫 줄에 어른 하나를 적었다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_002 (장부)",
+     "source_text": "순덕은 장부를 펴 놓고"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "최영감이 입장한 어른 한 명으로서 장부에 기록됨",
+     "source_text": "최영감은 육백 원을 서랍에 넣고 남탕으로 들어갔다. ... 순덕은 장부를 펴 놓고 첫 줄에 어른 하나를 적었다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "오늘 첫 손님은 어른 한 명(최영감)임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "순덕은 장부를 펴 놓고 첫 줄에 어른 하나를 적었다"
+    }
+   ],
+   "cause": "첫 손님 입장 완료",
+   "result": "장부 기록 완료",
+   "source_text": "순덕은 장부를 펴 놓고 첫 줄에 어른 하나를 적었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-27T04:50:48Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 34.06
+ }
+}

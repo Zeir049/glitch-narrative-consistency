@@ -1,0 +1,377 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:십이월 이십팔일",
+   "expression": "십이월 이십팔일",
+   "description": "넷째 월요일, 목욕탕 휴무일",
+   "timeline": "main",
+   "source_text": "월요일은 십이월 이십팔일이었다. 넷째 월요일이라 탕은 쉬었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "휴무일 보일러 끄기와 물 빼기",
+   "summary": "문식이 보일러를 완전히 끄고 탕의 물을 모두 뺀다.",
+   "location_id": "LOC_007",
+   "time_id": "NEW:십이월 이십팔일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [
+    "OBJ_004",
+    "OBJ_012",
+    "OBJ_011"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_004",
+     "field": "body_status",
+     "from": "가동 중",
+     "to": "완전히 꺼짐",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "문식은 보일러를 완전히 껐다."
+    },
+    {
+     "entity": "LOC_005",
+     "field": "condition",
+     "from": "물 차 있음",
+     "to": "물 다 빠짐",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "탕의 물을 다 뺐다."
+    },
+    {
+     "entity": "LOC_006",
+     "field": "condition",
+     "from": "물 차 있음",
+     "to": "물 다 빠짐",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "탕의 물을 다 뺐다."
+    },
+    {
+     "entity": "OBJ_012",
+     "field": "body_status",
+     "from": "물 순환 중",
+     "to": "마지막 물이 깡통으로 떨어짐",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "헝겊으로 감은 관에서 마지막 물이 깡통으로 떨어졌다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "ability",
+     "assumes": "보일러 조작 및 배수 작업 가능",
+     "source_text": "문식은 보일러를 완전히 껐다. 밤새 죽이지 않던 불을 끄고 탕의 물을 다 뺐다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "넷째 월요일 정기 휴무",
+   "result": "보일러 정지, 남탕·여탕 물 모두 빠짐",
+   "source_text": "문식은 보일러를 완전히 껐다. 밤새 죽이지 않던 불을 끄고 탕의 물을 다 뺐다. 헝겊으로 감은 관에서 마지막 물이 깡통으로 떨어졌다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "남탕 바닥 청소",
+   "summary": "정호가 남탕 바닥을 솔로 민다.",
+   "location_id": "LOC_005",
+   "time_id": "NEW:십이월 이십팔일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "LOC_005",
+     "field": "condition",
+     "from": "물 빠진 바닥",
+     "to": "솔로 밀고 있음",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "청소 완료된 바닥",
+     "certainty": "explicit",
+     "source_text": "정호가 남탕 바닥을 솔로 밀었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "바닥 청소 작업 가능",
+     "source_text": "정호가 남탕 바닥을 솔로 밀었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "보일러가 꺼지고 물이 다 빠진 뒤에 청소가 시작됨",
+     "source_text": "문식은 보일러를 완전히 껐다. ... 정호가 남탕 바닥을 솔로 밀었다."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "휴무일 대청소",
+   "result": "남탕 바닥 청소 진행 중",
+   "source_text": "정호가 남탕 바닥을 솔로 밀었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_3",
+   "scene_id": "scene_6_1",
+   "order": 3,
+   "title": "셔터 내림과 정문 안내문 부착",
+   "summary": "아침부터 셔터가 내려져 있고 정문 유리 안쪽에 종이가 뒤집혀 붙어 있다.",
+   "location_id": "LOC_010",
+   "time_id": "NEW:십이월 이십팔일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [],
+   "witness_character_ids": [],
+   "main_actor_character_id": "unknown",
+   "objects": [
+    "OBJ_005",
+    "OBJ_022"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_005",
+     "field": "body_status",
+     "from": "올라가 있음",
+     "to": "내려져 있음",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "셔터는 아침부터 내려져 있었고"
+    },
+    {
+     "entity": "OBJ_022",
+     "field": "body_status",
+     "from": "부착 안 됨",
+     "to": "정문 유리 안쪽에 뒤집혀 부착됨",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정문 유리의 종이는 안에서 뒤집혀 보였다."
+    }
+   ],
+   "assumed_states": [],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "휴무일임을 알리는 조치가 아침 일찍 완료됨",
+     "source_text": "넷째 월요일이라 탕은 쉬었다. 셔터는 아침부터 내려져 있었고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_004",
+     "info": "오늘이 넷째 월요일 휴무일임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "넷째 월요일이라 탕은 쉬었다. 셔터는 아침부터 내려져 있었고"
+    }
+   ],
+   "cause": "정기 휴무일",
+   "result": "영업 중단 상태 시각화",
+   "source_text": "셔터는 아침부터 내려져 있었고 정문 유리의 종이는 안에서 뒤집혀 보였다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_4",
+   "scene_id": "scene_6_1",
+   "order": 4,
+   "title": "정미 계 모임 다녀옴",
+   "summary": "정미가 계를 타러 갔다가 점심때 돌아왔다.",
+   "location_id": "LOC_001",
+   "time_id": "NEW:십이월 이십팔일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "LOC_001",
+     "to": "unknown",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "LOC_001",
+     "certainty": "explicit",
+     "source_text": "정미는 계를 타러 갔다가 점심때 돌아왔다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정미는 계를 타러 갔다가 점심때 돌아왔다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "계 모임 일정과 장소",
+     "source_text": "정미는 계를 타러 갔다가"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "계 모임 참석",
+   "result": "점심때 귀가",
+   "source_text": "정미는 계를 타러 갔다가 점심때 돌아왔다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_5",
+   "scene_id": "scene_6_1",
+   "order": 5,
+   "title": "순덕 카운터에서 대기",
+   "summary": "순덕이 카운터에 앉아 무릎을 펴고 있다. 손님은 없다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:십이월 이십팔일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "무릎을 펼 수 있는 상태",
+     "source_text": "순덕은 카운터에 앉아 무릎을 펴고 있었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_3",
+     "assumes": "셔터가 내려져 있고 안내문이 붙어 있어 손님이 없음",
+     "source_text": "셔터는 아침부터 내려져 있었고 정문 유리의 종이는 안에서 뒤집혀 보였다. 손님은 하나도 없었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "오늘 손님이 하나도 없음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "손님은 하나도 없었다."
+    }
+   ],
+   "cause": "휴무일",
+   "result": "대기 중",
+   "source_text": "순덕은 카운터에 앉아 무릎을 펴고 있었다. 손님은 하나도 없었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_6",
+   "scene_id": "scene_6_1",
+   "order": 6,
+   "title": "여탕 바닥 청소",
+   "summary": "정미가 여탕 바닥을 밀러 들어간다. 배수구로 물 빠지는 소리만 들린다.",
+   "location_id": "LOC_006",
+   "time_id": "NEW:십이월 이십팔일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "LOC_006",
+     "field": "condition",
+     "from": "물 빠진 바닥",
+     "to": "바닥 미는 중",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "청소 완료된 바닥",
+     "certainty": "explicit",
+     "source_text": "정미가 여탕 바닥을 밀러 들어갔다. 배수구로 물이 빠지는 소리만 났다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "ability",
+     "assumes": "바닥 청소 작업 가능",
+     "source_text": "정미가 여탕 바닥을 밀러 들어갔다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "여탕 물도 이미 다 빠진 상태",
+     "source_text": "탕의 물을 다 뺐다. 정미가 여탕 바닥을 밀러 들어갔다."
+    },
+    {
+     "with_event_id": "EVENT_6_2",
+     "assumes": "남탕 청소와 같은 맥락의 휴무일 대청소",
+     "source_text": "정호가 남탕 바닥을 솔로 밀었다. 정미가 여탕 바닥을 밀러 들어갔다."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "휴무일 대청소",
+   "result": "여탕 바닥 청소 시작",
+   "source_text": "정미가 여탕 바닥을 밀러 들어갔다. 배수구로 물이 빠지는 소리만 났다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:43:58Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 233.5
+ }
+}

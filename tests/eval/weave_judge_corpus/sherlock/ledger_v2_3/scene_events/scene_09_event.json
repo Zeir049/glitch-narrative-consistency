@@ -1,0 +1,136 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "라스카의 부인 진술",
+   "summary": "라스카가 순경의 질문에 위층에 사는 절름발이에 대해 모른다고 답하고, 신사분의 옷이 거기 있는 이유도 모른다고 진술한다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_024",
+    "CHAR_023"
+   ],
+   "witness_character_ids": [
+    "CHAR_001"
+   ],
+   "main_actor_character_id": "CHAR_024",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_024",
+     "field": "body_status",
+     "assumes": "두 손이 자유로움 (앞치마에 문지를 수 있음)",
+     "source_text": "두 손을 앞치마에 문지르며"
+    },
+    {
+     "entity": "CHAR_023",
+     "field": "body_status",
+     "assumes": "순경의 신분을 가진 인물 (수첩에 받아 적는 행위)",
+     "source_text": "순경은 수첩에 그대로 받아 적었다"
+    },
+    {
+     "entity": "CHAR_024",
+     "field": "knows",
+     "assumes": "위층에 절름발이가 사는 것 (모른다고 부정하며 함축적으로 인정)",
+     "source_text": "위층에 사는 그 절름발이가 뭘 하고 다니는지"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_023",
+     "info": "라스카의 부인 진술 내용 (절름발이 모름, 옷 존재 모름)",
+     "via": "told",
+     "retained": true,
+     "source_text": "저는 아무것도 모릅니다요"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "라스카의 부인 진술 내용",
+     "via": "direct",
+     "retained": true,
+     "source_text": "저는 아무것도 모릅니다요"
+    }
+   ],
+   "cause": "순경의 질문에 대한 라스카의 응답",
+   "result": "순경은 수첩에 진술을 받아 적고, 브래드스트리트는 근거 부족으로 반박을 보류한다.",
+   "source_text": "저는 아무것도 모릅니다요. ... 저는 도무지 설명할 수가 없습니다요.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "브래드스트리트의 묵묵한 관찰",
+   "summary": "브래드스트리트는 라스카의 말을 그대로 믿지 않지만 반박 근거가 없어, 방 안을 한 번 더 둘러보며 상황을 파악한다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_023"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_024"
+   ],
+   "main_actor_character_id": "CHAR_023",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_023",
+     "field": "ability",
+     "assumes": "관찰 및 정황 판단 능력 (방 안을 둘러보며 단서를 수집)",
+     "source_text": "아무 말도 하지 않고 방 안을 한 번 더 둘러보았다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "EVENT_6_1의 라스카 진술 직후 동일한 방 안에서 일어남",
+     "source_text": "브래드스트리트는 아무 말도 하지 않고 방 안을 한 번 더 둘러보았다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_023",
+     "info": "라스카의 진술이 사실과 다를 가능성 (속으로 믿지 않음)",
+     "via": "inference",
+     "retained": true,
+     "source_text": "이 사내의 말을 그대로 믿을 생각은 없었지만"
+    }
+   ],
+   "cause": "라스카의 부인 진술에 대한 브래드스트리트의 회의",
+   "result": "브래드스트리트는 현시점에서 추가 발언을 하지 않고 관찰에 머문다.",
+   "source_text": "이 사내의 말을 그대로 믿을 생각은 없었지만, 지금은 반박할 근거가 없었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:03:55Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 10.4
+ }
+}

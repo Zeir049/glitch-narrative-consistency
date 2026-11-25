@@ -1,0 +1,136 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:5월 18일 14시",
+   "expression": "5월 18일 14시",
+   "description": "카림이 격벽을 연 시각",
+   "timeline": "main",
+   "source_text": "5월 18일 14시. 카림이 기지장에게서 받아 온 열쇠로 격벽을 열었고",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "격벽 개방 및 관측 모듈 온도 확인",
+   "summary": "카림이 기지장에게서 받은 열쇠로 격벽을 열고 가온과 함께 관측 모듈에 들어가 광학부 온도계가 영하 39도임을 확인한다.",
+   "location_id": "LOC_003",
+   "time_id": "NEW:5월 18일 14시",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_007"
+   ],
+   "state_changes": [
+    {
+     "entity": "LOC_005",
+     "field": "condition",
+     "from": "잠금",
+     "to": "개방",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림이 기지장에게서 받아 온 열쇠로 격벽을 열었고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_003",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림이 기지장에게서 받아 온 열쇠로 격벽을 열었고 가온이 뒤따라 지나갔다. 관측 모듈 안은 어두웠다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_003",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "가온이 뒤따라 지나갔다. 관측 모듈 안은 어두웠다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "from": "unknown",
+     "to": "관측 모듈 광학부 온도 영하 39도",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "가온은 광학부 온도계를 헤드램프로 비췄다. 영하 39도. 가온은 수첩에 그 숫자를 적었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_007 (기지장에게서 받아 온 열쇠)",
+     "source_text": "카림이 기지장에게서 받아 온 열쇠로 격벽을 열었고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "기지장에게서 열쇠를 받아 격벽을 열 수 있음",
+     "source_text": "카림이 기지장에게서 받아 온 열쇠로 격벽을 열었고"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "assumes": "헤드램프, 수첩",
+     "source_text": "가온은 광학부 온도계를 헤드램프로 비췄다. 가온은 수첩에 그 숫자를 적었다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "body_status",
+     "assumes": "관측 모듈 내 이동 및 측정 가능 상태",
+     "source_text": "가온은 광학부 온도계를 헤드램프로 비췄다. 영하 39도. 가온은 수첩에 그 숫자를 적었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_005",
+     "info": "관측 모듈 광학부 온도 영하 39도",
+     "via": "direct",
+     "retained": true,
+     "source_text": "가온은 광학부 온도계를 헤드램프로 비췄다. 영하 39도."
+    }
+   ],
+   "cause": "기지장에게서 열쇠를 받아 격벽 개방",
+   "result": "관측 모듈 광학부 온도 영하 39도 확인, 히터 회로 인입선 미연결 상태 확인",
+   "source_text": "5월 18일 14시. 카림이 기지장에게서 받아 온 열쇠로 격벽을 열었고 가온이 뒤따라 지나갔다. 관측 모듈 안은 어두웠다. 히터 회로 인입선은 4월 15일에 뽑힌 그대로 단자함 옆에 감겨 있었다. 가온은 광학부 온도계를 헤드램프로 비췄다. 영하 39도. 가온은 수첩에 그 숫자를 적었다. 적을 필요는 없었다. 이미 언 것은 더 얼지 않았다. 그래도 적었다. 카림은 문 옆에서 기다렸다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:50:47Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 52.15
+ }
+}

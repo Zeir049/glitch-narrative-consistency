@@ -1,0 +1,120 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [
+  {
+   "rule_id": "NEW:사적_메시지_전송_금지",
+   "content": "4월 8일부터 청문 전까지 사적 메시지 전송이 금지된다",
+   "description": "통신 창에서 남는 시간이 있어도 사적 메시지는 나갈 수 없으며, 이 제한은 4월 8일부터 청문 전까지 적용된다",
+   "source_text": "남는 시간이 있어도 사적 메시지는 나갈 수 없었다. 4월 8일부터 그랬고 청문 전까지는 그럴 것이었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:5월_16일_22시_정각",
+   "expression": "5월 16일 22시 정각",
+   "description": "링크가 잡힌 시각",
+   "timeline": "main",
+   "source_text": "5월 16일 22시 정각에 링크가 잡혔다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "5월 16일 22시 통신 링크 연결 및 보고 수신",
+   "summary": "5월 16일 22시 정각에 통신 링크가 연결되어 마르타의 의료 보고와 기지 일일 보고가 수신되었다. 서율은 콘솔 옆에서 진행 막대를 지켜보았다.",
+   "location_id": "LOC_008",
+   "time_id": "NEW:5월_16일_22시_정각",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_003",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "ability",
+     "from": "통신 큐 미개방",
+     "to": "전송 큐 개방 및 보고 수신",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "도현이 전송 큐를 열었다. 마르타의 의료 보고가 첫 번째였고 기지 일일 보고가 그 뒤였다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "assumes": "LOC_008 (통신실 콘솔 옆)",
+     "source_text": "서율은 문 옆이 아니라 콘솔 옆에 서서 진행 막대를 보았다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "파카 착용 중 (통신실 온도 4도)",
+     "source_text": "통신실은 4도였고 서율은 파카를 입고 있었다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "통신 창이 40분간 열리며 사적 메시지 전송이 금지됨",
+     "source_text": "\"오늘도 40분 다 써요.\" 도현이 말했다. 남는 시간이 있어도 사적 메시지는 나갈 수 없었다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "의료 보고 내용이 전송 큐에 대기 중이었음",
+     "source_text": "마르타의 의료 보고가 첫 번째였고"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "마르타의 의료 보고와 기지 일일 보고가 수신됨",
+     "via": "direct",
+     "retained": true,
+     "source_text": "마르타의 의료 보고가 첫 번째였고 기지 일일 보고가 그 뒤였다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "통신 창은 40분간 열리며 사적 메시지 전송은 4월 8일부터 청문 전까지 금지됨",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"오늘도 40분 다 써요.\" 도현이 말했다. 남는 시간이 있어도 사적 메시지는 나갈 수 없었다. 4월 8일부터 그랬고 청문 전까지는 그럴 것이었다."
+    }
+   ],
+   "cause": "정기 통신 창 시각(22시) 도래",
+   "result": "마르타 의료 보고 및 기지 일일 보고 수신 완료, 통신 제한 사항 재확인",
+   "source_text": "5월 16일 22시 정각에 링크가 잡혔다. 도현이 전송 큐를 열었다. 마르타의 의료 보고가 첫 번째였고 기지 일일 보고가 그 뒤였다. 서율은 문 옆이 아니라 콘솔 옆에 서서 진행 막대를 보았다. 3항이었다. 통신실은 4도였고 서율은 파카를 입고 있었다. \"오늘도 40분 다 써요.\" 도현이 말했다. 남는 시간이 있어도 사적 메시지는 나갈 수 없었다. 4월 8일부터 그랬고 청문 전까지는 그럴 것이었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:42:53Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 54.96
+ }
+}

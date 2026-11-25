@@ -1,0 +1,276 @@
+{
+  "schema_version": 2,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 3,
+  "batch_id": "T2-R3-A",
+  "scene_id": "scene_02",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_02.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r2)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T13:22:27Z",
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "유리벽 너머로 슐라우의 병실을 들여다보는 관찰자.",
+      "traits": [],
+      "first_appearance_event_id": "unknown",
+      "source_text": "유리벽 너머로만 병실을 들여다보았다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_006",
+      "name": "슐라우 프로비에렌",
+      "aliases": ["슐라우"],
+      "entity_type": "person",
+      "description": "병실 침상에서 회복 중이며 문진표에 이름을 적는 인물.",
+      "traits": [
+        {
+          "trait": "글씨를 또박또박 정갈하게 쓰는 필체",
+          "trait_type": "habit",
+          "source_text": "막힘없이 또박또박 이름을 적어 내려갔다",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "unknown",
+      "source_text": "슐라우는 오른손으로 펜을 쥐더니 막힘없이 또박또박 이름을 적어 내려갔다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_012",
+      "name": "블루멘 랑잠 (Blumen Langsam)",
+      "aliases": ["블루멘"],
+      "entity_type": "person",
+      "description": "슐라우의 회복 경과를 기록하고 문진표를 수거하는 인물.",
+      "traits": [
+        {
+          "trait": "글씨를 휘갈겨 쓰는 필체",
+          "trait_type": "habit",
+          "source_text": "블루멘의 그 휘갈긴 쪽지가 떠올라서",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "알파의 눈높이보다 한참 낮은 위치에 쪽지를 붙일 만한 키",
+          "trait_type": "appearance",
+          "source_text": "내 눈높이보다 한참 아래에 붙어 있던 블루멘의 그 휘갈긴 쪽지",
+          "certainty": "uncertain"
+        }
+      ],
+      "first_appearance_event_id": "unknown",
+      "source_text": "마침 블루멘이 회복 경과를 기록하는 중이었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_013",
+      "name": "헤일트라움 병실",
+      "description": "슐라우가 입원해 있는 병실. 외부에서 유리벽 너머로 내부를 볼 수 있다.",
+      "source_text": "유리벽 너머로만 병실을 들여다보았다.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:병실_앞_유리벽_바깥",
+      "name": "병실 앞 유리벽 바깥",
+      "description": "면회가 허용되지 않아 알파가 서서 병실을 들여다보던, 유리벽 바깥쪽 공간.",
+      "source_text": "나는 들키기 전에 유리벽에서 물러섰다.",
+      "certainty": "inferred"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "NEW:문진표",
+      "name": "문진표",
+      "description": "블루멘이 침상 위에 올려주고 슐라우가 이름을 적은 뒤 다시 걷어간 문진표 같은 서류.",
+      "first_appearance_event_id": "EVENT_S02_1",
+      "source_text": "문진표 같은 것을 침상 위에 올려주자",
+      "certainty": "explicit"
+    },
+    {
+      "object_id": "NEW:펜",
+      "name": "펜",
+      "description": "슐라우가 오른손으로 쥐고 문진표에 이름을 적은 필기구.",
+      "first_appearance_event_id": "EVENT_S02_1",
+      "source_text": "슐라우는 오른손으로 펜을 쥐더니",
+      "certainty": "explicit"
+    },
+    {
+      "object_id": "NEW:블루멘의_휘갈긴_쪽지",
+      "name": "블루멘의 휘갈긴 쪽지",
+      "description": "알파의 눈높이보다 한참 아래에 붙어 있던, 블루멘이 휘갈겨 쓴 쪽지. 이 장면에서는 알파의 회상으로만 언급된다.",
+      "first_appearance_event_id": "EVENT_S02_1",
+      "source_text": "내 눈높이보다 한참 아래에 붙어 있던 블루멘의 그 휘갈긴 쪽지가 떠올라서 조금 웃었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [
+    {
+      "time_id": "NEW:슐라우_입원_중_면회_불가_시점",
+      "expression": "면회가 아직 허용되지 않는 슐라우의 입원 회복 기간",
+      "description": "슐라우가 병실에서 회복 경과를 기록받는 시점. 원문에 절대 시각 표기는 없다.",
+      "timeline": "future_world",
+      "source_text": "면회는 아직 무리라기에",
+      "certainty": "inferred"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S02_1",
+      "scene_id": "scene_02",
+      "order": 1,
+      "title": "유리벽 너머로 본 슐라우의 필기",
+      "summary": "면회가 허용되지 않아 알파는 유리벽 너머로 병실을 들여다본다. 블루멘이 회복 경과를 기록하며 문진표를 침상에 올려주자 슐라우는 오른손으로 펜을 쥐고 또박또박 이름을 적고, 알파는 블루멘의 휘갈긴 쪽지를 떠올리며 웃다가 블루멘이 나오기 전에 유리벽에서 물러선다.",
+      "location_id": "LOC_013",
+      "time_id": "NEW:슐라우_입원_중_면회_불가_시점",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002", "CHAR_006", "CHAR_012"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_006",
+      "objects": ["NEW:문진표", "NEW:펜", "NEW:블루멘의_휘갈긴_쪽지"],
+      "state_changes": [
+        {
+          "entity": "NEW:문진표",
+          "field": "body_status",
+          "from": "unknown",
+          "to": "슐라우가 이름을 적어 넣은 상태",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "막힘없이 또박또박 이름을 적어 내려갔다"
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_006",
+          "field": "possesses",
+          "assumes": "NEW:펜 (오른손으로 쥠)",
+          "source_text": "슐라우는 오른손으로 펜을 쥐더니"
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "assumes": "오른손·오른 손목이 펜을 쥐고 글씨를 쓸 수 있을 만큼 온전함",
+          "source_text": "오른손으로 펜을 쥐더니 막힘없이 또박또박 이름을 적어 내려갔다"
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "assumes": "의식이 있고 침상 위에서 문진표에 필기할 수 있는 상태",
+          "source_text": "문진표 같은 것을 침상 위에 올려주자, 슐라우는 오른손으로 펜을 쥐더니"
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "knows",
+          "assumes": "자신의 이름 (막힘없이 적어 내려감)",
+          "source_text": "막힘없이 또박또박 이름을 적어 내려갔다"
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "ability",
+          "assumes": "문자를 막힘없이 또박또박 쓸 수 있는 필기 능력",
+          "source_text": "막힘없이 또박또박 이름을 적어 내려갔다"
+        },
+        {
+          "entity": "CHAR_012",
+          "field": "possesses",
+          "assumes": "NEW:문진표 (침상에 올려주고 다시 걷어감)",
+          "source_text": "문진표 같은 것을 침상 위에 올려주자 / 기록을 마친 블루멘이 문진표를 걷어 나왔고"
+        },
+        {
+          "entity": "CHAR_012",
+          "field": "ability",
+          "assumes": "환자의 회복 경과를 기록하고 문진표를 관리하는 의료 기록 수행 능력",
+          "source_text": "마침 블루멘이 회복 경과를 기록하는 중이었다"
+        },
+        {
+          "entity": "CHAR_012",
+          "field": "knows",
+          "assumes": "슐라우의 회복 경과 및 병실 회복 기록 절차",
+          "source_text": "블루멘이 회복 경과를 기록하는 중이었다"
+        },
+        {
+          "entity": "CHAR_012",
+          "field": "body_status",
+          "assumes": "알파의 눈높이보다 한참 아래에 쪽지를 붙일 만한 신장",
+          "source_text": "내 눈높이보다 한참 아래에 붙어 있던 블루멘의 그 휘갈긴 쪽지"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "블루멘의 휘갈긴 쪽지를 이전에 본 적이 있음 (그 필체와 붙어 있던 높이를 기억함)",
+          "source_text": "내 눈높이보다 한참 아래에 붙어 있던 블루멘의 그 휘갈긴 쪽지가 떠올라서"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "슐라우에 대한 면회가 아직 허용되지 않는다는 사실",
+          "source_text": "면회는 아직 무리라기에"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "'눈높이'가 성립하는 직립 신체로 유리벽 너머를 들여다봄",
+          "source_text": "내 눈높이보다 한참 아래에 붙어 있던"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "유리벽 너머의 필기 동작과 글씨 상태까지 식별할 수 있는 시각",
+          "source_text": "\"글씨 잘 쓰네...\""
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우에 대한 면회가 아직 허용되지 않음",
+          "via": "told",
+          "retained": true,
+          "source_text": "면회는 아직 무리라기에"
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우가 오른손으로 펜을 쥐고 또박또박 이름을 쓸 수 있는 상태임",
+          "via": "direct",
+          "retained": true,
+          "source_text": "슐라우는 오른손으로 펜을 쥐더니 막힘없이 또박또박 이름을 적어 내려갔다"
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "블루멘이 슐라우의 회복 경과를 기록하고 있음",
+          "via": "direct",
+          "retained": true,
+          "source_text": "마침 블루멘이 회복 경과를 기록하는 중이었다"
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우의 글씨체가 정갈하며 블루멘의 쪽지 필체와 대비됨",
+          "via": "direct",
+          "retained": true,
+          "source_text": "\"글씨 잘 쓰네...\" / 블루멘의 그 휘갈긴 쪽지가 떠올라서 조금 웃었다"
+        }
+      ],
+      "cause": "면회가 아직 허용되지 않아 알파가 유리벽 너머로만 병실을 관찰함.",
+      "result": "슐라우가 문진표에 이름을 기재했고, 블루멘이 문진표를 걷어 나오자 알파는 들키기 전에 유리벽에서 물러섰다.",
+      "source_text": "면회는 아직 무리라기에, 유리벽 너머로만 병실을 들여다보았다. ... 나는 들키기 전에 유리벽에서 물러섰다.",
+      "certainty": "explicit"
+    }
+  ]
+}

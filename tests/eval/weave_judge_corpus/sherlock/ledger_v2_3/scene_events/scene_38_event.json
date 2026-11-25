@@ -1,0 +1,134 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "보스콤 못 사건 용의자 제임스 매카시 심문",
+   "summary": "홈즈가 감옥에서 제임스를 심문하여, 아버지가 '발라랏'이라는 이름을 부르려 했다는 진술을 확인하고, 검시관 앞에서는 쥐에 관한 말만 알아들었다는 제임스의 두 진술 사이의 모순을 짚는다.",
+   "location_id": "LOC_033",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_015"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_015",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_033",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "감옥의 창은 높고 좁았다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_015",
+     "field": "alive",
+     "assumes": "true (감옥에 갇혀 심문을 받을 수 있는 상태)",
+     "source_text": "감옥의 창은 높고 좁았다."
+    },
+    {
+     "entity": "CHAR_015",
+     "field": "possesses",
+     "assumes": "목소리·청각 기능 (홈즈의 질문에 답함)",
+     "source_text": "제임스가 말했다."
+    },
+    {
+     "entity": "CHAR_015",
+     "field": "body_status",
+     "assumes": "두려움/공포를 느끼는 신체 반응",
+     "source_text": "겁이 났습니다."
+    },
+    {
+     "entity": "CHAR_015",
+     "field": "knows",
+     "assumes": "아버지(찰스 매카시)가 '발라랏'이라는 이름을 부르려 했다는 사실",
+     "source_text": "아버지는 그 이름을 부르려 하셨어요. 저는 그때 바로 알아들었습니다."
+    },
+    {
+     "entity": "CHAR_015",
+     "field": "knows",
+     "assumes": "검시관 앞에서 자신이 '쥐에 관한 말만 알아들었다'고 진술한 사실",
+     "source_text": "검시관 앞에서는 쥐에 관한 말만 알아들었다고 하셨지요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "수첩 (덮음)",
+     "source_text": "수첩을 덮었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "무릎에 손을 얹고 앉아 있을 수 있는 신체 상태",
+     "source_text": "홈즈는 무릎에 손을 얹은 채 그를 바라보았다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "제임스의 부친(찰스 매카시)가 죽음 직전 '발라랏'이라는 이름을 부르려 했으며, 제임스는 그 자리에서 바로 알아들었다",
+     "via": "told",
+     "retained": true,
+     "source_text": "아버지는 그 이름을 부르려 하셨어요. 저는 그때 바로 알아들었습니다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "제임스는 검시관 앞에서는 '쥐에 관한 말만 알아들었다'고 진술했다는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "검시관 앞에서는 쥐에 관한 말만 알아들었다고 하셨지요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "제임스가 당시 상황에 대해 두려움을 느꼈다는 점",
+     "via": "told",
+     "retained": true,
+     "source_text": "겁이 났습니다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "간수가 복도에서 다가오고 있다는 정보",
+     "via": "direct",
+     "retained": true,
+     "source_text": "복도에서 간수의 발소리가 다가오고 있었다."
+    }
+   ],
+   "cause": "홈즈가 보스콤 못 사건 용의자 제임스 매카시를 감옥에서 심문하기 위해 방문함",
+   "result": "제임스가 두 가지 다른 진술을 했다는 점이 확인됨(쥐 이야기 vs. 발라랏 이름). 복도에서 간수의 발소리가 접근 중임이 인지됨.",
+   "source_text": "\"발라랏이라고 하신 겁니다.\" 제임스가 말했다. 감옥의 창은 높고 좁았다. \"아버지는 그 이름을 부르려 하셨어요. 저는 그때 바로 알아들었습니다.\" 홈즈는 무릎에 손을 얹은 채 그를 바라보았다. \"검시관 앞에서는 쥐에 관한 말만 알아들었다고 하셨지요.\" \"겁이 났습니다.\" 청년이 말했다. 홈즈는 잠시 아무 말도 하지 않다가 수첩을 덮었다. 복도에서 간수의 발소리가 다가오고 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-31T06:33:34Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 16.27
+ }
+}

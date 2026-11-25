@@ -1,0 +1,205 @@
+{
+  "schema_version": 2,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 2,
+  "batch_id": "T2-R2-C",
+  "scene_id": "scene_27",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_27.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r3)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T13:21:39Z",
+  "episode": 6,
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:접속체_손상_수리_지연",
+      "content": "접속체(로봇 신체)의 손상은 별도 수리로만 복구되며, 수리 순번이 밀려 기약이 없을 수 있다.",
+      "description": "폭발로 생긴 시야 손상이 상당 기간이 지나도록 고쳐지지 않은 채 남아 있고, 수리가 계속 밀린다는 통보만 받은 상태다.",
+      "source_text": "폭발 때 손상된 게 아직도 안 고쳐졌으니까.\n수리는 밀리고 밀려서 기약이 없다고 했다.",
+      "certainty": "explicit"
+    },
+    {
+      "rule_id": "NEW:헤드셋_접속과_임의_종료",
+      "content": "접속자는 헤드셋을 착용한 채 미래 세계에 접속하며, 원할 때 접속을 종료할 수 있다.",
+      "description": "현실 쪽 손으로 헤드셋을 두드리는 행위와 '접속을 종료하기로 했다'는 서술에서, 헤드셋이 접속 장비이며 종료가 접속자의 재량임이 드러난다.",
+      "source_text": "손바닥으로 헤드셋을 툭툭 쳐 보았지만 / 오늘은 일찍 접속을 종료하기로 했다.",
+      "certainty": "inferred"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "폭발로 손상된 시야가 미수리 상태인 채 1번가에 접속해 있는 접속자.",
+      "traits": [
+        {
+          "trait": "자기 처지를 영화에 빗대 자조적인 농담으로 표현하는 말투",
+          "trait_type": "speech",
+          "source_text": "눈 한쪽이 고장 난 형사라니, 영화면 벌써 잘렸다.",
+          "certainty": "inferred"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S27_1",
+      "source_text": "오늘도 시야 오른쪽 귀퉁이에 노이즈가 지지직거렸다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_006",
+      "name": "1번가",
+      "description": "노이즈가 끼는 화면 너머로 일그러져 보이는, 접속자가 현재 있는 거리.",
+      "source_text": "치지직거리는 화면 너머로 1번가가 일그러져 보였다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "NEW:헤드셋",
+      "name": "헤드셋",
+      "description": "접속자가 현실에서 착용하고 있는 접속 장비. 손바닥으로 두드려도 시야 노이즈는 달라지지 않는다.",
+      "first_appearance_event_id": "EVENT_S27_2",
+      "source_text": "손바닥으로 헤드셋을 툭툭 쳐 보았지만",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [
+    {
+      "time_id": "NEW:시야_손상_미수리_상태의_오늘",
+      "expression": "오늘 (폭발로 손상된 시야가 아직 수리되지 않은 어느 날)",
+      "description": "폭발 이후 상당한 시간이 지났으나 시야 손상 수리가 계속 밀려 있는 시점의 하루.",
+      "timeline": "unknown",
+      "source_text": "오늘도 시야 오른쪽 귀퉁이에 노이즈가 지지직거렸다.",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S27_1",
+      "scene_id": "scene_27",
+      "order": 1,
+      "title": "미수리 시야 노이즈 속의 1번가",
+      "summary": "1번가에 접속해 있는 알파의 시야 오른쪽 귀퉁이에서 폭발 때 손상된 부분의 노이즈가 오늘도 지지직거린다. 수리가 계속 밀려 기약이 없는 상태라 그는 짜증을 내며 이 상태로 잠복이 가능하겠냐고 자조한다.",
+      "location_id": "LOC_006",
+      "time_id": "NEW:시야_손상_미수리_상태의_오늘",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "폭발로 손상된 접속체(로봇 신체)의 시야 오른쪽 귀퉁이가 미수리 상태로 남아 있음",
+          "source_text": "오늘도 시야 오른쪽 귀퉁이에 노이즈가 지지직거렸다. / 폭발 때 손상된 게 아직도 안 고쳐졌으니까."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "시야 일부가 노이즈로 가려져 정상적인 시각 인식이 제한됨",
+          "source_text": "치지직거리는 화면 너머로 1번가가 일그러져 보였다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "자신의 시야 손상이 폭발 때 생긴 것임을 앎",
+          "source_text": "폭발 때 손상된 게 아직도 안 고쳐졌으니까."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "시야 손상 수리가 밀려 기약이 없다는 통보를 이미 받았음",
+          "source_text": "수리는 밀리고 밀려서 기약이 없다고 했다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "자신에게 잠복 임무가 예정되어 있거나 진행 중임을 앎",
+          "source_text": "이 상태로 잠복이나 제대로 하겠어?"
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S27_2",
+          "assumes": "이 장면 동안 접속이 유지되고 있어야 하며, 1번가에서 보이는 시야 노이즈와 현실 쪽 헤드셋이 같은 접속 세션의 양쪽 끝이어야 한다",
+          "source_text": "치지직거리는 화면 너머로 1번가가 일그러져 보였다. / 손바닥으로 헤드셋을 툭툭 쳐 보았지만"
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "폭발 때 손상된 접속체 시야가 수리 지연으로 여전히 복구되지 않았다.",
+      "result": "알파가 손상된 시야 때문에 잠복 수행 가능성을 의심하며 짜증을 낸다.",
+      "source_text": "오늘도 시야 오른쪽 귀퉁이에 노이즈가 지지직거렸다. \"아 진짜, 거슬려 죽겠네.\" ... \"이 상태로 잠복이나 제대로 하겠어? 눈 한쪽이 고장 난 형사라니, 영화면 벌써 잘렸다.\"",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_S27_2",
+      "scene_id": "scene_27",
+      "order": 2,
+      "title": "헤드셋을 두드린 뒤 조기 접속 종료 결정",
+      "summary": "알파가 손바닥으로 헤드셋을 툭툭 쳐 보지만 아무것도 달라지지 않고, 오늘은 일찍 접속을 종료하기로 마음먹는다.",
+      "location_id": "unknown",
+      "time_id": "NEW:시야_손상_미수리_상태의_오늘",
+      "timeline": "real_present",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["NEW:헤드셋"],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "NEW:헤드셋 (현실에서 착용·소지한 채 손으로 두드림)",
+          "source_text": "손바닥으로 헤드셋을 툭툭 쳐 보았지만"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "헤드셋을 손바닥으로 칠 수 있는 현실 쪽 신체(손)를 쓰고 있음",
+          "source_text": "손바닥으로 헤드셋을 툭툭 쳐 보았지만"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "자신의 판단으로 접속을 조기 종료할 수 있음",
+          "source_text": "오늘은 일찍 접속을 종료하기로 했다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "헤드셋을 두드려도 시야 노이즈는 해결되지 않는다는 것을 앎(장비 문제가 아님)",
+          "source_text": "당연히 달라지는 건 없었다."
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S27_1",
+          "assumes": "EVENT_S27_1의 시야 노이즈 확인 직후 시점이며, 두 사건 사이에 시간 경과가 없다",
+          "source_text": "손바닥으로 헤드셋을 툭툭 쳐 보았지만 당연히 달라지는 건 없었다. 오늘은 일찍 접속을 종료하기로 했다."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "시야 노이즈가 헤드셋을 두드려도 개선되지 않았다.",
+      "result": "알파가 오늘 접속을 평소보다 일찍 종료하기로 결정한다.",
+      "source_text": "손바닥으로 헤드셋을 툭툭 쳐 보았지만 당연히 달라지는 건 없었다. 오늘은 일찍 접속을 종료하기로 했다.",
+      "certainty": "explicit"
+    }
+  ]
+}

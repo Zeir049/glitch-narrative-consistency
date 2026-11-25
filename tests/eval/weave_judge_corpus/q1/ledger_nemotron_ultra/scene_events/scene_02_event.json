@@ -1,0 +1,97 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "복순 할매의 가격 문의와 정호의 응대",
+   "summary": "복순 할매가 여탕에서 나와 카운터에서 최영감의 가격을 묻고, 정호는 어머니와 어르신의 일이라 모른다고 답한다. 할매는 문에 붙은 종이를 보고 나간다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:십이월_첫날_아침",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_010",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_010",
+   "objects": [
+    "OBJ_002"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "최영감이 사천을 불렀다는 소문",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "니 최 영감이 얼마 부르더노. 동네서는 사천이라 카더라."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_010",
+     "field": "knows",
+     "assumes": "최영감이 가격을 제시했다는 사실",
+     "source_text": "니 최 영감이 얼마 부르더노."
+    },
+    {
+     "entity": "CHAR_010",
+     "field": "knows",
+     "assumes": "동네에서 사천이라는 소문이 돌고 있음",
+     "source_text": "동네서는 사천이라 카더라."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "not_knows: 최영감이 구체적으로 얼마를 불렀는지",
+     "source_text": "저는 얼마 부르는지도 모릅니다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "어머니(배순덕)와 어르신(장문식)이 가격 결정의 주체임을 알고 있음",
+     "source_text": "어르신하고 어머니 일입니더."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "최영감이 사천을 불렀다는 동네 소문",
+     "via": "told",
+     "retained": true,
+     "source_text": "니 최 영감이 얼마 부르더노. 동네서는 사천이라 카더라."
+    }
+   ],
+   "cause": "복순 할매가 목욕탕 가격 정보를 확인하러 옴",
+   "result": "정호는 소문만 듣고 구체적 가격은 모름. 할매는 안내문을 보고 나감.",
+   "source_text": "복순 할매가 여탕에서 나오면서 카운터 앞에 섰다. 머리에 수건을 쓰고 있었다. \"니 최 영감이 얼마 부르더노. 동네서는 사천이라 카더라.\" 정호는 장부에 어른 하나를 적었다. \"저는 얼마 부르는지도 모릅니다.\" \"모른다꼬?\" \"예. 어르신하고 어머니 일입니더.\" \"아들이 모르면 누가 아노.\" \"아들이라도 모르는 거는 모릅니다.\" 할매는 혀를 차고 유리문 쪽으로 갔다. 문에 붙은 종이를 한 번 보고 나갔다. 정호는 적던 줄을 마저 적었다. 어머니 글씨 밑에 자기 글씨였다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:24:00Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 22.65
+ }
+}

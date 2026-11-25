@@ -1,0 +1,98 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "식당 게시판 문서 확인",
+   "summary": "서율이 식당 게시판에 붙은 다섯 장의 문서를 읽고 날짜를 확인한다.",
+   "location_id": "LOC_011",
+   "time_id": "NEW:4월 8일, 4월 15일, 4월 29일 게시물 날짜 확인 시점",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_023",
+    "OBJ_024",
+    "OBJ_029",
+    "OBJ_030",
+    "OBJ_031"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_023, OBJ_024, OBJ_029, OBJ_030, OBJ_031 (게시판에 부착된 문서들을 읽음)",
+     "source_text": "서율은 왼쪽부터 읽었다. 7조 임시 개정, 그 옆에 마르타의 첫 이의서, 격벽 관리 임시 변경, 그 옆에 마르타의 두 번째 이의서, 그리고 자문 표결 도입."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "게시판 문서들의 내용과 게시 날짜(4월 8일, 4월 15일, 4월 29일)",
+     "source_text": "서율은 날짜를 확인했다. 4월 8일, 4월 15일, 4월 29일. 스무하루 사이에 세 번이었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "게시판에 7조 임시 개정문, 마르타의 첫 이의서, 격벽 관리 임시 변경, 마르타의 두 번째 이의서, 자문 표결 도입 문서가 순서대로 붙어 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "식당 게시판에는 종이가 다섯 장 붙어 있었다. 서율은 왼쪽부터 읽었다. 7조 임시 개정, 그 옆에 마르타의 첫 이의서, 격벽 관리 임시 변경, 그 옆에 마르타의 두 번째 이의서, 그리고 자문 표결 도입."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "문서들의 게시 날짜가 4월 8일, 4월 15일, 4월 29일로 스무하루 간격으로 세 차례 게시됨",
+     "via": "direct",
+     "retained": true,
+     "source_text": "서율은 날짜를 확인했다. 4월 8일, 4월 15일, 4월 29일. 스무하루 사이에 세 번이었다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "서율의 글씨가 세 장(7조 임시 개정, 격벽 관리 임시 변경, 자문 표결 도입), 마르타의 글씨가 두 장(첫 이의서, 두 번째 이의서)임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "서율의 글씨가 셋, 마르타의 글씨가 둘이었다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "아무도 문서를 떼지 않았고 새로 붙이지도 않았음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "아무도 떼지 않았고 아무도 새로 붙이지 않았다."
+    }
+   ],
+   "cause": "게시판 문서 현황 파악",
+   "result": "문서 내용과 날짜, 작성자 확인 완료",
+   "source_text": "식당 게시판에는 종이가 다섯 장 붙어 있었다. 서율은 왼쪽부터 읽었다. 7조 임시 개정, 그 옆에 마르타의 첫 이의서, 격벽 관리 임시 변경, 그 옆에 마르타의 두 번째 이의서, 그리고 자문 표결 도입. 서율의 글씨가 셋, 마르타의 글씨가 둘이었다. 아무도 떼지 않았고 아무도 새로 붙이지 않았다. 서율은 날짜를 확인했다. 4월 8일, 4월 15일, 4월 29일. 스무하루 사이에 세 번이었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:46:16Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 29.97
+ }
+}

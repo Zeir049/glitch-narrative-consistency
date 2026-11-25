@@ -1,0 +1,120 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:5월 19일",
+   "expression": "5월 19일",
+   "description": "신규 화의 날짜",
+   "timeline": "main",
+   "source_text": "5월 19일.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "가온이 광학부 온도 기록 쪽지를 서율에게 전달",
+   "summary": "가온이 '광학부'라고 적힌 쪽지를 내밀며 오늘도 영하 17도, 스무날째 같은 숫자라고 보고하고, 카림이 어제 히터 회로 계량기 71(3킬로와트)을 읽었다고 전한다. 서율은 쪽지를 접어 주머니에 넣으며 확인할 것임을 시사한다.",
+   "location_id": "unknown",
+   "time_id": "NEW:5월 19일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [
+    "NEW:광학부_온도_쪽지"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "NEW:광학부_온도_쪽지",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율은 쪽지를 접어 주머니에 넣었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "assumes": "NEW:광학부_온도_쪽지 (가온이 소지하고 있었음)",
+     "source_text": "가온이 쪽지를 내밀었다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "광학부 온도 영하 17도, 스무날째 동일 / 히터 회로 계량기 71(3킬로와트) / 장비 회로는 건드리지 않음",
+     "source_text": "\"오늘도 영하 17도예요. 스무날째 같은 숫자예요.\" \"카림이 어제 읽었어요. 71이었어요. 3킬로와트 맞아요.\" \"장비 회로는 안 건드렸어요. 확인하세요.\""
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "히터 회로 계량기 수치 71(3킬로와트)",
+     "source_text": "\"카림이 어제 읽었어요. 71이었어요. 3킬로와트 맞아요.\""
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "not_knows: 광학부 온도 및 히터 회로 계량기 수치 (쪽지를 보고 확인하려 함)",
+     "source_text": "서율은 쪽지를 보았다. ... 확인시킬 것이었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "광학부 온도 영하 17도, 스무날째 동일",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"오늘도 영하 17도예요. 스무날째 같은 숫자예요.\""
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "히터 회로 계량기 71(3킬로와트), 카림이 어제 읽음",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"카림이 어제 읽었어요. 71이었어요. 3킬로와트 맞아요.\""
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "장비 회로는 건드리지 않음",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"장비 회로는 안 건드렸어요. 확인하세요.\""
+    }
+   ],
+   "cause": "가온이 일일 온도/히터 기록을 서율에게 보고하기 위해 쪽지 전달",
+   "result": "서율이 쪽지 수령 및 내용 인지, 추후 확인 예정",
+   "source_text": "5월 19일. \"광학부요.\" 가온이 쪽지를 내밀었다. \"오늘도 영하 17도예요. 스무날째 같은 숫자예요.\" 서율은 쪽지를 보았다. \"히터 회로 계량기는.\" \"카림이 어제 읽었어요. 71이었어요. 3킬로와트 맞아요.\" 가온은 쪽지를 탁자에 놓고 한 걸음 물러섰다. \"장비 회로는 안 건드렸어요. 확인하세요.\" 서율은 쪽지를 접어 주머니에 넣었다. 확인시킬 것이었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T10:05:16Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 65.91
+ }
+}

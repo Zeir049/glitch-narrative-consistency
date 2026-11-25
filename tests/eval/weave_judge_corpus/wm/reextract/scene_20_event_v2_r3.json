@@ -1,0 +1,167 @@
+{
+  "schema_version": 2,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 3,
+  "batch_id": "T2-R3-B",
+  "scene_id": "scene_20",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_20.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r2)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T13:26:11Z",
+  "episode": 6,
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:노이즈_무늬_옷_AI_미인식",
+      "content": "노이즈 무늬 옷은 카메라에 촬영은 되지만 AI 인식 시스템에는 잡히지 않는다.",
+      "description": "알라인과 알파의 대화에서, 문제의 옷이 영상에 찍히기는 하나 AI가 인식하지 못한다는 성질이 언급된다. 그 원인은 작중 인물 누구도 알아내지 못한 상태다.",
+      "source_text": "\"왜 AI에 안 잡히는지, 뭐 알아낸 거 있어요?\" / \"찍히긴 하는데 인식만 안 된다니,\"",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_007",
+      "name": "알라인 쉭살 (Allein Schicksal)",
+      "aliases": ["알라인"],
+      "entity_type": "person",
+      "description": "모니터에서 눈을 떼지 않은 채 옷 건의 진척을 묻는 인물.",
+      "traits": [
+        {
+          "trait": "입만 웃는 표정을 짓는다",
+          "trait_type": "appearance",
+          "source_text": "알라인은 그 입만 웃는 표정으로 나를 잠깐 쳐다보더니,",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "말끝을 늘이는 말투를 쓴다 (\"흐음~ 그래요?\")",
+          "trait_type": "speech",
+          "source_text": "\"흐음~ 그래요?\"",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S20_1",
+      "source_text": "알라인이 모니터에서 눈을 떼지 않은 채 물었다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "옷 건에 대해 아무것도 알아내지 못했다고 답하는 화자.",
+      "traits": [
+        {
+          "trait": "말끝을 흐리며 감탄사를 섞어 말한다 (\"글쎄요...\", \"완전 미스터리.\")",
+          "trait_type": "speech",
+          "source_text": "\"글쎄요... 전 도무지 짐작도 안 가요.",
+          "certainty": "inferred"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S20_1",
+      "source_text": "알라인은 그 입만 웃는 표정으로 나를 잠깐 쳐다보더니,",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [],
+  "objects": [
+    {
+      "object_id": "OBJ_008",
+      "name": "노이즈 무늬 옷",
+      "description": "대화에서 \"그 옷\"으로 지칭되는, AI에 인식되지 않는 옷.",
+      "first_appearance_event_id": "EVENT_S20_1",
+      "source_text": "\"그 옷 말인데요.\"",
+      "certainty": "inferred"
+    },
+    {
+      "object_id": "NEW:알라인의_모니터",
+      "name": "모니터",
+      "description": "알라인이 대화 중에도 시선을 떼지 않고 들여다보는 화면.",
+      "first_appearance_event_id": "EVENT_S20_1",
+      "source_text": "알라인이 모니터에서 눈을 떼지 않은 채 물었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S20_1",
+      "scene_id": "scene_20",
+      "order": 1,
+      "title": "옷의 AI 미인식 건에 대한 알라인의 질문",
+      "summary": "알라인이 모니터를 보던 중 \"그 옷\"이 왜 AI에 잡히지 않는지 알아낸 것이 있느냐고 묻고, 알파는 짐작도 가지 않는다고 답한다. 알라인은 입만 웃는 표정으로 알파를 잠깐 쳐다본 뒤 다시 화면으로 시선을 돌리고, 알파는 등 뒤가 가려운 듯한 기분을 느낀다.",
+      "location_id": "unknown",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_007", "CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_007",
+      "objects": ["OBJ_008", "NEW:알라인의_모니터"],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "노이즈 무늬 옷(OBJ_008)이 AI에 인식되지 않는다는 사실",
+          "source_text": "\"왜 AI에 안 잡히는지, 뭐 알아낸 거 있어요?\""
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "알파가 그 옷의 AI 미인식 건을 조사해 왔다는 사실 (진척을 물을 수 있으려면 전제되어야 함)",
+          "source_text": "\"그 옷 말인데요.\" / \"뭐 알아낸 거 있어요?\""
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "possesses",
+          "assumes": "NEW:알라인의_모니터 (대화 내내 들여다보는 중)",
+          "source_text": "알라인이 모니터에서 눈을 떼지 않은 채 물었다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "노이즈 무늬 옷(OBJ_008)이 카메라에는 찍히지만 AI가 인식하지 못한다는 사실",
+          "source_text": "\"찍히긴 하는데 인식만 안 된다니,\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "not_knows: 그 옷이 AI에 인식되지 않는 원인",
+          "source_text": "\"글쎄요... 전 도무지 짐작도 안 가요.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "알라인이 지칭한 \"그 옷\"이 무엇인지 (지시어만으로 알아듣고 답할 수 있어야 함)",
+          "source_text": "\"그 옷 말인데요.\" / \"찍히긴 하는데 인식만 안 된다니,\""
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_007",
+          "info": "알파가 옷의 AI 미인식 원인에 대해 아무것도 알아내지 못했다고 말했다는 것",
+          "via": "told",
+          "retained": true,
+          "source_text": "\"글쎄요... 전 도무지 짐작도 안 가요.\""
+        }
+      ],
+      "cause": "알라인이 옷의 AI 미인식 건에 대한 조사 진척을 확인하려 함",
+      "result": "알파가 아무것도 알아내지 못했다고 답했고, 알라인은 입만 웃는 표정으로 알파를 잠깐 본 뒤 다시 화면으로 시선을 돌렸다. 알파는 등 뒤가 가려운 기분을 느꼈다.",
+      "source_text": "\"그 옷 말인데요.\" / 알라인이 모니터에서 눈을 떼지 않은 채 물었다. / \"왜 AI에 안 잡히는지, 뭐 알아낸 거 있어요?\" / \"글쎄요... 전 도무지 짐작도 안 가요. 찍히긴 하는데 인식만 안 된다니, 처음부터 끝까지 수수께끼예요. 완전 미스터리.\" / \"흐음~ 그래요?\" / 알라인은 그 입만 웃는 표정으로 나를 잠깐 쳐다보더니, 다시 화면으로 시선을 돌렸다. 등 뒤가 조금 가려운 기분이 들었다.",
+      "certainty": "explicit"
+    }
+  ]
+}

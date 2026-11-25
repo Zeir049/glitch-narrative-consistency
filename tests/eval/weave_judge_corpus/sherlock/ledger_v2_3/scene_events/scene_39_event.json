@@ -1,0 +1,178 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:그날",
+   "expression": "그날",
+   "description": "메리 서덜랜드가 타자를 치고 있던 그날",
+   "timeline": "main",
+   "source_text": "메리 서덜랜드는 그날도 타자기 앞에 앉아 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "메리 서덜랜드의 타자 작업",
+   "summary": "메리 서덜랜드가 그날도 타자기 앞에 앉아 이 펜스씩을 칠 하고 있다. 좋은 날에는 스무 장까지 칠 수 있다. 창밖으로 마차가 지나가는 동안 잠시 멈췄다가 다시 자판을 두드린다.",
+   "location_id": "NEW:메리의_작업_장소",
+   "time_id": "NEW:그날",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_011"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_011",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_011",
+     "field": "ability",
+     "assumes": "타자를 칠 수 있음 (한 장에 이 펜스씩, 좋은 날 스무 장까지)",
+     "source_text": "한 장에 이 펜스씩이었고, 좋은 날에는 스무 장까지 칠 수 있었다."
+    },
+    {
+     "entity": "CHAR_011",
+     "field": "knows",
+     "assumes": "타자 작업의 속도(한 장에 이 펜스, 좋은 날 스무 장)를 자각함",
+     "source_text": "한 장에 이 펜스씩이었고, 좋은 날에는 스무 장까지 칠 수 있었다."
+    },
+    {
+     "entity": "CHAR_011",
+     "field": "possesses",
+     "assumes": "타자기",
+     "source_text": "타자기 앞에 앉아 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_011",
+     "info": "창밖으로 마차 한 대가 지나가는 것을 목격함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "창밖으로 마차 한 대가 지나갔고, 그녀는 잠시 손을 멈추었다가 다시 자판을 두드렸다."
+    }
+   ],
+   "cause": "메리 서덜랜드의 일상적인 타자 작업",
+   "result": "작업 도중 마차 지나가는 것을 잠시 본 뒤 다시 이어감",
+   "source_text": "메리 서덜랜드는 그날도 타자기 앞에 앉아 있었다. 한 장에 이 펜스씩이었고, 좋은 날에는 스무 장까지 칠 수 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "계부의 분기별 이자 전달",
+   "summary": "계부가 분기마다 메리 몫의 이자를 받아 어머니에게 건넨다. 메리가 집에 있는 동안에는 그 돈을 그들이 쓰도록 두고 있다.",
+   "location_id": "NEW:메리의_집",
+   "time_id": "NEW:분기마다_반복",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [],
+   "witness_character_ids": [
+    "CHAR_011"
+   ],
+   "main_actor_character_id": "unknown",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_011",
+     "field": "knows",
+     "assumes": "계부가 분기마다 자긴 몫의 이자를 어머니에게 전달하고, 그 돈은 메리가 집에 있는 동안 그들이 쓴다는 관행",
+     "source_text": "계부는 분기마다 그녀 몫의 이자를 받아 어머니에게 건넸다. 그녀가 집에 있는 동안에는 그 돈을 그들이 쓰도록 두고 있었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "EVENT_6_1의 '그날' 장면과 같은 평면의 배경 정보이며, 사건 1의 작업과 시간적으로 연속된다",
+     "source_text": "메리 서덜랜드는 그날도 타자기 앞에 앉아 있었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_011",
+     "info": "계부가 분기마다 그녀 몫의 이자를 어머니에게 건네며, 그 돈은 그녀가 집에 있는 동안 그들이 쓴다는 사실",
+     "via": "direct",
+     "retained": true,
+     "source_text": "계부는 분기마다 그녀 몫의 이자를 받아 어머니에게 건넸다. 그녀가 집에 있는 동안에는 그 돈을 그들이 쓰도록 두고 있었다."
+    }
+   ],
+   "cause": "계부의 분기별 이자 전달 관행",
+   "result": "메리 몫의 이자가 어머니에게 전달되고, 메리가 머무는 동안 그들이 사용함",
+   "source_text": "계부는 분기마다 그녀 몫의 이자를 받아 어머니에게 건넸다. 그녀가 집에 있는 동안에는 그 돈을 그들이 쓰도록 두고 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_3",
+   "scene_id": "scene_6_1",
+   "order": 3,
+   "title": "저녁에 부칠 편지 한 통 잔존",
+   "summary": "메리가 타자 작업을 마치는 저녁 무렵, 부칠 편지가 아직 한 통 남아 있다.",
+   "location_id": "NEW:메리의_작업_장소",
+   "time_id": "NEW:저녁",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_011"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_011",
+   "objects": [
+    "NEW:부칠_편지_한_통"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_011",
+     "field": "possesses",
+     "assumes": "부쳐야 할 편지 한 통",
+     "source_text": "저녁에 부칠 편지가 아직 한 통 남아 있었다."
+    },
+    {
+     "entity": "CHAR_011",
+     "field": "knows",
+     "assumes": "저녁에 부쳐야 할 편지가 한 통 남아 있음을 자각함",
+     "source_text": "저녁에 부칠 편지가 아직 한 통 남아 있었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "EVENT_6_1의 같은 '그날' 저녁 시점이며, 그사이 마차 목격 후 작업이 이어진 뒤의 상황",
+     "source_text": "창밖으로 마차 한 대가 지나갔고, 그녀는 잠시 손을 멈추었다가 다시 자판을 두드렸다. 저녁에 부칠 편지가 아직 한 통 남아 있었다."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "이른 시간의 타자 작업이 저녁까지 이어짐",
+   "result": "저녁에 부쳐야 할 편지가 한 통 남아 있음",
+   "source_text": "저녁에 부칠 편지가 아직 한 통 남아 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:07:48Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 12.39
+ }
+}

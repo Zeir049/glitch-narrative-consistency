@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S28_1",
+      "order": 1,
+      "title": "병실 간병 교대",
+      "summary": "저녁 병실에서 알라인이 블루멘에게 간병을 인계하고 퇴근한다. 슐라우는 진정제를 맞고 잠들어 있다. 알라인이 유리벽 앞의 알파에게도 귀가를 권한다.",
+      "location_id": "LOC_013",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_007",
+        "CHAR_012"
+      ],
+      "witness_character_ids": [
+        "CHAR_002"
+      ],
+      "main_actor_character_id": "CHAR_007",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "assumes": "진정제 투여로 잠든 상태",
+          "source_text": "쟤 아까 약 잘 맞았으니까 밤새 깰 일은 없을 거예요."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우가 진정제 투여 후 안정적으로 잠들어 있음",
+          "via": "told",
+          "source_text": "약 잘 맞았으니까 밤새 깰 일은 없을 거예요."
+        }
+      ],
+      "cause": "간병 교대 시간",
+      "result": "알라인 퇴근, 블루멘 야간 간병",
+      "source_text": "\"교대 시간이에요. 블루멘, 잘 부탁해요.\"",
+      "certainty": "explicit"
+    }
+  ]
+}

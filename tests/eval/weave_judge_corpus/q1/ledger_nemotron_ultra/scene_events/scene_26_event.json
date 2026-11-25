@@ -1,0 +1,72 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "복순 할매의 카운터 대화",
+   "summary": "복순 할매가 여탕에서 나와 카운터에서 순덕과 대화하며, 코트 입은 대구 사람(정호)이 목욕하고 역으로 걸어갔다는 정보를 전한다.",
+   "location_id": "LOC_002",
+   "time_id": "TIME_046",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_010",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_010",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_010",
+     "field": "knows",
+     "assumes": "코트 입은 사람(정호)이 대구 사람이며 목욕을 했고 역으로 걸어갔다",
+     "source_text": "\"저번에 코트 입은 사람 왔다 카데.\" / \"대구 사람이다.\" / \"목욕은 했다.\" / \"역으로 걸어가는 거 봤다꼬.\""
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "코트 입은 사람(정호)이 대구 사람임을 알고 있음",
+     "source_text": "\"대구 사람이다.\""
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "코트 입은 사람(정호)이 대구 사람이며 목욕을 했고 역으로 걸어갔다",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"저번에 코트 입은 사람 왔다 카데.\" / \"대구 사람이다.\" / \"목욕은 했다.\" / \"역으로 걸어가는 거 봤다꼬.\""
+    }
+   ],
+   "cause": "복순 할매가 목욕 후 카운터에 들러 순덕에게 정보를 전함",
+   "result": "순덕이 정호의 행적(대구 사람, 목욕, 역으로 감)을 알게 됨. 이 정보가 점심 전 약국까지 퍼질 예정",
+   "source_text": "복순 할매가 여탕에서 나오면서 카운터 앞에 섰다. 수건으로 머리를 문지르고 있었다. \"저번에 코트 입은 사람 왔다 카데.\" 순덕은 장부에서 눈을 들지 않았다. \"대구 사람이다.\" \"대구 사람이 목욕하러 여까지 오나.\" \"목욕은 했다.\" \"쌀집이 그카더라. 역으로 걸어가는 거 봤다꼬. 삼층에서도 봤을 끼고.\" \"봤으면 봤는 기지.\" 할매는 더 캐지 못하고 유리문 쪽으로 갔다. 나가면서 종이를 한 번 더 봤다. 순덕은 어른 하나를 적었다. 점심때가 되기 전에 그 얘기가 약국까지 갈 것이었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-27T04:53:55Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 8.36
+ }
+}

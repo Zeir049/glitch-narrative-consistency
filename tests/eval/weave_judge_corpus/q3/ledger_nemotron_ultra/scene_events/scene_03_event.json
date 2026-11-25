@@ -1,0 +1,115 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "새벽 3시 발전기실 점검",
+   "summary": "카림이 새벽 3시에 발전기실에 들어가 G2 진동 상태를 확인하고 G1 배관 아래 황동 밸브가 잠금 고리가 걸린 채 닫혀 있음을 확인한 뒤 수첩에 '닫힘'이라고 기록한다.",
+   "location_id": "LOC_007",
+   "time_id": "NEW:기지 시각 03시",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_002",
+    "OBJ_003",
+    "OBJ_017"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_007",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림은 설비실을 지나 발전기실로 들어가"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_017",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "종이 수첩을 꺼내"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_010 (손전등)",
+     "source_text": "손전등을 켰다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "G2 이음쇠를 조인 후 진동이 거칠지 않게 됨",
+     "source_text": "이음쇠를 조인 뒤로 그 소리는 거칠지 않았다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "황동 밸브의 잠금 고리가 걸린 상태가 정상(닫힘)임을 의미함",
+     "source_text": "잠금 고리가 걸린 채였고 손잡이는 닫힌 자리에 있었다. ... 닫힘"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "발전기 설비 점검 및 밸브 상태 판독 능력",
+     "source_text": "카림은 G1 쪽으로 가서 배관 아래쪽을 비췄다. 작은 황동 밸브가 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "G1 배관 아래 황동 밸브가 잠금 고리가 걸린 채 닫혀 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "잠금 고리가 걸린 채였고 손잡이는 닫힌 자리에 있었다. ... 닫힘"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "G2 이음쇠 조임 후 진동이 거칠지 않게 되었음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이음쇠를 조인 뒤로 그 소리는 거칠지 않았다"
+    }
+   ],
+   "cause": "정기 점검 또는 이전 조치 확인 차원",
+   "result": "밸브 상태 정상 확인 및 수첩 기록",
+   "source_text": "새벽 3시. 카림은 설비실을 지나 발전기실로 들어가 손전등을 켰다. G2의 낮은 진동이 바닥을 타고 올라왔다. 이음쇠를 조인 뒤로 그 소리는 거칠지 않았다. 카림은 G1 쪽으로 가서 배관 아래쪽을 비췄다. 작은 황동 밸브가 있었다. 잠금 고리가 걸린 채였고 손잡이는 닫힌 자리에 있었다. 카림은 그것을 30초쯤 보았다. 그리고 종이 수첩을 꺼내 날짜 옆에 한 줄을 적었다. 닫힘. 그 위의 줄에도 같은 글자가 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:41:58Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 25.2
+ }
+}

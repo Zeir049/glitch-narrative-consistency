@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S11_1",
+      "order": 1,
+      "title": "클라인에게 수사 경과 보고 (통화)",
+      "summary": "알파가 클라인을 음성으로 호출해 거구 남자의 이동 경로(보급소 두 곳 병용)를 보고한다. 클라인은 무리한 접촉을 만류한다.",
+      "location_id": "unknown",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002",
+        "CHAR_001"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "클라인을 부르면 음성 통화 연결 가능",
+          "source_text": "부르고 나서 잠시. 익숙한 연결음이 들렸다."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_001",
+          "info": "거구 남자가 3번가 보급소 두 곳을 번갈아 이용하는 경로가 파악됨",
+          "via": "told",
+          "source_text": "보급소 두 곳을 번갈아 쓰는 것 같아요."
+        }
+      ],
+      "cause": "영상 재검토 결과 보고",
+      "result": "무리한 접촉 자제 합의",
+      "source_text": "\"클라인!\" 부르고 나서 잠시. 익숙한 연결음이 들렸다.",
+      "certainty": "explicit"
+    }
+  ]
+}

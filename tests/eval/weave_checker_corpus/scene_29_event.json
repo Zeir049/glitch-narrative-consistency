@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S29_1",
+      "order": 1,
+      "title": "창고 기상과 도보 출근의 일상",
+      "summary": "알파는 접속하면 매번 헤일트라움 1층 창고에서 눈을 뜬다. 충전 플랫폼이 그 창고에만 있기 때문으로, 뒷문과 1번가를 지나 프리든 4번 방까지 걸어서 출근한다.",
+      "location_id": "LOC_004",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "충전 플랫폼이 헤일트라움 제1창고에 있는 로봇 신체 (접속 시 창고에서 기상)",
+          "source_text": "내 충전 플랫폼은 여전히 그 창고에만 있으니까."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "충전 플랫폼의 위치",
+      "result": "프리든 도착, 4번 방 실감",
+      "source_text": "접속하면 매번 헤일트라움 1층 창고에서 눈을 뜬다. 내 충전 플랫폼은 여전히 그 창고에만 있으니까.",
+      "certainty": "explicit"
+    }
+  ]
+}

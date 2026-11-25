@@ -1,0 +1,237 @@
+{
+  "schema_version": 2,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 1,
+  "batch_id": "T2-R1-B",
+  "scene_id": "scene_18",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_18.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:36:10Z",
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [
+    {
+      "character_id": "CHAR_006",
+      "name": "슐라우 프로비에렌",
+      "aliases": ["슐라우"],
+      "entity_type": "person",
+      "description": "오른팔에 붕대를 감은 채 침상에 앉아 왼손으로 물컵을 쥐고 있는 환자.",
+      "traits": [
+        {
+          "trait": "고집이 센 성격 (다치고도 오른손을 쓰겠다고 우김)",
+          "trait_type": "personality",
+          "source_text": "처음엔 오른손 쓰겠다고 지랄... 아니, 고집부리더니.",
+          "certainty": "inferred"
+        },
+        {
+          "trait": "뜻대로 안 되면 인상을 쓰는 습관",
+          "trait_type": "habit",
+          "source_text": "슐라우는 인상을 쓰며 왼손에 힘을 고쳐 쥐었다.",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": null,
+      "source_text": "슐라우는 침상에 앉아 물컵을 받아 들고 있었다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_012",
+      "name": "블루멘 랑잠 (Blumen Langsam)",
+      "aliases": ["블루멘"],
+      "entity_type": "person",
+      "description": "회진을 돌며 슐라우의 회복 경과를 지켜보는 인물.",
+      "traits": [
+        {
+          "trait": "비속어를 뱉었다가 곧바로 말을 고쳐 붙이는 말투",
+          "trait_type": "speech",
+          "source_text": "처음엔 오른손 쓰겠다고 지랄... 아니, 고집부리더니.",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "말끝을 늘이며 친근하게 말하는 말투",
+          "trait_type": "speech",
+          "source_text": "사람 됐다니까~",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "만족하면 팔짱을 끼는 습관",
+          "trait_type": "habit",
+          "source_text": "블루멘이 만족스럽게 팔짱을 꼈다.",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": null,
+      "source_text": "블루멘의 회진을 따라 유리벽 앞까지 갔다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "블루멘의 회진을 따라가 유리벽 너머로 슐라우를 관찰하는 화자.",
+      "traits": [],
+      "first_appearance_event_id": null,
+      "source_text": "블루멘의 회진을 따라 유리벽 앞까지 갔다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_013",
+      "name": "헤일트라움 병실",
+      "description": "유리벽으로 안팎이 구분되고 내부에 침상이 있는 병실.",
+      "source_text": "블루멘의 회진을 따라 유리벽 앞까지 갔다. / 슐라우는 침상에 앉아",
+      "certainty": "inferred"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "NEW:물컵",
+      "name": "물컵",
+      "description": "슐라우가 왼손으로 쥐고 있는 물이 담긴 컵. 기울어져 물이 조금 흘렀다.",
+      "first_appearance_event_id": "EVENT_S18_1",
+      "source_text": "슐라우는 침상에 앉아 물컵을 받아 들고 있었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S18_1",
+      "scene_id": "scene_18",
+      "order": 1,
+      "title": "회진 중 왼손으로 물컵을 쥔 슐라우",
+      "summary": "화자는 블루멘의 회진을 따라 병실 유리벽 앞까지 간다. 유리벽 너머 슐라우는 침상에 앉아 붕대 감긴 오른팔을 무릎에 둔 채 왼손으로 서툴게 물컵을 쥐고 있고, 컵이 기울어 물이 조금 흐르자 인상을 쓰며 다시 힘을 고쳐 쥔다. 블루멘은 슐라우가 얌전히 왼손을 쓴다며 만족스럽게 팔짱을 낀다.",
+      "location_id": "LOC_013",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002", "CHAR_012", "CHAR_006"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_006",
+      "objects": ["NEW:물컵"],
+      "state_changes": [
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "from": "unknown",
+          "to": "오른팔 붕대 고정 상태로 왼손을 사용, 회복이 느리게 진행 중",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "inferred",
+          "certainty_reason": "'회복이 진행 중'이라는 서술은 원문의 '회복은, 느리지만 방향은 맞는 모양이었다'라는 화자의 정황 판단에서 메운 값이다",
+          "source_text": "붕대에 감긴 오른팔은 무릎 위에 얌전히 놓여 있었다. / 회복은, 느리지만 방향은 맞는 모양이었다."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_006",
+          "field": "possesses",
+          "assumes": "NEW:물컵 (왼손으로 쥐고 있음)",
+          "source_text": "슐라우는 침상에 앉아 물컵을 받아 들고 있었다."
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "assumes": "오른팔이 붕대로 감겨 있어 쓸 수 없는 상태",
+          "source_text": "붕대에 감긴 오른팔은 무릎 위에 얌전히 놓여 있었다."
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "assumes": "침상에 상체를 세워 앉아 있을 수 있는 상태 (의식이 있고 스스로 컵을 쥠)",
+          "source_text": "슐라우는 침상에 앉아 물컵을 받아 들고 있었다."
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "ability",
+          "assumes": "왼손 사용이 서툴러 컵을 안정적으로 쥐지 못함",
+          "source_text": "왼손으로, 서툴게. / 컵이 기우뚱하자 물이 조금 흘렀고"
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "ability",
+          "assumes": "오른손으로는 물건을 쥘 수 없음 (오른손 대신 왼손을 쓰는 상태)",
+          "source_text": "저것 봐요. 얌전히 왼손 쓰는 거."
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "knows",
+          "assumes": "오른손 대신 왼손을 써야 한다는 치료 방침을 알고 따르는 중",
+          "source_text": "저것 봐요. 얌전히 왼손 쓰는 거."
+        },
+        {
+          "entity": "CHAR_012",
+          "field": "knows",
+          "assumes": "슐라우가 처음에는 오른손을 쓰겠다고 고집부렸다는 과거 경과를 알고 있음",
+          "source_text": "처음엔 오른손 쓰겠다고 지랄... 아니, 고집부리더니."
+        },
+        {
+          "entity": "CHAR_012",
+          "field": "knows",
+          "assumes": "슐라우의 부상 부위와 치료·회복 경과를 지속적으로 파악하고 있음",
+          "source_text": "블루멘의 회진을 따라 유리벽 앞까지 갔다."
+        },
+        {
+          "entity": "CHAR_012",
+          "field": "ability",
+          "assumes": "환자 병실을 회진할 수 있는 의료 담당 역할을 수행함",
+          "source_text": "블루멘의 회진을 따라 유리벽 앞까지 갔다."
+        },
+        {
+          "entity": "CHAR_012",
+          "field": "body_status",
+          "assumes": "양팔을 자유롭게 쓸 수 있는 상태 (팔짱을 낌)",
+          "source_text": "블루멘이 만족스럽게 팔짱을 꼈다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "미래 세계 측 신체로 병실 유리벽 앞까지 이동해 유리 너머를 관찰 중",
+          "source_text": "블루멘의 회진을 따라 유리벽 앞까지 갔다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "블루멘과 슐라우가 누구인지 이미 알고 있음 (이름으로 지칭)",
+          "source_text": "블루멘의 회진을 따라 유리벽 앞까지 갔다. / 슐라우는 침상에 앉아"
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우가 오른팔에 붕대를 감은 채 왼손으로 생활하며 회복 중이라는 것",
+          "via": "direct",
+          "retained": true,
+          "source_text": "붕대에 감긴 오른팔은 무릎 위에 얌전히 놓여 있었다."
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우가 처음에는 오른손을 쓰겠다고 고집부렸다는 것",
+          "via": "told",
+          "retained": true,
+          "source_text": "처음엔 오른손 쓰겠다고 지랄... 아니, 고집부리더니."
+        }
+      ],
+      "cause": "블루멘이 회진을 돌았고 화자가 이를 따라가 병실 유리벽 앞에 도달했다.",
+      "result": "슐라우가 왼손으로 물컵을 쥐는 모습이 확인되고, 블루멘은 회복 경과에 만족을 표한다.",
+      "source_text": "블루멘의 회진을 따라 유리벽 앞까지 갔다. 슐라우는 침상에 앉아 물컵을 받아 들고 있었다. 왼손으로, 서툴게.",
+      "certainty": "explicit"
+    }
+  ]
+}

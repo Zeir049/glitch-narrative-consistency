@@ -1,0 +1,102 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "정미가 순덕의 무릎에 파스를 붙여줌",
+   "summary": "정미가 순덕의 오른쪽 무릎에 파스를 두 장 겹쳐 붙여주고, 병원 가자고 권유했으나 순덕이 거절함.",
+   "location_id": "LOC_003",
+   "time_id": "NEW:점심_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [
+    "OBJ_008"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "from": "오른쪽 무릎 통증 상태",
+     "to": "오른쪽 무릎에 파스 부착됨",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "오른쪽 무릎 통증 상태",
+     "certainty": "explicit",
+     "source_text": "정미가 점심 그릇을 물리고 파스를 꺼냈다. 순덕은 골방에서 오른쪽 다리를 펴고 앉았다. \"두 장 겹쳐 붙여라.\" 정미는 더 말하지 않고 파스를 붙였다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "from": "OBJ_008",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정미가 점심 그릇을 물리고 파스를 꺼냈다. ... 정미는 더 말하지 않고 파스를 붙였다. 붙이고 나서 정미는 껍질을 접어 주머니에 넣었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "OBJ_008 (파스 소지)",
+     "source_text": "정미가 점심 그릇을 물리고 파스를 꺼냈다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "오른쪽 무릎 만성 통증 (몇 년째 그 무릎)",
+     "source_text": "그 무릎은 몇 년째 그 무릎이었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "not_knows: 병원 치료의 필요성 또는 효과 (병원 가자 권유에 '안 간다', '늙어서 그렇다'며 거절)",
+     "source_text": "\"엄마. 병원 가자. 내가 데려간다.\" \"안 간다.\" \"이번엔 진짜.\" \"늙어서 그렇다 칼 낀데 뭐하러 가노.\""
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "오빠(정호)가 카운터에서 요금을 받고 어머니 자리에 앉아 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "카운터 쪽에서 동전 소리가 났다. 오빠가 요금을 받고 있었다. 정미는 국그릇을 들고 나가면서 카운터를 한 번 봤다. 어머니 자리에 오빠가 앉아 있는 것이 아직 눈에 설었다."
+    }
+   ],
+   "cause": "순덕의 만성 무릎 통증으로 정미가 파스를 붙여주려 함",
+   "result": "순덕의 무릎에 파스 부착, 병원행 거절, 정미가 오빠의 카운터 근무 모습 목격",
+   "source_text": "정미가 점심 그릇을 물리고 파스를 꺼냈다. 순덕은 골방에서 오른쪽 다리를 펴고 앉았다. \"두 장 겹쳐 붙여라.\" \"엄마. 병원 가자. 내가 데려간다.\" \"안 간다.\" \"이번엔 진짜.\" \"늙어서 그렇다 칼 낀데 뭐하러 가노.\" 정미는 더 말하지 않고 파스를 붙였다. 그 무릎은 몇 년째 그 무릎이었다. 붙이고 나서 정미는 껍질을 접어 주머니에 넣었다. 카운터 쪽에서 동전 소리가 났다. 오빠가 요금을 받고 있었다. 정미는 국그릇을 들고 나가면서 카운터를 한 번 봤다. 어머니 자리에 오빠가 앉아 있는 것이 아직 눈에 설었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:38:27Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 28.74
+ }
+}

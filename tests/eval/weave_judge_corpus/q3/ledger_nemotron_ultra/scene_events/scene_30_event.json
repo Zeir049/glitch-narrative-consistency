@@ -1,0 +1,113 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "G2 진동 측정 및 기록",
+   "summary": "카림이 G2의 진동 수치를 0.9로 측정하고 수첩에 기록한다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:5월_2일_이후_측정_시점",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_002",
+    "OBJ_019"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_002",
+     "field": "body_status",
+     "from": "진동 수치 1.6 (5월 2일)",
+     "to": "진동 수치 0.9",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "0.9였다. ... 5월 2일에 1.6이었던 소리가 아니었다. ... 카림은 손을 떼고 수첩에 0.9를 적었다."
+    },
+    {
+     "entity": "OBJ_019",
+     "field": "body_status",
+     "from": "기존 기록 상태",
+     "to": "G2 진동 0.9 기록 추가됨",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림은 손을 떼고 수첩에 0.9를 적었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_019 (카림의 수첩 소지)",
+     "source_text": "카림은 손을 떼고 수첩에 0.9를 적었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "G2의 이전 진동 수치 이력 (4월 28일 1.3, 5월 2일 1.6, 박자 빠짐 패턴)",
+     "source_text": "4월 28일에 1.3이었고 5월 2일에 1.6이었던 소리가 아니었다. 그때는 박자가 하나씩 빠졌다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "계기 없이 손바닥 감각만으로 진동 수치 측정 가능",
+     "source_text": "계기를 보지 않아도 알 수 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "이음쇠 반 바퀴 조정이 진동에 영향",
+     "source_text": "이음쇠 반 바퀴였다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "40미터 밖 공기 유입이 진동 변화 원인",
+     "source_text": "40미터 밖에서 들어오던 공기 한 줄기가 이 방의 소리를 그렇게 만들었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "G2 현재 진동 수치 0.9, 이전(5월 2일 1.6) 대비 안정됨, 원인은 40m 밖 공기 유입 및 이음쇠 반 바퀴 조정",
+     "via": "direct",
+     "retained": true,
+     "source_text": "0.9였다. ... 40미터 밖에서 들어오던 공기 한 줄기가 이 방의 소리를 그렇게 만들었다. 카림은 손을 떼고 수첩에 0.9를 적었다."
+    }
+   ],
+   "cause": "40미터 밖 공기 유입과 이음쇠 반 바퀴 조정으로 G2 진동이 안정화됨",
+   "result": "카림이 G2 진동 수치 0.9를 수첩에 기록함",
+   "source_text": "카림은 G2 옆에 쪼그려 앉아 케이스에 손바닥을 댔다. 0.9였다. 계기를 보지 않아도 알 수 있었다. 4월 28일에 1.3이었고 5월 2일에 1.6이었던 소리가 아니었다. 그때는 박자가 하나씩 빠졌다. 지금은 빠지는 박자가 없었다. 이음쇠 반 바퀴였다. 40미터 밖에서 들어오던 공기 한 줄기가 이 방의 소리를 그렇게 만들었다. 카림은 손을 떼고 수첩에 0.9를 적었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:52:25Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 57.14
+ }
+}

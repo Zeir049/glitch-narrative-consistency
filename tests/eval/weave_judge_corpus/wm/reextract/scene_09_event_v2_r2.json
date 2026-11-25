@@ -1,0 +1,200 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "scene_id": "scene_09",
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 2,
+  "batch_id": "T2-R2-A",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_09.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r3)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:41:07Z",
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:접속_로봇_신체_원격조작",
+      "content": "접속자는 모니터를 통해 미래 세계의 로봇 신체 시야를 보며 그 신체를 조작한다.",
+      "description": "현실에서 마우스로 접속하면 화면 너머 미래 세계(프리든)가 보이고, 화자는 그곳의 로봇 신체로 이동·행동한다.",
+      "source_text": "접속 화면이 밝아지자 나는 눈을 찌푸렸다. / 모니터 속 프리든 광장은 한낮의 햇살로 눈이 부셨다. / \"...선글라스 기능 같은 건 없나, 이 로봇.\"",
+      "certainty": "inferred"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "현실에서 과제를 마친 뒤 새벽에 접속해 미래 세계 프리든을 돌아다니는 화자.",
+      "traits": [
+        {
+          "trait": "혼잣말로 상황을 중계하듯 투덜대는 말투",
+          "trait_type": "speech",
+          "source_text": "\"딱 삼십 분만 둘러보고 자야지.\" / \"...선글라스 기능 같은 건 없나, 이 로봇.\"",
+          "certainty": "inferred"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S09_1",
+      "source_text": "과제를 끝내니 새벽 두 시였다. 잠은 안 오고, 손은 이미 마우스 위에 있었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_002",
+      "name": "플레이어의 집",
+      "description": "화자가 과제를 마치고 새벽 두 시에 마우스를 잡고 접속하는 현실 공간.",
+      "source_text": "과제를 끝내니 새벽 두 시였다. 잠은 안 오고, 손은 이미 마우스 위에 있었다.",
+      "certainty": "inferred"
+    },
+    {
+      "location_id": "LOC_005",
+      "name": "프리든 (Friden)",
+      "description": "새하얀 건물들이 빛을 반사하는 광장이 있는 미래 세계의 도시. 산책 나온 사람들이 오간다.",
+      "source_text": "모니터 속 프리든 광장은 한낮의 햇살로 눈이 부셨다. 새하얀 건물들이 빛을 반사해 더 하얗게 빛났고, 산책 나온 사람들이 광장을 여유롭게 가로질렀다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "OBJ_002",
+      "name": "'오류' 게임 프로그램",
+      "description": "화자가 마우스로 실행해 미래 세계에 접속하는 프로그램. 실행 시 접속 화면이 밝아진다.",
+      "first_appearance_event_id": "EVENT_S09_1",
+      "source_text": "손은 이미 마우스 위에 있었다. / 접속 화면이 밝아지자",
+      "certainty": "inferred"
+    }
+  ],
+  "times": [
+    {
+      "time_id": "NEW:현실_새벽_2시",
+      "expression": "과제를 끝낸 새벽 두 시",
+      "description": "화자가 과제를 마치고 접속한 현실 시각.",
+      "timeline": "real_present",
+      "source_text": "과제를 끝내니 새벽 두 시였다.",
+      "certainty": "explicit"
+    },
+    {
+      "time_id": "NEW:접속_직후_한낮",
+      "expression": "접속 직후의 한낮",
+      "description": "접속 화면이 밝아진 직후 프리든 광장에서 관측되는 한낮 시각.",
+      "timeline": "future_world",
+      "source_text": "모니터 속 프리든 광장은 한낮의 햇살로 눈이 부셨다.",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S09_1",
+      "scene_id": "scene_09",
+      "order": 1,
+      "title": "새벽 두 시의 접속",
+      "summary": "과제를 끝낸 새벽 두 시, 잠이 오지 않던 화자가 삼십 분만 둘러보겠다며 마우스를 잡고 접속한다. 접속 화면이 밝아지자 눈을 찌푸린다.",
+      "location_id": "LOC_002",
+      "time_id": "NEW:현실_새벽_2시",
+      "timeline": "real_present",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["OBJ_002"],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "OBJ_002 ('오류' 게임 프로그램 — 별도 준비 없이 곧바로 접속 화면을 띄움)",
+          "source_text": "손은 이미 마우스 위에 있었다. / 접속 화면이 밝아지자"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "'오류' 접속 절차와 조작법 (설명 없이 바로 둘러보러 들어감)",
+          "source_text": "\"딱 삼십 분만 둘러보고 자야지.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "현실의 인간 신체로 마우스를 조작하고 화면 밝기에 눈을 찌푸릴 수 있는 상태",
+          "source_text": "손은 이미 마우스 위에 있었다. / 접속 화면이 밝아지자 나는 눈을 찌푸렸다."
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S09_2",
+          "assumes": "접속 시점의 현실 시각(새벽 두 시)과 접속 직후 관측되는 미래 세계 시각(한낮)이 같은 시점을 가리켜야 한다",
+          "source_text": "과제를 끝내니 새벽 두 시였다. / 모니터 속 프리든 광장은 한낮의 햇살로 눈이 부셨다."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "과제를 끝낸 뒤 잠이 오지 않았다.",
+      "result": "접속 화면이 밝아지고 미래 세계 시야가 열린다.",
+      "source_text": "과제를 끝내니 새벽 두 시였다. 잠은 안 오고, 손은 이미 마우스 위에 있었다. \"딱 삼십 분만 둘러보고 자야지.\" 접속 화면이 밝아지자 나는 눈을 찌푸렸다.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_S09_2",
+      "scene_id": "scene_09",
+      "order": 2,
+      "title": "한낮의 프리든 광장에서 그늘을 찾아 걷다",
+      "summary": "접속한 화자가 한낮의 햇살이 쏟아지는 프리든 광장을 본다. 새하얀 건물들이 빛을 반사하고 산책 나온 사람들이 광장을 가로지르는 가운데, 화자는 로봇에 선글라스 기능이 없음을 투덜대며 그늘을 찾아 걷는다.",
+      "location_id": "LOC_005",
+      "time_id": "NEW:접속_직후_한낮",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "미래 세계의 로봇 신체로 광장을 걷는 중",
+          "source_text": "\"...선글라스 기능 같은 건 없나, 이 로봇.\" / 나는 그늘을 찾아 걸었다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "로봇 신체에 선글라스(광량 조절) 기능이 없음 — 강한 햇빛을 시야에서 줄이지 못함",
+          "source_text": "\"...선글라스 기능 같은 건 없나, 이 로봇.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "자신이 조작 중인 미래 세계의 신체가 로봇이라는 것",
+          "source_text": "\"...선글라스 기능 같은 건 없나, 이 로봇.\""
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S09_1",
+          "assumes": "EVENT_S09_1의 접속 직후 시점이며, 두 사건 사이에 시간 경과가 없다",
+          "source_text": "접속 화면이 밝아지자 나는 눈을 찌푸렸다. / 모니터 속 프리든 광장은 한낮의 햇살로 눈이 부셨다."
+        },
+        {
+          "with_event_id": "EVENT_S09_1",
+          "assumes": "EVENT_S09_1에서 조작하는 현실의 화자와 이 사건에서 걷는 로봇이 동일 인물(CHAR_002)의 같은 접속 세션이어야 한다",
+          "source_text": "손은 이미 마우스 위에 있었다. / 나는 그늘을 찾아 걸었다."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "접속 화면이 밝아져 프리든 광장의 시야가 열렸다.",
+      "result": "화자가 눈부심을 피해 그늘 쪽으로 이동한다.",
+      "source_text": "모니터 속 프리든 광장은 한낮의 햇살로 눈이 부셨다. 새하얀 건물들이 빛을 반사해 더 하얗게 빛났고, 산책 나온 사람들이 광장을 여유롭게 가로질렀다. \"...선글라스 기능 같은 건 없나, 이 로봇.\" 기지개를 켜는 사람들 사이로, 나는 그늘을 찾아 걸었다.",
+      "certainty": "explicit"
+    }
+  ]
+}

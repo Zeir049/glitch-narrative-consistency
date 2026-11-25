@@ -1,0 +1,165 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "NEW:마르타의_사실_보고_(5월_8일)",
+   "name": "마르타의 사실 보고 (5월 8일)",
+   "description": "마르타가 작성한 5월 8일자 사실 보고 문서. 이의서가 아닌 사실만 적은 문서.",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "오른쪽에 5월 8일의 사실 보고. 그건 이의서가 아니었다. 사실만 적은 것이었고 그래서 더 길었고 문장이 짧았다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "NEW:본부_회신_문서_(5월_10일)",
+   "name": "본부 회신 문서 (5월 10일)",
+   "description": "본부에서 5월 10일자로 보낸 회신 문서. 화상 청문 일정(5월 20일 22시 창)이 명시됨.",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "맨 위에 5월 10일의 본부 회신을 올렸다. 화상 청문, 5월 20일 22시 창.",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "NEW:5월_8일",
+   "expression": "5월 8일",
+   "description": "마르타의 사실 보고 작성일",
+   "timeline": "main",
+   "source_text": "오른쪽에 5월 8일의 사실 보고",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "NEW:5월_10일",
+   "expression": "5월 10일",
+   "description": "본부 회신 문서 작성일",
+   "timeline": "main",
+   "source_text": "맨 위에 5월 10일의 본부 회신을 올렸다",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "NEW:5월_20일_22시",
+   "expression": "5월 20일 22시",
+   "description": "화상 청문 예정 시각 (본부 회신에 명시)",
+   "timeline": "main",
+   "source_text": "화상 청문, 5월 20일 22시 창",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "마르타가 병상에서 문서들을 정리함",
+   "summary": "마르타가 병상에서 이의서 사본 두 장, 5월 8일 사실 보고, 5월 10일 본부 회신 문서를 날짜순으로 포개고 청문 일정에 밑줄을 긋는다.",
+   "location_id": "LOC_010",
+   "time_id": "NEW:5월_10일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [
+    "OBJ_024",
+    "OBJ_030",
+    "NEW:마르타의_사실_보고_(5월_8일)",
+    "NEW:본부_회신_문서_(5월_10일)"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_024",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_010",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "마르타는 병상 위에 종이를 늘어놓았다. 왼쪽에 이의서 두 장의 사본. 7조 개정에 대한 것과 격벽 관리에 대한 것."
+    },
+    {
+     "entity": "OBJ_030",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_010",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "마르타는 병상 위에 종이를 늘어놓았다. 왼쪽에 이의서 두 장의 사본. 7조 개정에 대한 것과 격벽 관리에 대한 것."
+    },
+    {
+     "entity": "NEW:마르타의_사실_보고_(5월_8일)",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_010",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "오른쪽에 5월 8일의 사실 보고"
+    },
+    {
+     "entity": "NEW:본부_회신_문서_(5월_10일)",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_010",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "맨 위에 5월 10일의 본부 회신을 올렸다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "assumes": "OBJ_024, OBJ_030, OBJ_033, OBJ_034 (문서들을 소지/접근 가능)",
+     "source_text": "마르타는 병상 위에 종이를 늘어놓았다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "body_status",
+     "assumes": "병상에 누워 있는 상태 (이동 제약)",
+     "source_text": "마르타는 병상 위에 종이를 늘어놓았다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "본부 청문 일정(5월 20일 22시)을 인지함",
+     "source_text": "마르타는 그 줄에 밑줄을 그었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_004",
+     "info": "본부 화상 청문이 5월 20일 22시 창으로 예정됨",
+     "via": "document",
+     "retained": true,
+     "source_text": "화상 청문, 5월 20일 22시 창. 마르타는 그 줄에 밑줄을 그었다."
+    }
+   ],
+   "cause": "마르타가 보유한 문서들을 정리하고 청문 일정을 확인하기 위해",
+   "result": "문서들이 날짜순으로 정렬되고 청문 일자가 강조됨",
+   "source_text": "마르타는 병상 위에 종이를 늘어놓았다. 왼쪽에 이의서 두 장의 사본. 7조 개정에 대한 것과 격벽 관리에 대한 것. 오른쪽에 5월 8일의 사실 보고. 그건 이의서가 아니었다. 사실만 적은 것이었고 그래서 더 길었고 문장이 짧았다. 마르타는 세 장을 날짜순으로 포개고 맨 위에 5월 10일의 본부 회신을 올렸다. 화상 청문, 5월 20일 22시 창. 마르타는 그 줄에 밑줄을 그었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:49:04Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 43.76
+ }
+}

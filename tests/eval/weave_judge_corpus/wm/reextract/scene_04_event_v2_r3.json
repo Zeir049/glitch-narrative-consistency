@@ -1,0 +1,199 @@
+{
+  "schema_version": 2,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 3,
+  "batch_id": "T2-R3-A",
+  "scene_id": "scene_04",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_04.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r2)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T13:21:47Z",
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["알파", "나"],
+      "entity_type": "person",
+      "description": "알라인의 방에서 CCTV 잔업을 돕는 화자.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S04_1",
+      "source_text": "알라인의 방에서 CCTV 잔업을 돕던 중이었다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_007",
+      "name": "알라인 쉭살 (Allein Schicksal)",
+      "aliases": ["알라인"],
+      "entity_type": "person",
+      "description": "자신의 방에서 CCTV 잔업을 하며 알파의 몸 상태를 챙기는 인물.",
+      "traits": [
+        {
+          "trait": "입은 웃고 있는데 눈은 웃고 있지 않은 표정을 짓는다",
+          "trait_type": "habit",
+          "source_text": "입은 웃고 있는데 눈은 웃고 있지 않은, 그 표정으로.",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S04_1",
+      "source_text": "알라인이 손을 멈추고 나를 돌아보았다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_012",
+      "name": "블루멘 랑잠 (Blumen Langsam)",
+      "aliases": ["블루멘"],
+      "entity_type": "person",
+      "description": "대화 중 언급되는 인물. 알파에게 밥을 잘 챙겨 먹으라고 당부했고, 가운을 입은 모습이 목격된 적이 있다.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S04_1",
+      "source_text": "블루멘이 밥 잘 챙겨 먹으랬는데.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_009",
+      "name": "알라인의 방 (프리든 3번 방)",
+      "description": "알파와 알라인이 CCTV 잔업을 하던 방. 키보드 소리만 남아 조용해진다.",
+      "source_text": "알라인의 방에서 CCTV 잔업을 돕던 중이었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "OBJ_009",
+      "name": "CCTV 영상 자료",
+      "description": "알라인의 방에서 잔업으로 처리 중인 CCTV 자료.",
+      "first_appearance_event_id": "EVENT_S04_1",
+      "source_text": "알라인의 방에서 CCTV 잔업을 돕던 중이었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S04_1",
+      "scene_id": "scene_04",
+      "order": 1,
+      "title": "CCTV 잔업 중 블루멘의 직업 이야기",
+      "summary": "알라인의 방에서 CCTV 잔업을 돕던 알파는 알라인의 안부 인사에 이어 '블루멘이 의사였느냐, 지금 처음 알았다'고 말한다. 알라인이 손을 멈추고 되묻자 알파는 가운 입은 것은 봤다며 말을 흐리고, 둘은 다시 일로 돌아가 방에는 키보드 소리만 남는다.",
+      "location_id": "LOC_009",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002", "CHAR_007"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["OBJ_009"],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "from": "unknown",
+          "to": "블루멘이 의사임",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "블루멘이 의사였어요? 전혀 몰랐네요. 지금 처음 알았어요."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "OBJ_009 (잔업으로 CCTV 자료를 다루는 중)",
+          "source_text": "알라인의 방에서 CCTV 잔업을 돕던 중이었다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "not_knows: 블루멘이 의사라는 사실 (이 발화 시점 이전까지)",
+          "source_text": "블루멘이 의사였어요? 전혀 몰랐네요. 지금 처음 알았어요."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "블루멘이 가운을 입은 모습을 본 적이 있음",
+          "source_text": "아니 뭐, 가운 입은 건 봤지만..."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "식사를 챙겨야 할 만큼 상태를 걱정받는 몸 (안부를 묻는 대상)",
+          "source_text": "몸은 좀 어때요? 블루멘이 밥 잘 챙겨 먹으랬는데."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "CCTV 영상 자료를 검토·처리하는 작업을 수행할 수 있음",
+          "source_text": "CCTV 잔업을 돕던 중이었다"
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "possesses",
+          "assumes": "OBJ_009 (자신의 방에서 CCTV 잔업을 진행 중)",
+          "source_text": "알라인의 방에서 CCTV 잔업을 돕던 중이었다."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "블루멘이 알파에게 밥을 잘 챙겨 먹으라고 당부한 사실",
+          "source_text": "블루멘이 밥 잘 챙겨 먹으랬는데."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "알파의 몸 상태가 안부를 물어야 할 상태라는 것",
+          "source_text": "몸은 좀 어때요?"
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "블루멘이 의사라는 사실 (알파의 말에 손을 멈추고 되물음)",
+          "source_text": "\"...네?\" 알라인이 손을 멈추고 나를 돌아보았다."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "ability",
+          "assumes": "키보드를 사용해 CCTV 잔업을 수행할 수 있음",
+          "source_text": "키보드 소리만 남은 방이 유난히 조용했다."
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "블루멘이 의사임",
+          "via": "inference",
+          "retained": true,
+          "source_text": "블루멘이 의사였어요? 전혀 몰랐네요. 지금 처음 알았어요. / 가운 입은 건 봤지만..."
+        },
+        {
+          "character_id": "CHAR_007",
+          "info": "알파가 블루멘의 직업을 몰랐다고 말했다는 것",
+          "via": "direct",
+          "retained": true,
+          "source_text": "\"...네?\" 알라인이 손을 멈추고 나를 돌아보았다."
+        }
+      ],
+      "cause": "알라인이 알파의 몸 상태를 묻고 블루멘의 당부를 전하면서 블루멘 이야기가 나왔다.",
+      "result": "알파는 블루멘이 의사임을 알게 되었다고 말했고, 알라인이 표정을 굳히자 알파가 말을 흐리며 대화를 끝내 방에는 키보드 소리만 남았다.",
+      "source_text": "알라인의 방에서 CCTV 잔업을 돕던 중이었다. / \"몸은 좀 어때요? 블루멘이 밥 잘 챙겨 먹으랬는데.\" / \"아, 그러고 보니 말인데요. 블루멘이 의사였어요? 전혀 몰랐네요. 지금 처음 알았어요.\" / \"...네?\" / 알라인이 손을 멈추고 나를 돌아보았다. / \"아니 뭐, 가운 입은 건 봤지만... 그, 하하... 계속 일이나 하죠, 우리?\" / 키보드 소리만 남은 방이 유난히 조용했다.",
+      "certainty": "explicit"
+    }
+  ]
+}

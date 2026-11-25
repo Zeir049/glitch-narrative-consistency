@@ -1,0 +1,212 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 3,
+  "batch_id": "T2-R3-B",
+  "scene_id": "scene_14",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_14.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r2)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T13:25:27Z",
+  "worldview_rules": [],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "블루멘을 찾으러 간 김에 유리벽 너머로 슐라우의 병실을 살핀 시점 화자.",
+      "traits": [
+        {
+          "trait": "눈에 띈 것에 혼잣말로 감상·농담을 흘리는 말투",
+          "trait_type": "speech",
+          "source_text": "\"...저 옷, 편하긴 한가? 치료할 때 걸리적거릴 것 같은데.\"",
+          "certainty": "inferred"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S14_1",
+      "source_text": "블루멘을 찾으러 간 김에, 유리벽 너머 병실을 살폈다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_006",
+      "name": "슐라우 프로비에렌",
+      "aliases": ["슐라우"],
+      "entity_type": "person",
+      "description": "병실 가장 안쪽 침상에 잠들어 있는 인물.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S14_1",
+      "source_text": "가장 안쪽 침상에 슐라우가 잠들어 있었다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_012",
+      "name": "블루멘 랑잠 (Blumen Langsam)",
+      "aliases": ["블루멘"],
+      "entity_type": "person",
+      "description": "화자가 찾으러 다니던 인물. 이 장면에 직접 등장하지는 않고 언급만 된다.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S14_1",
+      "source_text": "블루멘을 찾으러 간 김에",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_013",
+      "name": "헤일트라움 병실",
+      "description": "유리벽으로 내부가 들여다보이는 병실. 가장 안쪽 침상에 슐라우가 누워 있다.",
+      "source_text": "유리벽 너머 병실을 살폈다. / 가장 안쪽 침상에 슐라우가 잠들어 있었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "OBJ_008",
+      "name": "노이즈 무늬 옷",
+      "description": "흑백 노이즈 무늬의 옷. 침상의 슐라우가 환자복 위로 머리끝까지 걸치고 있다.",
+      "first_appearance_event_id": "EVENT_S14_1",
+      "source_text": "침상의 슐라우는 그 흑백 노이즈 무늬 옷을 머리끝까지 그대로 걸친 채였다.",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S14_1",
+      "scene_id": "scene_14",
+      "order": 1,
+      "title": "유리벽 너머로 잠든 슐라우를 살핌",
+      "summary": "블루멘을 찾으러 간 화자가 유리벽 너머 병실을 살피다가, 가장 안쪽 침상에 흑백 노이즈 무늬 옷을 머리끝까지 걸친 채 잠든 슐라우를 본다. 혈색이 돌아온 얼굴에 안심하고 조용히 유리벽에서 물러난다.",
+      "location_id": "LOC_013",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["OBJ_008"],
+      "state_changes": [
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "from": "처음 봤을 때의 혈색",
+          "to": "혈색이 돌아옴",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "곤히 잠든 얼굴은 처음 봤을 때보다 혈색이 돌아와 있었다."
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "from": "unknown",
+          "to": "침상에서 잠든 상태",
+          "op": "set",
+          "volatility": "transient",
+          "decays_to": "각성 상태",
+          "certainty": "explicit",
+          "source_text": "가장 안쪽 침상에 슐라우가 잠들어 있었다.",
+          "volatility_reason": "수면은 시간 경과로 해소되는 상태"
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_006",
+          "field": "possesses",
+          "assumes": "OBJ_008 (환자복 위로 머리끝까지 걸친 채 착용 중)",
+          "source_text": "침상의 슐라우는 그 흑백 노이즈 무늬 옷을 머리끝까지 그대로 걸친 채였다."
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "assumes": "환자복을 입고 침상에 누운 입원·치료 중인 상태",
+          "source_text": "환자복 위로도 그 어지러운 무늬가 선명했다. / 치료할 때 걸리적거릴 것 같은데."
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "assumes": "얼굴에 혈색이 드러나는 신체 (혈색으로 상태를 판별할 수 있는 몸)",
+          "source_text": "곤히 잠든 얼굴은 처음 봤을 때보다 혈색이 돌아와 있었다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "슐라우의 얼굴·모습을 식별할 수 있음 — 이전에 슐라우를 본 적이 있음",
+          "source_text": "곤히 잠든 얼굴은 처음 봤을 때보다"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "흑백 노이즈 무늬 옷(OBJ_008)의 존재를 이미 알고 있고 '그 옷'으로 지칭할 수 있음",
+          "source_text": "그 흑백 노이즈 무늬 옷을"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "슐라우가 치료를 받는 중인 환자라는 것",
+          "source_text": "치료할 때 걸리적거릴 것 같은데."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "블루멘을 찾는 중이며, 이 병실 구역에서 블루멘을 찾을 수 있다고 여김",
+          "source_text": "블루멘을 찾으러 간 김에"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "유리벽 너머 가장 안쪽 침상의 옷 무늬와 얼굴 혈색까지 식별하는 시각",
+          "source_text": "유리벽 너머 병실을 살폈다. / 환자복 위로도 그 어지러운 무늬가 선명했다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "음성 발화 가능 (혼잣말을 소리 내어 함)",
+          "source_text": "\"...저 옷, 편하긴 한가?"
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우가 병실 가장 안쪽 침상에 잠들어 있음",
+          "via": "direct",
+          "retained": true,
+          "source_text": "가장 안쪽 침상에 슐라우가 잠들어 있었다."
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우가 환자복 위로 노이즈 무늬 옷을 머리끝까지 걸치고 있음",
+          "via": "direct",
+          "retained": true,
+          "source_text": "침상의 슐라우는 그 흑백 노이즈 무늬 옷을 머리끝까지 그대로 걸친 채였다."
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우의 혈색이 처음 봤을 때보다 돌아옴",
+          "via": "direct",
+          "retained": true,
+          "source_text": "곤히 잠든 얼굴은 처음 봤을 때보다 혈색이 돌아와 있었다."
+        }
+      ],
+      "cause": "블루멘을 찾으러 병실 구역에 간 김에 유리벽 너머를 살핌",
+      "result": "슐라우의 상태(잠듦·옷 착용·혈색 회복)를 확인하고 안심하여 조용히 유리벽에서 물러남",
+      "source_text": "블루멘을 찾으러 간 김에, 유리벽 너머 병실을 살폈다. … 나는 조용히 유리벽에서 물러났다.",
+      "certainty": "explicit"
+    }
+  ]
+}

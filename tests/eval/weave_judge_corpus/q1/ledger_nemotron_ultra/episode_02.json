@@ -1,0 +1,1872 @@
+{
+ "schema_version": 2,
+ "episode": 2,
+ "worldview_rules": [],
+ "characters": [
+  {
+   "character_id": "CHAR_001",
+   "name": "배순덕",
+   "aliases": [
+    "순덕",
+    "배 여사"
+   ],
+   "entity_type": "person",
+   "description": "금호탕 주인, 정호의 어머니",
+   "traits": [
+    {
+     "trait": "돋보기를 착용함",
+     "trait_type": "appearance",
+     "source_text": "어머니는 돋보기를 쓰고 있었다. 돋보기 쓰는 것을 정호는 처음 봤다.",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "남편이 남긴 금반지를 이십 년간 반짇고리에 보관함",
+     "trait_type": "habit",
+     "source_text": "반짇고리 바닥에 남편이 남긴 금반지가 있었다. 만수가 죽던 해 겨울에 빼서 넣어 두고 이십 년을 그 자리에 뒀다.",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "무릎이 아픔",
+     "trait_type": "appearance",
+     "source_text": "무릎이 아팠다. 오늘은 계단을 세 번 올랐다.",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_2_16",
+   "source_text": "숫자 볼 줄 알겠네. 어무이 장부 좀 봐 드려라.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_002",
+   "name": "배정호",
+   "aliases": [
+    "정호",
+    "정호 씨"
+   ],
+   "entity_type": "person",
+   "description": "순덕의 아들, 경리 12년 경력",
+   "traits": [
+    {
+     "trait": "경리 업무 12년 경력",
+     "trait_type": "habit",
+     "source_text": "경리를 십이 년 했으니 이런 서류는 눈에 익었다.",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_2_16",
+   "source_text": "숫자 볼 줄 알겠네. 어무이 장부 좀 봐 드려라.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_004",
+   "name": "장문식",
+   "aliases": [
+    "문식",
+    "장씨",
+    "장 아저씨"
+   ],
+   "entity_type": "person",
+   "description": "금호탕 보일러 관리인",
+   "traits": [
+    {
+     "trait": "새벽 3시 30분에 연탄을 다시 떼기 위해 밤새 불을 죽이지 않음",
+     "trait_type": "habit",
+     "source_text": "저 연기는 문식이 새벽 세 시 반에 다시 떼기 위해 밤새 죽이지 않는 불이었다.",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_2_19",
+   "source_text": "지하에서 문식이 올라왔다.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_005",
+   "name": "최병구",
+   "aliases": [
+    "최영감"
+   ],
+   "entity_type": "person",
+   "description": "금호탕 인수 의향을 보인 노인",
+   "traits": [
+    {
+     "trait": "금호탕을 4천만 원에 인수하려 함",
+     "trait_type": "habit",
+     "source_text": "내가 사천이라 캤는데, 그 돈이면 니 어무이 평생 목욕탕 굴려서 못 번다.",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_2_16",
+   "source_text": "내가 사천이라 캤는데, 그 돈이면 니 어무이 평생 목욕탕 굴려서 못 번다.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_011",
+   "name": "이 주사",
+   "entity_type": "person",
+   "description": "상수도사업소 직원, 30대 남성",
+   "traits": [
+    {
+     "trait": "점퍼에 사업소 마크 착용",
+     "trait_type": "appearance",
+     "source_text": "점퍼에 사업소 마크가 붙어 있는 삼십 대 남자였다.",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "사무적이지만 나쁜 사람 같지 않은 태도",
+     "trait_type": "personality",
+     "source_text": "태도는 사무적이었지만 나쁜 사람 같지는 않았다.",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_2_17",
+   "source_text": "이 주사라고 했다. 손에는 서류철이 있었고 태도는 사무적이었지만 나쁜 사람 같지는 않았다.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_003",
+   "name": "배정미",
+   "aliases": [
+    "정미"
+   ],
+   "entity_type": "person",
+   "description": "정호의 누나, 골목 안쪽 가게 운영",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_2_22",
+   "source_text": "정미네 가게는 골목 안쪽이라 다락방 창에서는 보이지 않았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "locations": [
+  {
+   "location_id": "LOC_001",
+   "name": "금호탕",
+   "description": "목욕탕 건물 전체",
+   "source_text": "이 목욕탕이 한 달에 얼마 남는지",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_002",
+   "name": "카운터",
+   "description": "금호탕 카운터",
+   "source_text": "카운터 앞에 서서 순덕에게 서류 한 장을 내밀었다.",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_003",
+   "name": "골방",
+   "description": "순덕의 방",
+   "source_text": "골방 문이 열려 있어서 정호는 계단 위에서 어머니가 서류를 보는 것을 봤다.",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_004",
+   "name": "다락방",
+   "description": "정호의 방",
+   "source_text": "정호는 다락방에 올라가 창을 열었다.",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_011",
+   "name": "물건방",
+   "description": "이층 물건방",
+   "source_text": "이층 물건방에 수건 가지러 두 번",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_017",
+   "name": "상수도사업소",
+   "description": "상수도사업소",
+   "source_text": "상수도사업소에서 사람이 왔다.",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_013",
+   "name": "정미 세신·이발",
+   "description": "정미네 가게",
+   "source_text": "정미네 가게는 골목 안쪽이라 다락방 창에서는 보이지 않았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "objects": [
+  {
+   "object_id": "OBJ_002",
+   "name": "장부",
+   "description": "금호탕 장부",
+   "first_appearance_event_id": "EVENT_2_16",
+   "source_text": "어무이 장부 좀 봐 드려라.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_018",
+   "name": "노후 급수관 교체 통보서",
+   "description": "상수도사업소 발행, 인입관 교체 비용 150-200만 원, 기한 1988년 1월 31일",
+   "first_appearance_event_id": "EVENT_2_17",
+   "source_text": "노후 급수관 교체 통보입니다. 견적은 업자한테 받으셔야 하고요. 저희가 대략 보기로는 이 정도 규모면 백오십에서 이백 사이. 기한은 일월 말까지입니다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_007",
+   "name": "통장",
+   "description": "순덕의 통장",
+   "first_appearance_event_id": "EVENT_2_18",
+   "source_text": "장부가 들어 있는 서랍. 그러고 나서 순덕은 아무렇지도 않게 손님 요금을 받았다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_010",
+   "name": "금반지",
+   "description": "남편이 남긴 금반지",
+   "first_appearance_event_id": "EVENT_2_20",
+   "source_text": "반짇고리 바닥에 남편이 남긴 금반지가 있었다. 만수가 죽던 해 겨울에 빼서 넣어 두고 이십 년을 그 자리에 뒀다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_005",
+   "name": "셔터",
+   "description": "금호탕 셔터",
+   "first_appearance_event_id": "EVENT_2_19",
+   "source_text": "대신 여덟 시에 셔터를 내리고 나서 순덕은 장부 대신 그 서류를 다시 꺼내 봤다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_004",
+   "name": "보일러",
+   "description": "금호탕 보일러",
+   "first_appearance_event_id": "EVENT_2_19",
+   "source_text": "그날 저녁 보일러는 죽지 않았다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_019",
+   "name": "반짇고리",
+   "description": "금반지 보관용 반짇고리",
+   "first_appearance_event_id": "EVENT_2_20",
+   "source_text": "이불장 앞에 앉아 밑에서 반짇고리를 꺼냈다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_020",
+   "name": "비누 상자",
+   "description": "물건방에 있는 비누 상자",
+   "first_appearance_event_id": "EVENT_2_21",
+   "source_text": "정호는 물건방에서 비누 상자를 세고 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "TIME_019",
+   "expression": "목요일 새벽 네 시 반",
+   "description": "정호가 금호탕에 내려온 시각",
+   "timeline": "main",
+   "source_text": "목요일 새벽, 정호는 네 시 반에 내려갔다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_020",
+   "expression": "금요일 오후",
+   "description": "박 사장 전화가 온 시각",
+   "timeline": "main",
+   "source_text": "금요일 오후에 전화가 왔다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_021",
+   "expression": "토요일 점심때",
+   "description": "정미가 금호탕에 온 시각",
+   "timeline": "main",
+   "source_text": "점심때 정미가 왔다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_004",
+   "expression": "십오일",
+   "description": "박 사장이 말한 납부 기한",
+   "timeline": "main",
+   "source_text": "십오일입니다. 늦으면 제가 내려가야 하니까, 그건 서로 번거롭잖습니까.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_022",
+   "expression": "토요일 저녁 일곱 시",
+   "description": "보일러 고장 발생 시각",
+   "timeline": "main",
+   "source_text": "토요일 저녁 일곱 시에 보일러가 또 죽었다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_023",
+   "expression": "일요일 오후",
+   "description": "정호가 공중전화로 아내와 통화한 시각",
+   "timeline": "main",
+   "source_text": "일요일 오후에 정호는 광장 공중전화로 갔다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_024",
+   "expression": "월요일 십일월 삼십일 새벽",
+   "description": "최영감이 정호에게 경력 확인한 시각",
+   "timeline": "main",
+   "source_text": "그날 새벽 최영감은 남탕에서 나와 카운터 앞에 서더니",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_006",
+   "expression": "십이월 첫날",
+   "description": "12월 1일, 화요일 오전",
+   "timeline": "main",
+   "source_text": "화요일 오전, 십이월 첫날에 상수도사업소에서 사람이 왔다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_007",
+   "expression": "1988년 1월 31일",
+   "description": "급수관 교체 기한",
+   "timeline": "main",
+   "source_text": "기한은 일월 말까지입니다. 기한 1988년 1월 31일.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_018",
+   "expression": "십이월 첫날 밤 11시 40분",
+   "description": "밤 11시 40분",
+   "timeline": "main",
+   "source_text": "여덟 시에 셔터를 내리고 나서",
+   "certainty": "inferred"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-26T11:55:15Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 200.76
+ },
+ "_merge": {
+  "spec": "handoff/chunked_extract_spec.md",
+  "chunks": [
+   "episode_02_c01.json",
+   "episode_02_c02.json",
+   "episode_02_c03.json"
+  ],
+  "unmapped_new": [
+   "NEW:금호탕_골목",
+   "NEW:급수관교체통보서 (서류철)",
+   "NEW:비누상자 (점검 중)",
+   "NEW:최영감_방문_시점"
+  ]
+ },
+ "events": [
+  {
+   "event_id": "EVENT_2_1",
+   "scene_id": "scene_2_1",
+   "order": 1,
+   "title": "정호 목요일 새벽 금호탕 도착 및 셔터 개방",
+   "summary": "정호가 새벽 네 시 반에 금호탕에 내려와 셔터를 올리고, 순덕이 정문 열쇠로 문을 연다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_019",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_005",
+    "OBJ_001"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_005",
+     "field": "body_status",
+     "from": "닫힘",
+     "to": "열림",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "셔터 손잡이를 잡았을 때 순덕이 말리지 않았으므로 허락으로 치기로 했다. 셔터가 올라가고 나서"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "목요일 새벽, 정호는 네 시 반에 내려갔다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카운터 불은 이미 켜져 있었고 순덕은 여탕 쪽 수도꼭지를 틀어 물을 확인하고 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_001 (정문 열쇠)",
+     "source_text": "정문은 순덕이 열쇠로 열었다. 열쇠는 어머니 고리에 있었고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "셔터를 혼자 열 수 있는 힘",
+     "source_text": "셔터는 무거웠다. 어머니가 이걸 매일 무릎으로 버티며 올렸다고 생각하니 손에 힘이 들어갔다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_001 (지하 쪽방 예비 열쇠)",
+     "source_text": "그 고리 말고는 지하 쪽방에 하나 더 있을 뿐이었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "정호가 금호탕 운영을 돕기 위해 내려옴",
+   "result": "셔터 개방, 영업 준비 시작",
+   "source_text": "목요일 새벽, 정호는 네 시 반에 내려갔다. 어머니보다 늦고 문식보다는 한참 늦은 시간이었다. 카운터 불은 이미 켜져 있었고 순덕은 여탕 쪽 수도꼭지를 틀어 물을 확인하고 있었다. \"셔터는 내가 올릴게요.\" 순덕은 대답하지 않았다. 대답하지 않는 것이 허락인지 아닌지 정호는 몰랐지만, 네 시 오십 분에 셔터 손잡이를 잡았을 때 순덕이 말리지 않았으므로 허락으로 치기로 했다. 셔터는 무거웠다. 어머니가 이걸 매일 무릎으로 버티며 올렸다고 생각하니 손에 힘이 들어갔다. 셔터가 올라가고 나서 정문은 순덕이 열쇠로 열었다. 정호는 옆에 서 있기만 했다. 열쇠는 어머니 고리에 있었고, 그 고리 말고는 지하 쪽방에 하나 더 있을 뿐이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_2",
+   "scene_id": "scene_2_1",
+   "order": 2,
+   "title": "최영감 입장 및 정호 확인",
+   "summary": "최영감이 금호탕에 들어와 정호를 보고 육백 원을 내고 남탕으로 들어간다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_019",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_005",
+    "CHAR_002",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "최영감이 들어왔다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호를 보고 잠깐 멈췄다가 육백 원을 서랍에 넣었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "정호가 내려와 있음을 인지",
+     "source_text": "정호를 보고 잠깐 멈췄다가"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "목욕 요금 육백 원",
+     "source_text": "육백 원을 서랍에 넣었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_005",
+     "info": "정호가 금호탕에 내려와 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "정호를 보고 잠깐 멈췄다가"
+    }
+   ],
+   "cause": "최영감의 정기 목욕 방문",
+   "result": "입욕료 납부, 남탕 입장",
+   "source_text": "최영감이 들어왔다. 정호를 보고 잠깐 멈췄다가 육백 원을 서랍에 넣었다. \"정호 왔나.\" \"예, 어르신.\" \"대구는 춥더나.\" \"여기가 더 춥습니다.\" 최영감은 웃지도 않고 남탕으로 들어갔다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_3",
+   "scene_id": "scene_2_1",
+   "order": 3,
+   "title": "최영감 퇴장 및 부지 매입 화제 회피",
+   "summary": "최영감이 나와 정호를 한 번 더 보고 부지 얘기를 꺼내지 않은 채 나간다. 순덕과 정호도 침묵한다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_019",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_005",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "from": "LOC_005",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "한 시간 뒤 최영감이 나왔을 때"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "금호탕 부지 매입 의향이 있었음",
+     "source_text": "그는 순덕에게 부지 얘기를 꺼내지 않았다. 대신 정호를 한 번 더 봤다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "최영감이 부지 매입을 제안했었음",
+     "source_text": "순덕은 그 눈길을 봤고 정호도 봤다. 셋 다 아무 말도 안 했다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "최영감의 목욕 종료",
+   "result": "부지 매입 화제 미언급, 삼자 침묵",
+   "source_text": "한 시간 뒤 최영감이 나왔을 때 그는 순덕에게 부지 얘기를 꺼내지 않았다. 대신 정호를 한 번 더 봤다. 순덕은 그 눈길을 봤고 정호도 봤다. 셋 다 아무 말도 안 했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_4",
+   "scene_id": "scene_2_2",
+   "order": 4,
+   "title": "정호 금호탕 상주 시작 및 잡무 분담",
+   "summary": "정호가 다락방에 얹혀 살며 카운터 옆에서 수건 개기, 비누 채우기, 슬리퍼 정리 등 잡무를 맡는다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_019",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_004",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 탕 이층 다락방에 얹혀 살았고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "from": "unknown",
+     "to": "카운터 옆 상주하며 잡무 수행",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "낮에는 카운터 옆에 있었다. 요금을 받는 것은 순덕이 했지만 수건을 개고 비누를 채우고 여탕 쪽 슬리퍼를 정리하는 일은 정호가 했다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "정호가 자발적으로 잡무를 맡는 것을 묵인함",
+     "source_text": "순덕이 시킨 것은 아니었다. 정호가 하면 순덕이 그냥 두었다. 그게 이 집에서 뭔가가 정해지는 방식이었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "정호의 귀향 및 가업 도움 결정",
+   "result": "정호 상주, 역할 분담 암묵적 성립",
+   "source_text": "그날부터 정호는 카운터 옆에 붙어 있었다. 정호는 탕 이층 다락방에 얹혀 살았고, 낮에는 카운터 옆에 있었다. 요금을 받는 것은 순덕이 했지만 수건을 개고 비누를 채우고 여탕 쪽 슬리퍼를 정리하는 일은 정호가 했다. 순덕이 시킨 것은 아니었다. 정호가 하면 순덕이 그냥 두었다. 그게 이 집에서 뭔가가 정해지는 방식이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_5",
+   "scene_id": "scene_2_2",
+   "order": 5,
+   "title": "물건방 장부 발견 및 정호의 회피",
+   "summary": "정호가 물건방에서 아버지 때부터의 장부 더미를 발견하나 펴보지 않는다.",
+   "location_id": "LOC_011",
+   "time_id": "TIME_019",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_002"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_001",
+     "to": "LOC_011",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "이층 물건방에는 수건이 산처럼 쌓여 있었다. 정호는 거기서 수건을 한 아름씩 내려와"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "장부 더미가 존재함 (1962년 개업 첫해 것 포함)",
+     "source_text": "물건방 구석에는 아버지 때부터 쓰던 장부들이 끈에 묶여 있었다. 1962년, 개업 첫해 것도 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "not_knows: 장부 구체적 내용",
+     "source_text": "정호는 그 장부를 펴 보지 않았다. 볼 필요가 없었다. 숫자라면 지긋지긋했다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "금호탕 장부 더미가 물건방에 보관되어 있음 (1962년부터)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "물건방 구석에는 아버지 때부터 쓰던 장부들이 끈에 묶여 있었다. 1962년, 개업 첫해 것도 있었다."
+    }
+   ],
+   "cause": "수건 정리 중 장부 발견",
+   "result": "장부 열람 회피",
+   "source_text": "이층 물건방에는 수건이 산처럼 쌓여 있었다. 정호는 거기서 수건을 한 아름씩 내려와 카운터 뒤 선반에 채웠다. 물건방 구석에는 아버지 때부터 쓰던 장부들이 끈에 묶여 있었다. 1962년, 개업 첫해 것도 있었다. 정호는 그 장부를 펴 보지 않았다. 볼 필요가 없었다. 숫자라면 지긋지긋했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_6",
+   "scene_id": "scene_2_3",
+   "order": 6,
+   "title": "금요일 오후 박 사장 전화 통화",
+   "summary": "박 사장이 카운터로 전화해 정호와 통화하며 십오일까지 납부 독촉한다.",
+   "location_id": "LOC_002",
+   "time_id": "TIME_020",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_008",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_008",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "박 사장 채권 존재, 십오일 납부 기한",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "\"십오일입니다. 늦으면 제가 내려가야 하니까, 그건 서로 번거롭잖습니까.\""
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "대구 박 사장 채권자 존재",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "순덕은 수화기를 든 채로 계단 위를 봤다. 순덕은 수화기를 정호에게 내밀었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_008",
+     "field": "knows",
+     "assumes": "정호가 대구에서 내려와 금호탕에 있음",
+     "source_text": "\"내려가셨다고 들어서요.\""
+    },
+    {
+     "entity": "CHAR_008",
+     "field": "knows",
+     "assumes": "채무 금액 및 기한(십오일) 관리 중",
+     "source_text": "다음 달 것 확인차. 십오일입니다. 늦으면 제가 내려가야 하니까"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "전화 상대가 박 사장임을 인지",
+     "source_text": "\"거기 배정호 씨 계십니까.\" \"대구 박입니다. 박 사장이라고 하면 압니다.\""
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "박 사장 채권 존재, 십오일까지 납부해야 함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "\"십오일입니다. 늦으면 제가 내려가야 하니까, 그건 서로 번거롭잖습니까.\""
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "대구 박 사장이라는 채권자 존재",
+     "via": "direct",
+     "retained": true,
+     "source_text": "\"대구 박입니다. 박 사장이라고 하면 압니다.\""
+    }
+   ],
+   "cause": "박 사장의 채권 확인 전화",
+   "result": "정호·순덕 채무 사실 인지, 납부 기한 십오일 확인",
+   "source_text": "금요일 오후에 전화가 왔다. 카운터 전화기가 울렸고 순덕이 받았다. \"금호탕입니더.\" \"거기 배정호 씨 계십니까.\" \"누구시니껴.\" \"대구 박입니다. 박 사장이라고 하면 압니다.\" 순덕은 수화기를 든 채로 계단 위를 봤다. 정호가 수건을 안고 내려오다가 멈춰 섰다. 순덕은 수화기를 정호에게 내밀었다. 아무 표정도 없었다. 정호는 수건을 계단에 내려놓고 내려와 수화기를 받았다. \"예, 접니다.\" \"내려가셨다고 들어서요. 별일 아닙니다. 다음 달 것 확인차.\" \"예. 알고 있습니다.\" \"십오일입니다. 늦으면 제가 내려가야 하니까, 그건 서로 번거롭잖습니까.\" \"압니다.\" \"어머님 목욕탕이 크다면서요. 역전에. 잘 됐네요.\" 정호는 전화를 끊었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_7",
+   "scene_id": "scene_2_3",
+   "order": 7,
+   "title": "통화 후 순덕 장부 기록 및 침묵 합의",
+   "summary": "정호가 전화를 끊고 순덕이 장부에 어른 스물아홉, 아이 셋을 적으나 대구 박 사장 금액은 적지 않고 모르는 채로 둔다.",
+   "location_id": "LOC_002",
+   "time_id": "TIME_020",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_002"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_002",
+     "field": "body_status",
+     "from": "기존 기록",
+     "to": "어른 스물아홉, 아이 셋 기록 추가, 대구 박 사장 금액 미기재",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그날 저녁 장부를 쓰면서 순덕은 어른 스물아홉, 아이 셋을 적고 그 밑에 아무것도 적지 않았다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "대구 박 사장 채권자 이름 인지, 금액 모름",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "대구 박 사장이라는 이름이 이 집에 들어왔다는 것을 순덕은 알았고, 얼마짜리 이름인지는 몰랐다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "아들이 말하기 전까지는 채무 금액을 묻지 않기로 함",
+     "source_text": "순덕은 모르는 채로 두기로 했다. 아들이 말하기 전까지는."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "대구 박 사장 채권자명 인지, 금액은 모름",
+     "via": "direct",
+     "retained": true,
+     "source_text": "대구 박 사장이라는 이름이 이 집에 들어왔다는 것을 순덕은 알았고, 얼마짜리 이름인지는 몰랐다."
+    }
+   ],
+   "cause": "박 사장 전화 통화 종료",
+   "result": "장부 부분 기록, 모자 간 침묵 합의",
+   "source_text": "정호는 전화를 끊었다. 순덕은 장부를 보고 있었다. 순덕은 그 장부를 이미 열 번은 봤을 것이었다. \"박 사장이 누고.\" \"대구 사람이에요.\" \"돈 빌린 사람이가.\" 정호는 대답하지 않았다. 순덕은 더 묻지 않았다. 그날 저녁 장부를 쓰면서 순덕은 어른 스물아홉, 아이 셋을 적고 그 밑에 아무것도 적지 않았다. 대구 박 사장이라는 이름이 이 집에 들어왔다는 것을 순덕은 알았고, 얼마짜리 이름인지는 몰랐다. 순덕은 모르는 채로 두기로 했다. 아들이 말하기 전까지는.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_8",
+   "scene_id": "scene_2_4",
+   "order": 8,
+   "title": "토요일 복순 할매 방문 및 소문 전파",
+   "summary": "복순 할매가 여탕에 와 정호 귀향과 목욕탕 매각 소문을 퍼뜨린다. 순덕이 제지한다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_021",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_010",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [
+    "CHAR_009",
+    "CHAR_005"
+   ],
+   "main_actor_character_id": "CHAR_010",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_010",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "토요일은 손님이 많은 날이었다. 여탕에 복순 할매가 왔다."
+    },
+    {
+     "entity": "CHAR_010",
+     "field": "knows",
+     "from": "unknown",
+     "to": "정호 귀향 사실, 매각 소문(최영감 사천 매수설, 강씨 목격담)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "\"아들이 내려왔다 카더니 참말이네. 대구서 뭐 하다 왔노.\" ... \"쌀집 강씨가 그카더라. 아들이 내려온 거는 목욕탕 팔라꼬 그런 거라꼬. 최 영감이 사천 준다 캤다며.\""
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_009",
+     "field": "knows",
+     "assumes": "정호 귀향 및 매각 소문 전파자",
+     "source_text": "쌀집 강씨가 그카더라. 아들이 내려온 거는 목욕탕 팔라꼬 그런 거라꼬."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "매수 의향(사천) 보유",
+     "source_text": "최 영감이 사천 준다 캤다며."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "동네에 매각 소문 퍼져 있음",
+     "source_text": "정호는 수건을 개는 손을 멈추지 못했다. 멈추면 어머니 얼굴을 봐야 했다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "동네에 금호탕 매각 소문(최영감 사천 매수설) 퍼져 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "쌀집 강씨가 그카더라. 아들이 내려온 거는 목욕탕 팔라꼬 그런 거라꼬. 최 영감이 사천 준다 캤다며."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "복순 할매·강씨·최영감발 매각 소문 인지",
+     "via": "direct",
+     "retained": true,
+     "source_text": "할매가 한 말은 하지 않았다. 정미가 안다는 것을 정호는 알았다. 할매 등을 밀면서 못 들었을 리가 없었다."
+    }
+   ],
+   "cause": "복순 할매 목욕 방문",
+   "result": "매각 소문 공개적 확산, 순덕 제지",
+   "source_text": "토요일은 손님이 많은 날이었다. 여탕에 복순 할매가 왔다. 일흔이 넘은 할매인데 목소리가 탕 밖까지 울렸다. 할매는 카운터에서 정호를 보고 순덕을 보고 다시 정호를 봤다. \"아들이 내려왔다 카더니 참말이네. 대구서 뭐 하다 왔노.\" \"운수회사에 있었습니다.\" \"있었다? 지금은.\" \"쉬고 있습니다.\" \"쌀집 강씨가 그카더라. 아들이 내려온 거는 목욕탕 팔라꼬 그런 거라꼬. 최 영감이 사천 준다 캤다며.\" 순덕이 서랍을 탁 닫았다. \"할매. 들어가서 씻으소.\" \"내가 뭐 틀린 말 했나.\" \"들어가소.\" 복순 할매는 들어갔다. 여탕 안에서 할매 목소리가 계속 났다. 정호는 수건을 개는 손을 멈추지 못했다. 멈추면 어머니 얼굴을 봐야 했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_9",
+   "scene_id": "scene_2_4",
+   "order": 9,
+   "title": "정미 방문 및 식사 중 소문 확인",
+   "summary": "정미가 김치찌개 식사하러 와 복순 할매 세신 일을 말하며 매각 소문을 알고 있음을 드러낸다.",
+   "location_id": "LOC_003",
+   "time_id": "TIME_021",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "LOC_013",
+     "to": "LOC_003",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "점심때 정미가 왔다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "from": "unknown",
+     "to": "복순 할매 세신 두 건 수행, 매각 소문 청취",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "오늘은 김치찌개였다. 골방에서 셋이 먹는 동안 정미는 여탕 세신 두 건을 하고 왔다고 했고, 복순 할매 등도 밀었다고 했다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "할매 발언 내용(매각 소문) 청취함",
+     "source_text": "할매가 한 말은 하지 않았다. 정미가 안다는 것을 정호는 알았다. 할매 등을 밀면서 못 들었을 리가 없었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_8",
+     "assumes": "정미가 복순 할매 세신 중 할매 발언을 직접 들었음",
+     "source_text": "정미가 여탕 세신 두 건을 하고 왔다고 했고, 복순 할매 등도 밀었다고 했다. 할매가 한 말은 하지 않았다. 정미가 안다는 것을 정호는 알았다. 할매 등을 밀면서 못 들었을 리가 없었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "정미가 매각 소문을 알고 있음",
+     "via": "inference",
+     "retained": true,
+     "source_text": "정미가 안다는 것을 정호는 알았다. 할매 등을 밀면서 못 들었을 리가 없었다."
+    }
+   ],
+   "cause": "정미의 점심 방문",
+   "result": "자매 간 소문 인지 공유",
+   "source_text": "점심때 정미가 왔다. 오늘은 김치찌개였다. 골방에서 셋이 먹는 동안 정미는 여탕 세신 두 건을 하고 왔다고 했고, 복순 할매 등도 밀었다고 했다. 할매가 한 말은 하지 않았다. 정미가 안다는 것을 정호는 알았다. 할매 등을 밀면서 못 들었을 리가 없었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_10",
+   "scene_id": "scene_2_5",
+   "order": 10,
+   "title": "정미와 골목 대화 - 매각 소문과 박 사장 메모 확인",
+   "summary": "정미가 정호에게 동네 소문과 박 사장 메모를 전하며 매각 기정사실화 경고한다.",
+   "location_id": "NEW:금호탕_골목",
+   "time_id": "TIME_021",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [
+    "OBJ_013"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "동네에서 매각 기정사실화 진행 중(최영감·강씨·할매 연쇄), 박 사장 메모 존재",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "동네는 그렇게 안다. 최영감이 삼층에서 오빠 보고, 강씨가 남탕에서 오빠 보고, 할매가 그 둘 얘기 들으면 그게 사실이 되는 데 하루면 된다. ... 엄마 글씨로 '대구 박'이라고 써 놨더라."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "from": "unknown",
+     "to": "카운터 메모지 '대구 박' 필적 확인",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "내가 카운터 전화기 옆에 메모지 봤다. 엄마 글씨로 '대구 박'이라고 써 놨더라."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "어머니(순덕)가 박 사장 전화 메모를 남김",
+     "source_text": "엄마는 그런 말 안 해. 내가 카운터 전화기 옆에 메모지 봤다. 엄마 글씨로 '대구 박'이라고 써 놨더라."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "not_knows: 어머니가 메모 남긴 사실",
+     "source_text": "\"엄마가 그러더나.\" \"엄마는 그런 말 안 해. 내가 카운터 전화기 옆에 메모지 봤다. 엄마 글씨로 '대구 박'이라고 써 놨더라.\""
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_7",
+     "assumes": "순덕이 박 사장 전화 후 메모를 남겼음 (EVENT_2_7 장부 기록 시점과 연관)",
+     "source_text": "내가 카운터 전화기 옆에 메모지 봤다. 엄마 글씨로 '대구 박'이라고 써 놨더라."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "동네에서 매각이 기정사실화되는 메커니즘(최영감·강씨·할매 연쇄) 인지, 어머니가 박 사장 메모 남김",
+     "via": "told",
+     "retained": true,
+     "source_text": "동네는 그렇게 안다. 최영감이 삼층에서 오빠 보고, 강씨가 남탕에서 오빠 보고, 할매가 그 둘 얘기 들으면 그게 사실이 되는 데 하루면 된다. ... 엄마 글씨로 '대구 박'이라고 써 놨더라."
+    }
+   ],
+   "cause": "정미의 경고 및 정보 전달",
+   "result": "정호 상황 심각성 인지, 어머니 메모 사실 확인",
+   "source_text": "정미가 가게로 돌아갈 때 정호가 따라 나갔다. 골목은 좁아서 둘이 나란히 서면 벽에 어깨가 닿았다. \"할매가 그러더라. 오빠가 팔러 내려왔다고.\" \"내가 그런 말 한 적 없다.\" \"동네는 그렇게 안다. 최영감이 삼층에서 오빠 보고, 강씨가 남탕에서 오빠 보고, 할매가 그 둘 얘기 들으면 그게 사실이 되는 데 하루면 된다. 오빠도 알잖아, 여기가 어떤 데인지.\" \"정미야.\" \"박 사장이 전화했다며.\" \"엄마가 그러더나.\" \"엄마는 그런 말 안 해. 내가 카운터 전화기 옆에 메모지 봤다. 엄마 글씨로 '대구 박'이라고 써 놨더라.\" 정호는 벽에 기댔다. 정미는 가게 문을 열다가 돌아섰다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_11",
+   "scene_id": "scene_2_1",
+   "order": 1,
+   "title": "정미의 계돈 제안과 정호의 거절",
+   "summary": "정미가 계돈 150만 원을 이자 막는 데 쓰라며 제안했으나 정호가 거절하고, 정미는 엄마에게 말하겠다며 가게로 들어간다.",
+   "location_id": "LOC_013",
+   "time_id": "TIME_009",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "계돈 150만 원 (십이월 말에 탐)",
+     "source_text": "내 계 있는 거 알지. 십이월 말에 타. 백오십."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "정호가 금전적으로 어렵다는 사실",
+     "source_text": "그거 이자라도 막는 데 쓰라면 쓸게."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "정미가 계를 타고 있으며 금액이 150만 원임",
+     "source_text": "오빠. 내 계 있는 거 알지. 십이월 말에 타. 백오십."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "정미가 계를 타고 있으며 십이월 말에 150만 원을 탄다",
+     "via": "told",
+     "retained": true,
+     "source_text": "오빠. 내 계 있는 거 알지. 십이월 말에 타. 백오십."
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "정호가 계돈을 받지 않겠다는 의지",
+     "via": "direct",
+     "retained": true,
+     "source_text": "니 돈은 안 받는다."
+    }
+   ],
+   "cause": "정미가 오빠의 이자 부담을 덜어주려 계돈 제안",
+   "result": "정호 거절, 정미 엄마에게 알리겠다며 가게로 들어감",
+   "source_text": "\"오빠. 내 계 있는 거 알지. 십이월 말에 타. 백오십. 그거 이자라도 막는 데 쓰라면 쓸게. 근데 그거 하면 나는 오빠 편이 되는 거고, 엄마한테는 그것도 말해야 돼.\" \"니 돈은 안 받는다.\" \"그러면 엄마한테 말하든가.\" 정미는 가게로 들어갔다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_12",
+   "scene_id": "scene_2_2",
+   "order": 2,
+   "title": "토요일 저녁 보일러 고장과 문식의 수리",
+   "summary": "여탕에서 물이 식는 소리가 나 순덕이 장씨를 불렀고, 문식이 20분 만에 순환관 문제로 수리 완료함.",
+   "location_id": "LOC_007",
+   "time_id": "TIME_022",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_004",
+    "CHAR_002",
+    "CHAR_010"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [
+    "OBJ_004",
+    "OBJ_012"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_004",
+     "field": "body_status",
+     "from": "고장남 (순환 안 됨)",
+     "to": "수리됨 (다시 돌음)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "보일러가 다시 돌고 문식이 올라왔다. \"됐어요.\""
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "손을 덴 상처가 있어 보일러실을 피함",
+     "source_text": "어머니가 지하로 한 발도 내려가지 않는 것을 봤다. 정호가 열여덟이던 해부터 그랬다. 아버지가 죽고 어머니가 한 번 손을 덴 뒤로"
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "ability",
+     "assumes": "보일러 수리 기술 보유 (점화/순환 구분 수리 가능)",
+     "source_text": "\"점화는 불이 안 붙는 거고, 순환은 물이 안 도는 거요. 이번엔 물이오. 관이 낡아서.\""
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "location",
+     "assumes": "LOC_008 (쪽방, 보일러실 옆)",
+     "source_text": "문식은 저 쪽방에서 십오 년을 살았다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "어머니가 보일러실을 피하는 이유(손 덴 것)와 문식이 15년간 쪽방 거주 중임을 앎",
+     "source_text": "정호는 어머니가 지하로 한 발도 내려가지 않는 것을 봤다. ... 문식은 저 쪽방에서 십오 년을 살았다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "이번 보일러 고장은 점화가 아닌 순환관 노후 탓",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"점화는 불이 안 붙는 거고, 순환은 물이 안 도는 거요. 이번엔 물이오. 관이 낡아서.\""
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "보일러 수리 완료됨",
+     "via": "direct",
+     "retained": true,
+     "source_text": "\"됐어요.\""
+    }
+   ],
+   "cause": "순환관 노후로 물이 돌지 않아 여탕 물이 식음",
+   "result": "문식이 20분 만에 수리 완료, 순덕은 '오늘은'이라는 말에 의미심장해함",
+   "source_text": "토요일 저녁 일곱 시에 보일러가 또 죽었다. ... \"장씨.\" 문식은 이미 보일러실에 있었다. ... 이십 분이 걸렸다. 보일러가 다시 돌고 문식이 올라왔다. ... \"점화는 불이 안 붙는 거고, 순환은 물이 안 도는 거요. 이번엔 물이오. 관이 낡아서.\" \"고쳐지나.\" \"오늘은 고쳤어요.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_13",
+   "scene_id": "scene_2_3",
+   "order": 3,
+   "title": "일요일 오후 공중전화 통화와 정미 가게 목격",
+   "summary": "정호가 광장 공중전화로 아내 선희와 통화하며 근황을 나누고, 돌아오는 길에 정미 가게 앞을 지나며 손짓만 주고받음.",
+   "location_id": "LOC_014",
+   "time_id": "TIME_023",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_007"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "assumes": "LOC_014 (광장 공중전화)",
+     "source_text": "일요일 오후에 정호는 광장 공중전화로 갔다."
+    },
+    {
+     "entity": "CHAR_007",
+     "field": "location",
+     "assumes": "비산동 셋집",
+     "source_text": "동전을 넣고 비산동 셋집 번호를 돌렸다. 선희가 받았다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "assumes": "LOC_013 (정미 세신·이발 가게 안)",
+     "source_text": "유리문 안에서 정미가 손님 머리를 깎고 있었다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "assumes": "LOC_012 (역전 상가 삼층 창가)",
+     "source_text": "역전 상가 삼층 창에 불이 켜져 있었다. 최영감이 거기서 광장을 내려다보고 있는지는 알 수 없었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "은지가 학교에서 그림을 그렸는데 아빠를 그렸다",
+     "via": "told",
+     "retained": true,
+     "source_text": "은지가 학교에서 그림을 그렸는데 아빠를 그렸다고 했다."
+    },
+    {
+     "character_id": "CHAR_007",
+     "info": "어머니 무릎 상태가 좀 안 좋음",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"괜찮다. 무릎이 좀.\""
+    }
+   ],
+   "cause": "어머니 옆에서 아내와 통화하기 어려워 공중전화 이용",
+   "result": "짧은 통화 후 동전 소진으로 끊김, 정미 가게 앞 목격 후 손짓만 주고받음",
+   "source_text": "일요일 오후에 정호는 광장 공중전화로 갔다. ... \"어머님은.\" \"괜찮다. 무릎이 좀.\" ... 은지가 학교에서 그림을 그렸는데 아빠를 그렸다고 했다. ... 돌아오는 길에 그는 정미네 가게 앞을 지났다. 유리문 안에서 정미가 손님 머리를 깎고 있었다. 정미는 오빠를 보고 가위를 든 손을 잠깐 들었다. 정호도 손을 들었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_14",
+   "scene_id": "scene_2_4",
+   "order": 4,
+   "title": "저녁 연탄 나르기와 문식의 첫 감사 인사",
+   "summary": "정호가 연탄을 날라 보일러실 문 앞에 두고, 문식이 연탄을 받아 안으로 들어가 수리하며 정호에게 처음 고맙다고 말함.",
+   "location_id": "LOC_007",
+   "time_id": "TIME_048",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_003",
+    "OBJ_015"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_003",
+     "field": "location",
+     "from": "LOC_009 (뒷문 옆)",
+     "to": "LOC_007 (보일러실 문 앞)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "연탄이 뒷문 옆에 쌓여 있는 것을 봤고, 그것을 지하로 나르는 일이라면 자기도 할 수 있겠다고 생각했다. 두 장을 집게로 집어 들고 계단을 내려갔다. ... 정호는 연탄을 문 앞에 놓았다. 문식은 그것을 들고 안으로 들어갔다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "body_status",
+     "assumes": "보일러실 안에서 순환관 수리 중 (쭈그리고 앉아 관 짚음)",
+     "source_text": "문식은 그 앞에 쭈그리고 앉아 손바닥으로 관을 짚었다. 마치 사람 이마를 짚듯이."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "정호가 연탄을 날라다 준 의도(도움)를 이해함",
+     "source_text": "문 안에서 목소리가 났다. \"고마워요.\""
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "문식이 15년간 자신에게 거의 말을 걸지 않았음",
+     "source_text": "정호는 그 말을 십오 년 만에 처음 들은 것 같았다. ... 문식이 온 뒤로 그가 자기에게 무슨 말을 했는지 정호는 거의 기억하지 못했다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "문식이 연탄 나르는 도움을 받고 고맙다고 함 (15년 만의 첫 대화)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "문 안에서 목소리가 났다. \"고마워요.\" 정호는 그 말을 십오 년 만에 처음 들은 것 같았다."
+    }
+   ],
+   "cause": "정호가 연탄 나르는 일 도우려 자원함",
+   "result": "문식이 연탄 받아 수리 계속, 처음으로 정호에게 감사 표현",
+   "source_text": "저녁에 정호는 지하로 내려갔다. 연탄이 뒷문 옆에 쌓여 있는 것을 봤고, 그것을 지하로 나르는 일이라면 자기도 할 수 있겠다고 생각했다. ... \"제가 나를게요.\" ... \"보일러실은 안 들어와요.\" ... 정호는 연탄을 문 앞에 놓았다. 문식은 그것을 들고 안으로 들어갔다. ... 문 안에서 목소리가 났다. \"고마워요.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_15",
+   "scene_id": "scene_2_5",
+   "order": 5,
+   "title": "월요일 장부 확인과 최영감의 경력 확인",
+   "summary": "정호가 아버지 장부에서 1967년 12월 중순 글씨가 아버지에서 어머니로 바뀐 것 확인, 새벽 최영감이 정호에게 경리 경력 확인함.",
+   "location_id": "LOC_011",
+   "time_id": "TIME_024",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [
+    "CHAR_001"
+   ],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_002"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "아버지 장부 1967년 12월 중순 필적 변경 사실(아버지→어머니, 빈 날 3일)",
+     "source_text": "이번에 제일 위에 있는 것을 폈다. 1967년 장부였다. 십이월 중순에서 글씨가 바뀌었다. 아버지 글씨에서 어머니 글씨로. 그 사이에 빈 날이 사흘 있었다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "정호가 과거 경리 일을 했었음",
+     "source_text": "\"정호. 니 경리였다며.\""
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "1967년 12월 중순 아버지 사망 전후로 장부 필적이 어머니로 바뀌고 3일간 공백 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "십이월 중순에서 글씨가 바뀌었다. 아버지 글씨에서 어머니 글씨로. 그 사이에 빈 날이 사흘 있었다."
+    },
+    {
+     "character_id": "CHAR_005",
+     "info": "정호가 과거 경리 경력 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "\"정호. 니 경리였다며.\""
+    }
+   ],
+   "cause": "정호가 물건방에서 장부 확인 중, 최영감이 남탕에서 나와 말 걸음",
+   "result": "최영감이 정호의 과거 경력 확인",
+   "source_text": "월요일은 십일월 삼십일이었다. ... 정호는 물건방에서 비누를 내려오다가 아버지 장부 뭉치를 다시 봤다. 이번에는 제일 위에 있는 것을 폈다. 1967년 장부였다. 십이월 중순에서 글씨가 바뀌었다. 아버지 글씨에서 어머니 글씨로. 그 사이에 빈 날이 사흘 있었다. ... 그날 새벽 최영감은 남탕에서 나와 카운터 앞에 서더니 순덕이 아니라 정호에게 말을 걸었다. \"정호. 니 경리였다며.\" \"예.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_16",
+   "scene_id": "scene_2_1",
+   "order": 1,
+   "title": "최영감의 인수 제안과 거절",
+   "summary": "최영감이 금호탕을 4천만 원에 인수하려 했으나 순덕이 거절하고, 정호에게 장부 관리를 맡기라 함",
+   "location_id": "LOC_002",
+   "time_id": "NEW:최영감_방문_시점",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "최영감이 4천만 원에 인수 제안함",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "내가 사천이라 캤는데, 그 돈이면 니 어무이 평생 목욕탕 굴려서 못 번다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_002 (장부)",
+     "source_text": "어무이 장부 좀 봐 드려라."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "숫자 계산 가능 (경리 경력)",
+     "source_text": "니는 계산하는 사람 아이가."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "금호탕 월 수익 규모",
+     "source_text": "그 돈이면 니 어무이 평생 목욕탕 굴려서 못 번다. 계산해 봐라."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "최영감이 금호탕을 4천만 원에 인수 제안함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "내가 사천이라 캤는데, 그 돈이면 니 어무이 평생 목욕탕 굴려서 못 번다."
+    }
+   ],
+   "cause": "최영감이 목욕탕 인수 의향을 밝힘",
+   "result": "순덕이 거절, 정호에게 장부 관리 암시",
+   "source_text": "숫자 볼 줄 알겠네. 어무이 장부 좀 봐 드려라. 이 목욕탕이 한 달에 얼마 남는지 아들이 알아야 안 되겠나.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_17",
+   "scene_id": "scene_2_2",
+   "order": 2,
+   "title": "상수도사업소의 급수관 교체 통보",
+   "summary": "이 주사가 방문해 노후 급수관 교체 통보, 인입관 교체 비용 150-200만 원, 기한 1988년 1월 31일까지",
+   "location_id": "LOC_002",
+   "time_id": "TIME_006",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_011"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_011",
+   "objects": [
+    "OBJ_018"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_018",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "순덕은 서류를 받았다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "노후 급수관 교체 필요, 인입관 교체 비용 150-200만 원, 기한 1988년 1월 31일",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 서류를 어머니 손에서 받아 읽었다. 노후 급수관 교체 안내. 인입관 수용가 부담. 기한 1988년 1월 31일."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_011",
+     "field": "possesses",
+     "assumes": "NEW:급수관교체통보서 (서류철)",
+     "source_text": "손에는 서류철이 있었고"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "금호탕 대표자 본인임",
+     "source_text": "금호탕 대표자 배순덕 씨 되시죠."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "공문서 해독 능력 (경리 12년)",
+     "source_text": "경리를 십이 년 했으니 이런 서류는 눈에 익었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "노후 급수관 교체 필요, 인입관 교체 비용 150-200만 원, 기한 1988년 1월 31일",
+     "via": "told",
+     "retained": true,
+     "source_text": "노후 급수관 교체 통보입니다. 견적은 업자한테 받으셔야 하고요. 저희가 대략 보기로는 이 정도 규모면 백오십에서 이백 사이. 기한은 일월 말까지입니다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "노후 급수관 교체 필요, 인입관 교체 비용 150-200만 원, 기한 1988년 1월 31일",
+     "via": "direct",
+     "retained": true,
+     "source_text": "정호는 서류를 어머니 손에서 받아 읽었다. 노후 급수관 교체 안내. 인입관 수용가 부담. 기한 1988년 1월 31일."
+    }
+   ],
+   "cause": "상수도사업소의 노후 급수관 교체 계획에 따른 통보",
+   "result": "순덕과 정호가 교체 비용과 기한 인지",
+   "source_text": "금호탕 대표자 배순덕 씨 되시죠. 노후 급수관 교체 통보입니다. 이 골목 급수관이 육이년에 깐 겁니다. 읍 전체가 내년부터 순차 교체인데 이 골목이 첫 순서입니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_18",
+   "scene_id": "scene_2_2",
+   "order": 3,
+   "title": "정호의 수익 계산과 자금 부족 인식",
+   "summary": "정호가 일일 수익과 연료비 등을 계산해 200만 원이 카운터에서 나올 수 없는 돈임을 파악",
+   "location_id": "LOC_002",
+   "time_id": "TIME_006",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_007"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "일일 수익 약 2만 원, 연료비 등 제하면 200만 원 마련 불가능",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "하루 이만 원 남짓. 연탄값과 경유값, 수도세, 전기세를 빼면 남는 것은 뻔했다. 이백만 원은 이 카운터에서 나올 돈이 아니었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_007 (통장)",
+     "source_text": "장부가 들어 있는 서랍. 요금통이 아니라 그 옆 서랍이었다. 장부가 들어 있는 서랍."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "일일 손님 수 (어른 30명, 아이 3-4명), 일일 수익 약 2만 원",
+     "source_text": "이 목욕탕이 하루에 어른 서른 명, 아이 서너 명을 받는다는 것은 알았다. 하루 이만 원 남짓."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_17",
+     "assumes": "같은 날 오전 통보받은 교체 비용(150-200만 원)과 일일 수익 계산을 연계해 자금 부족을 판단함",
+     "source_text": "백오십에서 이백이면. / 하루 이만 원 남짓. 연탄값과 경유값, 수도세, 전기세를 빼면 남는 것은 뻔했다. 이백만 원은 이 카운터에서 나올 돈이 아니었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "금호탕 일일 순수익으로는 200만 원 마련 불가능",
+     "via": "inference",
+     "retained": true,
+     "source_text": "하루 이만 원 남짓. 연탄값과 경유값, 수도세, 전기세를 빼면 남는 것은 뻔했다. 이백만 원은 이 카운터에서 나올 돈이 아니었다."
+    }
+   ],
+   "cause": "급수관 교체 통보서 수령 후 현실적 자금 상황 계산",
+   "result": "자금 조달 불가능 인식",
+   "source_text": "엄마. / 뭐. / 백오십에서 이백이면. / 안다. / 순덕은 서류를 카운터 서랍에 넣었다. 요금통이 아니라 그 옆 서랍이었다. 장부가 들어 있는 서랍.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_19",
+   "scene_id": "scene_2_3",
+   "order": 4,
+   "title": "저녁 셔터 내림과 순덕의 서류 재확인",
+   "summary": "저녁 8시 셔터를 내린 후 순덕이 골방에서 돋보기로 교체 통보서를 다시 봄, 문식이 목격 후 아무 말 없이 내려감",
+   "location_id": "LOC_003",
+   "time_id": "TIME_018",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_005",
+    "OBJ_018"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "from": "정상",
+     "to": "돋보기 착용 (노안)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "어머니는 돋보기를 쓰고 있었다. 돋보기 쓰는 것을 정호는 처음 봤다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_018",
+     "source_text": "순덕은 장부 대신 그 서류를 다시 꺼내 봤다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "순덕이 서류를 보며 고민 중임",
+     "source_text": "카운터에 놓아둔 저녁상을 들고 내려가려다가 그는 서류를 보는 순덕을 봤다. 잠깐 서 있었다. 그러고는 상을 들고 내려갔다. 아무 말도 하지 않았다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "assumes": "LOC_003 (계단 위, 골방 문 앞)",
+     "source_text": "골방 문이 열려 있어서 정호는 계단 위에서 어머니가 서류를 보는 것을 봤다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "어머니가 돋보기를 쓰고 서류를 자세히 살핌",
+     "via": "direct",
+     "retained": true,
+     "source_text": "어머니는 돋보기를 쓰고 있었다. 돋보기 쓰는 것을 정호는 처음 봤다."
+    }
+   ],
+   "cause": "급수관 교체 비용 고민",
+   "result": "순덕의 노안 확인, 문식의 무반응",
+   "source_text": "그날 저녁 보일러는 죽지 않았다. 대신 여덟 시에 셔터를 내리고 나서 순덕은 장부 대신 그 서류를 다시 꺼내 봤다. 골방 문이 열려 있어서 정호는 계단 위에서 어머니가 서류를 보는 것을 봤다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_20",
+   "scene_id": "scene_2_4",
+   "order": 5,
+   "title": "순덕의 금반지 확인과 자금 마련 포기",
+   "summary": "순덕이 이불장 아래 반짇고리에서 남편 유품 금반지 확인, 200만 원 마련에 부족함을 알고 반짇고리 도로 넣음",
+   "location_id": "LOC_003",
+   "time_id": "TIME_018",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_010",
+    "OBJ_019"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "금반지 매각가로도 200만 원 부족함",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "이백만 원은 반지로 될 돈이 아니었다. 그건 알았다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_010 (금반지, 20년 보관)",
+     "source_text": "반짇고리 바닥에 남편이 남긴 금반지가 있었다. 만수가 죽던 해 겨울에 빼서 넣어 두고 이십 년을 그 자리에 뒀다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "금반지 시세 미확인 (알아보면 팔 것 같아서)",
+     "source_text": "팔면 얼마나 될지 순덕은 한 번도 알아본 적이 없었다. 알아보면 팔 것 같아서였다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "assumes": "계단 위 (어머니 관찰 중)",
+     "source_text": "순덕은 반지를 꺼내지 않고 반짇고리 뚜껑만 닫았다. ... 정호는 계단 위에서 그것을 보고 아무 말 없이 내려왔다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "어머니가 금반지 보유 중이나 매각 의사 없음, 반지로도 200만 원 부족",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이백만 원은 반지로 될 돈이 아니었다. 그건 알았다. 그래도 반짇고리를 다시 이불장 밑에 밀어 넣는 손이 평소보다 느렸다."
+    }
+   ],
+   "cause": "급수관 교체 자금 마련 방안 모색",
+   "result": "금반지 매각 불가 판단, 자금 조달 난항 지속",
+   "source_text": "순덕은 서류를 서랍에 넣고 골방 문을 닫았다. 텔레비전을 켜지 않았다. 이불장 앞에 앉아 밑에서 반짇고리를 꺼냈다. 반짇고리 바닥에 남편이 남긴 금반지가 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_21",
+   "scene_id": "scene_2_5",
+   "order": 6,
+   "title": "정호의 물건방 비누 상자 점검",
+   "summary": "정호가 이층 물건방에서 비누 상자 세어봄, 순덕이 계단 위에서 목격 후 말 없이 내려옴",
+   "location_id": "LOC_011",
+   "time_id": "TIME_018",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [
+    "CHAR_001"
+   ],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_020"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "NEW:비누상자 (점검 중)",
+     "source_text": "정호는 물건방에서 비누 상자를 세고 있었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "정호가 물건방에서 비누 상자 세고 있음",
+     "source_text": "순덕은 계단 위에서 그것을 보고 아무 말 없이 내려왔다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "정호가 물건방에서 비누 상자 점검 중",
+     "via": "direct",
+     "retained": true,
+     "source_text": "순덕은 계단 위에서 그것을 보고 아무 말 없이 내려왔다."
+    }
+   ],
+   "cause": "목욕탕 자산 파악",
+   "result": "모자간 무언의 긴장감",
+   "source_text": "무릎이 아팠다. 오늘은 계단을 세 번 올랐다. 이층 물건방에 수건 가지러 두 번, 아들이 뭘 하나 보러 한 번. 정호는 물건방에서 비누 상자를 세고 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_22",
+   "scene_id": "scene_2_6",
+   "order": 7,
+   "title": "정호의 다락방에서 상황 종합 사고",
+   "summary": "정호가 다락방 창문 열고 굴뚝 연기 보며 4천만 원, 200만 원, 15일 세 숫자 생각, 정미가 통장 볼 거라 추측",
+   "location_id": "LOC_004",
+   "time_id": "TIME_018",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "정미가 지금 통장 확인 중일 것 (추측)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "정호는 정미가 지금 뒷방에서 계 통장을 꺼내 보고 있을 거라고 생각했다. 그 생각은 맞았지만 정호가 확인할 방법은 없었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "최영감 제안 4천만 원, 교체 비용 200만 원, 15일(십오일) 세 가지 핵심 숫자 인지",
+     "source_text": "정호는 사천만 원을 생각했다. 그리고 이백만 원을 생각했다. 그리고 십오일을 생각했다. 셋이 머릿속에서 자리를 바꿔 가며 돌았다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "body_status",
+     "assumes": "보일러 가동 중 (굴뚝 연기)",
+     "source_text": "굴뚝에서 연기가 올라가고 있었다. 저 연기는 문식이 새벽 세 시 반에 다시 떼기 위해 밤새 죽이지 않는 불이었다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "OBJ_007 (통장, 정미가 확인 중)",
+     "source_text": "정호는 정미가 지금 뒷방에서 계 통장을 꺼내 보고 있을 거라고 생각했다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_16",
+     "assumes": "최영감의 4천만 원 제안이 여전히 유효한 선택지일 수 있음",
+     "source_text": "정호는 사천만 원을 생각했다. 그리고 이백만 원을 생각했다. 그리고 십오일을 생각했다."
+    },
+    {
+     "with_event_id": "EVENT_2_17",
+     "assumes": "급수관 교체 기한(1월 31일)까지 200만 원 마련 필요",
+     "source_text": "정호는 사천만 원을 생각했다. 그리고 이백만 원을 생각했다. 그리고 십오일을 생각했다."
+    },
+    {
+     "with_event_id": "EVENT_2_20",
+     "assumes": "금반지 매각으로도 200만 원 부족함이 확인됨",
+     "source_text": "정호는 사천만 원을 생각했다. 그리고 이백만 원을 생각했다. 그리고 십오일을 생각했다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "4천만 원(매각), 200만 원(수리비), 15일(기한?) 세 숫자가 연관되어 고민 중",
+     "via": "inference",
+     "retained": true,
+     "source_text": "정호는 사천만 원을 생각했다. 그리고 이백만 원을 생각했다. 그리고 십오일을 생각했다. 셋이 머릿속에서 자리를 바꿔 가며 돌았다. 어느 것도 어머니에게 말할 수 있는 형태가 되지 않았다."
+    }
+   ],
+   "cause": "자금 조달 방안 종합적 사고",
+   "result": "어머니에게 말할 수 없는 딜레마 지속, 정미의 동향 추측",
+   "source_text": "정호는 다락방에 올라가 창을 열었다. 굴뚝에서 연기가 올라가고 있었다. 저 연기는 문식이 새벽 세 시 반에 다시 떼기 위해 밤새 죽이지 않는 불이었다. 정호는 사천만 원을 생각했다. 그리고 이백만 원을 생각했다. 그리고 십오일을 생각했다.",
+   "certainty": "explicit"
+  }
+ ]
+}

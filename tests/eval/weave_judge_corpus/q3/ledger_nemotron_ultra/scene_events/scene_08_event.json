@@ -1,0 +1,106 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "분전반 점검 및 유도 전압 확인",
+   "summary": "가온이 분전반 차단기 뒤 단자를 짚어 유도 전압이 걸린 것을 발견하고, 주 모듈 쪽 중성선이 접지와 붙어 있어 발생한 것임을 설명한다. 카림이 시험봉으로 확인한다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:분전반_점검_시점",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_005",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "from": "unknown",
+     "to": "주 모듈 중성선이 접지와 붙어 있어 유도 전압 발생",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "주 모듈 쪽 중성선이 접지랑 붙어 있으면 이렇게 돼요. 유도 전압이에요."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "분전반 인입선 차단 상태에서 계량기 앞 단자에 유도 전압 존재",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림은 시험봉을 대 보았다. 가온이 말한 대로였다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "ability",
+     "assumes": "전기 회로 진단 능력 (유도 전압 원인 파악 가능)",
+     "source_text": "주 모듈 쪽 중성선이 접지랑 붙어 있으면 이렇게 돼요. 유도 전압이에요."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "도현이 3월에 전기 관련 그림 한 장 그려준 것 외 추가 교육 없음",
+     "source_text": "도현은 3월에 그림 한 장 그려 준 게 전부고 그 뒤로 전기 얘기는 한 적 없어요."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_시험봉 (시험봉을 소지함)",
+     "source_text": "카림은 시험봉을 대 보았다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "분전반 계량기 앞 단자에 유도 전압이 걸려 있음 (주 모듈 중성선-접지 연결 때문)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "카림은 시험봉을 대 보았다. 가온이 말한 대로였다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "가온이 도현으로부터 3월에 그림 한 장 외 전기 교육을 받지 않음",
+     "via": "told",
+     "retained": true,
+     "source_text": "도현은 3월에 그림 한 장 그려 준 게 전부고 그 뒤로 전기 얘기는 한 적 없어요."
+    }
+   ],
+   "cause": "주 모듈 쪽 중성선이 접지와 연결되어 유도 전압 발생",
+   "result": "가온이 유도 전압 존재를 진단하고 카림이 시험봉으로 확인함",
+   "source_text": "분전반 앞에서 가온이 먼저 손을 뻗었다. \"여기예요.\" 가온은 차단기 뒤 단자를 짚었다. \"인입선을 뽑았으니까 이쪽은 죽었는데, 계량기 앞 단자에 아직 전압이 걸려요. 주 모듈 쪽 중성선이 접지랑 붙어 있으면 이렇게 돼요. 유도 전압이에요.\" \"누가 알려 줬어요.\" \"아무도요. 도현은 3월에 그림 한 장 그려 준 게 전부고 그 뒤로 전기 얘기는 한 적 없어요.\" 카림은 시험봉을 대 보았다. 가온이 말한 대로였다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:53:01Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 109.35
+ }
+}

@@ -1,0 +1,228 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 2,
+  "batch_id": "T2-R2-A",
+  "scene_id": "scene_15",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_15.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r3)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:41:58Z",
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:로봇_신체_촉각_부재로_인한_악력_조절_불가",
+      "content": "현실에서 키보드로 조작하는 미래 세계의 신체는 촉각 되먹임이 없어 쥐는 힘을 가늠할 수 없다.",
+      "description": "조작자의 손끝에는 가벼운 플라스틱 키보드만 닿기 때문에, 조작 대상 신체가 실제로 얼마의 악력을 내는지 알 수 없고 결과적으로 물건이 파손된다.",
+      "source_text": "손끝에 닿는 건 여전히 가벼운 플라스틱 키보드뿐이라 쥐는 힘이 어느 정도인지 도무지 가늠이 안 된다.",
+      "certainty": "inferred"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "현실에서 키보드로 미래 세계의 신체를 조작하는 화자. 프리든 4번 방을 쓴다.",
+      "traits": [
+        {
+          "trait": "혼잣말로 감탄사 섞인 구어체를 쓴다",
+          "trait_type": "speech",
+          "source_text": "\"...또야?! 아니 살살 잡았다고, 진짜로!\"",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "자신의 실수를 감추려 한다 (파손 흔적을 태연히 정리해 둠)",
+          "trait_type": "personality",
+          "source_text": "떨어진 손잡이를 책상 위에 얌전히 올려두었다. 증거인멸이다.",
+          "certainty": "inferred"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S15_1",
+      "source_text": "4번 방으로 돌아와 문을 여는데,",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_007",
+      "name": "알라인 쉭살 (Allein Schicksal)",
+      "aliases": ["알라인"],
+      "entity_type": "person",
+      "description": "화자가 물건을 부순 일을 두고 놀릴 것이라고 예상되는 인물. 이 장면에는 등장하지 않고 언급만 된다.",
+      "traits": [
+        {
+          "trait": "상대의 실수를 두고 놀리는 말버릇이 있다",
+          "trait_type": "speech",
+          "source_text": "\"알라인한테 말하면 또 놀리겠지... 뭐 또 부숴 먹었냐고...\"",
+          "certainty": "inferred"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S15_1",
+      "source_text": "\"알라인한테 말하면 또 놀리겠지...\"",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_011",
+      "name": "프리든 4번 방 (알파의 방)",
+      "description": "화자가 돌아온 방. 문과 책상이 있다.",
+      "source_text": "4번 방으로 돌아와 문을 여는데,",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "NEW:4번_방_문손잡이",
+      "name": "4번 방 문손잡이",
+      "description": "화자가 문을 열다 통째로 뽑아 구겨뜨린 금속 문손잡이. 이후 책상 위에 놓였다.",
+      "first_appearance_event_id": "EVENT_S15_1",
+      "source_text": "문손잡이가 통째로 떨어져 나왔다. 손안에서 구겨진 금속이 힘없이 반짝였다.",
+      "certainty": "explicit"
+    },
+    {
+      "object_id": "NEW:플라스틱_키보드",
+      "name": "플라스틱 키보드",
+      "description": "화자의 현실 쪽 손끝에 닿아 있는 가벼운 플라스틱 재질의 조작 기기.",
+      "first_appearance_event_id": "EVENT_S15_1",
+      "source_text": "손끝에 닿는 건 여전히 가벼운 플라스틱 키보드뿐이라",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S15_1",
+      "scene_id": "scene_15",
+      "order": 1,
+      "title": "4번 방 문손잡이를 뽑아 부숨",
+      "summary": "4번 방으로 돌아와 문을 여는 순간 문손잡이가 통째로 떨어져 나오며 손안에서 구겨진다. 화자는 살살 잡았다고 항변하지만 쥐는 힘을 가늠할 수 없고, 알라인에게 놀림받을 것을 예상하며 떨어진 손잡이를 책상 위에 올려둔다.",
+      "location_id": "LOC_011",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["NEW:4번_방_문손잡이", "NEW:플라스틱_키보드"],
+      "state_changes": [
+        {
+          "entity": "NEW:4번_방_문손잡이",
+          "field": "body_status",
+          "from": "문에 부착된 온전한 상태",
+          "to": "문에서 통째로 떨어지고 구겨짐",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "문손잡이가 통째로 떨어져 나왔다. 손안에서 구겨진 금속이 힘없이 반짝였다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "from": "unknown",
+          "to": "NEW:4번_방_문손잡이",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "손안에서 구겨진 금속이 힘없이 반짝였다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "from": "NEW:4번_방_문손잡이",
+          "to": "unknown",
+          "op": "remove",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "떨어진 손잡이를 책상 위에 얌전히 올려두었다."
+        },
+        {
+          "entity": "LOC_011",
+          "field": "condition",
+          "from": "문에 손잡이가 달려 있음",
+          "to": "문손잡이가 떨어져 나간 문 / 책상 위에 떨어진 손잡이가 놓임",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "문손잡이가 통째로 떨어져 나왔다. … 떨어진 손잡이를 책상 위에 얌전히 올려두었다."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "NEW:4번_방_문손잡이 (문을 열기 위해 손잡이를 쥐고 있었음)",
+          "source_text": "4번 방으로 돌아와 문을 여는데, … 손안에서 구겨진 금속이"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "NEW:플라스틱_키보드 (현실 쪽 손끝으로 계속 조작 중)",
+          "source_text": "손끝에 닿는 건 여전히 가벼운 플라스틱 키보드뿐이라"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "현실의 손은 키보드 위에 있고 문손잡이를 쥔 것은 별개의 신체 — 촉각 되먹임이 없는 원격 신체 상태",
+          "source_text": "손끝에 닿는 건 여전히 가벼운 플라스틱 키보드뿐이라 쥐는 힘이 어느 정도인지 도무지 가늠이 안 된다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "금속 문손잡이를 맨손으로 뽑고 구길 정도의 악력",
+          "source_text": "문손잡이가 통째로 떨어져 나왔다. 손안에서 구겨진 금속이"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "힘 조절 불가 (살살 잡았는데도 손잡이가 부서짐)",
+          "source_text": "\"...또야?! 아니 살살 잡았다고, 진짜로!\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "not_knows: 자신이 내는 악력의 크기",
+          "source_text": "쥐는 힘이 어느 정도인지 도무지 가늠이 안 된다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "이전에도 같은 방식으로 물건을 여러 개 파손한 전력이 있음",
+          "source_text": "이걸로 몇 개째더라. 세는 걸 관두기로 했다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "알라인 쉭살을 알고 있으며, 그가 자신의 파손을 두고 놀린 적이 있음",
+          "source_text": "\"알라인한테 말하면 또 놀리겠지... 뭐 또 부숴 먹었냐고...\""
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "4번 방 문손잡이를 자신이 뽑아 부쉈다",
+          "via": "direct",
+          "retained": true,
+          "source_text": "문손잡이가 통째로 떨어져 나왔다."
+        }
+      ],
+      "cause": "화자가 4번 방 문을 열기 위해 문손잡이를 잡았고, 쥐는 힘을 가늠할 수 없는 상태에서 힘이 과하게 들어갔다.",
+      "result": "문손잡이가 문에서 떨어져 구겨졌고, 화자는 그것을 책상 위에 올려두었다.",
+      "source_text": "4번 방으로 돌아와 문을 여는데, 뚝. 문손잡이가 통째로 떨어져 나왔다. … 떨어진 손잡이를 책상 위에 얌전히 올려두었다. 증거인멸이다.",
+      "certainty": "explicit"
+    }
+  ]
+}

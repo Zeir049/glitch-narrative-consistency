@@ -1,0 +1,74 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "여덟 시가 지나고 순덕이 장부를 펴서 카운터에 밀어 놓았다",
+   "summary": "여덟 시가 지나자 순덕이 장부를 펴서 카운터에 밀어 놓고 정호에게 쓰라고 한다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:여덟_시가_지난_시점",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_002"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_002 (장부)",
+     "source_text": "순덕이 장부를 펴서 카운터에 밀어 놓았다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "장부 기록 능력 (어른 서른하나, 아이 둘. 서랍의 동전을 세어 숫자를 맞췄다. 십이 년 동안 남의 회사 장부를 썼는데 손이 굳었다.)",
+     "source_text": "어른 서른하나, 아이 둘. 서랍의 동전을 세어 숫자를 맞췄다. 십이 년 동안 남의 회사 장부를 썼는데 손이 굳었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "어머니가 장부 기록 시 틀리면 지우지 말고 옆에 다시 쓰라고 지시함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "틀리면 지우지 마라. 옆에 다시 써라."
+    }
+   ],
+   "cause": "영업 시간(여덟 시)이 되어 장부 기록을 시작함",
+   "result": "정호가 어머니 글씨 밑에 자기 글씨로 장부를 기록함",
+   "source_text": "여덟 시가 지나고 순덕이 장부를 펴서 카운터에 밀어 놓았다. \"니가 써라.\" 정호는 연필을 잡았다. 어른 서른하나, 아이 둘. 서랍의 동전을 세어 숫자를 맞췄다. 십이 년 동안 남의 회사 장부를 썼는데 손이 굳었다. \"틀리면 지우지 마라. 옆에 다시 써라.\" \"예.\" 순덕은 그 말만 하고 골방 문턱에 앉았다. 정호는 어머니 글씨 밑에 자기 글씨를 적었다. 반듯한 글씨 밑에 반듯한 글씨였다. 그런데 다른 글씨였다. 순덕은 그것을 보고 아무 말도 하지 않았다. 정호는 장부를 덮어 서랍에 넣었다. 요금통이 아니라 그 옆 서랍이었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-27T04:52:24Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 10.29
+ }
+}

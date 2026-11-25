@@ -1,0 +1,376 @@
+{
+  "schema_version": 2,
+  "episode": 3,
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:상태_지속_원칙",
+      "content": "이 세계는 원상복구되지 않고, 고장·파손이 시간을 들여 조금씩 복구된다",
+      "description": "게임을 껐다 켜거나 시간이 지나도 한순간에 복구되는 일이 없으며, 수리·정리 과정이 연속적으로 관찰된다.",
+      "source_text": "고장 났던 부분이나 어질러졌던 공간이 한순간에 원상복구 되는 일은 없었다.",
+      "certainty": "explicit"
+    },
+    {
+      "rule_id": "NEW:CCTV_분산_저장",
+      "content": "CCTV 영상은 관제실에 모이지 않고 카메라(가로등)마다 개별 저장된다",
+      "description": "각 카메라에 AI가 있어 촬영 즉시 위험 신호만 걸러 프리든으로 전송하며, 사람이 영상을 직접 보지 않는 구조.",
+      "source_text": "CCTV 영상이 관제실이나 상황실에 모이는 게 아니라 카메라가 달린 가로등마다 각각 저장되는 형식이랜다...",
+      "certainty": "explicit"
+    },
+    {
+      "rule_id": "NEW:AI_감지_상태값",
+      "content": "카메라 AI는 idle/active/anomaly_detected/alert의 상태값으로 움직임과 이상 행동을 감지한다",
+      "description": "움직임 감지 시 active, 이상 행동이면 anomaly_detected, 프리든으로 경고 전송 시 alert. 공원에서 넘어진 정도도 감지될 만큼 민감하며, 감지되면 로봇들을 제어해 조치한다.",
+      "source_text": "움직임이 감지되면 active, 그게 이상 행동이면 anomaly_detected라고 뜰 거예요. 경고신호를 프리든으로 전송했다면 alert로 변할 거고요.",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "NEW:알라인_쉭살",
+      "name": "알라인 쉭살 (Allein Schicksal)",
+      "aliases": [
+        "알라인"
+      ],
+      "entity_type": "person",
+      "description": "프리든에서 일하는 컴퓨터 기술자. 이 미래 세계에서 몇 안 되는 직장인. 플레이어의 수사에 협력하며 직접 답을 주기보다 문제를 풀도록 유도하는 태도를 보인다.",
+      "traits": [
+        {
+          "trait": "검은색의 긴 머리, 연예인 뺨치는 외모와 큰 키",
+          "trait_type": "appearance",
+          "source_text": "검은 색의 긴 머리를 가진 여성. ... 연예인 뺨치는 외모와 기럭지로",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "입만 웃는 표정으로 뼈 있는 농담을 함",
+          "trait_type": "speech",
+          "source_text": "입만 웃는 표정으로 저런 농담을 하다니, 말에 뼈가 있는 게 분명해...",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "무미건조하지만 냉정하지는 않은, 상대에 따라 태도가 명확히 갈리는 성격",
+          "trait_type": "personality",
+          "source_text": "참... 무미건조한데 또 그렇다고 냉정한 건 아닌 게... 사람 참 독특해.",
+          "certainty": "inferred"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_3_2",
+      "source_text": "건물에 들어갈 때 동행할 알라인 쉭살(Allein Schicksal)이었다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "NEW:그로스",
+      "name": "그로스",
+      "aliases": [],
+      "entity_type": "ai",
+      "description": "알라인이 언급한 존재. 문맥상 CCTV 감지 체계와 관련된 AI(감시 시스템)로 추정되나 정체는 미설명.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_3_4",
+      "source_text": "\"'그로스'가 이런 실수를 할 리가 없을 텐데.\"",
+      "certainty": "uncertain"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_005",
+      "name": "프리든 (Friden)",
+      "description": "(외형 상세 갱신) 한 층 높이의 받침 위에 세워진 창문 없는 원기둥 건물. 6~7층 높이 꼭대기에 유리 돔이 있고, 내부는 복도와 원형 공간으로 나뉘며 길 숫자와 일치하는 방향으로 방들이 배치됨.",
+      "source_text": "남산타워 마냥 한 층 높이의 받침 위에, 창문 없는 원기둥이 세워져 있었다.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:알라인의_방",
+      "name": "알라인의 방 (프리든 3번 방)",
+      "description": "프리든 오른쪽 끝, 반시계 방향 3번 방. 이 세계에서 처음 보는 흰색 아닌 벽에 간접조명으로 어두우며, 여러 대의 컴퓨터와 많은 책·노트가 있다.",
+      "source_text": "알라인의 방은 오른쪽으로 돌아서 끝방. 반시계 방향으로 붙여진 순서대로 보면 3번 방.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:4번가",
+      "name": "4번가",
+      "description": "CCTV 영상으로만 언급된 거리.",
+      "source_text": "준비된 영상은 3, 4번가의 것뿐이었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "NEW:CCTV_영상_자료",
+      "name": "CCTV 영상 자료 (원본 + Bounding box 버전)",
+      "description": "알라인이 각 카메라에서 추출해 온 폭발 사건 전후의 영상들. 원본과 객체 탐지 박스가 표시된 버전 두 가지.",
+      "first_appearance_event_id": "EVENT_3_3",
+      "source_text": "\"영상은 원본이랑 객체 탐지로 Bounding box 친 버전, 두 가지만 추출해왔어요.\"",
+      "certainty": "explicit"
+    },
+    {
+      "object_id": "NEW:P-000-01_문서",
+      "name": "[P-000-01] 문서",
+      "description": "화 말미에 삽입된 작성 주체 불명의 기록. past node(과거 접속자) 접촉 계획과 'plan a' 실행 현황을 담고 있다.",
+      "first_appearance_event_id": "EVENT_3_6",
+      "source_text": "[P-000-01] 접촉 대상[past node] - 접속 화인. -> plan a 실행.",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [
+    {
+      "time_id": "TIME_003",
+      "expression": "104/06/07 오후 (폭발 사건 당일)",
+      "description": "(갱신) CCTV 기록으로 폭발 당일의 작중 날짜·시각이 확정됨: 범인 출현 15:38:59, 알파 추격 15:39:28.",
+      "timeline": "future_world",
+      "source_text": "[cam_id=st1_01|dt=104/06/07T15:38:59|status=idle|detection=on]",
+      "certainty": "explicit"
+    },
+    {
+      "time_id": "NEW:로봇_수리일",
+      "expression": "사건 다음날 (현실 기준 월요일)",
+      "description": "플레이어의 로봇이 우선 수리된 날. 플레이어는 풀강 후 오후 늦게 접속.",
+      "timeline": "future_world",
+      "source_text": "부서진 내 로봇이 고쳐진 것은 사건이 있던 바로 다음날. 풀강인 월요일이었기에,",
+      "certainty": "explicit"
+    },
+    {
+      "time_id": "NEW:CCTV_검토일",
+      "expression": "폭발 사고로부터 거의 일주일이 지난 토요일",
+      "description": "플레이어와 알라인이 프리든에서 CCTV를 검토한 날.",
+      "timeline": "future_world",
+      "source_text": "오늘은 폭발 사고로부터 거의 일주일이 지난 토요일.",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_3_1",
+      "order": 1,
+      "title": "플레이어 로봇 수리 완료 (회상)",
+      "summary": "사건 다음날, 플레이어의 로봇이 우선적으로 수리되어 정상 접속이 가능해졌다. 그 때문에 다른 로봇들의 수리는 밀렸다.",
+      "location_id": "LOC_003",
+      "time_id": "NEW:로봇_수리일",
+      "timeline": "future_world",
+      "reality_status": "memory",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "unknown",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "from": "로봇 신체 손상(화면 노이즈)",
+          "to": "로봇 신체 수리 완료",
+          "source_text": "부서진 내 로봇이 고쳐진 것은 사건이 있던 바로 다음날."
+        }
+      ],
+      "assumed_states": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "자신의 로봇이 우선 수리되어 다른 로봇들의 수리가 밀림",
+          "via": "told",
+          "source_text": "내 로봇을 우선적으로 고치느라 다른 로봇의 수리는 밀렸다고도 했고."
+        }
+      ],
+      "cause": "불발탄 파열로 인한 로봇 손상 (EVENT_2_6)",
+      "result": "플레이어가 정상적으로 활동 재개",
+      "source_text": "부서진 내 로봇이 고쳐진 것은 사건이 있던 바로 다음날.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_3_2",
+      "order": 2,
+      "title": "프리든 앞에서 알라인과 합류",
+      "summary": "플레이어가 1번가를 걸어 프리든 앞에서 알라인 쉭살과 만나 함께 건물로 들어간다. 플레이어는 알라인 동행 없이는 프리든에 들어갈 수 없다.",
+      "location_id": "LOC_005",
+      "time_id": "NEW:CCTV_검토일",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002",
+        "NEW:알라인_쉭살"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "NEW:알라인_쉭살",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "단독으로는 프리든 출입 불가 (알라인 동행 시 알라인 방까지만 입장 가능)",
+          "source_text": "알라인이랑 동행해야 알라인 방에만 겨우 들어갈 수 있다니..."
+        },
+        {
+          "entity": "NEW:알라인_쉭살",
+          "field": "ability",
+          "assumes": "프리든 출입 및 동행자 입장 허용 권한",
+          "source_text": "알라인은 이 말을 마지막으로 앞장서서 건물 안으로 들어갔다."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "클라인·알라인·플레이어 3인이 잡은 수사 방향(CCTV 검토)",
+      "result": "알라인의 방에서 CCTV 검토 시작",
+      "source_text": "건물에 들어갈 때 동행할 알라인 쉭살(Allein Schicksal)이었다.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_3_3",
+      "order": 3,
+      "title": "CCTV 세팅과 감시 체계 설명",
+      "summary": "알라인이 검토용 영상을 세팅하며 CCTV 분산 저장 구조와 AI 감지 체계를 설명한다. 폭탄·연막탄 외피의 출처와 수령자가 기존 추적 중이던 아우겐 인물이라는 수사 정보도 공유된 상태다.",
+      "location_id": "NEW:알라인의_방",
+      "time_id": "NEW:CCTV_검토일",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "NEW:알라인_쉭살",
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "NEW:알라인_쉭살",
+      "objects": [
+        "NEW:CCTV_영상_자료"
+      ],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "NEW:알라인_쉭살",
+          "field": "ability",
+          "assumes": "각 카메라에서 영상을 추출·가공(Bounding box)할 수 있는 기술 능력",
+          "source_text": "\"영상은 원본이랑 객체 탐지로 Bounding box 친 버전, 두 가지만 추출해왔어요.\""
+        },
+        {
+          "entity": "NEW:알라인_쉭살",
+          "field": "knows",
+          "assumes": "알파의 힘 조절이 안 된다는 사실 (2화 불발탄 사건 인지)",
+          "source_text": "저번에 보니 아직 힘 조절은 안 되는 모양이죠? 뭐 또 부숴 먹을까봐 제가 옮겨 뒀습니다~"
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "CCTV는 카메라별 개별 저장이며 AI가 위험 신호만 걸러 전송함 (idle/active/anomaly_detected/alert 체계)",
+          "via": "told",
+          "source_text": "굳이 사람이 확인하지 않고 촬영되자마자 위험 신호만 걸러서 전송하는 게 간편하고요."
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "폭탄·연막탄 외피는 알루미늄판과 철제 수납장이었고, 이를 수령한 자는 이전부터 추적되던 아우겐 인물임",
+          "via": "told",
+          "source_text": "이것들을 수령한 '누군가'는 이전부터 같은 방식으로 추적되던 아우겐의 인물이었다."
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "클라인은 위험 물품이라도 보급을 제한하지 않는 방침임 (취미용 가능성을 배제하지 않음)",
+          "via": "told",
+          "source_text": "\"클라인님이 지향하는 세계는 그런 곳이 아니니까요.\""
+        }
+      ],
+      "cause": "범인 추적을 위한 CCTV 검토 계획",
+      "result": "영상 검토 개시",
+      "source_text": "\"오늘은 CCTV 검토하기로 했죠? 영상 다 따놨어요.\"",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_3_4",
+      "order": 4,
+      "title": "영상 검토: 범인이 AI에 인식되지 않음을 확인",
+      "summary": "1번가 영상에서 범인은 카메라에 찍혔지만 AI 상태값이 idle에 머물고 Bounding box도 표시되지 않은 반면, 알파는 정상 인식(active)됨을 확인한다. 알라인은 '저 사람만' 탐지를 피하는 방법을 찾은 것으로 판단한다.",
+      "location_id": "NEW:알라인의_방",
+      "time_id": "NEW:CCTV_검토일",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002",
+        "NEW:알라인_쉭살"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [
+        "NEW:CCTV_영상_자료"
+      ],
+      "state_changes": [],
+      "assumed_states": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "범인은 영상에 찍히지만 AI에 인식되지 않으며, 경고 미발송은 오류가 아니라 미인식 때문",
+          "via": "direct",
+          "source_text": "경고가 안 간 게 오류라고 생각했는데, 그냥 아예 인식을 못 한 거였네요."
+        },
+        {
+          "character_id": "NEW:알라인_쉭살",
+          "info": "범인만 AI 탐지에서 벗어나 있고 전산상 움직임은 평소와 다름없음 → 탐지 회피 방법을 찾은 것",
+          "via": "inference",
+          "source_text": "\"어쨌든, '저 사람만' 인식이 안 되는 걸 거예요. ... 탐지를 피할 수 있는 어떤 방법을 찾은 거겠죠.\""
+        }
+      ],
+      "cause": "CCTV 영상 검토",
+      "result": "AI 추적 불가 확인, 사람(알파)이 직접 찾는 방향으로 전환",
+      "source_text": "정말로 영상엔 찍혔는데, AI 탐지에는 안 걸리네요.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_3_5",
+      "order": 5,
+      "title": "3·4번가 영상 검토와 잠복 계획 확정",
+      "summary": "추가 영상 검토로 범인이 일주일 내내 같은 노이즈 무늬 옷차림·같은 체격·걸음걸이로 12시~2시 사이 3번가에 출몰함을 특정한다. 플레이어의 제안으로 본거지 추적 대신 잠복 체포로 계획을 정한다.",
+      "location_id": "NEW:알라인의_방",
+      "time_id": "NEW:CCTV_검토일",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002",
+        "NEW:알라인_쉭살"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [
+        "NEW:CCTV_영상_자료"
+      ],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_006",
+          "field": "possesses",
+          "assumes": "OBJ_008 (일주일 내내 같은 노이즈 무늬 옷 착용)",
+          "source_text": "일주일 내내 같은 그 '이상한 무늬의 옷'을 입고 다녀서 쉽게 특정이 가능했다."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "범인은 매일 12시~2시 사이 3번가에 출몰하며, 옷·체격·걸음걸이로 동일인 확신",
+          "via": "inference",
+          "source_text": "범인의 주요 출몰 장소는 12시에서 2시 사이의 3번가, 잠복 시간과 장소로 확정이다."
+        }
+      ],
+      "cause": "AI 추적 불가로 인한 수동 검토",
+      "result": "3번가 잠복 계획 확정",
+      "source_text": "\"잠복해서 잡죠?\"",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_3_6",
+      "order": 6,
+      "title": "[P-000-01] 문서: past node 접촉 계획",
+      "summary": "작성 주체 불명의 문서. 접촉 대상 'past node'의 접속을 확인하고 plan a를 실행 중이며, 창고 벽면 폭파·AI 회피 패턴 패브릭 제작·인명피해 없음 확인·프리든 수사 진행 파악까지 '오차 범위 이내'로 진행 중이라고 기록한다. past node가 혼자 접촉해 오기를 기다린다고 맺는다.",
+      "location_id": "unknown",
+      "time_id": "unknown",
+      "timeline": "unknown",
+      "reality_status": "document",
+      "participant_character_ids": [],
+      "witness_character_ids": [],
+      "main_actor_character_id": "unknown",
+      "objects": [
+        "NEW:P-000-01_문서"
+      ],
+      "state_changes": [],
+      "assumed_states": [],
+      "knowledge_gained": [],
+      "cause": "unknown",
+      "result": "폭발 사건이 past node(플레이어 추정)를 겨냥한 계획의 일부임이 독자에게 시사됨",
+      "source_text": "[P-000-01] 접촉 대상[past node] - 접속 화인. -> plan a 실행.",
+      "certainty": "inferred"
+    }
+  ]
+}

@@ -1,0 +1,1642 @@
+{
+ "schema_version": 2,
+ "episode": 1,
+ "worldview_rules": [
+  {
+   "rule_id": "NEW:금호탕_운영_규칙",
+   "content": "금호탕은 새벽 5시에 열고 저녁 8시에 닫으며, 매달 첫째·셋째 월요일은 휴무다.",
+   "description": "운영 시간과 휴무일을 어기면 동네에 소문이 돈다.",
+   "source_text": "금호탕은 새벽 다섯 시에 열고 저녁 여덟 시에 닫았다. 매달 첫째 월요일과 셋째 월요일이 휴무였다. 이건 동네 사람이 다 아는 일이었고, 어기면 말이 돌았다.",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:열쇠_관리_규칙",
+   "content": "정문·뒷문 열쇠는 고리 두 개로 관리되며, 순덕과 장씨가 각각 하나씩 가진다.",
+   "description": "열쇠 고리는 순덕 것과 장씨 것 두 개뿐이다.",
+   "source_text": "열쇠는 고리에 두 개가 달려 있었다. 정문 것과 뒷문 것. 이 고리가 순덕 것이었고, 똑같은 고리 하나를 장씨가 갖고 있었다. 그게 전부였다.",
+   "certainty": "explicit"
+  }
+ ],
+ "characters": [
+  {
+   "character_id": "CHAR_001",
+   "name": "배순덕",
+   "aliases": [
+    "순덕",
+    "배 여사"
+   ],
+   "entity_type": "person",
+   "description": "금호탕 주인, 62년간 새벽 4시 기상, 오른쪽 무릎 불편",
+   "traits": [
+    {
+     "trait": "새벽 4시 기상 습관 62년 지속",
+     "trait_type": "habit",
+     "source_text": "육십이 년 동안 그렇게 살았고, 그 가운데 이십 년은 이 골방에서 일어났다.",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "오른쪽 무릎이 안 좋아 계단 오를 때 난간 필요",
+     "trait_type": "appearance",
+     "source_text": "몇 년 전부터 그 무릎이 안 좋았다. 계단을 오를 때는 난간을 잡아야 했고, 아침에는 굽히는 데 시간이 걸렸다.",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_1_2",
+   "source_text": "배순덕은 새벽 네 시에 일어났다.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_002",
+   "name": "배정호",
+   "aliases": [
+    "정호",
+    "정호 씨"
+   ],
+   "entity_type": "person",
+   "description": "38세, 대구 대성운수 경리 12년 후 정리해고, 금호탕 다락방에 묵음",
+   "traits": [
+    {
+     "trait": "통장 잔고 거의 없는데도 습관처럼 챙김",
+     "trait_type": "habit",
+     "source_text": "통장은 잔고가 거의 없어서 갖고 다닐 이유가 없었는데도 습관처럼 챙겼다.",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "어머니를 깨우는 것, 어머니가 자기를 보는 것 중 무엇이 싫은지 스스로 불분명",
+     "trait_type": "personality",
+     "source_text": "어머니를 깨우는 게 싫은 건지, 어머니가 나와서 자기를 보는 게 싫은 건지 스스로도 분명하지 않았다.",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_1_1",
+   "source_text": "배정호, 서른여덟.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_004",
+   "name": "장문식",
+   "aliases": [
+    "문식",
+    "장씨",
+    "장 아저씨"
+   ],
+   "entity_type": "person",
+   "description": "55세, 금호탕 보일러공 겸 남탕 때밀이, 보일러실 옆 쪽방 거주, 15년 전부터 새벽 연탄 갈이",
+   "traits": [
+    {
+     "trait": "새벽 연탄 갈이 습관 15년 지속",
+     "trait_type": "habit",
+     "source_text": "정호가 알기로 문식은 늘 이 시간쯤 한 번 일어나 연탄을 갈았다. 십오 년 전 처음 왔을 때부터 그랬다.",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "말수가 적고 필요한 말만 함",
+     "trait_type": "personality",
+     "source_text": "왜 왔느냐, 언제 왔느냐, 사장님은 아시냐 — 그런 말은 하나도 없었다. ... 문식은 그 말만 하고 옆으로 비켜섰다.",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_1_1",
+   "source_text": "장문식이었다. 쉰다섯. 금호탕의 보일러공이자 남탕 때밀이였고, 지하 보일러실 옆 쪽방에 살았다.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_006",
+   "name": "배만수",
+   "aliases": [
+    "만수"
+   ],
+   "entity_type": "person",
+   "description": "순덕의 남편, 1967년 겨울 심장으로 사망",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_1_2",
+   "source_text": "남편 배만수가 죽은 게 1967년 겨울이었다. 심장이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_007",
+   "name": "선희",
+   "aliases": [
+    "선희 언니"
+   ],
+   "entity_type": "person",
+   "description": "정호의 아내, 대구 비산동 거주",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_1_1",
+   "source_text": "아내 선희에게는 당분간 어머니를 도와드리러 간다고 했다.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_008",
+   "name": "박 사장",
+   "entity_type": "person",
+   "description": "정호가 정리해고 후 드나든 사무실의 사장",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_1_1",
+   "source_text": "은행과 박 사장 사무실을 번갈아 드나든 것뿐이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_003",
+   "name": "배정미",
+   "aliases": [
+    "정미"
+   ],
+   "entity_type": "person",
+   "description": "순덕의 막내딸, 세신·이발소 운영",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_1_3",
+   "source_text": "정미가 지난달에 흘렸다. 오빠가 대구에서 잘렸다고.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_005",
+   "name": "최병구",
+   "aliases": [
+    "최영감"
+   ],
+   "entity_type": "person",
+   "description": "역전 상가 3층 건물주, 금호탕 첫 손님(20년), 매입 희망자",
+   "traits": [
+    {
+     "trait": "매일 새벽 첫 손님으로 온다",
+     "trait_type": "habit",
+     "source_text": "최영감은 문이 열리는 것과 동시에 들어왔다. 늘 그랬다. 문 밖에서 기다리고 있다가 들어왔다.",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "금호탕 매입을 지속적으로 권유한다",
+     "trait_type": "personality",
+     "source_text": "이 사람이 나올 때 또 그 얘기를 꺼낼 것이었다. 안 꺼내고 나가는 날이 없었다.",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_1_4",
+   "source_text": "최영감은 문이 열리는 것과 동시에 들어왔다.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_009",
+   "name": "강씨",
+   "aliases": [
+    "쌀집 강씨"
+   ],
+   "entity_type": "person",
+   "description": "역전 상가 쌀집 주인, 정호를 알아본다",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_1_8",
+   "source_text": "강씨는 정호를 보고 눈이 커졌다. \"어이, 정호 아이가. 대구서 언제 왔노.\"",
+   "certainty": "explicit"
+  }
+ ],
+ "locations": [
+  {
+   "location_id": "LOC_001",
+   "name": "금호탕",
+   "description": "목욕탕, 간판 '탕' 자 네온 반쯤 나감, 정문 셔터 내려짐",
+   "source_text": "금호탕. 간판의 '탕' 자 네온이 반쯤 나가 있어서 '금호ㅌ'처럼 보였다. 정문은 닫혀 있었고 셔터까지 내려져 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_002",
+   "name": "카운터",
+   "description": "금호탕 1층 카운터, 골방과 연결",
+   "source_text": "어머니는 카운터 뒤 골방에서 자고 있을 것이고",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_003",
+   "name": "골방",
+   "description": "카운터 뒤 순덕의 방, 정문 여닫는 소리 들림",
+   "source_text": "골방은 카운터 바로 뒤에 붙어 있어서 누워 있어도 정문 여닫는 소리가 다 들렸다.",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_004",
+   "name": "다락방",
+   "description": "2층 다락방, 천장 낮음, 굴뚝 쪽 창, 예전 아버지 장부 방, 현재 비어있음",
+   "source_text": "이층 다락방 비어 있어요. ... 다락방은 천장이 낮아서 허리를 펴면 머리가 닿았다. 창이 하나 있는데 굴뚝 쪽으로 나 있어서 낮에도 어두웠다. 예전에 아버지가 장부를 보던 방이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_007",
+   "name": "보일러실",
+   "description": "지하 보일러실, 옆 쪽방에 문식 거주",
+   "source_text": "지하 보일러실 옆 쪽방에 살았다.",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_008",
+   "name": "쪽방",
+   "description": "보일러실 옆 문식의 방",
+   "source_text": "지하 보일러실 옆 쪽방에 살았다.",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_009",
+   "name": "뒷문",
+   "description": "골목 쪽 쇠문, 안에서 빗장 거는 방식",
+   "source_text": "뒷문은 골목 쪽으로 나 있는 쇠문이었다. 안에서 빗장을 거는 문이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_012",
+   "name": "역전 상가",
+   "description": "금호역 앞 3층 상가",
+   "source_text": "오른쪽에 삼층짜리 역전 상가가 시커멓게 서 있었고",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_015",
+   "name": "금호역",
+   "description": "밤기차 도착 역, 플랫폼 형광등 하나",
+   "source_text": "밤기차는 열한 시 사십 분에 금호역에 섰다.",
+   "certainty": "explicit"
+  }
+ ],
+ "objects": [
+  {
+   "object_id": "OBJ_001",
+   "name": "열쇠",
+   "description": "금호탕 열쇠 2개(순덕, 문식), 정호에게는 없음",
+   "first_appearance_event_id": "EVENT_1_1",
+   "source_text": "금호탕 열쇠는 딱 두 개였다. 순덕 것 하나, 문식 것 하나. 정호에게는 열쇠가 없었다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_003",
+   "name": "연탄",
+   "description": "보일러 연료, 문식이 새벽에 갈음",
+   "first_appearance_event_id": "EVENT_1_1",
+   "source_text": "손에는 연탄집게를 들고 있었다. ... 문식은 늘 이 시간쯤 한 번 일어나 연탄을 갈았다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_004",
+   "name": "보일러",
+   "description": "경유+연탄 혼소, 새벽 3시 반 가동",
+   "first_appearance_event_id": "EVENT_1_1",
+   "source_text": "경유하고 연탄이 섞인, 정호가 어릴 때부터 맡아온 냄새였다. ... 새벽 세 시 반, 지하에서 보일러 도는 소리가 났다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_005",
+   "name": "셔터",
+   "description": "금호탕 정문 셔터, 내려져 있음",
+   "first_appearance_event_id": "EVENT_1_1",
+   "source_text": "정문은 닫혀 있었고 셔터까지 내려져 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_008",
+   "name": "파스",
+   "description": "순덕이 오른쪽 무릎에 붙이는 파스",
+   "first_appearance_event_id": "EVENT_1_2",
+   "source_text": "일어나서 제일 먼저 하는 일은 오른쪽 무릎에 파스를 붙이는 것이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_009",
+   "name": "빗장",
+   "description": "뒷문 안쪽 빗장, 문식이 열고 닫음",
+   "first_appearance_event_id": "EVENT_1_1",
+   "source_text": "안에서 빗장을 거는 문이었다. ... 빗장이 밀리고 문이 안으로 열렸다. ... 문식은 다시 빗장을 걸었다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_007",
+   "name": "통장",
+   "description": "정호 소지, 잔고 거의 없음",
+   "first_appearance_event_id": "EVENT_1_1",
+   "source_text": "양복 한 벌과 속옷 며칠 치, 통장 하나. 통장은 잔고가 거의 없어서 갖고 다닐 이유가 없었는데도 습관처럼 챙겼다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_014",
+   "name": "가방",
+   "description": "정호 소지, 양복·속옷·통장 들어있음",
+   "first_appearance_event_id": "EVENT_1_1",
+   "source_text": "가방은 하나였다. 양복 한 벌과 속옷 며칠 치, 통장 하나.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_015",
+   "name": "연탄집게",
+   "description": "문식 소지, 연탄 갈 때 사용",
+   "first_appearance_event_id": "EVENT_1_1",
+   "source_text": "손에는 연탄집게를 들고 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_016",
+   "name": "양복",
+   "description": "정호 착용, 그대로 누워 잠",
+   "first_appearance_event_id": "EVENT_1_1",
+   "source_text": "양복 한 벌과 속옷 며칠 치",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_017",
+   "name": "이불",
+   "description": "다락방에 개켜져 있음, 먼지 냄새",
+   "first_appearance_event_id": "EVENT_1_1",
+   "source_text": "이불은 개켜져 있었고 먼지 냄새가 났다.",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "TIME_001",
+   "expression": "1962년",
+   "description": "배경 연도 추정",
+   "timeline": "main",
+   "source_text": "",
+   "certainty": "inferred"
+  },
+  {
+   "time_id": "TIME_002",
+   "expression": "1967년 겨울",
+   "description": "배만수 사망 시점",
+   "timeline": "main",
+   "source_text": "남편 배만수가 죽은 게 1967년 겨울이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_004",
+   "expression": "십오일",
+   "description": "정호 도착 당일 날짜(십오일)",
+   "timeline": "main",
+   "source_text": "십오일",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_014",
+   "expression": "밤 11시 40분",
+   "description": "정호 금호역 도착 시각",
+   "timeline": "main",
+   "source_text": "밤기차는 열한 시 사십 분에 금호역에 섰다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_015",
+   "expression": "자정 직전",
+   "description": "정호 뒷문 도착, 문식과 만남 시각",
+   "timeline": "main",
+   "source_text": "열두 시가 다 된 시간이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_016",
+   "expression": "새벽 3시 30분",
+   "description": "보일러 가동 시작 시각",
+   "timeline": "main",
+   "source_text": "새벽 세 시 반, 지하에서 보일러 도는 소리가 났다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_017",
+   "expression": "새벽 4시",
+   "description": "순덕 기상 시각",
+   "timeline": "main",
+   "source_text": "배순덕은 새벽 네 시에 일어났다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_018",
+   "expression": "십이월 첫날 밤 11시 40분",
+   "description": "밤 11시 40분, 자정 직전, 새벽 3시 30분, 새벽 4시 등이 언급된 심야 시간대",
+   "timeline": "main",
+   "source_text": "열두 시가 다 되어 뒷문 빗장 소리가 났다. 문식이 연탄을 갈러 나가는 소리였다. 정호는 어젯밤 이 시간에 자기가 그 문 밖에 서 있었다는 것을 생각했다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-26T10:59:08Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 98.0
+ },
+ "_merge": {
+  "spec": "handoff/chunked_extract_spec.md",
+  "chunks": [
+   "episode_01_c01.json",
+   "episode_01_c02.json",
+   "episode_01_c03.json"
+  ],
+  "unmapped_new": [
+   "NEW:가방 (양복, 속옷, 통장 포함)",
+   "NEW:금호탕_운영_규칙",
+   "NEW:미역국_냄비",
+   "NEW:미역국_냄비 (손에 들고 옴)",
+   "NEW:새벽_5시_전",
+   "NEW:새벽_5시_정각",
+   "NEW:새벽_6시_경",
+   "NEW:십이월_첫날_낮",
+   "NEW:십이월_첫날_밤_8시",
+   "NEW:십이월_첫날_오후",
+   "NEW:십이월_첫날_저녁_6시",
+   "NEW:열쇠_관리_규칙",
+   "NEW:오전_8시_넘어",
+   "NEW:오전_9시_경",
+   "NEW:오전_9시_이후"
+  ]
+ },
+ "events": [
+  {
+   "event_id": "EVENT_1_1",
+   "scene_id": "scene_1_1",
+   "order": 1,
+   "title": "정호 금호역 도착 및 금호탕 뒷문 진입",
+   "summary": "정호가 밤기차로 금호역에 도착해 금호탕 뒷문으로 들어가 문식을 만나 다락방에 묵는다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_014",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_001",
+    "OBJ_003",
+    "OBJ_004",
+    "OBJ_005",
+    "OBJ_009",
+    "OBJ_007",
+    "OBJ_014",
+    "OBJ_015",
+    "OBJ_016",
+    "OBJ_017"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_015",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "밤기차는 열한 시 사십 분에 금호역에 섰다. ... 정호는 골목으로 들어섰다. 금호탕."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_014",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "가방은 하나였다. 양복 한 벌과 속옷 며칠 치, 통장 하나."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_007",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "통장은 잔고가 거의 없어서 갖고 다닐 이유가 없었는데도 습관처럼 챙겼다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "from": "양복 착용",
+     "to": "양복 그대로 누움",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "양복 착용",
+     "certainty": "explicit",
+     "source_text": "정호는 가방을 내려놓고 양복 그대로 누웠다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "body_status",
+     "from": "수면 중",
+     "to": "연탄 갈이 중",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "수면 중",
+     "certainty": "explicit",
+     "source_text": "정호가 알기로 문식은 늘 이 시간쯤 한 번 일어나 연탄을 갈았다."
+    },
+    {
+     "entity": "OBJ_009",
+     "field": "body_status",
+     "from": "잠금",
+     "to": "해제",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "잠금",
+     "certainty": "explicit",
+     "source_text": "빗장이 밀리고 문이 안으로 열렸다. ... 문식은 다시 빗장을 걸었다."
+    },
+    {
+     "entity": "OBJ_004",
+     "field": "body_status",
+     "from": "정지",
+     "to": "가동",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "새벽 세 시 반, 지하에서 보일러 도는 소리가 났다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "NEW:가방 (양복, 속옷, 통장 포함)",
+     "source_text": "가방은 하나였다. 양복 한 벌과 속옷 며칠 치, 통장 하나."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "금호탕 뒷문 빗장 구조와 열쇠 사정(열쇠 2개, 본인 것 없음)",
+     "source_text": "어릴 때부터 그랬다. ... 금호탕 열쇠는 딱 두 개였다. 순덕 것 하나, 문식 것 하나. 정호에게는 열쇠가 없었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "건강한 성인 남성(가방 들고 골목 이동, 계단 오름 가능)",
+     "source_text": "정호는 골목으로 들어섰다. ... 정호는 어두운 카운터 옆을 지나 이층 계단을 올랐다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "assumes": "OBJ_003, NEW:연탄집게",
+     "source_text": "손에는 연탄집게를 들고 있었다. ... 문식은 늘 이 시간쯤 한 번 일어나 연탄을 갈았다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "정호의 정체와 사정(왜 왔는지, 열쇠 없는 것 등)을 묻지 않아도 앎",
+     "source_text": "왜 왔느냐, 언제 왔느냐, 사장님은 아시냐 — 그런 말은 하나도 없었다. ... 문식은 고개를 한 번 끄덕였다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "ability",
+     "assumes": "보일러 관리·연탄 갈이 숙련",
+     "source_text": "금호탕의 보일러공이자 남탕 때밀이였고 ... 십오 년 전 처음 왔을 때부터 그랬다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "assumes": "LOC_003 (골방 수면 중)",
+     "source_text": "어머니는 카운터 뒤 골방에서 자고 있을 것이고"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_2",
+     "assumes": "순덕이 정호의 발소리를 듣고 정체를 알아챈 시점이 EVENT_1_1의 계단 오르는 시점과 일치한다",
+     "source_text": "순덕은 그때 이미 알았다. 그 발소리는 열여덟 살 때부터 알던 발소리였다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "다락방이 비어 있어 묵을 수 있음",
+     "via": "told",
+     "retained": true,
+     "source_text": "이층 다락방 비어 있어요."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "문식이 새벽에 연탄을 갈러 일어나는 습관이 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "정호가 알기로 문식은 늘 이 시간쯤 한 번 일어나 연탄을 갈았다. 십오 년 전 처음 왔을 때부터 그랬다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "정호가 뒷문으로 들어와 다락방으로 올라감",
+     "via": "direct",
+     "retained": true,
+     "source_text": "새벽에 장씨가 뒷문 빗장을 여는 소리를 들었고, 두 사람 발소리가 들어오는 것을 들었고, 그중 하나가 계단 셋째 칸을 밟고 올라가는 것을 들었다. 순덕은 그때 이미 알았다. 그 발소리는 열여덟 살 때부터 알던 발소리였다."
+    }
+   ],
+   "cause": "정리해고 후 처자식을 대구에 두고 혼자 내려옴",
+   "result": "금호탕 다락방에서 묵게 됨, 어머니(순덕)가 발소리로 정호임을 알아챔",
+   "source_text": "밤기차는 열한 시 사십 분에 금호역에 섰다. ... 정호는 가방을 내려놓고 양복 그대로 누웠다. 잠은 오지 않았다. ... 새벽 세 시 반, 지하에서 보일러 도는 소리가 났다. 쇳덩이가 깨어나는 소리였다. 정호는 그제야 잠이 들었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_2",
+   "scene_id": "scene_1_2",
+   "order": 2,
+   "title": "순덕 새벽 기상 및 정호 도착 인지",
+   "summary": "순덕이 새벽 4시 기상해 파스를 붙이고, 정호가 뒷문으로 들어와 다락방으로 올라온 것을 발소리로 알아챔.",
+   "location_id": "LOC_003",
+   "time_id": "TIME_017",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_008"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "from": "수면 중",
+     "to": "기상, 파스 부착",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "배순덕은 새벽 네 시에 일어났다. ... 일어나서 제일 먼저 하는 일은 오른쪽 무릎에 파스를 붙이는 것이었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "모름",
+     "to": "정호가 도착해 다락방에 있음",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "순덕은 그때 이미 알았다. 그 발소리는 열여덟 살 때부터 알던 발소리였다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_008 (파스)",
+     "source_text": "일어나서 제일 먼저 하는 일은 오른쪽 무릎에 파스를 붙이는 것이었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "오른쪽 무릎 불편(계단 난간 필요, 굽히는 데 시간 걸림)",
+     "source_text": "몇 년 전부터 그 무릎이 안 좋았다. 계단을 오를 때는 난간을 잡아야 했고, 아침에는 굽히는 데 시간이 걸렸다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "남편 배만수 사망 사실(1967년 겨울, 심장)",
+     "source_text": "남편 배만수가 죽은 게 1967년 겨울이었다. 심장이었다. 저녁에 장부를 보다가 엎드렸고 그게 끝이었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "청력이 예민해 2층 발소리와 뒷문 빗장 소리까지 들음",
+     "source_text": "이층에서 사람 숨소리 같은 것이 들렸다. 들릴 리 없는 거리였다. 그런데도 들렸다. 새벽에 장씨가 뒷문 빗장을 여는 소리를 들었고, 두 사람 발소리가 들어오는 것을 들었고, 그중 하나가 계단 셋째 칸을 밟고 올라가는 것을 들었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_1",
+     "assumes": "순덕이 들은 발소리와 빗장 소리가 EVENT_1_1의 정호·문식 행동과 동일 사건임",
+     "source_text": "새벽에 장씨가 뒷문 빗장을 여는 소리를 들었고, 두 사람 발소리가 들어오는 것을 들었고, 그중 하나가 계단 셋째 칸을 밟고 올라가는 것을 들었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "정호(아들)가 18년 만에 금호탕에 돌아옴",
+     "via": "direct",
+     "retained": true,
+     "source_text": "순덕은 그때 이미 알았다. 그 발소리는 열여덟 살 때부터 알던 발소리였다."
+    }
+   ],
+   "cause": "습관적 새벽 4시 기상",
+   "result": "정호 귀환 인지, 파스 부착으로 무릎 통증 관리",
+   "source_text": "배순덕은 새벽 네 시에 일어났다. ... 파스를 붙이고 이불을 개고 나서 순덕은 천장을 올려다보았다. 이층에서 사람 숨소리 같은 것이 들렸다. ... 순덕은 그때 이미 알았다. 그 발소리는 열여덟 살 때부터 알던 발소리였다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_3",
+   "scene_id": "scene_1_1",
+   "order": 1,
+   "title": "새벽 골방에서 카운터로, 개장 준비",
+   "summary": "순덕이 골방에서 나와 카운터 불을 켜고 요금통·장부를 확인한 뒤 여탕 수도를 점검한다. 장씨가 새벽 3시 반에 보일러를 떼 5시엔 물이 뜨거워질 예정이다.",
+   "location_id": "LOC_001",
+   "time_id": "NEW:새벽_5시_전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_002",
+    "OBJ_006"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_003",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "골방을 나와 카운터 불을 켰다."
+    },
+    {
+     "entity": "LOC_001",
+     "field": "condition",
+     "from": "닫힘",
+     "to": "개장 준비 중",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "네 시 오십 분에 순덕은 정문 셔터를 올렸다. ... 다섯 시 정각에 열쇠로 정문을 열었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_001 (정문·뒷문 열쇠 고리)",
+     "source_text": "열쇠는 고리에 두 개가 달려 있었다. 정문 것과 뒷문 것. 이 고리가 순덕 것이었고"
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "assumes": "OBJ_001 (똑같은 열쇠 고리)",
+     "source_text": "똑같은 고리 하나를 장씨가 갖고 있었다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "body_status",
+     "assumes": "보일러 가동 가능 상태",
+     "source_text": "장씨가 세 시 반에 보일러를 뗐으니 다섯 시에는 뜨거워질 것이었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "장남 정호가 대구에서 해고됐음",
+     "via": "told",
+     "retained": true,
+     "source_text": "정미가 지난달에 흘렸다. 오빠가 대구에서 잘렸다고."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "금호탕 운영 규칙(5시 개장, 8시 폐장, 월 2회 휴무)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "금호탕은 새벽 다섯 시에 열고 저녁 여덟 시에 닫았다. 매달 첫째 월요일과 셋째 월요일이 휴무였다."
+    }
+   ],
+   "cause": "개장 시간 도래",
+   "result": "정문 개방, 첫 손님 맞이 준비 완료",
+   "source_text": "순덕은 아무 말도 하지 않았다. ... 네 시 오십 분에 순덕은 정문 셔터를 올렸다. 무릎 때문에 셔터 올리는 데 시간이 걸렸다. 다섯 시 정각에 열쇠로 정문을 열었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_4",
+   "scene_id": "scene_1_1",
+   "order": 2,
+   "title": "첫 손님 최영감 입장 및 요금 납부",
+   "summary": "최영감이 문 열림과 동시에 들어와 성인 요금 600원을 내고 남탕으로 들어간다.",
+   "location_id": "LOC_001",
+   "time_id": "NEW:새벽_5시_정각",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "from": "LOC_012",
+     "to": "LOC_005",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "최영감은 문이 열리는 것과 동시에 들어왔다. ... 최영감은 남탕으로 들어갔다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "assumes": "현금 600원 (요금 납부 후 소지 감소)",
+     "source_text": "최영감이 말하며 육백 원을 서랍에 넣었다. 꼬박꼬박 냈다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "assumes": "현금 600원 이상 소지",
+     "source_text": "최영감이 말하며 육백 원을 서랍에 넣었다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "금호탕 개장 시각(5시) 및 요금 체계(어른 600원)",
+     "source_text": "최영감은 문이 열리는 것과 동시에 들어왔다. 늘 그랬다. ... \"오늘 물은 됐나.\""
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "개장 시각 도래",
+   "result": "첫 손님 입욕 시작",
+   "source_text": "최영감은 문이 열리는 것과 동시에 들어왔다. 늘 그랬다. 문 밖에서 기다리고 있다가 들어왔다. ... \"춥다.\" 최영감이 말하며 육백 원을 서랍에 넣었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_5",
+   "scene_id": "scene_1_1",
+   "order": 3,
+   "title": "최영감의 매각 권유와 순덕의 거절",
+   "summary": "목욕을 마친 최영감이 4000만 원 매각가를 제시하며 권유하나 순덕이 단호히 거절한다. 최영감은 아쉬운 표정으로 물러난다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:새벽_6시_경",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "여관 건축 시 역전 상가 가치 상승, 금호탕 부지 매입 시 이득",
+     "source_text": "여관을 올리면 역전이 산다. 배 여사도 알잖나. 목욕탕 하나 갖고 얼마나 더 버틸라꼬."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "최영감의 매각 의도와 제시 금액(4000만 원)",
+     "source_text": "사천이다. 사천만 원. 이 동네서 그 값 줄 사람 없다. 내 알아봤다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_6",
+     "assumes": "최영감이 정호 귀향 사실을 알고 있으며 이를 대화 소재로 삼음",
+     "source_text": "\"아들 왔다며.\" 순덕의 손이 멈췄다. \"어젯밤에 정호가 광장 지나가는 거 삼층서 봤다.\""
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "최영감이 금호탕을 4000만 원에 매입하려 함",
+     "via": "told",
+     "retained": true,
+     "source_text": "사천이다. 사천만 원. 이 동네서 그 값 줄 사람 없다. 내 알아봤다."
+    }
+   ],
+   "cause": "최영감의 지속적 매각 권유",
+   "result": "순덕의 단호한 거절, 최영감 퇴장",
+   "source_text": "\"배 여사.\" \"또 그 얘기면 하지 마소.\" \"들어나 보라니까. 사천이다. 사천만 원. ... \"죽어도 안 판다 캤다.\" 최영감은 나갔다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_6",
+   "scene_id": "scene_1_1",
+   "order": 4,
+   "title": "최영감이 정호 귀향 사실을 알림",
+   "summary": "최영감이 어젯밤 광장에서 가방 든 정호를 목격했음을 밝히며 정호 귀향을 확인시켜준다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:새벽_6시_경",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [
+    "OBJ_014"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "정호 귀향 짐작만 함",
+     "to": "정호 귀향 확인됨 (최영감 목격)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "\"아들 왔다며.\" ... \"어젯밤에 정호가 광장 지나가는 거 삼층서 봤다. 가방 들고.\""
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "정호가 어젯밤 광장을 지나갔음 (직접 목격)",
+     "source_text": "어젯밤에 정호가 광장 지나가는 거 삼층서 봤다. 가방 들고. 내 눈이 아직 그 정도는 된다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_5",
+     "assumes": "매각 권유 대화 흐름 속에서 정호 귀향 화제가 자연스럽게 나옴",
+     "source_text": "\"아들 왔다며.\" 순덕의 손이 멈췄다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "정호가 어젯밤 가방을 들고 광장을 지나감 (최영감 목격)",
+     "via": "told",
+     "retained": true,
+     "source_text": "어젯밤에 정호가 광장 지나가는 거 삼층서 봤다. 가방 들고."
+    }
+   ],
+   "cause": "최영감이 대화 전환 위해 정호 화제 꺼냄",
+   "result": "순덕이 정호 귀향을 사실로 인지함",
+   "source_text": "\"아들 왔다며.\" 순덕의 손이 멈췄다. \"누가 그카노.\" \"어젯밤에 정호가 광장 지나가는 거 삼층서 봤다. 가방 들고.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_7",
+   "scene_id": "scene_1_2",
+   "order": 5,
+   "title": "정호 귀가, 어머니와 대면",
+   "summary": "정호가 오전 8시 넘어 금호탕에 도착해 어머니와 짧게 대화한 뒤 골방에서 식사한다. 식은 콩나물국과 밥, 김치를 먹는다.",
+   "location_id": "LOC_001",
+   "time_id": "NEW:오전_8시_넘어",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_014",
+    "OBJ_017"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_014",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호가 내려온 것은 여덟 시가 넘어서였다. 카운터에는 어머니가 앉아 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_002",
+     "to": "LOC_003",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "\"골방에 가서 먹어라. 상 봐 놨다.\" 그게 전부였다. 정호는 골방에 들어갔다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_014 (가방)",
+     "source_text": "정호는 이층에 올라가 가방을 풀었다. 양복을 벽에 걸었다. 통장을 꺼냈다가 다시 넣었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_007 (통장, 은행 700만 원 예금)",
+     "source_text": "은행 칠백만 원, 박 사장 오백만 원. 합쳐서 천이백만 원."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "자신 부채 현황(박 사장 500만 원, 이자 납부 중, 다음 달 이자 없음) 및 최영감 매각가 4000만 원",
+     "source_text": "최영감이 사천만 원을 준다는 얘기는 정미한테 들어서 알고 있었다. 사천이면 빚을 다 갚고도 남았다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "정호가 대구에서 해고됐음 (정미에게 들음)",
+     "source_text": "정미가 지난달에 흘렸다. 오빠가 대구에서 잘렸다고."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_6",
+     "assumes": "최영감이 목격한 '어젯밤 광장 가방 든 정호'가 이 사건의 정호 귀가와 동일 인물·동일 시점임",
+     "source_text": "어젯밤에 정호가 광장 지나가는 거 삼층서 봤다. 가방 들고. / 정호가 내려온 것은 여덟 시가 넘어서였다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "어머니가 장부를 이미 다 썼음 (개장 준비 완료)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "어머니는 장부를 보고 있었다. 이미 다 쓴 장부였다."
+    }
+   ],
+   "cause": "정호 귀향",
+   "result": "모자 대면, 정호 골방 식사",
+   "source_text": "정호가 내려온 것은 여덟 시가 넘어서였다. 카운터에는 어머니가 앉아 있었다. ... \"엄마.\" \"밥은.\" \"아직.\" \"골방에 가서 먹어라. 상 봐 놨다.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_8",
+   "scene_id": "scene_1_2",
+   "order": 6,
+   "title": "쌀집 강씨가 정호 목격 및 동네 소문 예고",
+   "summary": "손님으로 온 강씨가 정호를 알아보고 대구 귀환을 확인한다. 점심때면 역전 상가에 소문 날 것임.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:오전_9시_경",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_009"
+   ],
+   "witness_character_ids": [
+    "CHAR_001"
+   ],
+   "main_actor_character_id": "CHAR_009",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_009",
+     "field": "location",
+     "from": "LOC_012",
+     "to": "LOC_005",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "손님이 두어 명 들어왔다. 여탕 쪽으로 할머니 하나, 남탕 쪽으로 쌀집 강씨. 강씨는 남탕으로 들어가면서"
+    },
+    {
+     "entity": "CHAR_009",
+     "field": "knows",
+     "from": "정호 근황 모름",
+     "to": "정호 어젯밤 귀향 확인",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "\"어이, 정호 아이가. 대구서 언제 왔노.\" \"어젯밤에요.\""
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_009",
+     "field": "knows",
+     "assumes": "정호의 과거 모습(대구 가기 전)을 기억함",
+     "source_text": "강씨는 정호를 보고 눈이 커졌다. \"어이, 정호 아이가.\""
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "강씨 목격으로 정호 귀향이 동네에 퍼질 것임을 예견함",
+     "source_text": "점심때면 역전 상가 쌀집에서 정호가 내려온 얘기가 나올 것이었다. 정호도 알았고 순덕도 알았다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_7",
+     "assumes": "정호가 골방 식사 후 카운터 옆에 서 있던 중 강씨가 들어옴",
+     "source_text": "밥을 먹고 나와서 정호는 카운터 옆에 어정쩡하게 서 있었다. 손님이 두어 명 들어왔다. ... 남탕 쪽으로 쌀집 강씨."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_009",
+     "info": "정호가 어젯밤 대구에서 귀향함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "\"어이, 정호 아이가. 대구서 언제 왔노.\" \"어젯밤에요.\""
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "정호 귀향 소식이 강씨를 통해 동네에 퍼질 것임",
+     "via": "inference",
+     "retained": true,
+     "source_text": "점심때면 역전 상가 쌀집에서 정호가 내려온 얘기가 나올 것이었다."
+    }
+   ],
+   "cause": "강씨 입욕차 방문",
+   "result": "정호 귀향 사실 동네 확산 개시",
+   "source_text": "강씨는 정호를 보고 눈이 커졌다. \"어이, 정호 아이가. 대구서 언제 왔노.\" \"어젯밤에요.\" \"휴가가.\" \"예, 뭐.\" 강씨는 남탕으로 들어가면서 뒤를 한 번 더 돌아봤다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_9",
+   "scene_id": "scene_1_3",
+   "order": 7,
+   "title": "정호 2층에서 부채 상환 계산, 실행 못 함",
+   "summary": "정호가 2층 방에서 가방을 풀고 양복을 걸고 통장을 확인하며 부채(은행 700만+박사장 500만=1200만)와 매각대금 4000만 원 계산을 되뇌나 어머니 앞에서 말하지 못한다.",
+   "location_id": "LOC_008",
+   "time_id": "NEW:오전_9시_이후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_014",
+    "OBJ_016",
+    "OBJ_007"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_003",
+     "to": "LOC_008",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 이층에 올라가 가방을 풀었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_016 (양복)",
+     "source_text": "양복을 벽에 걸었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "박 사장 채무 500만 원, 월 이자 납부 중, 이번 달 간신히 막음, 다음 달 이자 없음",
+     "source_text": "박 사장의 이자는 달마다 나갔고, 이번 달 것은 지난주에 겨우 막았다. 다음 달 것은 없었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "매각 시 부채 완제 및 가족 지원 가능하나 실행 결단 못 함",
+     "source_text": "사천이면 빚을 다 갚고도 남았다. 남는 돈으로 어머니 방 하나 얻어 드리고, 정미 가게에 보태고, 그러고도 남았다. ... 그런데 아래층에 내려가면 그 답이 입 밖으로 나오지 않았다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "귀향 후 혼자 있는 시간",
+   "result": "부채 상환 시뮬레이션 완료, 행동으로 옮기지 못함",
+   "source_text": "정호는 이층에 올라가 가방을 풀었다. 양복을 벽에 걸었다. 통장을 꺼냈다가 다시 넣었다. 그러고 나서 한참을 앉아 있었다. 은행 칠백만 원, 박 사장 오백만 원. 합쳐서 천이백만 원. ... 열 번 다 답이 같았다. 그런데 아래층에 내려가면 그 답이 입 밖으로 나오지 않았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_10",
+   "scene_id": "scene_1_1",
+   "order": 1,
+   "title": "정미의 방문과 점심 식사",
+   "summary": "정미가 미역국을 들고 금호탕을 방문해 순덕, 정호와 함께 점심을 먹는다. 정호의 빚 문제가 암시되나 꺼내지 못한다.",
+   "location_id": "LOC_001",
+   "time_id": "NEW:십이월_첫날_낮",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "LOC_013",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정미는 열두 시 조금 넘어서 왔다. 냄비를 신문지에 싸서 들고 있었다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "NEW:미역국_냄비",
+     "op": "add",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "냄비를 신문지에 싸서 들고 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_004",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호가 내려오고 있었다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "from": "unknown",
+     "to": "정호의 빚 액수와 이자, 최영감 관련 채무 사실",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "지난주에 정호가 전화로 다 말했다. 빚이 얼마고, 이자가 얼마고, 최영감 얘기까지."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "NEW:미역국_냄비 (손에 들고 옴)",
+     "source_text": "냄비를 신문지에 싸서 들고 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "머리가 문틀에 닿을 만큼 키가 큼 (어릴 때부터 부딪히던 자리)",
+     "source_text": "정호는 상을 들고 나가려다가 문틀에 머리를 부딪혔다. 어릴 때부터 부딪히던 자리였다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "정호의 빚 문제와 최영감 채무 사실을 모름 (알고 있는 척하지 않음)",
+     "source_text": "순덕은 밥그릇에서 눈을 들지 않았다. / 순덕이 상을 물렸다. 정호는 상을 들고 나가려다가 문틀에 머리를 부딪혔다. 어릴 때부터 부딪히던 자리였다. 순덕이 그 소리에 처음으로 고개를 들고 아들을 봤다. 그러고는 다시 내렸다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "장문식이 골방에 거주 중이며 식사 습관이 있음",
+     "source_text": "장 아저씨 밥은 챙겨 드렸나 봐 봐. 엄마가 카운터에 상 내주는 거, 오빠가 있으면 잊는다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "정호가 지난주 전화로 빚 액수, 이자, 최영감 채무 사실을 알림",
+     "via": "told",
+     "retained": true,
+     "source_text": "지난주에 정호가 전화로 다 말했다. 빚이 얼마고, 이자가 얼마고, 최영감 얘기까지."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "정미가 이미 빚 사실을 알고 있으며 어머니에게 직접 말하라고 했음",
+     "via": "told",
+     "retained": true,
+     "source_text": "정미는 그때 딱 한 마디 했다. 엄마한테 직접 말해. 정호는 그러겠다고 했다."
+    }
+   ],
+   "cause": "정미가 습관적으로 점심 반찬을 들고 어머니를 방문함",
+   "result": "세 모자가 식사함. 정호의 빚 문제가 대화 주제로 떠오르나 꺼내지 못함. 정미가 정호에게 장문식 식사 챙기기를 당부함",
+   "source_text": "정미는 열두 시 조금 넘어서 왔다. 냄비를 신문지에 싸서 들고 있었다. ... 정미가 가게로 돌아가면서 정호를 골목까지 끌고 나왔다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_11",
+   "scene_id": "scene_1_2",
+   "order": 2,
+   "title": "정호의 지하 쪽방 확인",
+   "summary": "정호가 지하 보일러실 옆 쪽방을 확인한다. 장문식이 15년째 거주 중임을 확인.",
+   "location_id": "LOC_008",
+   "time_id": "NEW:십이월_첫날_오후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_001",
+     "to": "LOC_008",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 지하로 내려가 봤다. 보일러실 옆 쪽방 문은 닫혀 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "location",
+     "assumes": "LOC_008 (쪽방 거주 중)",
+     "source_text": "보일러실 옆 쪽방 문은 닫혀 있었다. 야전침대 하나와 라디오 하나, 공구함이 있는 방이었다. 문식은 그 방에서 십오 년을 살았다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "body_status",
+     "assumes": "거동 가능 (식사하러 카운터로 올라옴)",
+     "source_text": "카운터로 올라오니 순덕이 이미 상을 하나 내놓고 있었다. 문식은 골방에서 밥을 먹지 않았다. 카운터에 상을 내주면 거기서 먹었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "장문식이 1972년 겨울부터 15년간 쪽방 거주 중, 고향 상주 외 정보 모름",
+     "via": "direct",
+     "retained": true,
+     "source_text": "문식은 그 방에서 십오 년을 살았다. 1972년 겨울에 와서 그해부터 쭉이었다. 고향이 상주라는 것 말고 정호가 아는 것은 없었다."
+    }
+   ],
+   "cause": "정미가 장문식 밥 챙기기를 당부하여 확인하러 감",
+   "result": "장문식의 거주 환경과 장기 거주 사실 확인",
+   "source_text": "정호는 지하로 내려가 봤다. 보일러실 옆 쪽방 문은 닫혀 있었다. ... 카운터로 올라오니 순덕이 이미 상을 하나 내놓고 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_12",
+   "scene_id": "scene_1_3",
+   "order": 3,
+   "title": "저녁 보일러 고장과 수리",
+   "summary": "남탕 보일러가 고장나 강씨가 항의하고, 장문식이 수리함. 점화 쪽 문제로 겨울철 빈발함.",
+   "location_id": "LOC_005",
+   "time_id": "NEW:십이월_첫날_저녁_6시",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_004",
+    "CHAR_009"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [
+    "OBJ_004"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_004",
+     "field": "body_status",
+     "from": "정상 가동",
+     "to": "점화 불량으로 정지",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "정상 가동",
+     "certainty": "explicit",
+     "source_text": "\"물이 식는다!\" 강씨였다. ... 손에는 렌치가 들려 있었다. 그는 순덕을 한 번 보고 고개를 숙였다. 보일러가 죽었다는 뜻이었다."
+    },
+    {
+     "entity": "OBJ_004",
+     "field": "body_status",
+     "from": "점화 불량으로 정지",
+     "to": "정상 가동 (수리 완료)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "십 분쯤 지나 보일러가 다시 도는 소리가 들렸다. ... \"됐어요.\" \"점화 쪽이요. 겨울이라 그래요.\""
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "location",
+     "from": "LOC_008",
+     "to": "LOC_007",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "지하에서 문식이 올라왔다. 손에는 렌치가 들려 있었다. ... 문식은 지하로 내려갔다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "location",
+     "from": "LOC_007",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "문식이 올라왔다. 손에 기름이 묻어 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "ability",
+     "assumes": "보일러 수리 기술 보유 (렌치로 점화 쪽 수리 가능)",
+     "source_text": "손에는 렌치가 들려 있었다. ... 십 분쯤 지나 보일러가 다시 도는 소리가 들렸다. \"점화 쪽이요. 겨울이라 그래요.\""
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "보일러는 장문식만 수리 가능함 (규칙적 사실로 인지)",
+     "source_text": "보일러는 장씨만 만졌다. 순덕도 안 건드렸다. ... 문식이 없으면 탕을 못 열었다. 그건 규칙이라기보다 사실이었다."
+    },
+    {
+     "entity": "CHAR_009",
+     "field": "knows",
+     "assumes": "남탕 이용 고객으로 물 온도 변화에 민감함",
+     "source_text": "\"물이 식는다!\" 강씨였다. 또 왔다. 하루 두 번 오는 날도 있는 사람이었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "올겨울(11월) 벌써 보일러 1회 고장, 작년 겨울 2회, 재작년 겨울 1회 고장 이력",
+     "via": "direct",
+     "retained": true,
+     "source_text": "지난겨울에도 두 번 죽었다. 그 전 겨울에는 한 번. 올겨울은 아직 십일월인데 벌써 한 번이었다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "보일러 소리가 아침과 조금 다르게 들림 (이상 징후 인지)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "정호는 그 소리가 아침에 들었던 소리와 조금 다르다고 생각했다. 어디가 다른지는 몰랐다."
+    }
+   ],
+   "cause": "보일러 점화 쪽 불량 (겨울철 빈발)",
+   "result": "장문식이 10분 만에 수리 완료, 보일러 정상 가동 재개",
+   "source_text": "저녁 여섯 시가 넘어서 남탕에서 소리가 났다. \"물이 식는다!\" ... 문식이 올라왔다. 손에 기름이 묻어 있었다. \"됐어요.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_13",
+   "scene_id": "scene_1_4",
+   "order": 4,
+   "title": "영업 종료 및 장부 정리",
+   "summary": "순덕이 정문 잠그고 셔터 내린 뒤 장부 정리. 최영감 600원 채무가 최상단에 기록됨.",
+   "location_id": "LOC_001",
+   "time_id": "NEW:십이월_첫날_밤_8시",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_002"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_001",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "여덟 시에 순덕은 정문을 잠그고 셔터를 내렸다."
+    },
+    {
+     "entity": "OBJ_002",
+     "field": "body_status",
+     "from": "미작성",
+     "to": "영업 마감 장부 기록 완료 (어른 32명, 아이 4명, 최영감 600원 최상단)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그러고 나서 순덕은 장부를 썼다. 어른 서른둘, 아이 넷. 최영감 육백 원이 제일 위에 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "무릎 관절 불편 (무릎을 짚고 셔터 내림)",
+     "source_text": "무릎을 짚고 셔터를 끌어내리는 어머니를 정호는 뒤에서 봤다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "최영감이 600원 채무자로 장부 최상단에 기록됨 (채무 사실 존재)",
+     "source_text": "최영감 육백 원이 제일 위에 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "당일 영업 실적: 어른 32명, 아이 4명. 최영감 600원 채무가 장부 최상단",
+     "via": "direct",
+     "retained": true,
+     "source_text": "어른 서른둘, 아이 넷. 최영감 육백 원이 제일 위에 있었다."
+    }
+   ],
+   "cause": "영업 시간 종료",
+   "result": "시설 잠금 및 장부 마감 완료",
+   "source_text": "여덟 시에 순덕은 정문을 잠그고 셔터를 내렸다. 정호가 셔터를 내리겠다고 했지만 순덕은 못 들은 척했다. ... 그러고 나서 순덕은 장부를 썼다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_14",
+   "scene_id": "scene_1_5",
+   "order": 5,
+   "title": "정호의 다락방 대기 및 심야 문식 외출",
+   "summary": "정호가 2층 다락방에서 대기하다 자정 무렵 장문식이 연탄 갈러 나가는 소리 들음. 통장 확인함.",
+   "location_id": "LOC_004",
+   "time_id": "TIME_018",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_007"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_001",
+     "to": "LOC_004",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 이층으로 올라갔다. 계단 셋째 칸이 삐걱거렸다. 골방 문이 닫히는 소리가 났다. 다락방에 앉아 있으니"
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "location",
+     "from": "LOC_008",
+     "to": "LOC_009",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "열두 시가 다 되어 뒷문 빗장 소리가 났다. 문식이 연탄을 갈러 나가는 소리였다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_007",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 가방에서 통장을 꺼내 들여다보다가 다시 넣었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "assumes": "OBJ_003 (연탄 갈러 나감)",
+     "source_text": "문식이 연탄을 갈러 나가는 소리였다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "자신에게 열쇠가 없음 (어젯밤 뒷문 밖에서 열쇠 없어 못 들어옴)",
+     "source_text": "열쇠가 없어서. 지금도 없었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_014 (가방 소지 중)",
+     "source_text": "정호는 가방에서 통장을 꺼내 들여다보다가 다시 넣었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "어젯밤(11월 30일) 자정 무렵 뒷문 밖에서 열쇠 없어 들어올 수 없었음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "정호는 어젯밤 이 시간에 자기가 그 문 밖에 서 있었다는 것을 생각했다. 열쇠가 없어서. 지금도 없었다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "보일러가 밤에도 완전히 꺼지지 않고 연소 중 (새벽 재점화용)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "굴뚝 쪽 창으로 연기가 보였다. 보일러가 돌고 있다는 뜻이었다. 밤에도 완전히 끄지는 않았다. 새벽에 다시 떼기 위해서였다."
+    }
+   ],
+   "cause": "영업 종료 후 대기 중",
+   "result": "장문식 연탄 교체 외출 확인, 통장 내용 확인, 열쇠 부재 재확인",
+   "source_text": "정호는 이층으로 올라갔다. 계단 셋째 칸이 삐걱거렸다. ... 열두 시가 다 되어 뒷문 빗장 소리가 났다. 문식이 연탄을 갈러 나가는 소리였다. 정호는 가방에서 통장을 꺼내 들여다보다가 다시 넣었다. 아래층은 조용했다.",
+   "certainty": "explicit"
+  }
+ ]
+}

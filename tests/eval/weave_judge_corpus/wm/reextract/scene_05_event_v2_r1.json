@@ -1,0 +1,329 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 1,
+  "batch_id": "T2-R1-A",
+  "scene_id": "scene_05",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_05.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:31:30Z",
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:무화폐_무직원_배급",
+      "content": "상점에서 돈과 직원 없이 필요한 만큼만 신청해 물건을 받아 간다",
+      "description": "1번가의 파란 표지판 상점에서는 사람들이 차례로 들어가 필요한 만큼만 물건을 받아 나온다. 화폐 거래도 없고 응대하는 직원도 없으며, 신청과 수령만으로 절차가 끝난다.",
+      "source_text": "필요한 만큼만 물건을 받아 나왔다. / 돈도, 직원도 없이. 신청하고, 받아 가고, 끝.",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "미래 세계에 로봇 신체로 접속해 활동하는 현실의 대학생 플레이어",
+      "traits": [
+        {
+          "trait": "혼잣말로 감탄을 늘어놓는 가벼운 말투 ('~단 말이지~')",
+          "trait_type": "speech",
+          "source_text": "\"몇 번을 봐도 신기하단 말이지~ / 우리 동네 편의점 사장님이 보면 기절하겠다.\"",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "낯선 문물을 반복해서 구경하며 신기해하는 호기심",
+          "trait_type": "personality",
+          "source_text": "1번가를 천천히 걸으며 사람 구경을 했다. / \"몇 번을 봐도 신기하단 말이지~\"",
+          "certainty": "inferred"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S05_1",
+      "source_text": "공강을 맞아 낮부터 접속했다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "NEW:인사한_아이",
+      "name": "통을 안고 나온 아이",
+      "aliases": ["아이"],
+      "entity_type": "person",
+      "description": "파란 표지판 상점에서 양손 가득 통을 안고 나와 로봇인 알파에게 꾸벅 인사한 아이",
+      "traits": [
+        {
+          "trait": "처음 본 상대에게도 꾸벅 인사하는 예의 바른 태도",
+          "trait_type": "habit",
+          "source_text": "로봇인 나를 보고 꾸벅 인사를 했다.",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S05_2",
+      "source_text": "양손 가득 통을 안고 나온 아이가 / 로봇인 나를 보고 꾸벅 인사를 했다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_006",
+      "name": "1번가",
+      "description": "알파가 천천히 걸으며 사람 구경을 한 거리. 파란 표지판 상점이 있다.",
+      "source_text": "1번가를 천천히 걸으며 사람 구경을 했다.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:파란_표지판_상점",
+      "name": "파란 표지판 상점",
+      "description": "1번가에 있는 파란 표지판이 달린 상점. 사람들이 차례로 들어가 필요한 만큼만 물건을 받아 나온다.",
+      "source_text": "파란 표지판 상점 앞, 사람들이 차례로 들어가 / 필요한 만큼만 물건을 받아 나왔다.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "LOC_002",
+      "name": "플레이어의 집",
+      "description": "플레이어가 현실에서 접속을 수행하는 공간",
+      "source_text": "공강을 맞아 낮부터 접속했다.",
+      "certainty": "inferred"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "NEW:배급_통",
+      "name": "배급받은 물건이 든 통",
+      "description": "아이가 파란 표지판 상점에서 받아 양손 가득 안고 나온 통",
+      "first_appearance_event_id": "EVENT_S05_2",
+      "source_text": "양손 가득 통을 안고 나온 아이가",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [
+    {
+      "time_id": "NEW:공강일_낮",
+      "expression": "공강인 날의 낮",
+      "description": "강의가 비는 날, 플레이어가 낮부터 접속한 현실 시점",
+      "timeline": "real_present",
+      "source_text": "공강을 맞아 낮부터 접속했다.",
+      "certainty": "explicit"
+    },
+    {
+      "time_id": "NEW:접속_직후_1번가",
+      "expression": "접속 직후 1번가 산책 시점",
+      "description": "접속 직후 미래 세계에서 1번가를 걸으며 사람 구경을 한 시점. 미래 세계의 시각은 원문에 명시되지 않는다.",
+      "timeline": "future_world",
+      "source_text": "1번가를 천천히 걸으며 사람 구경을 했다.",
+      "certainty": "inferred"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S05_1",
+      "scene_id": "scene_05",
+      "order": 1,
+      "title": "공강 날 낮부터의 접속",
+      "summary": "플레이어는 강의가 비는 공강 날을 맞아 낮부터 미래 세계에 접속했다. 이날은 수사를 쉬어가는 날로 정해 두었다.",
+      "location_id": "LOC_002",
+      "time_id": "NEW:공강일_낮",
+      "timeline": "real_present",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["OBJ_002"],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "location",
+          "from": "unknown",
+          "to": "LOC_002",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "inferred",
+          "certainty_reason": "원문은 접속 장소를 명시하지 않는다 — 접속 행위 정황으로 추정",
+          "source_text": "공강을 맞아 낮부터 접속했다."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "OBJ_002 ('오류' 게임 프로그램 — 접속에 사용)",
+          "source_text": "공강을 맞아 낮부터 접속했다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "미래 세계로 접속하는 방법과 절차를 이미 알고 있음",
+          "source_text": "공강을 맞아 낮부터 접속했다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "자신이 진행 중인 수사(사건 조사)가 존재하며 그 일정을 스스로 조절할 수 있음",
+          "source_text": "오늘은 수사도 쉬어가는 날."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "현실의 자기 학사 일정(공강일)을 알고 있음",
+          "source_text": "공강을 맞아 낮부터 접속했다."
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S05_2",
+          "assumes": "이 접속의 직후 시점이 EVENT_S05_2이며, 현실의 '낮' 시각과 1번가에서 사람들이 상점을 드나드는 미래 세계 시각이 같은 시각을 가리켜야 한다",
+          "source_text": "공강을 맞아 낮부터 접속했다. / 1번가를 천천히 걸으며 사람 구경을 했다."
+        },
+        {
+          "with_event_id": "EVENT_S05_2",
+          "assumes": "이 접속의 결과로 CHAR_002가 미래 세계의 로봇 신체로 1번가에 존재하게 된다",
+          "source_text": "공강을 맞아 낮부터 접속했다. / 로봇인 나를 보고 꾸벅 인사를 했다."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "강의가 없는 공강일이라 낮 시간이 비었고, 수사도 쉬어가기로 했다.",
+      "result": "플레이어가 낮 시간에 미래 세계에 접속했다.",
+      "source_text": "공강을 맞아 낮부터 접속했다. / 오늘은 수사도 쉬어가는 날.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_S05_2",
+      "scene_id": "scene_05",
+      "order": 2,
+      "title": "1번가 산책과 배급 상점 구경, 아이의 인사",
+      "summary": "알파는 1번가를 천천히 걸으며 사람 구경을 하다가, 파란 표지판 상점에서 사람들이 돈도 직원도 없이 필요한 만큼만 물건을 받아 나오는 광경을 보고 감탄했다. 양손 가득 통을 안고 나온 아이가 로봇인 알파에게 꾸벅 인사하자 알파도 얼떨결에 고개를 숙였고, 그때 관절이 삐걱 소리를 냈다.",
+      "location_id": "LOC_006",
+      "time_id": "NEW:접속_직후_1번가",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002", "NEW:인사한_아이"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["NEW:배급_통"],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "location",
+          "from": "unknown",
+          "to": "LOC_006",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "1번가를 천천히 걸으며 사람 구경을 했다."
+        },
+        {
+          "entity": "NEW:인사한_아이",
+          "field": "possesses",
+          "from": "unknown",
+          "to": "NEW:배급_통",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "양손 가득 통을 안고 나온 아이가"
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "미래 세계의 로봇 신체 상태 (타인이 한눈에 로봇으로 알아봄)",
+          "source_text": "로봇인 나를 보고 꾸벅 인사를 했다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "고개를 숙일 수 있는, 삐걱 소리가 나는 관절을 가진 신체",
+          "source_text": "나도 얼떨결에 고개를 숙였다. 관절이 삐걱, 소리를 냈다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "미래 세계에서 소리 내어 발화할 수 있음",
+          "source_text": "\"몇 번을 봐도 신기하단 말이지~\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "로봇 신체로 거리를 천천히 걸어 이동할 수 있음 (보행 제어 가능)",
+          "source_text": "1번가를 천천히 걸으며 사람 구경을 했다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "이 상점의 무화폐·무직원 배급 방식을 이번이 처음이 아니라 이전에도 여러 차례 목격해 알고 있음",
+          "source_text": "\"몇 번을 봐도 신기하단 말이지~\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "현실 세계의 화폐 기반 상거래(동네 편의점과 그 사장)를 알고 있으며 그것과 대조하고 있음",
+          "source_text": "\"우리 동네 편의점 사장님이 보면 기절하겠다.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "이곳이 1번가라는 장소임을 알고 있음",
+          "source_text": "1번가를 천천히 걸으며 사람 구경을 했다."
+        },
+        {
+          "entity": "NEW:인사한_아이",
+          "field": "possesses",
+          "assumes": "NEW:배급_통 (양손으로 안고 있음)",
+          "source_text": "양손 가득 통을 안고 나온 아이가"
+        },
+        {
+          "entity": "NEW:인사한_아이",
+          "field": "body_status",
+          "assumes": "양손을 함께 써서 통을 안을 수 있는 신체",
+          "source_text": "양손 가득 통을 안고 나온 아이가"
+        },
+        {
+          "entity": "NEW:인사한_아이",
+          "field": "knows",
+          "assumes": "알파를 로봇으로 식별하고 있으며, 로봇 형태의 존재가 거리에 있다는 것을 이미 아는 상태",
+          "source_text": "로봇인 나를 보고 꾸벅 인사를 했다."
+        },
+        {
+          "entity": "NEW:인사한_아이",
+          "field": "knows",
+          "assumes": "돈이나 직원 없이 신청만으로 물건을 받아 오는 절차를 알고 있음",
+          "source_text": "사람들이 차례로 들어가 / 필요한 만큼만 물건을 받아 나왔다. / 양손 가득 통을 안고 나온 아이가"
+        },
+        {
+          "entity": "NEW:인사한_아이",
+          "field": "ability",
+          "assumes": "혼자 상점에 들어가 물건을 받아 나올 수 있음",
+          "source_text": "양손 가득 통을 안고 나온 아이가"
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S05_1",
+          "assumes": "EVENT_S05_1의 접속 직후 시점이며, 접속과 1번가 산책 사이에 별도의 시간 경과나 다른 장소 경유가 없다",
+          "source_text": "공강을 맞아 낮부터 접속했다. / 1번가를 천천히 걸으며 사람 구경을 했다."
+        },
+        {
+          "with_event_id": "EVENT_S05_1",
+          "assumes": "EVENT_S05_1에서 '수사를 쉬어가는 날'로 정했기 때문에 이 사건에서 수사 활동 없이 사람 구경만 하고 있어야 한다",
+          "source_text": "오늘은 수사도 쉬어가는 날. / 1번가를 천천히 걸으며 사람 구경을 했다."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "수사를 쉬는 날이라 1번가를 걸으며 사람 구경을 했다.",
+      "result": "배급 상점의 광경을 다시 확인했고, 아이와 인사를 주고받으며 관절에서 삐걱 소리가 났다.",
+      "source_text": "1번가를 천천히 걸으며 사람 구경을 했다. / 파란 표지판 상점 앞, 사람들이 차례로 들어가 필요한 만큼만 물건을 받아 나왔다. / 양손 가득 통을 안고 나온 아이가 로봇인 나를 보고 꾸벅 인사를 했다. 나도 얼떨결에 고개를 숙였다. 관절이 삐걱, 소리를 냈다.",
+      "certainty": "explicit"
+    }
+  ]
+}

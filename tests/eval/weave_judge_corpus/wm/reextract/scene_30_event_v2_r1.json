@@ -1,0 +1,247 @@
+{
+  "schema_version": 2,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 1,
+  "batch_id": "T2-R1-B",
+  "scene_id": "scene_30",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_30.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:37:57Z",
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["알파"],
+      "entity_type": "person",
+      "description": "병실 앞까지 갔다가 들어가지 않고 돌아서서, 블루멘의 방문에 쪽지를 남긴 화자",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S30_1",
+      "source_text": "병실 앞까지 갔다가, 유리문 손잡이 앞에서 손을 멈췄다. / - 알파",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_006",
+      "name": "슐라우 프로비에렌",
+      "aliases": ["슐라우"],
+      "entity_type": "person",
+      "description": "화자가 상태를 궁금해하며 병실을 찾아간 대상. 이 장면에서 직접 등장하지는 않는다",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S30_1",
+      "source_text": "<슐라우 상태 궁금해서 왔다 갑니다. 무리하게 안 물어볼게요. - 알파>",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_012",
+      "name": "블루멘 랑잠 (Blumen Langsam)",
+      "aliases": ["블루멘"],
+      "entity_type": "person",
+      "description": "화자가 방문 앞에 쪽지를 붙여 둔 대상. 이 장면에서 직접 등장하지는 않는다",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S30_2",
+      "source_text": "돌아서는 길에 블루멘의 방문 앞을 지났다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_013",
+      "name": "헤일트라움 병실",
+      "description": "유리문으로 된 병실. 화자가 문 앞까지 갔다가 들어가지 않고 돌아섰다",
+      "source_text": "병실 앞까지 갔다가, 유리문 손잡이 앞에서 손을 멈췄다.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "LOC_012",
+      "name": "블루멘의 방 (프리든 1번 방)",
+      "description": "화자가 돌아서는 길에 지나며 방문 앞에 쪽지를 붙여 둔 방",
+      "source_text": "돌아서는 길에 블루멘의 방문 앞을 지났다.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "LOC_005",
+      "name": "프리든 (Friden)",
+      "description": "화자가 장면 말미에 돌아가는 목적지",
+      "source_text": "프리든으로 돌아가는 길, 발걸음이 아주 조금 가벼웠다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "NEW:알파의_쪽지",
+      "name": "알파의 쪽지",
+      "description": "화자가 한 장 빌려 글을 적고 블루멘의 방문에 눈높이를 낮춰 붙여 둔 쪽지. 내용: '슐라우 상태 궁금해서 왔다 갑니다. 무리하게 안 물어볼게요. - 알파'",
+      "first_appearance_event_id": "EVENT_S30_2",
+      "source_text": "쪽지를 한 장 빌려, 눈높이를 한참 낮춰 붙여 두었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S30_1",
+      "scene_id": "scene_30",
+      "order": 1,
+      "title": "병실 문 앞에서 발길을 돌림",
+      "summary": "화자는 병실 앞까지 갔으나 유리문 손잡이 앞에서 손을 멈추고, 자신을 보면 상대가 또 그렇게 될 것을 우려해 '다음에 오자'며 들어가지 않고 돌아선다.",
+      "location_id": "LOC_013",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "슐라우가 이 병실에 있으며 그 병실이 어디인지 알고 있음",
+          "source_text": "병실 앞까지 갔다가, 유리문 손잡이 앞에서 손을 멈췄다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "과거에 자신을 본 슐라우가 좋지 않은 반응을 보인 적이 있음 ('또'가 반복을 전제)",
+          "source_text": "나를 보면, 또 그렇게 될 텐데."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "not_knows: 슐라우가 지금 깨어 있는지 여부",
+          "source_text": "깨어 있으면 어쩌지."
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "assumes": "병실에서 요양 중이며 깨어 있지 않을 수도 있는 상태",
+          "source_text": "깨어 있으면 어쩌지."
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S30_2",
+          "assumes": "병실 앞에서 돌아선 직후 이어지는 동선이며, 병실에서 블루멘의 방문 앞까지 도보로 지나갈 수 있어야 한다",
+          "source_text": "돌아서는 길에 블루멘의 방문 앞을 지났다."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "자신을 보면 슐라우가 또 그렇게 될 것이라는 우려",
+      "result": "병실에 들어가지 않고 돌아섬",
+      "source_text": "병실 앞까지 갔다가, 유리문 손잡이 앞에서 손을 멈췄다. 깨어 있으면 어쩌지. 나를 보면, 또 그렇게 될 텐데. \"......다음에 오자.\"",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_S30_2",
+      "scene_id": "scene_30",
+      "order": 2,
+      "title": "블루멘의 방문에 쪽지를 붙이고 프리든으로 향함",
+      "summary": "돌아서는 길에 블루멘의 방문 앞을 지나며, 화자는 쪽지를 한 장 빌려 눈높이를 한참 낮춰 방문에 붙여 둔다. 글씨가 삐뚤빼뚤한 것은 힘 조절 때문이라 스스로 변명하고, 프리든으로 돌아가는 발걸음이 조금 가벼워진다.",
+      "location_id": "LOC_012",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["NEW:알파의_쪽지"],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "from": "unknown",
+          "to": "NEW:알파의_쪽지",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "쪽지를 한 장 빌려"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "from": "NEW:알파의_쪽지",
+          "to": "unknown",
+          "op": "remove",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "눈높이를 한참 낮춰 붙여 두었다."
+        },
+        {
+          "entity": "LOC_012",
+          "field": "condition",
+          "from": "unknown",
+          "to": "방문 앞 낮은 눈높이 위치에 알파의 쪽지가 붙어 있음",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "쪽지를 한 장 빌려, 눈높이를 한참 낮춰 붙여 두었다."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "NEW:알파의_쪽지 (빌려서 손에 쥐고 붙임)",
+          "source_text": "쪽지를 한 장 빌려"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "힘 조절 불가 (글씨가 삐뚤빼뚤해지는 원인으로 본인이 지목)",
+          "source_text": "글씨가 삐뚤빼뚤한 건 힘 조절 때문이라고 변명해 두자."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "쪽지를 붙일 위치를 '한참 낮춰야' 할 만큼 눈높이가 높은 신체",
+          "source_text": "눈높이를 한참 낮춰 붙여 두었다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "블루멘의 방이 어디인지 알고 있음",
+          "source_text": "돌아서는 길에 블루멘의 방문 앞을 지났다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "블루멘이 슐라우의 상태 정보를 가지고 있으며, 그것을 묻는 일이 블루멘에게 부담이 될 수 있음",
+          "source_text": "<슐라우 상태 궁금해서 왔다 갑니다. 무리하게 안 물어볼게요. - 알파>"
+        },
+        {
+          "entity": "CHAR_012",
+          "field": "body_status",
+          "assumes": "알파가 눈높이를 한참 낮춰야 할 만큼 눈높이가 낮은 신체",
+          "source_text": "눈높이를 한참 낮춰 붙여 두었다."
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S30_1",
+          "assumes": "EVENT_S30_1에서 병실 앞을 떠난 직후의 연속된 동선이며, 병실과 블루멘의 방문이 같은 귀갓길 위에 있고 그 지점들에서 프리든으로 돌아갈 수 있어야 한다",
+          "source_text": "돌아서는 길에 블루멘의 방문 앞을 지났다. / 프리든으로 돌아가는 길, 발걸음이 아주 조금 가벼웠다."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "슐라우를 직접 만나지 못한 채 돌아서게 됨",
+      "result": "블루멘의 방문 앞에 쪽지가 남겨지고, 화자는 프리든으로 향함",
+      "source_text": "돌아서는 길에 블루멘의 방문 앞을 지났다. 쪽지를 한 장 빌려, 눈높이를 한참 낮춰 붙여 두었다. <슐라우 상태 궁금해서 왔다 갑니다. 무리하게 안 물어볼게요. - 알파> 글씨가 삐뚤빼뚤한 건 힘 조절 때문이라고 변명해 두자. 프리든으로 돌아가는 길, 발걸음이 아주 조금 가벼웠다.",
+      "certainty": "explicit"
+    }
+  ]
+}

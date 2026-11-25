@@ -1,0 +1,160 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "NEW:카림의_수첩",
+   "name": "카림의 수첩",
+   "description": "진동 수치 기록이 적힌 수첩",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "카림이 수첩을 폈다",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "NEW:5월_14일",
+   "expression": "5월 14일",
+   "description": "진동 수치 보고 대화가 이루어진 날",
+   "timeline": "main",
+   "source_text": "5월 14일.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "진동 수치 보고 및 가동 중단 논의",
+   "summary": "카림이 수첩에 기록된 진동 수치(4일 1.5, 5일 1.6, 6일 1.8, 14일 1.9)를 보고하고, 기준치 2.0 도달 시 가동 중단 필요성을 논의한다.",
+   "location_id": "unknown",
+   "time_id": "NEW:5월_14일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "NEW:카림의_수첩"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "NEW:카림의_수첩",
+     "op": "add",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "카림이 수첩을 폈다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "진동 수치: 4일 1.5, 5일 1.6, 6일 1.8, 14일 1.9",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "이음쇠 조이고 나서부터 계속 올랐어요. 4일에 1.5, 5일에 1.6, 6일에 1.8. 오늘 1.9예요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "진동 수치: 4일 1.5, 5일 1.6, 6일 1.8, 14일 1.9",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율은 손으로 쓴 숫자 열을 내려다보았다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "진동 기준치 2.0 도달 시 가동 중단 필요",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "기준이 2.0이라며. / 네. 이대로면 내일이면 세워야 해요."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "진동 측정 장비와 기록 방법",
+     "source_text": "이음쇠 조이고 나서부터 계속 올랐어요. 4일에 1.5, 5일에 1.6, 6일에 1.8. 오늘 1.9예요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "진동 기준치 2.0의 존재",
+     "source_text": "기준이 2.0이라며."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "가동 중단 시 난방 중단 및 재가동 시 연료 과다 소모",
+     "source_text": "세우면 난방이 끊기고, 다시 올릴 때 한꺼번에 많이 먹어요."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "정상 재가동 소요 시간 약 4시간",
+     "source_text": "잘 되면 네 시간요."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "진동 수치: 4일 1.5, 5일 1.6, 6일 1.8, 14일 1.9",
+     "via": "told",
+     "retained": true,
+     "source_text": "이음쇠 조이고 나서부터 계속 올랐어요. 4일에 1.5, 5일에 1.6, 6일에 1.8. 오늘 1.9예요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "진동 기준치 2.0 도달 시 가동 중단 필요",
+     "via": "told",
+     "retained": true,
+     "source_text": "기준이 2.0이라며. / 네. 이대로면 내일이면 세워야 해요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "가동 중단 시 난방 중단 및 재가동 시 연료 과다 소모, 정상 재가동 약 4시간 소요",
+     "via": "told",
+     "retained": true,
+     "source_text": "세우면 난방이 끊기고, 다시 올릴 때 한꺼번에 많이 먹어요. / 잘 되면 네 시간요."
+    }
+   ],
+   "cause": "이음쇠 조임 이후 진동 수치 지속 상승",
+   "result": "내일(5월 15일) 기준치 2.0 도달 예상, 가동 중단 논의",
+   "source_text": "5월 14일. \"진동요.\" 카림이 수첩을 폈다. \"이음쇠 조이고 나서부터 계속 올랐어요. 4일에 1.5, 5일에 1.6, 6일에 1.8. 오늘 1.9예요.\" 서율은 손으로 쓴 숫자 열을 내려다보았다. \"기준이 2.0이라며.\" \"네. 이대로면 내일이면 세워야 해요.\" 카림은 수첩을 덮었다. \"세우면 난방이 끊기고, 다시 올릴 때 한꺼번에 많이 먹어요.\" \"얼마나 걸려.\" \"잘 되면 네 시간요.\"",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:56:21Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 67.99
+ }
+}

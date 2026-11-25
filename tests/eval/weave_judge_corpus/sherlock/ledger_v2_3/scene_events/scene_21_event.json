@@ -1,0 +1,110 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:아버지의_방_문_앞_장면_시각",
+   "expression": "문 앞에서 멈춘 그 순간",
+   "description": "앨리스가 아버지의 방문 앞에 섰을 때의 시각",
+   "timeline": "main",
+   "source_text": "앨리스 터너는 아버지의 방문 앞에서 잠시 멈췄다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "앨리스가 아버지 방문 앞에서 멈춤",
+   "summary": "앨리스 터너가 아버지의 방문 앞에서 잠시 멈추고, 안쪽에서 들려오는 기침 소리에 문을 열지 못하고 물러선다.",
+   "location_id": "NEW:터너_저택_아버지_방_문_앞",
+   "time_id": "NEW:아버지의_방_문_앞_장면_시각",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_017"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_017",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_017",
+     "field": "location",
+     "from": "unknown",
+     "to": "NEW:터너_저택_아버지_방_문_앞",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "inferred",
+     "source_text": "앨리스 터너는 아버지의 방문 앞에서 잠시 멈췄다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_017",
+     "field": "knows",
+     "assumes": "아버지가 오래 앓아 왔다는 사실",
+     "source_text": "그녀가 아는 것은 아버지가 오래 앓아 왔다는 것"
+    },
+    {
+     "entity": "CHAR_017",
+     "field": "knows",
+     "assumes": "매카시 씨가 빅토리아에서 아버지를 알던 유일한 사람이었다는 사실",
+     "source_text": "매카시 씨가 빅토리아에서 아버지를 알던 유일한 사람이었다는 것뿐이었다"
+    },
+    {
+     "entity": "CHAR_017",
+     "field": "knows",
+     "assumes": "not_knows: 아버지의 그 이상(병명·사정 등)에 대해서는 모름 — 물어본 적이 없음",
+     "source_text": "그 이상은 물어본 적이 없었다."
+    },
+    {
+     "entity": "CHAR_017",
+     "field": "knows",
+     "assumes": "제임스가 검시관 앞에서 말을 아낀 이유가 자기와 관계된 일 때문이라는 추측(믿음)",
+     "source_text": "제임스가 검시관 앞에서 말을 아낀 이유도 자기와 관계된 일이기 때문이라고 그녀는 믿고 있었다"
+    },
+    {
+     "entity": "CHAR_016",
+     "field": "body_status",
+     "assumes": "오래 앓고 있음(기침 소리를 낼 정도의 호흡기·신체 상태)",
+     "source_text": "아버지가 오래 앓아 왔다는 것 / 문 안쪽에서 기침 소리가 났고"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_017",
+     "info": "아버지의 방문 안쪽에서 기침 소리가 들렸다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "문 안쪽에서 기침 소리가 났고"
+    }
+   ],
+   "cause": "아버지의 방문 앞에 도착함",
+   "result": "문을 열지 못하고 물러선다",
+   "source_text": "앨리스 터너는 아버지의 방문 앞에서 잠시 멈췄다. 안에서는 아무 소리도 나지 않았다. 그녀가 아는 것은 아버지가 오래 앓아 왔다는 것, 그리고 매카시 씨가 빅토리아에서 아버지를 알던 유일한 사람이었다는 것뿐이었다. 그 이상은 물어본 적이 없었다. 제임스가 검시관 앞에서 말을 아낀 이유도 자기와 관계된 일이기 때문이라고 그녀는 믿고 있었다. 문 안쪽에서 기침 소리가 났고, 그녀는 손잡이를 놓고 물러섰다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:05:21Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 11.84
+ }
+}

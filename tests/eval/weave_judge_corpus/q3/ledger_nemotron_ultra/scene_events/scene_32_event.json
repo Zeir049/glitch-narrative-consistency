@@ -1,0 +1,106 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [
+  {
+   "rule_id": "OBJ_023",
+   "content": "규정 1조: 기지장은 기지 운영에 관한 최종 결정권을 가진다",
+   "description": "기지장 권한의 근거 규정",
+   "source_text": "기지장은 기지 운영에 관한 최종 결정권을 가진다",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "OBJ_031",
+   "content": "자문 표결 도입: 표결 결과는 구속력이 없음",
+   "description": "자문 표결 제도의 핵심 규칙 - 구속력 없음",
+   "source_text": "자문 표결 도입. 표결 결과는 구속력이 없으며",
+   "certainty": "explicit"
+  }
+ ],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "서율, 규정집 1조와 자문 표결 문서 대조",
+   "summary": "서율이 규정집 1조(기지장 최종 결정권)와 게시판 종이(자문 표결 도입, 구속력 없음)를 나란히 놓고 비교하며 4월 29일 표결 결과(3대 1대 1, 결정은 반대쪽)와 규정 준수 여부를 생각한다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_023",
+    "OBJ_031"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "규정 1조(기지장 최종 결정권)와 자문 표결(구속력 없음) 내용, 4월 29일 표결 결과 3대 1대 1로 반대쪽 결정",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율은 규정집을 펴고 1조를 읽었다. 기지장은 기지 운영에 관한 최종 결정권을 가진다. 그 쪽에 게시판의 종이를 베껴 적은 쪽지가 끼워져 있었다. 자문 표결 도입. 표결 결과는 구속력이 없으며. 서율은 두 문장을 나란히 놓고 보았다. 4월 29일에 3대 1대 1이 나왔고 결정은 반대쪽이었다. 규정은 지켜졌다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_023 (규정집)",
+     "source_text": "서율은 규정집을 펴고 1조를 읽었다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_031 (자문 표결 도입 문서/쪽지)",
+     "source_text": "그 쪽에 게시판의 종이를 베껴 적은 쪽지가 끼워져 있었다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "4월 29일 자문 표결이 실시되었고 결과가 3대 1대 1이었음",
+     "source_text": "4월 29일에 3대 1대 1이 나왔고 결정은 반대쪽이었다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "규정 1조(기지장 최종 결정권)와 자문 표결(구속력 없음) 내용, 4월 29일 표결 결과 3대 1대 1로 반대쪽 결정",
+     "via": "direct",
+     "retained": true,
+     "source_text": "서율은 규정집을 펴고 1조를 읽었다. 기지장은 기지 운영에 관한 최종 결정권을 가진다. 그 쪽에 게시판의 종이를 베껴 적은 쪽지가 끼워져 있었다. 자문 표결 도입. 표결 결과는 구속력이 없으며. 서율은 두 문장을 나란히 놓고 보았다. 4월 29일에 3대 1대 1이 나왔고 결정은 반대쪽이었다. 규정은 지켜졌다."
+    }
+   ],
+   "cause": "서율이 규정집과 게시판 문서를 대조 확인함",
+   "result": "서율이 규정 1조와 자문 표결 규정, 4월 29일 표결 결과를 인지함",
+   "source_text": "서율은 규정집을 펴고 1조를 읽었다. 기지장은 기지 운영에 관한 최종 결정권을 가진다. 그 쪽에 게시판의 종이를 베껴 적은 쪽지가 끼워져 있었다. 자문 표결 도입. 표결 결과는 구속력이 없으며. 서율은 두 문장을 나란히 놓고 보았다. 4월 29일에 3대 1대 1이 나왔고 결정은 반대쪽이었다. 규정은 지켜졌다. 지켜졌다는 것이 무엇을 뜻하는지는 규정에 적혀 있지 않았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:54:02Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 33.4
+ }
+}

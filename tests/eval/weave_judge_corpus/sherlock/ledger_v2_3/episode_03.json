@@ -1,0 +1,1825 @@
+{
+ "schema_version": 2,
+ "episode": 3,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "OBJ_020",
+   "name": "편지 네 통",
+   "description": "호스머 에인절이 메리 서덜랜드에게 보낸 편지들",
+   "first_appearance_event_id": "EVENT_3_6",
+   "source_text": "여기 그분이 보낸 편지 네 통이 있어요.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_021",
+   "name": "크로니클지 광고 조각",
+   "description": "지난주 토요일 자 크로니클지에 호스머 에인절을 찾는 광고의 신문 조각",
+   "first_appearance_event_id": "EVENT_3_6",
+   "source_text": "지난주 토요일 자 크로니클지에 그분을 찾는 광고를 냈어요",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "TIME_025",
+   "expression": "지난주 금요일",
+   "description": "결혼식 당일, 사륜마차에서 신랑이 사라진 날",
+   "timeline": "main",
+   "source_text": "그게 지난주 금요일이었어요",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_026",
+   "expression": "지난주 토요일",
+   "description": "크로니클지에 광고를 낸 날",
+   "timeline": "main",
+   "source_text": "지난주 토요일 자 크로니클지에 그분을 찾는 광고를 냈어요",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_027",
+   "expression": "윈디뱅크가 도망친 직후",
+   "description": "윈디뱅크가 전속력으로 도망친 직후의 시간",
+   "timeline": "main",
+   "source_text": "창밖으로 우리는 제임스 윈디뱅크 씨가 전속력으로 길을 내달려 도망치는 모습을 볼 수 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_028",
+   "expression": "거의 동시에",
+   "description": "윈디뱅크의 답변 편지와 웨스트하우스 앤 마뱅크의 편지가 거의 같은 우편으로 도착한 시점",
+   "timeline": "main",
+   "source_text": "같은 우편으로 펜처치가의 웨스트하우스 앤 마뱅크에서 온 편지도 도착했는데",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T15:45:35Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 14.78
+ },
+ "_merge": {
+  "spec": "handoff/chunked_extract_spec.md",
+  "chunks": [
+   "episode_03_c01.json",
+   "episode_03_c02.json",
+   "episode_03_c03.json",
+   "episode_03_c04.json"
+  ],
+  "name_resolved": {
+   "NEW:호스머_에인절": "CHAR_012"
+  },
+  "unmapped_new": [
+   "NEW:가스공_무도회장",
+   "NEW:마부",
+   "NEW:병과_시험관",
+   "NEW:사륜마차",
+   "NEW:서덜랜드_집",
+   "NEW:윈디뱅크_도주_직후",
+   "NEW:윈디뱅크_방문_당일",
+   "NEW:진흙_파이프",
+   "NEW:창밖의_여인",
+   "NEW:킹스크로스_부근_세인트세이비어스_성당_앞",
+   "NEW:톱해트",
+   "NEW:홈즈_작성_편지_두통",
+   "NEW:황산바륨"
+  ]
+ },
+ "events": [
+  {
+   "event_id": "EVENT_3_1",
+   "scene_id": "scene_3_1",
+   "order": 1,
+   "title": "베이커가에서 홈즈의 인생 논평",
+   "summary": "베이커가 하숙집 응접실에서 홈즈와 왓슨이 인생의 기이함에 대해 대화를 나눈다.",
+   "location_id": "LOC_010",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_006"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_006 (코담배갑)",
+     "source_text": "코담배나 한 줌 하게, 박사"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "코담배갑이 보헤미아 왕의 답례품이라는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "이건 보헤미아 왕이 아이린 애들러 서류 사건에서 내가 도운 것에 대한 답례로 준 작은 기념품일세."
+    }
+   ],
+   "cause": "대화 도입",
+   "result": "창밖의 의뢰인 등장 전조",
+   "source_text": "“이보게,” 베이커가의 하숙집에서 벽난로를 사이에 두고 마주 앉았을 때 셜록 홈즈가 말했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_2",
+   "scene_id": "scene_3_2",
+   "order": 2,
+   "title": "창밖의 의뢰인 목격",
+   "summary": "홈즈가 창가에 서서 맞은편 보도의 덩치 큰 여인이 창문을 올려다보며 서성인다는 것을 알아챈다.",
+   "location_id": "LOC_010",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "NEW:창밖의_여인"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "NEW:창밖의_여인",
+     "field": "body_status",
+     "assumes": "시력이 나쁘거나 눈이 침침한 상태 (홈즈가 문패를 못 읽는 것으로 단정함은 본문 근거 약함 — 본문은 홈즈의 추정만 진술)",
+     "source_text": ""
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_3",
+     "assumes": "EVENT_3_2에서 창밖을 보던 여인과 EVENT_3_3에서 들어온 메리 서덜랜드가 동일인이다",
+     "source_text": "그녀는 이 거창한 차림새 아래에서 초조하고 머뭇거리는 태도로 우리 창문을 올려다보고 있었다 ... 메리 서덜랜드 양을 알렸다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "창밖에 의뢰로 추정되는 여성이 서성이고 있다는 관측",
+     "via": "direct",
+     "retained": true,
+     "source_text": "맞은편 보도에 두꺼운 모피 목도리를 두르고 ... 우리 창문을 올려다보고 있었다"
+    }
+   ],
+   "cause": "홈즈가 창가로 이동",
+   "result": "초인종 울림",
+   "source_text": "그는 의자에서 일어나 열린 블라인드 사이에 서서 칙칙하고 무채색인 런던 거리를 내려다보고 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_3",
+   "scene_id": "scene_3_3",
+   "order": 3,
+   "title": "메리 서덜랜드의 방문과 호소",
+   "summary": "메리 서덜랜드가 베이커가를 방문하여 의붓아버지 윈디뱅크의 실종(또는 죽음)과 호스머 에인절의 행방을 의뢰한다.",
+   "location_id": "LOC_010",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_011",
+    "CHAR_012"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_011",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_011",
+     "field": "knows",
+     "assumes": "홈즈의 명성 (에어서리지 부인 사건을 해결한 일)",
+     "source_text": "왜냐하면 에서리지 부인에게서 선생님 이야기를 들었거든요."
+    },
+    {
+     "entity": "CHAR_011",
+     "field": "body_status",
+     "assumes": "시력이 나쁘거나 눈이 침침함 (타자를 보지 못함)",
+     "source_text": "하지만 지금은 보지 않고도 글쇠 위치를 알아요."
+    },
+    {
+     "entity": "CHAR_011",
+     "field": "possesses",
+     "assumes": "연간 약 100파운드의 이자 소득(New질랜드 공채 2500파운드의 4.5%)",
+     "source_text": "오클랜드에 계신 네드 삼촌이 남겨 주신 거예요. 뉴질랜드 공채인데 연 4.5퍼센트 이자가 나와요."
+    },
+    {
+     "entity": "CHAR_011",
+     "field": "knows",
+     "assumes": "남편 호스머 에인절의 실종(또는 죽음)",
+     "source_text": "호스머 에인절 씨가 어떻게 되었는지 알 수만 있다면"
+    },
+    {
+     "entity": "CHAR_011",
+     "field": "knows",
+     "assumes": "의붓아버지 윈디뱅크의 태만에 대한 분노",
+     "source_text": "윈디뱅크 씨—그러니까 제 아버지—가 그 일을 너무 태연하게 받아들이는 걸 보니 화가 났거든요."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_2",
+     "assumes": "EVENT_3_2의 창밖 여인이 본 사건의 의뢰인 메리 서덜랜드와 동일인",
+     "source_text": "메리 서덜랜드 양을 알렸다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "메리 서덜랜드의 의뢰 — 호스머 에인절의 행방 추적",
+     "via": "told",
+     "retained": true,
+     "source_text": "호스머 에인절 씨가 어떻게 되었는지 알 수만 있다면 그걸 전부 드려도 좋아요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "메리 서덜랜드의 가정사 — 의붓아버지 윈디뱅크, 친어머니의 재혼, 선친이 남긴 배관공 사업의 매각(4700파운드)",
+     "via": "told",
+     "retained": true,
+     "source_text": "영업권과 이자로 4700파운드를 받았는데"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "메리 서덜랜드의 소득 — 뉴질랜드 공채 2500파운드의 연 4.5% 이자 + 타자 수입",
+     "via": "told",
+     "retained": true,
+     "source_text": "뉴질랜드 공채인데 연 4.5퍼센트 이자가 나와요. 원금은 2500파운드지만, 저는 이자만 쓸 수 있어요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "메리 서덜랜드의 의붓아버지가 메리보다 5살 2개월 많다는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "저보다 겨우 다섯 살하고 두 달 위거든요."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "메리 서덜랜드의 의뢰 내용",
+     "via": "told",
+     "retained": true,
+     "source_text": "호스머 에인절 씨가 어떻게 되었는지 알 수만 있다면"
+    }
+   ],
+   "cause": "메리 서덜랜드의 의뢰",
+   "result": "홈즈가 정보 수집을 개시",
+   "source_text": "“저는 선생님을 찾아왔어요, 왜냐하면 에서리지 부인에게서 선생님 이야기를 들었거든요.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_4",
+   "scene_id": "scene_3_1",
+   "order": 1,
+   "title": "메리 서덜랜드가 가스공 무도회에서 호스머 에인절을 처음 만남",
+   "summary": "서덜랜드 양은 가스공 무도회에서 윈디뱅크의 반대에도 불구하고 하디와 함께 나가 호스머 에인절을 처음 만났다고 진술했다.",
+   "location_id": "NEW:가스공_무도회장",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "memory",
+   "participant_character_ids": [
+    "CHAR_011",
+    "CHAR_012",
+    "CHAR_013",
+    "CHAR_012"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_011",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_011",
+     "field": "knows",
+     "assumes": "not_knows: 윈디뱅크의 반대에도 무도회에 나갈 수 있는 자신의 권리",
+     "source_text": "제가 꼭 가겠다고 마음먹었고, 실제로 갔어요"
+    },
+    {
+     "entity": "CHAR_011",
+     "field": "knows",
+     "assumes": "가스공 무도회의 존재와 아버지에게 받던 표의 관행",
+     "source_text": "아버지가 살아 계실 때는 늘 아버지에게 표를 보내 주었고"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "메리 서덜랜드가 가스공 무도회에서 호스머 에인절을 처음 만났다는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "거기서 저는 호스머 에인절 씨를 만났어요."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "메리 서덜랜드가 가스공 무도회에서 호스머 에인절을 처음 만났다는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "거기서 저는 호스머 에인절 씨를 만났어요."
+    }
+   ],
+   "cause": "윈디뱅크의 반대와도 무도회 참석 욕구",
+   "result": "메리와 호스머 에인절의 첫 만남 발생",
+   "source_text": "저는 그분을 가스공 무도회에서 처음 만났어요",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_5",
+   "scene_id": "scene_3_1",
+   "order": 2,
+   "title": "윈디뱅크의 프랑스 출장 후 호스머의 집 방문과 편지 교환",
+   "summary": "윈디뱅크가 프랑스로 떠난 사이 호스머는 메리에게 집으로 찾아와 데이트했고, 이후 윈디뱅크 재출장 시 편지로 교신했다.",
+   "location_id": "NEW:서덜랜드_집",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "memory",
+   "participant_character_ids": [
+    "CHAR_011",
+    "CHAR_012",
+    "CHAR_012"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_011",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_011",
+     "field": "knows",
+     "assumes": "윈디뱅크의 프랑스행 일정",
+     "source_text": "아버지가 일주일 뒤에 다시 프랑스로 가시게 되어 있었는데"
+    },
+    {
+     "entity": "CHAR_012",
+     "field": "ability",
+     "assumes": "비밀리에 편지를 발송하고 우체국에 보관 의뢰할 수 있는 능력",
+     "source_text": "리든홀가 우체국으로요, 찾으러 올 때까지 보관해 달라고요"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_4",
+     "assumes": "EVENT_3_1에서 시작된 만남이 이 사건 시점까지 지속되어 약혼에 이르렀음",
+     "source_text": "저희는 처음 산책을 함께한 뒤로 약혼했어요"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "호스머 에인절은 리든홀가의 어느 회계 사무실에서 일했으며 거주지는 회사 건물 안이었다",
+     "via": "told",
+     "retained": true,
+     "source_text": "호스머—에인절 씨는—리든홀가의 어느 사무실에서 회계원이었어요"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "호스머 에인절은 리든홀가의 어느 회계 사무실에서 일했으며 거주지는 회사 건물 안이었다",
+     "via": "told",
+     "retained": true,
+     "source_text": "호스머—에인절 씨는—리든홀가의 어느 사무실에서 회계원이었어요"
+    }
+   ],
+   "cause": "윈디뱅크의 잦은 부재",
+   "result": "메리와 호스머의 약혼 및 은밀한 편지 교환",
+   "source_text": "아버지가 일주일 뒤에 다시 프랑스로 가시게 되어 있었는데, 호스머는 편지를 보내서",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_6",
+   "scene_id": "scene_3_2",
+   "order": 3,
+   "title": "메리가 크로니클 광고와 호스머의 편지 4통을 홈즈에게 제출",
+   "summary": "메리 서덜랜드는 자신의 주소와 함께 크로니클 광고 조각, 호스머가 보낸 편지 네 통을 홈즈에게 건넸다.",
+   "location_id": "LOC_001",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_011",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_011",
+   "objects": [
+    "OBJ_020",
+    "OBJ_021"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_020",
+     "field": "possesses",
+     "from": "CHAR_011",
+     "to": "CHAR_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "여기 그분이 보낸 편지 네 통이 있어요."
+    },
+    {
+     "entity": "OBJ_021",
+     "field": "possesses",
+     "from": "CHAR_011",
+     "to": "CHAR_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "지난주 토요일 자 크로니클지에 그분을 찾는 광고를 냈어요"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_011",
+     "field": "body_status",
+     "assumes": "편지 네 통과 광고 조각을 소지하고 꺼낼 수 있는 신체 상태",
+     "source_text": "여기 그분이 보낸 편지 네 통이 있어요."
+    },
+    {
+     "entity": "CHAR_011",
+     "field": "ability",
+     "assumes": "광고를 보고 그에 응하는 독자(또는 호스머 본인)가 있을 가능성에 대한 추측을 할 수 있는 인지력",
+     "source_text": "지난주 토요일 자 크로니클지에 그분을 찾는 광고를 냈어요"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "메리 서덜랜드의 주소는 캠버웰, 라이언 플레이스 31번지",
+     "via": "told",
+     "retained": true,
+     "source_text": "캠버웰, 라이언 플레이스 31번지예요."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "메리 서덜랜드의 주소는 캠버웰, 라이언 플레이스 31번지",
+     "via": "told",
+     "retained": true,
+     "source_text": "캠버웰, 라이언 플레이스 31번지예요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "윈디뱅크는 펜처치가의 클라레 수입상 웨스트하우스 앤 마뱅크의 출장 판매원으로 근무한다",
+     "via": "told",
+     "retained": true,
+     "source_text": "펜처치가에서 큰 클라레 수입상인 웨스트하우스 앤 마뱅크의 출장 판매원으로 일하세요."
+    }
+   ],
+   "cause": "홈즈의 자료 요청",
+   "result": "증거 자료가 홈즈에게 넘어가고 사건 수임이 사실상 성립",
+   "source_text": "여기 그 조각과, 여기 그분이 보낸 편지 네 통이 있어요.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_7",
+   "scene_id": "scene_3_3",
+   "order": 4,
+   "title": "호스머 에인절이 사륜마차 안에서 사라짐",
+   "summary": "결혼식 당일, 호스머는 이륜마차로 두 사람을 마차에 태운 뒤 자신은 다른 사륜마차를 택해 교회까지 왔으나, 마부가 열어 보니 안은 비어 있었다.",
+   "location_id": "NEW:킹스크로스_부근_세인트세이비어스_성당_앞",
+   "time_id": "TIME_025",
+   "timeline": "main",
+   "reality_status": "memory",
+   "participant_character_ids": [
+    "CHAR_011",
+    "CHAR_012"
+   ],
+   "witness_character_ids": [
+    "NEW:마부",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_012",
+   "objects": [
+    "NEW:사륜마차"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_012",
+     "field": "location",
+     "from": "NEW:킹스크로스_부근_세인트세이비어스_성당_앞",
+     "to": "unknown",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "사륜마차가 다가왔을 때 그가 내리기를 기다렸는데, 그는 끝내 내리지 않았어요. 마부가 마부석에서 내려 살펴보니 안에 아무도 없었어요!"
+    },
+    {
+     "entity": "CHAR_012",
+     "field": "alive",
+     "from": "true",
+     "to": "unknown",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "uncertain",
+     "source_text": "마부는 자기 눈으로 그가 타는 걸 직접 보았는데도 그가 어떻게 된 건지 도무지 알 수 없다고 했어요."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_012",
+     "field": "body_status",
+     "assumes": "성당에 도착할 때까지 마차에 타고 내려올 수 있는 신체 상태",
+     "source_text": "사륜마차가 다가왔을 때 그가 내리기를 기다렸는데"
+    },
+    {
+     "entity": "NEW:마부",
+     "field": "body_status",
+     "assumes": "마부석에서 내려 마차 내부를 확인할 수 있는 신체 상태",
+     "source_text": "마부가 마부석에서 내려 살펴보니"
+    },
+    {
+     "entity": "NEW:마부",
+     "field": "ability",
+     "assumes": "승객의 승하차를 정확히 목격할 수 있는 시력과 위치",
+     "source_text": "마부는 자기 눈으로 그가 타는 걸 직접 보았는데도"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_4",
+     "assumes": "EVENT_3_1에서 시작된 두 사람의 관계가 EVENT_3_4 시점까지 유지되어 결혼식에 이르렀음",
+     "source_text": "저희는 처음 산책을 함께한 뒤로 약혼했어요"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "결혼식 당일, 호스머 에인절이 사륜마차 안에서 자취를 감추었다",
+     "via": "told",
+     "retained": true,
+     "source_text": "사륜마차가 다가왔을 때 그가 내리기를 기다렸는데, 그는 끝내 내리지 않았어요."
+    }
+   ],
+   "cause": "메리와의 약속된 결혼식 참석",
+   "result": "호스머 에인절의 실종",
+   "source_text": "사륜마차가 다가왔을 때 그가 내리기를 기다렸는데, 그는 끝내 내리지 않았어요.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_8",
+   "scene_id": "scene_3_3",
+   "order": 5,
+   "title": "메리가 호스머의 이상言行을 회상해 밝힘",
+   "summary": "메리는 결혼식 당일 아침, 호스머가 무슨 일이 있어도 진실해야 한다고 맹세를 상기시켰고, 자신이 어떤 위험을 예감한 것이라고 믿는다고 진술했다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_025",
+   "timeline": "main",
+   "reality_status": "memory",
+   "participant_character_ids": [
+    "CHAR_011"
+   ],
+   "witness_character_ids": [
+    "CHAR_012",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_011",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_011",
+     "field": "knows",
+     "assumes": "호스머의 '맹세 요구' 발언이 예감의 일환이었다는 추측",
+     "source_text": "저는 그분이 어떤 위험을 예감하고 계셨다고 믿어요"
+    },
+    {
+     "entity": "CHAR_011",
+     "field": "knows",
+     "assumes": "not_knows: 호스머에게 무슨 일이 일어났는지에 대한 구체적 정황",
+     "source_text": "전혀요."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_7",
+     "assumes": "EVENT_3_4의 실종이 이 사건에서 회상되는 호스머의 발언과 시간상 인접함",
+     "source_text": "그날 아침 내내 그분은 저에게 무슨 일이 있어도 진실해야 한다고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "호스머가 결혼식 아침에 무슨 위험을 예감하며 진실의 맹세를 요구했다",
+     "via": "told",
+     "retained": true,
+     "source_text": "그날 아침 내내 그분은 저에게 무슨 일이 있어도 진실해야 한다고"
+    }
+   ],
+   "cause": "홈즈의 질문",
+   "result": "호스머의 사전 예감 정황이 추가됨",
+   "source_text": "저는 그분이 어떤 위험을 예감하고 계셨다고 믿어요",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_9",
+   "scene_id": "scene_3_1",
+   "order": 1,
+   "title": "서덜랜드 양에게 조언과 침묵 당부",
+   "summary": "홈즈는 서덜랜드 양에게 사건 전체를 봉인된 책으로 여기고 부인의 삶에 영향을 미치지 말라고 조언한다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_009",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_011"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_011",
+     "field": "knows",
+     "assumes": "호스머 에인절의 실종이 부인의 삶에 영향을 미칠 수 있는 사실",
+     "source_text": "이 사건 전체를 봉인된 책으로 여기시고 부인의 삶에 영향을 미치지 않도록 하십시오."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_011",
+     "info": "홈즈의 조언 — 사건을 봉인된 책으로 여기고 부인의 삶에 영향을 미치지 말 것",
+     "via": "told",
+     "retained": true,
+     "source_text": "이 사건 전체를 봉인된 책으로 여기시고 부인의 삶에 영향을 미치지 않도록 하십시오."
+    }
+   ],
+   "cause": "서덜랜드 양이 홈즈에게 상담을 마치고",
+   "result": "서덜랜드 양은 호스머에게 진실하겠다고 답하며 떠난다",
+   "source_text": "감사합니다. 아주 명확하게 진술해 주셨습니다. 서류는 여기 두고 가시고, 제가 드린 조언을 기억해 주십시오. 이 사건 전체를 봉인된 책으로 여기시고 부인의 삶에 영향을 미치지 않도록 하십시오.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_10",
+   "scene_id": "scene_3_1",
+   "order": 2,
+   "title": "서덜랜드 양의 거절과 출발",
+   "summary": "서덜랜드 양은 조언을 거절하고 호스머에게 진실하겠다고 밝힌 뒤 서류 뭉치를 탁자에 놓고 떠난다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_009",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_011"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_011",
+   "objects": [
+    "OBJ_007"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_011",
+     "field": "possesses",
+     "from": "OBJ_007",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그녀는 서류 뭉치를 탁자 위에 올려놓고, 언제든 부르시면 다시 오겠다는 약속과 함께 떠나갔다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_007",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그녀는 서류 뭉치를 탁자 위에 올려놓고"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_011",
+     "field": "knows",
+     "assumes": "호스머 에인절이 돌아올 것",
+     "source_text": "그분이 돌아오시면 제가 준비되어 있는 걸 보게 될 거예요."
+    },
+    {
+     "entity": "CHAR_011",
+     "field": "body_status",
+     "assumes": "서둘러 옷을 갖추어 입은 상태 (장갑 검지 찢어짐, 잉크 얼룩)",
+     "source_text": "그녀의 오른쪽 장갑 검지 부분이 찢어진 것은 보았겠지만, 장갑과 손가락 모두 보랏빛 잉크로 얼룩져 있는 것은"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_9",
+     "assumes": "EVENT_3_1의 상담이 끝난 직후의 연속된 대화",
+     "source_text": "친절하시네요, 홈즈 선생님, 하지만 저는 그럴 수 없어요."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "홈즈의 봉인된 책 비유 조언에 대해",
+   "result": "서덜랜드 양이 떠난 뒤 홈즈는 진흙 파이프를 피우며 사건을 곱씹는다",
+   "source_text": "친절하시네요, 홈즈 선생님, 하지만 저는 그럴 수 없어요. 저는 호스머에게 진실할 거예요.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_11",
+   "scene_id": "scene_3_1",
+   "order": 3,
+   "title": "홈즈의 진흙 파이프와 곱씹음",
+   "summary": "서덜랜드 양이 떠난 뒤 홈즈는 진흙 파이프에 불을 붙이고 의자에 등을 기대며 잠시 말없이 앉아 있다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_009",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "NEW:진흙_파이프"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "NEW:진흙_파이프",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "선반에서 낡고 반들반들한 진흙 파이프—그에게는 상담역과도 같은 물건이었다—를 꺼내 불을 붙이고는"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "안락의자에 등을 기대고 앉아 있음",
+     "source_text": "의자에 등을 기대었고"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_10",
+     "assumes": "서덜랜드 양이 떠난 직후 같은 공간·같은 시간의 연속",
+     "source_text": "다리를 앞으로 뻗고 시선을 천장으로 향한 채 몇 분 동안 말없이 앉아 있었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "77년 앤도버 및 작년 헤이그의 유사 사건이 색인에 존재",
+     "via": "direct",
+     "retained": true,
+     "source_text": "내 색인을 살펴보면 77년 앤도버에서, 그리고 작년 헤이그에서도 비슷한 사건을 찾을 수 있을 걸세."
+    }
+   ],
+   "cause": "서덜랜드 양의 진술 종료",
+   "result": "홈즈가 사건의 세부 사항을 왓슨에게 설명하기 시작한다",
+   "source_text": "셜록 홈즈는 손끝을 여전히 맞댄 채, 다리를 앞으로 뻗고 시선을 천장으로 향한 채 몇 분 동안 말없이 앉아 있었다. 그러다 그는 선반에서 낡고 반들반들한 진흙 파이프—그에게는 상담역과도 같은 물건이었다—를 꺼내 불을 붙이고는 의자에 등을 기대었고",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_12",
+   "scene_id": "scene_3_1",
+   "order": 4,
+   "title": "소매·코·구두·장갑의 추리",
+   "summary": "홈즈는 서덜랜드 양의 외모에서 소매의 벨벳 자국, 코안경 자국, 짝이 안 맞는 구두, 잉크 묻은 장갑을 읽어내 그녀가 타자이며 근시이며 서둘러 글을 썼음을 추리한다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_009",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_011",
+     "field": "ability",
+     "assumes": "타자를 칠 수 있음 (손목 자국)",
+     "source_text": "손목 바로 위에 있는 두 줄 자국은—타자수가 책상에 팔을 누르는 자리인데—아주 뚜렷하게 새겨져 있었네."
+    },
+    {
+     "entity": "CHAR_011",
+     "field": "body_status",
+     "assumes": "근시 (코안경 자국)",
+     "source_text": "코 양쪽에 코안경 자국이 있는 것을 보고 근시와 타자에 관해 넌지시 언급을 해 보았는데"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_11",
+     "assumes": "이 추리는 서덜랜드 양이 떠난 뒤 기억과 관찰을 토대로 한 회고적 서술",
+     "source_text": "꽤 흥미로운 연구 대상이야, 그 아가씨는"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "서덜랜드 양이 타자이며 근시이고 오늘 아침 서둘러 편지를 썼다는 추리",
+     "via": "told",
+     "retained": true,
+     "source_text": "소매의 중요성이나, 엄지손톱이 시사하는 바나, 구두끈에 걸려 있을 수도 있는 커다란 문제들"
+    }
+   ],
+   "cause": "왓슨이 서덜랜드 양의 외모 묘사를 마친 뒤",
+   "result": "홈즈는 호스머 에인절의 실종 광고를 읽으려 한다",
+   "source_text": "나는 여자애를 볼 때 언제나 소매부터 먼저 보네. … 이 여인의 소매에는 벨벳이 있었는데, 그건 흔적을 남기는 데 아주 유용한 소재라네. … 한쪽은 앞코에 약간 장식이 있고 다른 한쪽은 밋밋했지.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_13",
+   "scene_id": "scene_3_1",
+   "order": 5,
+   "title": "실종 광고의 낭독",
+   "summary": "왓슨이 크로니클지 광고 조각을 읽어 호스머 에인절의 인상착의와 마지막 목격 복장을 알려준다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_009",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_021"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_021",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "나는 작게 인쇄된 종잇조각을 불빛에 비추어 들었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "OBJ_021",
+     "field": "knows",
+     "assumes": "호스머 에인절의 인상착의 및 마지막 목격 복장 정보 (14일 아침 실종)",
+     "source_text": "14일 아침, 호스머 에인절이라는 이름의 신사가 실종됨."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_12",
+     "assumes": "이전 추리가 끝난 직후 같은 자리에서 광고를 읽는 연속 장면",
+     "source_text": "호스머 에인절 씨의 광고된 인상착의를 좀 읽어 주겠나?"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "호스머 에인절의 실종 광고 내용 (신체 묘사 및 마지막 복장)",
+     "via": "told",
+     "retained": true,
+     "source_text": "14일 아침, 호스머 에인절이라는 이름의 신사가 실종됨."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "호스머 에인절의 실종 광고 내용 (자가 재독)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "14일 아침, 호스머 에인절이라는 이름의 신사가 실종됨."
+    }
+   ],
+   "cause": "홈즈가 광고 낭독을 요청",
+   "result": "편지로 넘어가 서명·발신처 문제를 다룬다",
+   "source_text": "나는 작게 인쇄된 종잇조각을 불빛에 비추어 들었다. \"실종,\" 그것에는 이렇게 쓰여 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_14",
+   "scene_id": "scene_3_1",
+   "order": 6,
+   "title": "타자 서명·발신처 부재의 의미",
+   "summary": "홈즈는 편지들이 모두 타자로 쳐져 있고 서명마저 타자이며 리든홀가 외에는 발신처 표기가 없다는 점이 결정적 단서라고 본다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_009",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_020"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "OBJ_020",
+     "field": "body_status",
+     "assumes": "편지들이 모두 타자로 인쇄되어 있고, 마지막 서명도 타자이며, 발신처는 '리든홀가' 외에 없음",
+     "source_text": "타자로 쳐져 있군 … 서명까지 타자로 쳐져 있네. 맨 아래에 있는 그 깔끔한 '호스머 에인절'을 보게. 날짜는 있지만, 리든홀가라는 다소 막연한 표기 말고는 발신처 표기가 없어."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_13",
+     "assumes": "광고 낭독 직후 편지 검토로 이어지는 연속 장면",
+     "source_text": "그 정도면 됐네, 홈즈가 말했다. \"편지들로 말하자면,\" 그가 편지들을 훑어보며 이었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "호스머 에인절의 편지가 모두 타자이고 서명도 타자이며 발신처가 모호하다는 점",
+     "via": "told",
+     "retained": true,
+     "source_text": "타자로 쳐져 있군 … 서명까지 타자로 쳐져 있네."
+    }
+   ],
+   "cause": "실종 광고 낭독 후 홈즈가 편지로 화제를 옮김",
+   "result": "홈즈는 시내의 어느 회사와 윈디뱅크에게 보낼 편지 두 통을 쓰기로 한다",
+   "source_text": "편지들로 말하자면, 그가 편지들을 훑어보며 이었다. 아주 평범하군. … 서명에 관한 이 점이 아주 시사적이야—사실, 결정적이라고 해도 될 정도지.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_15",
+   "scene_id": "scene_3_1",
+   "order": 7,
+   "title": "두 통의 편지 작성 계획",
+   "summary": "홈즈는 시내의 어느 회사에 한 통, 서덜랜드 양의 의붓아버지 윈디뱅크에게 다음 날 저녁 여섯 시 약속을 묻는 편지 한 통을 쓰기로 한다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_009",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "NEW:홈즈_작성_편지_두통"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_012",
+     "field": "location",
+     "assumes": "서덜랜드 양의 의붓아버지로서 별도 거처에 거주",
+     "source_text": "그 아가씨의 의붓아버지인 윈디뱅크 씨에게"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_14",
+     "assumes": "편지 검토 결론에 대한 후속 조치로 같은 자리에서 결정",
+     "source_text": "나는 편지 두 통을 써서 이 문제를 해결하려 하네."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈가 윈디뱅크에게 다음 날 저녁 여섯 시 약속을 요청하는 편지를 보낼 계획",
+     "via": "told",
+     "retained": true,
+     "source_text": "다른 한 통은 그 아가씨의 의붓아버지인 윈디뱅크 씨에게, 내일 저녁 여섯 시에 여기서 우리를 만날 수 있는지 묻는 것일세."
+    }
+   ],
+   "cause": "타자 서명·발신처 부재에서 비롯된 단서",
+   "result": "사건을 잠시 선반에 올려두고 다음 날을 기다린다",
+   "source_text": "나는 편지 두 통을 써서 이 문제를 해결하려 하네. 하나는 시내의 어느 회사에 보내는 것이고, 다른 한 통은 그 아가씨의 의붓아버지인 윈디뱅크 씨에게, 내일 저녁 여섯 시에 여기서 우리를 만날 수 있는지 묻는 것일세.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_16",
+   "scene_id": "scene_3_1",
+   "order": 8,
+   "title": "왓슨의 하루 병상 활동과 귀환",
+   "summary": "중대한 전문적 사건에 쫓긴 왓슨은 다음 날 하루 종일 환자의 병상 곁에 있다가 여섯 시가 되어서야 이륜마차로 베이커가에 도착한다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_018",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "환자 병상 곁",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "이륜마차에 뛰어올라 베이커가로 향할 수 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "의사로서 환자의 병상에 있어야 할 의무가 있었음",
+     "source_text": "아주 중대한 전문적인 사건이 내 관심을 붙들고 있어서, 나는 이튿날 하루 종일 환자의 병상 곁에서 바빴다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_15",
+     "assumes": "사건의 다음 날의 저녁으로 시간 경과가 있음",
+     "source_text": "이튿날 하루 종일 환자의 병상 곁에서 바빴다. 여섯 시가 다 되어서야"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "여섯 시 약속에 늦지 않게 도착함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "여섯 시가 다 되어서야 나는 겨우 자유로워졌고, 이륜마차에 뛰어올라 베이커가로 향할 수 있었다."
+    }
+   ],
+   "cause": "전날 홈즈의 사건을 잠시 선반에 올려두는 결정",
+   "result": "홈즈는 혼자 화학 실험을 하며 하루를 보낸 뒤 윈디뱅크를 기다리고 있다",
+   "source_text": "그 무렵 아주 중대한 전문적인 사건이 내 관심을 붙들고 있어서, 나는 이튿날 하루 종일 환자의 병상 곁에서 바빴다. 여섯 시가 다 되어서야 나는 겨우 자유로져서, 이륜마차에 뛰어올라 베이커가로 향할 수 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_17",
+   "scene_id": "scene_3_1",
+   "order": 9,
+   "title": "다음 날 저녁 홈즈의 화학 실험",
+   "summary": "왓슨이 도착했을 때 홈즈는 혼자 반쯤 잠든 채 화학 실험을 하며 하루를 보낸 상태였다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_018",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "NEW:병과_시험관",
+    "NEW:황산바륨"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "from": "활동 중",
+     "to": "반쯤 잠든 상태",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "활동 중",
+     "certainty": "inferred",
+     "source_text": "셜록 홈즈는 혼자, 반쯤 잠든 채, 길고 마른 몸을 안락의자 깊숙이 웅크리고 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "안락의자에 웅크리고 있음",
+     "source_text": "길고 마른 몸을 안락의자 깊숙이 웅크리고 있었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "화학 실험을 수행할 수 있음",
+     "source_text": "병과 시험관이 잔뜩 늘어서 있고 염산의 톡 쏘는 상쾌한 냄새가 나는 것을 보니, 그가 그토록 좋아하는 화학 실험에 하루를 보낸 모양이었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_16",
+     "assumes": "왓슨의 귀환 직후 같은 응접실에서 마주침",
+     "source_text": "그러나 셜록 홈즈는 혼자, 반쯤 잠든 채, 길고 마른 몸을 안락의자 깊숙이 웅크리고 있었다."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "이전 화의 답장을 기다리는 동안 사건이 선반에 올려져 있었으므로",
+   "result": "왓슨과 홈즈가 사건의 결론을 확인하려는 대화가 시작된다",
+   "source_text": "그 무렵 아주 중대한 전문적인 사건이 내 관심을 붙들고 있어서 … 그는 여전히 그 검은 진흙 파이프를 뻐끔거리고 있었고, 내가 다음 날 저녁 다시 왔을 때는 그가 메리 서덜랜드 양의 사라진 신랑의 정체로 이어지는 모든 단서를 손에 쥐고 있으리라는 확신이 들었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_18",
+   "scene_id": "scene_3_1",
+   "order": 10,
+   "title": "수수께끼의 결론과 법의 한계",
+   "summary": "홈즈는 사건에 애초에 수수께끼가 거의 없었으며, 유일한 결함은 악당을 법으로 건드릴 수 없다는 점이라고 밝힌다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_018",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "사건의 진범과 동기가 모두 규명됨",
+     "source_text": "사실 이 사건에는 애초에 아무런 수수께끼도 없었다네."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_17",
+     "assumes": "왓슨이 안락의자의 홈즈에게 말을 건 직후의 연속 대화",
+     "source_text": "\"그래, 풀었나?\" 내가 들어서며 물었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "사건에 수수께끼가 거의 없었고 진범을 법으로 처벌할 수 없다는 점",
+     "via": "told",
+     "retained": true,
+     "source_text": "사실 이 사건에는 애초에 아무런 수수께끼도 없었다네, 어제도 말했지만 몇몇 세부 사항은 흥미롭긴 하지만 말일세. 유일한 결함은, 안타깝게도 그 악당을 건드릴 수 있는 법이 없다는 걸세."
+    }
+   ],
+   "cause": "이전 화의 답장과 단서 회수",
+   "result": "윈디뱅크가 문을 두드린다",
+   "source_text": "\"오, 그거! 나는 지금 다루고 있던 그 염류 생각을 하고 있었네. 사실 이 사건에는 애초에 아무런 수수께끼도 없었다네, 어제도 말했지만 몇몇 세부 사항은 흥미롭긴 하지만 말일세. 유일한 결함은, 안타깝게도 그 악당을 건드릴 수 있는 법이 없다는 걸세.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_19",
+   "scene_id": "scene_3_1",
+   "order": 11,
+   "title": "윈디뱅크의 도착",
+   "summary": "복도에서 무거운 발소리와 함께 문을 두드리는 소리가 들리고, 홈즈는 그가 윈디뱅크라고 짐작한다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_018",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_012"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_012",
+   "objects": [
+    "NEW:톱해트"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_012",
+     "field": "location",
+     "from": "외부",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "우리는 복도에서 무거운 발소리와 함께 문을 두드리는 소리를 들었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_012",
+     "field": "body_status",
+     "assumes": "서른 살가량의 다부진 중키, 면도한 얼굴, 누르스름한 피부",
+     "source_text": "들어온 남자는 서른 살가량의 다부진 중키의 사내로, 말끔히 면도한 얼굴에 누르스름한 피부를 가지고 있었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_18",
+     "assumes": "이전 대화의 흐름을 끊는 외부 인물의 도착",
+     "source_text": "그 질문이 내 입에서 채 나오기도 전에, 그리고 홈즈가 미처 대답할 입을 열기도 전에, 우리는 복도에서 무거운 발소리와 함께 문을 두드리는 소리를 들었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "윈디뱅크가 약속대로 도착함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이건 그 아가씨의 의붓아버지, 제임스 윈디뱅크 씨일세. 여섯 시에 오겠다고 편지를 보내왔었지."
+    }
+   ],
+   "cause": "이전 화의 윈디뱅크 초대 편지에 대한 응답",
+   "result": "윈디뱅크가 응접실로 들어와 인사하고 자리에 앉는다",
+   "source_text": "그 질문이 내 입에서 채 나오기도 전에, 그리고 홈즈가 미처 대답할 입을 열기도 전에, 우리는 복도에서 무거운 발소리와 함께 문을 두드리는 소리를 들었다. \"이건 그 아가씨의 의붓아버지, 제임스 윈디뱅크 씨일세,\" 홈즈가 말했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_20",
+   "scene_id": "scene_3_1",
+   "order": 12,
+   "title": "윈디뱅크의 외모·태도와 자기소개",
+   "summary": "들어온 남자는 다부진 중키, 면도한 얼굴, 은근한 태도와 날카로운 회색 눈을 가진 서른 살가량의 사내로, 톱해트를 사이드보드에 놓고 가장 가까운 의자에 앉는다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_018",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_012"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_012",
+   "objects": [
+    "NEW:톱해트"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_012",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "NEW:톱해트",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "반들거리는 톱해트를 사이드보드 위에 올려놓고"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_012",
+     "field": "body_status",
+     "assumes": "서른 살가량의 다부진 중키, 면도한 얼굴, 누르스름한 피부, 회색 눈, 은근한 태도",
+     "source_text": "들어온 남자는 서른 살가량의 다부진 중키의 사내로, 말끔히 면도한 얼굴에 누르스름한 피부, 그럴싸하고 은근한 태도, 그리고 놀랍도록 날카롭고 꿰뚫는 듯한 회색 눈을 가지고 있었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_19",
+     "assumes": "문 두드림 직후 응접실에 들어선 직후의 장면",
+     "source_text": "\"들어오시오!\" 들어온 남자는 서른 살가량의 다부진 중키의 사내로"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "윈디뱅크의 외모·태도 (다부진 중키, 면도한 얼굴, 누르스름한 피부, 회색 눈, 은근한 태도)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "들어온 남자는 서른 살가량의 다부진 중키의 사내로, 말끔히 면도한 얼굴에 누르스름한 피부, 그럴싸하고 은근한 태도, 그리고 놀랍도록 날카롭고 꿰뚫는 듯한 회색 눈을 가지고 있었다."
+    }
+   ],
+   "cause": "윈디뱅크의 도착",
+   "result": "윈디뱅크가 자리에 앉아 홈즈의 첫마디를 듣는다",
+   "source_text": "들어온 남자는 서른 살가량의 다부진 중키의 사내로, 말끔히 면도한 얼굴에 누르스름한 피부, 그럴싸하고 은근한 태도, 그리고 놀랍도록 날카롭고 꿰뚫는 듯한 회색 눈을 가지고 있었다. 그는 우리 둘을 번갈아 미심쩍은 눈으로 쳐다보고는, 반들거리는 톱해트를 사이드보드 위에 올려놓고 가볍게 고개를 숙이며 가장 가까운 의자에 슬며시 앉았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_21",
+   "scene_id": "scene_3_1",
+   "order": 13,
+   "title": "홈즈의 첫 질문",
+   "summary": "홈즈는 윈디뱅크에게 자기가 보낸 것으로 알려진 타자 편지와 여섯 시 약속을 언급하며 첫마디를 건다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_018",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_012"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "윈디뱅크의 의붓아버지 신분",
+     "source_text": "이 아가씨의 의붓아버지인 윈디뱅크 씨에게"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_20",
+     "assumes": "윈디뱅크가 의자에 앉은 직후 시작되는 첫 대화",
+     "source_text": "\"안녕하십니까, 제임스 윈디뱅크 씨,\" 홈즈가 말했다."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "이전 화의 윈디뱅크 초대 편지 발송",
+   "result": "3화 종료 시점에서 윈디뱅크의 첫 답변이 다음 화로 이어진다",
+   "source_text": "\"안녕하십니까, 제임스 윈디뱅크 씨,\" 홈즈가 말했다. \"이 타자 편지가 당신이 보낸 것으로 여섯 시에 만나자고 약속을 잡으신 걸로 압니다만?\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_22",
+   "scene_id": "scene_3_1",
+   "order": 1,
+   "title": "윈디뱅크의 늦은 도착과 도발적 발언",
+   "summary": "윈디뱅크가 늦게 도착해 서덜랜드 양을 대신 온 것에 대해 변명하고, 호스머 에인절을 찾을 수 있겠냐고 도발한다.",
+   "location_id": "LOC_010",
+   "time_id": "NEW:윈디뱅크_방문_당일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_012"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_012",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_012",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_010",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "윈디뱅크 씨는 격하게 흠칫하며 장갑을 떨어뜨렸다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_012",
+     "field": "knows",
+     "assumes": "메리 서덜랜드가 홈즈를 찾아갔다는 사실",
+     "source_text": "서덜랜드 양이 이런 사소한 일로 선생님을 번거롭게 해 드려 죄송합니다."
+    },
+    {
+     "entity": "CHAR_012",
+     "field": "knows",
+     "assumes": "홈즈가 정식 경찰이 아니라는 점",
+     "source_text": "물론 선생님이 정식 경찰과 관계가 없으시니 그리 걱정하지는 않았지만"
+    },
+    {
+     "entity": "CHAR_012",
+     "field": "knows",
+     "assumes": "호스머 에인절을 찾는 것이 사실상 불가능하다는 자신의 판단",
+     "source_text": "쓸데없는 비용 아니겠습니까, 이 호스머 에인절이라는 사람을 선생님이 대체 어떻게 찾아내신단 말입니까?"
+    },
+    {
+     "entity": "CHAR_012",
+     "field": "ability",
+     "assumes": "색안경·구레나룻·콧수염·목소리 등을 바꾸어 변장할 수 있는 능력",
+     "source_text": "아내의 묵인과 협조를 받아 그는 변장을 했지. 그 날카로운 눈을 색안경으로 가리고, 콧수염과 숱 많은 구레나룻으로 얼굴을 감추고, 그 또렷한 목소리를 은근한 속삭임으로 가라앉혀서는"
+    },
+    {
+     "entity": "CHAR_012",
+     "field": "body_status",
+     "assumes": "헬렌이 결혼하면 연 100파운드를 잃게 될 처지의 의붓아버지(돈 동기와 연결된 가정)",
+     "source_text": "그녀가 결혼한다면 물론 연 백 파운드를 잃게 되는 셈이니"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_012",
+     "info": "호스머 에인절을 찾을 수 있으리라는 홈즈의 확신",
+     "via": "told",
+     "retained": true,
+     "source_text": "오히려 그 반대입니다, 홈즈가 차분히 말했다. 저는 호스머 에인절 씨를 찾아낼 수 있으리라 확신할 만한 근거가 충분합니다."
+    }
+   ],
+   "cause": "메리 서덜랜드의 의뢰 후 윈디뱅크가 베이커가를 자진 방문",
+   "result": "홈즈가 호스머 에인절을 잡았음을 발표",
+   "source_text": "오히려 그 반대입니다, 홈즈가 차분히 말했다. 저는 호스머 에인절 씨를 찾아낼 수 있으리라 확신할 만한 근거가 충분합니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_23",
+   "scene_id": "scene_3_1",
+   "order": 2,
+   "title": "타자기의 개성 논변",
+   "summary": "홈즈가 타자기에는 필체만큼이나 뚜렷한 개성이 있다고 설명하고, 윈디뱅크의 편지에 드러난 특징들을 짚는다.",
+   "location_id": "LOC_010",
+   "time_id": "NEW:윈디뱅크_방문_당일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_012"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_020"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "윈디뱅크가 보낸 편지에 e가 흐릿하고 r의 꼬리에 결함이 있다는 점",
+     "source_text": "당신의 이 편지를 보면 언제나 'e'가 조금 흐릿하고 'r'의 꼬리 부분에 약간의 결함이 있더군요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "실종된 남자가 보낸 것으로 되어 있는 편지 네 통에 동일한 타자기 결함이 있다는 점",
+     "source_text": "여기 실종된 남자가 보낸 것으로 되어 있는 편지 네 통이 있습니다. 전부 타자로 쳐져 있지요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "타자기의 미세한 결함까지 식별할 수 있는 관찰력",
+     "source_text": "아주 새것이 아니고서야, 똑같이 찍히는 타자기는 두 대도 없습니다. 어떤 글자는 다른 것보다 더 닳고, 어떤 것은 한쪽만 닳지요."
+    },
+    {
+     "entity": "CHAR_012",
+     "field": "knows",
+     "assumes": "사무실의 단일 타자기로 모든 서신을 처리한다는 사실",
+     "source_text": "저희는 사무실에서 이 기계로 모든 서신을 처리하는데, 아마 조금 닳았을 겁니다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_22",
+     "assumes": "EVENT_3_1에서 윈디뱅크가 호스머 에인절을 찾을 수 있겠냐고 도발한 직후, 홈즈의 답변이 이어진다",
+     "source_text": "오히려 그 반대입니다, 홈즈가 차분히 말했다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_012",
+     "info": "홈즈가 자기가 보낸 편지의 타자기 결함을 이미 분석했다는 점",
+     "via": "told",
+     "retained": true,
+     "source_text": "당신의 이 편지를 보면 언제나 'e'가 조금 흐릿하고 'r'의 꼬리 부분에 약간의 결함이 있더군요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "실종된 남자의 편지 4통이 모두 자기가 가진 윈디뱅크의 타자기 결함과 동일하다는 점(자신의 가설 확인)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이 각 편지마다, 'e'가 흐릿하고 'r'에 꼬리가 없을 뿐 아니라, 제가 언급한 그 열네 가지 다른 특징들도 똑같이 있다는 걸 보실 수 있을 겁니다."
+    }
+   ],
+   "cause": "윈디뱅크의 도발에 대한 홈즈의 반박",
+   "result": "윈디뱅크가 자리에서 벌떡 일어나 떠나려 함",
+   "source_text": "타자기라는 것이 실은 사람의 필체만큼이나 개성이 뚜렷하다는 건 흥미로운 사실입니다",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_24",
+   "scene_id": "scene_3_1",
+   "order": 3,
+   "title": "문이 잠겨 있고, 호스머 에인절은 이미 잡혔다",
+   "summary": "윈디뱅크가 떠나려 하자 홈즈가 문을 잠그며 이미 호스머 에인절을 잡았음을 선언한다.",
+   "location_id": "LOC_010",
+   "time_id": "NEW:윈디뱅크_방문_당일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_012"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_012",
+     "field": "alive",
+     "from": "true",
+     "to": "true",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "윈디뱅크 씨가 입술까지 하얗게 질려 덫에 걸린 쥐처럼 주위를 두리번거리며 소리쳤다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_012",
+     "field": "knows",
+     "assumes": "자신이 호스머 에인절이라는 점을 알고 있지 못함(또는 자기가 에인절인 것을 부정한 상태)",
+     "source_text": "윈디뱅크 씨는 의자에서 벌떡 일어나 모자를 집어 들었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "응접실 문을 잠글 수 있는 열쇠",
+     "source_text": "홈즈가 문 쪽으로 다가가 열쇠를 돌리며 말했다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_23",
+     "assumes": "EVENT_3_2의 타자기 분석 발언이 끝난 직후, 같은 자리에서 이어지는 행동이다",
+     "source_text": "윈디뱅크 씨는 의자에서 벌떡 일어나 모자를 집어 들었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_012",
+     "info": "자신이 호스머 에인절임이 홈즈에게 발각되었다는 점",
+     "via": "told",
+     "retained": true,
+     "source_text": "그러지요, 홈즈가 문 쪽으로 다가가 열쇠를 돌리며 말했다. 그럼 지금 알려 드리지요, 제가 이미 그를 잡았다는 것을 말입니다!"
+    }
+   ],
+   "cause": "윈디뱅크의 퇴장 시도",
+   "result": "윈디뱅크가 의자에 주저앉음",
+   "source_text": "그러지요, 홈즈가 문 쪽으로 다가가 열쇠를 돌리며 말했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_25",
+   "scene_id": "scene_3_1",
+   "order": 4,
+   "title": "홈즈의 사건 경위 설명",
+   "summary": "홈즈가 사건의 전모—결혼 동기, 딸의 구애 차단, 변장, 약혼, 결별극—를 짚어 설명한다.",
+   "location_id": "LOC_010",
+   "time_id": "NEW:윈디뱅크_방문_당일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_012"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_012",
+     "field": "body_status",
+     "assumes": "높은 근시 — 안경 없이는 가까이 있는 사람도 알아보지 못함",
+     "source_text": "그 아가씨의 근시 덕분에 이중으로 안전하게, 호스머 에인절 씨로 나타나서"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "의붗아버지인 윈디뱅크가 프랑스에 있다고 믿고 있음(서덜랜드 양의 믿음)",
+     "source_text": "그녀는 자기 의붗아버지가 프랑스에 있다고 완전히 믿고 있었으니"
+    },
+    {
+     "entity": "CHAR_012",
+     "field": "knows",
+     "assumes": "스토너 부인(아내)의 묵인 및 협조",
+     "source_text": "아내의 묵인과 협조를 받아 그는 변장을 했지."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "에인절의 관심에 우쭐해하고, 어머니의 찬사로 효과가 커졌음",
+     "source_text": "그녀는 그 신사의 관심에 우쭐해졌고, 어머니의 요란한 찬사가 그 효과를 더 키웠지."
+    },
+    {
+     "entity": "CHAR_012",
+     "field": "knows",
+     "assumes": "성경에 대고 정절을 맹세하는 식으로 사건을 끝내야겠다는 계획",
+     "source_text": "확실한 인상을 남기려면 이 일을 극적인 방식으로 끝내서"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_24",
+     "assumes": "EVENT_3_3에서 윈디뱅크가 주저앉은 직후, 같은 자리에서 홈즈의 설명이 이어진다",
+     "source_text": "오, 소용없습니다—정말로 소용없어요, 홈즈가 부드럽게 말했다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "사건의 전체 경위—윈디뱅크의 변장과 약혼 조작, 결혼식 날 결별극",
+     "via": "told",
+     "retained": true,
+     "source_text": "자, 이제 제가 사건의 경과를 한번 죽 훑어볼 테니"
+    },
+    {
+     "character_id": "CHAR_012",
+     "info": "홈즈가 자기가 한 모든 행위를 알고 있다는 점",
+     "via": "told",
+     "retained": true,
+     "source_text": "유감스럽지만 그런 것 같군요. 하지만 우리끼리 얘긴데, 윈디뱅크 씨"
+    }
+   ],
+   "cause": "홈즈의 자백 유도",
+   "result": "윈디뱅크가 다시 자신감을 되찾고 위협적으로 나옴",
+   "source_text": "이 남자는 돈 때문에 자기보다 훨씬 나이 많은 여자와 결혼했네",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_26",
+   "scene_id": "scene_3_1",
+   "order": 5,
+   "title": "윈디뱅크의 법적 위협과 도주",
+   "summary": "윈디뱅크가 폭행·불법 감금으로 위협하다가, 홈즈가 잠시 망설인 사이 문을 박차고 도망친다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_027",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_012"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_012",
+   "objects": [
+    "OBJ_012"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_012",
+     "field": "location",
+     "from": "LOC_010",
+     "to": "unknown",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "창밖으로 우리는 제임스 윈디뱅크 씨가 전속력으로 길을 내달려 도망치는 모습을 볼 수 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_012",
+     "field": "knows",
+     "assumes": "자신에게 소송 가능한 법적 근거가 없다는 점",
+     "source_text": "저는 처음부터 소송당할 만한 일은 아무것도 하지 않았지만"
+    },
+    {
+     "entity": "CHAR_012",
+     "field": "ability",
+     "assumes": "현관문을 닫고 거리로 도망칠 수 있을 만큼 기동력을 가짐",
+     "source_text": "계단에서 요란한 발소리가 나더니 현관의 육중한 문이 쾅 닫혔고"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_25",
+     "assumes": "EVENT_3_4의 경위 설명이 끝난 직후, 같은 자리에서 위협과 도주가 이어진다",
+     "source_text": "우리 손님은 홈즈가 이야기하는 동안 어느 정도 자신감을 되찾았고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "윈디뱅크의 거리 도주",
+     "via": "direct",
+     "retained": true,
+     "source_text": "창밖으로 우리는 제임스 윈디뱅크 씨가 전속력으로 길을 내달려 도망치는 모습을 볼 수 있었다."
+    }
+   ],
+   "cause": "홈즈의 자백 요구",
+   "result": "윈디뱅크가 베이커가를 빠져나가 도주",
+   "source_text": "그럴 수도 있고, 아닐 수도 있지요, 홈즈 선생님, 그가 말했다. 하지만 선생님이 그렇게 날카로우시다면, 지금 법을 어기고 있는 건 저가 아니라 선생님이라는 것도 아실 만큼은 날카로우셔야지요.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_27",
+   "scene_id": "scene_3_2",
+   "order": 6,
+   "title": "추리 절차 회고",
+   "summary": "왓슨이 추리 단계를 모두 이해하지 못한다 말하자, 홈즈가 호스머 에인절 식별의 절차—의심, 변장 요소 제거, 회사 신원 조회, 타자기 검증—를 회고한다.",
+   "location_id": "LOC_010",
+   "time_id": "NEW:윈디뱅크_도주_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "이 남자가 일하는 회사를 알고 있음(웨스트하우스 앤 마뱅크, 펜처치)",
+     "source_text": "나는 이 남자가 일하는 회사를 알고 있었지."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "윈디뱅크의 답장이 타자로 되어 있고 동일한 결함을 보일 것이라 예상한 점(검증 가능한 가설)",
+     "source_text": "예상대로 그의 답장은 타자로 되어 있었고 똑같이 사소하지만 특징적인 결함들을 보여 주었지."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_26",
+     "assumes": "EVENT_3_5의 도주 사건 직후, 같은 자리에서 추리 회고가 시작된다",
+     "source_text": "냉혈한 악당 같으니! 홈즈가 웃으며 다시 의자에 몸을 던지듯 앉으며 말했다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈가 회사를 알고 있었고, 인상착의에서 변장 요소를 제거한 뒤 회사에 신원 조회했으며, 본인에게 편지까지 보내어 타자기 결함을 확인했다는 절차 전체",
+     "via": "told",
+     "retained": true,
+     "source_text": "인쇄된 인상착의를 가져다가, 변장의 결과일 수 있는 것들—구레나룻, 안경, 목소리—을 전부 빼 버리고, 그것을 그 회사에 보내면서"
+    }
+   ],
+   "cause": "왓슨의 '어떻게 확인했나' 질문",
+   "result": "왓슨이 모든 단계를 이해함",
+   "source_text": "나는 자네 추리의 모든 단계를 다 이해하지는 못하겠네, 내가 말했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_28",
+   "scene_id": "scene_3_2",
+   "order": 7,
+   "title": "서덜랜드 양에게 말해도 소용없다는 결론",
+   "summary": "서덜랜드 양에게 알릴지에 대한 논의에서, 홈즈는 격언을 인용하며 그녀의 망상을 빼앗는 것이 위험하다고 결론짓는다.",
+   "location_id": "LOC_010",
+   "time_id": "NEW:윈디뱅크_도주_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "메리 서덜랜드가 자기를 믿지 않을 것이라는 판단",
+     "source_text": "내가 그녀에게 말한다 해도 그녀는 나를 믿지 않을 걸세."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_27",
+     "assumes": "EVENT_3_6의 추리 회고에 이어지는 마지막 대화",
+     "source_text": "그럼 서덜랜드 양은?"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "서덜랜드 양에게 알리지 않고 사건을 마무리하겠다는 홈즈의 결정",
+     "via": "told",
+     "retained": true,
+     "source_text": "내가 그녀에게 말한다 해도 그녀는 나를 믿지 않을 걸세."
+    }
+   ],
+   "cause": "왓슨의 '서덜랜드 양은?' 질문",
+   "result": "이 사건 종결",
+   "source_text": "그럼 서덜랜드 양은?",
+   "certainty": "explicit"
+  }
+ ]
+}

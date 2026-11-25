@@ -1,0 +1,125 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "순덕 새벽 기상 및 파스 부착",
+   "summary": "순덕이 새벽 4시에 골방에서 일어나 왼쪽 무릎에 파스를 붙이고 카운터로 이동한다.",
+   "location_id": "LOC_003",
+   "time_id": "TIME_043",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_008",
+    "OBJ_017"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "from": "왼쪽 무릎 통증/경직 (파스 미부착)",
+     "to": "왼쪽 무릎에 파스 부착함",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "새벽 네 시에 순덕은 골방에서 일어나 파스를 뜯었다. 왼쪽 무릎에 붙였다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_003",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "순덕은 손으로 그 무릎을 짚고 이불을 개고 카운터로 나갔다. 두 걸음이었다."
+    },
+    {
+     "entity": "OBJ_017",
+     "field": "condition",
+     "from": "펴진 상태",
+     "to": "개어진 상태",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "순덕은 손으로 그 무릎을 짚고 이불을 개고 카운터로 나갔다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_008 (파스 소지)",
+     "source_text": "새벽 네 시에 순덕은 골방에서 일어나 파스를 뜯었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "만성 왼쪽 무릎 질환 (몇 년째)",
+     "source_text": "몇 년째 그 무릎이었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "보행 가능하나 왼쪽 다리 굽힘 지연",
+     "source_text": "일어서는데 왼쪽 다리가 굽는 데 시간이 걸렸다. 순덕은 손으로 그 무릎을 짚고"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "어제 잔돈: 어른 600원, 아이 300원",
+     "via": "direct",
+     "retained": true,
+     "source_text": "불을 켜고 나무 서랍을 열어 어제 넣어 둔 잔돈을 확인했다. 어른 육백 원, 아이 삼백 원."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "장문식이 새벽 3시 30분에 연탄을 뗐음",
+     "via": "inference",
+     "retained": true,
+     "source_text": "지하에서는 벌써 쇳덩이 도는 소리가 났다. 장씨가 세 시 반에 뗐으니 여섯 시에는 뜨거울 것이었다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "새벽 4시 현재 여탕 물은 미지근함 (정상)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "순덕은 여탕 쪽 수도꼭지를 틀어 보았다. 물은 아직 미지근했다. 이 시간에는 그게 맞았다."
+    }
+   ],
+   "cause": "새벽 개장 준비",
+   "result": "파스 부착, 카운터 이동, 잔돈 확인, 보일러 가동 확인, 수온 확인",
+   "source_text": "새벽 네 시에 순덕은 골방에서 일어나 파스를 뜯었다. 왼쪽 무릎에 붙였다. 몇 년째 그 무릎이었다. 붙이고 나서 일어서는데 왼쪽 다리가 굽는 데 시간이 걸렸다. 순덕은 손으로 그 무릎을 짚고 이불을 개고 카운터로 나갔다. 두 걸음이었다. 불을 켜고 나무 서랍을 열어 어제 넣어 둔 잔돈을 확인했다. 어른 육백 원, 아이 삼백 원. 지하에서는 벌써 쇳덩이 도는 소리가 났다. 장씨가 세 시 반에 뗐으니 여섯 시에는 뜨거울 것이었다. 순덕은 여탕 쪽 수도꼭지를 틀어 보았다. 물은 아직 미지근했다. 이 시간에는 그게 맞았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:40:28Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 59.93
+ }
+}

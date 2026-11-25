@@ -1,0 +1,3802 @@
+{
+ "schema_version": 2,
+ "episode": 1,
+ "worldview_rules": [
+  {
+   "rule_id": "NEW:늪살무사_치사_시간",
+   "content": "늪살무사에 물리면 십 초 안에 사망한다",
+   "description": "홈즈가 외치는 대사에서 확인되는 살무사 계열 독사의 작용 속도",
+   "source_text": "\"늪살무사다!\" 홈즈가 외쳤다. \"인도에서 가장 치명적인 뱀이지. 물린 지 십 초 안에 그는 죽었을 걸세.\"",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:늪살무사_훈련_방식",
+   "content": "늪살무사는 우유를 미끼로 호출하며, 부르면 주인에게 돌아오도록 훈련 가능하다",
+   "description": "스토커 부부가 살무사를 다루기 위해 사용한 수단으로, 원문에서 추론",
+   "source_text": "우유를 이용해서, 아마도 부르면 자기에게 돌아오도록 훈련시켰을 거야",
+   "certainty": "inferred"
+  },
+  {
+   "rule_id": "NEW:살무사_독니_증거",
+   "content": "살무사의 물린 자국은 독니가 남긴 두 개의 작고 검은 자국이며, 화학적 검사에서는 발견되지 않는 독이 사용된다",
+   "description": "동양식 살인 방법의 특성으로 원문에 명시됨",
+   "source_text": "독니가 남긴 두 개의 작고 검은 자국을 구별해 낼 수 있는 검시관이라면 ... 어떤 화학적 검사로도 발견될 수 없는 형태의 독을 사용한다는 발상은, 동양에서 훈련받은 영리하고 무자비한 사람의 머리에 떠오를 법한 것이었네",
+   "certainty": "explicit"
+  }
+ ],
+ "characters": [
+  {
+   "character_id": "CHAR_001",
+   "name": "셜록 홈즈",
+   "aliases": [
+    "홈즈"
+   ],
+   "entity_type": "person",
+   "description": "베이커가에서 왓슨과 동거하는 사립탐정",
+   "traits": [
+    {
+     "trait": "늦게 일어나는 습관",
+     "trait_type": "habit",
+     "source_text": "그는 대체로 늦게 일어나는 사람이었는데",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "재빠르고 모든 것을 꿰뚫는 시선으로 대상을 관찰함",
+     "trait_type": "personality",
+     "source_text": "셜록 홈즈는 특유의 재빠르고 모든 것을 꿰뚫는 시선으로 그녀를 훑어보았다",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "쾌활한 말투",
+     "trait_type": "speech",
+     "source_text": "“좋은 아침입니다, 부인,” 홈즈가 쾌활하게 말했다",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_1_2",
+   "source_text": "내 친구 셜록 홈즈",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_002",
+   "name": "왓슨",
+   "entity_type": "person",
+   "description": "홈즈의 동거인, 의사로 보이는 화자",
+   "traits": [
+    {
+     "trait": "평소 규칙적인 습관을 지님",
+     "trait_type": "habit",
+     "source_text": "나 자신은 평소 규칙적인 습관을 지닌 사람이었기 때문이다",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "홈즈의 수사를 관찰하는 것을 즐거워함",
+     "trait_type": "personality",
+     "source_text": "홈즈가 진행하는 수사를 따라다니며 … 지켜보는 것보다 더 큰 즐거움을 아는 바가 없었다",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_1_1",
+   "source_text": "내 침대 곁에 서 있었다",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_003",
+   "name": "헬렌 스토너",
+   "entity_type": "person",
+   "description": "스토크 모런의 로일럿 박사의 의붓딸, 의뢰인으로 찾아온 젊은 부인",
+   "traits": [
+    {
+     "trait": "서른 살 정도로 보이는 이목구비와 몸매",
+     "trait_type": "appearance",
+     "source_text": "그녀의 이목구비와 몸매는 서른 살 여인의 것이었으나",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "머리카락에 때 이른 백발이 섞여 있음",
+     "trait_type": "appearance",
+     "source_text": "머리카락에는 때 이른 백발이 섞여 있었고",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "표정이 지치고 초췌함",
+     "trait_type": "appearance",
+     "source_text": "표정은 지치고 초췌했다",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_1_3",
+   "source_text": "제 이름은 헬렌 스토너",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_004",
+   "name": "줄리아",
+   "entity_type": "person",
+   "description": "헬렌 스토너의 쌍둥이 언니",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_1_3",
+   "source_text": "제 언니 줄리아와 저는 쌍둥이였고",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_025",
+   "name": "베일을 쓴 부인",
+   "entity_type": "person",
+   "description": "새벽에 베이커가 응접실을 찾아온 검은 옷의 의뢰인 (정체 미확정)",
+   "traits": [
+    {
+     "trait": "검은 옷을 입고 짙은 베일을 쓰고 있음",
+     "trait_type": "appearance",
+     "source_text": "검은 옷을 입고 짙은 베일을 쓴 한 부인이 우리가 들어서자 자리에서 일어났다",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_1_3",
+   "source_text": "검은 옷을 입고 짙은 베일을 쓴 한 부인",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_026",
+   "name": "허드슨 부인",
+   "entity_type": "person",
+   "description": "베이커가의 집사(숙모) 역할 인물",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_1_2",
+   "source_text": "허드슨 부인이 잠을 깼고",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_027",
+   "name": "패린토시 부인",
+   "entity_type": "person",
+   "description": "과거에 홈즈의 도움을 받은 인물, 헬렌에게 홈즈 주소를 알려줌",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_1_3",
+   "source_text": "저는 … 패린토시 부인에게서 들었습니다",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_028",
+   "name": "스토너 소장",
+   "entity_type": "person",
+   "description": "헬렌과 줄리아의 친아버지, 벵골 포병대 소장 (이미 사망한 것으로 언급됨)",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_1_3",
+   "source_text": "어머니는 벵골 포병대의 스토너 소장의 젊은 미망인, 스토너 부인이었습니다",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_029",
+   "name": "스토너 부인 (헬렌의 친어머니)",
+   "entity_type": "person",
+   "description": "헬렌과 줄리아의 친어머니, 로일럿 박사와 재혼 후 8년 전 철도 사고로 사망",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_1_3",
+   "source_text": "어머니는 벵골 포병대의 스토너 소장의 젊은 미망인, 스토너 부인이었습니다",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_030",
+   "name": "도박꾼",
+   "entity_type": "person",
+   "description": "섭정시대에 로일럿 가문의 몰락을 완성한 인물 (이름 미상)",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_1_3",
+   "source_text": "섭정시대에 이르러 어느 도박꾼에 의해 가문의 몰락이 완성되었습니다",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_031",
+   "name": "인도인 집사",
+   "entity_type": "person",
+   "description": "로일럿 박사 인도 시절의 집사, 절도 사건 관련으로 박사에게 구타당해 사망",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_1_3",
+   "source_text": "그 인도인 집사를 때려죽였고",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_032",
+   "name": "마지막 영주",
+   "entity_type": "person",
+   "description": "로일럿 가문의 마지막 영주, 로일럿 박사의 아버지 (이미 사망한 것으로 언급됨)",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_1_3",
+   "source_text": "마지막 영주는 그곳에서 몰락한 귀족의 처참한 삶을 그럭저럭 이어 갔지만",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_033",
+   "name": "기차 마부",
+   "entity_type": "person",
+   "description": "헬렌을 역까지 태워준 개마차 마부 (이름·정체 미상)",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_1_3",
+   "source_text": "역에 닿기 전에 험한 길을 따라 개마차를 타고 한참을 달려오셨더군요",
+   "certainty": "inferred"
+  },
+  {
+   "name": "개코원숭이",
+   "description": "로일럿 박사가 기르는 기이한 애완동물",
+   "first_appearance_event_id": "EVENT_1_36",
+   "source_text": "\"정겨운 집안이로군,\" 그가 중얼거렸다. \"저것이 그 개코원숭이일세.\"",
+   "certainty": "explicit",
+   "character_id": "CHAR_034"
+  }
+ ],
+ "locations": [
+  {
+   "location_id": "LOC_001",
+   "name": "베이커가",
+   "description": "홈즈와 왓슨이 동거하는 런던의 주소",
+   "source_text": "베이커가에서 독신으로 방을 함께 쓰던 시절이었다",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_002",
+   "name": "스토크 모런",
+   "description": "서리 서쪽 경계에 있는 로일럿 가문의 저택 소재지",
+   "source_text": "서리 서쪽 경계에 있는 스토크 모런의 로일럿 가문의 마지막 생존자입니다",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_010",
+   "name": "베이커가 응접실",
+   "description": "베이커가 1층의 손님을 맞이하는 응접 공간",
+   "source_text": "지금 응접실에서 기다리고 있어",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_011",
+   "name": "베이커가 왓슨의 침실",
+   "description": "왓슨이 잠자던 침실",
+   "source_text": "잠에서 깨어 보니 셜록 홈즈가 옷을 다 갖춰 입은 채 내 침대 곁에 서 있었다",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_012",
+   "name": "레더헤드",
+   "description": "헬렌이 기차를 타기 전 개마차로 도착한 도시",
+   "source_text": "저는 여섯 시 전에 집을 나서서 이십 분 지나 레더헤드에 도착했고, 첫차를 타고 워털루로 왔습니다",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_013",
+   "name": "워털루",
+   "description": "헬렌이 레더헤드에서 기차를 타고 도착한 런던의 역",
+   "source_text": "첫차를 타고 워털루로 왔습니다",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_014",
+   "name": "캘커타",
+   "description": "로일럿 박사가 의학 학위를 받아 큰 병원을 일으킨 인도 도시",
+   "source_text": "친척에게서 돈을 빌려 의학 학위를 취득한 뒤 캘커타로 건너가, 뛰어난 의술과 강인한 성격으로 큰 병원을 일으켰습니다",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_015",
+   "name": "로일럿 저택",
+   "description": "스토크 모런에 있는 이백 년 된 무거운 저당에 눌린 저택",
+   "source_text": "남은 것이라고는 약간의 땅과, 무거운 저당에 눌린 이백 년 된 저택뿐이었습니다",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_016",
+   "name": "크루 부근",
+   "description": "헬렌의 어머니가 죽은 철도 사고가 일어난 곳",
+   "source_text": "8년 전 크루 근처에서 일어난 철도 사고로 목숨을 잃으셨지요",
+   "certainty": "explicit"
+  }
+ ],
+ "objects": [
+  {
+   "object_id": "OBJ_008",
+   "name": "왕복표 뒷반쪽",
+   "description": "헬렌의 왼쪽 장갑 안에서 발견된 왕복표의 뒷부분",
+   "source_text": "왼쪽 장갑 손바닥에서 왕복표의 뒷반쪽을 보았을 뿐입니다",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_009",
+   "name": "사건 기록장",
+   "description": "홈즈가 책상 자물쇠에서 꺼낸 작은 사건 기록장",
+   "source_text": "홈즈는 책상으로 돌아서서 자물쇠를 열고 작은 사건 기록장을 꺼내 살펴보았다",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_010",
+   "name": "진흙 묻은 재킷",
+   "description": "헬렌이 입고 있던 진흙이 일곱 군데 이상 튀어 있는 재킷",
+   "source_text": "재킷 왼쪽 소매에 진흙이 일곱 군데도 넘게 튀어 있더군요",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_011",
+   "name": "오팔 티아라",
+   "description": "패린토시 부인과 관련된 과거 사건의 물건 (오팔 티아라 사건)",
+   "source_text": "오팔 티아라와 관련된 것이었지요",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_001",
+   "name": "부지깽이",
+   "description": "스토크 모런에서 로일럿 박사가 구부린 강철 부지깽이. 홈즈가 다시 폄.",
+   "first_appearance_event_id": "EVENT_1_19",
+   "source_text": "그는 재빨리 앞으로 나서서 부지깽이를 집어 들더니 커다란 갈색 손으로 그것을 구부려 휘어 놓았다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_012",
+   "name": "사냥용 채찍",
+   "description": "로일럿 박사가 들고 있던 사냥용 채찍.",
+   "first_appearance_event_id": "EVENT_1_18",
+   "source_text": "높은 각반 차림에 손에는 사냥용 채찍을 흔들고 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_013",
+   "name": "성냥갑",
+   "description": "홈즈가 침대 곁에 놓아둔 성냥갑",
+   "first_appearance_event_id": "EVENT_1_39",
+   "source_text": "그 옆에는 성냥갑과 초 동강을 놓아두었다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_014",
+   "name": "초 동강",
+   "description": "홈즈가 침대 곁에 놓아둔 초 동강",
+   "first_appearance_event_id": "EVENT_1_39",
+   "source_text": "그 옆에는 성냥갑과 초 동강을 놓아두었다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_015",
+   "name": "길고 가느다란 지팡이",
+   "description": "홈즈가 종줄을 후려치기 위해 사용한 지팡이",
+   "first_appearance_event_id": "EVENT_1_39",
+   "source_text": "홈즈는 길고 가느다란 지팡이를 가져와 자기 곁 침대 위에 놓았다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_016",
+   "name": "권총",
+   "description": "왓슨이 탁자 모서리에 올려놓은 권총",
+   "first_appearance_event_id": "EVENT_1_38",
+   "source_text": "나는 권총을 꺼내 탁자 모서리에 올려놓았다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_002",
+   "name": "개 채찍",
+   "description": "로일럿 박사의 무릎 위에 놓여 있던 짧은 손잡이에 긴 채찍끈이 달린 것",
+   "first_appearance_event_id": "EVENT_1_43",
+   "source_text": "그의 무릎 위에는 우리가 낮에 보았던, 긴 채찍끈이 달린 짧은 손잡이가 놓여 있었다",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "TIME_004",
+   "expression": "83년 4월 초의 어느 날 아침, 7시 15분",
+   "description": "홈즈가 왓슨을 깨운 시각",
+   "timeline": "main",
+   "source_text": "83년 4월 초의 어느 날 아침 … 벽난로 위 시계가 겨우 일곱 시 십오 분을 가리키고 있는 것을 보고",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_005",
+   "expression": "헬렌이 집을 나선 시각 (6시 전)",
+   "description": "헬렌이 레더헤드를 향해 출발한 시각",
+   "timeline": "main",
+   "source_text": "저는 여섯 시 전에 집을 나서서",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_006",
+   "expression": "8년 전",
+   "description": "헬렌의 어머니가 철도 사고로 죽은 때부터 현재까지의 경과 기간",
+   "timeline": "main",
+   "source_text": "저는 83년 4월 초의 어느 날 아침 … 8년 전 크루 근처에서 일어난 철도 사고",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_007",
+   "expression": "한두 달 안",
+   "description": "헬렌이 결혼하여 사례금을 줄 수 있을 것으로 예상되는 시점",
+   "timeline": "main",
+   "source_text": "한두 달 안에 결혼하여 제 재산을 관리하게 되면",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_008",
+   "expression": "오늘 아침",
+   "description": "헬렌 스토너가 베이커가를 방문한 아침.",
+   "timeline": "main",
+   "source_text": "오늘 아침 오로지 선생님을 뵙고 조언을 구하겠다는 한 가지 목적으로 왔습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_009",
+   "expression": "오늘 오후 이른 시간",
+   "description": "헬렌이 약속한, 홈즈·왓슨이 스토크 모런에 도착할 시간대.",
+   "timeline": "main",
+   "source_text": "그럼 저희는 오후 이른 시간에 뵙겠습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_001",
+   "expression": "83년 4월 초",
+   "description": "이 사건이 벌어진 시점(작중 4월 초).",
+   "timeline": "main",
+   "source_text": "봄이 가는 동안 결혼할 예정입니다.",
+   "certainty": "inferred"
+  },
+  {
+   "time_id": "TIME_010",
+   "expression": "해 질 무렵",
+   "description": "로일럿 박사가 마차로 저택에 들어오는 시각",
+   "timeline": "main",
+   "source_text": "해 질 무렵 우리는 그림스비 로일럿 박사가 지나가는 것을 보았다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_011",
+   "expression": "아홉 시",
+   "description": "나무들 사이의 불빛이 꺼진 시각",
+   "timeline": "main",
+   "source_text": "아홉 시쯤 나무들 사이의 불빛이 꺼졌고",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_012",
+   "expression": "열한 시",
+   "description": "헬렌이 보낸 신호등이 켜진 시각",
+   "timeline": "main",
+   "source_text": "열한 시를 알리는 종이 울릴 때, 밝은 불빛 하나가 바로 우리 앞에서 반짝였다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_013",
+   "expression": "열두 시, 한 시, 두 시, 세 시",
+   "description": "교구 시계 종소리로 표시된 긴 대기 시간",
+   "timeline": "main",
+   "source_text": "열두 시가 울렸고, 한 시, 두 시, 세 시가 울렸으며",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T14:19:06Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 70.87
+ },
+ "_merge": {
+  "spec": "handoff/chunked_extract_spec.md",
+  "chunks": [
+   "episode_01_c01.json",
+   "episode_01_c02.json",
+   "episode_01_c03.json",
+   "episode_01_c04.json",
+   "episode_01_c05.json",
+   "episode_01_c06.json"
+  ],
+  "unmapped_new": [
+   "NEW:LOC_가운데_방",
+   "NEW:LOC_박사의_침실",
+   "NEW:가짜_종줄",
+   "NEW:그날_오전",
+   "NEW:그날_오전_늦게",
+   "NEW:늪살무사_치사_시간",
+   "NEW:늪살무사_훈련_방식",
+   "NEW:로일럿_저택_부근_마차길",
+   "NEW:로일럿_저택_층계문_부근",
+   "NEW:마부",
+   "NEW:비명의_주체",
+   "NEW:살무사_독니_증거",
+   "NEW:왕복표_뒷반쪽 (왼쪽 장갑 안)",
+   "NEW:우유_접시",
+   "NEW:크라운_여관",
+   "NEW:환기구"
+  ]
+ },
+ "events": [
+  {
+   "event_id": "EVENT_1_1",
+   "scene_id": "scene_1_1",
+   "order": 1,
+   "title": "왓슨의 서술에 의한 사건 개관",
+   "summary": "왓슨이 70여 건의 사건 노트 가운데서도 스토크 모런의 로일럿 가문 사건이 가장 특이했음을 회고하고, 비밀 유지를 약속받았던 부인이 세상을 떠난 뒤 이제야 기록을 공개하게 되었다고 밝힌다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_006",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_029",
+     "field": "alive",
+     "from": "true",
+     "to": "false",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "약속에서 풀려난 것은 지난달 그 서약을 받았던 부인이 때 이르게 세상을 떠난 뒤였다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "70여 건의 사건 노트",
+     "source_text": "내 친구 셜록 홈즈의 수사 방법을 연구하며 기록해 둔 70여 건의 사건 노트를 훑어보면"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "스토크 모런의 로일럿 사건의 비밀",
+     "source_text": "당시 비밀을 지키겠다는 약속을 했었고"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "왓슨이 사건 노트를 정리하며 서문을 작성함",
+   "result": "사건의 정체와 공개 시점이 정해짐",
+   "source_text": "스토크 모런의 로일럿 가문—서리의 유명한 가문—과 관련된 사건보다 더 특이한 양상을 보인 것은 떠올릴 수 없다",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_2",
+   "scene_id": "scene_1_2",
+   "order": 2,
+   "title": "새벽에 왓슨을 깨운 홈즈",
+   "summary": "83년 4월 초 어느 날 아침 7시 15분에 홈즈가 이미 옷을 갖춰 입고 왓슨의 침실에 나타나 의뢰인이 왔음을 알리고 응접실로 함께 내려간다.",
+   "location_id": "LOC_011",
+   "time_id": "TIME_004",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_026"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "alive",
+     "from": "true",
+     "to": "true",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "잠에서 깨어 보니 셜록 홈즈가 … 내 침대 곁에 서 있었다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "from": "잠옷/준비 중",
+     "to": "옷을 다 갖춰 입음",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "잠옷/준비 중",
+     "certainty": "explicit",
+     "source_text": "셜록 홈즈가 옷을 다 갖춰 입은 채"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "응접실에 의뢰인이 와 있다는 사실",
+     "source_text": "지금 응접실에서 기다리고 있어"
+    },
+    {
+     "entity": "CHAR_026",
+     "field": "knows",
+     "assumes": "의뢰인의 존재와 다급한 사정",
+     "source_text": "허드슨 부인이 잠을 깼고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "침대(잠자리)",
+     "source_text": "잠에서 깨어 보니"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "베이커가 응접실에 의뢰인이 와 있음",
+     "via": "told",
+     "retained": true,
+     "source_text": "의뢰인일세. 젊은 부인 한 분이 몹시 흥분한 상태로 찾아와서는 기어이 나를 만나야겠다고 고집하고 있다네"
+    }
+   ],
+   "cause": "베이커가에 새벽에 의뢰인이 찾아옴",
+   "result": "왓슨이 의뢰인을 만나기 위해 응접실로 향함",
+   "source_text": "83년 4월 초의 어느 날 아침, 잠에서 깨어 보니 셜록 홈즈가 옷을 다 갖춰 입은 채 내 침대 곁에 서 있었다",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_3",
+   "scene_id": "scene_1_3",
+   "order": 3,
+   "title": "헬렌 스토너의 의뢰와 가족사 청취",
+   "summary": "베이커가 응접실에서 베일을 쓴 부인(헬렌 스토너)이 의뢰를 위해 왔고, 홈즈는 짧은 관찰로 그녀가 기차로 왔음을 추리한다. 헬렌은 이름과 로일럿 가문의 몰락, 의붓아버지 로일럿 박사의 폭력성과 쇠퇴, 어머니의 유산과 사고사, 의붓아버지의 변화된 행동까지 상세히 이야기한다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_004",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_025",
+    "CHAR_003",
+    "CHAR_027",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [
+    "OBJ_008",
+    "OBJ_010",
+    "OBJ_009",
+    "OBJ_011"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_025",
+     "field": "alive",
+     "from": "true",
+     "to": "true",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "창가에 앉아 있던, 검은 옷을 입고 짙은 베일을 쓴 한 부인이 우리가 들어서자 자리에서 일어났다"
+    },
+    {
+     "entity": "CHAR_025",
+     "field": "body_status",
+     "from": "베일로 얼굴을 가린 상태",
+     "to": "베일을 걷어 올려 얼굴이 드러난 상태",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "베일로 얼굴을 가린 상태",
+     "certainty": "explicit",
+     "source_text": "그녀는 말하면서 베일을 걷어 올렸고"
+    },
+    {
+     "entity": "CHAR_025",
+     "field": "body_status",
+     "from": "온통 핼쑥하고 잿빛, 겁먹은 표정",
+     "to": "동요한 상태가 노출됨",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "온통 핼쑥하고 잿빛, 겁먹은 표정",
+     "certainty": "explicit",
+     "source_text": "우리는 그녀가 참으로 딱할 만큼 동요한 상태에 있음을 볼 수 있었다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_009",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "홈즈는 책상으로 돌아서서 자물쇠를 열고 작은 사건 기록장을 꺼내 살펴보았다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_025",
+     "field": "possesses",
+     "assumes": "NEW:왕복표_뒷반쪽 (왼쪽 장갑 안)",
+     "source_text": "왼쪽 장갑 손바닥에서 왕복표의 뒷반쪽을 보았을 뿐입니다"
+    },
+    {
+     "entity": "CHAR_025",
+     "field": "possesses",
+     "assumes": "OBJ_010",
+     "source_text": "재킷 왼쪽 소매에 진흙이 일곱 군데도 넘게 튀어 있더군요"
+    },
+    {
+     "entity": "CHAR_025",
+     "field": "body_status",
+     "assumes": "두려움/공포 상태",
+     "source_text": "두려움 때문입니다, 홈즈 선생님. 공포 때문입니다"
+    },
+    {
+     "entity": "CHAR_025",
+     "field": "knows",
+     "assumes": "패린토시 부인을 통해 홈즈의 주소를 얻음",
+     "source_text": "그분에게서 선생님 주소를 받았습니다"
+    },
+    {
+     "entity": "CHAR_025",
+     "field": "knows",
+     "assumes": "not_knows: 홈즈에 대한 개인적 정보 (이름을 묻는 것에서 추정)",
+     "source_text": "“그럼 저를 아십니까?”"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "관찰로부터 사실(기차 이용, 개마차, 진흙)을 추론하는 능력",
+     "source_text": "재킷 왼쪽 소매에 진흙이 일곱 군데도 넘게 튀어 있더군요. 자국은 아주 선명한 것이었습니다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "패린토시 부인 사건 (오팔 티아라)의 존재",
+     "source_text": "패린토시라 … 오팔 티아라와 관련된 것이었지요"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "잠금장치가 있는 책상",
+     "source_text": "홈즈는 책상으로 돌아서서 자물쇠를 열고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "몸을 일으켜 옷을 걸치고 채비를 마친 상태",
+     "source_text": "나는 재빨리 옷을 걸쳐 입고 몇 분 만에 채비를 마쳐"
+    },
+    {
+     "entity": "CHAR_029",
+     "field": "alive",
+     "assumes": "8년 전 철도 사고로 사망",
+     "source_text": "어머니가 돌아가셨습니다—8년 전 크루 근처에서 일어난 철도 사고로 목숨을 잃으셨지요"
+    },
+    {
+     "entity": "CHAR_029",
+     "field": "possesses",
+     "assumes": "연 1000파운드 이상의 유산",
+     "source_text": "어머니에게는 상당한 돈이 있었는데—연 1000파운드를 밑돌지 않는 액수였습니다"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "ability",
+     "assumes": "의학 학위 및 뛰어난 의술",
+     "source_text": "의학 학위를 취득한 뒤 캘커타로 건너가, 뛰어난 의술과 강인한 성격으로 큰 병원을 일으켰습니다"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "ability",
+     "assumes": "엄청난 힘과 격렬한 성미, 자제력 부족",
+     "source_text": "그는 엄청난 힘을 지녔고, 화가 나면 도무지 자제할 줄 모르는 사람이었기 때문입니다"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "스토크 모런의 조상 대대 저택에 거주",
+     "source_text": "저희를 데리고 스토크 모런의 오래된 조상 대대의 저택으로 들어가 살게 되었습니다"
+    },
+    {
+     "entity": "CHAR_031",
+     "field": "alive",
+     "assumes": "로일럿 박사에게 구타당해 사망",
+     "source_text": "그 인도인 집사를 때려죽였고"
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "헬렌과 동일한 가족 정황 (쌍둥이, 어머니의 유산 등)",
+     "source_text": "제 언니 줄리아와 저는 쌍둥이였고"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_2",
+     "assumes": "EVENT_1_2에서 의뢰인이 응접실에 도착해 있다는 사실이 이 사건에서 '베일을 쓴 부인'으로 구체화됨",
+     "source_text": "지금 응접실에서 기다리고 있어 / 검은 옷을 입고 짙은 베일을 쓴 한 부인이"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "의뢰인의 이름이 헬렌 스토너이며, 로일럿 박사의 의붓딸임",
+     "via": "told",
+     "retained": true,
+     "source_text": "제 이름은 헬렌 스토너이고, 저는 의붓아버지와 함께 살고 있습니다"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "로일럿 가문의 역사적 몰락과 로일럿 박사의 폭력적 기질",
+     "via": "told",
+     "retained": true,
+     "source_text": "섭정시대에 이르러 어느 도박꾼에 의해 가문의 몰락이 완성되었습니다 … 그는 엄청난 힘을 지녔고, 화가 나면 도무지 자제할 줄 모르는 사람이었기 때문입니다"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "의뢰인이 기차로 왔고 개마차를 이용해 진흙길을 지남",
+     "via": "inference",
+     "retained": true,
+     "source_text": "오늘 아침 기차로 오셨군요 … 그런 식으로 진흙을 튀기는 탈것은 개마차밖에 없고"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "헬렌 스토너의 신원과 가족사",
+     "via": "told",
+     "retained": true,
+     "source_text": "제 이름은 헬렌 스토너이고, 저는 의붓아버지와 함께 살고 있습니다"
+    }
+   ],
+   "cause": "헬렌이 패린토시 부인의 권유로 홈즈에게 의뢰하러 옴",
+   "result": "홈즈가 사건 기록을 떠올리고 청취를 시작함",
+   "source_text": "제 이름은 헬렌 스토너이고, 저는 의붓아버지와 함께 살고 있습니다",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_4",
+   "scene_id": "scene_1_1",
+   "order": 1,
+   "title": "헬렌이 의붓아버지의 행실과 가정 환경을 설명함",
+   "summary": "헬렌 스토너가 홈즈에게 의붓아버지 스토너 소장의 난폭한 행실, 집시와의 관계, 인도산 동물 사육, 가택 환경을 설명한다. 줄리아와 자신이 하인 없이 집안일을 도맡아 했으며, 언니가 2년 전 세상을 떠났다고 밝힌다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "hearsay",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "스토너 소장이 지난주 동네 대장장이를 개울로 던져 버렸고 돈을 모아 망신을 막았음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "지난주에는 그가 동네 대장장이를 난간 너머 개울로 던져 버렸고, 제가 있는 대로 돈을 모아 지불하고 나서야 겨우 또 한 번의 공공연한 망신을 막을 수 있었습니다."
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "스토너 소장은 떠돌이 집시들 말고 친구가 없으며 자신의 영지에 집시 야영을 허락함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그에게는 떠돌이 집시들 말고는 친구가 전혀 없었는데, 그는 가문의 영지라 할 수 있는 가시덤불 뒤덮인 몇 에이커의 땅에 이 부랑자들이 야영하는 것을 허락했고, 그 대가로 그들의 천막에서 대접을 받고 때로는 몇 주씩 그들과 함께 떠돌아다니기도 했습니다."
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "스토너 소장 부지에 치타 한 마리와 개코원숭이 한 마리가 자유로이 돌아다님",
+     "via": "direct",
+     "retained": true,
+     "source_text": "지금도 치타 한 마리와 개코원숭이 한 마리가 그의 땅을 자유로이 돌아다니고 있어 마을 사람들은 그것들을 주인 못지않게 두려워합니다."
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "헬렌과 줄리아는 하인 없이 집안일을 도맡아 했음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "어떤 하인도 저희 곁에 남아 있으려 하지 않아서, 오랫동안 저희가 집안일을 모두 도맡아 했습니다."
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "줄리아는 2년 전 사망했으며, 당시 서른이었음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "언니는 꼭 2년 전에 세상을 떠났습니다. … 언니는 죽을 당시 겨우 서른이었는데도 머리카락이 벌써 세기 시작했고"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "스토너 소장의 행실과 가정 환경, 줄리아의 죽음",
+     "via": "told",
+     "retained": true,
+     "source_text": "저는 언니가 순전한 공포와 신경 충격으로 죽었다고 믿습니다. (전후 맥락)"
+    }
+   ],
+   "cause": "홈즈가 사건 경위를 묻고 헬렌이 배경부터 설명함",
+   "result": "스토너 소장의 난폭한 행실, 집시와의 관계, 줄리아의 죽음에 대한 도입부가 정리됨",
+   "source_text": "“지난주에는 그가 동네 대장장이를 난간 너머 개울로 던져 버렸고, … 그것이 제가 사랑하는 언니의 끔찍한 최후였습니다.” 직전 단락",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_5",
+   "scene_id": "scene_1_1",
+   "order": 2,
+   "title": "줄리아의 약혼 배경 설명",
+   "summary": "헬렌이 호노리아 웨스트페일 이모에 대해 말하고, 줄리아가 2년 전 크리스마스에 해로 근처에서 반봉급 해병대 소령과 약혼해 결혼이 예정되어 있었다고 설명한다. 그러나 결혼 2주 전 줄리아가 죽었다고 밝힌다.",
+   "location_id": "unknown",
+   "time_id": "TIME_006",
+   "timeline": "main",
+   "reality_status": "hearsay",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_4",
+     "assumes": "EVENT_1_1에서 말한 '2년 전 세상을 떠난 언니'가 줄리아이며, 같은 인물을 가리킨다",
+     "source_text": "꼭 2년 전에 세상을 떠났습니다. / 언니는 2년 전 크리스마스에 그곳에 갔다가 반봉급 해병대 소령을 만나 그와 약혼했습니다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "이모 호노리아 웨스트페일 양이 해로 근처에 살고 있었음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "저희에게는 이모 한 분—어머니의 미혼인 언니이신 호노리아 웨스트페일 양—이 계셨는데, 해로 근처에 사셨고"
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "줄리아는 2년 전 크리스마스에 해로에서 반봉급 해병대 소령과 약혼했다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "언니는 2년 전 크리스마스에 그곳에 갔다가 반봉급 해병대 소령을 만나 그와 약혼했습니다."
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "의붓아버지 스토너 소장은 약혼에 별다른 반대를 하지 않았다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "제 의붓아버지는 언니가 돌아왔을 때 그 약혼에 대해 알게 되었고 결혼에 별다른 반대를 하지 않았습니다."
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "결혼 예정일 2주도 채 남기지 않은 시점에 줄리아가 죽었다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그러나 결혼식이 예정되었던 날을 채 2주도 남기지 않고, 저에게서 하나뿐인 벗을 앗아 간 그 끔찍한 사건이 일어났습니다."
+    }
+   ],
+   "cause": "헬렌이 줄리아의 약혼 배경을 이어 설명함",
+   "result": "줄리아의 죽음 시점(결혼 2주 전)이 정해짐",
+   "source_text": "저희에게는 이모 한 분—어머니의 미혼인 언니이신 호노리아 웨스트페일 양—이 계셨는데, 해로 근처에 사셨고, … 결혼식이 예정되었던 날을 채 2주도 남기지 않고, 저에게서 하나뿐인 벗을 앗아 간 그 끔찍한 사건이 일어났습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_6",
+   "scene_id": "scene_1_2",
+   "order": 3,
+   "title": "스토너 저택의 침실 배치 설명",
+   "summary": "헬렌이 저택의 구조를 설명한다. 한쪽 동의 침실들이 일층에 있고 응접실은 중앙 블록에 있다. 첫 번째 침실은 로일럿 박사, 두 번째는 줄리아, 세 번째는 헬렌의 방이며, 방들 사이는 통하는 문이 없고 같은 복도로 이어진다. 세 방의 창문은 모두 잔디밭 쪽을 향한다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "hearsay",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "스토너 저택의 침실 배치: 일층 동쪽에 세 개의 침실(로일럿 박사-줄리아-헬렌), 방들 사이는 통문 없음, 같은 복도로 연결, 모든 창문은 잔디밭 쪽",
+     "via": "told",
+     "retained": true,
+     "source_text": "이 동의 침실들은 일 층에 있고, 응접실들은 건물 중앙 블록에 있습니다. 이 침실들 가운데 첫 번째는 로일럿 박사의 것이고, 두 번째는 제 언니의 것이었으며, 세 번째는 제 것입니다. 방들 사이에는 서로 통하는 문이 없지만, 모두 같은 복도로 통해 있습니다. … 세 방의 창문은 모두 잔디밭 쪽으로 나 있습니다."
+    }
+   ],
+   "cause": "홈즈가 세세한 부분의 정확한 진술을 요청함",
+   "result": "스토너 저택의 침실 배치와 창 방향이 명확해짐",
+   "source_text": "저택은 이미 말씀드렸듯이 매우 오래되었고, 지금은 한쪽 동만 사람이 살고 있습니다. 이 동의 침실들은 일 층에 있고, 응접실들은 건물 중앙 블록에 있습니다. 이 침실들 가운데 첫 번째는 로일럿 박사의 것이고, 두 번째는 제 언니의 것이었으며, 세 번째는 제 것입니다. 방들 사이에는 서로 통하는 문이 없지만, 모두 같은 복도로 통해 있습니다. … 세 방의 창문은 모두 잔디밭 쪽으로 나 있습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_7",
+   "scene_id": "scene_1_3",
+   "order": 4,
+   "title": "운명의 밤 — 휘파람과 결혼 이야기",
+   "summary": "헬렌이 그 밤의 정황을 진술한다. 로일럿 박사는 일찍 방에 들어갔지만 인도산 시가 냄새 때문에 잠들지 않았고, 줄리아는 헬렌의 방에 와서 결혼식 이야기를 나누었다. 열한 시에 줄리아가 일어나 자기 방으로 돌아가며 멈춰 서서 물었다 — 새벽 세 시쯤마다 들리는 나지막하고 또렷한 휘파람 소리를 들어 봤는지. 헬렌은 못 들었다고 답했고, 줄리아는 미소 짓고 문을 닫고 자물쇠를 잠갔다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "memory",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [
+    "CHAR_005"
+   ],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_004",
+     "field": "location",
+     "from": "unknown",
+     "to": "unknown",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "열한 시가 되자 언니는 일어나 방을 나서려다가"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "assumes": "인도산 시가",
+     "source_text": "로일럿 박사는 일찍 자기 방으로 들어갔지만, 아직 잠자리에 들지 않았다는 것을 저희는 알고 있었습니다. 언니가 그가 즐겨 피우는 독한 인도산 시가 냄새 때문에 괴로워했으니까요."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "다가오는 결혼식의 존재(반봉급 해병대 소령과의 약혼)",
+     "source_text": "다가오는 결혼식에 대해 이야기를 나누었습니다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "요 며칠 밤 새벽 세 시쯤 나지막하고 또렷한 휘파람 소리가 들렸음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "요 며칠 밤 계속, 언제나 새벽 세 시쯤에, 나지막하고 또렷한 휘파람 소리를 들었거든."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "not_knows: 새벽 세 시의 휘파람 소리",
+     "source_text": "‘헬렌, 말해 줘,’ 언니가 말했습니다. ‘한밤중에 누군가 휘파람 부는 소리를 들어 본 적 있어?’ / ‘없어,’ 제가 말했습니다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_8",
+     "assumes": "줄리아의 마지막 방 문은 자물쇠로 잠겼고, 이후 사건 발생 시점까지 닫혀 있었다",
+     "source_text": "잠시 후 저는 언니가 자물쇠를 잠그는 소리를 들었습니다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_004",
+     "info": "헬렌은 새벽 세 시의 휘파람 소리를 들어 본 적이 없음",
+     "via": "told",
+     "retained": true,
+     "source_text": "‘헬렌, 말해 줘,’ 언니가 말했습니다. ‘한밤중에 누군가 휘파람 부는 소리를 들어 본 적 있어?’ / ‘없어,’ 제가 말했습니다."
+    }
+   ],
+   "cause": "헬렌이 그 밤의 사건을 순서대로 진술하기 시작함",
+   "result": "매일 새벽 3시 휘파람, 자물쇠 잠금, 잔디밭 방향이라는 단서가 홈즈에게 전달됨",
+   "source_text": "그 운명의 밤, 로일럿 박사는 일찍 자기 방으로 들어갔지만, 아직 잠자리에 들지 않았다는 것을 저희는 알고 있었습니다. … ‘뭐, 어쨌든 별 대수로운 일은 아니겠지.’ 언니는 저를 향해 미소 짓고는 제 방문을 닫았고, 잠시 후 저는 언니가 자물쇠를 잠그는 소리를 들었습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_8",
+   "scene_id": "scene_1_3",
+   "order": 5,
+   "title": "헬렌이 잠 못 이루는 밤을 보내다 비명을 들음",
+   "summary": "헬렌은 그날 밤 불행이 닥쳐올 것 같은 막연한 느낌에 잠을 이루지 못했다. 폭풍이 몰아치던 한밤중, 공포에 질린 여자의 격렬한 비명이 터져 나왔고 헬렌은 언니의 목소리임을 알아챘다. 침대에서 벌떡 일어나 숄을 두르고 복도로 뛰쳐나갔으며, 문을 여는 순간 나지막한 휘파람 소리가 들리는 듯했고 몇 순간 뒤에는 육중한 쇳덩이가 떨어진 듯한 쨍그랑 소리가 들렸다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "memory",
+   "participant_character_ids": [
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "body_status",
+     "assumes": "잠옷 위에 숄을 두른 차림(즉시 복도로 뛰쳐나갈 수 있는 상태)",
+     "source_text": "저는 침대에서 벌떡 일어나 숄을 두르고 복도로 뛰쳐나갔습니다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_7",
+     "assumes": "줄리아의 방은 자물쇠로 잠긴 채 닫혀 있었고, 헬렌이 뛰쳐나간 시점에서도 그 상태가 유지되었다",
+     "source_text": "잠시 후 저는 언니가 자물쇠를 잠그는 소리를 들었습니다. / 문을 여는 순간 언니가 말했던 것 같은 나지막한 휘파람 소리가 들리는 듯했고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "그날 밤 폭풍 한가운데서 공포에 질린 여자의 비명(줄리아의 목소리)을 들음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그러다 갑자기, 폭풍의 온갖 소란 한가운데서, 공포에 질린 여자의 격렬한 비명이 터져 나왔습니다. 저는 그것이 언니의 목소리임을 알았습니다."
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "복도 문을 여는 순간 나지막한 휘파람 소리를 들은 듯함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "문을 여는 순간 언니가 말했던 것 같은 나지막한 휘파람 소리가 들리는 듯했고"
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "휘파람 직후 육중한 쇳덩이가 떨어진 듯한 쨍그랑 소리를 들음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "몇 순간 뒤에는 마치 육중한 쇳덩이가 떨어진 듯한 쨍그랑 소리가 들렸습니다."
+    }
+   ],
+   "cause": "사나운 밤, 폭풍과 비, 헬렌의 막연한 불안, 줄리아의 비명",
+   "result": "헬렌이 복도로 뛰쳐나가 줄리아의 방문 앞에서 줄리아를 발견함",
+   "source_text": "그날 밤 저는 잠을 이룰 수 없었습니다. … 저는 그것이 언니의 목소리임을 알았습니다. 저는 침대에서 벌떡 일어나 숄을 두르고 복도로 뛰쳐나갔습니다. 문을 여는 순간 언니가 말했던 것 같은 나지막한 휘파람 소리가 들리는 듯했고, 몇 순간 뒤에는 마치 육중한 쇳덩이가 떨어진 듯한 쨍그랑 소리가 들렸습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_9",
+   "scene_id": "scene_1_3",
+   "order": 6,
+   "title": "줄리아의 죽음",
+   "summary": "헬렌이 복도에서 줄리아의 방문이 잠기지 않은 채 열리고 있는 것을 보았다. 줄리아는 문간에 나타나 얼굴이 창백하고 두 손으로 허공을 더듬으며 술 취한 사람처럼 휘청거렸다. 헬렌이 안았지만 무릎이 꺾이며 바닥에 쓰러졌고, 줄리아는 극심한 고통처럼 몸부림치며 경련했다. 줄리아는 '오, 세상에! 헬렌! 그건 끈이었어! 얼룩무늬 끈!'이라고 외치고 박사의 방 쪽을 가리켰으나 다시 경련이 덮쳐 말을 멈췄다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "memory",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [
+    "CHAR_028"
+   ],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_004",
+     "field": "alive",
+     "from": "true",
+     "to": "false",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그러나 모든 노력은 헛되어, 언니는 서서히 가라앉듯 의식을 되찾지 못한 채 숨을 거두었습니다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "body_status",
+     "from": "건강(잠옷 차림, 성냥·성냥갑 쥠)",
+     "to": "사망(경련, 의식 회복 없음)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "언니는 극심한 고통에 시달리는 사람처럼 몸부림쳤고, 팔다리가 무섭게 경련했습니다. … 숨을 거두었습니다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "assumes": "타다 남은 성냥개비(오른손)와 성냥갑(왼손)",
+     "source_text": "오른손에는 타다 남은 성냥개비가, 왼손에는 성냥갑이 쥐어져 있었습니다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "자신을 죽인 것이 '얼룩무늬 끈'이라는 사실(혹은 인상)",
+     "source_text": "‘오, 세상에! 헬렌! 그건 끈이었어! 얼룩무늬 끈!’"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_7",
+     "assumes": "줄리아가 잠근 자물쇠는 헬렌이 도착하기 전 어딘가에서 풀려 있었거나 잠기지 않은 상태가 되었다 — 줄리아 자신의 시점에서 헬렌이 뛰어간 시점까지 문은 잠기지 않은 채 열려 있었다",
+     "source_text": "잠시 후 저는 언니가 자물쇠를 잠그는 소리를 들었습니다. / 복도를 달려가는 동안, 언니의 방문이 잠기지 않은 채 경첩 위에서 천천히 돌아가며 열리고 있었습니다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "줄리아의 마지막 외침: '그건 끈이었어! 얼룩무늬 끈!' 그리고 박사의 방 쪽을 가리킴",
+     "via": "direct",
+     "retained": true,
+     "source_text": "‘오, 세상에! 헬렌! 그건 끈이었어! 얼룩무늬 끈!’ 언니는 그 밖에도 무언가 말하려 했고, 손가락으로 박사의 방 쪽 허공을 찌르듯 가리켰지만"
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "줄리아의 방 문은 잠기지 않은 채 열리고 있었다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "복도를 달려가는 동안, 언니의 방문이 잠기지 않은 채 경첩 위에서 천천히 돌아가며 열리고 있었습니다."
+    }
+   ],
+   "cause": "EVENT_1_5의 비명·휘파람·쨍그랑 소리",
+   "result": "줄리아가 사망하고 마지막 외침이 헬렌에게 남음",
+   "source_text": "복도를 달려가는 동안, 언니의 방문이 잠기지 않은 채 경첩 위에서 천천히 돌아가며 열리고 있었습니다. 저는 그 문에서 무엇이 나올지 모른 채 공포에 사로잡혀 그것을 바라보았습니다. … 숨을 거두었습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_10",
+   "scene_id": "scene_1_3",
+   "order": 7,
+   "title": "스토너 소장이 방에서 나오다",
+   "summary": "헬렌이 큰 소리로 의붓아버지를 부르며 뛰쳐나가 잠옷 가운 차림으로 자기 방에서 서둘러 나오던 스토너 소장과 마주쳤다. 소장은 줄리아 곁에 이르렀으나 줄리아는 이미 의식을 잃은 상태였고, 브랜디를 흘려 넣고 마을에서 의사를 불러왔지만 줄리아는 숨을 거두었다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "memory",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_028"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_028",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_028",
+     "field": "body_status",
+     "assumes": "잠옷 가운 차림(즉시 복도로 나올 수 있는 상태)",
+     "source_text": "잠옷 가운 차림으로 자기 방에서 서둘러 나오던 그와 마주쳤습니다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_9",
+     "assumes": "스토너 소장은 줄리아의 마지막 외침(헬렌, 끈, 박사의 방 가리킴)을 듣거나 보지 못한 채 합류했다 — 줄리아는 그 시점에 이미 의식을 잃었다",
+     "source_text": "그가 언니 곁에 이르렀을 때 언니는 이미 의식을 잃은 상태였고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "의붓아버지는 헬렌의 부름에 잠옷 가운 차림으로 자기 방에서 나왔다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "저는 큰 소리로 의붓아버지를 부르며 뛰쳐나갔고, 잠옷 가운 차림으로 자기 방에서 서둘러 나오던 그와 마주쳤습니다."
+    }
+   ],
+   "cause": "헬렌이 의붓아버지를 부름",
+   "result": "소장이 합류했으나 줄리아는 이미 의식 없음, 브랜디·의사 시도 후 줄리아 사망",
+   "source_text": "저는 큰 소리로 의붓아버지를 부르며 뛰쳐나갔고, 잠옷 가운 차림으로 자기 방에서 서둘러 나오던 그와 마주쳤습니다. 그가 언니 곁에 이르렀을 때 언니는 이미 의식을 잃은 상태였고, 그가 브랜디를 목구멍에 흘려 넣고 마을에서 의사를 불러왔지만, 모든 노력은 헛되어, 언니는 서서히 가라앉듯 의식을 되찾지 못한 채 숨을 거두었습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_11",
+   "scene_id": "scene_1_4",
+   "order": 8,
+   "title": "검시관 조사 결과 — 사인 불명",
+   "summary": "헬렌이 검시관 조사 결과를 진술한다. 문은 안쪽에서 잠겨 있었고, 창문들은 쇠창살이 달린 구식 덧문으로 막혀 밤마다 잠가 두었다. 벽, 마루, 굴뚝(네 개의 꺾쇠로 막힘) 모두 견고했다. 줄리아의 몸에는 폭력의 흔적이 없었고, 독살 가능성도 부정되었다. 헬렌은 줄리아가 순전한 공포와 신경 충격으로 죽었다고 믿는다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "hearsay",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_9",
+     "assumes": "사망 시점의 줄리아는 완전히 혼자였으며 외부 침입 단서가 없음",
+     "source_text": "따라서 언니가 최후를 맞이했을 때 완전히 혼자였던 것은 확실합니다."
+    },
+    {
+     "with_event_id": "EVENT_1_7",
+     "assumes": "줄리아의 자물쇠 잠금 습관은 매일 밤 반복되었고, 사건 당일도 적용되었음",
+     "source_text": "항상 그랬습니다. / 문은 안쪽에서 잠겨 있었고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "검시관 조사: 문은 안쪽에서 잠겨 있었음, 창문은 쇠창살+구식 덧문으로 막혀 있었고 밤마다 잠금, 벽·마루·굴뚝(꺾쇠 네 개) 모두 견고, 몸에 폭력 흔적 없음, 독살 가능성 없음",
+     "via": "told",
+     "retained": true,
+     "source_text": "문은 안쪽에서 잠겨 있었고, 창문들은 폭이 넓은 쇠창살이 달린 구식 덧문으로 막혀 있었으며, 그 덧문은 밤마다 잠가 두는 것이었습니다. 벽은 꼼꼼히 두드려 조사되었고 사방이 모두 견고한 것으로 밝혀졌으며, 마루도 철저히 조사되었지만 결과는 마찬가지였습니다. 굴뚝은 넓지만, 네 개의 커다란 꺾쇠로 막혀 있습니다. … 게다가 언니의 몸에는 어떤 폭력의 흔적도 없었습니다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "의사들은 독살 가능성을 조사했으나 아무것도 발견하지 못함",
+     "via": "told",
+     "retained": true,
+     "source_text": "의사들이 그것을 조사했지만 아무것도 나오지 않았습니다."
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "헬렌은 줄리아가 순전한 공포와 신경 충격으로 죽었다고 믿음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "저는 언니가 순전한 공포와 신경 충격으로 죽었다고 믿습니다. 하지만 무엇이 언니를 그토록 두렵게 했는지는 짐작조차 할 수 없습니다."
+    }
+   ],
+   "cause": "홈즈가 검시관의 결론을 물음",
+   "result": "사인은 불명으로 종결, 공포·신경 충격 가설이 제시됨",
+   "source_text": "그는 매우 신중하게 사건을 조사했습니다. … 게다가 언니의 몸에는 어떤 폭력의 흔적도 없었습니다. / 의사가 그것을 조사했지만 아무것도 나오지 않았습니다. / 저는 언니가 순전한 공포와 신경 충격으로 죽었다고 믿습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_12",
+   "scene_id": "scene_1_4",
+   "order": 9,
+   "title": "헬렌의 '얼룩무늬 끈' 가설",
+   "summary": "홈즈가 '얼룩무늬 끈'에서 짐작한 바를 묻자, 헬렌은 그것이 헛소리일 수도 있고 농원의 집시 무리를 가리킬 수도 있다고 답했다. 특히 그들 중 많은 이가 머리에 두르는 얼룩무늬 손수건이 그 이상한 형용사를 떠올리게 한다고 말한다. 홈즈는 만족스럽지 않다는 듯 고개를 저으며 사건이 심오하다고 평가하고 계속 이야기를 요청한다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "hearsay",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "not_knows: '얼룩무늬 끈'이 무엇을 가리키는지 확정적 해석이 없음",
+     "source_text": "어떤 때는 그것이 그저 헛소리에 불과했다고 생각했고, 어떤 때는 어떤 무리를 가리켰던 것일지도 모른다고"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_9",
+     "assumes": "'얼룩무늬 끈'이라는 외침은 줄리아의 죽음 직전 발화이며, 그 의미를 헬렌은 확신하지 못한다",
+     "source_text": "‘오, 세상에! 헬렌! 그건 끈이었어! 얼룩무늬 끈!’ / 어떤 때는 그것이 그저 헛소리에 불과했다고 생각했고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "헬렌은 '얼룩무늬 끈' 발화를 헛소리로도, 농원 집시(얼룩무늬 손수건)와의 연관으로도 해석함",
+     "via": "told",
+     "retained": true,
+     "source_text": "어떤 때는 그것이 그저 헛소리에 불과했다고 생각했고, 어떤 때는 어떤 무리를 가리켰던 것일지도 모른다고, 아마도 바로 그 농원의 집시들이었을지도 모른다고 생각했습니다. 그들 중 많은 이가 머리에 두르는 얼룩무늬 손수건이 언니가 사용한 그 이상한 형용사를 떠올리게 한 것은 아닌지 저는 알 수 없습니다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "당시 농원에는 거의 항상 집시 몇 명이 있었음",
+     "via": "told",
+     "retained": true,
+     "source_text": "‘아, 그러면 끈—얼룩무늬 끈이라는 그 말에서 무엇을 짐작하셨습니까?’ / ‘네, 그곳에는 거의 항상 몇 명이 있습니다.’"
+    }
+   ],
+   "cause": "홈즈가 '얼룩무늬 끈'에서 짐작한 바를 물음",
+   "result": "헬렌의 불확실한 가설이 제시되고, 홈즈는 사건이 심오하다고 평가함",
+   "source_text": "‘아, 그러면 끈—얼룩무늬 끈이라는 그 말에서 무엇을 짐작하셨습니까?’ / ‘어떤 때는 그것이 그저 헛소리에 불과했다고 생각했고, … 저는 알 수 없습니다.’ / 홈즈는 도무지 만족스럽지 않다는 듯 고개를 저었다. / “매우 심오한 사건이군요,” 그가 말했다. “계속해서 이야기해 주시기 바랍니다.”",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_13",
+   "scene_id": "scene_1_1",
+   "order": 1,
+   "title": "헬렌 스토너의 상담사연",
+   "summary": "헬렌 스토너가 2년 전 언니의 죽음, 휘파람 소리, 벽 뚫림으로 인한 방 이사를 이야기하고 조언을 구함.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_008",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "헬렌 스토너의 의붓아버지 반대가 거의 없다는 점, 그리고 휘파람 소리의 존재",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "이 혼사에 별다른 반대를 하지 않았고… 휘파람 소리가 밤의 정적 속에서 갑자기 들려왔을 때"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "언니의 죽음에 대한 자세한 사연(퓨파람·쇳소리·끈·마지막 말 등)",
+     "source_text": "언니의 끔찍한 최후를 곱씹고 있던 저에게, 언니의 죽음을 알렸던 그 나지막한 휘파람 소리가… 들려왔을 때"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "듣고 즉시 핵심을 추출할 수 있는 관찰력(검은 레이스 아래의 손목 자국을 간파)",
+     "source_text": "대답 대신 홈즈는 손님의 무릎 위에 놓인 손을 두르고 있던 검은 레이스 주름 장식을 젖혔다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "body_status",
+     "assumes": "오른손목에 다섯 개의 작고 검푸른 타박상 자국이 있음",
+     "source_text": "하얀 손목 위에 손가락 네 개와 엄지 하나의 자국인 다섯 개의 작고 검푸른 반점이 찍혀 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "헬렌 스토너가 의붓아버지 로일럿 박사에게서 폭력을 당함(다섯 개의 손가락 자국)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "하얀 손목 위에 손가락 네 개와 엄지 하나의 자국인 다섯 개의 작고 검푸른 반점이 찍혀 있었다."
+    }
+   ],
+   "cause": "헬렌이 조언을 구하기 위해 베이커가를 방문함.",
+   "result": "홈즈가 사건의 심각성을 인정하고, 두 사람이 함께 스토크 모런을 방문하기로 합의함.",
+   "source_text": "그로부터 2년이 지났고… 선생님을 뵙고 조언을 구하겠다는 한 가지 목적으로 왔습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_14",
+   "scene_id": "scene_1_1",
+   "order": 2,
+   "title": "스토크 모런 방문 약속",
+   "summary": "헬렌이 의붓아버지가 시내에 나가는 사이 방문해도 된다고 허락하고, 열두 시 기차로 돌아가겠다고 약속함.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_008",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "from": "LOC_002",
+     "to": "unknown",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "그는 오늘 매우 중요한 일로 시내에 나간다고 말했습니다. 아마 하루 종일 집을 비울 것이고"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "의붓아버지 로일럿 박사의 오늘 일과(시외 출장)",
+     "source_text": "마침 그는 오늘 매우 중요한 일로 시내에 나간다고 말했습니다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "not_knows: 홈즈·왓슨이 스토크 모런에 온다는 계획",
+     "source_text": "헬렌이 시내에 있는 동안 두 분이 그곳에 가시는 것에 대해 의붓아버지는 알지 못함"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_13",
+     "assumes": "헬렌이 의붓아버지에게 폭력을 당하고 있다는 사실은 이 사건의 맥락에서 계속 유효하다",
+     "source_text": "그는 거친 사람입니다. 게다가 자신의 힘을 잘 모르는 것 같습니다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "로일럿 박사가 오늘 하루 종일 시내에 있어 스토크 모런이 비어 있음",
+     "via": "told",
+     "retained": true,
+     "source_text": "마침 그는 오늘 매우 중요한 일로 시내에 나간다고 말했습니다. 아마 하루 종일 집을 비울 것이고"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "헬렌이 열두 시 기차로 레더헤드에 돌아가 오후에 그들을 만날 것",
+     "via": "told",
+     "retained": true,
+     "source_text": "열두 시 기차로 돌아가서 두 분이 오실 때에 맞춰 그곳에 있겠습니다."
+    }
+   ],
+   "cause": "홈즈가 사건의 세부 사항을 더 알고 싶어하고, 시간이 촉박함.",
+   "result": "세 사람이 오후에 스토크 모런에서 다시 만나기로 합의함.",
+   "source_text": "오늘 저희가 스토크 모런에 간다면, 의붓아버지 모르게 그 방들을 살펴볼 수 있겠습니까? … 열두 시 기차로 돌아가서…",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_15",
+   "scene_id": "scene_1_1",
+   "order": 3,
+   "title": "헬렌의 퇴장",
+   "summary": "헬렌이 짙은 검은 베일을 쓰고 방을 미끄러지듯 나감.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_008",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "LOC_001",
+     "to": "unknown",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그녀는 짙은 검은 베일을 얼굴 위로 내리고 방에서 미끄러지듯 나갔다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "body_status",
+     "from": "얼굴에 짙은 검은 베일을 쓰고 있음",
+     "to": "얼굴이 베일에 가려진 채 퇴장함",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "얼굴 노출",
+     "certainty": "explicit",
+     "source_text": "그녀는 짙은 검은 베일을 얼굴 위로 내리고 방에서 미끄러지듯 나갔다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "짙은 검은 베일",
+     "source_text": "그녀는 짙은 검은 베일을 얼굴 위로 내리고"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_14",
+     "assumes": "헬렌이 약속한 시한(오후)까지 시내에서 돌아올 수 있는 교통편을 확보하고 있음",
+     "source_text": "열두 시 기차로 돌아가서…"
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "헬렌이 근심을 털어놓고 마음이 가벼워졌기 때문.",
+   "result": "홈즈와 왓슨이 사건을 다시 의논하게 됨.",
+   "source_text": "그녀는 짙은 검은 베일을 얼굴 위로 내리고 방에서 미끄러지듯 나갔다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_16",
+   "scene_id": "scene_1_1",
+   "order": 4,
+   "title": "홈즈의 휘파람·집시 가설",
+   "summary": "홈즈가 휘파람, 집시, 박사의 동기를 조합한 가설을 제시하고, 반론 확인을 위해 직접 가봐야 한다고 결론.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_008",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "스토크 모런 부근에 집시 무리가 존재함",
+     "source_text": "이 늙은 박사와 친밀한 관계에 있는 집시 무리의 존재"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "헬렌 언니가 죽어가면서 '끈'을 언급함",
+     "source_text": "죽어 가면서 언급한 끈"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_13",
+     "assumes": "헬렌이 들은 '쇳소리'는 덧문을 고정하는 쇠막대가 떨어진 소리일 수 있다는 해석이 가능함",
+     "source_text": "헬렌 스토너 양이 들었다는 쇳소리—그것은 덧문을 고정하는 쇠막대 하나가 제자리로 떨어지며 났을 수도 있는 소리인데"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈의 가설 — 휘파람·집시·박사의 동기·끈·쇳소리의 조합",
+     "via": "told",
+     "retained": true,
+     "source_text": "밤중의 휘파람 소리라는 발상과, 이 늙은 박사와 친밀한 관계에 있는 집시 무리의 존재…"
+    }
+   ],
+   "cause": "왓슨이 사건의 어두운 점에 대해 자신의 견해를 밝힘.",
+   "result": "홈즈가 가설의 반론을 확인하기 위해 스토크 모런을 직접 방문하기로 결정함.",
+   "source_text": "바로 그 이유 때문에 우리가 오늘 스토크 모런으로 가는 걸세.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_17",
+   "scene_id": "scene_1_2",
+   "order": 5,
+   "title": "로일럿 박사의 방문",
+   "summary": "문짝을 가득 채우는 거대한 남자가 사냥용 채찍을 들고 문을 박차고 들어와 의붓딸이 무슨 말을 했는지 으르렁댐.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_008",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_005",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [
+    "OBJ_012"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "LOC_002",
+     "certainty": "explicit",
+     "source_text": "갑자기 우리 방문이 벌컥 열리며 거대한 남자가 문틀을 가득 채우고 서 있는 것을 본"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "헬렌이 베이커가를 방문해 자신의 일에 대해 이 야비한 남자에게 털어놓았을 것",
+     "source_text": "내 의붓딸이 여기 왔었지. 내가 뒤를 밟았소. 그 아이가 당신들에게 무슨 말을 했소?"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "ability",
+     "assumes": "강철 부지깽이를 맨손으로 구부릴 정도의 거대한 신체 능력",
+     "source_text": "그는 재빨리 앞으로 나서서 부지깽이를 집어 들더니 커다란 갈색 손으로 그것을 구부려 휘어 놓았다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "홈즈가 '스코틀랜드 야드의 하수인'이라는 평판을 가지고 있음",
+     "source_text": "당신은 참견꾼 홈즈로군. … 스코틀랜드 야드의 하수인 홈즈!"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_14",
+     "assumes": "헬렌은 의붓아버지에게 들키지 않고 빠져나왔을 것이라 가정했지만, 실제로는 박사가 뒤를 밟아 여기까지 따라옴 — 가정 위반",
+     "source_text": "내 의붓딸이 여기 왔었지. 내가 뒤를 밟았소."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "헬렌이 박사에게 뒤를 밟혀 방문 사실이 드러남",
+     "via": "direct",
+     "retained": true,
+     "source_text": "내 의붓딸이 여기 왔었지. 내가 뒤를 밟았소."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "헬렌이 박사에게 뒤를 밟혀 방문 사실이 드러남",
+     "via": "direct",
+     "retained": true,
+     "source_text": "내 의붓딸이 여기 왔었지. 내가 뒤를 밟았소."
+    }
+   ],
+   "cause": "헬렌이 시내로 나가는 사이 박사가 뒤를 밟았기 때문.",
+   "result": "박사가 의붓딸의 발설을 알게 되고, 홈즈·왓슨에게 간섭하지 말라고 위협함.",
+   "source_text": "내 의붓딸이 여기 왔었지. 내가 뒤를 밟았소.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_18",
+   "scene_id": "scene_1_2",
+   "order": 6,
+   "title": "박사의 부지깽이 시위",
+   "summary": "로일럿 박사가 강철 부지깽이를 맨손으로 구부려 위협하고, 휘어진 채로 벽난로에 내던지고 나감.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_008",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_005",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [
+    "OBJ_001"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_001",
+     "field": "body_status",
+     "from": "강철 부지깽이 (온전함)",
+     "to": "강철 부지깽이 (구부려진 상태)",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "강철 부지깽이 (다시 곧게 펴진 상태)",
+     "certainty": "explicit",
+     "source_text": "그는 재빨리 앞으로 나서서 부지깽이를 집어 들더니 커다란 갈색 손으로 그것을 구부려 휘어 놓았다."
+    },
+    {
+     "entity": "OBJ_001",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "휘어진 부지깽이를 벽난로에 내던지고"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "from": "LOC_001",
+     "to": "unknown",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "LOC_002",
+     "certainty": "explicit",
+     "source_text": "성큼성큼 방을 나갔다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "강철을 펴는 힘도 있을 정도의 신체 능력(자기 평가)",
+     "source_text": "나는 그리 덩치가 크지는 않지만, 저 사람이 좀 더 머물렀다면 내 손아귀도 자기 것 못지않다는 것을 보여 줄 수 있었을 텐데."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_17",
+     "assumes": "박사의 위협은 의붓딸의 의붓아버지에 대한 폭력 가설(손목 자국)을 뒷받침함",
+     "source_text": "내 손아귀에 걸리지 않도록 조심하시오"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "로일럿 박사가 강철 부지깽이를 맨손으로 구부릴 수 있는 인물임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "커다란 갈색 손으로 그것을 구부려 휘어 놓았다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "로일럿 박사가 강철 부지깽이를 맨손으로 구부릴 수 있는 인물임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "커다란 갈색 손으로 그것을 구부려 휘어 놓았다."
+    }
+   ],
+   "cause": "박사가 홈즈의 회피적 답변에 격노함.",
+   "result": "박사가 위협을 남기고 퇴장함.",
+   "source_text": "내 손아귀에 걸리지 않도록 조심하시오.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_19",
+   "scene_id": "scene_1_3",
+   "order": 7,
+   "title": "홈즈의 부지깽이 복원",
+   "summary": "박사 퇴장 후 홈즈가 강철 부지깽이를 단번에 다시 곧게 폄.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_008",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_001"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_001",
+     "field": "body_status",
+     "from": "강철 부지깽이 (구부려진 상태)",
+     "to": "강철 부지깽이 (다시 곧게 펴진 상태)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "강철 부지깽이를 집어 들고는 단번에 힘을 주어 다시 곧게 펴 놓았다."
+    },
+    {
+     "entity": "OBJ_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "CHAR_001",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "강철 부지깽이를 집어 들고는"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "강철을 맨손으로 곧게 펴는 힘",
+     "source_text": "강철 부지깽이를 집어 들고는 단번에 힘을 주어 다시 곧게 펴 놓았다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_18",
+     "assumes": "박사가 부지깽이를 구부려 놓은 직후의 상태에서 즉시 복원된 것 — 시간상 연속",
+     "source_text": "휘어진 부지깽이를 벽난로에 내던지고는 성큼성큼 방을 나갔다. … 강철 부지깽이를 집어 들고는 단번에 힘을 주어 다시 곧게 펴 놓았다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈도 강철 부지깽이를 맨손으로 펴는 힘이 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "강철 부지깽이를 집어 들고는 단번에 힘을 주어 다시 곧게 펴 놓았다."
+    }
+   ],
+   "cause": "박사가 부지깽이를 휘어버리고 떠난 후.",
+   "result": "홈즈가 박사에 필적하는 힘을 보여줌.",
+   "source_text": "강철 부지깽이를 집어 들고는 단번에 힘을 주어 다시 곧게 펴 놓았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_20",
+   "scene_id": "scene_1_3",
+   "order": 8,
+   "title": "유언장 조사를 위한 외출",
+   "summary": "홈즈가 아침을 먹은 뒤 닥터스 코먼스로 나가 고인된 아내의 유언장 등 자료를 조사하겠다고 선언.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_008",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_001",
+     "to": "unknown",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "LOC_001",
+     "certainty": "explicit",
+     "source_text": "닥터스 코먼스로 걸어가서… 자네는 아침 식사를 시키고"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "닥터스 코먼스에 유언장 등 사건 관련 자료가 있음",
+     "source_text": "닥터스 코먼스로 걸어가서 이 사건에 도움이 될 만한 자료를 좀 얻어 볼까 하네."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "박사의 위협이 사건의 긴장감을 더함.",
+   "result": "스토크 모런 방문 전, 동기를 확인할 자료 수집에 나섬.",
+   "source_text": "닥터스 코먼스로 걸어가서 이 사건에 도움이 될 만한 자료를 좀 얻어 볼까 하네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_21",
+   "scene_id": "scene_1_4",
+   "order": 9,
+   "title": "유언장 분석과 동기 발견",
+   "summary": "한 시가 되기 직전 돌아온 홈즈가 유언장을 분석해 박사가 딸들의 결혼을 막을 강력한 동기를 가짐을 입증함.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_008",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "로일럿 박사가 딸들의 결혼을 막을 강한 금전적 동기를 가짐(아내 사망 시 약 1,100파운드, 지금 750파운드, 딸 결혼 시 250파운드 청구)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "아내가 죽었을 당시 1,100파운드에 조금 못 미쳤던 총수입이… 각 딸은 결혼할 경우 250파운드의 수입을 청구할 수 있고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "로일럿 박사가 딸들의 결혼을 막을 강한 금전적 동기를 가짐",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "두 딸이 모두 결혼했다면 이 미인은 그야말로 쥐꼬리만 한 수입만 남았을 것이고"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "메모와 숫자가 적힌 청색 종이 한 장(유언장 관련 정보 요약)",
+     "source_text": "그의 손에는 메모와 숫자가 잔뜩 적힌 청색 종이 한 장이 들려 있었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_20",
+     "assumes": "이번 외출에서 얻은 정보는 사건의 동기를 뒷받침하는 결론으로 귀결됨",
+     "source_text": "오늘 아침의 수고가 헛되지 않았던 것이, 그가 그런 종류의 일을 막을 아주 강력한 동기를 가지고 있다는 것을 입증했으니 말이야."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "스토너 부인 사망 당시 총수입 약 1,100파운드, 현재 750파운드 미만, 딸 결혼 시 250파운드 청구 조건",
+     "via": "document",
+     "retained": true,
+     "source_text": "정확한 의미를 파악하기 위해서는 거기 관련된 투자금의 현재 시세를 계산해 내야 했지."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "로일럿 박사가 딸들의 결혼을 막을 강한 금전적 동기를 가짐",
+     "via": "told",
+     "retained": true,
+     "source_text": "오늘 아침의 수고가 헛되지 않았던 것이, 그가 그런 종류의 일을 막을 아주 강력한 동기를 가지고 있다는 것을 입증했으니 말이야."
+    }
+   ],
+   "cause": "닥터스 코먼스에서 유언장 등 자료를 조사한 결과.",
+   "result": "박사의 강력한 동기가 확인되어 수사가 한 단계 진전됨.",
+   "source_text": "오늘 아침의 수고가 헛되지 않았던 것이, 그가 그런 종류의 일을 막을 아주 강력한 동기를 가지고 있다는 것을 입증했으니 말이야.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_22",
+   "scene_id": "scene_1_5",
+   "order": 10,
+   "title": "스토크 모런으로 출발",
+   "summary": "워털루에서 레더헤드행 기차를 타고 역에서 이륜마차를 빌려 4마일 정도의 오솔길을 달림.",
+   "location_id": "LOC_013",
+   "time_id": "TIME_009",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_001",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "마차를 불러 워털루로 가세. … 운 좋게 레더헤드행 기차를 잡아탔고, 역 여관에서 이륜마차를 빌려"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_001",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "워털루에서 우리는 운 좋게 레더헤드행 기차를 잡아탔고"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "권총(일리 2호)",
+     "source_text": "자네 권총을 주머니에 챙겨 넣어 주면 정말 고맙겠네."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "스토크 모런의 정확한 위치와 외양(공원에 둘러싸인 오래된 저택)",
+     "source_text": "스토크 모런인가?"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_14",
+     "assumes": "헬렌이 약속대로 스토크 모런으로 먼저 돌아가 있다는 계획이 계속 유효함",
+     "source_text": "열두 시 기차로 돌아가서 두 분이 오실 때에 맞춰 그곳에 있겠습니다."
+    },
+    {
+     "with_event_id": "EVENT_1_21",
+     "assumes": "유언장 분석 결과는 박사의 동기 가설을 강화하며, 이는 곧 스토크 모런 직접 방문의 필요성을 뒷받침함",
+     "source_text": "바로 그 이유 때문에 우리가 오늘 스토크 모런으로 가는 걸세."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "박사가 이미 그들의 관심을 눈치챘고, 동기가 확인되었기 때문.",
+   "result": "둘이 함께 스토크 모런에 도착해 조사를 시작함.",
+   "source_text": "워털루에서 우리는 운 좋게 레더헤드행 기차를 잡아탔고, 역 여관에서 이륜마차를 빌려 아름다운 서리의 오솔길을 네댓 마일 달렸다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_23",
+   "scene_id": "scene_1_1",
+   "order": 1,
+   "title": "마차가 로일럿 저택 부근에 도착",
+   "summary": "마부가 저택 위치를 안내하고, 마을을 지나 층계문 너머 오솔길로 가야 함을 알려준다. 홈즈는 오솔길의 아가씨가 헬렌 스토너라고 짐작한다. 둘은 마차에서 내려 삯을 치르고, 마차는 레더헤드로 돌아간다.",
+   "location_id": "NEW:로일럿_저택_부근_마차길",
+   "time_id": "NEW:그날_오전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_003",
+    "NEW:마부"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "NEW:마부",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "저택이 층계문 너머 들판 건너편에 있다는 것",
+     "source_text": "저기서 무슨 공사가 진행 중이군"
+    },
+    {
+     "entity": "NEW:마부",
+     "field": "knows",
+     "assumes": "저택·마을·오솔길의 지리",
+     "source_text": "저기가 마을입니다요"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "먼 거리의 인물을 스토너 양으로 식별할 수 있을 정도로 시력이 좋음",
+     "source_text": "스토너 양이겠지, 홈즈가 눈을 가리며 말했다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "스토너 양이 이미 오솔길을 걷고 있다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "저기, 저 아가씨가 걷고 있는 곳이 바로 그 길입니다요"
+    }
+   ],
+   "cause": "마차가 저택 인근에 도착함",
+   "result": "홈즈와 왓슨이 마차에서 내려 오솔길로 향함",
+   "source_text": "저기서 무슨 공사가 진행 중이군, 홈즈가 말했다. 저곳이 우리가 가는 곳일세.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_24",
+   "scene_id": "scene_1_1",
+   "order": 2,
+   "title": "층계문에서 헬렌 스토너와 만남",
+   "summary": "홈즈와 왓슨이 층계문을 넘으며, 건축가 행세를 하겠다는 의도(소문 차단)를 밝힌다. 그리고 기다리던 손님 헬렌 스토너와 따뜻하게 악수하며, 로일럿 박사가 시내에 나가 저녁 전에는 돌아오지 않을 것임을 듣는다.",
+   "location_id": "NEW:로일럿_저택_층계문_부근",
+   "time_id": "NEW:그날_오전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "건축가 행세를 해야 할 정당한 이유(소문 차단)",
+     "source_text": "저 마부가 우리를 건축가나 뭔가 확실한 용무로 온 사람들로 여기도록 말이지"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "로일럿 박사의 시외 외출 일정을 미리 파악함",
+     "source_text": "로일럿 박사가 시내로 나갔고, 저녁 전에는 돌아오지 않을 것 같습니다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "박사에게서 미리 맡은 의뢰가 이미 진행 중이며, 그가 스토너를 뒤쫓고 있음",
+     "source_text": "그런 것 같습니다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_23",
+     "assumes": "마차에서 내린 직후 동일한 오전 시간대에 층계문으로 이동함",
+     "source_text": "우리는 마차에서 내려 삯을 치렀고 / 우리가 층계문을 넘으며"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "로일럿 박사는 그날 저녁 전까지 저택에 없다",
+     "via": "told",
+     "retained": true,
+     "source_text": "로일럿 박사가 시내로 나갔고, 저녁 전에는 돌아오지 않을 것 같습니다"
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "자신을 뒤쫓던 자가 로일럿 박사임",
+     "via": "told",
+     "retained": true,
+     "source_text": "그럼 그가 저를 뒤쫓아 왔던 거군요"
+    }
+   ],
+   "cause": "스토너 양이 오솔길을 따라 층계문 쪽으로 옴",
+   "result": "세 사람이 층계문에서 만나 함께 저택 안으로 향함",
+   "source_text": "스토너 양. 보시다시피 저희는 약속을 지켰습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_25",
+   "scene_id": "scene_1_2",
+   "order": 3,
+   "title": "저택 외관과 방 배치 확인",
+   "summary": "스토너 양이 저택의 세 방 배치를 설명한다. 왼쪽 동은 폐허, 오른쪽 동은 가족 거주 구역이고, 중앙은 그 중간. 스토너는 언니의 방에서 가운데 방으로 옮겨 자고 있으며, 그 방이 수리 구실로 바뀌었다고 믿는다.",
+   "location_id": "LOC_004",
+   "time_id": "NEW:그날_오전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_004",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "저택으로 가시려면"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "수리는 자기를 가운데 방에서 내보내기 위한 구실에 불과함",
+     "source_text": "저를 제 방에서 옮기려는 구실이었다고 저는 믿습니다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "스토너 양과 언니가 밤마다 각 방의 문을 잠금",
+     "source_text": "밤마다 두 분 다 문을 잠그셨으니"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "왼쪽 동은 폐허, 오른쪽 동은 거주, 중앙은 그 중간이며 세 방의 위치 관계",
+     "via": "told",
+     "retained": true,
+     "source_text": "이것이, 짐작건대, 당신이 예전에 주무시던 방이고"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "스토너 양은 수리 구실로 가운데 방으로 옮겨짐",
+     "via": "told",
+     "retained": true,
+     "source_text": "저를 제 방에서 옮기려는 구실이었다고 저는 믿습니다"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "오른쪽 동의 복도 창문은 사람이 지나가기엔 너무 좁음",
+     "via": "told",
+     "retained": true,
+     "source_text": "있습니다만, 아주 작은 것들입니다. 사람이 지나가기에는 너무 좁습니다."
+    }
+   ],
+   "cause": "저택 도착 후 외관 및 방 배치 확인",
+   "result": "스토너 양이 가운데 방의 덧문을 걸어 잠금",
+   "source_text": "건물은 회색의 이끼 낀 돌로 지어져 있었고",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_26",
+   "scene_id": "scene_1_2",
+   "order": 4,
+   "title": "가운데 방 덧문 조사",
+   "summary": "홈즈가 열린 창으로 안을 들여다본 뒤, 온갖 방법으로 덧문을 열어 보려 했으나 실패한다. 칼을 넣을 틈도 없고, 경첩은 단단한 쇠붙이로 석조에 박혀 있다.",
+   "location_id": "LOC_004",
+   "time_id": "NEW:그날_오전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "렌즈로 경첩 같은 미세한 부분까지 관찰 가능",
+     "source_text": "그런 다음 그는 렌즈로 경첩을 살펴보았지만"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "가운데 방 문을 걸어 잠그는 방법을 알고 있음",
+     "source_text": "스토너 양이 그렇게 했고"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_25",
+     "assumes": "가운데 방의 안쪽에 접근하려면 이 덧문을 통과해야 함",
+     "source_text": "빗장이 걸려 있다면 아무도 이 덧문을 지나갈 수 없어"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "가운데 방 덧문은 외부에서 강제로 열 수 없는 구조(빗장·단단한 경첩)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "빗장을 들어 올릴 수 있도록 칼을 넣을 만한 틈도 없었다"
+    }
+   ],
+   "cause": "스토너 양이 덧문을 잠금",
+   "result": "홈즈의 가설에 어려움이 생김. 내부를 살펴봐야겠다는 결론",
+   "source_text": "내 가설에 확실히 몇 가지 어려움이 있군. 빗장이 걸려 있다면 아무도 이 덧문을 지나갈 수 없어.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_27",
+   "scene_id": "scene_1_3",
+   "order": 5,
+   "title": "가운데 방 내부 조사",
+   "summary": "홈즈는 세 번째 방(박사 방)을 건너뛰고 가운데 방으로 들어간다. 방의 가구(서랍장, 침대, 화장대, 등나무 의자, 카펫)와 갈색 참나무 판벽을 자세히 살핀 뒤, 종줄·환기구의 특이점을 발견한다.",
+   "location_id": "NEW:LOC_가운데_방",
+   "time_id": "NEW:그날_오전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "NEW:가짜_종줄",
+    "NEW:환기구"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "가운데 방의 종줄은 가짜(소리 안 울림)이며 종에 연결되지 않음",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "아니, 이건 가짜로군 / 심지어 줄에 연결되어 있지도 않습니다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "환기구는 다른 방으로 트여 있고 외부와는 통하지 않음",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "환기구를 다른 방으로 트다니"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "렌즈로 마루판·판벽의 미세한 틈까지 관찰 가능",
+     "source_text": "그는 렌즈를 손에 들고 엎드려 마루판 사이의 틈을 꼼꼼히 살피며"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "환기구는 종줄과 같은 시기에 만들어진 것",
+     "source_text": "그 무렵에 몇 가지 자잘한 변화가 있었습니다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_25",
+     "assumes": "이 방은 헬렌이 현재 자는 가운데 방이자, 언니가 최후를 맞은 방과 동일",
+     "source_text": "스토너 양이 지금 자고 있는, 그리고 언니가 최후를 맞이했던 바로 그 방이었다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "종줄은 이 년 전에 설치되었으며 가짜이고 종에 연결되어 있지 않음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "겨우 이 년 전에 달아 놓은 것입니다 / 심지어 줄에 연결되어 있지도 않습니다"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "환기구는 다른 방과 이어져 있으며, 같은 시기에 만들어짐",
+     "via": "direct",
+     "retained": true,
+     "source_text": "환기구를 다른 방으로 트다니 / 그것 역시 아주 최근에 만든 것입니다"
+    }
+   ],
+   "cause": "스토너 양이 가운데 방의 문을 열어 줌",
+   "result": "홈즈가 안쪽 방(박사 방) 조사로 이동하기로 함",
+   "source_text": "아주 흥미로운 성격의 변화들이었던 모양이군요—가짜 종줄에, 환기시키지 않는 환기구라니.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_28",
+   "scene_id": "scene_1_4",
+   "order": 6,
+   "title": "로일럿 박사의 방 조사",
+   "summary": "박사의 방(야전 침대, 서적 선반, 안락의자, 나무 의자, 둥근 탁자, 철제 금고)을 살핀다. 금고 안에는 사업 서류만 있다고 한다. 우유 접시, 나무 의자 좌석, 그리고 개 채찍이 묶인 채 걸려 있는 점이 눈에 띈다.",
+   "location_id": "NEW:LOC_박사의_침실",
+   "time_id": "NEW:그날_오전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_003",
+    "NEW:우유_접시",
+    "OBJ_002"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "박사 방의 나무 의자 좌석에 어떤 흔적이 있음(확실해졌다고 표현)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "고맙습니다. 이제 확실해졌군요"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "assumes": "집에 치타와 개코원숭이를 기르고 있음",
+     "source_text": "저희는 고양이를 기르지 않습니다. 하지만 치타와 개코원숭이가 있습니다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_25",
+     "assumes": "이 방은 왼쪽·가운데·오른쪽 세 방 중 박사의 침실(본채에 가까운 쪽)과 동일",
+     "source_text": "본채에 가까운 쪽이 로일럿 박사의 침실이겠군요?"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "금고 안에는 박사의 사업 서류만 있다(몇 년 전 한 번 본 기억)",
+     "via": "told",
+     "retained": true,
+     "source_text": "의붓아버지의 사업 서류들입니다"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "저택에는 치타와 개코원숭이가 있다(고양이는 없음)",
+     "via": "told",
+     "retained": true,
+     "source_text": "저희는 고양이를 기르지 않습니다. 하지만 치타와 개코원숭이가 있습니다"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "박사 방 침대 모서리에 채찍끈으로 묶여 걸린 개 채찍이 있다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "침대 한쪽 모서리에 걸려 있는 작은 개 채찍이었다. 그런데 그 채찍은 저 혼자 돌돌 말려 채찍끈으로 고리를 만들어 묶여 있었다"
+    }
+   ],
+   "cause": "가운데 방 조사 후 박사 방으로 이동",
+   "result": "잔디밭으로 나가기 전에 조언을 전달하기로 함",
+   "source_text": "이 수사 현장을 떠나올 때만큼 내 친구의 얼굴이 그토록 굳어 있고",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_29",
+   "scene_id": "scene_1_5",
+   "order": 7,
+   "title": "잔디밭에서 조언 전달",
+   "summary": "잔디밭을 거니는 동안 깊은 상념에 빠진 홈즈가, 스토너 양에게 모든 면에서 자신의 조언을 따를 것을, 목숨이 달렸을 수도 있다고 경고한다. 오늘 밤 스토너의 방에서 밤을 새겠다고 선언한다.",
+   "location_id": "LOC_004",
+   "time_id": "NEW:그날_오전_늦게",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "from": "unknown",
+     "to": "위험이 매우 심각하여 자신의 목숨이 조언 따르기에 달려 있음",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "당신의 목숨이 당신의 순응 여부에 달려 있을 수도 있습니다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "박사에게 중대한 의심을 품고 있으며, 그 증거가 오늘 밤 발생할 수 있다고 판단",
+     "source_text": "우선, 제 친구와 저는 오늘 밤 당신의 방에서 밤을 새워야 합니다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_28",
+     "assumes": "박사 방 조사에서 얻은 관측이 지금의 경고에 직접 영향을 미침",
+     "source_text": "이 수사 현장을 떠나올 때만큼 내 친구의 얼굴이 그토록 굳어 있고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "스토너 양은 박사 방에 채찍끈으로 묶인 채찍이 걸려 있다는 것을 이전에 본 적이 있었는지(명시 없음)",
+     "via": "uncertain",
+     "retained": true,
+     "source_text": "보시다시피 저희는 약속을 지켰습니다"
+    }
+   ],
+   "cause": "저택 내부 수사 결과에 대한 상념",
+   "result": "스토너 양이 절대적 순응을 약속함. 마을 여관(크라운) 위치 및 자신의 방 창문 가시 여부 확인으로 이어짐",
+   "source_text": "당신이 모든 면에서 제 조언을 절대적으로 따라 주셔야 한다는 것이 매우 중요합니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_30",
+   "scene_id": "scene_1_5",
+   "order": 8,
+   "title": "마을 여관 위치와 창문 가시 여부 확인",
+   "summary": "스토너 양에게서 마을 여관(크라운)이 자기 방 창문에서 보이는지 확인한다. 창문은 보인다는 답을 얻는다.",
+   "location_id": "LOC_004",
+   "time_id": "NEW:그날_오전_늦게",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "마을 여관(크라운)은 스토너의 방 창문에서 보임",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그곳에서 당신 방 창문이 보이겠지요? / 물론입니다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "마을 여관(크라운)의 위치",
+     "source_text": "네, 저기가 크라운입니다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_29",
+     "assumes": "스토너 양이 자신의 절대적 순응을 약속한 직후의 연속 대화",
+     "source_text": "제 몸을 두 분께 맡기겠다고 약속드립니다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "마을 여관 이름은 크라운이며 스토너의 방 창문에서 보인다",
+     "via": "told",
+     "retained": true,
+     "source_text": "네, 저기가 크라운입니다 / 물론입니다"
+    }
+   ],
+   "cause": "오늘 밤 박사 방에서 밤을 새우겠다는 선언 직후",
+   "result": "스토너의 방 창문에서 박사 관련 움직임을 관찰할 수 있는 조건 확인",
+   "source_text": "좋습니다. 그곳에서 당신 방 창문이 보이겠지요?",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_31",
+   "scene_id": "scene_1_1",
+   "order": 1,
+   "title": "홈즈가 헬렌에게 작전 지시",
+   "summary": "홈즈가 헬렌 스토너에게 의붓아버지(로일럿 박사) 귀가 시 행동 요령과 환기구를 통한 소음 조사 계획을 지시한다.",
+   "location_id": "LOC_002",
+   "time_id": "TIME_009",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "로일럿 박사(의붓아버지)의 귀가 시각·잠자리에 드는 소리·창문 덧문과 걸쇠의 위치",
+     "source_text": "그가 잠자리에 드는 소리가 들리면, 창문의 덧문을 열고 걸쇠를 풀어 램프를 그곳에 놓아 저희에게 신호를 보내신 뒤"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "헬렌에게 '예전에 쓰시던 방'이 있으며, 수리 중이라 그곳에서 하룻밤 묵는 것이 가능함",
+     "source_text": "필요할 것 같은 물건을 전부 챙겨 조용히 예전에 쓰시던 방으로 물러가시면 됩니다. 수리 중이라 해도 하룻밤쯤은 그곳에서 지내실 수 있으리라 믿습니다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "not_knows: 정확한 소음의 원인 (홈즈에게 그 정답을 묻고 있음)",
+     "source_text": "이미 마음속에 결론을 내리신 것 같습니다. / 부디, 제 언니의 죽음이 무엇 때문이었는지 말씀해 주세요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "헬렌이 지시대로 행동할 용기와 실행 능력",
+     "source_text": "용기를 내십시오. 제가 말씀드린 대로 하신다면, 저희가 곧 당신을 위협하는 위험을 몰아내 드릴 수 있으리라 확신하셔도 좋습니다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "홈즈가 의붓아버지(로일럿 박사) 귀가 시 행동 요령을 지시함",
+     "via": "told",
+     "retained": true,
+     "source_text": "의붓아버지가 돌아오면, 두통을 핑계로 방에 틀어박혀 계셔야 합니다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈가 헬렌에게 내린 작전 지시의 내용",
+     "via": "direct",
+     "retained": true,
+     "source_text": "저희는 당신 방에서 밤을 보내며, 당신을 괴롭혀 온 그 소음의 원인을 조사할 것입니다."
+    }
+   ],
+   "cause": "헬렌의 방문과 의뢰",
+   "result": "헬렌이 지시를 받아들이고, 홈즈는 로일럿 박사 귀가 전 떠나기로 결심",
+   "source_text": "\"의붓아버지가 돌아오면, 두통을 핑계로 방에 틀어박혀 계셔야 합니다.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_32",
+   "scene_id": "scene_1_2",
+   "order": 2,
+   "title": "크라운 여관에서 투숙 준비",
+   "summary": "홈즈와 왓슨은 크라운 여관에서 이층 침실과 응접실을 잡고, 창밖으로 스토크 모런 저택을 내려다본다.",
+   "location_id": "NEW:크라운_여관",
+   "time_id": "TIME_009",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_002",
+     "to": "NEW:크라운_여관",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "LOC_002",
+     "certainty": "explicit",
+     "source_text": "셜록 홈즈와 나는 크라운 여관에서 침실과 응접실을 어렵지 않게 잡을 수 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_002",
+     "to": "NEW:크라운_여관",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "LOC_002",
+     "certainty": "explicit",
+     "source_text": "셜록 홈즈와 나는 크라운 여관에서 침실과 응접실을 어렵지 않게 잡을 수 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "트렁크 등 여관에 두고 온 짐 (수하를 들고 투숙)",
+     "source_text": "크라운 여관에서 침실과 응접실을 어렵지 않게 잡을 수 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "트렁크 등 여관에 두고 온 짐",
+     "source_text": "크라운 여관에서 침실과 응접실을 어렵지 않게 잡을 수 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "저택 진입로 대문과 사람이 사는 동의 위치",
+     "via": "direct",
+     "retained": true,
+     "source_text": "창밖으로는 진입로 대문과 스토크 모런 저택의 사람이 사는 동이 내려다보였다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "저택 진입로 대문과 사람이 사는 동의 위치",
+     "via": "direct",
+     "retained": true,
+     "source_text": "창밖으로는 진입로 대문과 스토크 모런 저택의 사람이 사는 동이 내려다보였다."
+    }
+   ],
+   "cause": "홈즈의 작전 수행 계획",
+   "result": "스토크 모런 저택 감시 거점 확보",
+   "source_text": "셜록 홈즈와 나는 크라운 여관에서 침실과 응접실을 어렵지 않게 잡을 수 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_33",
+   "scene_id": "scene_1_3",
+   "order": 3,
+   "title": "로일럿 박사의 귀가 목격",
+   "summary": "해 질 무렵 홈즈와 왓슨은 거대한 몸집의 로일럿 박사가 소년이 모는 마차로 돌아오고, 철문을 여는 소년에게 고함치며 주먹을 흔드는 것을 본다.",
+   "location_id": "NEW:크라운_여관",
+   "time_id": "TIME_010",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_005"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "해 질 무렵 우리는 그림스비 로일럿 박사가 지나가는 것을 보았다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "ability",
+     "assumes": "독립적 보행·마차를 이용한 이동 능력 (소년의 부축 없이 자기 발로 저택에 들어옴)",
+     "source_text": "그의 거대한 몸집이, 그를 태우고 몰던 소년의 자그마한 몸집 옆에서 우뚝 솟아 있었다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "body_status",
+     "assumes": "거대한(비만한) 체격",
+     "source_text": "그의 거대한 몸집이"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "ability",
+     "assumes": "고함·주먹을 휘두를 수 있는 신체 능력 (격노한 행동 가능)",
+     "source_text": "우리가 보았다. … 우리는 박사의 쉰 목소리가 고함치는 것을 들었으며 그가 소년을 향해 꽉 쥔 주먹을 흔드는 격노한 모습을 보았다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_34",
+     "assumes": "EVENT_1_3의 '응접실에 불이 켜진 것'은 박사가 귀가한 뒤 얼마 지나지 않아 일어남",
+     "source_text": "마차는 계속 나아갔고, 몇 분 뒤 우리는 응접실 하나에 램프가 켜지며"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "로일럿 박사의 거대한 체격과 격노한 성품(소년에게 고함·주먹 흔듦)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그의 거대한 몸집이, 그를 태우고 몰던 소년의 자그마한 몸집 옆에서 우뚝 솟아 있었다. … 우리는 박사의 쉰 목소리가 고함치는 것을 들었으며 그가 소년을 향해 꽉 쥔 주먹을 흔드는 격노한 모습을 보았다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "로일럿 박사의 거대한 체격과 격노한 성품",
+     "via": "direct",
+     "retained": true,
+     "source_text": "우리는 박사의 쉰 목소리가 고함치는 것을 들었으며 그가 소년을 향해 꽉 쥔 주먹을 흔드는 격노한 모습을 보았다."
+    }
+   ],
+   "cause": "해 질 무렵 박사의 귀가",
+   "result": "저택에 박사가 들어왔음을 확인하고, 응접실에 불이 켜지는 것을 목격",
+   "source_text": "해 질 무렵 우리는 그림스비 로일럿 박사가 지나가는 것을 보았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_34",
+   "scene_id": "scene_1_3",
+   "order": 4,
+   "title": "저택 응접실에 불이 켜짐",
+   "summary": "마차가 지나간 뒤 몇 분 뒤, 저택 응접실에 램프가 켜지며 나무들 사이로 불빛이 솟아오른다.",
+   "location_id": "NEW:크라운_여관",
+   "time_id": "TIME_010",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_005"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "assumes": "램프(응접실의 점등 도구)",
+     "source_text": "응접실 하나에 램프가 켜지며"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_33",
+     "assumes": "불이 켜진 응접실은 박사가 들어간 저택 안 응접실이며, 목격 시점(EVENT_1_3) 직후의 연속된 상황이다",
+     "source_text": "마차는 계속 나아갔고, 몇 분 뒤 우리는 응접실 하나에 램프가 켜지며 나무들 사이로 갑자기 불빛이 솟아오르는 것을 보았다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "박사 귀가 후 저택 응접실이 점등되었다는 사실(박사가 안으로 들어간 직후의 행동)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "몇 분 뒤 우리는 응접실 하나에 램프가 켜지며 나무들 사이로 갑자기 불빛이 솟아오르는 것을 보았다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "박사 귀가 후 저택 응접실이 점등되었다는 사실",
+     "via": "direct",
+     "retained": true,
+     "source_text": "몇 분 뒤 우리는 응접실 하나에 램프가 켜지며 나무들 사이로 갑자기 불빛이 솟아오르는 것을 보았다."
+    }
+   ],
+   "cause": "로일럿 박사의 귀가",
+   "result": "박사가 응접실에 들어갔음을 다시 확인",
+   "source_text": "몇 분 뒤 우리는 응접실 하나에 램프가 켜지며 나무들 사이로 갑자기 불빛이 솟아오르는 것을 보았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_35",
+   "scene_id": "scene_1_4",
+   "order": 5,
+   "title": "환기구 추리 대화",
+   "summary": "어둠 속에서 홈즈는 두 방 사이 환기구의 존재를 미리 추리했음을 밝히고, 줄이 환기구를 통해 침대로 떨어뜨린 도구일 가능성을 제시한다.",
+   "location_id": "NEW:크라운_여관",
+   "time_id": "TIME_009",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "헬렌의 진술 내용(언니가 로일럿 박사의 시가 냄새를 맡을 수 있었다는 점)",
+     "source_text": "그녀의 진술에서, 언니가 로일럿 박사의 시가 냄새를 맡을 수 있었다고 했던 것을 기억하나."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "검시 심리 보고서(또는 그에 준하는 기록)에 통로가 언급되지 않았다는 점",
+     "source_text": "그것은 작은 것일 수밖에 없었어, 그렇지 않았다면 검시 심리에서 언급되었을 테니까."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "not_knows: 환기구가 사건의 핵심 단서라는 점 (구멍 자체만 관찰함)",
+     "source_text": "종줄 말고는 특별히 눈에 띄는 것이 없었는데, 그것이 무슨 용도인지는 도무지 짐작이 안 가더군."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "스토크 모런의 침대가 마루에 고정되어 있고, 환기구·줄과 일정한 상대 위치를 유지한다는 점",
+     "source_text": "그것은 마루에 고정되어 있었네. … 부인은 침대를 옮길 수가 없었어. 그것은 언제나 환기구와, 그리고 저 줄—종줄로 쓰일 의도가 전혀 아니었던 것이 분명하니 그렇게 부를 수 있다면—과 같은 상대적 위치에 있어야만 했던 걸세."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_31",
+     "assumes": "헬렌의 진술(시가 냄새 등)은 EVENT_1_1에서 왓슨도 함께 들었으므로, 왓슨도 '언니가 시가 냄새를 맡았다'는 진술 내용을 보유하고 있어야 함",
+     "source_text": "그녀의 진술에서, 언니가 로일럿 박사의 시가 냄새를 맡을 수 있었다고 했던 것을 기억하나."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "환기구가 두 방 사이에 통하는 통로라는 추론",
+     "via": "told",
+     "retained": true,
+     "source_text": "오, 그래, 정말이야. … 나는 환기구를 추리해 낸 걸세."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "침대가 마루에 고정되어 환기구·줄과 항상 같은 상대 위치에 놓여 있다는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "그것은 마루에 고정되어 있었네. … 그것은 언제나 환기구와, 그리고 저 줄 … 과 같은 상대적 위치에 있어야만 했던 걸세."
+    }
+   ],
+   "cause": "이른 오후의 현장 답사(원문 밖 전제) 및 헬렌의 진술에 대한 회고",
+   "result": "왓슨이 홈즈의 추리에 부분적으로 설득됨",
+   "source_text": "나는 우리가 스토크 모런에 오기도 전부터 환기구가 있으리라는 것을 알고 있었네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_36",
+   "scene_id": "scene_1_5",
+   "order": 6,
+   "title": "저택 부지 진입과 개코원숭이 습격",
+   "summary": "11시 신호등을 보고 홈즈와 왓슨이 부지에 들어서자, 월계수 덤불에서 개코원숭이가 튀어나와 어둠 속으로 달아난다.",
+   "location_id": "LOC_002",
+   "time_id": "TIME_012",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_034"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_034",
+   "objects": [
+    "CHAR_034"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "NEW:크라운_여관",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "잠시 후 우리는 어두운 길 위에 나와, … 부지에 들어서는 데는 별다른 어려움이 없었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "NEW:크라운_여관",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "잠시 후 우리는 어두운 길 위에 나와, … 부지에 들어서는 데는 별다른 어려움이 없었다."
+    },
+    {
+     "entity": "CHAR_034",
+     "field": "location",
+     "from": "LOC_002",
+     "to": "unknown",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "LOC_002",
+     "certainty": "explicit",
+     "source_text": "월계수 덤불 사이에서 흉측하게 일그러진 아이처럼 보이는 무언가가 튀어나와, … 이내 잔디밭을 가로질러 어둠 속으로 재빨리 달아났다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "신발을 벗을 수 있는 손 사용 가능(사물을 만지는 손의 운동 기능)",
+     "source_text": "홈즈를 따라 신발을 벗고서 마침내 침실 안에 들어섰을 때"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "신발을 벗을 수 있는 손의 운동 기능",
+     "source_text": "홈즈를 따라 신발을 벗고서 마침내 침실 안에 들어섰을 때"
+    },
+    {
+     "entity": "CHAR_034",
+     "field": "ability",
+     "assumes": "보행·도주 능력 (네 발로 잔디밭을 가로질러 달아남)",
+     "source_text": "몸부림치는 팔다리로 풀밭 위에 몸을 던졌다가 이내 잔디밭을 가로질러 어둠 속으로 재빨리 달아났다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "로일럿 박사가 개코원숭이 외에 치타 등 기이한 애완동물을 기르고 있다는 사실",
+     "source_text": "저것이 그 개코원숭이일세. … 치타도 있었지—어느 순간 우리 어깨 위에서 그것을 발견하게 될지도 몰랐다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_37",
+     "assumes": "EVENT_1_6의 '신호등 감지→부지 진입→개코원숭이 마주침→신발 벗고 침실 진입'은 하나의 연속된 행위이며, EVENT_1_7(침실 도착·대기 자세)은 EVENT_1_6 직후의 상황이다",
+     "source_text": "홈즈를 따라 신발을 벗고서 마침내 침실 안에 들어섰을 때, 나는 마음이 한결 편안해졌음을 인정한다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "부지 안의 담장 틈·잔디밭·월계수 덤불 배치 (실제 진입 경로 확인)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "낡은 공원 담장에 손보지 않은 틈이 벌어져 있었기 때문이다. 나무들 사이로 길을 헤쳐 잔디밭에 이르렀고"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "부지 안의 담장 틈·잔디밭·월계수 덤불 배치",
+     "via": "direct",
+     "retained": true,
+     "source_text": "낡은 공원 담장에 손보지 않은 틈이 벌어져 있었기 때문이다. 나무들 사이로 길을 헤쳐 잔디밭에 이르렀고"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "로일럿 박사가 기르는 개코원숭이가 부지 안에서 자유롭게 돌아다닌다는 사실",
+     "via": "direct",
+     "retained": true,
+     "source_text": "저것이 그 개코원숭이일세."
+    }
+   ],
+   "cause": "헬렌이 보낸 신호등(가운데 창문의 빛) 확인",
+   "result": "헬렌의 침실에 도착, 신발을 벗고 안으로 들어섬",
+   "source_text": "부지에 들어서는 데는 별다른 어려움이 없었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_37",
+   "scene_id": "scene_1_6",
+   "order": 7,
+   "title": "침실에서 소리 없이 대기 자세",
+   "summary": "침실에 들어선 홈즈는 덧문을 닫고 램프를 탁자로 옮긴 뒤, 소리·빛을 내지 말 것을 왓슨에게 속삭인다.",
+   "location_id": "LOC_002",
+   "time_id": "TIME_012",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_002 (부지 외부)",
+     "to": "LOC_002 (헬렌의 침실)",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "LOC_002 (외부)",
+     "certainty": "explicit",
+     "source_text": "홈즈를 따라 신발을 벗고서 마침내 침실 안에 들어섰을 때"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_002 (부지 외부)",
+     "to": "LOC_002 (헬렌의 침실)",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "LOC_002 (외부)",
+     "certainty": "explicit",
+     "source_text": "홈즈를 따라 신발을 벗고서 마침내 침실 안에 들어섰을 때"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "아주 낮은 목소리로도 정확히 발음하는 속삭임 능력",
+     "source_text": "그는 살금살금 내게 다가와 손으로 나팔을 만들어 내 귀에 대고, 겨우 알아들을 수 있을 만큼 조용히 속삭였다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "환기구를 통해 다른 쪽 방에서도 이 침실의 빛이 보일 수 있다는 점",
+     "source_text": "불빛 없이 앉아 있어야 하네. 그가 환기구를 통해 그것을 볼 테니까."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "어둠 속에서 잠들지 않고 깨어 있을 자제력(생존 문제로 표현됨)",
+     "source_text": "잠들지 말게. 자네의 목숨이 거기에 달려 있을지도 모르니까."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "침실 안에서는 소리·빛 모두 절대 내지 말아야 한다는 작전 규칙",
+     "via": "told",
+     "retained": true,
+     "source_text": "조금이라도 소리를 내면 우리 계획에 치명적일 걸세. / 불빛 없이 앉아 있어야 하네."
+    }
+   ],
+   "cause": "침실 진입 완료",
+   "result": "완전한 어둠 속 무소리 대기 상태 돌입",
+   "source_text": "홈즈를 따라 신발을 벗고서 마침내 침실 안에 들어섰을 때, 나는 마음이 한결 편안해졌음을 인정한다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_38",
+   "scene_id": "scene_1_7",
+   "order": 8,
+   "title": "왓슨이 권총을 탁자에 놓음",
+   "summary": "홈즈의 지시에 따라 왓슨이 권총을 꺼내 탁자 모서리에 올려놓는다.",
+   "location_id": "LOC_002",
+   "time_id": "TIME_012",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [
+    "CHAR_001"
+   ],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_016"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_016",
+     "op": "add",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "필요할 경우를 대비해 권총을 준비해 두게. / 나는 권총을 꺼내 탁자 모서리에 올려놓았다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "originally NEW:권총 (소지 상태에서 시작)",
+     "source_text": "필요할 경우를 대비해 권총을 준비해 두게."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "어둠 속에서 권총을 손으로 집어 탁자 위 정해진 위치에 놓는 운동 능력",
+     "source_text": "나는 권총을 꺼내 탁자 모서리에 올려놓았다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_37",
+     "assumes": "이 사건의 '권총 준비' 행위는 EVENT_1_7의 '소리·빛 없이 대기하되 만일의 경우 무장하라'는 지시에 대한 직접 응답이다",
+     "source_text": "필요할 경우를 대비해 권총을 준비해 두게."
+    },
+    {
+     "with_event_id": "EVENT_1_39",
+     "assumes": "이 사건이 끝난 직후 곧바로 홈즈가 지팡이·성냥·초를 준비하는 EVENT_1_9로 이어진다",
+     "source_text": "나는 권총을 꺼내 탁자 모서리에 올려놓았다. 홈즈는 길고 가느다란 지팡이를 가져와"
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "홈즈의 '권총 준비' 지시",
+   "result": "권총이 탁자 모서리에 위치함",
+   "source_text": "나는 권총을 꺼내 탁자 모서리에 올려놓았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_39",
+   "scene_id": "scene_1_7",
+   "order": 9,
+   "title": "홈즈가 지팡이·성냥·초를 준비",
+   "summary": "홈즈는 길고 가느다란 지팡이를 침대 위에 놓고, 곁에 성냥갑과 초 동강을 준비한 뒤 램프를 낮추어 방을 어둠에 잠긴다.",
+   "location_id": "LOC_002",
+   "time_id": "TIME_012",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_015",
+    "OBJ_013",
+    "OBJ_014"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_015",
+     "op": "add",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "홈즈는 길고 가느다란 지팡이를 가져와 자기 곁 침대 위에 놓았다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_013",
+     "op": "add",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "그 옆에는 성냥갑과 초 동강을 놓아두었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_014",
+     "op": "add",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "그 옆에는 성냥갑과 초 동강을 놓아두었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "환기구를 통해 줄이 내려올 경우 지팡이로 후려쳐 끊을 작전, 그리고 성냥·초로 순간 점등해 그것을 확인하겠다는 계획",
+     "source_text": "그런 다음 그는 램프를 낮추었고, 우리는 어둠 속에 남겨졌다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_38",
+     "assumes": "이 사건의 '홈즈의 준비'는 EVENT_1_8 '왓슨의 권총 준비'와 같은 장면에서 동시에 진행된 두 인물의 병렬 행위다",
+     "source_text": "나는 권총을 꺼내 탁자 모서리에 올려놓았다. 홈즈는 길고 가느다란 지팡이를 가져와 자기 곁 침대 위에 놓았다."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "환기구를 통한 침습에 대한 대비",
+   "result": "어둠 속 철야의 무장 대기 자세 완성",
+   "source_text": "홈즈는 길고 가느다란 지팡이를 가져와 자기 곁 침대 위에 놓았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_40",
+   "scene_id": "scene_1_8",
+   "order": 10,
+   "title": "철야의 대기",
+   "summary": "열두 시부터 세 시까지의 긴 대기 동안, 고양이 울음소리(치타)·교구 시계 종소리·바깥 밤새 소리가 들린다.",
+   "location_id": "LOC_002",
+   "time_id": "TIME_013",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "몇 시간 동안 잠들지 않고 깨어 있을 수 있는 인내력",
+     "source_text": "내 친구가 나와 몇 걸음 떨어진 곳에서 나와 똑같은 신경의 긴장 상태로 눈을 뜬 채 앉아 있다는 것을 알고 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "몇 시간 동안 잠들지 않고 깨어 있을 수 있는 인내력",
+     "source_text": "열두 시가 울렸고, 한 시, 두 시, 세 시가 울렸으며, 우리는 여전히 무슨 일이 일어날지 말없이 기다리며 앉아 있었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_41",
+     "assumes": "이 사건의 '철야 대기'는 EVENT_1_11 '환기구를 통한 침습 직전의 긴장' 직전까지 계속되며, EVENT_1_11의 '갑자기 빛이 번쩍임'은 이 사건의 대기 끝에서 시작된다",
+     "source_text": "그 십오 분이 어찌나 길게 느껴지던지! 열두 시가 울렸고, 한 시, 두 시, 세 시가 울렸으며, 우리는 여전히 무슨 일이 일어날지 말없이 기다리며 앉아 있었다. 갑자기 환기구가 있는 방향에서 잠깐 빛이 번쩍이더니"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "치타(고양이 같은 울음소리)가 실제로 부지 안에서 풀려나 있다는 시각·청각 증거",
+     "via": "direct",
+     "retained": true,
+     "source_text": "한번은 바로 우리 창가에서 길게 늘어지는 고양이 같은 울음소리가 들려, 치타가 정말로 풀려나 있음을 알려 주었다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "치타가 실제로 부지 안에서 풀려나 있다는 시각·청각 증거",
+     "via": "direct",
+     "retained": true,
+     "source_text": "한번은 바로 우리 창가에서 길게 늘어지는 고양이 같은 울음소리가 들려, 치타가 정말로 풀려나 있음을 알려 주었다."
+    }
+   ],
+   "cause": "사건 발생을 기다리는 작전 대기",
+   "result": "치타가 풀려있음을 확인한 채 대기 지속",
+   "source_text": "열두 시가 울렸고, 한 시, 두 시, 세 시가 울렸으며, 우리는 여전히 무슨 일이 일어날지 말없이 기다리며 앉아 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_41",
+   "scene_id": "scene_1_9",
+   "order": 11,
+   "title": "환기구를 통한 침습과 홈즈의 응전",
+   "summary": "환기구 쪽에서 잠깐 빛이 번쩍이고 타는 기름·달궈진 금속 냄새가 퍼진다. 삼십 분 뒤 나직한 증기 분출음이 들리자 홈즈가 성냥을 켜고 지팡이로 종줄을 사납게 후려치지만, 왓슨은 무엇을 후려치는지 보지 못한다.",
+   "location_id": "LOC_002",
+   "time_id": "TIME_013",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_015",
+    "OBJ_013",
+    "OBJ_014"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_015",
+     "field": "location",
+     "from": "CHAR_001 곁 침대 위",
+     "to": "CHAR_001 손 (공중)",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "CHAR_001 곁 침대 위",
+     "certainty": "explicit",
+     "source_text": "홈즈는 침대에서 벌떡 일어나 성냥을 켜고는 사납게 지팡이로 종줄을 후려쳤다."
+    },
+    {
+     "entity": "OBJ_013",
+     "field": "location",
+     "from": "CHAR_001 곁 침대 위",
+     "to": "CHAR_001 손 (점등 중)",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "CHAR_001 곁 침대 위",
+     "certainty": "explicit",
+     "source_text": "홈즈는 침대에서 벌떡 일어나 성냥을 켜고는"
+    },
+    {
+     "entity": "OBJ_014",
+     "field": "location",
+     "from": "CHAR_001 곁 침대 위",
+     "to": "CHAR_001 손 (점등 중)",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "CHAR_001 곁 침대 위",
+     "certainty": "inferred",
+     "source_text": "성냥을 켜고는 사납게 지팡이로 종줄을 후려쳤다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "어둠 속에서 정확히 성냥을 그어 불을 켜고 곧바로 지팡기를 휘두르는 동작 전환 능력",
+     "source_text": "홈즈는 침대에서 벌떡 일어나 성냥을 켜고는 사납게 지팡이로 종줄을 후려쳤다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "장시간(삼십 분 이상) 환기구의 냄새·소리 속에서 깨어 있을 수 있는 인내력",
+     "source_text": "삼십 분 동안 나는 귀를 곤두세우고 앉아 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "not_knows: 홈즈가 지팡이로 후려치던 대상의 정체(부정 사각지대, 원문 명시)",
+     "source_text": "나는 아무것도 보지 못했다. / … 갑작스러운 불빛이 피곤한 눈을 찌르는 바람에 내 친구가 그토록 맹렬하게 후려치던 것이 무엇인지 알아볼 수가 없었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "빛이 환기구 너머 어둠상자(다크 랜턴)에서 왔다는 점, 그리고 그 빛이 사라진 뒤 타는 기름·달궈진 금속 냄새가 남는다는 점",
+     "source_text": "갑자기 환기구가 있는 방향에서 잠깐 빛이 번쩍이더니 이내 사라졌지만, 뒤이어 타는 기름과 달아오른 금속의 강한 냄새가 뒤따랐다. 옆방에서 누군가 어둠상자 등을 켠 것이었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_40",
+     "assumes": "이 사건의 '삼십 분간 대기'는 EVENT_1_10 철야 대기의 연속이며, 그 삼십 분은 별개의 사건으로 쪼개지 않는다",
+     "source_text": "삼십 분 동안 나는 귀를 곤두세우고 앉아 있었다. 그러다 문득 또 다른 소리가 들려왔다"
+    },
+    {
+     "with_event_id": "EVENT_1_42",
+     "assumes": "이 사건 직후, EVENT_1_12(가장 끔찍한 비명)가 같은 자리에서 발생",
+     "source_text": "사납게 지팡이로 종줄을 후려쳤다. … 그때 갑자기 밤의 정적을 깨고 내가 이제껏 들어 본 가장 끔찍한 비명이 터져 나왔다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "옆방에서 누군가 어둠상자 등을 켰다는 사실(빛과 냄새로 추정)",
+     "via": "inference",
+     "retained": true,
+     "source_text": "옆방에서 누군가 어둠상자 등을 켠 것이었다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "옆방에서 누군가 어둠상자 등을 켰다는 사실(추정)",
+     "via": "inference",
+     "retained": true,
+     "source_text": "옆방에서 누군가 어둠상자 등을 켠 것이었다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "환기구 쪽에서 들려온 나직한 증기 분출음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "작은 증기 분출이 주전자에서 끊임없이 새어 나오는 듯한, 아주 나직하고 부드러운 소리였다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "환기구 쪽에서 들려온 나직한 증기 분출음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그 소리를 듣는 순간, 홈즈는 침대에서 벌떡 일어나 성냥을 켜고는"
+    }
+   ],
+   "cause": "옆방의 누군가(추정)가 환기구를 통해 침대로 무엇을 떨어뜨린 정황",
+   "result": "홈즈가 종줄을 후려쳤고, 직후 끔찍한 비명이 터짐",
+   "source_text": "그 소리를 듣는 순간, 홈즈는 침대에서 벌떡 일어나 성냥을 켜고는 사납게 지팡이로 종줄을 후려쳤다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_42",
+   "scene_id": "scene_1_9",
+   "order": 12,
+   "title": "가장 끔찍한 비명",
+   "summary": "종줄을 후려친 직후, 마을 저 아래까지 울린 쉰 목소리의 비명이 점점 부풀어 올랐다가 마침내 사그라든다.",
+   "location_id": "LOC_002",
+   "time_id": "TIME_013",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "NEW:비명의_주체"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "NEW:비명의_주체",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "NEW:비명의_주체",
+     "field": "body_status",
+     "assumes": "쉰 목소리(고통·분노·공포가 뒤섞인 절규를 낼 수 있는 성대 상태)",
+     "source_text": "고통과 공포와 분노가 하나의 소름 끼치는 절규에 뒤섞인 쉰 목소리의 울부짖음이었다."
+    },
+    {
+     "entity": "NEW:비명의_주체",
+     "field": "alive",
+     "assumes": "비명을 지를 만큼 의식이 있고 호흡이 가능한 상태(원문은 비명 후의 생사나 상태 변화를 명시하지 않음)",
+     "source_text": "그것은 점점 더 크게 부풀어 올랐다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_41",
+     "assumes": "이 사건의 비명은 EVENT_1_11(홈즈가 종줄을 후려친 직후)에서 시작된 연속 음향이며, 같은 공간·시점의 연장선이다",
+     "source_text": "그때 갑자기 밤의 정적을 깨고 내가 이제껏 들어 본 가장 끔찍한 비명이 터져 나왔다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "저택에서 쉰 목소리의 비명이 터져 나왔다는 사실",
+     "via": "direct",
+     "retained": true,
+     "source_text": "내가 이제껏 들어 본 가장 끔찍한 비명이 터져 나왔다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "저택에서 쉰 목소리의 비명이 터져 나왔다는 사실",
+     "via": "direct",
+     "retained": true,
+     "source_text": "내가 이제껏 들어 본 가장 끔찍한 비명이 터져 나왔다."
+    }
+   ],
+   "cause": "홈즈가 종줄을 후려친 직후",
+   "result": "마을 저 아래·사제관까지 잠든 이들이 깨어남",
+   "source_text": "그것은 점점 더 크게 부풀어 올랐다—고통과 공포와 분노가 하나의 소름 끼치는 절규에 뒤섞인 쉰 목소리의 울부짖음이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_43",
+   "scene_id": "scene_1_1",
+   "order": 1,
+   "title": "로일럿 박사의 죽은 시체 발견",
+   "summary": "홈즈와 왓슨이 램프를 들고 로일럿 박사의 방에 들어서니, 박사가 회색 잠옷 차림으로 의자에 앉아 천장을 응시한 채 죽어 있었고 머리에는 줄이 감겨 있었다.",
+   "location_id": "LOC_015",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_002",
+    "OBJ_016"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_005",
+     "field": "alive",
+     "from": "true",
+     "to": "false",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "우리가 들어섰을 때 그는 아무 소리도 움직임도 없었다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_002 (개 채찍, 죽은 박사의 무릎 위에 있던 것)",
+     "source_text": "죽은 남자의 무릎에서 재빨리 개 채찍을 뽑아 들어"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_016 (권총, 공이치기를 당긴 상태)",
+     "source_text": "나는 공이치기를 당긴 권총을 손에 든 채 그 뒤를 따랐다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "줄에 묶인 대상이 늪살무사라는 점, 그 위험성을 알고 있음",
+     "source_text": "\"그 끈이다! 얼룩무늬 끈!\" 홈즈가 속삭였다 ... \"늪살무사다!\""
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "줄에 묶인 물체가 늪살무사임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그 순간 그의 기이한 머리 장식이 꿈틀거리기 시작하더니, 그의 머리카락 사이에서 역겨운 뱀의 납작한 마름모꼴 머리와 부풀어 오른 목이 일어섰다 ... \"늪살무사다!\" 홈즈가 외쳤다"
+    }
+   ],
+   "cause": "스토너 부부(헬렌과 의붓아버지)의 줄과 환기구를 통한 살무사 살해 모의",
+   "result": "로일럿 박사가 줄에 묶인 채 의자에서 죽은 채로 발견됨",
+   "source_text": "탁자 위에는 덮개가 반쯤 열린 어둠상자 등이 놓여, 문이 반쯤 열린 철제 금고 위로 밝은 빛줄기를 던지고 있었다 ... 우리가 들어섰을 때 그는 아무 소리도 움직임도 없었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_44",
+   "scene_id": "scene_1_1",
+   "order": 2,
+   "title": "살무사를 금고로 내쫓음",
+   "summary": "홈즈가 개 채찍의 올가미로 뱀의 목을 잡아 환기구 반대편으로 몰아내고, 금고 안에 던져 넣은 뒤 문을 닫는다.",
+   "location_id": "LOC_015",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_004",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_002",
+    "OBJ_003",
+    "OBJ_004"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_004",
+     "field": "alive",
+     "from": "true",
+     "to": "false",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "그 끔찍한 자리에서 끌어낸 뒤, 팔을 뻗은 채 들고 가서 철제 금고 안으로 던져 넣고는 문을 닫았다",
+     "certainty_reason": "원문은 살무사의 생사 자체를 명시하지 않음 — 금고 안에 갇힌 것만 기록, 이후 사건 진행상 생사 판정은 불명"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_002 (개 채찍을 들고 있음)",
+     "source_text": "죽은 남자의 무릎에서 재빨리 개 채찍을 뽑아 들어"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "두 팔을 뻗어 금고까지 도달할 수 있는 정상 상태",
+     "source_text": "팔을 뻗은 채 들고 가서 철제 금고 안으로 던져 넣고는"
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "의붓아버지가 살무사에 물려 죽었다는 사실 — 홈즈가 이후 스토너 양에게 알린다고 언급",
+     "source_text": "스토너 양을 안전한 곳으로 데려가고"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "줄이 환기구를 지나 침대로 이어지는 다리였다는 사실",
+     "source_text": "그 줄이 구멍을 통해 지나와서 침대로 오는 무언가를 위한 다리 역할로 거기 있는 것이 아닌가"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_43",
+     "assumes": "EVENT_1_1과 같은 장소·같은 시점의 연속 장면이며, 박사의 시체는 여전히 그 자리에 있음",
+     "source_text": "죽은 남자의 무릎에서 재빨리 개 채찍을 뽑아"
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "줄이 환기구를 통과해 침대로 이어지는 살무사의 통로로 판명된 점, 그리고 뱀이 머리 장식에서 꿈틀거리며 노골화된 점",
+   "result": "살무사가 철제 금고 안에 갇혀 문이 닫힘; 이후 줄리아를 안전히 데리고 지방 경찰에 통보할 예정이 됨",
+   "source_text": "그 끔찍한 자리에서 끌어낸 뒤, 팔을 뻗은 채 들고 가서 철제 금고 안으로 던져 넣고는 문을 닫았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_45",
+   "scene_id": "scene_1_2",
+   "order": 3,
+   "title": "스토너 양에게 부고 전달 및 해로로 호송",
+   "summary": "이튿날 해로행 아침 기차로 줄리아를 이모에게 데려다주는 등 공식 수속을 밟는 일이 일어남.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "의붓아버지(로일럿 박사)가 죽었다는 사실 — 홈즈와 왓슨이 부고를 전함",
+     "source_text": "우리가 겁에 질린 그 아가씨에게 그 슬픈 소식을 어떻게 전했는지"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "assumes": "해로에 있는 이모 곁으로 이동 중",
+     "source_text": "아침 기차로 그녀를 해로에 계신 좋은 이모님께 어떻게 데려다드렸는지"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "의붓아버지 로일럿 박사의 죽음",
+     "via": "told",
+     "retained": true,
+     "source_text": "우리가 겁에 질린 그 아가씨에게 그 슬픈 소식을 어떻게 전했는지"
+    }
+   ],
+   "cause": "EVENT_1_2에서 로일럿 박사 사망 사실이 확정됨",
+   "result": "줄리아가 해로의 이모 곁으로 호송됨",
+   "source_text": "우리가 겁에 질린 그 아가씨에게 그 슬픈 소식을 어떻게 전했는지, 아침 기차로 그녀를 해로에 계신 좋은 이모님께 어떻게 데려다드렸는지",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_1_46",
+   "scene_id": "scene_1_3",
+   "order": 4,
+   "title": "귀환길에 홈즈의 추리 회고",
+   "summary": "이튿날 돌아오는 길에 홈즈가 줄리아의 '끈'이라는 단어를 오인했던 점, 환기구의 종줄, 금고, 우유, 채찍끈의 고리 등 단서로 진상을 재구성한 과정을 왓슨에게 설명한다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "줄리아가 '끈'이라 한 것은 성냥불 빛에 비친 살무사의 윤곽이었던 점, 줄은 환기구를 지나 침대로 이어지는 다리였다는 점, 박사는 의자를 타고 환기구에 손을 뻗어 살무사를 다루었다는 점, 우유로 호출해 다시 금고로 되돌렸다는 점, 박사가 살무사를 인도 공급원으로 얻을 수 있었다는 점",
+     "source_text": "왓슨, 불충분한 자료로부터 추리하는 것이 언제나 얼마나 위험한 일인지를 ... 줄이 구멍을 통해 지나와서 침대로 오는 무언가를 위한 다리 역할 ... 뱀이라는 생각이 즉시 떠올랐고, 그것을 박사가 인도에서 오는 동물 공급원을 갖고 있다는 사실과 결부시켜 ... 우유를 이용해서, 아마도 부르면 자기에게 돌아오도록 훈련시켰을 거야"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_1_44",
+     "assumes": "EVENT_1_2의 살무사 처리 사건이 '내가 자네도 틀림없이 들었을 그 짐짹의 쉭 소리'에 대한 사후 회고의 대상이 됨",
+     "source_text": "나는 자네도 틀림없이 들었을 그 짐짹의 쉭 소리를 들었고, 즉시 불을 켜서 그것을 공격했네"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "박사의 의자를 환기구 가까이까지 가져다 놓는 방식으로 살무사를 다루었다는 점",
+     "via": "inference",
+     "retained": true,
+     "source_text": "그의 의자를 살펴보니 그가 그 위에 올라서곤 했다는 것을 알 수 있었는데, 물론 환기구에 손이 닿으려면 그럴 필요가 있었겠지"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "줄리아가 들었다는 '쇳소리'는 박사가 환기구에서 금고로 살무사를 도로 넣으며 문을 닫는 소리였다는 점",
+     "via": "inference",
+     "retained": true,
+     "source_text": "스토너 양이 들었던 그 쇳소리는 분명 의붓아버지가 서둘러 그 끔찍한 거주자를 넣은 금고 문을 닫는 소리였을 걸세"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "자신의 매질이 살무사를 자극해 박사에게 달려들게 만들었으므로 박사의 죽음에 간접적 책임이 있음",
+     "via": "inference",
+     "retained": true,
+     "source_text": "내 지팡이의 매질 몇 대가 그것에 명중해 뱀의 성질을 자극했고, 그래서 그것은 처음 보이는 사람에게 달려든 것일세"
+    }
+   ],
+   "cause": "왓슨이 사건 전모의 마지막 조각(이전 화에서 명시되지 않은 부분)을 듣고자 함",
+   "result": "줄리아를 위협하던 살무사 살해 모의의 전 과정이 한 편의 추리 회고로 정립됨",
+   "source_text": "아직 알지 못했던 이 사건의 나머지 부분은, 이튿날 우리가 돌아오는 길에 셜록 홈즈가 나에게 들려준 것이다.",
+   "certainty": "explicit"
+  }
+ ]
+}

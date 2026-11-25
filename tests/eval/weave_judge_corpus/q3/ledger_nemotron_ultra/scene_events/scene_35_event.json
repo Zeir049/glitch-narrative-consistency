@@ -1,0 +1,106 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "TIME_019",
+   "expression": "9월 1일",
+   "description": "가온이 처음 언급한 봉인 시작 예정일",
+   "timeline": "main",
+   "source_text": "9월 1일이 아니라 9월 30일까지야",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_021",
+   "expression": "9월 30일",
+   "description": "승인본에 명시된 수동 관측 종료일이자 봉인 시작 기준일",
+   "timeline": "main",
+   "source_text": "수동 관측은 9월 말까지 하고 봉인은 10월 첫 주에 시작해",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "봉인 일정 정정",
+   "summary": "서율이 승인본을 재확인해 가온에게 봉인 일정이 9월 1일이 아닌 9월 30일까지 수동 관측 후 10월 첫 주 시작임을 정정한다.",
+   "location_id": "unknown",
+   "time_id": "TIME_021",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "from": "봉인 일정이 9월 1일로 당겨짐 (4주 당김 승인본 기준)",
+     "to": "봉인 일정은 9월 30일까지 수동 관측, 10월 첫 주 봉인 시작 (승인본 재확인 기준)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그 승인본을 다시 읽었어. 9월 30일로 되어 있어. 네가 처음에 말한 그 날짜야."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "승인본 내용(9월 30일 명시)을 정확히 기억하고 있음",
+     "source_text": "그 승인본을 다시 읽었어. 9월 30일로 되어 있어."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "최초 승인본에서 9월 30일로 명시된 내용을 인지하고 있었음",
+     "source_text": "네가 처음에 말한 그 날짜야"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "일정표(수첩 또는 문서)",
+     "source_text": "서율은 일정표의 9월 칸에 30일을 적고 밑줄을 그었다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_005",
+     "info": "봉인 일정이 9월 1일이 아니라 9월 30일까지 수동 관측 후 10월 첫 주 시작임",
+     "via": "told",
+     "retained": true,
+     "source_text": "9월 1일이 아니라 9월 30일까지야. 수동 관측은 9월 말까지 하고 봉인은 10월 첫 주에 시작해."
+    }
+   ],
+   "cause": "가온이 4주 당겨진 3월 승인본 기준으로 9월 1일 봉인 시작을 주장함",
+   "result": "서율이 승인본 재확인 후 9월 30일 기준임을 정정하고 일정표에 기록함",
+   "source_text": "\"9월 1일이 아니라 9월 30일까지야.\" 서율이 말했다. \"수동 관측은 9월 말까지 하고 봉인은 10월 첫 주에 시작해.\" 가온이 고개를 들었다. \"4주 당긴다고 하셨잖아요. 3월에요.\" \"그 승인본을 다시 읽었어. 9월 30일로 되어 있어. 네가 처음에 말한 그 날짜야.\" 가온은 대답하지 않았다. 서율은 일정표의 9월 칸에 30일을 적고 밑줄을 그었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T10:03:17Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 43.69
+ }
+}

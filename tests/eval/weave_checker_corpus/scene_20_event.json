@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S20_1",
+      "order": 1,
+      "title": "알파, 옷의 회피 원리를 모른다고 답함",
+      "summary": "알라인이 노이즈 무늬 옷이 AI에 안 잡히는 이유를 알아냈는지 묻자, 알파가 도무지 짐작도 안 가는 수수께끼라고 답한다.",
+      "location_id": "LOC_009",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_007",
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [
+        "OBJ_008"
+      ],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "not_knows: 노이즈 무늬 옷이 AI 인식에 잡히지 않는 원리",
+          "source_text": "글쎄요... 전 도무지 짐작도 안 가요. ... 처음부터 끝까지 수수께끼예요."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "알라인의 질문",
+      "result": "알라인의 묘한 시선",
+      "source_text": "\"왜 AI에 안 잡히는지, 뭐 알아낸 거 있어요?\"",
+      "certainty": "explicit"
+    }
+  ]
+}

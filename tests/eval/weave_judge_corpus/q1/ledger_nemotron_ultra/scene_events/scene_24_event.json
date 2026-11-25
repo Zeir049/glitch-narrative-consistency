@@ -1,0 +1,226 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:스무이틀",
+   "expression": "스무이틀",
+   "description": "12월 22일",
+   "timeline": "main",
+   "source_text": "스무이틀이었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "정미가 계금 150만 원을 가져옴",
+   "summary": "정미가 가게 문을 잠그고 올라와 카운터에 150만 원이 든 봉투를 놓고, 55만 원을 쓰고 나머지는 장부에 적어 도로 가져가겠다고 말함. 순덕은 '니 돈은 니 돈이다'라고 답하고 장부에 적겠다고 함.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:스무이틀",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [
+    "OBJ_002"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "현금 150만 원",
+     "op": "add",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "정미가 가게 문을 잠그고 올라와 카운터에 봉투를 놓았다. \"계 탔다. 백오십.\""
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "from": "현금 150만 원",
+     "to": "현금 95만 원",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "\"오십오만 쓰고 나머지는 도로 가져갈게.\""
+    },
+    {
+     "entity": "OBJ_002",
+     "field": "condition",
+     "from": "기존 기록 상태",
+     "to": "정미 계금 150만 원 입금·55만 원 출금 기록 추가",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "\"장부에 적으면 되잖아. 엄마가 그랬잖아.\" / \"적기는 적는다.\""
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "계좌/계 모임에서 탈 수 있는 자격이 있음",
+     "source_text": "\"계 탔다.\""
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "계금 납입일과 금액(150만 원)을 알고 있음",
+     "source_text": "\"계 탔다. 백오십.\""
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "장부 기록 관행과 정미의 계금 처리 방식을 알고 있음",
+     "source_text": "\"적기는 적는다.\""
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "ability",
+     "assumes": "현금 150만 원을 소지·운반할 수 있음",
+     "source_text": "카운터에 봉투를 놓았다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "정미가 이번 계 차례에서 150만 원을 탔음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "\"계 탔다. 백오십.\""
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "정미가 55만 원을 쓰고 95만 원을 돌려달라 함",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"오십오만 쓰고 나머지는 도로 가져갈게.\""
+    }
+   ],
+   "cause": "정미의 계 차례가 돌아와 계금을 수령함",
+   "result": "정미가 55만 원 사용 후 잔액 95만 원을 회수 예정, 장부 기록 예정",
+   "source_text": "스무이틀이었다. 정미가 가게 문을 잠그고 올라와 카운터에 봉투를 놓았다. \"계 탔다. 백오십.\" 순덕은 봉투를 보고 정미를 봤다. \"니 돈은 니 돈이다.\" \"오십오만 쓰고 나머지는 도로 가져갈게. 장부에 적으면 되잖아. 엄마가 그랬잖아.\" \"적기는 적는다.\" \"그러면 됐다.\" 정미는 봉투를 카운터에 둔 채로 골목으로 내려갔다. 순덕은 그것을 치우지 않았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "골방에서 TV가 켜져 있음",
+   "summary": "정미가 내려간 후 골방 문이 열려 있고 안에서 텔레비전이 소리 없이 켜져 있는 것을 순덕이 봄",
+   "location_id": "LOC_003",
+   "time_id": "NEW:스무이틀",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "시청각 인지 능력이 정상임",
+     "source_text": "골방 문은 열려 있었고 그 안에서 텔레비전이 소리 없이 켜져 있었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "정미가 내려간 직후 같은 시간대에 골방 TV가 켜져 있는 상태임",
+     "source_text": "정미는 봉투를 카운터에 둔 채로 골목으로 내려갔다. 순덕은 그것을 치우지 않았다. 골방 문은 열려 있었고 그 안에서 텔레비전이 소리 없이 켜져 있었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "골방에 텔레비전이 켜져 있음 (소리 없음)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "골방 문은 열려 있었고 그 안에서 텔레비전이 소리 없이 켜져 있었다."
+    }
+   ],
+   "cause": "누군가(정미 또는 다른 가족) TV를 켜둔 채 나간 것으로 추정",
+   "result": "순덕이 골방 TV 켜진 상태를 인지함",
+   "source_text": "골방 문은 열려 있었고 그 안에서 텔레비전이 소리 없이 켜져 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_3",
+   "scene_id": "scene_6_1",
+   "order": 3,
+   "title": "설비집 계약금 납입일 확인",
+   "summary": "설비집 계약금은 스무아흐렛날(12월 24일)에 넣기로 되어 있음을 순덕이 인지함",
+   "location_id": "LOC_002",
+   "time_id": "NEW:스무이틀",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "설비집 계약금 납입일(스무아흐렛날)과 금액 약정을 알고 있음",
+     "source_text": "설비집 계약금은 스무아흐렛날에 넣기로 돼 있었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "정미의 계금 수령(스무이틀)과 설비집 계약금 납입(스무아흐렛날)은 2일 간격의 별도 자금 일정임",
+     "source_text": "스무이틀이었다. / 설비집 계약금은 스무아흐렛날에 넣기로 돼 있었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "설비집 계약금 납입일이 스무아흐렛날(12월 24일)로 예정되어 있음",
+     "via": "inference",
+     "retained": true,
+     "source_text": "설비집 계약금은 스무아흐렛날에 넣기로 돼 있었다."
+    }
+   ],
+   "cause": "자금 일정 관리 차원에서 계약금 납입일을 상기함",
+   "result": "향후 자금 운용 계획에 계약금 납입 일정 반영",
+   "source_text": "설비집 계약금은 스무아흐렛날에 넣기로 돼 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:37:07Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": true,
+  "parse_retried": false,
+  "attempts": 3,
+  "elapsed_sec": 133.67
+ }
+}

@@ -1,0 +1,176 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "하디가 호스머 에인절의 소식을 묻고 메리가 정체를 밝힘",
+   "summary": "하디가 호스머 에인절의 소식을 묻자, 메리는 호스머 에인절이 의붓아버지 윈디뱅크의 변장이었다고 답한다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_013",
+    "CHAR_011"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_011",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_013",
+     "field": "body_status",
+     "assumes": "차 마시는 중에 말을 걸 수 있는 상태",
+     "source_text": "하디 씨는 찻잔을 내려놓고 조심스레 물었다"
+    },
+    {
+     "entity": "CHAR_013",
+     "field": "knows",
+     "assumes": "무도회에 메리와 어머니 두 모녀와 함께 간 사람이 있었다는 사실",
+     "source_text": "그 무도회에 두 모녀와 함께 갔던 사람이 바로 그였다"
+    },
+    {
+     "entity": "CHAR_013",
+     "field": "knows",
+     "assumes": "편지가 전부 타자였고 서명까지 있었다는 정보",
+     "source_text": "편지가 전부 타자였다고 했지. 서명까지"
+    },
+    {
+     "entity": "CHAR_013",
+     "field": "knows",
+     "assumes": "그 사람이 호스머 에인절이라는 정보",
+     "source_text": "그 사람, 호스머 에인절 말일세"
+    },
+    {
+     "entity": "CHAR_013",
+     "field": "knows",
+     "assumes": "그 사람에 대한 소식을 아직 모름 (메리의 답변 이전)",
+     "source_text": "소식은 있나"
+    },
+    {
+     "entity": "CHAR_011",
+     "field": "knows",
+     "assumes": "호스머 에인절이 윈디뱅크의 변장이라는 사실",
+     "source_text": "호스머 에인절은 의붓아버지 윈디뱅크가 변장한 사람이었어요"
+    },
+    {
+     "entity": "CHAR_011",
+     "field": "knows",
+     "assumes": "윈디뱅크가 자신의 의붓아버지라는 사실",
+     "source_text": "의붓아버지 윈디뱅크가"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_013",
+     "info": "호스머 에인절이 윈디뱅크의 변장이었다는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "호스머 에인절은 의붓아버지 윈디뱅크가 변장한 사람이었어요"
+    },
+    {
+     "character_id": "CHAR_013",
+     "info": "그 이름(호스머 에인절)이 이제는 쓰이지 않음",
+     "via": "told",
+     "retained": true,
+     "source_text": "그 이름은 이제 안 써요"
+    },
+    {
+     "character_id": "CHAR_013",
+     "info": "윈디뱅크가 메리의 의붓아버지라는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "의붓아버지 윈디뱅크가"
+    },
+    {
+     "character_id": "CHAR_011",
+     "info": "윈디뱅크가 호스머 에인절로 분장해 무도회에 함께 갔다는 정체 확인",
+     "via": "inference",
+     "retained": true,
+     "source_text": "그 무도회에 두 모녀와 함께 갔던 사람이 바로 그였다"
+    }
+   ],
+   "cause": "하디가 호스머 에인절의 소식을 물음",
+   "result": "메리가 호스머 에인절이 윈디뱅크의 변장이었다고 밝힘",
+   "source_text": "\"그 사람, 호스머 에인절 말일세. 소식은 있나.\" 메리 서덜랜드는 고개를 저었다. \"그 이름은 이제 안 써요. 호스머 에인절은 의붓아버지 윈디뱅크가 변장한 사람이었어요.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "메리가 윈디뱅크의 정체를 알게 된 배경을 인지함",
+   "summary": "메리는 이제 편지가 전부 타자였던 이유를 알게 되었다고 담담히 말하고, 하디는 식은 차를 그대로 둔다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_013",
+    "CHAR_011"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_011",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_011",
+     "field": "knows",
+     "assumes": "윈디뱅크가 호스머 에인절로 위장해 편지를 보냈고, 그래서 타자로 쓰여 위조가 가능했다는 사실",
+     "source_text": "이제는 왜 그랬는지 알겠어요"
+    },
+    {
+     "entity": "CHAR_013",
+     "field": "body_status",
+     "assumes": "마시는 것을 멈출 정도로 충격을 받은 상태",
+     "source_text": "하디 씨는 식은 차를 그대로 두었다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "이 대화는 호스머 에인절 = 윈디뱅크라는 사실이 밝혀진 직후의 연속 대화다",
+     "source_text": "이제는 왜 그랬는지 알겠어요"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_013",
+     "info": "메리가 이제 윈디뱅크의 정체를 알고 편지가 전부 타자였던 까닭도 이해했다는 점",
+     "via": "told",
+     "retained": true,
+     "source_text": "이제는 왜 그랬는지 알겠어요"
+    }
+   ],
+   "cause": "EVENT_6_1에서 호스머 에인절 = 윈디뱅크임이 밝혀짐",
+   "result": "메리가 편지 타자였던 이유까지 인지하게 되었음을 하디가 알게 됨",
+   "source_text": "\"이제는 왜 그랬는지 알겠어요.\" 메리는 담담했고, 하디 씨는 식은 차를 그대로 두었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-31T06:25:06Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 56.57
+ }
+}

@@ -1,0 +1,158 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "헬렌이 동쪽 복도의 방 배치를 설명함",
+   "summary": "헬렌은 동쪽 복도의 세 방이 헬렌·줄리아·로일럿 박사의 방이라고 순서대로 가리키며, 지금 로일럿 박사가 가운데 방에서 자고 있다고 덧붙였다.",
+   "location_id": "LOC_002",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "지금은 가운데 방에서 자고 있습니다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "body_status",
+     "assumes": "서쪽 동 수리로 인해 자기 방을 비우고 가운데 방에서 잠자리 잡을 수 있는 상태",
+     "source_text": "서쪽 동 수리 때문에요."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "동쪽 복도의 세 방 배치가 누구에게 배정되어 있는지",
+     "source_text": "첫 번째가 헬렌의 방이고, 두 번째가 줄리아의 방이며, 세 번째가 로일럿 박사의 방이었다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "현재 로일럿 박사가 가운데 방에 누워 있다는 사실",
+     "source_text": "지금은 가운데 방에서 자고 있습니다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "동쪽 복도의 세 방 배정 순서와 로일럿 박사가 현재 가운데 방에서 자고 있음",
+     "via": "told",
+     "retained": true,
+     "source_text": "첫 번째가 헬렌의 방이고, 두 번째가 줄리아의 방이며, 세 번째가 로일럿 박사의 방이었다. / 지금은 가운데 방에서 자고 있습니다."
+    }
+   ],
+   "cause": "홈즈의 도착과 사건 조사를 위한 안내",
+   "result": "홈즈는 동쪽 복도의 방 배치를 파악하고 로일럿 박사의 현재 위치를 알게 되었다.",
+   "source_text": "헬렌은 그 입구에 서서 안쪽을 향해 차례로 손을 들어 보였다. 첫 번째가 헬렌의 방이고, 두 번째가 줄리아의 방이며, 세 번째가 로일럿 박사의 방이었다. \"지금은 가운데 방에서 자고 있습니다.\" 그녀가 덧붙였다. \"서쪽 동 수리 때문에요.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "홈즈가 덧문의 쇠창살을 렌즈로 살핌",
+   "summary": "홈즈는 렌즈를 꺼내 폭이 넓은 구식 덧문의 쇠창살부터 살펴보았다. 헬렌은 그 덧문을 밤마다 잠근다고 말했다.",
+   "location_id": "LOC_002",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_015"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_015 (렌즈)",
+     "source_text": "홈즈는 렌즈를 꺼내"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "렌즈를 사용해 쇠창살 같은 미세한 흔적을 확대 관찰할 수 있음",
+     "source_text": "홈즈는 렌즈를 꺼내 덧문의 쇠창살부터 살펴보았다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "그 구식 덧문을 밤마다 잠근다는 사실",
+     "source_text": "밤마다 잠가 두는 것이라고 했다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "두 사건이 같은 동쪽 복도의 같은 시점에 연속적으로 일어나며, EVENT_6_1에서 확인된 박사의 위치가 EVENT_6_2 시점에서도 그대로 유지됨",
+     "source_text": "헬렌은 그 입구에 서서 안쪽을 향해 차례로 손을 들어 보였다. / 홈즈는 렌즈를 꺼내 덧문의 쇠창살부터 살펴보았다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "동쪽 복도에 설치된 폭 넓은 구식 덧문의 형태와 매일 밤 잠근다는 점",
+     "via": "told",
+     "retained": true,
+     "source_text": "폭이 넓은 구식 덧문이었고, 밤마다 잠가 두는 것이라고 했다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "덧문 쇠창살의 외관 관찰 결과",
+     "via": "direct",
+     "retained": true,
+     "source_text": "홈즈는 렌즈를 꺼내 덧문의 쇠창살부터 살펴보았다."
+    }
+   ],
+   "cause": "사건 단서 확보를 위한 현장 조사",
+   "result": "홈즈는 덧문의 물리적 특징과 야간 잠금 습관에 대한 정보를 수집했다.",
+   "source_text": "홈즈는 렌즈를 꺼내 덧문의 쇠창살부터 살펴보았다. 폭이 넓은 구식 덧문이었고, 밤마다 잠가 두는 것이라고 했다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-31T06:35:59Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 32.08
+ }
+}

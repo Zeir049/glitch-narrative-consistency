@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S16_1",
+      "order": 1,
+      "title": "슐라우, 알파의 현실 신상 언급",
+      "summary": "병실의 슐라우가 알파를 보고 물러나며 '목요일마다 강의도 없는 한가한 대학생'이라고 내뱉는다. 알파는 이 세계 누구에게도 말한 적 없는 현실 신상이 언급되어 충격을 받는다.",
+      "location_id": "LOC_003",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_006",
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_006",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_006",
+          "field": "knows",
+          "assumes": "알파가 목요일 공강인 대학생이라는 현실 세계 신상 정보",
+          "source_text": "목요일마다 강의도 없다면서. 한가한 대학생이, 왜 이런 짓까지 하는 건데."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우가 자신의 현실 신상(목요일 공강 대학생)을 알고 있음",
+          "via": "direct",
+          "source_text": "이 세계의 누구에게도 말한 적 없는, 모니터 이쪽의 이야기였다."
+        }
+      ],
+      "cause": "알파의 병실 방문",
+      "result": "슐라우가 이불을 뒤집어쓰고 대화 거부",
+      "source_text": "\"목요일마다 강의도 없다면서. 한가한 대학생이, 왜 이런 짓까지 하는 건데.\"",
+      "certainty": "explicit"
+    }
+  ]
+}

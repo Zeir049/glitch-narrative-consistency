@@ -1,0 +1,128 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "NEW:카림의_종이_메모",
+   "name": "카림의 종이 메모",
+   "description": "날짜와 숫자(171), 진동 수치(0.9)가 적힌 종이 한 장",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "종이 한 장이었다. 날짜와 숫자만 적혀 있었다. 171. 그 아래 한 줄을 더 적었다. 진동 0.9.",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "NEW:기지_시각_06시_40분",
+   "expression": "기지 시각 06시 40분",
+   "description": "카림이 S-2 문 앞에 선 시각",
+   "timeline": "main",
+   "source_text": "카림은 06시 40분에 S-2 문 앞에 섰다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "카림이 S-2 문 앞에 종이 메모를 두고 떠남",
+   "summary": "카림이 06시 40분에 S-2 문 앞에 '171, 진동 0.9'라고 적힌 종이 메모를 바닥에 두고 설비실로 돌아간다.",
+   "location_id": "LOC_018",
+   "time_id": "NEW:기지_시각_06시_40분",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "NEW:카림의_종이_메모"
+   ],
+   "state_changes": [
+    {
+     "entity": "NEW:카림의_종이_메모",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_018",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림은 종이를 문틈 아래로 밀어 넣지 않고 문 앞 바닥에 그대로 두었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_018",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림은 06시 40분에 S-2 문 앞에 섰다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_018",
+     "to": "LOC_006",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림은 설비실로 돌아갔다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "NEW:카림의_종이_메모 (작성 및 소지)",
+     "source_text": "종이 한 장이었다. 날짜와 숫자만 적혀 있었다. 171. 그 아래 한 줄을 더 적었다. 진동 0.9."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "진동 수치 0.9와 숫자 171의 의미",
+     "source_text": "종이 한 장이었다. 날짜와 숫자만 적혀 있었다. 171. 그 아래 한 줄을 더 적었다. 진동 0.9."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "서율이 직접 집을 것임을 예상함",
+     "source_text": "밀어 넣으면 어디로 갔는지 알 수 없었고, 바닥에 두면 서율이 직접 집었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "S-2 문 앞 바닥에 메모를 두면 서율이 직접 집는다",
+     "via": "inference",
+     "retained": true,
+     "source_text": "밀어 넣으면 어디로 갔는지 알 수 없었고, 바닥에 두면 서율이 직접 집었다."
+    }
+   ],
+   "cause": "진동 수치 0.9와 숫자 171을 서율에게 전달하기 위함",
+   "result": "메모가 S-2 문 앞 바닥에 놓임, 카림은 설비실로 이동",
+   "source_text": "카림은 06시 40분에 S-2 문 앞에 섰다. 종이 한 장이었다. 날짜와 숫자만 적혀 있었다. 171. 그 아래 한 줄을 더 적었다. 진동 0.9. 카림은 종이를 문틈 아래로 밀어 넣지 않고 문 앞 바닥에 그대로 두었다. 밀어 넣으면 어디로 갔는지 알 수 없었고, 바닥에 두면 서율이 직접 집었다. 카림은 설비실로 돌아갔다. 복도 끝 주방은 아직 어두웠고, 여섯 시 사십 분은 이 기지에서 아무 의미도 없는 시각이었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:45:12Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 44.59
+ }
+}

@@ -1,0 +1,987 @@
+{
+ "description": "q3_domec4(돔 C-4) 추출용 엔티티 레지스트리 — 시작 시드 (추출 전, setting_book.md 기반 사전 등재). 추출이 진행되며 NEW: 라벨이 정식 ID로 추가된다. 모든 name/alias/expression 문자열은 sources/ 원문(정정본)에 실재함을 프로그램으로 확인했다 (verify_registry_q3.py). 시간축은 단일 연속 타임라인(2071년 3월 24일~5월 12일)이므로 timeline은 전부 \"main\". note는 원문 최초 등장 시점의 상태만 적는다.",
+ "schema_version": 2,
+ "work_id": "q3_domec4",
+ "last_episode": 0,
+ "seed_policy_notes": [
+  "금지 슬롯 회피(§8-1 A): 발전기실 문의 잠금 여부(카림이 잠근다 / 잠기지 않는다)를 어느 쪽으로도 note에 적지 않는다. 발전기실(LOC_007)·설비실(LOC_006)·카림(CHAR_002)·도현(CHAR_003)·마르타(CHAR_004)·마스터 카드(OBJ_006)·카드 기록 관련 note는 발전기실 문의 시건 상태를 전제하거나 언급하지 않는다. 설비실 문 카드 기록이 발전기실 안쪽 출입을 기록하지 않는다는 규칙(R12)만 적었다.",
+  "원문 정정 값 회피(§8-2): G2 정격(kW), 겨울 경과 일수('N일째'·'N일 됐어요'·남은 일수), 하루 196리터의 산출식(41,000÷N), 관측 모듈 실내 온도, 청문까지 남은 일수 — 이 다섯 값은 어떤 note에도 고정 사실로 적지 않는다. G2(OBJ_002) note는 '예비·구형'까지만, 관측 모듈(LOC_003) note는 광학부 한계 온도(영하 20도)만, 시점 note는 날짜와 사건만 적는다.",
+  "초기 상태만 등재(§7 설정 변경 A~H 미반영): 거처는 3월 24일 기준(R-1~R-5), 격벽 열쇠는 카림 보관·설비실 열쇠판, 규정 7조는 원문(사적 통신 1인 5분 이내), 관측 모듈은 전원 상태를 고정하지 않음, 회의 장소는 2층 회의실, 연료 탱크 전환·자문 표결·서버 가동 시간 변경도 적지 않는다. 이후 변경은 추출 단계에서 사건으로 잡는다.",
+  "alias는 first_episode 원문에 실재하는 표기만 등재한다. '기지장'·'부기지장'은 작중 유일 지시 대상이라 alias로 넣었고, '기지장님'·'선생님'·'가온이' 같은 호칭·애칭 변형은 넣지 않았다. 창고·거실 방은 원문 표기(R-1호, S-1)를 name으로 쓰고 '창고 S-2호' 같은 결합형은 alias 없이 note로 처리했다.",
+  "원문에 없는 계획서 값(서율의 나이, 연료 잔량 기준일 3월 25일, 통로 온도 '영하 30도 안팎')은 등재하지 않았다(setting_book 머리말). 본부 운영팀·안전관은 이름 없는 기관·직책이라 인물로 넣지 않고 본부(LOC_021) note에만 적었다.",
+  "화자 표기 결함(1화 '규칙 위반 아니에요')·도현의 어림 화법('33분')은 금지 슬롯이 아니지만 note의 근거로 쓰지 않았다."
+ ],
+ "characters": [
+  {
+   "id": "CHAR_001",
+   "name": "한서율",
+   "aliases": [
+    "서율",
+    "기지장"
+   ],
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "돔 C-4 기지장. 전직 빙하학자(빙하 코어 연구). 2층 끝 R-1호 거주, 벽에 빙하 코어 단면 사진 세 장. 규정집을 봄. 통신 콘솔 조작법을 모름. 카림과 2년째 같이 일함"
+  },
+  {
+   "id": "CHAR_002",
+   "name": "카림 은다예",
+   "aliases": [
+    "카림"
+   ],
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "34세, 세네갈 출신 설비 엔지니어. 전력·난방·차량 등 물리 설비 전부 담당. 두 번째 월동, 말수 적음. 1층 R-5호(설비실 바로 옆) 거주. 설비 일지를 종이 수첩에 씀"
+  },
+  {
+   "id": "CHAR_003",
+   "name": "윤도현",
+   "aliases": [
+    "도현"
+   ],
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "29세, 통신·데이터 담당. 첫 월동. 위성 링크·통신 콘솔을 다룰 수 있는 유일한 사람. 2층 R-3호 거주. 애인 서민채(부산). 가온과 또래로 여름 시즌부터 붙어 다님"
+  },
+  {
+   "id": "CHAR_004",
+   "name": "마르타 레인",
+   "aliases": [
+    "마르타",
+    "부기지장",
+    "마르타 선생님"
+   ],
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "52세 의사(응급의학) 겸 부기지장. 남극 월동 네 번째. 2068년 해안 기지에서 서율의 상급자였음. 2층 R-2호(서율 옆방) 거주. 손으로 쓰는 안전 기록부를 규정 4조에 따라 별도 작성"
+  },
+  {
+   "id": "CHAR_005",
+   "name": "이가온",
+   "aliases": [
+    "가온"
+   ],
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "26세 대기관측 연구원, 첫 월동. 프로젝트 AO-3(에어로졸·오존 3년 연속 관측, 2069·2070년 데이터 보유, 올겨울이 마지막 해). 2층 R-4호 거주. 사적 통신을 쓰지 않음"
+  },
+  {
+   "id": "CHAR_006",
+   "name": "서민채",
+   "aliases": [
+    "민채"
+   ],
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "도현의 애인. 부산에서 물리치료사로 일함. 기지 밖 인물, 통신 창 메시지 상대"
+  },
+  {
+   "id": "CHAR_007",
+   "name": "민채 어머니",
+   "entity_type": "person",
+   "first_episode": 3,
+   "note": "서민채의 어머니. 4월 4일 입원(도현 진술). 기지 밖 인물"
+  }
+ ],
+ "locations": [
+  {
+   "id": "LOC_001",
+   "name": "돔 C-4",
+   "first_episode": 1,
+   "note": "남극 내륙 기지. 2071년 월동 인원 다섯, 마지막 유인 월동. 통신 창은 하루 22:00~22:40 40분뿐. 주 모듈·관측 모듈·지하 통로·연료 저장고로 구성"
+  },
+  {
+   "id": "LOC_002",
+   "name": "주 모듈",
+   "first_episode": 1,
+   "note": "철제 기둥 여덟 개 위 2층 상자형, 바닥이 빙면에서 4미터. 활주로에서 300미터. 1층: 설비실(안쪽 발전기실)·식당·의무실·창고·R-5호·복도 끝 관측창. 2층: R-1~R-4호·통신실·회의실. 1층 출입구는 이중문"
+  },
+  {
+   "id": "LOC_003",
+   "name": "관측 모듈",
+   "first_episode": 1,
+   "note": "주 모듈에서 60미터 떨어진 단층 건물. 지하 통로로만 연결. 분광계(광학부·본체)와 히터가 있음. 분광계 광학부는 영하 20도 밑으로 내려가면 안 됨"
+  },
+  {
+   "id": "LOC_004",
+   "name": "지하 통로",
+   "first_episode": 1,
+   "note": "빙상을 파서 만든 주 모듈–관측 모듈 연결 통로. 입구는 설비실 안쪽, 철제 사다리 4미터 하강. 길이 60미터, 비상등 10미터 간격. 규정상 '기지 안'"
+  },
+  {
+   "id": "LOC_005",
+   "name": "격벽",
+   "first_episode": 1,
+   "note": "지하 통로 30미터 지점의 강철 문, 손잡이 옆 자물쇠. 평시 열려 있고 정전이면 잠그는 것이 규정. 열쇠는 한 개(격벽 열쇠 OBJ_007)"
+  },
+  {
+   "id": "LOC_006",
+   "name": "설비실",
+   "first_episode": 1,
+   "note": "주 모듈 1층, R-5호 옆. 안쪽에 발전기실과 지하 통로 입구. 벽에 열쇠판, 안쪽 벽에 통신 서버 UPS. 문에 카드 출입 기록이 남음(기록은 도현 서버)"
+  },
+  {
+   "id": "LOC_007",
+   "name": "발전기실",
+   "first_episode": 1,
+   "note": "설비실 안쪽에 붙은 방. 주 발전기 G1·예비 발전기 G2와 분전반이 있음. 카메라 없음, 발전기실 안쪽 출입은 카드 기록에 남지 않음"
+  },
+  {
+   "id": "LOC_008",
+   "name": "통신실",
+   "first_episode": 1,
+   "note": "주 모듈 2층 동쪽 끝. 위성 콘솔·통신 서버. 콘솔은 도현만 다룸. 22시 통신 창 때 사용"
+  },
+  {
+   "id": "LOC_009",
+   "name": "회의실",
+   "first_episode": 1,
+   "note": "주 모듈 2층, 라운지 겸용(소파·탁구대·긴 탁자·벽걸이 화면). 창 없음"
+  },
+  {
+   "id": "LOC_010",
+   "name": "의무실",
+   "first_episode": 1,
+   "note": "주 모듈 1층. 자체 배터리 조명·약품 냉장고. 안쪽에 커튼으로 나뉜 병상 칸. 심리 점검 장소"
+  },
+  {
+   "id": "LOC_011",
+   "name": "식당",
+   "first_episode": 1,
+   "note": "주 모듈 1층. 식탁, 벽 게시판"
+  },
+  {
+   "id": "LOC_012",
+   "name": "R-1호",
+   "first_episode": 1,
+   "note": "주 모듈 2층 끝, 서율의 방. 침대·책상·빙하 코어 사진. 창 없음"
+  },
+  {
+   "id": "LOC_013",
+   "name": "R-2호",
+   "first_episode": 1,
+   "note": "주 모듈 2층, 마르타의 방. 서율의 옆방"
+  },
+  {
+   "id": "LOC_014",
+   "name": "R-3호",
+   "first_episode": 1,
+   "note": "주 모듈 2층, 도현의 방"
+  },
+  {
+   "id": "LOC_015",
+   "name": "R-4호",
+   "first_episode": 1,
+   "note": "주 모듈 2층, 가온의 방"
+  },
+  {
+   "id": "LOC_016",
+   "name": "R-5호",
+   "first_episode": 1,
+   "note": "주 모듈 1층, 설비실 바로 옆. 카림의 방"
+  },
+  {
+   "id": "LOC_017",
+   "name": "S-1",
+   "first_episode": 2,
+   "note": "주 모듈 1층 창고. 식자재 창고(통조림)"
+  },
+  {
+   "id": "LOC_018",
+   "name": "S-2",
+   "first_episode": 2,
+   "note": "주 모듈 1층 창고. 예비 부품 창고 — 벽 선반에 필터·벨트·배관 이음쇠·밸브·케이블 상자. 금고 있음"
+  },
+  {
+   "id": "LOC_019",
+   "name": "S-3",
+   "first_episode": 2,
+   "note": "주 모듈 1층 창고. 의류·침구 창고. 가장 작고 따뜻함(발전기실 폐열 배관이 벽 안쪽 통과)"
+  },
+  {
+   "id": "LOC_020",
+   "name": "연료 저장고",
+   "first_episode": 5,
+   "note": "주 모듈 밖 40미터. 탱크 T-1·T-2(각 높이 3미터 원통), 사이에 분기 밸브함, 보온 이송관이 주 모듈로 이어짐"
+  },
+  {
+   "id": "LOC_021",
+   "name": "본부",
+   "first_episode": 1,
+   "note": "기지에서 1,100킬로미터 밖. 운영팀 명의로 문서를 보냄. 무인 전환 계획 승인 주체"
+  }
+ ],
+ "objects": [
+  {
+   "id": "OBJ_001",
+   "name": "G1",
+   "first_episode": 1,
+   "note": "주 발전기. 정격 60킬로와트 디젤, 7년 전 설치. 발전기실 소재"
+  },
+  {
+   "id": "OBJ_002",
+   "name": "G2",
+   "first_episode": 1,
+   "note": "예비 발전기. G1보다 작고 낡은 구형. 서율이 처음 왔을 때부터 '언젠가 교체할 것'으로 불림"
+  },
+  {
+   "id": "OBJ_003",
+   "name": "황동 밸브",
+   "first_episode": 2,
+   "note": "G1 냉각 배관 아래의 냉각수 배출 밸브. 손잡이로 돌리는 황동 밸브, 잠금 고리가 있어 진동으로 풀리지 않음. 카림 설비 일지에 3월 20일 닫힘 확인 기록. S-2 선반에 예비품 상자"
+  },
+  {
+   "id": "OBJ_004",
+   "name": "T-1",
+   "first_episode": 5,
+   "note": "연료 저장고의 탱크. 높이 3미터 원통. 옆면에 유리 수위계, 분기함으로 들어가는 짧은 배관의 이음쇠(잠금 너트)"
+  },
+  {
+   "id": "OBJ_005",
+   "name": "T-2",
+   "first_episode": 5,
+   "note": "연료 저장고의 두 번째 탱크. 높이 3미터 원통. T-1과 같은 이송관을 씀"
+  },
+  {
+   "id": "OBJ_006",
+   "name": "마스터 카드",
+   "first_episode": 4,
+   "note": "기지장의 출입 카드. 설비실 문 카드 기록에 '한서율. 마스터 카드'로 남음"
+  },
+  {
+   "id": "OBJ_007",
+   "name": "격벽 열쇠",
+   "first_episode": 4,
+   "note": "지하 통로 격벽 자물쇠 열쇠. 한 개뿐. 카림이 설비실 열쇠판에 보관(규정 3조: 격벽은 설비 담당 관리)"
+  },
+  {
+   "id": "OBJ_008",
+   "name": "열쇠판",
+   "first_episode": 4,
+   "note": "설비실 벽에 걸린 열쇠 보관함. 카림만 열 수 있음. 열쇠판 열쇠는 카림 방 책상 위(방은 안 잠금)"
+  },
+  {
+   "id": "OBJ_009",
+   "name": "금고",
+   "first_episode": 4,
+   "note": "창고 S-2 안의 금고"
+  },
+  {
+   "id": "OBJ_010",
+   "name": "설상차",
+   "first_episode": 1,
+   "note": "기지 차량. 3월 24일 카림이 배터리 단자를 뽑아 둠(봄까지 사용 안 함)"
+  },
+  {
+   "id": "OBJ_011",
+   "name": "태블릿",
+   "first_episode": 1,
+   "note": "기지장이 기지 일지를 쓰는 기기. 카림은 태블릿이 아니라 종이에 씀"
+  },
+  {
+   "id": "OBJ_012",
+   "name": "설비 일지",
+   "first_episode": 1,
+   "note": "카림의 종이 수첩. 연료·부하 계산, 밸브 점검 기록. '전기가 나가도 읽을 수 있으니까'"
+  },
+  {
+   "id": "OBJ_013",
+   "name": "안전 기록부",
+   "first_episode": 1,
+   "note": "마르타의 종이 수첩. 규정 4조에 따른 부기지장 독립 기록, 본부에 독립 전송 가능"
+  },
+  {
+   "id": "OBJ_014",
+   "name": "분광계",
+   "first_episode": 1,
+   "note": "관측 모듈의 AO-3 관측 장비. 광학부와 본체. 광학부는 영하 20도 밑으로 내려가면 안 되고, 얼면 봄에 재정렬 필요(기지에서 불가)"
+  },
+  {
+   "id": "OBJ_015",
+   "name": "UPS",
+   "first_episode": 1,
+   "note": "통신 서버 무정전 전원. 보유 시간 45분. 설비실 안쪽 벽, 도현 관할"
+  },
+  {
+   "id": "OBJ_016",
+   "name": "점퍼 케이블",
+   "first_episode": 3,
+   "note": "S-2 예비 부품 선반의 배선용 점퍼 케이블 상자(카림 예비품). 정수량 미상"
+  },
+  {
+   "id": "OBJ_017",
+   "new_label": "NEW:종이_수첩",
+   "first_episode": 1,
+   "note": "auto (episode_01_c03.txt)",
+   "name": "종이 수첩"
+  },
+  {
+   "id": "OBJ_018",
+   "new_label": "NEW:예비_부품_선반",
+   "first_episode": 2,
+   "note": "auto (episode_02_c03.txt)",
+   "name": "예비 부품 선반"
+  },
+  {
+   "id": "OBJ_019",
+   "new_label": "NEW:카림_수첩",
+   "first_episode": 3,
+   "note": "auto (episode_03_c01.txt)",
+   "name": "카림의 수첩"
+  },
+  {
+   "id": "OBJ_020",
+   "new_label": "NEW:카림_쪽지",
+   "first_episode": 3,
+   "note": "auto (episode_03_c01.txt)",
+   "name": "카림의 쪽지"
+  },
+  {
+   "id": "OBJ_021",
+   "new_label": "NEW:본부_운영팀_문서",
+   "first_episode": 3,
+   "note": "auto (episode_03_c01.txt)",
+   "name": "본부 운영팀 명의 문서"
+  },
+  {
+   "id": "OBJ_022",
+   "new_label": "NEW:서율_메모",
+   "first_episode": 3,
+   "note": "auto (episode_03_c01.txt)",
+   "name": "서율의 손글씨 메모"
+  },
+  {
+   "id": "OBJ_023",
+   "new_label": "NEW:규정_7조_임시_개정문",
+   "first_episode": 3,
+   "note": "auto (episode_03_c02.txt)",
+   "name": "규정 7조 임시 개정문"
+  },
+  {
+   "id": "OBJ_024",
+   "new_label": "NEW:마르타_이의서_사본",
+   "first_episode": 3,
+   "note": "auto (episode_03_c02.txt)",
+   "name": "마르타 이의서 사본"
+  },
+  {
+   "id": "OBJ_025",
+   "new_label": "NEW:배선용_점퍼_케이블_상자",
+   "first_episode": 3,
+   "note": "auto (episode_03_c03.txt)",
+   "name": "배선용 점퍼 케이블 상자"
+  },
+  {
+   "id": "OBJ_026",
+   "new_label": "NEW:점퍼_케이블_두_개",
+   "first_episode": 4,
+   "note": "auto (episode_04_c01.txt)",
+   "name": "점퍼 케이블 두 개"
+  },
+  {
+   "id": "OBJ_027",
+   "new_label": "NEW:카림의_노트북",
+   "first_episode": 4,
+   "note": "auto (episode_04_c01.txt)",
+   "name": "카림의 노트북"
+  },
+  {
+   "id": "OBJ_028",
+   "new_label": "NEW:가온의_노트북",
+   "first_episode": 4,
+   "note": "auto (episode_04_c01.txt)",
+   "name": "가온의 노트북"
+  },
+  {
+   "id": "OBJ_029",
+   "new_label": "NEW:게시판_종이:_격벽_관리_임시_변경_(2071년_4월_15일부)",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "name": "게시판 종이: 격벽 관리 임시 변경 (2071년 4월 15일부)"
+  },
+  {
+   "id": "OBJ_030",
+   "new_label": "NEW:마르타의_두_번째_이의서",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "name": "마르타의 두 번째 이의서"
+  },
+  {
+   "id": "OBJ_031",
+   "new_label": "NEW:자문_표결_문서",
+   "first_episode": 5,
+   "note": "auto (episode_05_c01.txt)",
+   "name": "자문 표결 도입 문서"
+  },
+  {
+   "id": "OBJ_032",
+   "new_label": "NEW:청문_통지_문서",
+   "first_episode": 5,
+   "note": "auto (episode_05_c03.txt)",
+   "name": "본부 청문 통지 문서"
+  }
+ ],
+ "times": [
+  {
+   "id": "TIME_001",
+   "expression": "2071년 3월 24일",
+   "timeline": "main",
+   "first_episode": 1,
+   "note": "13시 40분 마지막 보급기 출발. 월동 5인 시작"
+  },
+  {
+   "id": "TIME_002",
+   "expression": "3월 20일",
+   "timeline": "main",
+   "first_episode": 2,
+   "note": "카림의 여름 시즌 마지막 정비(냉각수 배출 밸브·이음쇠 확인)"
+  },
+  {
+   "id": "TIME_003",
+   "expression": "3월 25일",
+   "timeline": "main",
+   "first_episode": 1,
+   "note": "새벽 02시 12분 G1 정지, 아침 8시 회의에서 전력 등급 2 선언"
+  },
+  {
+   "id": "TIME_004",
+   "expression": "3월 27일",
+   "timeline": "main",
+   "first_episode": 2,
+   "note": "2층 난방 차단·1층 이사 실행일"
+  },
+  {
+   "id": "TIME_005",
+   "expression": "3월 28일",
+   "timeline": "main",
+   "first_episode": 2,
+   "note": "관측 모듈 광학부 히터 재개"
+  },
+  {
+   "id": "TIME_006",
+   "expression": "3월 31일",
+   "timeline": "main",
+   "first_episode": 4,
+   "note": "관측 모듈 노트북 관측 로그의 시작 시각(23시 10분)"
+  },
+  {
+   "id": "TIME_007",
+   "expression": "4월 8일",
+   "timeline": "main",
+   "first_episode": 3,
+   "note": "규정 7조 임시 개정 게시"
+  },
+  {
+   "id": "TIME_008",
+   "expression": "4월 15일",
+   "timeline": "main",
+   "first_episode": 4,
+   "note": "07시 통로 답사, 정오 관측 모듈 히터 회로 차단, 오후 격벽 관리 임시 변경"
+  },
+  {
+   "id": "TIME_009",
+   "expression": "4월 20일",
+   "timeline": "main",
+   "first_episode": 4,
+   "note": "설비실 카드 기록 열람(마르타 입회)"
+  },
+  {
+   "id": "TIME_010",
+   "expression": "4월 28일",
+   "timeline": "main",
+   "first_episode": 4,
+   "note": "12시 40분 마지막 일몰"
+  },
+  {
+   "id": "TIME_011",
+   "expression": "4월 29일",
+   "timeline": "main",
+   "first_episode": 5,
+   "note": "극야 진입. 자문 표결 도입 게시"
+  },
+  {
+   "id": "TIME_012",
+   "expression": "5월 3일",
+   "timeline": "main",
+   "first_episode": 5,
+   "note": "서율·카림 연료 저장고 외출(2인 1조)"
+  },
+  {
+   "id": "TIME_013",
+   "expression": "5월 12일",
+   "timeline": "main",
+   "first_episode": 5,
+   "note": "원고 종료 시점"
+  },
+  {
+   "id": "TIME_014",
+   "expression": "5월 20일",
+   "timeline": "main",
+   "first_episode": 5,
+   "note": "본부 화상 청문 예정일(22:00 창)"
+  },
+  {
+   "id": "TIME_015",
+   "expression": "10월 20일",
+   "timeline": "main",
+   "first_episode": 1,
+   "note": "다음 비행기·인수팀 도착 예정일. 무인 전환 완료 목표"
+  },
+  {
+   "id": "TIME_016",
+   "new_label": "NEW:기지_시각_13시_40분",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "expression": "기지 시각 13시 40분",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_017",
+   "new_label": "NEW:기지_시각_15시",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "expression": "기지 시각 15시",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_018",
+   "new_label": "NEW:이번_주_금요일",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "expression": "이번 주 금요일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_019",
+   "new_label": "NEW:7월_1일",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "expression": "7월 1일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_020",
+   "new_label": "NEW:9월_1일",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "expression": "9월 1일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_021",
+   "new_label": "NEW:9월_30일",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "expression": "9월 30일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_022",
+   "new_label": "NEW:22시_통신_창",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "expression": "22시 통신 창",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_023",
+   "new_label": "NEW:기지_시각_02시_12분",
+   "first_episode": 1,
+   "note": "auto (episode_01_c02.txt)",
+   "expression": "기지 시각 02시 12분",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_024",
+   "new_label": "NEW:기지_시각_02시_16분",
+   "first_episode": 1,
+   "note": "auto (episode_01_c02.txt)",
+   "expression": "기지 시각 02시 16분",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_025",
+   "new_label": "NEW:기지_시각_02시_56분",
+   "first_episode": 1,
+   "note": "auto (episode_01_c03.txt)",
+   "expression": "기지 시각 02시 56분",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_026",
+   "new_label": "NEW:기지_시각_09시",
+   "first_episode": 1,
+   "note": "auto (episode_01_c03.txt)",
+   "expression": "기지 시각 09시",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_027",
+   "new_label": "NEW:기지_시각_정오",
+   "first_episode": 1,
+   "note": "auto (episode_01_c03.txt)",
+   "expression": "기지 시각 정오",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_028",
+   "new_label": "NEW:기지시각_08시41분",
+   "first_episode": 1,
+   "note": "auto (episode_01_c04.txt)",
+   "expression": "기지 시각 08시 41분",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_029",
+   "new_label": "NEW:기지시각_22시31분",
+   "first_episode": 1,
+   "note": "auto (episode_01_c04.txt)",
+   "expression": "기지 시각 22시 31분",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_030",
+   "new_label": "NEW:3월 26일 아침",
+   "first_episode": 2,
+   "note": "auto (episode_02_c01.txt)",
+   "expression": "3월 26일 아침",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_031",
+   "new_label": "NEW:3월 26일 10시",
+   "first_episode": 2,
+   "note": "auto (episode_02_c01.txt)",
+   "expression": "3월 26일 10시",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_032",
+   "new_label": "NEW:3월 27일 정오",
+   "first_episode": 2,
+   "note": "auto (episode_02_c01.txt)",
+   "expression": "3월 27일 정오",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_033",
+   "new_label": "NEW:9월 27일",
+   "first_episode": 2,
+   "note": "auto (episode_02_c01.txt)",
+   "expression": "9월 27일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_034",
+   "new_label": "NEW:3월_28일_정오",
+   "first_episode": 2,
+   "note": "auto (episode_02_c02.txt)",
+   "expression": "3월 28일 정오",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_035",
+   "new_label": "NEW:3월_29일",
+   "first_episode": 2,
+   "note": "auto (episode_02_c03.txt)",
+   "expression": "3월 29일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_036",
+   "new_label": "NEW:3월_30일_22시",
+   "first_episode": 2,
+   "note": "auto (episode_02_c03.txt)",
+   "expression": "3월 30일 22시",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_037",
+   "new_label": "NEW:4월_1일",
+   "first_episode": 2,
+   "note": "auto (episode_02_c03.txt)",
+   "expression": "4월 1일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_038",
+   "new_label": "NEW:4월_2일_밤",
+   "first_episode": 2,
+   "note": "auto (episode_02_c03.txt)",
+   "expression": "4월 2일 밤",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_039",
+   "new_label": "NEW:4월_3일_아침",
+   "first_episode": 3,
+   "note": "auto (episode_03_c01.txt)",
+   "expression": "4월 3일 아침",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_040",
+   "new_label": "NEW:4월_4일",
+   "first_episode": 3,
+   "note": "auto (episode_03_c01.txt)",
+   "expression": "4월 4일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_041",
+   "new_label": "NEW:4월_5일",
+   "first_episode": 3,
+   "note": "auto (episode_03_c01.txt)",
+   "expression": "4월 5일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_042",
+   "new_label": "NEW:4월_6일",
+   "first_episode": 3,
+   "note": "auto (episode_03_c01.txt)",
+   "expression": "4월 6일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_043",
+   "new_label": "NEW:4월_8일_08시",
+   "first_episode": 3,
+   "note": "auto (episode_03_c01.txt)",
+   "expression": "4월 8일 08시",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_044",
+   "new_label": "NEW:4월_8일_밤",
+   "first_episode": 3,
+   "note": "auto (episode_03_c02.txt)",
+   "expression": "4월 8일 밤",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_045",
+   "new_label": "NEW:4월_9일_22시",
+   "first_episode": 3,
+   "note": "auto (episode_03_c02.txt)",
+   "expression": "4월 9일 22시",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_046",
+   "new_label": "NEW:4월_10일",
+   "first_episode": 3,
+   "note": "auto (episode_03_c03.txt)",
+   "expression": "4월 10일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_047",
+   "new_label": "NEW:4월_12일",
+   "first_episode": 3,
+   "note": "auto (episode_03_c03.txt)",
+   "expression": "4월 12일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_048",
+   "new_label": "NEW:4월_14일",
+   "first_episode": 3,
+   "note": "auto (episode_03_c03.txt)",
+   "expression": "4월 14일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_049",
+   "new_label": "NEW:4월_26일",
+   "first_episode": 3,
+   "note": "auto (episode_03_c03.txt)",
+   "expression": "4월 26일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_050",
+   "new_label": "NEW:3월_24일_이후",
+   "first_episode": 3,
+   "note": "auto (episode_03_c03.txt)",
+   "expression": "3월 24일 이후",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_051",
+   "new_label": "NEW:새벽_세_시",
+   "first_episode": 3,
+   "note": "auto (episode_03_c03.txt)",
+   "expression": "새벽 세 시",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_052",
+   "new_label": "NEW:내일_아침",
+   "first_episode": 3,
+   "note": "auto (episode_03_c03.txt)",
+   "expression": "내일 아침",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_053",
+   "new_label": "NEW:3월_31일_23시_10분",
+   "first_episode": 4,
+   "note": "auto (episode_04_c01.txt)",
+   "expression": "3월 31일 23시 10분",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_054",
+   "new_label": "NEW:4월_14일_밤",
+   "first_episode": 4,
+   "note": "auto (episode_04_c01.txt)",
+   "expression": "4월 14일 밤",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_055",
+   "new_label": "NEW:3월_26일_회의",
+   "first_episode": 4,
+   "note": "auto (episode_04_c01.txt)",
+   "expression": "3월 26일 회의",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_056",
+   "new_label": "NEW:4월_15일_정오",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "expression": "4월 15일 정오",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_057",
+   "new_label": "NEW:4월_15일_오후",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "expression": "4월 15일 오후",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_058",
+   "new_label": "NEW:4월_15일_저녁",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "expression": "4월 15일 저녁",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_059",
+   "new_label": "NEW:3월_18일~3월_25일",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "expression": "3월 18일~3월 25일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_060",
+   "new_label": "NEW:3월_21일_14시_05분",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "expression": "3월 21일 14시 05분",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_061",
+   "new_label": "NEW:3월_22일_10시_40분",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "expression": "3월 22일 10시 40분",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_062",
+   "new_label": "NEW:3월_23일_15시_20분",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "expression": "3월 23일 15시 20분",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_063",
+   "new_label": "NEW:3월_24일_01시_32분",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "expression": "3월 24일 01시 32분",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_064",
+   "new_label": "NEW:3월_24일_02시_14분",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "expression": "3월 24일 02시 14분",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_065",
+   "new_label": "NEW:4월_26일_세_번째_심리_점검",
+   "first_episode": 4,
+   "note": "auto (episode_04_c03.txt)",
+   "expression": "4월 26일. 세 번째 심리 점검",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_066",
+   "new_label": "NEW:4월_28일_12시_40분_해_마지막_뜸",
+   "first_episode": 4,
+   "note": "auto (episode_04_c03.txt)",
+   "expression": "4월 28일 12시 40분, 해가 지평선 위로 마지막으로 떠올랐다. 스무 분 동안.",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_067",
+   "new_label": "NEW:그날_밤_카림_쪽지",
+   "first_episode": 4,
+   "note": "auto (episode_04_c03.txt)",
+   "expression": "4월 28일 밤 (카림의 쪽지 시각)",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_068",
+   "new_label": "NEW:5월_8일_22시",
+   "first_episode": 5,
+   "note": "auto (episode_05_c03.txt)",
+   "expression": "5월 8일 22시",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_069",
+   "new_label": "NEW:5월_10일",
+   "first_episode": 5,
+   "note": "auto (episode_05_c03.txt)",
+   "expression": "5월 10일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_070",
+   "new_label": "NEW:5월_20일_22:00",
+   "first_episode": 5,
+   "note": "auto (episode_05_c03.txt)",
+   "expression": "5월 20일 22:00",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_071",
+   "new_label": "NEW:5월_12일_밤",
+   "first_episode": 5,
+   "note": "auto (episode_05_c03.txt)",
+   "expression": "5월 12일 밤",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_072",
+   "new_label": "NEW:5월_12일_21시",
+   "first_episode": 5,
+   "note": "auto (episode_05_c03.txt)",
+   "expression": "5월 12일 21시",
+   "timeline": "main"
+  }
+ ]
+}

@@ -1,0 +1,165 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "장부 확인 및 계약금 계산",
+   "summary": "순덕이 장부 뒷장을 확인해 정미의 차용금과 정호의 이자 대납 내역을 보고 계약금 115만 원을 계산한다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:십이월_이십일일_오전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_002"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "정미 차용금 20만 원이 55만 원으로 증액됨, 정호 이자 50만 원 대납됨, 계약금 총 115만 원 필요",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "거기에 두 줄이 있었다. 정미 이십만 원 차용이라고 쓴 줄은 이십에 두 줄이 그어져 있고 옆에 오십오라고 적혀 있었다. 그 밑에 정호 이자 오십만 원 대신 냄이라고 적힌 줄이 있었다. 계약금은 백십오였다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_002 (장부)",
+     "source_text": "순덕은 장부를 맨 뒷장까지 넘겼다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "돋보기 착용 중",
+     "source_text": "돋보기를 썼다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "장부 내용 해독 및 계산 가능",
+     "source_text": "순덕은 오십오와 오십을 한 번씩 짚어 보고 장부를 덮었다. 계약금은 백십오였다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "정미 차용금 20만 원이 55만 원으로 증액됨, 정호 이자 50만 원 대납됨, 계약금 총 115만 원 필요",
+     "via": "direct",
+     "retained": true,
+     "source_text": "거기에 두 줄이 있었다. 정미 이십만 원 차용이라고 쓴 줄은 이십에 두 줄이 그어져 있고 옆에 오십오라고 적혀 있었다. 그 밑에 정호 이자 오십만 원 대신 냄이라고 적힌 줄이 있었다. 계약금은 백십오였다."
+    }
+   ],
+   "cause": "스무아흐렛날까지 계약금 115만 원을 마련해야 하는 상황",
+   "result": "장부 확인 후 요금통의 동전을 세기 시작함",
+   "source_text": "순덕은 장부를 맨 뒷장까지 넘겼다. 돋보기를 썼다. 거기에 두 줄이 있었다. 정미 이십만 원 차용이라고 쓴 줄은 이십에 두 줄이 그어져 있고 옆에 오십오라고 적혀 있었다. 그 밑에 정호 이자 오십만 원 대신 냄이라고 적힌 줄이 있었다. 순덕은 오십오와 오십을 한 번씩 짚어 보고 장부를 덮었다. 계약금은 백십오였다. 스무아흐렛날까지 그 숫자가 맞아야 했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "돋보기 수납 및 요금통 동전 계수",
+   "summary": "순덕이 돋보기를 카운터 옆 서랍에 넣고 요금통을 열어 동전을 센다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:십이월_이십일일_오전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_006"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "from": "돋보기 착용 중",
+     "to": "돋보기 미착용",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "돋보기를 벗어 서랍에 넣었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "OBJ_006 (요금통의 동전)",
+     "to": "OBJ_006 (요금통의 동전, 계수 중)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "요금통을 열어 동전을 셌다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_006 (요금통)",
+     "source_text": "요금통을 열어 동전을 셌다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "assumes": "LOC_002 (카운터 의자)",
+     "source_text": "순덕은 카운터 의자에 앉은 채로"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "같은 장소(카운터)에서 연속된 행동이며 시간 간격이 거의 없음",
+     "source_text": "돋보기를 벗어 서랍에 넣었다. 요금통이 아니라 그 옆 서랍이었다. 순덕은 카운터 의자에 앉은 채로 한참 그 서랍을 보고 있었다. 그러고는 요금통을 열어 동전을 셌다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "요금통에 든 동전 액수 (구체적 금액은 원문 미명시)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "요금통을 열어 동전을 셌다."
+    }
+   ],
+   "cause": "계약금 115만 원 마련을 위한 현금 확인",
+   "result": "동전 계수 완료 (결과는 다음 장면에서 드러날 수 있음)",
+   "source_text": "돋보기를 벗어 서랍에 넣었다. 요금통이 아니라 그 옆 서랍이었다. 순덕은 카운터 의자에 앉은 채로 한참 그 서랍을 보고 있었다. 그러고는 요금통을 열어 동전을 셌다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-27T04:53:13Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 18.04
+ }
+}

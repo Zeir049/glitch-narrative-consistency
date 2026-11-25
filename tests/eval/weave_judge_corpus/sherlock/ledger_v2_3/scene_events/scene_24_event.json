@@ -1,0 +1,133 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "세인트클레어 부인이 아이들을 재우고 응접실로 내려옴",
+   "summary": "세인트클레어 부인은 아이들을 재운 뒤 응접실로 내려와 벽난로 앞에 서서 손을 비볐다. 남편이 시티에 볼일이 있다는 것을 결혼 전부터 알고 있었고, 여러 회사에 돈을 넣어 두었다는 말을 의심한 적 없다고 회상했다.",
+   "location_id": "LOC_028",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_020"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_020",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_020",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_028",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "세인트클레어 부인은 아이들을 재우고 응접실로 내려왔다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_020",
+     "field": "body_status",
+     "assumes": "아이들을 재울 수 있는 상태 (성인 어머니)",
+     "source_text": "세인트클레어 부인은 아이들을 재우고 응접실로 내려왔다."
+    },
+    {
+     "entity": "CHAR_020",
+     "field": "knows",
+     "assumes": "남편이 시티에 볼일이 있다는 사실 (결혼 전부터)",
+     "source_text": "남편이 시티에 볼일이 있다는 것은 결혼 전부터 알고 있었다."
+    },
+    {
+     "entity": "CHAR_020",
+     "field": "knows",
+     "assumes": "남편이 여러 회사에 돈을 넣어 두었다는 말",
+     "source_text": "여러 회사에 돈을 넣어 두었다고 했고, 그 말을 의심할 이유가 없었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_2",
+     "assumes": "이 사건은 아이들을 재운 직후의 응접실 장면이며, 남편이 시티에 간 그날 밤의 같은 시간대에 일어난다",
+     "source_text": "세인트클레어 부인은 아이들을 재우고 응접실로 내려왔다. / 그날 아침 침실에서 났던 작은 소리가 자꾸 마음에 걸렸다."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "아이들을 재운 뒤 응접실로 내려옴",
+   "result": "벽난로 앞에 서서 손을 비비며 남편의 시티 볼 일을 회상함",
+   "source_text": "세인트클레어 부인은 아이들을 재우고 응접실로 내려왔다. 남편이 시티에 볼일이 있다는 것은 결혼 전부터 알고 있었다. 무슨 볼일인지는 물어본 적이 없었다. 여러 회사에 돈을 넣어 두었다고 했고, 그 말을 의심할 이유가 없었다. 그이는 매일 밤 같은 기차로 돌아왔고 한 번도 어긴 적이 없었다. 그녀는 벽난로 앞에 서서 손을 비볐다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "세인트클레어 부인이 아침의 작은 소리를 떠올림",
+   "summary": "세인트클레어 부인은 그날 아침 침실에서 났던 작은 소리가 자꾸 마음에 걸렸다.",
+   "location_id": "LOC_028",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_020"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_020",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_020",
+     "field": "knows",
+     "assumes": "그날 아침 침실에서 작은 소리가 났다는 기억",
+     "source_text": "그날 아침 침실에서 났던 작은 소리가 자꾸 마음에 걸렸다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "EVENT_6_1의 응접실 장면과 같은 시간대(그날 밤)이며, '그날 아침'은 이날 직전의 아침을 가리킨다",
+     "source_text": "그날 아침 침실에서 났던 작은 소리가 자꾸 마음에 걸렸다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_020",
+     "info": "그날 아침 침실에서 작은 소리가 났음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그날 아침 침실에서 났던 작은 소리가 자꾸 마음에 걸렸다."
+    }
+   ],
+   "cause": "남편의 시티 출근을 떠올리며 아침의 기억이 떠올랐음",
+   "result": "작은 소리가 마음에 걸리는 상태로 남음",
+   "source_text": "그날 아침 침실에서 났던 작은 소리가 자꾸 마음에 걸렸다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:05:56Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 10.09
+ }
+}

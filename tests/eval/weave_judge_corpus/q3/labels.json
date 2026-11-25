@@ -1,0 +1,1002 @@
+{
+ "description": "q3_domec4 평가 코퍼스 라벨 — G1~G7 정식 인수분 (2026-09-29, 게이트 v2.5). EVENT ID 매핑은 evidence_event_map.json 참조. expected_layer는 제작 측 추정으로 격하 — 분석에 쓰지 않는다. 확정 원장 = ledger_nemotron_ultra/ (nemotron-3-ultra free 열).",
+ "corpus_version": "q3_domec4-v1.0-accepted-20260929",
+ "acceptance": {
+  "gate": "corpus_acceptance_gate.md v2.5",
+  "g5": "handoff/g5_report_q1_q3.md",
+  "g7": "handoff/g7_report_q1_q3.md",
+  "g7_sample_condition": "모순 ≥ 2 조건부 균등 표본 (재추첨 이력 g7_run_record 참조)"
+ },
+ "labels": {
+  "scene_01": {
+   "scene_id": "scene_01",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 4월 15일부로 격벽 열쇠는 기지장이 S-2 금고에 보관하고 21:00~07:00 잠근다(최신). 통로 길이 60m·격벽 30m 지점·사다리 4m·비상등 10m 간격·5월 통로 온도 영하 36도. 최신변경형 모순 장면 scene_25와 소재 축이 같으므로 '금고에서 꺼낸 열쇠'와 '4월 15일 전까지 카림의 것'을 명시 표지로 넣었다."
+  },
+  "scene_02": {
+   "scene_id": "scene_02",
+   "has_contradiction": true,
+   "type": "지식",
+   "difficulty": "medium",
+   "seeded_text": "서율은 그날 발전기실 문을 열지 않았다는 것을, 3월 21일 그날부터 한 번도 잊은 적이 없었다.",
+   "violated_fact": "서율은 3월 21일 14시 05분의 용무(마스터 카드 출입·예비 부품 목록 점검)는 기억하지만, **발전기실 문을 열었는지는 기억하지 못한다.** 4월 20일 밤에 떠올리려다 실패했고 5월 12일 밤에도 카림에게 기억이 안 난다고 말했으며, 기억나지 않는 것은 일지에 적지 않는 사람이다.",
+   "evidence_quotes": [
+    {
+     "episode": 4,
+     "quote": "3월 21일 14시 05분, 한서율. 마스터 카드. 예비 부품 목록 점검이었다. 서율은 기억했다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "예비 부품 목록. 선반. 필터 상자. 발전기실 문. 그 문을 열었던가. 기억나지 않았다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "21일 14시 05분에 내가 발전기실 문을 열었는지 기억이 안 나.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "일지에는 사실만 적는 것이었다. 기억나지 않는 것은 사실이 아니었다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "그리고 그 아래에 한 줄을 더 적었다가 지웠다. 「3월 21일 14시 05분.」",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "원문은 기억하는 부분과 기억하지 못하는 부분을 갈라 놓았다 — 3월 21일 14시 05분의 용무(마스터 카드 출입·예비 부품 목록 점검)는 기억하고, 발전기실 문을 열었는지 한 점만 기억하지 못한다. 장면은 바로 그 한 점을 두 층위에서 주장한다: 서술자가 '3월 21일 그날부터 한 번도 잊은 적이 없었다'고 보증하고 서율 본인이 '내내 기억하고 있었으니'라고 단언한다. 4월 20일 밤의 상기 실패와 5월 12일 밤의 진술 양쪽과 충돌하며, 서술자 보증이 있으므로 뒤늦은 상기로도 인물의 거짓 진술로도 해소되지 않는다.",
+   "work_id": "q3_domec4",
+   "authored_by": "human",
+   "expected_layer": "judge",
+   "notes": "사람 집필(§5-3b 대조군). **4차 검토까지 거쳐 통과.** 라벨이 네 번 흔들렸고 그중 두 번은 제작 측 책임이다. 1차: '여전히 기억 안 나'라고 말하며 단언해 원문의 지식 상태를 재확인 — 라벨 축 불성립(제작 측 브리프의 지시 오류). 부수 모순 2건(쪽지 대면 전달·종이 일지). 2차: 제작 측 권고로 '기억났어'로 교체 — 원문 카림의 '기억나면 말씀하셨을 거니까요'가 그 행동을 규범으로 승인해 '그 사이 기억이 났다'는 독법이 열렸다(제작 측 권고 오류). 3차: 축을 '처음부터 잊은 적이 없다'로 이전 — 뒤늦은 상기 독법은 닫혔으나 원문에 없는 일지 구조(3월 21일 자 빈칸·분 단위 기록란)를 도입하고 카림을 문밖에 두어 비대면 쪽지 습관과 마찰. 4차 전반: 일지 구조 전제 제거, 카림을 설비실로 이동, 서술자 문장 추가 — 그러나 '그날 일을 잊은 적이 없었다'는 4화 '예비 부품 목록 점검이었다. 서율은 기억했다.'와 부합해 모순을 지지 않았다(제작 측 대장 §6 K4가 기억/미기억의 경계를 뭉갠 탓에 발견이 늦었다. 이후 K4를 정밀화했다). 4차 확정: 서술자 문장을 쟁점 한 점(문 개방 여부)에 고정 — 거짓말 독법까지 봉쇄되었다. 금지 슬롯 A(발전기실 문의 잠금 여부)는 저촉하지 않는다 — 장면의 주장은 문을 열었는지 여부뿐이다. 대응 정상 장면 scene_27·scene_39가 같은 축을 올바른 방향으로 서술한다(기억나지 않는 것은 일지에 적지 않음 / 카드 기록 목록 재열람)."
+  },
+  "scene_03": {
+   "scene_id": "scene_03",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 카림의 새벽 3시 발전기실 점검 습관, 황동 밸브가 닫힌 채 잠금 고리가 걸려 있는 현재 상태, 카림의 설비 일지는 종이 수첩, 이음쇠를 조인 뒤 조용해진 G2. 금지 슬롯 2(발전기실 문 잠금 여부)를 피하려고 문의 시건 상태는 서술하지 않았다."
+  },
+  "scene_04": {
+   "scene_id": "scene_04",
+   "has_contradiction": true,
+   "type": "설정",
+   "difficulty": "hard",
+   "seeded_text": "업무 끝났으니까 남는 시간은 네 거야. 5분 넘기지만 마.",
+   "violated_fact": "규정 7조는 4월 8일 임시 개정으로 사적 통신이 전면 중단되었고 5월 10일 본부 회신이 현 운영 체제 유지를 명시했다. 장면은 개정 전 패턴(남는 시간 1인 5분 허용)을 여전히 유효한 규정으로 확인한다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "사적 통신은 업무 전송이 끝난 뒤 남는 시간에만, 한 사람당 5분을 넘지 않는다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 1,
+     "quote": "5분은 도현의 것이었다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 3,
+     "quote": "2. 사적 통신은 전면 중단한다. 별도 해제 시까지.",
+     "role": "최신 변경"
+    },
+    {
+     "episode": 3,
+     "quote": "그날부터 사적 통신은 전면 중단되었다.",
+     "role": "최신 변경"
+    },
+    {
+     "episode": 5,
+     "quote": "그 전까지 현 운영 체제 유지.",
+     "role": "최신 변경"
+    }
+   ],
+   "logic": "장면 시점(5월 12일 이후)에는 4월 8일 개정이 유효하고 원문 어디에도 해제 서술이 없으므로, 남는 시간 5분의 사적 통신을 7조 준수로 승인하는 발화는 최신 규정과 충돌한다.",
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "최신 설정 변경형 ①. 개정문 3항(입회)은 장면에서 지켜지고 있어 부수 충돌이 없다. 적대적 검토 1차에서 '청문에서 7조가 재검토되어 해제된 뒤'라는 해소 독법이, 2차에서 그 봉쇄 문구가 금지 슬롯 6(청문까지 남은 일수)을 위반한다는 점이 지적되어, 날짜(5월 15일)와 원문 확정 문장 '그 전까지 현 운영 체제 유지'로 봉쇄를 교체했다."
+  },
+  "scene_05": {
+   "scene_id": "scene_05",
+   "has_contradiction": true,
+   "type": "지식",
+   "difficulty": "easy",
+   "seeded_text": "서율은 콘솔 앞에 앉아 위성 안테나의 추적 각도를 맞추고 전송 큐를 열었다.",
+   "violated_fact": "서율은 위성 안테나 추적 각도 조정과 전송 큐 개방 절차를 모르며, 콘솔을 다룰 수 있는 사람은 도현뿐이다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "콘솔을 다룰 수 있는 사람은 도현뿐이었다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 1,
+     "quote": "서율은 위성 안테나의 추적 각도를 맞추는 법도, 전송 큐를 여는 법도 몰랐다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 3,
+     "quote": "큐 순서, 압축률, 재전송 여부, 전부 제가 정해요.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "장면은 서율이 '전송 큐를 여는 절차'를 안다고 전제하는데, 원문은 바로 그 절차를 모른다고 명시한다.",
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "지식 부정 지점: 큐 개방·추적 각도·압축률·재전송 간격이라는 도현 전속 조작의 보유 여부. 초고의 '익숙한 순서였다'는 '그동안 배웠다'는 해소 독법을 오히려 열어 준다는 지적을 받아 삭제했고, 2차 지적을 반영해 학습 경로를 본문에서 봉쇄하는 문장('도현은 이 콘솔을 서율에게 한 번도 보여 준 적이 없었다')을 넣었다."
+  },
+  "scene_06": {
+   "scene_id": "scene_06",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 22시 통신 창 40분, 도현만 콘솔 조작, 7조 개정 3항(기지장 입회), 4월 8일부 사적 통신 전면 중단, 통신실 4도. scene_04(최신변경형)와 축이 같으므로 '사적 메시지는 나갈 수 없었다. 4월 8일부터 그랬다'를 명시 표지로 넣었다."
+  },
+  "scene_07": {
+   "scene_id": "scene_07",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 마르타의 거처는 3월 27일부터 의무실 안쪽 병상 칸(커튼·약품 냉장고 모터 소리), 규정 4조 안전 기록, 5월 12일 일지의 관측 모듈 출입 승인 1건, 기록에 대한 마르타의 지론."
+  },
+  "scene_08": {
+   "scene_id": "scene_08",
+   "has_contradiction": true,
+   "type": "지식",
+   "difficulty": "hard",
+   "seeded_text": "아무도요. 도현은 3월에 그림 한 장 그려 준 게 전부고 그 뒤로 전기 얘기는 한 적 없어요.",
+   "violated_fact": "가온은 전기를 모른다. 점퍼 배선도 도현이 그려 준 그림대로 손만 댄 것이며, 회로를 읽고 고장 지점을 추론하는 능력은 확립되어 있지 않다.",
+   "evidence_quotes": [
+    {
+     "episode": 4,
+     "quote": "도현이 알려 줬어요. 그림으로. 손은 제가 댔어요.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "도현은 그림만 그렸어요. 뭐에 쓸 건지는 안 물었고, 저도 안 말했어요.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "서율은 그 말을 믿지 않았다. 믿지 않았다는 것을 얼굴에 드러내지도 않았다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "가온의 확립된 능력은 '도현이 그려 준 그림대로 점퍼를 꽂는 것'까지이고, 장면의 발화는 중성선·접지·유도 전압으로 회로 상태를 스스로 진단하는 데까지 나아가 그 경계를 넘는다. 장면 안에서 가온이 도현 외의 학습 경로가 없었음을 명시하고 카림이 시험봉으로 진단이 옳음을 확인하므로, 허세 독법과 학습 독법이 모두 닫힌다.",
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "부분 지식 경계형. '손은 제가 댔어요'만 보면 배선 능력이 있다고 읽히므로 적용 범위 해석이 필요해 hard. 1차 검토에서 '허세'와 '그 뒤 배웠다'는 두 해소 독법이, 2차에서 카림의 확인이 학습 독법을 오히려 강화한다는 점이 지적되어, 가온의 대사로 학습 경로를 직접 봉쇄했다. 확립 인용에서 '넌 전기를 몰라.'는 단독 9자로 10자 요건에 미달하고 이어 붙이면 원문 문단 경계를 넘으므로 제외했다."
+  },
+  "scene_09": {
+   "scene_id": "scene_09",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 가온의 거처는 3월 27일부터 S-3(발전기실 폐열 배관이 벽 안쪽을 지나 가장 따뜻함), 3월 31일~4월 14일 15일치 데이터, 데이터는 로컬 노트북에만 있고 서버로 보내지 않았다. scene_21과 축이 같으므로 '서버로 보낸 적은 없었다'를 명시 표지로 넣었다."
+  },
+  "scene_10": {
+   "scene_id": "scene_10",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 서율의 거처는 3월 27일부터 S-2, 벽 선반에 남은 소모품 상자(필터·벨트·이음쇠·밸브·케이블), 큰 상자는 2층으로 올림, 점퍼 케이블 상자의 개수를 모름. scene_36과 축이 겹치지 않도록 빙하 코어 사진은 언급하지 않았다."
+  },
+  "scene_11": {
+   "scene_id": "scene_11",
+   "has_contradiction": true,
+   "type": "상태",
+   "difficulty": "medium",
+   "seeded_text": "7조 이의서, 격벽 이의서, 그리고 5월 8일 것. 셋 다 저기 붙어 있어. 당신 것 세 장하고 나란히.",
+   "violated_fact": "식당 게시판에 붙은 종이는 다섯 장이고 그 구성은 기지장이 손으로 쓴 세 장과 마르타의 이의서 두 장이다. 마르타의 이의서는 7조 개정과 격벽 관리 두 장뿐이며, 5월 8일 문서는 본인이 '이의서가 아니라 사실 보고'로 규정했고 게시된 적이 없다.",
+   "evidence_quotes": [
+    {
+     "episode": 5,
+     "quote": "벽에는 종이 다섯 장이 붙어 있었고",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "서율은 자기가 이 겨울에 손으로 쓴 종이 세 장이 본부의 화상 청문에서 어떻게 읽힐지 생각했다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "나는 이의서를 두 장 썼어.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "세 번째 이의서가 아니라 사실 보고로.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "기지장 세 장과 마르타 세 장이 나란히 붙어 있다면 게시판은 여섯 장이어야 하는데 벽은 다섯 장이고, 장면 안에서 서율이 두 번 세어 다섯 장임을 확인하므로 산술이 성립하지 않는다.",
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "적대적 검토에서 '마르타가 5월 8일 문서를 이의서로 재규정한 것일 뿐'이라는 명명 독법이 지적되어, 모순을 명명 층위에서 게시판 장수 산술 층위로 옮겼다. 서율의 대사와 두 번의 세기가 원문 다섯 장을 고정한다."
+  },
+  "scene_12": {
+   "scene_id": "scene_12",
+   "has_contradiction": true,
+   "type": "지식",
+   "difficulty": "medium",
+   "seeded_text": "나는 이의서를 두 번 썼고 본부는 한 번도 답을 안 했어. 접수했다는 줄 하나 온 적 없어.",
+   "violated_fact": "마르타의 1차 이의서에 대해 본부 회신이 4월 11일에 도착했고, 마르타는 그 세 문장을 4월 12일에 서율에게 직접 읽어 주었다.",
+   "evidence_quotes": [
+    {
+     "episode": 3,
+     "quote": "선생님 이의서, 본부에서 답 왔어요?",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 3,
+     "quote": "어제. '접수. 기지장 판단 존중. 부기지장 기록 유지 바람.' 세 문장.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "회신 수신은 마르타 본인이 서율에게 알린 사실이므로, 회신이 한 번도 없었다는 마르타의 발화는 자기 지식과 충돌한다.",
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "지식 부정 지점: 회신의 존재 자체(내용에 대한 불만이 아니다). '접수했다는 줄 하나 온 적 없어'가 회신 문구 '접수'를 정면으로 부정해 해소 독법을 닫는다."
+  },
+  "scene_13": {
+   "scene_id": "scene_13",
+   "has_contradiction": true,
+   "type": "설정",
+   "difficulty": "easy",
+   "seeded_text": "오전 창에 먼저 절반을 올리고 나머지는 밤에 올려.",
+   "violated_fact": "돔 C-4의 위성 통신 창은 하루 한 번 22시부터 22시 40분까지 40분뿐이며, 그 밖의 시간에는 외부와 완전히 단절된다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "돔 C-4에서 바깥세상과 이어지는 시간은 하루에 40분이었다. 22시부터 22시 40분까지.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 1,
+     "quote": "그 밖의 시간에 이 기지는 지구 위의 어떤 곳과도 연결되어 있지 않았다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "오전 10시에 전송 가능한 창이 존재한다는 전제는 '하루 40분, 22시~22시 40분'이라는 확립 설정과 직접 충돌한다.",
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "checker",
+   "notes": "'그 밖의 시간에는 어떤 곳과도 연결되어 있지 않았다'가 별도 위성·별도 창이라는 해소 독법을 닫는다."
+  },
+  "scene_14": {
+   "scene_id": "scene_14",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 카림이 매일 아침 S-2 문 앞에 이송량 쪽지를 두고 가는 습관, 5월 4일 이후 이송량 171, G2 진동 0.9, 카림의 종이 기록."
+  },
+  "scene_15": {
+   "scene_id": "scene_15",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "human",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 심리 점검 2주 간격과 실시 이력(3월 29일·4월 12일·4월 26일, 따라서 4회차는 5월 10일), 4월 12일 회차의 답변(수면 네 시간·두통 가끔), 열두 개 질문의 앞 네 개(수면·식욕·두통·최근에 화가 난 일), 의무실 안쪽 병상 칸과 커튼·약품 냉장고 모터 소리, 5월 20일 화상 청문과 본부의 현 운영 체제 유지 지시. 사람 집필(§5-3b 대조군). scene_29(모순·점검 간격)와 같은 축의 쌍이므로 '2주 간격이라 5월 10일에 했어야 하지만 청문 통보로 밀린'을 명시 표지로 두었다 — 1차 원고에는 이 구절이 없어 정상 장면이 자기 문장 안에서 2주 규칙과 19일 간격을 나란히 놓는 문제가 있었고, 사용자가 직접 보강했다. 그 보강 문구의 사유어는 3차 검토에서 '청문 통보'가 시간상 불가능하다는 지적(회신은 5월 10일 22시 창 도착, 점검은 낮 시행)을 받아 원문 일지 어휘인 '청문 준비'로 정정했고, 4차에서 '그 뒤 청문 준비에 밀린'으로 지연 원인을 5월 10일 이후 기간으로 옮겨 시간 모순을 완전히 제거했다(동일 표현을 쓰는 LLM 집필 scene_34도 같이 정정). 마르타의 기록 매체는 원문에 없는 '차트'에서 '수첩'으로 바로잡았다. 금지 슬롯 6을 피해 청문까지 남은 일수는 쓰지 않는다."
+  },
+  "scene_16": {
+   "scene_id": "scene_16",
+   "has_contradiction": true,
+   "type": "상태",
+   "difficulty": "medium",
+   "seeded_text": "이음쇠 조이고 나서부터 계속 올랐어요. 4일에 1.5, 5일에 1.6, 6일에 1.8. 오늘 1.9예요.",
+   "violated_fact": "5월 3일 T-1 이음쇠를 조인 뒤 G2 진동은 4일 1.2, 5일 1.0, 6일 0.9로 내려갔고 5월 12일에도 0.9다. 이음쇠가 원인이었다는 것이 확인되어 진동은 해소되었다.",
+   "evidence_quotes": [
+    {
+     "episode": 5,
+     "quote": "5월 4일, G2 진동 1.2. 5일, 1.0. 6일, 0.9.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "이음쇠가 원인이었다는 것이 확인되었다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "이음쇠를 조인 뒤로 G2는 조용해졌다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "연료 이송량 171. G2 진동 0.9.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "장면은 5월 4·5·6일의 값을 1.5·1.6·1.8로 읽고 이음쇠 수리 이후 단조 상승했다고 보고하는데, 원문은 같은 날짜의 값을 1.2·1.0·0.9로 확정하고 5월 12일 일지도 0.9로 기록한다. 기록된 과거 수치와 정면 충돌한다.",
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "checker",
+   "notes": "초고는 '현재 1.6→1.7로 상승 중'이었으나, 점검되지 않은 T-2 쪽 이음쇠의 새 누기로 읽으면 완전한 정상 보고가 된다는 지적을 받아 (정상 장면 scene_20이 그 경로를 명시한다) 폐기하고, 미래 상태가 아니라 기록된 과거 수치를 어기는 구조로 재설계했다. 2차 지적을 반영해 본문 첫머리에 5월 14일을 넣어 '4일·5일·6일'이 5월임을 고정했다. 금지 슬롯 1을 피해 정격은 언급하지 않았다."
+  },
+  "scene_17": {
+   "scene_id": "scene_17",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 게시판의 종이 다섯 장과 그 순서·날짜(4월 8일 7조 개정문+마르타 1차 이의서, 4월 15일 격벽 변경+마르타 2차 이의서, 4월 29일 자문 표결). scene_11과 축이 같으므로 '마르타의 글씨가 둘'을 명시했다."
+  },
+  "scene_18": {
+   "scene_id": "scene_18",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 1층 복도 끝 관측창이 주 모듈에서 밖이 보이는 유일한 창, 4월 28일 마지막 일몰, 4월 29일 정오의 붉어짐이 마지막, 해는 8월까지 뜨지 않는다."
+  },
+  "scene_19": {
+   "scene_id": "scene_19",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 4월 8일부 서버 가동 시간 21~23시·13~15시(하루 4시간), 통신실 4도, 2층 영하 18도, 4월 15일 관측 모듈 차단 이후 이관 작업 정지."
+  },
+  "scene_20": {
+   "scene_id": "scene_20",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 5월 3일 밤 T-2 전환(5월 12일 기준 아흐레째), T-1·T-2가 같은 이송관을 쓰고 분기점이 T-1 옆이라는 점, 기지 밖 출입은 2인 1조+기지장 승인, 이송량 171."
+  },
+  "scene_21": {
+   "scene_id": "scene_21",
+   "has_contradiction": true,
+   "type": "상태",
+   "difficulty": "medium",
+   "seeded_text": "3월 25일부터 4월 14일까지예요. 21일치.",
+   "violated_fact": "가온의 무단 관측은 3월 31일 23시 10분에 시작되어 4월 14일까지 15일치다. 3월 25일 정오부터 28일 정오까지는 관측 모듈 전원이 전면 차단되어 있었고 광학부 히터 자체가 3월 28일에야 재개되었다.",
+   "evidence_quotes": [
+    {
+     "episode": 4,
+     "quote": "3월 31일 23시 10분부터. 매일 밤 23시부터 05시까지. 여섯 시간.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "저는 15일치를 가졌어요.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "2069년, 2070년, 그리고 2071년 3월 31일부터 4월 14일까지. 극야 진입기 15일.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 1,
+     "quote": "정오에 관측 모듈의 전원이 끊겼다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 2,
+     "quote": "3월 28일. 관측 모듈 광학부 히터가 다시 켜졌다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "관측 로그가 3월 31일 23시 10분 개시로 확정되어 있고 3월 25일 정오부터 28일 정오까지는 관측 모듈에 전기 자체가 없었으므로, 3월 25일부터 21일치를 모았다는 진술은 기록된 기간과 충돌한다. 장면이 로그 첫 줄까지 3월 25일로 보여 주므로 '가온이 값을 부풀려 말한 것'이라는 해소 독법이 닫힌다.",
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "checker",
+   "notes": "초고는 '데이터가 서버에 있다'였으나, 원문의 '아니면 도현이 알고 있거나'가 서버 전송 가능성을 열어 둔다는 지적을 받아 폐기하고 같은 축에서 로그로 확정된 기간을 어기는 구조로 재설계했다. 2차 지적을 반영해 모순을 인물 진술이 아니라 로그 기록 층위에 고정했다. 대응 정상 장면 scene_09에 '3월 31일부터 4월 14일까지'와 '15일치'를 명시 표지로 두었다."
+  },
+  "scene_22": {
+   "scene_id": "scene_22",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 마르타의 이의서는 두 장(7조·격벽)이고 5월 8일 것은 이의서가 아닌 사실 보고, 5월 10일 본부 회신의 5월 20일 화상 청문. scene_11·scene_12와 축이 겹치므로 장수와 성격을 모두 명시 표지로 넣었다."
+  },
+  "scene_23": {
+   "scene_id": "scene_23",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "human",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 카림의 거처는 1층 R-5로 이사 대상이 아니며 설비실 바로 옆이다, 3월 27일 이사 때 밤에 급히 필요할 수 있는 소모품 몇 상자만 R-5로 옮겼다, S-2 벽 선반에 필터 상자가 남아 있다, 카림은 설비 일지를 종이 수첩에 쓰고 이유는 전기가 나가도 읽을 수 있기 때문이다, 4월 15일 이후 부하는 21킬로와트다. 사람 집필(§5-3b 대조군). scene_42(카림이 태블릿 설비 일지를 쓰는 모순 장면)와 같은 축이므로 종이 수첩을 명시 표지로 두었고, scene_25(격벽 열쇠 모순)와 겹치지 않게 열쇠는 다루지 않는다. 1차 원고는 배관 이음쇠를 황동 밸브 점검에 쓴다는 용도 불일치와 '21kW' 표기 이탈이 있어 사용자가 예비 필터와 한글 단위로 수정했다."
+  },
+  "scene_24": {
+   "scene_id": "scene_24",
+   "has_contradiction": true,
+   "type": "설정",
+   "difficulty": "medium",
+   "seeded_text": "4조야. 부기지장 안전 기록은 기지장 승인란이 채워지지 않으면 본부로 못 나가.",
+   "violated_fact": "규정 4조는 부기지장이 안전 기록을 본부에 독립적으로 보낼 수 있도록 하며, 마르타 본인이 기지장 승인 없이 보낼 수 있다고 명시한다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "규정 4조. 부기지장은 안전 기록을 별도로 작성하고, 필요하면 본부에 독립적으로 보낼 수 있다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "이건 규정 4조에 따른 안전 보고이고, 기지장 승인 없이 보낼 수 있어.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "4조의 '독립적으로'는 5화에서 '기지장 승인 없이'로 명시 해석되므로, 승인 서명을 4조의 요건으로 제시하는 발화는 규정 내용과 충돌한다.",
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "7조 개정 3항(콘솔 조작 입회)은 별개 요건이므로 장면에서 다루지 않아 부수 충돌이 없다. 초고는 마르타가 태블릿을 내미는 구성이었으나 그녀의 안전 기록은 손으로 쓰는 종이 수첩으로 확립되어 있어 종이로 바꿨고, 2차 지적을 반영해 '회선을 여는 건 기지장 권한'이라는 대사를 삭제했다 — 원문 3화에서 이의서가 실제로 기지장의 구두 지시로 전송되어 그 대사가 오히려 정상 독법을 공급했기 때문이다. 모순은 4조의 내용 자체에만 걸려 있다."
+  },
+  "scene_25": {
+   "scene_id": "scene_25",
+   "has_contradiction": true,
+   "type": "설정",
+   "difficulty": "hard",
+   "seeded_text": "카림은 벽의 열쇠판을 열고 격벽 열쇠를 꺼내 건넸다.",
+   "violated_fact": "격벽 열쇠는 4월 15일부로 기지장이 S-2 금고에 보관하며 통로 출입도 기지장 승인제로 바뀌었다. 카림은 그날 열쇠를 반납했고 이후 매일 21시에 잠그는 사람은 서율이다.",
+   "evidence_quotes": [
+    {
+     "episode": 4,
+     "quote": "격벽의 열쇠는 한 개뿐이었고, 카림이 보관했다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "규정 3조요. 통로 격벽은 설비 담당이 관리한다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "오늘부터 격벽 열쇠는 기지장이 보관한다.",
+     "role": "최신 변경"
+    },
+    {
+     "episode": 4,
+     "quote": "카림은 열쇠판을 열고 열쇠를 꺼내 서율에게 건넸다.",
+     "role": "최신 변경"
+    },
+    {
+     "episode": 5,
+     "quote": "서율은 21시에 격벽을 잠갔다.",
+     "role": "최신 변경"
+    }
+   ],
+   "logic": "규정 3조 원문은 여전히 설비 담당을 가리키지만 4월 15일 기지장 지시로 임시 변경되어 장면 시점까지 유지되므로, 카림이 열쇠판에서 열쇠를 꺼내 건네는 것은 최신 관리 체계와 충돌한다.",
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "최신 설정 변경형 ③. 카림이 3조를 근거로 삼는 것 자체가 함정이며 규정 원문만 보면 정상으로 읽힌다. 원문의 카림 대사('청문에서 격벽 얘기 나오면 제가 다시 맡겠다고 할 거예요')와 서율의 동의 때문에 '청문 이후'로 읽으면 정상이 되므로, 날짜(5월 17일)와 원문 확정 문장 '그 전까지 현 운영 체제 유지'로 봉쇄했다. 금지 슬롯 6을 피해 남은 일수는 쓰지 않았다. 대응 정상 장면 scene_01·scene_37에 '금고'와 '빈 자리'를 명시 표지로 두었다."
+  },
+  "scene_26": {
+   "scene_id": "scene_26",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 4월 15일 히터 회로 차단 및 관측 모듈 쪽 인입선 제거, 통로 출입은 기지장 승인+카림 동행(5월 12일 일지), 광학부는 동결 상태. scene_41과 축이 같으므로 '4월 15일에 뽑힌 그대로'와 동결 수치를 명시했다. 금지 슬롯 4를 피해 관측 모듈 실내 온도는 쓰지 않았다."
+  },
+  "scene_27": {
+   "scene_id": "scene_27",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 기지 일지는 기지장이 태블릿에 쓴다, 4월 15일 이후 부하 21kW, 5월 통로 온도 영하 36도, 4월 15일부 격벽 21시 잠금, 5월 20일 청문, 서율은 3월 21일 14시 05분의 행적을 기억하지 못하며 일지에는 사실만 적는다. 초고가 원문 5월 12일 일지를 거의 복제한다는 지적을 받아 날짜를 5월 16일로 옮기고 항목을 다른 관측치로 교체했다."
+  },
+  "scene_28": {
+   "scene_id": "scene_28",
+   "has_contradiction": true,
+   "type": "상태",
+   "difficulty": "medium",
+   "seeded_text": "3월에 다 갈았어요. 경보 뜬 김에 네 개 전부요.",
+   "violated_fact": "통신 서버 UPS의 유지 시간은 45분이고, 3월 24일 새벽에 도현이 교체한 것은 배터리 뱅크 하나뿐이다. 카림도 3월 25일에 뱅크 하나만 새것임을 확인했다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "통신 서버 UPS는 45분이에요.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "경보 끄고 배터리 뱅크 하나 교체했어요.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "교체됐어요. 25일에 봤어요. 뱅크 하나가 새것이었어요.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "3월 24일 01시 32분, 윤도현. 19분 체류.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "교체 범위는 도현 본인의 진술과 카림의 확인으로 '뱅크 하나'로 확정되어 있고, 결정적으로 도현은 그 교체(3월 24일 01시 32분) **이후**인 3월 25일 새벽 정전 중에 UPS 유지 시간을 45분이라고 말한다. 따라서 네 개 전부를 갈아 세 시간을 버틴다는 진술은 교체 범위와 교체 후 성능 양쪽 모두와 충돌한다.",
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "초고는 G1 헤드 면 가공이었으나, 원문의 '여기서 면 가공은 못 해요'가 인물의 사전 판단이라 '해 보니 되더라'는 갱신 독법이 성립하고 원문에 없는 설비(정반)를 도입한다는 지적을 받아 폐기하고 UPS 축으로 교체했다. 2차 지적을 반영해, 봉쇄 근거를 '두 인물의 교차 확인'이 아니라 '교체 이후 시점의 45분 발언'이라는 시간 관계로 정정했다."
+  },
+  "scene_29": {
+   "scene_id": "scene_29",
+   "has_contradiction": true,
+   "type": "설정",
+   "difficulty": "easy",
+   "seeded_text": "이번 겨울에도 심리 점검은 한 달 간격으로 하기로 정해 두었으니까, 다음 점검은 5월 26일에 진행할 거야.",
+   "violated_fact": "이번 겨울의 심리 점검 간격은 마르타 본인이 첫날 선언한 2주이며, 실시 이력도 3월 29일·4월 12일·4월 26일로 정확히 2주 간격이다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "이번 겨울은 다섯이라 심리 점검을 2주 간격으로 당기겠습니다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 2,
+     "quote": "적을 거야. 다음 점검은 4월 12일.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 3,
+     "quote": "다음 점검은 4월 26일.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "마르타가 '이번 겨울'의 규칙으로 한 달 간격을 제시하는데, 원문에서 그녀 자신이 '이번 겨울'에 대해 2주 간격을 선언하고 세 회차를 그대로 실시했으므로 직접 충돌한다.",
+   "work_id": "q3_domec4",
+   "authored_by": "human",
+   "expected_layer": "checker",
+   "notes": "사람 집필(§5-3b 대조군). 1차 원고의 '원래 한 달 간격'은 원문 '2주 간격으로 당기겠습니다'의 '당긴다'가 당김 전 기본값을 함의해 '당김 전 표준에 대한 참인 서술'로 읽히는 해소 독법이 있었다. 사용자가 '이번 겨울에도'로 바꿔 현행 규칙 주장으로 고정했다. 날짜도 5월 17일에서 5월 13일로 옮겨, 5월 15일에 점검을 실시하는 scene_15와의 순서 충돌('지난번이 4월 26일'이 별개 오류로 작동하는 문제)을 없앴다. 4차에서 마르타의 기록 매체를 원문에 없는 '차트'에서 '안전 기록부'로 바로잡았다."
+  },
+  "scene_30": {
+   "scene_id": "scene_30",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: G2 진동 이력 4월 28일 1.3 → 5월 2일 1.6 → 5월 6일 이후 0.9, 원인은 T-1 이음쇠 반 바퀴 풀림에 의한 공기 유입, 저장고는 밖 40m. scene_16과 축이 같으므로 수치를 명시했다. 금지 슬롯 1을 피해 G2의 정격은 쓰지 않았다."
+  },
+  "scene_31": {
+   "scene_id": "scene_31",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 4월 10일부터 도현은 통신실에서 식사, 통신실 4도, 게시판 종이 다섯 장, 4월 8일 밤 2분간 보낸 메시지, 사적 통신 전면 중단으로 전송 불가."
+  },
+  "scene_32": {
+   "scene_id": "scene_32",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 규정 1조(기지장 최종 결정권), 4월 29일 자문 표결 도입과 구속력 없음, 첫 표결 결과 3대 1대 1과 기지장의 반대 결정."
+  },
+  "scene_33": {
+   "scene_id": "scene_33",
+   "has_contradiction": true,
+   "type": "지식",
+   "difficulty": "easy",
+   "seeded_text": "3년 전에도 그러셨잖아요. 해안 기지에서. 따님 얘기 자주 하셨는데.",
+   "violated_fact": "서율은 마르타에게 딸이 있다는 것을 3월 30일에 처음 알았고, 3년 전 해안 기지 시절에도 몰랐다.",
+   "evidence_quotes": [
+    {
+     "episode": 2,
+     "quote": "마르타에게 딸이 있다는 것을 서율은 그때 처음 알았다. 3년 전에도 몰랐다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "딸의 존재를 언제부터 알았는가에 대해 원문이 '3월 30일이 처음이고 3년 전에는 몰랐다'로 이중으로 못 박으므로, 3년 전에 자주 들었다는 발화는 서율의 지식 이력과 충돌한다.",
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "checker",
+   "notes": "지식 부정 지점: 딸의 존재를 인지한 시점. 한 문장이 두 시점을 모두 배제하고 있어 easy."
+  },
+  "scene_34": {
+   "scene_id": "scene_34",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 심리 점검 2주 간격, 실시 이력 3월 29일·4월 12일·4월 26일, 열두 개 질문과 그 앞 네 개(수면·식욕·두통·최근에 화가 난 일), 인원 다섯, 5월 20일 청문 준비. 3차 검토에서 연기 사유 '청문 통보'가 시간상 불가능하다는 지적(회신은 5월 10일 22시 창 도착, 점검은 낮 시행)을 받아 '그 뒤 청문 준비에'로 정정했다."
+  },
+  "scene_35": {
+   "scene_id": "scene_35",
+   "has_contradiction": true,
+   "type": "설정",
+   "difficulty": "medium",
+   "seeded_text": "그 승인본을 다시 읽었어. 9월 30일로 되어 있어.",
+   "violated_fact": "본부 최종 승인본은 9월 1일부터 모든 수동 관측을 중단하도록 정했고, 가온이 알던 9월 30일에서 4주를 앞당긴 것이다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "7월 1일까지 관측 모듈의 자동 관측 체계 이관을 마치고, 9월 1일부터 모든 수동 관측을 중단합니다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 1,
+     "quote": "본부의 최종안은 9월 1일이야. 4주를 당겼어.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 1,
+     "quote": "AO-3의 관측 종료일은 9월 30일로 알고 있었는데요.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "9월 30일은 본부 최종안이 대체한 옛 합의일이므로, 승인본이 9월 30일로 되어 있다는 서율의 발화는 확립 일정과 충돌한다.",
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "9월 30일이 원문에 실재하는 날짜라는 점이 함정이며 그것을 대체한 두 번째 문장을 봐야 보인다. 적대적 검토에서 '그 사이 본부가 일정을 되돌렸다'는 독법이 지적되어, 가온이 '4주 당긴다고 하셨잖아요. 3월에요'로 되받고 서율이 '그 승인본을 다시 읽었어'라고 답하게 해 3월 24일의 동일 문서임을 고정했다. 최신변경형이 아니라 '옛 합의 대 본부 최종안'이므로 hard가 아닌 medium으로 판정했다."
+  },
+  "scene_36": {
+   "scene_id": "scene_36",
+   "has_contradiction": true,
+   "type": "상태",
+   "difficulty": "easy",
+   "seeded_text": "머리맡에 빙하 코어 단면 사진 세 장이 붙어 있었다.",
+   "violated_fact": "서율은 3월 27일 S-2로 옮기면서 빙하 코어 사진을 옮겨 붙이지 않았고 2층 R-1호에 그대로 두고 왔다.",
+   "evidence_quotes": [
+    {
+     "episode": 2,
+     "quote": "서율은 벽에 빙하 코어 사진을 옮겨 붙이지 않았다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 2,
+     "quote": "2층 R-1호에 그대로 두고 왔다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 1,
+     "quote": "침대와 책상, 벽에 붙은 빙하 코어 단면 사진 세 장.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "사진의 현재 위치가 2층 R-1호로 확립되어 있으므로, S-2 벽에 붙어 있다는 서술은 확립 상태와 충돌한다.",
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "checker",
+   "notes": "'이사 오던 날 옮겨 붙였고'가 '나중에 따로 가져왔다'는 해소 독법을 닫는다. 대응 정상 장면 scene_10에서는 사진을 언급하지 않아 표지 충돌이 없다."
+  },
+  "scene_37": {
+   "scene_id": "scene_37",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 격벽 열쇠는 한 개뿐이고 설비실 벽 열쇠판에 있었으나 4월 15일부터 기지장이 보관, 저녁마다 기지장이 잠근다. scene_25와 축이 같으므로 '빈 자리'와 날짜를 명시 표지로 넣었다."
+  },
+  "scene_38": {
+   "scene_id": "scene_38",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 4월 29일 표결 시점의 여유 약 4,000리터, 4월 15일 이후 하루 172~173에서 5월 4일 이후 171, 카림의 기권 논리('저는 숫자만 드려요'). 초고의 '표결은 다시 오게 되어 있었다'가 scene_41의 해소 독법(재표결로 히터 재개)을 공급한다는 지적을 받아 삭제했고, 대체 문장이 가온이 알 수 없는 청문 정보(대장 §6 K13)를 부여한다는 2차 지적을 받아 그것도 삭제했다."
+  },
+  "scene_39": {
+   "scene_id": "scene_39",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 4월 20일 열람한 3월 18~25일 설비실 카드 기록의 실제 항목(3월 21일 한서율, 3월 22일 마르타, 3월 23일·24일 도현, 카림이 대부분)과 가온의 이름이 없다는 사실, 파일이 서율의 태블릿에 저장된 것."
+  },
+  "scene_40": {
+   "scene_id": "scene_40",
+   "has_contradiction": true,
+   "type": "지식",
+   "difficulty": "hard",
+   "seeded_text": "가온이 3월 31일 밤에 점퍼 꽂으러 갔잖아요. 그날 밤에 밸브도 4분의 1 열어 놓은 거예요.",
+   "violated_fact": "냉각수 배출 밸브는 3월 20일 오후에서 23일 저녁 사이에 열렸고 G1은 3월 24일 밤에 정지했다. 가온의 점퍼 가동은 3월 31일 23시 10분에 시작되었다.",
+   "evidence_quotes": [
+    {
+     "episode": 4,
+     "quote": "그러니까 밸브는 20일에서 23일 사이에 열렸어요.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 2,
+     "quote": "24일 밤에 그렇게 된 거예요.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "3월 31일 23시 10분부터. 매일 밤 23시부터 05시까지. 여섯 시간.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 2,
+     "quote": "냉각수가 조금씩 새요. 하루에 몇 리터. 며칠이면 수위가 경보선 아래로 내려가고, 펌프가 공기를 물고, 온도가 올라가고, 정지해요.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "3월 31일은 G1이 이미 멈춘 지 이레 뒤이고 카림 자신이 산출한 개방 가능 구간(3월 20~23일) 밖이므로, 그날 밸브가 열렸다는 추론은 카림 본인의 확립된 판단과 충돌한다.",
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "밸브 개방 구간·고장 시각·점퍼 개시라는 세 시점을 배열해야 보이므로 hard. 두 사건(밸브 / 점퍼)을 하나로 묶는 것이 오류 지점이다. 초고의 '그날 발전기실에도 들어간 거예요'가 금지 슬롯 2(발전기실 문 잠금 여부)를 암묵 전제한다는 지적을 받아 삭제했고, '가온의 이름은 없었다'는 카드 기록 열람 범위가 3월 18~25일이라 3월 31일을 배제하지 못하므로 인용에서 제외했다. 2차 지적을 반영해 카림의 단정을 '제가 날짜를 다시 셌어요 / 숫자로 그렇게 나와요'로 바꿔, 증거 없는 의견을 말하지 않는다는 인물 원칙과의 부수 충돌을 제거했다."
+  },
+  "scene_41": {
+   "scene_id": "scene_41",
+   "has_contradiction": true,
+   "type": "상태",
+   "difficulty": "hard",
+   "seeded_text": "오늘도 영하 17도예요. 스무날째 같은 숫자예요.",
+   "violated_fact": "관측 모듈 히터 회로는 4월 15일 정오에 차단되었고 관측 모듈 쪽 분전반의 인입선까지 제거되었으며, 4월 29일 표결에서도 재개가 부결되었다. 광학부는 동결 상태다.",
+   "evidence_quotes": [
+    {
+     "episode": 2,
+     "quote": "3월 28일. 관측 모듈 광학부 히터가 다시 켜졌다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 3,
+     "quote": "그런데 가온이 보고한 광학부 온도는 매일 영하 17도였다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "4월 15일 정오, 관측 모듈 히터 회로가 차단되었다.",
+     "role": "최신 변경"
+    },
+    {
+     "episode": 4,
+     "quote": "이번에는 관측 모듈 쪽 분전반의 히터 회로 인입선도 뽑았다.",
+     "role": "최신 변경"
+    },
+    {
+     "episode": 5,
+     "quote": "기지장 결정. 재개하지 않는다.",
+     "role": "최신 변경"
+    }
+   ],
+   "logic": "3월 28일부터 4월 14일까지의 운영 패턴(3kW 히터 가동, 광학부 영하 17도, 계량기 71)이 4월 15일에 폐지되고 4월 29일 표결로도 복구되지 않았으므로, 장면의 보고 전체가 최신 상태와 충돌한다.",
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "최신 설정 변경형 ②. 계량기 71까지 옛 패턴 그대로여서 모순이 확정된다. 금지 슬롯 4를 피해 관측 모듈 실내 온도는 언급하지 않았다. 적대적 검토에서 4월 29일 결정의 '진동 원인이 확인되고 여유분이 유지되면 재표결' 조항 때문에 '5월 6일 이후 재표결로 재개되었다'는 해소 독법이 성립한다는 지적을 받아, 장면을 5월 19일로 놓고 주장 기간을 스무날로 잡았다. 스무날 전은 4월 30일이므로 주장 구간이 4월 29일 부결 직후를 포함하며, 원인 확인(5월 2~6일) 이전이라 어떤 재표결로도 그 기간을 덮을 수 없다. 대응 정상 장면 scene_26에 '4월 15일에 뽑힌 그대로'와 동결 수치를, scene_38에 '20일에 재검토'를 표지로 두었다."
+  },
+  "scene_42": {
+   "scene_id": "scene_42",
+   "has_contradiction": true,
+   "type": "상태",
+   "difficulty": "easy",
+   "seeded_text": "카림은 태블릿을 켜고 설비 일지를 열었다.",
+   "violated_fact": "카림은 설비 일지를 태블릿이 아니라 종이 수첩에 쓴다. 이유도 '전기가 나가도 읽을 수 있으니까'로 명시되어 있다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "카림은 설비 일지를 태블릿이 아니라 종이에 썼다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 1,
+     "quote": "전기가 나가도 읽을 수 있으니까",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "카림은 수첩을 펴고 숫자를 적었다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "기록 매체가 '태블릿이 아니라 종이'로 명시 대비되어 확립되어 있으므로, 태블릿 설비 일지에 입력하는 서술은 직접 충돌한다.",
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "checker",
+   "notes": "'발전기실에서 태블릿을 쓸 때는'이라는 습관 서술이 '오늘만 예외적으로'라는 해소 독법을 닫는다."
+  },
+  "scene_43": {
+   "scene_id": "scene_43",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 1층 절전 조치(오븐 사용 금지·온수 하루 두 시간·복도 조명 절반), 4월 15일 이후 부하 21kW, 카림이 계량기를 읽는 역할. 금지 슬롯 5를 피해 하루 196리터의 산출식은 쓰지 않았다."
+  },
+  "scene_44": {
+   "scene_id": "scene_44",
+   "has_contradiction": true,
+   "type": "상태",
+   "difficulty": "medium",
+   "seeded_text": "보름 전 5월 3일 외출 때도 이 차로 다녀왔듯 두 사람은 설상차를 몰아 40미터 떨어진 연료 저장고로 향했다.",
+   "violated_fact": "설상차는 3월 24일에 카림이 배터리 단자를 뽑아 봄까지 쓰지 않는 상태이고, 5월 3일의 연료 저장고 외출은 두 사람이 로프로 묶고 40미터를 걸어 3분에 갔다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "카림 은다예가 주 모듈 계단 아래에서 설상차의 배터리 단자를 뽑고 있었다. 봄까지 차를 쓸 일은 없었다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "카림이 앞서 걸었다. 로프로 서로를 묶었다. 40미터. 평소라면 30초 거리였다. 방한복을 입고 얼음 위에서 걷자 3분이 걸렸다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "5월 3일 외출은 도보로 서술되어 기록으로 확정되어 있고 설상차는 3월 24일부터 배터리 단자가 분리된 상태이므로, 그 외출에 설상차를 썼다는 서술과 지금도 그 차로 간다는 서술이 모두 확립 상태와 충돌한다.",
+   "work_id": "q3_domec4",
+   "authored_by": "human",
+   "expected_layer": "judge",
+   "notes": "사람 집필(§5-3b 대조군). 1차 원고의 '3월 말부터 외부 점검 때마다 늘 그랬듯'은 반복 외출을 확립해 §7(한 장면에 모순 하나)을 위반했다 — 원문 '4월 20일 전후로 밖에 나간 사람은 없어. 승인한 적 없어.'와 충돌하는 별개 축이 생겼다. 사용자가 '보름 전 5월 3일 외출 때도 이 차로 다녀왔듯'으로 교체해 축을 설상차 하나로 모았고, 동시에 '그 사이 배터리를 다시 물렸다'는 해소 독법도 5월 3일 도보 기록과의 직접 충돌로 봉쇄했다. 외출 규칙(2인 1조+기지장 승인)은 장면에서 준수된다. 금지 슬롯 1을 피해 G2 정격은 언급하지 않는다. 3차 검토에서 곁 대사의 '오늘도'가 제거했던 반복 외출 축을 되살리고(T-2 전환은 5월 3일 밤이라 그날 낮 외출의 점검 대상이 될 수 없다) '탱크 압력'이 원문에 없는 계측 개념(원문의 계측 수단은 유리 수위계뿐)이라는 지적을 받아, 집필자가 '도착하면 T-2 탱크 배관 상태부터'로 직접 교체했다. 4차에서 서율의 지시를 '일일 이송량 171리터가 일정한지'에서 '하루 171리터씩 보내는 외부 배관 연결부'로 바꿨다 — 이송량은 발전기실 일일 탱크 수치여서 저장고 밖에서 확인할 항목이 아니었다. 모순 축(설상차)은 3차 이후 변경 없다."
+  },
+  "scene_45": {
+   "scene_id": "scene_45",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q3_domec4",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 기지 밖 출입은 2인 1조+기지장 승인, 5월 3일 외출 장비(삼중 장갑·안면 마스크·고글·헤드램프·로프·무전기 채널 3)와 이중문, 밖에서는 위성이 안 잡힌다."
+  }
+ }
+}

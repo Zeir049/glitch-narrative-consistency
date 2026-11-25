@@ -1,0 +1,123 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:5월 18일 오전",
+   "expression": "5월 18일 오전",
+   "description": "서율이 S-2 문 앞 쪽지를 확인하고 카림에게 말한 시각",
+   "timeline": "main",
+   "source_text": "5월 18일 오전, S-2 문 앞의 이송량 171리터 쪽지를 확인한 서율은",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "S-2 문 앞 쪽지 확인 및 카림에게 일지 기록 지시",
+   "summary": "서율이 S-2 문 앞의 이송량 171리터 쪽지를 확인한 뒤 설비실의 카림에게 3월 21일 발전기실 문을 열지 않았음을 오늘 일지에 적겠다고 말한다.",
+   "location_id": "LOC_018",
+   "time_id": "NEW:5월 18일 오전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_011",
+    "OBJ_018"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "3월 21일 14시 05분 발전기실 문 미개방 사실 기억 중",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율은 그날 발전기실 문을 열지 않았다는 것을, 3월 21일 그날부터 한 번도 잊은 적이 없었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "3월 21일 14시 05분 예비 부품 선반 앞에만 있었음",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "난 예비 부품 선반 앞에만 있었고, 3월 21일 14시 05분에 발전기실 문은 열지 않았어."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_011 (태블릿을 들고 있음)",
+     "source_text": "설비실에 있던 카림에게 태블릿을 든 채 말했다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "assumes": "LOC_018 (S-2 문 앞 → 설비실 이동)",
+     "source_text": "S-2 문 앞의 이송량 171리터 쪽지를 확인한 서율은 설비실에 있던 카림에게"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "assumes": "LOC_006 (설비실에 있음)",
+     "source_text": "설비실에 있던 카림에게"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "S-2 이송량 171리터 기록 존재",
+     "source_text": "S-2 문 앞의 이송량 171리터 쪽지를 확인한"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "태블릿으로 일지 입력 가능",
+     "source_text": "서율이 화면을 두드렸다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "서율이 3월 21일 발전기실 문을 열지 않았음을 기억하고 있으며 오늘 일지에 기록할 예정임",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"3월 21일 일은 오늘 일지에 적을 거야.\""
+    }
+   ],
+   "cause": "S-2 이송량 쪽지 확인 후 과거 기록 정정 필요성 인지",
+   "result": "서율이 3월 21일 행적(발전기실 미개방, 예비 부품 선반 앞 체류)을 일지에 기록하기로 함, 카림에게 전달됨",
+   "source_text": "5월 18일 오전, S-2 문 앞의 이송량 171리터 쪽지를 확인한 서율은 설비실에 있던 카림에게 태블릿을 든 채 말했다. \"3월 21일 일은 오늘 일지에 적을 거야.\" 카림이 물었다. \"기지장님, 적으실 수 있어요?\" 서율은 그날 발전기실 문을 열지 않았다는 것을, 3월 21일 그날부터 한 번도 잊은 적이 없었다. 서율이 화면을 두드렸다. \"처음부터 잊은 적이 없어. 난 예비 부품 선반 앞에만 있었고, 3월 21일 14시 05분에 발전기실 문은 열지 않았어. 내내 기억하고 있었으니 그대로 입력할 거야.\"",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:48:47Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 108.55
+ }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S21_1",
+      "order": 1,
+      "title": "노이즈 무늬 옷 분석 의뢰",
+      "summary": "알파가 4번 방에 보관하던 옷을 개어 알라인의 방으로 가져가 패턴 분석을 의뢰한다. 알라인이 소매 무늬부터 스캔을 시작한다.",
+      "location_id": "LOC_009",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002",
+        "CHAR_007"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [
+        "OBJ_008"
+      ],
+      "state_changes": [
+        {
+          "entity": "OBJ_008",
+          "field": "location",
+          "from": "LOC_011",
+          "to": "LOC_009",
+          "source_text": "4번 방에서 그 옷을 개어 들고 알라인의 방으로 갔다."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "possesses",
+          "from": "unknown",
+          "to": "OBJ_008",
+          "source_text": "알라인은 옷을 받아 책상 위에 펼치고"
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "OBJ_008 (방에 보관하다 직접 가져옴)",
+          "source_text": "4번 방에서 그 옷을 개어 들고"
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_007",
+          "info": "옷의 흑백 무늬 대비가 묘하게 불규칙함",
+          "via": "direct",
+          "source_text": "흑백 대비가 묘하게 불규칙하단 말이죠."
+        }
+      ],
+      "cause": "실물 분석의 필요",
+      "result": "패턴 스캔 시작",
+      "source_text": "\"이거, 패턴 분석 좀 부탁드려도 돼요?\"",
+      "certainty": "explicit"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "왓슨이 현관에서 응접실로 올라옴",
+   "summary": "왓슨이 현관에서 응접실까지 계단을 올라오며 계단 수(스무 개)를 세고, 홈즈가 소파에서 신문을 보고 있는 응접실로 들어선다. 홈즈는 발소리 간격의 차이로 왓슨이 계단을 세었다는 사실을 짐작한다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_052",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "누운 자세에서 일어나 앉을 수 있는 정상 신체",
+     "source_text": "그는 신문을 접어 옆에 놓고 몸을 일으켰다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "발소리 간격의 미세한 차이만 듣고도 그것이 계단을 센 행위임을 추론할 수 있는 발자국 소리 판별 능력",
+     "source_text": "발소리의 간격이 달랐네."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "계단을 걸어 올라올 수 있는 정상 보행 능력",
+     "source_text": "나는 현관에서 방까지 올라오며 걸음을 세어 보았다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "모자",
+     "source_text": "나는 모자를 걸며 웃었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "응접실과 현관 사이의 계단 수는 스무 개이다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "계단은 스무 개였다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "왓슨이 계단을 세며 올라왔다",
+     "via": "inference",
+     "retained": true,
+     "source_text": "발소리의 간격이 달랐네."
+    }
+   ],
+   "cause": "왓슨이 아침에 응접실로 올라온 행위",
+   "result": "홈즈가 왓슨의 계단 세기 행위를 발소리 간격 차이로 추론함",
+   "source_text": "나는 현관에서 방까지 올라오며 걸음을 세어 보았다. 계단은 스무 개였다. 홈즈는 소파에 누워 조간신문을 보고 있다가 내가 들어서자 고개만 돌렸다. \"자네가 계단을 세었군.\" 그가 말했다. \"발소리의 간격이 달랐네.\" 나는 모자를 걸며 웃었다. 그는 신문을 접어 옆에 놓고 몸을 일으켰다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-31T06:33:18Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 11.73
+ }
+}

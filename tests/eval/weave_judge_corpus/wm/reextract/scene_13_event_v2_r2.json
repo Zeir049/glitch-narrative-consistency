@@ -1,0 +1,242 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 2,
+  "batch_id": "T2-R2-A",
+  "scene_id": "scene_13",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_13.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r3)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:41:30Z",
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:이_동네_주민은_로봇에게_스스럼없다",
+      "content": "이 동네 주민들은 로봇에게 스스럼없이 말을 건다",
+      "description": "거리의 주민이 순찰 로봇에게 먼저 말을 걸고 농담까지 주고받는 것이 일상적인 문화로 서술된다.",
+      "source_text": "로봇에게도 스스럼없는 게 이 동네 사람들이다.",
+      "certainty": "explicit"
+    },
+    {
+      "rule_id": "NEW:헤일트라움은_소마_제조_공장",
+      "content": "헤일트라움은 소마를 만드는 공장이다 (동네 주민의 진술)",
+      "description": "공원의 주민은 헤일트라움이 병원이 아니라 소마를 만드는 공장이며 사람이 드나드는 것도 본 적 없다고 말한다. 인물 발화 수준의 정보다.",
+      "source_text": "저긴 소마 만드는 공장이에요. 환자는 무슨. 사람이 드나드는 것도 못 봤는걸요.",
+      "certainty": "uncertain"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "공원 벤치에서 쉬다가 주민의 말을 받아주는, 순찰 로봇으로 보이는 존재.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S13_1",
+      "source_text": "나는 뭐라 답해야 할지 몰라 어색하게 웃어 보였다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "NEW:공원_벤치_옆자리_주민",
+      "name": "공원 벤치 옆자리의 주민",
+      "aliases": ["주민"],
+      "entity_type": "person",
+      "description": "공원 벤치 옆자리에 앉아 있다가 순찰 로봇에게 먼저 말을 건 동네 주민.",
+      "traits": [
+        {
+          "trait": "웃으며 손을 젓는 농담조의 말투",
+          "trait_type": "speech",
+          "source_text": "주민은 농담이라고 생각한 듯 웃으며 손을 저었다.",
+          "certainty": "inferred"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S13_1",
+      "source_text": "공원 벤치에서 쉬는데 옆자리의 주민이 말을 걸어왔다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_007",
+      "name": "원호형 공원",
+      "description": "벤치가 놓인 공원. 알파가 쉬고 있던 곳이며 주민이 옆자리에 앉아 있었다.",
+      "source_text": "공원 벤치에서 쉬는데 옆자리의 주민이 말을 걸어왔다.",
+      "certainty": "inferred"
+    },
+    {
+      "location_id": "LOC_003",
+      "name": "헤일트라움 (Heiltraum)",
+      "description": "대화 중 언급되는 시설. 알파는 병원이라 말하고 주민은 소마 만드는 공장이라 말한다.",
+      "source_text": "\"순찰 로봇인가요? 헤일트라움 쪽에서 왔죠?\"",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "OBJ_004",
+      "name": "소마",
+      "description": "주민의 발화에서 헤일트라움이 만드는 물건으로 언급된다. 장면에 실물로 등장하지는 않는다.",
+      "first_appearance_event_id": "EVENT_S13_1",
+      "source_text": "저긴 소마 만드는 공장이에요.",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S13_1",
+      "scene_id": "scene_13",
+      "order": 1,
+      "title": "공원 벤치에서 주민과 나눈 헤일트라움 대화",
+      "summary": "공원 벤치에서 쉬던 알파에게 옆자리 주민이 말을 걸어 헤일트라움 쪽에서 왔는지 묻는다. 알파가 헤일트라움을 병원이라 부르며 환자 근처를 조심한다고 답하자, 주민은 웃으며 저긴 소마 만드는 공장이고 사람이 드나드는 것도 못 봤다고 정정한다.",
+      "location_id": "LOC_007",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002", "NEW:공원_벤치_옆자리_주민"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "NEW:공원_벤치_옆자리_주민",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "from": "unknown",
+          "to": "헤일트라움이 소마 제조 공장이라는 주민의 진술",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "\"병원요? 하하, 저긴 소마 만드는 공장이에요.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "from": "unknown",
+          "to": "헤일트라움에 사람이 드나드는 것을 주민이 본 적 없다는 진술",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "\"환자는 무슨. 사람이 드나드는 것도 못 봤는걸요.\""
+        },
+        {
+          "entity": "NEW:공원_벤치_옆자리_주민",
+          "field": "knows",
+          "from": "unknown",
+          "to": "이 순찰 로봇이 헤일트라움을 병원이라고 말한다",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "\"헤일트라움이 병원이니까 환자분들 근처는 조심해서 다니고 있어요.\""
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "로봇 신체 (주민이 한눈에 순찰 로봇으로 알아봄)",
+          "source_text": "\"순찰 로봇인가요? 헤일트라움 쪽에서 왔죠?\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "음성으로 주민과 대화 가능",
+          "source_text": "\"아, 네. 뭐 비슷해요.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "표정으로 웃어 보일 수 있음",
+          "source_text": "나는 뭐라 답해야 할지 몰라 어색하게 웃어 보였다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "헤일트라움은 환자가 있는 병원이다",
+          "source_text": "\"헤일트라움이 병원이니까 환자분들 근처는 조심해서 다니고 있어요.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "not_knows: 헤일트라움이 소마를 만드는 공장이라는 것",
+          "source_text": "\"병원요?\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "자신이 헤일트라움 쪽 소속으로 통한다 (주민의 확인 질문을 부정하지 않고 수긍)",
+          "source_text": "\"아, 네. 뭐 비슷해요.\""
+        },
+        {
+          "entity": "NEW:공원_벤치_옆자리_주민",
+          "field": "knows",
+          "assumes": "헤일트라움이 소마를 만드는 공장이다",
+          "source_text": "\"저긴 소마 만드는 공장이에요.\""
+        },
+        {
+          "entity": "NEW:공원_벤치_옆자리_주민",
+          "field": "knows",
+          "assumes": "헤일트라움에 사람이 드나드는 것을 본 적이 없다",
+          "source_text": "\"사람이 드나드는 것도 못 봤는걸요.\""
+        },
+        {
+          "entity": "NEW:공원_벤치_옆자리_주민",
+          "field": "knows",
+          "assumes": "순찰 로봇의 존재와 헤일트라움 소속 여부를 외형으로 식별할 수 있다",
+          "source_text": "\"순찰 로봇인가요? 헤일트라움 쪽에서 왔죠?\""
+        },
+        {
+          "entity": "NEW:공원_벤치_옆자리_주민",
+          "field": "knows",
+          "assumes": "상대(알파)가 이 동네에 살아온 존재라고 인식하고 있다",
+          "source_text": "\"우리 동네 살면서 그것도 몰라요?\""
+        },
+        {
+          "entity": "NEW:공원_벤치_옆자리_주민",
+          "field": "knows",
+          "assumes": "not_knows: 헤일트라움이 병원으로 운영된다는 것 (알파의 말을 농담으로 받아들임)",
+          "source_text": "주민은 농담이라고 생각한 듯 웃으며 손을 저었다."
+        },
+        {
+          "entity": "NEW:공원_벤치_옆자리_주민",
+          "field": "ability",
+          "assumes": "로봇과 음성으로 대화 가능",
+          "source_text": "옆자리의 주민이 말을 걸어왔다."
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "헤일트라움은 소마를 만드는 공장이며 사람이 드나드는 것이 목격되지 않는다는 주민의 진술",
+          "via": "told",
+          "retained": true,
+          "source_text": "\"병원요? 하하, 저긴 소마 만드는 공장이에요. 환자는 무슨. 사람이 드나드는 것도 못 봤는걸요.\""
+        },
+        {
+          "character_id": "NEW:공원_벤치_옆자리_주민",
+          "info": "이 순찰 로봇이 헤일트라움을 병원으로 알고 환자 근처를 조심해 다닌다",
+          "via": "told",
+          "retained": true,
+          "source_text": "\"헤일트라움이 병원이니까 환자분들 근처는 조심해서 다니고 있어요.\""
+        }
+      ],
+      "cause": "공원 벤치에서 쉬던 알파에게 옆자리 주민이 순찰 로봇인지, 헤일트라움 쪽에서 왔는지 말을 걸어왔다.",
+      "result": "알파는 헤일트라움을 병원이라 답했고, 주민은 그것을 농담으로 여기며 소마 공장이라고 정정했다. 알파는 답을 못 하고 어색하게 웃었다.",
+      "source_text": "공원 벤치에서 쉬는데 옆자리의 주민이 말을 걸어왔다. … \"병원요? 하하, 저긴 소마 만드는 공장이에요.\" … 나는 뭐라 답해야 할지 몰라 어색하게 웃어 보였다.",
+      "certainty": "explicit"
+    }
+  ]
+}

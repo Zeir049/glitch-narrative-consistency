@@ -1,0 +1,138 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "여탕 물 식음 인지 및 보일러실 확인",
+   "summary": "순덕이 여탕 물이 식는 소리를 듣고 보일러실 계단 앞에서 문식을 불러 상황을 확인한다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:여탕_물_식는_소리_들린_시점",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "여탕 물 온도 이상을 소리로 감지할 수 있음",
+     "source_text": "여탕 쪽에서 물이 식는다는 소리가 났다. 순덕은 카운터에서 일어나 지하 계단 쪽으로 갔다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "location",
+     "assumes": "LOC_007 (보일러실 내부)",
+     "source_text": "아래에서 쇠 두드리는 소리가 올라왔다. ... 노란 불빛이 보일러실 문틈으로 새어 나왔다. 잠시 뒤에 물소리가 달라졌다. 문식이 올라왔다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "ability",
+     "assumes": "보일러 수리/점검 능력 (쇠 두드리는 소리, 기름 묻은 손, '됐어요' 발화)",
+     "source_text": "아래에서 쇠 두드리는 소리가 올라왔다. ... 손에 기름이 묻어 있었다. '됐어요.'"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "여탕 보일러 이상으로 물이 식고 있었음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "여탕 쪽에서 물이 식는다는 소리가 났다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "문식이 보일러를 고쳐 물소리가 정상으로 돌아옴",
+     "via": "direct",
+     "retained": true,
+     "source_text": "잠시 뒤에 물소리가 달라졌다. 문식이 올라왔다. '됐어요.'"
+    }
+   ],
+   "cause": "여탕 보일러 이상으로 물 온도 저하",
+   "result": "문식이 보일러 수리 완료, 물 온도 정상화",
+   "source_text": "여탕 쪽에서 물이 식는다는 소리가 났다. 순덕은 카운터에서 일어나 지하 계단 쪽으로 갔다. 계단 위에서 멈췄다. 한 발도 내려가지 않았다. \"장씨.\" 아래에서 쇠 두드리는 소리가 올라왔다. 대답은 없었다. 순덕은 계단 위에 서서 기다렸다. 노란 불빛이 보일러실 문틈으로 새어 나왔다. 잠시 뒤에 물소리가 달라졌다. 문식이 올라왔다. 손에 기름이 묻어 있었다. \"됐어요.\" \"그래.\" 순덕은 그것만 묻고 카운터로 돌아갔다. 문식은 다시 내려갔다. 여탕 쪽에서는 다시 소리가 나지 않았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "카운터 업무 복귀 및 요금 수납",
+   "summary": "순덕이 카운터로 돌아와 손님 요금을 받는다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:보일러_수리_후_카운터_복귀_시점",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_006"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_006 (요금통)",
+     "source_text": "순덕은 카운터에 앉아 손님 요금을 받았다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "요금 수납 업무 수행 가능",
+     "source_text": "순덕은 카운터에 앉아 손님 요금을 받았다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "보일러 수리 완료 후 즉시 카운터 업무로 복귀함, 시간 간격 거의 없음",
+     "source_text": "순덕은 그것만 묻고 카운터로 돌아갔다. ... 순덕은 카운터에 앉아 손님 요금을 받았다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "영업 중 손님 내방 및 요금 수납 진행 중",
+     "via": "direct",
+     "retained": true,
+     "source_text": "순덕은 카운터에 앉아 손님 요금을 받았다."
+    }
+   ],
+   "cause": "보일러 수리 확인 완료 후 정상 영업 복귀",
+   "result": "요금 수납 업무 수행",
+   "source_text": "순덕은 그것만 묻고 카운터로 돌아갔다. 문식은 다시 내려갔다. 여탕 쪽에서는 다시 소리가 나지 않았다. 순덕은 카운터에 앉아 손님 요금을 받았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-27T04:52:43Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 19.24
+ }
+}

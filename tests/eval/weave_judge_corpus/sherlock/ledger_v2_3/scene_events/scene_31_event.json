@@ -1,0 +1,197 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "NEW:촛대",
+   "name": "촛대",
+   "description": "줄리아가 들고 있던 촛대",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "줄리아 스토너가 촛대를 들고 문간에 서 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "NEW:새벽_세_시_쯤",
+   "expression": "새벽 세 시쯤",
+   "description": "줄리아가 묘술한 정체 모를 소리가 들린 시각",
+   "timeline": "main",
+   "source_text": "\"새벽 세 시쯤에. 어디서 나는지는 모르겠어.\"",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "줄리아의 밤중 방문",
+   "summary": "복도의 램프가 꺼진 뒤 줄리아가 촛대를 들고 헬렌의 방문에 나타나 정체 모를 소리를 다시 들었다고 말한다.",
+   "location_id": "LOC_002",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [
+    "NEW:촛대"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "NEW:촛대",
+     "op": "add",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "줄리아 스토너가 촛대를 들고 문간에 서 있었다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "헬렌이 몸을 일으켰다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그녀가 말했다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "body_status",
+     "assumes": "등을 기대고 누워 잠을 자던 중 (헬렌의 동작이 잠을 깨웠음을 전제)",
+     "source_text": "헬렌이 몸을 일으켰다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "이른 시각(새벽 무렵)에도 불구하고 깨어나 방을 방문할 정도의 긴박감/필요",
+     "source_text": "언니는 문틀에 기대어 잠시 그대로 있다가 방 안으로 한 걸음 들어섰다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_2",
+     "assumes": "정체 모를 소리는 이번 사건보다 먼저 발생했으며, 줄리아는 그 소리를 자기가 들은 시각(새벽 세 시쯤) 기준으로 헬렌에게 알린다",
+     "source_text": "\"또 그 소리를 들었어.\" … \"새벽 세 시쯤에. 어디서 나는지는 모르겠어.\""
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "정체 모를 소리가 새벽 세 시쯤 다시 들렸다는 사실(출처 불명, 위치 불명)",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"또 그 소리를 들었어.\" \"새벽 세 시쯤에. 어디서 나는지는 모르겠어.\""
+    }
+   ],
+   "cause": "복도의 램프가 꺼진 어두운 시각에 줄리아가 촛대를 들고 방문",
+   "result": "헬렌이 잠에서 깨 정체 모를 소리의 재발을 알게 됨",
+   "source_text": "줄리아 스토너가 촛대를 들고 문간에 서 있었다. 복도의 램프는 이미 꺼져 있었다. \"언니, 아직 안 잤어?\" 헬렌이 몸을 일으켰다. 언니는 문틀에 기대어 잠시 그대로 있다가 방 안으로 한 걸음 들어섰다. \"또 그 소리를 들었어.\" 그녀가 말했다. \"새벽 세 시쯤에. 어디서 나는지는 모르겠어.\" 헬렌은 이불을 걷고 침대 끝으로 자리를 옮겼다. 촛불이 흔들리며 벽에 두 사람의 그림자를 길게 던졌다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "소리에 대한 대화",
+   "summary": "헬렌이 이불을 걷고 자리로 옮겨 두 자매가 어둠 속에서 촛불에 비친 채 소리의 정체에 대해 이야기한다.",
+   "location_id": "LOC_002",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [
+    "NEW:촛대"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "from": "NEW:촛대",
+     "to": "unknown",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "NEW:촛대",
+     "certainty": "inferred",
+     "source_text": "촛불이 흔들리며 벽에 두 사람의 그림자를 길게 던졌다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "body_status",
+     "assumes": "촛대를 든 손을 자유롭게 쓸 수 있는 상태",
+     "source_text": "촛불이 흔들리며 벽에 두 사람의 그림자를 길게 던졌다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "body_status",
+     "assumes": "이불을 걷고 침대 위로 이동할 수 있는 각성 상태",
+     "source_text": "헬렌은 이불을 걷고 침대 끝으로 자리를 옮겼다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "두 사건은 같은 장면 안에서 시간상 연속되며, 줄리아의 촛대는 EVENT_6_1에서 들고 들어온 그것이다",
+     "source_text": "줄리아 스토너가 촛대를 들고 문간에 서 있었다. / 촛불이 흔들리며 벽에 두 사람의 그림자를 길게 던졌다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "소리의 정확한 발생 위치를 줄리아도 모른다는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"어디서 나는지는 모르겠어.\""
+    }
+   ],
+   "cause": "EVENT_6_1에서 줄리아가 전달한 정보에 대한 헬렌의 반응",
+   "result": "두 자매가 촛불 아래 정체 모를 소리의 정체를 놓고 대화하는 상황이 성립",
+   "source_text": "헬렌은 이불을 걷고 침대 끝으로 자리를 옮겼다. 촛불이 흔들리며 벽에 두 사람의 그림자를 길게 던졌다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:09:18Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 20.32
+ }
+}

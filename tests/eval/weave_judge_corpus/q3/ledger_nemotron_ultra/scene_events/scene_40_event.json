@@ -1,0 +1,146 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "카림의 날짜 재확인 및 단일 범인 추론",
+   "summary": "카림이 수첩을 확인해 3월 31일 밤에 밸브가 4분의 1 열려 있었고 점퍼가 꽂혀 있었음을 지적하며, 발전기실 밸브·관측 모듈 점퍼·바깥 이음쇠 조작이 모두 한 사람의 소행임을 추론한다.",
+   "location_id": "unknown",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_019",
+    "OBJ_003",
+    "OBJ_016",
+    "OBJ_004",
+    "OBJ_005"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "3월 31일 밤 밸브 4분의 1 개방 및 점퍼 연결 사실",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "제가 날짜를 다시 셌어요. 가온이 3월 31일 밤에 점퍼 꽂으러 갔잖아요. 그날 밤에 밸브도 4분의 1 열어 놓은 거예요."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "발전기실 밸브·관측 모듈 점퍼·바깥 이음쇠 조작이 단일 범인 소행",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그러면 전부 한 사람이에요. 발전기실 밸브도, 관측 모듈 점퍼도, 바깥 이음쇠도. 하나만 남는 게 없어요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "3월 31일 밤 밸브 4분의 1 개방 및 점퍼 연결 사실",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "3월 31일. 네. 숫자로 그렇게 나와요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "발전기실 밸브·관측 모듈 점퍼·바깥 이음쇠 조작이 단일 범인 소행",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그러면 전부 한 사람이에요. 발전기실 밸브도, 관측 모듈 점퍼도, 바깥 이음쇠도. 하나만 남는 게 없어요."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_019 (카림의 수첩)",
+     "source_text": "카림은 수첩을 폈다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "가온이 3월 31일 밤 점퍼를 꽂으러 갔다는 사실",
+     "source_text": "가온이 3월 31일 밤에 점퍼 꽂으러 갔잖아요."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "밸브·점퍼·이음쇠 세 조작 지점이 서로 연결돼 있다는 사실",
+     "source_text": "발전기실 밸브도, 관측 모듈 점퍼도, 바깥 이음쇠도."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "3월 31일 밤 밸브 4분의 1 개방 및 점퍼 연결 사실",
+     "via": "inference",
+     "retained": true,
+     "source_text": "제가 날짜를 다시 셌어요. 가온이 3월 31일 밤에 점퍼 꽂으러 갔잖아요. 그날 밤에 밸브도 4분의 1 열어 놓은 거예요."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "발전기실 밸브·관측 모듈 점퍼·바깥 이음쇠 조작이 단일 범인 소행",
+     "via": "inference",
+     "retained": true,
+     "source_text": "그러면 전부 한 사람이에요. 발전기실 밸브도, 관측 모듈 점퍼도, 바깥 이음쇠도. 하나만 남는 게 없어요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "3월 31일 밤 밸브 4분의 1 개방 및 점퍼 연결 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "3월 31일. 네. 숫자로 그렇게 나와요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "발전기실 밸브·관측 모듈 점퍼·바깥 이음쇠 조작이 단일 범인 소행",
+     "via": "told",
+     "retained": true,
+     "source_text": "그러면 전부 한 사람이에요. 발전기실 밸브도, 관측 모듈 점퍼도, 바깥 이음쇠도. 하나만 남는 게 없어요."
+    }
+   ],
+   "cause": "카림이 수첩 기록을 재확인하며 날짜와 조작 내역을 대조함",
+   "result": "세 건의 조작(밸브·점퍼·이음쇠)이 동일인 소행임을 양자 모두 인지함",
+   "source_text": "\"밸브요.\" 카림이 말했다. \"제가 날짜를 다시 셌어요. 가온이 3월 31일 밤에 점퍼 꽂으러 갔잖아요. 그날 밤에 밸브도 4분의 1 열어 놓은 거예요.\" 서율은 카림을 보았다. \"3월 31일.\" \"네. 숫자로 그렇게 나와요.\" 카림은 수첩을 폈다. \"그러면 전부 한 사람이에요. 발전기실 밸브도, 관측 모듈 점퍼도, 바깥 이음쇠도. 하나만 남는 게 없어요.\"",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T10:04:10Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 53.53
+ }
+}

@@ -1,0 +1,112 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "순덕의 아침 장보기 외출",
+   "summary": "순덕이 무릎 통증을 견디며 골방에서 나와 정문을 통해 역전 상가 쌀집 쪽으로 장을 보러 나간다.",
+   "location_id": "LOC_003",
+   "time_id": "NEW:아침_장보기_시간",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_003",
+     "to": "LOC_012",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "순덕은 정문을 열고 밖으로 걸어 나갔다. 순덕은 역전 상가 쌀집 쪽으로 걸어갔다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "from": "오른쪽 무릎 통증 (파스 부착 상태)",
+     "to": "오른쪽 무릎 통증 지속 (보행 중)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "파스를 겹쳐 붙인 오른쪽 무릎이 걸음을 뗄 때마다 쑤셔 왔다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "외투 착용 중",
+     "source_text": "순덕은 외투 옷자락을 여미며"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "보행 가능 (무릎 통증에도 불구하고)",
+     "source_text": "걸음을 뗄 때마다 쑤셔 왔다. ... 순덕은 정문을 열고 밖으로 걸어 나갔다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "개장 시간(여섯 시)을 인지함",
+     "source_text": "정문 유리에는 여섯 시 개장을 적어 둔 종이가 붙어 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "장부 소지/관리 중",
+     "source_text": "정호가 앉아 나무 서랍 위에 장부를 펼쳐 두고 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "카운터에 앉아 있는 상태",
+     "source_text": "카운터 뒤에는 정호가 앉아"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "정문 개장 시간이 여섯 시로 고정됨",
+     "via": "direct",
+     "retained": true,
+     "source_text": "정문 유리에는 여섯 시 개장을 적어 둔 종이가 붙어 있었다."
+    }
+   ],
+   "cause": "아침 찬거리 구매 필요",
+   "result": "순덕이 목욕탕을 나서 역전 상가 방향으로 이동함",
+   "source_text": "순덕은 아침마다 찬거리를 사 오기 위해 직접 탕 밖으로 나섰다. 파스를 겹쳐 붙인 오른쪽 무릎이 걸음을 뗄 때마다 쑤셔 왔다. 순덕은 외투 옷자락을 여미며 골방 문을 열고 나왔다. 카운터 뒤에는 정호가 앉아 나무 서랍 위에 장부를 펼쳐 두고 있었다. 순덕은 정호 옆을 지나쳐 정문 쪽으로 걸어갔다. 정문 유리에는 여섯 시 개장을 적어 둔 종이가 붙어 있었다. 장은 정미가 보지 않았다. 순덕은 정문을 열고 밖으로 걸어 나갔다. 정호는 카운터에서 나가는 순덕을 가만히 바라보았다. 순덕은 역전 상가 쌀집 쪽으로 걸어갔다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:24:59Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 59.75
+ }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S30_1",
+      "order": 1,
+      "title": "병실 앞에서 발길을 돌림",
+      "summary": "알파가 병실 유리문 앞까지 갔다가, 슐라우가 자신을 보고 놀랄 것을 염려해 면회를 포기하고 돌아선다.",
+      "location_id": "LOC_003",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "슐라우가 자신(로봇)을 보면 공포 반응을 보인다는 사실",
+          "source_text": "깨어 있으면 어쩌지. 나를 보면, 또 그렇게 될 텐데."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "슐라우의 상태에 대한 걱정",
+      "result": "면회 포기",
+      "source_text": "병실 앞까지 갔다가, 유리문 손잡이 앞에서 손을 멈췄다.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_S30_2",
+      "order": 2,
+      "title": "블루멘의 방 앞에 쪽지 부착",
+      "summary": "돌아가는 길에 알파가 블루멘의 방문 앞에, 눈높이를 낮춰 안부 쪽지를 붙여 둔다. 글씨는 힘 조절 탓에 삐뚤빼뚤하다.",
+      "location_id": "LOC_012",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "힘 조절 불가 (필기가 삐뚤빼뚤해짐)",
+          "source_text": "글씨가 삐뚤빼뚤한 건 힘 조절 때문이라고 변명해 두자."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "면회 포기의 아쉬움",
+      "result": "쪽지를 남기고 프리든으로 복귀",
+      "source_text": "쪽지를 한 장 빌려, 눈높이를 한참 낮춰 붙여 두었다.",
+      "certainty": "explicit"
+    }
+  ]
+}

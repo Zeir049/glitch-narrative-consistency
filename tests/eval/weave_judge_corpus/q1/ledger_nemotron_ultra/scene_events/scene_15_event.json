@@ -1,0 +1,120 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "보일러실에서 문식의 관 교체 작업 확인",
+   "summary": "정호가 연탄을 들고 보일러실에 내려가니 문식이 새 관으로 교체 작업을 마무리하고 있었다.",
+   "location_id": "LOC_007",
+   "time_id": "NEW:십이월_첫날_아침_보일러_작업_후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [
+    "OBJ_003",
+    "OBJ_004",
+    "OBJ_011"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_004",
+     "field": "body_status",
+     "from": "낡은 관, 이음매 누수, 깡통으로 물 받음",
+     "to": "새 관, 이음매 밀폐, 누수 없음",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "헝겊도 철사도 없었다. 새 관이었다. 쇠가 아직 반짝였고 이음매에서 물이 한 방울도 새지 않았다. 밑에 받쳐 두었던 깡통은 치워져 벽 옆에 엎어져 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_003",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호가 연탄을 들고 내려갔을 때"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "OBJ_003",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 연탄을 문 앞에 내려놓았다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "assumes": "OBJ_004 (보일러 관 교체용 렌치 등 공구)",
+     "source_text": "문식은 렌치를 들고 이음매를 한 번 더 조였다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "ability",
+     "assumes": "보일러 배관 교체 및 수리 기술 보유",
+     "source_text": "문식은 렌치를 들고 이음매를 한 번 더 조였다. 쇳소리가 짧게 났다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "정미 계 타기까지 엿새 남음, 설비집 계약금 다음 날 납부 예정",
+     "source_text": "정미가 계를 타려면 아직 엿새가 남아 있었고 설비집 계약금도 그 다음 날 넣기로 돼 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "보일러 관 교체 완료됨 (누수 해결)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "헝겊도 철사도 없었다. 새 관이었다. 쇠가 아직 반짝였고 이음매에서 물이 한 방울도 새지 않았다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "문식이 보일러 수리 작업을 직접 수행함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "문식이 관 앞에 쭈그리고 앉아 있었다. ... 문식은 렌치를 들고 이음매를 한 번 더 조였다."
+    }
+   ],
+   "cause": "보일러 노후 관 누수로 인한 교체 작업 필요",
+   "result": "새 관으로 교체 완료, 누수 해결됨",
+   "source_text": "정호가 연탄을 들고 내려갔을 때 보일러실 문이 열려 있었다. 문식이 관 앞에 쭈그리고 앉아 있었다. 헝겊도 철사도 없었다. 새 관이었다. 쇠가 아직 반짝였고 이음매에서 물이 한 방울도 새지 않았다. 밑에 받쳐 두었던 깡통은 치워져 벽 옆에 엎어져 있었다. \"다 갈았어요?\" \"갈았어요.\" 정호는 연탄을 문 앞에 내려놓았다. 정미가 계를 타려면 아직 엿새가 남아 있었고 설비집 계약금도 그 다음 날 넣기로 돼 있었다. 정호는 그 생각을 하다가 올라왔다. 문식은 렌치를 들고 이음매를 한 번 더 조였다. 쇳소리가 짧게 났다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:32:12Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 96.07
+ }
+}

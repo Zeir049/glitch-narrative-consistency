@@ -1,0 +1,97 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "발전기실 일일 탱크 계량 확인",
+   "summary": "카림이 발전기실에서 T-2 탱크 계량기를 읽고 수첩에 기록한다. 수치는 171로 며칠째 동일하다.",
+   "location_id": "LOC_007",
+   "time_id": "NEW:5월 3일 이후 아흐레째 되는 날",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_005",
+    "OBJ_019"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "T-2 탱크 계량 수치 171 (며칠째 동일)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "숫자는 171이었다. 며칠째 같은 숫자였다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_019 (카림의 수첩)",
+     "source_text": "수첩에 적었다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "T-2로 바꾼 지 아흐레 되었음",
+     "source_text": "T-2로 바꾼 지 아흐레였다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "이송관 분기함 쪽 이음쇠는 5월 3일에 조인 것이 아님",
+     "source_text": "그쪽 이음쇠는 5월 3일에 조인 것이 아니었다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "나가려면 승인이 필요하고 승인에는 이유가 필요함",
+     "source_text": "나가려면 승인이 필요했고, 승인을 받으려면 이유가 있어야 했고"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "T-2 탱크 계량 수치가 171로 며칠째 변하지 않음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "숫자는 171이었다. 며칠째 같은 숫자였다."
+    }
+   ],
+   "cause": "일일 점검 루틴",
+   "result": "계량 수치 171 기록, 이음쇠 점검 필요성 인지, 외부 이동 제한 상황 확인",
+   "source_text": "카림은 발전기실 일일 탱크 계량기를 읽고 수첩에 적었다. T-2로 바꾼 지 아흐레였다. 이송관은 같은 것을 쓰지만 분기함에서 갈라지는 쪽이 달랐고, 그쪽 이음쇠는 5월 3일에 조인 것이 아니었다. 카림은 그것도 언젠가 봐야 한다고 생각했다. 나가려면 승인이 필요했고, 승인을 받으려면 이유가 있어야 했고, 아직은 이유가 없었다. 숫자는 171이었다. 며칠째 같은 숫자였다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:48:20Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 37.73
+ }
+}

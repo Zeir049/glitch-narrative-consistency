@@ -1,0 +1,229 @@
+{
+  "schema_version": 2,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 3,
+  "batch_id": "T2-R3-B",
+  "scene_id": "scene_25",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_25.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r2)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T13:26:50Z",
+  "episode": 6,
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:AI_탐지_회피_패브릭",
+      "content": "AI의 탐지를 회피할 목적으로 의도적으로 짜낸 특수 패브릭이 존재한다.",
+      "description": "노이즈 무늬 옷의 원단이 AI 탐지를 피하기 위해 일부러 제작된 것이라는 설명. 블루멘이 전해 들은 형식('~라며?')으로 발화한다.",
+      "source_text": "AI 탐지를 피하려고 일부러 짜낸 패브릭이라며?",
+      "certainty": "inferred"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "노이즈 무늬 옷에 대한 결론을 도출했으나 아직 아무에게도 말하지 않은 화자.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S25_1",
+      "source_text": "저 아직 아무한테도 결론 말한 적 없는데.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_012",
+      "name": "블루멘 랑잠 (Blumen Langsam)",
+      "aliases": ["블루멘"],
+      "entity_type": "person",
+      "description": "복도에서 마주쳐 노이즈 무늬 패브릭 이야기를 꺼낸 뒤 대수롭지 않게 지나간 인물.",
+      "traits": [
+        {
+          "trait": "말끝을 늘이는 가벼운 반말투로 말한다 ('소름 돋더라~')",
+          "trait_type": "speech",
+          "source_text": "소름 돋더라~ 세상 무서워.",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "대수롭지 않게 하품을 하며 대화를 흘려 넘기는 태도",
+          "trait_type": "personality",
+          "source_text": "블루멘은 대수롭지 않게 하품을 하며 지나갔다.",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "슬리퍼를 끌며 걷는다",
+          "trait_type": "habit",
+          "source_text": "슬리퍼 끄는 소리가 복도 끝으로 사라질 때까지",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S25_1",
+      "source_text": "병실 밖 복도에서 블루멘과 마주쳤다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "NEW:헤일트라움_병실_밖_복도",
+      "name": "병실 밖 복도",
+      "description": "병실 바깥으로 이어진 복도. 끝까지 발소리가 울린다.",
+      "source_text": "병실 밖 복도에서 블루멘과 마주쳤다. / 슬리퍼 끄는 소리가 복도 끝으로 사라질 때까지",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "OBJ_008",
+      "name": "노이즈 무늬 옷",
+      "description": "누군가가 입고 왔던 무늬의 옷. 대화에서 AI 탐지를 피하려고 일부러 짜낸 패브릭으로 언급된다.",
+      "first_appearance_event_id": "EVENT_S25_1",
+      "source_text": "걔가 입고 온 그 무늬 말이야. AI 탐지를 피하려고 일부러 짜낸 패브릭이라며?",
+      "certainty": "inferred"
+    },
+    {
+      "object_id": "NEW:슬리퍼",
+      "name": "슬리퍼",
+      "description": "블루멘이 끌고 다니는 신발.",
+      "first_appearance_event_id": "EVENT_S25_1",
+      "source_text": "슬리퍼 끄는 소리가 복도 끝으로 사라질 때까지",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [
+    {
+      "time_id": "NEW:병실_복도에서_마주친_시점",
+      "expression": "병실 밖 복도에서 블루멘과 마주친 시점",
+      "description": "구체적 날짜·시각은 원문에 명시되지 않는다.",
+      "timeline": "future_world",
+      "source_text": "병실 밖 복도에서 블루멘과 마주쳤다.",
+      "certainty": "inferred"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S25_1",
+      "scene_id": "scene_25",
+      "order": 1,
+      "title": "복도에서 블루멘이 아직 말하지 않은 결론을 꺼내다",
+      "summary": "병실 밖 복도에서 마주친 블루멘이, 누군가 입고 왔던 무늬가 AI 탐지 회피용 패브릭이라는 이야기를 먼저 꺼낸다. 아직 아무에게도 결론을 말한 적 없는 '나'가 출처를 묻자 블루멘은 '그냥 알고 있었다'고만 답하고 하품하며 지나가고, 나는 그 자리에 서 있는다.",
+      "location_id": "NEW:헤일트라움_병실_밖_복도",
+      "time_id": "NEW:병실_복도에서_마주친_시점",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_012", "CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_012",
+      "objects": ["OBJ_008", "NEW:슬리퍼"],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "from": "unknown",
+          "to": "블루멘이 노이즈 무늬 옷의 AI 탐지 회피 목적을 알고 있음",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "AI 탐지를 피하려고 일부러 짜낸 패브릭이라며? / 어? 글쎄. 그냥... 알고 있었는데?"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "from": "unknown",
+          "to": "블루멘이 그 정보의 출처를 대지 못함",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "\"......그 얘기, 누구한테 들었어요?\" / \"어? 글쎄. 그냥... 알고 있었는데?\""
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_012",
+          "field": "knows",
+          "assumes": "노이즈 무늬 옷의 무늬가 AI 탐지 회피용으로 일부러 짜낸 패브릭이라는 결론",
+          "source_text": "AI 탐지를 피하려고 일부러 짜낸 패브릭이라며?"
+        },
+        {
+          "entity": "CHAR_012",
+          "field": "knows",
+          "assumes": "누군가가 그 무늬의 옷을 입고 왔다는 사실",
+          "source_text": "아, 맞다. 걔가 입고 온 그 무늬 말이야."
+        },
+        {
+          "entity": "CHAR_012",
+          "field": "knows",
+          "assumes": "not_knows: 자신이 그 결론을 알게 된 경로·출처",
+          "source_text": "어? 글쎄. 그냥... 알고 있었는데?"
+        },
+        {
+          "entity": "CHAR_012",
+          "field": "possesses",
+          "assumes": "NEW:슬리퍼 (끌고 다니는 중)",
+          "source_text": "슬리퍼 끄는 소리가 복도 끝으로 사라질 때까지"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "노이즈 무늬 옷이 AI 탐지 회피용이라는 결론을 이미 스스로 도출해 보유 중",
+          "source_text": "저 아직 아무한테도 결론 말한 적 없는데."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "그 결론을 이 시점까지 누구에게도 발설한 적이 없다는 자신의 이력",
+          "source_text": "저 아직 아무한테도 결론 말한 적 없는데."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "not_knows: 블루멘이 그 결론을 알게 된 경로",
+          "source_text": "......그 얘기, 누구한테 들었어요?"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "미래 세계의 로봇 신체로 복도에 서서 대화 중",
+          "source_text": "나는 그 자리에 서 있었다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "음성으로 대화 가능 (블루멘에게 되묻고 답을 들음)",
+          "source_text": "......그 얘기, 누구한테 들었어요?"
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "블루멘이 노이즈 무늬 옷의 AI 탐지 회피 목적을 이미 알고 있다",
+          "via": "direct",
+          "retained": true,
+          "source_text": "AI 탐지를 피하려고 일부러 짜낸 패브릭이라며?"
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "블루멘이 그 정보의 출처를 밝히지 못한다 ('그냥 알고 있었다')",
+          "via": "direct",
+          "retained": true,
+          "source_text": "어? 글쎄. 그냥... 알고 있었는데?"
+        }
+      ],
+      "cause": "블루멘이 복도에서 마주친 '나'에게 먼저 노이즈 무늬 패브릭 이야기를 꺼냈다.",
+      "result": "블루멘은 출처를 밝히지 못한 채 하품하며 지나갔고, 나는 그 자리에 선 채 남았다.",
+      "source_text": "병실 밖 복도에서 블루멘과 마주쳤다. / \"아, 맞다. 걔가 입고 온 그 무늬 말이야. AI 탐지를 피하려고 일부러 짜낸 패브릭이라며? 소름 돋더라~ 세상 무서워.\" / \"......그 얘기, 누구한테 들었어요? 저 아직 아무한테도 결론 말한 적 없는데.\" / \"어? 글쎄. 그냥... 알고 있었는데?\" / 블루멘은 대수롭지 않게 하품을 하며 지나갔다. 슬리퍼 끄는 소리가 복도 끝으로 사라질 때까지, 나는 그 자리에 서 있었다.",
+      "certainty": "explicit"
+    }
+  ]
+}

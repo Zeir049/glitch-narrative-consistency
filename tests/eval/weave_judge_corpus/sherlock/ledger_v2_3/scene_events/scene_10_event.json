@@ -1,0 +1,233 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "부인이 월요일 죽음의 진술을 상기시킴",
+   "summary": "부인이 홈즈에게 월요일에 죽었다고 이전에 말했다고 상기시키며, 홈즈는 그 판단을 거두겠다고 답한다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_020"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_020",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "부인에게 월요일 사망을 들은 사실",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "월요일에 죽었다고 하셨잖아요."
+    }
+   ],
+   "assumed_states": [],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "세인트클레어가 월요일에 죽었다는 부인의 이전 진술",
+     "via": "told",
+     "retained": true,
+     "source_text": "월요일에 죽었다고 하셨잖아요."
+    }
+   ],
+   "cause": "부인의 상기 발언",
+   "result": "홈즈가 월요일 사망 판단을 철회하겠다고 답함",
+   "source_text": "\"월요일에 죽었다고 하셨잖아요.\" 부인이 말했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "홈즈의 월요일 사망 판단 철회",
+   "summary": "홈즈는 월요일 사망이라는 자신의 이전 판단을 거두겠다고 선언하고, 편지를 다시 불빛에 비춰 살펴본다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_020"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "세인트클레어는 월요일에 죽었다",
+     "to": "세인트클레어의 월요일 사망 판단을 보류함",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "지금은 그 판단을 거두겠습니다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "편지",
+     "source_text": "그는 편지를 다시 불빛 쪽으로 들어 보았다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "EVENT_6_1의 부인 발언에 대한 응답이며, 사이에 시간 경과가 없다",
+     "source_text": "\"월요일에 죽었다고 하셨잖아요.\" / \"지금은 그 판단을 거두겠습니다.\""
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "편지 이름 부분이 검게 말라 있고 나머지는 회색빛임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이름 부분은 검게 말라 있었고 나머지는 회색빛이었다."
+    }
+   ],
+   "cause": "부인의 월요일 사망 진술 상기",
+   "result": "홈즈가 월요일 사망 판단을 철회하고 편지를 다시 살핀다",
+   "source_text": "\"지금은 그 판단을 거두겠습니다.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_3",
+   "scene_id": "scene_6_1",
+   "order": 3,
+   "title": "홈즈의 위조 가능성 및 반지 증거 한계 진술",
+   "summary": "홈즈는 편지가 위조가 아니라면 자신이 완전히 틀린 셈이라고 말하며, 반지 하나만으로는 아무것도 증명되지 않는다고 덧붙인다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_020"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_038"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "편지",
+     "source_text": "그는 편지를 다시 불빛 쪽으로 들어 보았다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "편지에서 발견된 반지",
+     "source_text": "다만 반지 하나만으로는 아무것도 증명되지 않습니다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_2",
+     "assumes": "편지 검토를 이어가는 동일 장면이며, 사이에 시간 경과가 없다",
+     "source_text": "이것이 위조가 아니라면 저는 완전히 틀린 셈이지요."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "반지 하나만으로는 세인트클레어의 정체를 증명할 수 없다는 판단",
+     "via": "inference",
+     "retained": true,
+     "source_text": "다만 반지 하나만으로는 아무것도 증명되지 않습니다."
+    }
+   ],
+   "cause": "편지 검토 결과의 자기 정리",
+   "result": "부인이 그의 자기 말을 뒤집는 태도에 화를 내지 않음",
+   "source_text": "이것이 위조가 아니라면 저는 완전히 틀린 셈이지요. 다만 반지 하나만으로는 아무것도 증명되지 않습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_4",
+   "scene_id": "scene_6_1",
+   "order": 4,
+   "title": "부인의 반응 - 유보에 화를 내지 않음",
+   "summary": "부인은 홈즈의 유보적 진술에 화를 내지 않았으며, 이는 그가 자기 말을 뒤집는 데 주저하지 않았기 때문이었다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_020"
+   ],
+   "witness_character_ids": [
+    "CHAR_001"
+   ],
+   "main_actor_character_id": "CHAR_020",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_020",
+     "field": "knows",
+     "assumes": "홈즈가 월요일 사망 판단을 철회함",
+     "source_text": "지금은 그 판단을 거두겠습니다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_3",
+     "assumes": "홈즈의 위조 및 반지 한계 진술 직후의 부인 반응이며, 사이에 시간 경과가 없다",
+     "source_text": "다만 반지 하나만으로는 아무것도 증명되지 않습니다. / 부인은 그 유보에 화를 내지 않았다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_020",
+     "info": "홈즈가 월요일 사망 판단을 철회하고 위조 가능성을 시사함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "지금은 그 판단을 거두겠습니다."
+    }
+   ],
+   "cause": "홈즈의 자기 판단 철회 및 위조 가능성 시사",
+   "result": "부인이 유보에 화를 내지 않고, 그의 자기 말 뒤집기를 받아들임",
+   "source_text": "부인은 그 유보에 화를 내지 않았다. 그가 자기 말을 뒤집는 데 조금도 주저하지 않았기 때문이었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:04:11Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 16.11
+ }
+}

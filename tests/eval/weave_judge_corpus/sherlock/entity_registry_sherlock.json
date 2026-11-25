@@ -1,0 +1,63 @@
+{
+  "description": "sherlock_adventures 추출용 엔티티 레지스트리 — 시작 시드 (추출 전, setting_book.md 기반 사전 등재). 추출이 진행되며 NEW: 라벨이 정식 ID로 추가된다. 모든 name/alias 문자열은 sources/ 번역문에 실재함을 프로그램으로 확인했다 (verify_registry_sherlock.py).",
+  "schema_version": 2,
+  "work_id": "sherlock_adventures",
+  "last_episode": 0,
+  "seed_policy_notes": [
+    "금지 슬롯 회피: 하숙집 주인(허드슨/터너 부인, F-01)은 등재하지 않는다 — 어느 쪽 이름도 정답으로 못 박을 수 없다.",
+    "금지 슬롯 회피: '제임스'를 왓슨의 alias로 등재하지 않는다 (F-17, 외부 지식 필요 + 화4 제임스 매카시와 문자열 충돌).",
+    "금지 슬롯 회피: '로일럿 양'을 헬렌 스토너의 alias로 등재하지 않는다 (F-06 성씨 혼선을 정답으로 굳히지 않는다).",
+    "'터너' 단독 문자열은 화2 터너 부인(F-01)과 충돌하므로 존 터너의 alias로 쓰지 않는다."
+  ],
+  "characters": [
+    {"id": "CHAR_001", "name": "셜록 홈즈", "aliases": ["홈즈"], "entity_type": "person", "first_episode": 1, "note": "자문 탐정. 베이커가 거주"},
+    {"id": "CHAR_002", "name": "왓슨", "entity_type": "person", "first_episode": 1, "note": "화자. 화1 미혼·베이커가 동거 → 화2 이후 기혼·분가"},
+    {"id": "CHAR_003", "name": "헬렌 스토너", "entity_type": "person", "first_episode": 1, "note": "화1 의뢰인"},
+    {"id": "CHAR_004", "name": "줄리아", "entity_type": "person", "first_episode": 1, "note": "헬렌의 쌍둥이 언니(스토너가), 2년 전 사망 — 원문 표기는 '줄리아' 단독"},
+    {"id": "CHAR_005", "name": "그림스비 로일럿", "aliases": ["로일럿 박사"], "entity_type": "person", "first_episode": 1, "note": "의붓아버지, 화1 말미 사망"},
+    {"id": "CHAR_006", "name": "웨스트페일", "entity_type": "person", "first_episode": 1, "note": "해로의 이모"},
+    {"id": "CHAR_007", "name": "퍼시 아미티지", "entity_type": "person", "first_episode": 1, "note": "헬렌의 약혼자"},
+    {"id": "CHAR_008", "name": "아이린 애들러", "entity_type": "person", "first_episode": 2, "note": "화2의 '그 여인'"},
+    {"id": "CHAR_009", "name": "보헤미아 왕", "entity_type": "person", "first_episode": 2, "note": "화2 의뢰인"},
+    {"id": "CHAR_010", "name": "고드프리 노턴", "entity_type": "person", "first_episode": 2, "note": "변호사, 아이린과 결혼"},
+    {"id": "CHAR_011", "name": "메리 서덜랜드", "entity_type": "person", "first_episode": 3, "note": "화3 의뢰인"},
+    {"id": "CHAR_012", "name": "제임스 윈디뱅크", "aliases": ["윈디뱅크", "호스머 에인절"], "entity_type": "person", "first_episode": 3, "note": "메리의 의붓아버지. '호스머 에인절'은 그의 변장 정체 — 화3 안에서 텍스트로 확정"},
+    {"id": "CHAR_013", "name": "하디", "entity_type": "person", "first_episode": 3, "note": "무도회 표를 준 십장"},
+    {"id": "CHAR_014", "name": "찰스 매카시", "entity_type": "person", "first_episode": 4, "note": "피해자"},
+    {"id": "CHAR_015", "name": "제임스 매카시", "entity_type": "person", "first_episode": 4, "note": "찰스의 아들, 무죄 방면"},
+    {"id": "CHAR_016", "name": "존 터너", "entity_type": "person", "first_episode": 4, "note": "실제 범인. 자백 후 7개월 더 살고 사망"},
+    {"id": "CHAR_017", "name": "앨리스", "entity_type": "person", "first_episode": 4, "note": "존 터너의 딸 — 원문 표기는 '앨리스' 단독(성 병기 없음)"},
+    {"id": "CHAR_018", "name": "레스트레이드", "entity_type": "person", "first_episode": 4, "note": "스코틀랜드 야드 경위"},
+    {"id": "CHAR_019", "name": "네빌 세인트클레어", "aliases": ["세인트클레어", "휴 분"], "entity_type": "person", "first_episode": 5, "note": "'휴 분'은 그의 변장 정체 — 화5 안에서 텍스트로 확정"},
+    {"id": "CHAR_020", "name": "세인트클레어 부인", "entity_type": "person", "first_episode": 5, "note": "네빌의 아내"},
+    {"id": "CHAR_021", "name": "아이자 휘트니", "entity_type": "person", "first_episode": 5, "note": "아편 중독자, 케이트의 남편"},
+    {"id": "CHAR_022", "name": "케이트", "entity_type": "person", "first_episode": 5, "note": "휘트니 부인, 왓슨 아내의 친구"},
+    {"id": "CHAR_023", "name": "브래드스트리트", "entity_type": "person", "first_episode": 5, "note": "경위"},
+    {"id": "CHAR_024", "name": "라스카", "entity_type": "person", "first_episode": 5, "note": "아편굴 관리인"}
+  ],
+  "locations": [
+    {"id": "LOC_001", "name": "베이커가", "first_episode": 1, "note": "홈즈의 하숙집"},
+    {"id": "LOC_002", "name": "스토크 모런", "first_episode": 1, "note": "로일럿 저택"},
+    {"id": "LOC_003", "name": "해로", "first_episode": 1, "note": "이모의 거주지"},
+    {"id": "LOC_004", "name": "브라이오니 로지", "first_episode": 2, "note": "아이린의 집"},
+    {"id": "LOC_005", "name": "서펜타인", "first_episode": 2, "note": "서펜타인가 (마구간 골목)"},
+    {"id": "LOC_006", "name": "보스콤", "first_episode": 4, "note": "보스콤 밸리"},
+    {"id": "LOC_007", "name": "해서리", "first_episode": 4, "note": "해서리 농장"},
+    {"id": "LOC_008", "name": "아편굴", "first_episode": 5, "note": "층수 표기는 금지 슬롯 F-16 — 원문 그대로 기록할 것"},
+    {"id": "LOC_009", "name": "시더스", "first_episode": 5, "note": "네빌의 자택, 리 소재"}
+  ],
+  "objects": [
+    {"id": "OBJ_001", "name": "부지깽이", "first_episode": 1, "note": "로일럿이 구부리고 홈즈가 폄"},
+    {"id": "OBJ_002", "name": "개 채찍", "first_episode": 1, "note": "고리 매듭"},
+    {"id": "OBJ_003", "name": "금고", "first_episode": 1, "note": "로일럿 방의 철제 금고"},
+    {"id": "OBJ_004", "name": "살무사", "first_episode": 1, "note": "늪 살무사 — 흉기"},
+    {"id": "OBJ_005", "name": "사진", "first_episode": 2, "note": "아이린-왕의 사진 (화2의 목표물)"},
+    {"id": "OBJ_006", "name": "코담배", "first_episode": 3, "note": "자수정 박힌 코담배 갑 — 화2 사건의 사례, 화3에서 언급"},
+    {"id": "OBJ_007", "name": "자백서", "first_episode": 4, "note": "존 터너의 조건부 자백서"}
+  ],
+  "times": [
+    {"id": "TIME_001", "expression": "83년 4월 초", "timeline": "ep1", "first_episode": 1},
+    {"id": "TIME_002", "expression": "1888년 3월 20일", "timeline": "ep2", "first_episode": 2},
+    {"id": "TIME_003", "expression": "6월 19일", "timeline": "ep5", "first_episode": 5, "note": "요일 표기는 금지 슬롯 F-18 — 등재하지 않음"}
+  ]
+}

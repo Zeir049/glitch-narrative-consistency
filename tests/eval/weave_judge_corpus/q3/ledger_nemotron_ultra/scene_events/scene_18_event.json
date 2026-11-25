@@ -1,0 +1,105 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:4월_29일_정오",
+   "expression": "4월 29일 정오",
+   "description": "북쪽 지평선이 잠깐 붉어졌다가 꺼진 시각",
+   "timeline": "main",
+   "source_text": "4월 29일 정오에 북쪽 지평선이 잠깐 붉어졌다가 꺼진 뒤로는 그것마저 없었다",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "NEW:8월까지",
+   "expression": "8월까지",
+   "description": "북쪽 지평선이 붉어지는 현상이 없을 것으로 예상되는 기간",
+   "timeline": "main",
+   "source_text": "8월까지 그럴 것이었다",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "관측창 확인",
+   "summary": "서율이 관측창에서 외부 상황을 확인했으나 아무것도 보이지 않았다",
+   "location_id": "LOC_003",
+   "time_id": "NEW:4월_29일_정오",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_003",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율은 1층 복도 끝의 관측창으로 갔다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "4월 29일 정오에 북쪽 지평선이 잠깐 붉어졌다가 꺼진 뒤로는 아무것도 보이지 않음",
+     "source_text": "4월 29일 정오에 북쪽 지평선이 잠깐 붉어졌다가 꺼진 뒤로는 그것마저 없었다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "8월까지 외부 상황이 변하지 않을 것임",
+     "source_text": "8월까지 그럴 것이었다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "매일 한 번 관측창에 와서 외부 확인하는 루틴을 가짐",
+     "source_text": "그래도 매일 한 번은 여기 왔다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "관측창 너머 외부에는 아무것도 보이지 않음 (북쪽 지평선 붉어짐 현상 이후 지속)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "밖에는 아무것도 없었다. 4월 29일 정오에 북쪽 지평선이 잠깐 붉어졌다가 꺼진 뒤로는 그것마저 없었다"
+    }
+   ],
+   "cause": "일상적인 외부 상황 확인 루틴",
+   "result": "외부 상황 변화 없음 확인",
+   "source_text": "서율은 1층 복도 끝의 관측창으로 갔다. 주 모듈에서 밖이 보이는 유일한 창이었다. 유리에 손을 대자 손바닥 자국이 하얗게 남았다가 천천히 사라졌다. 밖에는 아무것도 없었다. 4월 29일 정오에 북쪽 지평선이 잠깐 붉어졌다가 꺼진 뒤로는 그것마저 없었다. 8월까지 그럴 것이었다. 서율은 창에서 물러섰다. 유리 너머의 검은색은 창을 널빤지로 막아 놓은 것과 구별되지 않았다. 그래도 매일 한 번은 여기 왔다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:46:55Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 38.46
+ }
+}

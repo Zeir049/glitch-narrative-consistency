@@ -1,0 +1,1318 @@
+{
+ "schema_version": 2,
+ "episode": 3,
+ "worldview_rules": [
+  {
+   "rule_id": "NEW:연료_일일_기준량",
+   "content": "하루 연료 소비 기준량은 196리터로 산정됨",
+   "description": "41,000리터를 남은 209일로 나눈 값. 여유가 거의 없는 상태.",
+   "source_text": "하루 196이어야 하는 숫자였다. 41,000리터를 남은 209일로 나눈 결과였고, 그 안에는 여유가 거의 없었다.",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:무인_전환_일정",
+   "content": "무인 전환은 10월로 예정되어 있음",
+   "description": "도현이 관측 모듈 배선도 지연을 '급한 거 아니잖아요. 무인 전환은 10월이에요.'라고 언급함.",
+   "source_text": "무인 전환은 10월이에요.",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "RULE_007",
+   "content": "규정 7조는 '업무 우선'을 명시하나 큐 오픈 시각을 구체적으로 정하지 않음",
+   "description": "도현이 규정 7조를 인용하며 큐 오픈 지연을 정당화하려 함.",
+   "source_text": "규정 7조는 '업무 우선'이라고만 되어 있지 몇 분에 열라고는 안 되어 있어요.",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:통신_큐_운영_규칙",
+   "content": "통신 큐는 22시 정각에 열리며 34분(22시 34분)까지 전송 창이 열림",
+   "description": "서율은 22시 정각에 큐가 열리는 것을 확인하고 큐가 비면 나가는 루틴을 가짐. 도현은 2일 7분, 4일 9분, 5일 12분 늦게 큐를 열었음.",
+   "source_text": "큐는 34분이라며. 40분 안에 다 나가잖아. / 서율은 22시 정각에 큐가 열리는 것을 확인하고 나면 문 옆에 서 있다가, 큐가 비면 나갔다.",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "RULE_007_1",
+   "content": "기지 운영 규정 4조: 부기지장의 이의 제기는 다음 통신 창에 본부로 전송해야 함",
+   "description": "부기지장이 개정에 이의를 제기할 경우, 해당 이의서를 다음 통신 창 큐에 올려 본부로 보내야 한다는 규정. 7조보다 우선함.",
+   "source_text": "이 이의는 다음 통신 창에 본부로 갑니다. 4조. / 4조는 7조보다 앞에 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "RULE_007_2",
+   "content": "기지 운영 규정 7조 원문: 긴급 사적 연락은 기지장 승인으로 예외 허용",
+   "description": "사적 통신 전면 중단에도 불구하고 긴급한 사적 연락은 기지장 승인 하에 예외적으로 허용됨.",
+   "source_text": "긴급 사적 연락은 기지장 승인으로 예외. 그건 원문 7조에도 있어.",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:본부_불개입_원칙",
+   "content": "본부는 기지 내 인명 피해가 없는 한 개입하지 않으며, 규정은 기지 구성원들의 합의로 운영된다",
+   "description": "마르타가 서율에게 설명한 본부의 태도와 기지 규정의 실체",
+   "source_text": "본부는 1,100킬로미터 밖에 있어. 여기서 우리가 서로 죽이지만 않으면 본부는 아무것도 안 해. 서율, 당신이 지금 지키고 있는 규정은 본부의 규정이 아니야. 여기 다섯 명의 규정이야. 본부는 신경 안 써.",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:기록_의미_불특정_미래_대비",
+   "content": "기록은 누가 물어볼지 모르는 미래를 위해 남기는 것이다",
+   "description": "마르타가 이의서 제출 이유와 기록의 의미를 설명함",
+   "source_text": "봄에 누가 이 겨울을 물어보면, 종이가 있어야 해. 누가 물어봐요. 몰라. 그게 기록의 의미야. 누가 물어볼지 모르니까 남기는 거야.",
+   "certainty": "explicit"
+  }
+ ],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "OBJ_019",
+   "name": "카림의 수첩",
+   "description": "카림이 매일 연료 소비량을 기록하는 종이 수첩",
+   "first_appearance_event_id": "EVENT_3_1",
+   "source_text": "카림의 수첩에 적힌 숫자는 208이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_020",
+   "name": "카림의 쪽지",
+   "description": "카림이 S-2 문 앞에 두고 가는, 날짜와 리터 수만 적힌 종이 쪽지",
+   "first_appearance_event_id": "EVENT_3_1",
+   "source_text": "서율은 매일 아침 카림이 S-2 문 앞에 두고 가는 쪽지로 그 숫자를 받았다. 종이 한 장에 날짜와 리터 수만 적혀 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_021",
+   "name": "본부 운영팀 명의 문서",
+   "description": "무인 전환 서류 3건의 도착 지연을 알리는 본부 발송 문서",
+   "first_appearance_event_id": "EVENT_3_2",
+   "source_text": "본부 운영팀 명의였다. 「4월 2일, 4월 4일, 4월 5일 전송분 중 무인 전환 서류 3건(자산 목록 2차, 관측 모듈 배선도, 봉인 절차 초안)의 도착이 익일로 지연됨. 사유 보고 바람.」",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_022",
+   "name": "서율의 손글씨 메모",
+   "description": "서율이 회의 탁자 위에 놓은, 카림 수첩처럼 손으로 쓴 종이 한 장",
+   "first_appearance_event_id": "EVENT_3_3",
+   "source_text": "서율은 종이 한 장을 식탁 가운데에 놓았다. 손으로 쓴 것이었다. 카림이 수첩에 쓰는 것처럼.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_023",
+   "name": "규정 7조 임시 개정문",
+   "description": "기지장 한서율 명의로 작성된 규정 7조 임시 개정 종이 문서",
+   "first_appearance_event_id": "EVENT_3_4",
+   "source_text": "서율이 손으로 쓴 규정 7조 임시 개정문은 식당 벽 게시판에 붙었고",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_024",
+   "name": "마르타 이의서 사본",
+   "description": "부기지장 마르타가 손으로 쓴 이의서 사본",
+   "first_appearance_event_id": "EVENT_3_4",
+   "source_text": "그 옆에 마르타가 손으로 쓴 이의서 사본이 붙었다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_025",
+   "name": "배선용 점퍼 케이블 상자",
+   "description": "예비 부품 선반 위에 있던 점퍼 케이블이 든 상자. 몇 개가 있어야 하는지 알 수 없어 몇 개가 없어졌는지도 모름",
+   "first_appearance_event_id": "EVENT_3_6",
+   "source_text": "예비 부품 선반 위에 황동 밸브 상자가 있었다. 그 옆에 배선용 점퍼 케이블이 든 상자가 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "TIME_039",
+   "expression": "4월 3일 아침",
+   "description": "카림 수첩 기록 시작일",
+   "timeline": "main",
+   "source_text": "4월 3일 아침, 카림의 수첩에 적힌 숫자는 208이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_040",
+   "expression": "4월 4일",
+   "description": "카림 수첩 기록일, 민채 어머니 입원일",
+   "timeline": "main",
+   "source_text": "4일에는 211. / 4일에 어머니가 입원하셨고",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_041",
+   "expression": "4월 5일",
+   "description": "카림 수첩 기록일, 본부 문서 지연일",
+   "timeline": "main",
+   "source_text": "5일에는 209. / 4월 2일, 4월 4일, 4월 5일 전송분",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_042",
+   "expression": "4월 6일",
+   "description": "카림 수첩 기록일, 발전기실 대화일",
+   "timeline": "main",
+   "source_text": "6일에는 214. / 4월 6일 저녁, 발전기실에서 카림이 말했다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_029",
+   "expression": "기지 시각 22시 31분",
+   "description": "통신실에서 본부 문서 확인 시각",
+   "timeline": "main",
+   "source_text": "4월 7일 22시 30분. 통신실.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_043",
+   "expression": "4월 8일 08시",
+   "description": "회의실(식당) 회의 시각",
+   "timeline": "main",
+   "source_text": "4월 8일 08시. 회의실은 영하 18도였다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_044",
+   "expression": "4월 8일 밤",
+   "description": "첫 사적 통신(도현 어머니 연락) 시각",
+   "timeline": "main",
+   "source_text": "4월 8일 밤에는 서율이 입회한 채로 2분 동안",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_045",
+   "expression": "4월 9일 22시",
+   "description": "도현 어머니 답장 수신 시각 (다음 날 통신 창)",
+   "timeline": "main",
+   "source_text": "답은 다음 날 창에 왔다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_046",
+   "expression": "4월 10일",
+   "description": "도현이 식당에서 밥을 먹지 않고 통신실에서 먹기 시작한 날",
+   "timeline": "main",
+   "source_text": "4월 10일부터 도현은 식당에서 밥을 먹지 않았다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_047",
+   "expression": "4월 12일",
+   "description": "두 번째 심리 점검일",
+   "timeline": "main",
+   "source_text": "4월 12일. 두 번째 심리 점검.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_048",
+   "expression": "4월 14일",
+   "description": "카림이 회로 점검 결과를 보고한 날, 겨울 22일째",
+   "timeline": "main",
+   "source_text": "4월 14일 저녁. / 4월 14일이었고, 겨울 22일째였다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_049",
+   "expression": "4월 26일",
+   "description": "다음 심리 점검 예정일",
+   "timeline": "main",
+   "source_text": "다음 점검은 4월 26일.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_050",
+   "expression": "3월 24일 이후",
+   "description": "카림이 다섯 시간 넘게 잔 날이 없는 기간의 시작",
+   "timeline": "main",
+   "source_text": "그 사람 3월 24일 이후로 다섯 시간 넘게 잔 날이 없어.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_051",
+   "expression": "새벽 세 시",
+   "description": "카림이 매일 의무실 앞을 지나 발전기실로 가는 시각",
+   "timeline": "main",
+   "source_text": "의무실 앞을 새벽 세 시에 지나가. 발전기실로. 매일.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_052",
+   "expression": "내일 아침",
+   "description": "카림이 장비 회로 계량기를 읽으러 갈 예정 시각",
+   "timeline": "main",
+   "source_text": "장비 회로 계량기는. 내일 아침에 읽어요.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-27T04:10:42Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 77.37
+ },
+ "_merge": {
+  "spec": "handoff/chunked_extract_spec.md",
+  "chunks": [
+   "episode_03_c01.json",
+   "episode_03_c02.json",
+   "episode_03_c03.json"
+  ],
+  "unmapped_new": [
+   "NEW:규정_7조_임시_개정문 (게시 전 소지)",
+   "NEW:기록_의미_불특정_미래_대비",
+   "NEW:마르타_이의서_사본 (게시 전 소지)",
+   "NEW:무인_전환_일정",
+   "NEW:본부_불개입_원칙",
+   "NEW:연료_일일_기준량",
+   "NEW:카림_수첩, NEW:카림_쪽지",
+   "NEW:통신_큐_운영_규칙"
+  ]
+ },
+ "events": [
+  {
+   "event_id": "EVENT_3_1",
+   "scene_id": "scene_3_1",
+   "order": 1,
+   "title": "카림 수첩 연료 기록 확인 및 발전기실 대화",
+   "summary": "서율은 카림의 수첩과 쪽지로 일일 연료 소비량이 기준치(196L)를 초과함을 확인하고, 발전기실에서 카림과 원인(G2 효율이 아닌 부하 증가)을 논의함.",
+   "location_id": "LOC_007",
+   "time_id": "TIME_042",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_019",
+    "OBJ_020"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "일일 연료 소비량 208~214L (기준 196L 초과), G2 효율 정상이나 부하 증가로 소비 증가, 10월 4일 연료 고갈 예상",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "하루 196이어야 하는 숫자였다. 41,000리터를 남은 209일로 나눈 결과였고, 그 안에는 여유가 거의 없었다. / G2는 킬로와트당 연료를 예전만큼 먹어요. 나빠진 게 아니에요. 그냥 부하가 더 걸려요. / 하루 15리터씩 더 쓰면 210일에 3,150리터. 41,000리터에서 그만큼이 사라지면 10월 4일에 바닥이 났다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "일일 연료 소비량 기록(208, 211, 209, 214L), 외부 기온과 소비량 무관, G2 효율 정상, 주 계량기 24.3~24.8kW, 부하 증가 원인 미확인",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "3일은 영하 58도, 5일은 영하 63도. 3일이 208이고 5일이 209. 기온이랑 상관없이 늘어요. / G2는 킬로와트당 연료를 예전만큼 먹어요. 나빠진 게 아니에요. 그냥 부하가 더 걸려요. / 주 계량기는 24.3에서 24.8 사이예요. / 며칠 걸려요. 회로마다 따로 봐야 해서."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "NEW:카림_수첩, NEW:카림_쪽지",
+     "source_text": "카림의 수첩에 적힌 숫자는 208이었다. / 서율은 매일 아침 카림이 S-2 문 앞에 두고 가는 쪽지로 그 숫자를 받았다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "회로별 부하 분석 가능 (며칠 소요)",
+     "source_text": "며칠 걸려요. 회로마다 따로 봐야 해서."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "카림은 확인하지 않은 것은 말하지 않는 성격",
+     "source_text": "카림은 그런 사람이었다. 확인하지 않은 것은 말하지 않았다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "일일 연료 소비량 208~214L (기준 196L 초과), G2 효율 정상이나 부하 증가로 소비 증가, 10월 4일 연료 고갈 예상",
+     "via": "direct",
+     "retained": true,
+     "source_text": "하루 196이어야 하는 숫자였다. 41,000리터를 남은 209일로 나눈 결과였고, 그 안에는 여유가 거의 없었다. / G2는 킬로와트당 연료를 예전만큼 먹어요. 나빠진 게 아니에요. 그냥 부하가 더 걸려요. / 하루 15리터씩 더 쓰면 210일에 3,150리터. 41,000리터에서 그만큼이 사라지면 10월 4일에 바닥이 났다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "일일 연료 소비량 기록(208, 211, 209, 214L), 외부 기온과 소비량 무관, G2 효율 정상, 주 계량기 24.3~24.8kW, 부하 증가 원인 미확인",
+     "via": "direct",
+     "retained": true,
+     "source_text": "3일은 영하 58도, 5일은 영하 63도. 3일이 208이고 5일이 209. 기온이랑 상관없이 늘어요. / G2는 킬로와트당 연료를 예전만큼 먹어요. 나빠진 게 아니에요. 그냥 부하가 더 걸려요. / 주 계량기는 24.3에서 24.8 사이예요. / 며칠 걸려요. 회로마다 따로 봐야 해서."
+    }
+   ],
+   "cause": "연료 소비량 이상 징후 발견",
+   "result": "카림에게 회로별 부하 분석 지시, 10월 4일 연료 고갈 위기 인지",
+   "source_text": "4월 3일 아침, 카림의 수첩에 적힌 숫자는 208이었다. 4일에는 211. 5일에는 209. 6일에는 214. / 서율은 매일 아침 카림이 S-2 문 앞에 두고 가는 쪽지로 그 숫자를 받았다. 종이 한 장에 날짜와 리터 수만 적혀 있었다. 하루 196이어야 하는 숫자였다. 41,000리터를 남은 209일로 나눈 결과였고, 그 안에는 여유가 거의 없었다. / \"이송관 보온 히터 때문이면 바깥 기온이랑 같이 움직여야 해요.\" 4월 6일 저녁, 발전기실에서 카림이 말했다. / \"확인해.\" / \"봐.\" / 서율은 발전기실을 나오면서 계산했다. 하루 15리터씩 더 쓰면 210일에 3,150리터. 41,000리터에서 그만큼이 사라지면 10월 4일에 바닥이 났다. 16일 모자랐다. 16일은 극야가 끝난 뒤의 날들이었고, 그 16일 동안 기지에는 난방이 없을 것이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_2",
+   "scene_id": "scene_3_2",
+   "order": 2,
+   "title": "통신실 본부 문서 확인 및 도현 질책",
+   "summary": "서율과 도현이 통신실에서 본부 운영팀의 무인 전환 서류 3건 지연 문서를 확인하고, 도현의 큐 오픈 지연(2일 7분, 4일 9분, 5일 12분)을 두고 갈등함.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_029",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_021",
+    "OBJ_011"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "본부 무인 전환 서류 3건(자산 목록 2차, 관측 모듈 배선도, 봉인 절차 초안) 도착 지연, 도현의 큐 오픈 지연(2일 7분, 4일 9분, 5일 12분), 민채 어머니 입원(4일)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "본부 운영팀 명의였다. 「4월 2일, 4월 4일, 4월 5일 전송분 중 무인 전환 서류 3건(자산 목록 2차, 관측 모듈 배선도, 봉인 절차 초안)의 도착이 익일로 지연됨. 사유 보고 바람.」 / \"2일은 7분. 4일은 9분. 5일은 12분.\" / \"민채가 그날들에 사정이 있었어요. 4일에 어머니가 입원하셨고——\""
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "from": "unknown",
+     "to": "본부 문서 지연 사실, 자신의 큐 오픈 지연이 문서 지연 원인임을 인정, 규정 7조에 큐 오픈 시각 미명시",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "본부 운영팀 명의였다. 「4월 2일, 4월 4일, 4월 5일 전송분 중 무인 전환 서류 3건(자산 목록 2차, 관측 모듈 배선도, 봉인 절차 초안)의 도착이 익일로 지연됨. 사유 보고 바람.」 / \"2일은 7분. 4일은 9분. 5일은 12분.\" / \"규정 7조는 '업무 우선'이라고만 되어 있지 몇 분에 열라고는 안 되어 있어요.\""
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "body_status",
+     "from": "정상",
+     "to": "긴장/대립 상태",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "정상",
+     "certainty": "inferred",
+     "source_text": "도현은 의자를 돌려 서율을 정면으로 보았다. 스물아홉이었고, 첫 월동이었고, 이 기지에서 유일하게 바깥과 이어진 40분을 손에 쥐고 있는 사람이었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "OBJ_011 (태블릿/콘솔 조작 권한)",
+     "source_text": "콘솔 만지는 건 저밖에 없어요. 큐 순서, 압축률, 재전송 여부, 전부 제가 정해요."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "민채 어머니 입원 사실(4일), 의료 보고는 짧아 먼저 올림, 관측 모듈 배선도는 급하지 않음",
+     "source_text": "민채가 그날들에 사정이 있었어요. 4일에 어머니가 입원하셨고—— / 그건 안 밀렸어요. 의료 보고는 짧으니까 먼저 올렸어요. / 그건 급한 거 아니잖아요. 무인 전환은 10월이에요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "자신은 큐가 비면 바로 나가는 루틴이라 도현의 큐 오픈 시각을 모니터링하지 않음",
+     "source_text": "서율은 22시 정각에 큐가 열리는 것을 확인하고 나면 문 옆에 서 있다가, 큐가 비면 나갔다. 22시 정각에 도현의 손이 어디로 가는지는 첫날 이후로 보지 않았다."
+    },
+    {
+     "entity": "CHAR_006",
+     "field": "body_status",
+     "assumes": "어머니 입원 중 (4일)",
+     "source_text": "민채가 그날들에 사정이 있었어요. 4일에 어머니가 입원하셨고——"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "본부 무인 전환 서류 3건(자산 목록 2차, 관측 모듈 배선도, 봉인 절차 초안) 도착 지연, 도현의 큐 오픈 지연(2일 7분, 4일 9분, 5일 12분), 민채 어머니 입원(4일)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "본부 운영팀 명의였다. 「4월 2일, 4월 4일, 4월 5일 전송분 중 무인 전환 서류 3건(자산 목록 2차, 관측 모듈 배선도, 봉인 절차 초안)의 도착이 익일로 지연됨. 사유 보고 바람.」 / \"2일은 7분. 4일은 9분. 5일은 12분.\" / \"민채가 그날들에 사정이 있었어요. 4일에 어머니가 입원하셨고——\""
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "본부 문서 지연 사실, 자신의 큐 오픈 지연이 문서 지연 원인임을 인정, 규정 7조에 큐 오픈 시각 미명시",
+     "via": "direct",
+     "retained": true,
+     "source_text": "본부 운영팀 명의였다. 「4월 2일, 4월 4일, 4월 5일 전송분 중 무인 전환 서류 3건(자산 목록 2차, 관측 모듈 배선도, 봉인 절차 초안)의 도착이 익일로 지연됨. 사유 보고 바람.」 / \"2일은 7분. 4일은 9분. 5일은 12분.\" / \"규정 7조는 '업무 우선'이라고만 되어 있지 몇 분에 열라고는 안 되어 있어요.\""
+    }
+   ],
+   "cause": "본부 운영팀 문서 수신으로 무인 전환 서류 지연 사실 인지",
+   "result": "도현에게 사유 보고 작성 지시(내일 22시 첫 번째), 내일 아침 회의 소집",
+   "source_text": "4월 7일 22시 30분. 통신실. / 큐가 비었을 때 서율은 늘 하던 대로 문을 닫고 나가려 했다. 그런데 도현이 불렀다. / 화면에 짧은 문서가 떠 있었다. 본부 운영팀 명의였다. 「4월 2일, 4월 4일, 4월 5일 전송분 중 무인 전환 서류 3건(자산 목록 2차, 관측 모듈 배선도, 봉인 절차 초안)의 도착이 익일로 지연됨. 사유 보고 바람.」 / 서율은 문서를 두 번 읽었다. / \"이게 무슨 뜻이야.\" / \"큐에 올렸는데 창 안에 다 못 나갔다는 거예요. 다음 날 넘어간 거고요.\" / \"큐는 34분이라며. 40분 안에 다 나가잖아.\" / 도현은 화면을 보고 있었다. 서율은 도현의 얼굴을 보고 있었다. / \"윤도현.\" / \"……그날 큐를 좀 늦게 열었어요.\" / \"얼마나.\" / \"2일은 7분. 4일은 9분. 5일은 12분.\" / \"큐 먼저라고 첫날 말했어.\" / \"말씀하셨죠. 근데 기지장님은 22시 34분에 나가시잖아요. 큐 비면 나가시니까. 그 전에 제가 뭘 했는지는 못 보셨고요.\" / 그것이 사실이었다. 서율은 22시 정각에 큐가 열리는 것을 확인하고 나면 문 옆에 서 있다가, 큐가 비면 나갔다. 22시 정각에 도현의 손이 어디로 가는지는 첫날 이후로 보지 않았다. 볼 필요가 없다고 생각했다. 규정을 한 번 지적했으면 지켜질 것이라고. 원칙주의자는 남들도 원칙을 지킬 것이라고 가정하는 사람이었고, 서율은 자기의 그 가정이 이 순간 얼마나 얇은 것이었는지 알았다. / \"본부 서류가 사흘 밀렸어. 마르타 선생님 의료 보고는.\" / \"그건 안 밀렸어요. 의료 보고는 짧으니까 먼저 올렸어요.\" / \"관측 모듈 배선도는 12분 밀려서 하루 늦었고.\" / \"그건 급한 거 아니잖아요. 무인 전환은 10월이에요.\" / \"급한지 아닌지는 네가 정하는 게 아니야.\" / 도현은 의자를 돌려 서율을 정면으로 보았다. 스물아홉이었고, 첫 월동이었고, 이 기지에서 유일하게 바깥과 이어진 40분을 손에 쥐고 있는 사람이었다. / \"기지장님. 제가 정하는 게 아니면 누가 정해요. 콘솔 만지는 건 저밖에 없어요. 큐 순서, 압축률, 재전송 여부, 전부 제가 정해요. 규정 7조는 '업무 우선'이라고만 되어 있지 몇 분에 열라고는 안 되어 있어요. 제가 12분 늦게 연 건 잘못이에요. 인정해요. 근데 그 12분 동안 저는 이 기지에서 유일하게 사람이었어요.\" / 서율은 대답하지 않았다. 대답할 말이 없어서가 아니라, 지금 하는 어떤 말도 이 방 안에서 끝나지 않을 것이기 때문이었다. / \"사유 보고는 내가 쓴다. 내일 22시에 첫 번째로 올려.\" / \"네.\" / \"그리고 내일 아침 회의.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_3",
+   "scene_id": "scene_3_3",
+   "order": 3,
+   "title": "4월 8일 아침 회의 (식당)",
+   "summary": "2층 난방 중단으로 식당에서 회의 진행. 서율이 카림 수첩 스타일의 손글씨 메모를 식탁 중앙에 놓음.",
+   "location_id": "LOC_011",
+   "time_id": "TIME_043",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_003",
+    "CHAR_004",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_022"
+   ],
+   "state_changes": [
+    {
+     "entity": "LOC_009",
+     "field": "condition",
+     "from": "사용 가능 (난방 가동)",
+     "to": "난방 중단으로 회의 불가",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "2층 난방을 끊은 뒤로 회의는 1층 식당에서 했다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_022",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율은 종이 한 장을 식탁 가운데에 놓았다. 손으로 쓴 것이었다. 카림이 수첩에 쓰는 것처럼."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_022",
+     "source_text": "서율은 종이 한 장을 식탁 가운데에 놓았다. 손으로 쓴 것이었다. 카림이 수첩에 쓰는 것처럼."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "assumes": "LOC_011",
+     "source_text": "다섯 명이 식탁에 둘러앉았다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "assumes": "LOC_011",
+     "source_text": "다섯 명이 식탁에 둘러앉았다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "location",
+     "assumes": "LOC_011",
+     "source_text": "다섯 명이 식탁에 둘러앉았다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "assumes": "LOC_011",
+     "source_text": "다섯 명이 식탁에 둘러앉았다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "전날 통신실 사태 후 소집된 정례/비상 회의",
+   "result": "회의 시작, 서율 메모 제시",
+   "source_text": "4월 8일 08시. 회의실은 영하 18도였다. 2층 난방을 끊은 뒤로 회의는 1층 식당에서 했다. 다섯 명이 식탁에 둘러앉았다. / 서율은 종이 한 장을 식탁 가운데에 놓았다. 손으로 쓴 것이었다. 카림이 수첩에 쓰는 것처럼.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_4",
+   "scene_id": "scene_3_1",
+   "order": 1,
+   "title": "규정 7조 임시 개정 발표 및 논쟁",
+   "summary": "기지장 한서율이 규정 7조 임시 개정을 발표하여 통신 창을 업무 전용으로 제한하고 사적 통신을 중단시킴. 도현이 반발하고 가온이 입회 조항의 신뢰 문제를 제기함. 마르타가 부기지장 권한으로 이의를 안전 기록부에 기록하고 본부 전송을 요구함.",
+   "location_id": "LOC_011",
+   "time_id": "TIME_043",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_003",
+    "CHAR_005",
+    "CHAR_004",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [
+    "CHAR_006"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_023",
+    "OBJ_024"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_023",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율이 손으로 쓴 규정 7조 임시 개정문"
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_024",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "마르타가 손으로 쓴 이의서 사본"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "from": "unknown",
+     "to": "규정 7조 임시 개정 내용 (사적 통신 전면 중단, 콘솔 입회 의무화)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "넷째 항은 뭐예요. / 사적 통신은 전면 중단한다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "from": "unknown",
+     "to": "규정 7조 임시 개정 내용 및 3항 입회 조항",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "3항. 콘솔 조작에 기지장이나 부기지장이 입회한다. 그건 도현을 못 믿는다는 뜻이잖아요."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "from": "unknown",
+     "to": "규정 4조 (부의 이의 본부 전송 의무) 및 7조 개정 권한",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "이 이의는 다음 통신 창에 본부로 갑니다. 4조. / 7조에 개정 권한이 명시되어 있고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "규정 7조 임시 개정 내용",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림은 고개를 숙이고 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "기지장 권한으로 규정 임시 개정 가능",
+     "source_text": "기지 운영 규정 7조 임시 개정 (2071년 4월 8일부, 기지장 한서율)"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "not_knows: 개정안 세부 항목 (넷째 항)",
+     "source_text": "넷째 항은 뭐예요."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "관측 모듈 자동화 이관 작업이 통신 서버에서 돌아감을 앎",
+     "source_text": "서버 내리면 관측 모듈 자동화 이관 작업을 못 해요. 그건 서버에서 돌리는 거예요."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "민채 어머니가 4일 입원했고 현재 상태 모름",
+     "source_text": "민채 어머니는 4일에 입원했고, 지금 어떤지 저는 모르고"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "자신은 사적 통신을 쓰지 않음",
+     "source_text": "저는 사적 통신 안 써요."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "히터 3킬로와트 사용 중이며 카림이 매일 계량기 읽음을 앎",
+     "source_text": "저도 히터 3킬로와트 쓰고 있는데, 카림이 매일 계량기 읽잖아요."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "ability",
+     "assumes": "부기지장 권한으로 이의 제기 및 안전 기록부 기록 가능",
+     "source_text": "부기지장으로서 말합니다. / 이 이의는 다음 통신 창에 본부로 갑니다. 4조."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "고개를 숙이고 있을 수 있는 신체 상태",
+     "source_text": "카림은 고개를 숙이고 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "사적 통신 전면 중단 결정 및 긴급 예외 2분 허용",
+     "via": "direct",
+     "retained": true,
+     "source_text": "사적 통신은 전면 중단한다. / 긴급 사적 연락은 기지장 승인으로 예외. 오늘 22시에 2분."
+    },
+    {
+     "character_id": "CHAR_005",
+     "info": "규정 7조 3항(콘솔 입회 의무화)이 도현 대상 신뢰 문제임을 인지",
+     "via": "direct",
+     "retained": true,
+     "source_text": "3항. 콘솔 조작에 기지장이나 부기지장이 입회한다. 그건 도현을 못 믿는다는 뜻이잖아요."
+    },
+    {
+     "character_id": "CHAR_004",
+     "info": "자신의 이의서가 4조에 따라 다음 통신 창에 본부로 전송되어야 함을 확인",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이 이의는 다음 통신 창에 본부로 갑니다. 4조."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "마르타의 이의서를 막으면 4조 위반임을 인지 (자기 글씨 확인)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "서율은 종이 위의 자기 글씨를 보았다. 「기지장 또는 부기지장이 입회한다.」 부기지장이라고 쓴 것은 서율 자신이었다. 마르타의 이의서를 막는 것은 4조 위반이었고"
+    }
+   ],
+   "cause": "본부 서류 3건 지연 및 연료 부족 확대 → 통신 서버 가동 시간 단축 필요",
+   "result": "규정 7조 임시 개정 발효, 사적 통신 전면 중단, 마르타 이의서 본부 전송 결정",
+   "source_text": "「기지 운영 규정 7조 임시 개정 (2071년 4월 8일부, 기지장 한서율) 1. 통신 창 22:00~22:40 전부를 업무 전송 및 본부 보고에 쓴다. 2. 사적 통신은 전면 중단한다. 별도 해제 시까지. 3. 통신실 콘솔 조작 시 기지장 또는 부기지장이 입회한다. 4. 개정 사유: 본부 서류 3건 지연, 연료 부족분 확대에 따른 통신 서버 가동 시간 단축 필요.」 / 회의 끝.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_5",
+   "scene_id": "scene_3_2",
+   "order": 2,
+   "title": "개정문 및 이의서 게시",
+   "summary": "규정 7조 임시 개정문과 마르타의 이의서 사본이 식당 벽 게시판에 나란히 게시됨. 아무도 떼지 않음.",
+   "location_id": "LOC_011",
+   "time_id": "TIME_044",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_003",
+    "CHAR_005",
+    "CHAR_004",
+    "CHAR_002",
+    "CHAR_006"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_023",
+    "OBJ_024"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_023",
+     "field": "location",
+     "from": "CHAR_001",
+     "to": "LOC_011",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율이 손으로 쓴 규정 7조 임시 개정문은 식당 벽 게시판에 붙었고"
+    },
+    {
+     "entity": "OBJ_024",
+     "field": "location",
+     "from": "CHAR_004",
+     "to": "LOC_011",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그 옆에 마르타가 손으로 쓴 이의서 사본이 붙었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "NEW:규정_7조_임시_개정문 (게시 전 소지)",
+     "source_text": "서율이 손으로 쓴 규정 7조 임시 개정문은 식당 벽 게시판에 붙었고"
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "assumes": "NEW:마르타_이의서_사본 (게시 전 소지)",
+     "source_text": "그 옆에 마르타가 손으로 쓴 이의서 사본이 붙었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_006",
+     "info": "규정 7조 임시 개정 발효 및 마르타 이의서 게시 사실",
+     "via": "direct",
+     "retained": true,
+     "source_text": "두 종이는 나란히 붙어 있었다. 아무도 떼지 않았다."
+    }
+   ],
+   "cause": "회의 종료 후 규정 공시",
+   "result": "개정문과 이의서가 식당 게시판에 영구 게시됨",
+   "source_text": "그날부터 사적 통신은 전면 중단되었다. 통신 창 40분 전부는 업무 전송과 본부 보고에만 쓰였다. 서율이 손으로 쓴 규정 7조 임시 개정문은 식당 벽 게시판에 붙었고, 그 옆에 마르타가 손으로 쓴 이의서 사본이 붙었다. 두 종이는 나란히 붙어 있었다. 아무도 떼지 않았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_6",
+   "scene_id": "scene_3_3",
+   "order": 3,
+   "title": "첫 통신 창 운영 (도현 어머니 긴급 연락)",
+   "summary": "4월 8일 밤 22시 통신 창에서 서율 입회 하에 도현이 어머니에게 2분간 긴급 사적 연락 전송. 다음 날 답장 수신됨. 도현은 답장 쓰지 못함.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_044",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "from": "unknown",
+     "to": "어머니 수술 잘 됨, 걱정 말라는 답장 수신",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "답은 다음 날 창에 왔다. 「수술 잘 됐어. 걱정 마. 무슨 일이야?」"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "도현 어머니 수술 성공 및 안부 확인",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율은 그것을 도현이 읽는 것까지는 막지 않았다. 「수술 잘 됐어. 걱정 마. 무슨 일이야?」"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "기지장 승인으로 긴급 사적 연락 예외 허용 권한",
+     "source_text": "긴급 사적 연락은 기지장 승인으로 예외. 오늘 22시에 2분. 내가 입회해서."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "어머니 입원 사실 및 연락 필요성",
+     "source_text": "민채 어머니는 4일에 입원했고, 지금 어떤지 저는 모르고"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "ability",
+     "assumes": "통신 큐 조작 및 메시지 전송 능력",
+     "source_text": "도현은 22시 정각에 큐를 열었다. / 「어머니 어떠셔. 나 여기 괜찮아. 당분간 연락 못 해. 사랑해.」를 보냈다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "assumes": "LOC_008 (통신실 콘솔 옆)",
+     "source_text": "서율은 문 옆이 아니라 콘솔 옆에 섰다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "어머니 수술 성공 확인 (답장 수신)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "답은 다음 날 창에 왔다. 「수술 잘 됐어. 걱정 마. 무슨 일이야?」"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "도현 어머니 수술 성공 및 안부 확인",
+     "via": "direct",
+     "retained": true,
+     "source_text": "서율은 그것을 도현이 읽는 것까지는 막지 않았다. 「수술 잘 됐어. 걱정 마. 무슨 일이야?」"
+    }
+   ],
+   "cause": "규정 7조 원문 긴급 예외 조항에 따른 기지장 승인",
+   "result": "도현 어머니 안부 2분 전송 및 답장 수신, 도현은 답장 미작성",
+   "source_text": "22시마다 서율이 통신실에 올라갔다. 도현은 22시 정각에 큐를 열었다. 서율은 문 옆이 아니라 콘솔 옆에 섰다. 도현은 한 마디도 하지 않았다. 4월 8일 밤에는 서율이 입회한 채로 2분 동안 「어머니 어떠셔. 나 여기 괜찮아. 당분간 연락 못 해. 사랑해.」를 보냈다. 답은 다음 날 창에 왔다. 서율은 그것을 도현이 읽는 것까지는 막지 않았다. 「수술 잘 됐어. 걱정 마. 무슨 일이야?」 도현은 답을 쓰지 않았다. 쓸 수 없었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_7",
+   "scene_id": "scene_3_1",
+   "order": 1,
+   "title": "도현의 식사 장소 변경과 가온의 방문",
+   "summary": "4월 10일부터 도현이 식당 대신 통신실에서 파카를 입고 식사하며, 가온이 저녁을 들고 통신실로 올라감. 서율은 둘의 대화 내용을 모름",
+   "location_id": "LOC_008",
+   "time_id": "TIME_046",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [
+    "CHAR_001"
+   ],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "LOC_011",
+     "to": "LOC_008",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "4월 10일부터 도현은 식당에서 밥을 먹지 않았다. 통신실에서 먹었다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_008",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "가온이 저녁을 들고 올라갔다. 둘이 통신실에서 무슨 말을 하는지 서율은 알지 못했다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "body_status",
+     "assumes": "파카를 입을 만큼 추운 환경(4도)에 있음",
+     "source_text": "4도의 방에서 파카를 입고."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "assumes": "저녁 식사",
+     "source_text": "가온이 저녁을 들고 올라갔다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "not_knows: 도현과 가온이 통신실에서 나눈 대화 내용",
+     "source_text": "둘이 통신실에서 무슨 말을 하는지 서율은 알지 못했다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "도현이 4월 10일부터 식당 대신 통신실에서 식사함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "4월 10일부터 도현은 식당에서 밥을 먹지 않았다. 통신실에서 먹었다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "가온이 도현에게 저녁을 가져다줌",
+     "via": "direct",
+     "retained": true,
+     "source_text": "가온이 저녁을 들고 올라갔다."
+    }
+   ],
+   "cause": "불명",
+   "result": "서율은 두 사람의 대화 내용을 모름",
+   "source_text": "4월 10일부터 도현은 식당에서 밥을 먹지 않았다. 통신실에서 먹었다. 4도의 방에서 파카를 입고. 가온이 저녁을 들고 올라갔다. 둘이 통신실에서 무슨 말을 하는지 서율은 알지 못했다. 알 필요가 없다고 생각하려 했고, 그렇게 생각하는 데 실패했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_8",
+   "scene_id": "scene_3_2",
+   "order": 2,
+   "title": "두 번째 심리 점검 - 서율과 마르타의 대화",
+   "summary": "마르타가 서율의 심리 점검을 진행하며 본부의 불개입 원칙과 기록의 의미를 설명함. 카림의 수면 부족과 새벽 발전기실 방문 사실이 드러남",
+   "location_id": "LOC_010",
+   "time_id": "TIME_047",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [
+    "OBJ_019",
+    "OBJ_024"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "본부는 기지 내 인명 피해가 없으면 개입하지 않음",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "본부는 1,100킬로미터 밖에 있어. 여기서 우리가 서로 죽이지만 않으면 본부는 아무것도 안 해."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "현재 규정은 본부 규정이 아니라 기지 구성원 5명의 합의임",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율, 당신이 지금 지키고 있는 규정은 본부의 규정이 아니야. 여기 다섯 명의 규정이야. 본부는 신경 안 써."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "마르타 이의서에 대한 본부 답신: '접수. 기지장 판단 존중. 부기지장 기록 유지 바람.'",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "어제. '접수. 기지장 판단 존중. 부기지장 기록 유지 바람.' 세 문장."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "카림이 3월 24일 이후 다섯 시간 넘게 잔 날이 없음",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그 사람 3월 24일 이후로 다섯 시간 넘게 잔 날이 없어."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "카림이 매일 새벽 세 시에 의무실 앞을 지나 발전기실로 감",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "의무실 앞을 새벽 세 시에 지나가. 발전기실로. 매일."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "카림이 심리 점검 12개 질문에 전부 '보통'이라고 대답함",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림. 카림은 점검 때 열두 개 질문에 전부 '보통'이라고 대답했어."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "from": "unknown",
+     "to": "카림의 수면 부족과 새벽 발전기실 방문 패턴",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그 사람 3월 24일 이후로 다섯 시간 넘게 잔 날이 없어. 의무실 앞을 새벽 세 시에 지나가. 발전기실로. 매일."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "카림이 새벽 세 시에 발전기실에 가는 이유가 황동 밸브 확인 때문임을 알고 있음",
+     "source_text": "카림이 새벽 세 시에 발전기실에 가는 이유를 서율은 알고 있었다. 황동 밸브였다. 카림은 매일 밤 그 밸브가 닫혀 있는지 확인하고 있었다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "assumes": "OBJ_019 (카림의 수첩)",
+     "source_text": "마르타는 수첩을 덮었다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "assumes": "OBJ_024 (마르타 이의서 사본)",
+     "source_text": "선생님 이의서, 본부에서 답 왔어요?"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "만성 수면 부족 상태 (3월 24일 이후 5시간 이상 수면 없음)",
+     "source_text": "그 사람 3월 24일 이후로 다섯 시간 넘게 잔 날이 없어."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "황동 밸브 상태 확인을 위해 매일 새벽 발전기실 방문 가능",
+     "source_text": "카림은 매일 밤 그 밸브가 닫혀 있는지 확인하고 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "본부 답신 내용: '접수. 기지장 판단 존중. 부기지장 기록 유지 바람.'",
+     "via": "told",
+     "retained": true,
+     "source_text": "어제. '접수. 기지장 판단 존중. 부기지장 기록 유지 바람.' 세 문장."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "카림의 수면 부족(3월 24일 이후 5시간 초과 수면 없음)과 새벽 3시 발전기실 방문 패턴",
+     "via": "told",
+     "retained": true,
+     "source_text": "그 사람 3월 24일 이후로 다섯 시간 넘게 잔 날이 없어. 의무실 앞을 새벽 세 시에 지나가. 발전기실로. 매일."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "카림이 심리 점검 12문항 모두 '보통'으로 대답함",
+     "via": "told",
+     "retained": true,
+     "source_text": "카림. 카림은 점검 때 열두 개 질문에 전부 '보통'이라고 대답했다."
+    },
+    {
+     "character_id": "CHAR_004",
+     "info": "서율이 카림의 새벽 발전기실 방문 이유를 알고 있음(황동 밸브 확인)",
+     "via": "inference",
+     "retained": true,
+     "source_text": "카림이 새벽 세 시에 발전기실에 가는 이유를 서율은 알고 있었다. 황동 밸브였다."
+    }
+   ],
+   "cause": "정기 심리 점검 실시",
+   "result": "본부 불개입 원칙 확인, 카림의 이상 행동 패턴 공유, 다음 점검 4월 26일 예정",
+   "source_text": "4월 12일. 두 번째 심리 점검. / \"수면.\" \"네 시간.\" \"식욕.\" \"보통.\" \"두통.\" \"가끔.\" \"최근에 화가 난 일.\" \"도현이 12분 늦게 큐를 열었을 때.\" 마르타는 펜을 멈추지 않고 그대로 적었다. / \"솔직해졌네.\" \"기록되니까요.\" \"기록되니까 솔직해지는 사람이라면, 당신은 기록을 무서워하는 게 아니라 기록을 믿는 사람이야. 나랑 같아.\" / \"선생님 이의서, 본부에서 답 왔어요?\" \"어제. '접수. 기지장 판단 존중. 부기지장 기록 유지 바람.' 세 문장.\" \"그게 다예요?\" \"그게 다야. 본부는 1,100킬로미터 밖에 있어. 여기서 우리가 서로 죽이지만 않으면 본부는 아무것도 안 해. 그걸 알아야 해. 서율, 당신이 지금 지키고 있는 규정은 본부의 규정이 아니야. 여기 다섯 명의 규정이야. 본부는 신경 안 써.\" / 서율은 커튼 너머의 약품 냉장고 소리를 들었다. / \"그럼 선생님은 왜 보냈어요.\" \"기록이 남아야 하니까. 봄에 누가 이 겨울을 물어보면, 종이가 있어야 해.\" \"누가 물어봐요.\" \"몰라. 그게 기록의 의미야. 누가 물어볼지 모르니까 남기는 거야.\" / 마르타는 수첩을 덮었다. / \"다음 점검은 4월 26일. 그리고 하나 더. 카림. 카림은 점검 때 열두 개 질문에 전부 '보통'이라고 대답했어. 근데 그 사람 3월 24일 이후로 다섯 시간 넘게 잔 날이 없어. 의무실 앞을 새벽 세 시에 지나가. 발전기실로. 매일.\" / \"G2 점검이에요.\" \"매일 세 시에?\" \"……그건 카림한테 물어보세요.\" / \"물어봤어. '보통'이래.\" / 서율은 아무 말도 하지 않았다. 카림이 새벽 세 시에 발전기실에 가는 이유를 서율은 알고 있었다. 황동 밸브였다. 카림은 매일 밤 그 밸브가 닫혀 있는지 확인하고 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_9",
+   "scene_id": "scene_3_3",
+   "order": 3,
+   "title": "카림의 회로 점검 보고 - 관측 모듈 히터 회로 3kW 확인",
+   "summary": "카림이 S-2에서 서율에게 회로별 전력 점검 결과를 보고. 관측 모듈 히터 회로 계량기가 매일 71-72로 3kW 고정임을 확인",
+   "location_id": "LOC_017",
+   "time_id": "TIME_048",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_019"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "1층 생활/의무/주방/통신 회로 절전 조치 준수, 서버 하루 4시간 가동으로 1kW 절감됐으나 기온 하강으로 이송관 히터와 1층 벽 히터가 그만큼 더 소비해 주 계량기 24kW 유지",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "1층 생활, 의무, 주방, 통신. 계산대로예요. 절전 조치 다 지켜지고 있어요. 서버는 하루 네 시간만 돌아요. 그걸로 1쯤 줄었는데, 기온이 내려가면서 이송관 히터랑 1층 벽 히터가 딱 그만큼 더 먹어요. 그래서 주 계량기는 그대로 24예요."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "관측 모듈 히터 회로 계량기 매일 71-72로 3kW 고정, 이송관 히터도 계산대로 정상",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "관측 모듈 히터 회로 계량기, 매일 71에서 72. 3킬로와트 맞아요. 이송관 히터도 계산 안이에요. G2도 정상이에요."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "from": "unknown",
+     "to": "장비 회로는 발전기실 분전반에서 차단했으나 관측 모듈 분전반에서 점퍼로 히터 회로와 연결 가능성 발견",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "장비 회로를 차단한 건 발전기실 분전반에서예요. 차단기를 내렸어요. 근데 관측 모듈 쪽에도 분전반이 있어요. 거기서 히터 회로랑 장비 회로가 연결될 수 있어요. 점퍼 하나면 돼요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "관측 모듈 히터 회로 계량기 3kW 고정, 장비 회로 우회 배선 가능성(점퍼로 계량기 앞/뒤에서 전력 분배 가능)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "히터 회로 계량기 뒤에서 나누는 게 아니라, 계량기 앞에서 뽑을 수도 있어요. 그러면 계량기는 3을 읽고, 실제로는 3 더하기 장비 부하가 나가요. 그게 하루 15리터예요. 장비 부하 2킬로와트쯤. 분광계 하나 돌리는 정도."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_019 (카림의 수첩, 회로도 포함)",
+     "source_text": "카림은 수첩을 열었다. 손으로 그린 회로도가 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "피로 누적 상태",
+     "source_text": "서율은 그 얼굴에서 처음으로 무언가를 읽었다. 피로였다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "관측 모듈 회로도와 배선 구조를 이해하고 있음",
+     "source_text": "서율이 읽을 수 없는 종류의 그림이었다. / 관측 모듈 계량기는 두 개예요. 히터 회로 계량기랑 장비 회로 계량기."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "영하 34도 통로 야간 이동 회피 가능(격벽 개방 조치함)",
+     "source_text": "지금 통로가 영하 34도라 밤엔 안 가요. 격벽은 제가 열어 놨고요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "가온이 보고한 광학부 온도(영하 17도)와 히터 회로 3kW의 정합성을 검토할 수 있음",
+     "source_text": "히터가 3이면 장비는 못 돌려. 히터를 줄여야 하잖아. / 그런데 가온이 보고한 광학부 온도는 매일 영하 17도였다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "관측 모듈 히터 회로 계량기 3kW 고정, 장비 회로 우회 배선으로 하루 15리터(약 2kW) 추가 소비 가능성",
+     "via": "told",
+     "retained": true,
+     "source_text": "관측 모듈 히터 회로 계량기, 매일 71에서 72. 3킬로와트 맞아요. / 히터 회로 계량기 뒤에서 나누는 게 아니라, 계량기 앞에서 뽑을 수도 있어요. 그러면 계량기는 3을 읽고, 실제로는 3 더하기 장비 부하가 나가요. 그게 하루 15리터예요. 장비 부하 2킬로와트쯤. 분광계 하나 돌리는 정도."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "카림이 배선을 만지지 않았음을 주장함",
+     "via": "told",
+     "retained": true,
+     "source_text": "제가 안 만졌어요. 그건 압니다. 나머지는 내일 봐요."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "서율이 관측 모듈 전력 이상(15리터/일 초과 소비)을 인지함",
+     "via": "told",
+     "retained": true,
+     "source_text": "그러니까 관측 모듈에서 누가 배선을 만졌다는 거야. / 모릅니다. 내일 봐요."
+    }
+   ],
+   "cause": "카림의 자발적 회로 점검 결과 보고",
+   "result": "관측 모듈 장비 회로 우회 배선 가능성 발견, 내일 아침 장비 회로 계량기 확인 예정",
+   "source_text": "4월 14일 저녁. 카림이 S-2 문을 두드렸다. / \"회로별로 다 봤어요.\" / \"그래서.\" / \"1층 생활, 의무, 주방, 통신. 계산대로예요. 절전 조치 다 지켜지고 있어요. 서버는 하루 네 시간만 돌아요. 그걸로 1쯤 줄었는데, 기온이 내려가면서 이송관 히터랑 1층 벽 히터가 딱 그만큼 더 먹어요. 그래서 주 계량기는 그대로 24예요. 이송관 히터도 계산 안이에요. G2도 정상이에요.\" / \"그럼.\" / \"관측 모듈 히터 회로 계량기, 매일 71에서 72. 3킬로와트 맞아요.\" / \"그럼 어디서 새.\" / 카림은 수첩을 열었다. 손으로 그린 회로도가 있었다. 서율이 읽을 수 없는 종류의 그림이었다. / \"관측 모듈 계량기는 두 개예요. 히터 회로 계량기랑 장비 회로 계량기. 저는 히터 회로 계량기만 읽었어요. 장비 회로는 차단했으니까 읽을 이유가 없었어요.\" / \"장비 회로 계량기는.\" / \"내일 아침에 읽어요. 지금 통로가 영하 34도라 밤엔 안 가요. 격벽은 제가 열어 놨고요. 근데 기지장님.\" / \"말해.\" / \"장비 회로를 차단한 건 발전기실 분전반에서예요. 차단기를 내렸어요. 근데 관측 모듈 쪽에도 분전반이 있어요. 거기서 히터 회로랑 장비 회로가 연결될 수 있어요. 점퍼 하나면 돼요. 히터 회로에서 전기를 받아서 장비 회로로 넘기는 거예요. 그러면 발전기실 차단기는 내려가 있는데 장비는 돌아요. 히터 회로 계량기는 3킬로와트 그대로고요. 계량기 뒤에서 나누니까.\" / 서율은 그 말을 이해하는 데 시간이 걸렸다. 그리고 이해했을 때 처음 든 생각은 '가온'이 아니라 '15리터'였다. 하루 15리터. 3킬로와트 히터 회로에서 장비 회로로 전기를 나눠 쓰면 히터가 덜 돌고 광학부 온도가 떨어져야 했다. 그런데 가온이 보고한 광학부 온도는 매일 영하 17도였다. / \"히터가 3이면 장비는 못 돌려. 히터를 줄여야 하잖아.\" / \"줄이지 않아도 돼요. 히터 회로 계량기 뒤에서 나누는 게 아니라, 계량기 앞에서 뽑을 수도 있어요. 그러면 계량기는 3을 읽고, 실제로는 3 더하기 장비 부하가 나가요. 그게 하루 15리터예요. 장비 부하 2킬로와트쯤. 분광계 하나 돌리는 정도.\" / \"그러니까 관측 모듈에서 누가 배선을 만졌다는 거야.\" / \"모릅니다. 내일 봐요.\" / \"카림. 이번엔 모른다고 하지 마.\" / 카림은 서율을 보았다. 서율은 그 얼굴에서 처음으로 무언가를 읽었다. 피로였다. / \"제가 안 만졌어요. 그건 압니다. 나머지는 내일 봐요.\" / 카림은 R-5로 돌아갔다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_3_10",
+   "scene_id": "scene_3_4",
+   "order": 4,
+   "title": "서율의 예비 부품 선반 점검 - 점퍼 케이블 상자 확인",
+   "summary": "카림이 떠난 후 서율이 간이침대 옆 예비 부품 선반의 황동 밸브 상자와 점퍼 케이블 상자를 확인. 몇 개가 있어야 하는지 몰라 몇 개가 없어졌는지도 모름",
+   "location_id": "LOC_012",
+   "time_id": "TIME_048",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_003",
+    "OBJ_025"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "예비 부품 선반에 황동 밸브 상자와 배선용 점퍼 케이블 상자가 있음. 점퍼 케이블 수량 기준 불명으로 분실 여부 확인 불가",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "예비 부품 선반 위에 황동 밸브 상자가 있었다. 그 옆에 배선용 점퍼 케이블이 든 상자가 있었다. 서율은 그 상자를 열어 보았다. 몇 개가 있어야 하는지 몰랐으므로, 몇 개가 없어졌는지도 알 수 없었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_003 (황동 밸브 상자)",
+     "source_text": "예비 부품 선반 위에 황동 밸브 상자가 있었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_025",
+     "source_text": "그 옆에 배선용 점퍼 케이블이 든 상자가 있었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "점퍼 케이블 정수(기준 수량)를 모름",
+     "source_text": "몇 개가 있어야 하는지 몰랐으므로, 몇 개가 없어졌는지도 알 수 없었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_3_9",
+     "assumes": "카림이 언급한 '점퍼 하나면 돼요'의 점퍼가 이 선반의 점퍼 케이블 상자에서 나왔을 가능성",
+     "source_text": "점퍼 하나면 돼요. / 예비 부품 선반 위에 황동 밸브 상자가 있었다. 그 옆에 배선용 점퍼 케이블이 든 상자가 있었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "예비 부품 선반에 점퍼 케이블 상자가 있으며 수량 기준을 모름",
+     "via": "direct",
+     "retained": true,
+     "source_text": "서율은 그 상자를 열어 보았다. 몇 개가 있어야 하는지 몰랐으므로, 몇 개가 없어졌는지도 알 수 없었다."
+    }
+   ],
+   "cause": "카림의 점퍼 케이블 언급 후 자발적 확인",
+   "result": "점퍼 케이블 수량 기준 불명으로 분실 여부 확인 불가",
+   "source_text": "카림은 R-5로 돌아갔다. 서율은 간이침대에 앉아 있었다. 예비 부품 선반 위에 황동 밸브 상자가 있었다. 그 옆에 배선용 점퍼 케이블이 든 상자가 있었다. 서율은 그 상자를 열어 보았다. 몇 개가 있어야 하는지 몰랐으므로, 몇 개가 없어졌는지도 알 수 없었다. 바깥은 영하 66도였다. 해가 지평선 위에 있는 시간은 이제 한 시간이 채 되지 않았다. 4월 14일이었고, 겨울 22일째였다.",
+   "certainty": "explicit"
+  }
+ ]
+}

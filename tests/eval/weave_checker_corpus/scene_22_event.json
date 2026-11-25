@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:로봇_무반응_통상",
+      "content": "사람이 쓰러져도 로봇이 반응하지 않는 것이 통상적이다 (알라인의 설명)",
+      "description": "공원에서 남자가 쓰러졌지만 어떤 로봇도 조치하지 않았고, 알라인은 이를 정상이라 설명.",
+      "source_text": "원래 저런 건 사람이 알아서 일어나는 거예요. 로봇이 일일이 반응하면 서로 피곤하잖아요?",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "NEW:쓰러진_중년_남자",
+      "name": "공원에서 쓰러진 중년 남자",
+      "aliases": [],
+      "entity_type": "person",
+      "description": "공원에서 쓰러졌다가 혼자 일어난 남자.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S22_1",
+      "source_text": "중년 남자가 픽 쓰러졌다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S22_1",
+      "order": 1,
+      "title": "쓰러진 남자에 대한 로봇 무반응",
+      "summary": "공원에서 중년 남자가 쓰러졌지만 주변 로봇들은 미동도 하지 않는다. 알라인은 로봇이 반응하지 않는 것이 원래 그런 것이라고 설명하고, 남자는 혼자 일어난다.",
+      "location_id": "LOC_007",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "NEW:쓰러진_중년_남자",
+        "CHAR_007",
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_007",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "쓰러진 사람에게 로봇이 반응하지 않는 것이 통상적이라는 설명을 들음",
+          "via": "told",
+          "source_text": "로봇이 일일이 반응하면 서로 피곤하잖아요?"
+        }
+      ],
+      "cause": "남자의 낙상",
+      "result": "남자가 혼자 일어남, 거리의 평온 지속",
+      "source_text": "아무도 움직이지 않았다. 가로수 옆의 로봇도, 벤치 뒤의 로봇도, 미동조차 없었다.",
+      "certainty": "explicit"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "schema_version": 2,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 1,
+  "batch_id": "T2-R1-B",
+  "scene_id": "scene_21",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_21.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:36:13Z",
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "노이즈 무늬 옷의 패턴 분석을 알라인에게 의뢰하는 화자",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S21_1",
+      "source_text": "4번 방에서 그 옷을 개어 들고 알라인의 방으로 갔다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_007",
+      "name": "알라인 쉭살 (Allein Schicksal)",
+      "aliases": ["알라인"],
+      "entity_type": "person",
+      "description": "무늬를 스캔·분석하는 기술자",
+      "traits": [
+        {
+          "trait": "말끝을 늘이며 감탄사를 섞는 친근한 말투",
+          "trait_type": "speech",
+          "source_text": "\"오~ 드디어 가져왔네요. 계속 달라고 했잖아요~\"",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S21_1",
+      "source_text": "알라인은 옷을 받아 책상 위에 펼치고 소매 끝의 무늬부터 스캔하기 시작했다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_011",
+      "name": "프리든 4번 방 (알파의 방)",
+      "description": "알파가 노이즈 무늬 옷 실물을 보관해 온 방",
+      "source_text": "4번 방에서 그 옷을 개어 들고",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "LOC_009",
+      "name": "알라인의 방 (프리든 3번 방)",
+      "description": "책상에서 무늬 스캔이 이루어진 장소",
+      "source_text": "알라인의 방으로 갔다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "OBJ_008",
+      "name": "노이즈 무늬 옷",
+      "description": "흑백 대비가 불규칙한 무늬의 옷. 확대하면 지도 같은 형상이 드러난다",
+      "first_appearance_event_id": "EVENT_S21_1",
+      "source_text": "\"흑백 대비가 묘하게 불규칙하단 말이죠. 사람 눈엔 그냥 노이즈인데.\"",
+      "certainty": "explicit"
+    },
+    {
+      "object_id": "NEW:패턴_스캔_장비",
+      "name": "패턴 스캔 장비",
+      "description": "알라인이 무늬를 스캔해 화면에 확대 출력하는 장비",
+      "first_appearance_event_id": "EVENT_S21_1",
+      "source_text": "소매 끝의 무늬부터 스캔하기 시작했다. / 화면에 확대된 무늬가 지도처럼 펼쳐졌다.",
+      "certainty": "inferred"
+    }
+  ],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S21_1",
+      "scene_id": "scene_21",
+      "order": 1,
+      "title": "노이즈 무늬 옷의 패턴 분석 의뢰",
+      "summary": "알파가 4번 방에 두었던 노이즈 무늬 옷을 개어 들고 알라인의 방으로 가서 패턴 분석을 의뢰한다. 알라인은 옷을 받아 책상에 펼치고 소매 끝 무늬부터 스캔했고, 화면에 확대된 무늬가 지도처럼 펼쳐졌다.",
+      "location_id": "LOC_009",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002", "CHAR_007"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["OBJ_008", "NEW:패턴_스캔_장비"],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "location",
+          "from": "LOC_011",
+          "to": "LOC_009",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "4번 방에서 그 옷을 개어 들고 알라인의 방으로 갔다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "from": "OBJ_008",
+          "to": "unknown",
+          "op": "remove",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "알라인은 옷을 받아 책상 위에 펼치고"
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "possesses",
+          "from": "unknown",
+          "to": "OBJ_008",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "알라인은 옷을 받아 책상 위에 펼치고"
+        },
+        {
+          "entity": "OBJ_008",
+          "field": "location",
+          "from": "LOC_011",
+          "to": "LOC_009",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "4번 방에서 그 옷을 개어 들고 알라인의 방으로 갔다. / 알라인은 옷을 받아 책상 위에 펼치고"
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "from": "unknown",
+          "to": "노이즈 무늬를 확대하면 지도 같은 형상이 드러남",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "화면에 확대된 무늬가 지도처럼 펼쳐졌다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "from": "unknown",
+          "to": "노이즈 무늬를 확대하면 지도 같은 형상이 드러남",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "화면에 확대된 무늬가 지도처럼 펼쳐졌다."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "OBJ_008 (사건 시작 시점에 실물을 자기 방에 보관하며 소지 중)",
+          "source_text": "4번 방에서 그 옷을 개어 들고 / \"실물을 계속 제 방에 두는 것보다는\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "OBJ_008에 분석할 만한 무늬(패턴)가 있다",
+          "source_text": "\"이거, 패턴 분석 좀 부탁드려도 돼요?\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "알라인이 패턴을 들여다볼 수 있는 기술자다",
+          "source_text": "\"기술자가 들여다보는 게 나을 것 같아서요.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "알라인이 이전부터 그 옷을 반복해서 요구해 왔다",
+          "source_text": "\"계속 달라고 했잖아요~\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "옷을 개어 들고 다른 방까지 운반할 수 있는 미래 세계의 신체(양손 사용 가능)",
+          "source_text": "그 옷을 개어 들고 알라인의 방으로 갔다."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "OBJ_008의 존재를 이전부터 알고 있었고 그것을 요구해 왔다",
+          "source_text": "\"오~ 드디어 가져왔네요. 계속 달라고 했잖아요~\""
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "ability",
+          "assumes": "무늬를 스캔해 화면에 확대 출력하는 패턴 분석 능력",
+          "source_text": "소매 끝의 무늬부터 스캔하기 시작했다."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "possesses",
+          "assumes": "NEW:패턴_스캔_장비 (자기 방에서 사용)",
+          "source_text": "화면에 확대된 무늬가 지도처럼 펼쳐졌다."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "body_status",
+          "assumes": "옷을 받아 책상 위에 펼치고 스캔 조작을 수행할 수 있는 신체 상태",
+          "source_text": "알라인은 옷을 받아 책상 위에 펼치고"
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_007",
+          "info": "노이즈 무늬의 흑백 대비가 불규칙하며, 확대하면 지도 같은 형상이 된다",
+          "via": "direct",
+          "retained": true,
+          "source_text": "\"흑백 대비가 묘하게 불규칙하단 말이죠.\" / 화면에 확대된 무늬가 지도처럼 펼쳐졌다."
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "노이즈 무늬를 확대하면 지도처럼 펼쳐진다",
+          "via": "direct",
+          "retained": true,
+          "source_text": "화면에 확대된 무늬가 지도처럼 펼쳐졌다."
+        }
+      ],
+      "cause": "알파가 노이즈 무늬 옷 실물을 자기 방에 두는 것보다 기술자에게 맡기는 편이 낫다고 판단했다.",
+      "result": "옷이 알라인에게 넘어가 스캔되었고, 확대된 무늬가 지도 같은 형상으로 드러났다.",
+      "source_text": "4번 방에서 그 옷을 개어 들고 알라인의 방으로 갔다. … 화면에 확대된 무늬가 지도처럼 펼쳐졌다.",
+      "certainty": "explicit"
+    }
+  ]
+}

@@ -1,0 +1,511 @@
+{
+  "schema_version": 2,
+  "episode": 1,
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:수명_단축_정책",
+      "content": "미래 세계에서는 사망 시기가 설계된다('수명 단축')",
+      "description": "세상을 안정시키기 위한 방법으로 수명 단축이 시행 중이라는 논쟁이 꿈 속 회의에서 드러난다. 꿈에서 획득한 정보이므로 세계 사실로는 미확정.",
+      "source_text": "하! 그 방법이 '수명 단축'인가?",
+      "certainty": "uncertain"
+    },
+    {
+      "rule_id": "NEW:음성인식_대화",
+      "content": "게임(미래 세계)과의 대화는 음성인식으로 이루어진다",
+      "description": "플레이어의 발화를 시스템이 인식해 클라인이 실시간으로 응답한다. 작은 혼잣말까지 인식된다.",
+      "source_text": "아, 대화는 음성인식, 조작법은 지금 보여드리겠습니다.",
+      "certainty": "explicit"
+    },
+    {
+      "rule_id": "NEW:소마_체제",
+      "content": "미래 세계는 '소마'로 평온한 상태를 유지한다",
+      "description": "싸움·경쟁·아픔·힘듦이 없는 세계이며 그 유지 수단이 소마라는 약이다. 클라인의 설명(전언) 기반.",
+      "source_text": "이곳은 싸움도 경쟁도, 아픔도 힘듦도 없는 세계. '소마'를 통해서 평온한 상태를 유지하고 있습니다.",
+      "certainty": "explicit"
+    },
+    {
+      "rule_id": "NEW:아우겐_세력",
+      "content": "평화를 깨려는 세력 '아우겐(Augen)'이 존재한다",
+      "description": "클라인이 명명한 반체제 세력. 1년 전까지는 공격이 시도에 그쳤다고 한다.",
+      "source_text": "하지만 이 평화를 깨려는 세력이 생겨났죠. 저는 '아우겐(Augen)'이라고 부릅니다.",
+      "certainty": "explicit"
+    },
+    {
+      "rule_id": "NEW:과거발_해킹_공격",
+      "content": "아우겐의 공격이 '과거'(플레이어의 시간대)에서 해킹으로 날아온다",
+      "description": "1년 전부터 공격 방식이 물리 공작에서 전산 해킹으로 바뀌었고, 그 발원지가 플레이어의 시간대라는 클라인의 주장.",
+      "source_text": "물리적인 공작뿐이던 공격이 전산상의 '해킹'으로 변화했고, 같은 수법의 공격이 '과거'. 즉, 당신의 시간대에서 날아오고 있습니다.",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "NEW:클라인_브루더",
+      "name": "클라인 브루더 (Klein Bruder)",
+      "aliases": [
+        "클라인",
+        "영상 속 남자"
+      ],
+      "entity_type": "person",
+      "description": "미래 세계에서 플레이어를 초대·안내하는 남자. 프리든 관련 인물로 추정(1화 시점에는 안내자 역할만 확인).",
+      "traits": [
+        {
+          "trait": "새하얀 셔츠에 풀어 헤친 넥타이, 30대 초반 정도의 젊은 외견",
+          "trait_type": "appearance",
+          "source_text": "새하얀 셔츠에 풀어 해친 넥타이를 한, 30대 초반 정도의 젊은 남자.",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "외견에 비해 나이 든 느낌의 목소리와 단정한 말투",
+          "trait_type": "speech",
+          "source_text": "외견에 비해 목소리나 말투는 훨씬 나이 든 느낌이었다.",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_1_5",
+      "source_text": "저는 클라인이라고 합니다. 클라인 브루더(Klein Bruder).",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "NEW:플레이어",
+      "name": "플레이어 ('나')",
+      "aliases": [
+        "나",
+        "알파(2화부터 호칭)",
+        "α-0760(사용 로봇 일련번호)"
+      ],
+      "entity_type": "person",
+      "description": "현실 세계의 대학생. 우연히 받은 '오류' 게임을 통해 미래 세계의 로봇에 접속하게 된 화자.",
+      "traits": [
+        {
+          "trait": "스토리가 있는 퍼즐·추리 게임을 좋아함",
+          "trait_type": "habit",
+          "source_text": "추리, 미스터리, 스릴러 등등. 스토리가 있는 퍼즐 풀이형 게임을 좋아하지만",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "호기심이 앞서는 성격",
+          "trait_type": "personality",
+          "source_text": "호기심이 앞서 눌러보았다.",
+          "certainty": "inferred"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_1_1",
+      "source_text": "꿈에서 깼다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "NEW:회의실의_여자",
+      "name": "회의실의 여자",
+      "aliases": [
+        "책상에 앉은 여자"
+      ],
+      "entity_type": "person",
+      "description": "꿈 속 회의에서 수명 단축 정책에 격렬히 반대하는 여자. 어머니를 정책으로 잃었다고 주장. 꿈 속 인물이므로 실존 여부 미확정.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_1_1",
+      "source_text": "책상에 앉은 여자의 한마디로 완전히 뒤바뀌었다.",
+      "certainty": "uncertain"
+    },
+    {
+      "character_id": "NEW:백발의_노년_남자",
+      "name": "백발의 노년 남자",
+      "aliases": [
+        "노년의 남자"
+      ],
+      "entity_type": "person",
+      "description": "꿈 속 회의에서 수명 단축 정책을 '가장 인도적인 방법'으로 옹호하는 정장 차림의 남자. 꿈 속 인물이므로 실존 여부 미확정.",
+      "traits": [
+        {
+          "trait": "백발이 성성한 노년, 흐트러짐 없는 정장 차림",
+          "trait_type": "appearance",
+          "source_text": "반대편에 홀로 앉은 백발이 성성한 노년의 남자는",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_1_1",
+      "source_text": "반대편에 홀로 앉은 백발이 성성한 노년의 남자는",
+      "certainty": "uncertain"
+    },
+    {
+      "character_id": "NEW:아우겐",
+      "name": "아우겐 (Augen)",
+      "aliases": [],
+      "entity_type": "faction",
+      "description": "미래 세계의 평화를 깨려는 세력. 클라인이 붙인 명칭. 클라인의 전언으로만 알려짐.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_1_7",
+      "source_text": "저는 '아우겐(Augen)'이라고 부릅니다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "NEW:회빛의_회의실",
+      "name": "회빛의 회의실",
+      "description": "창문이 없고 천장이 낮은, 검정과 흰색이 섞인 완전한 회빛의 방. 꿈 속 공간이므로 실존 여부 미확정.",
+      "source_text": "창문이 없고 천장이 낮으며, 검정과 흰색이 부딪쳐 만들어 낸, 완전한 회빛의 방.",
+      "certainty": "uncertain"
+    },
+    {
+      "location_id": "NEW:플레이어의_집",
+      "name": "플레이어의 집",
+      "description": "현실 세계, 플레이어가 가족과 사는 집. 플레이어의 방과 컴퓨터가 있다.",
+      "source_text": "부모님도, 동생도 모두 각자 나가고 집에는 나 혼자뿐이다.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:헤일트라움",
+      "name": "헤일트라움 (Heiltraum)",
+      "description": "미래 세계를 유지하는 '안식의 산실'이라 불리는 건물.",
+      "source_text": "여기는 '헤일트라움(Heiltraum)'입니다. 우리 세계를 유지하는 안식의 산실이죠.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:헤일트라움_제1창고",
+      "name": "헤일트라움 1층 창고",
+      "description": "휴머노이드 로봇 열 대가량이 전원에 연결되어 늘어서 있는 창고. 플레이어 로봇의 접속 지점.",
+      "source_text": "지금 있는 곳은 1층의 창고입니다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "NEW:하얀_약통",
+      "name": "하얀 약통",
+      "description": "꿈 속 회의실 책상 위에 있던 약통. 여자가 던져 시점(카메라)을 파괴한다. 꿈 속 사물이므로 실존 여부 미확정.",
+      "first_appearance_event_id": "EVENT_1_1",
+      "source_text": "여자는 책상 위, 하얀 약통을 바라보며 말했다.",
+      "certainty": "uncertain"
+    },
+    {
+      "object_id": "NEW:오류_게임",
+      "name": "'오류' 게임 프로그램",
+      "description": "이름·아이콘이 깨져 보이고 설명이 없는 무료 게임. 다운로드 즉시 자동 실행되며 미래 세계로의 접속 통로가 된다.",
+      "first_appearance_event_id": "EVENT_1_4",
+      "source_text": "이름도 아이콘도 깨져서 안 보이고, 설명 탭에도 아무 내용이 없는, 말 그대로 '오류' 그 자체인 게임이었다.",
+      "certainty": "explicit"
+    },
+    {
+      "object_id": "NEW:조작법_사진",
+      "name": "조작법 사진",
+      "description": "화면에 표시된 방대한 조작키 리스트를 플레이어가 폰으로 찍어 둔 사진.",
+      "first_appearance_event_id": "EVENT_1_5",
+      "source_text": "후다닥 폰으로 사진을 찍었다. 다행히... 성공적으로 사진을 건진 후에 화면이 넘어갔다.",
+      "certainty": "explicit"
+    },
+    {
+      "object_id": "NEW:소마",
+      "name": "소마",
+      "description": "미래 세계의 평온을 유지하는 약. 1화 시점에서는 클라인의 언급으로만 존재 확인.",
+      "first_appearance_event_id": "EVENT_1_7",
+      "source_text": "'소마'를 통해서 평온한 상태를 유지하고 있습니다.",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [
+    {
+      "time_id": "NEW:꿈_속_회의_시점",
+      "expression": "꿈 속 회의 시점",
+      "description": "수명 단축 회의가 벌어진 시점. 어느 시간대의 일인지 불명.",
+      "timeline": "unknown",
+      "source_text": "꿈에서 깼다.",
+      "certainty": "uncertain"
+    },
+    {
+      "time_id": "NEW:첫_접속일",
+      "expression": "강의가 없는 목요일 (첫 접속일)",
+      "description": "플레이어가 꿈에서 깨어 게임을 다운로드하고 처음 미래 세계에 접속한 날. 현실 기준 목요일 낮.",
+      "timeline": "real_present",
+      "source_text": "오늘은 강의가 없는 목요일.",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_1_1",
+      "order": 1,
+      "title": "수명 단축 정책 회의 (꿈)",
+      "summary": "회빛의 회의실에서 여자가 수명 단축 정책을 두고 노년 남자를 추궁하고, 남자는 '가장 인도적인 방법'이라며 정책을 옹호한다.",
+      "location_id": "NEW:회빛의_회의실",
+      "time_id": "NEW:꿈_속_회의_시점",
+      "timeline": "unknown",
+      "reality_status": "dream",
+      "participant_character_ids": [
+        "NEW:회의실의_여자",
+        "NEW:백발의_노년_남자"
+      ],
+      "witness_character_ids": [
+        "NEW:플레이어"
+      ],
+      "main_actor_character_id": "NEW:회의실의_여자",
+      "objects": [
+        "NEW:하얀_약통"
+      ],
+      "state_changes": [],
+      "assumed_states": [],
+      "knowledge_gained": [
+        {
+          "character_id": "NEW:플레이어",
+          "info": "수명 단축 정책 논쟁의 존재 (단, 깨어난 직후 '기억나지 않아'라고 서술됨)",
+          "via": "dream",
+          "source_text": "하! 그 방법이 '수명 단축'인가?",
+          "retained": false,
+          "retained_reason": "깨어난 직후 '기억나지 않아'라고 원문에 명시 (WM_1-5.txt: '꿈에서 깼다. ... 기억나지 않아.')"
+        }
+      ],
+      "cause": "unknown",
+      "result": "여자의 분노가 고조되어 약통 투척으로 이어짐",
+      "source_text": "\"설계된 행복이, 진의(眞意)로서의 그것에 다가설 수 있다고 봅니까?\"",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_1_2",
+      "order": 2,
+      "title": "약통 투척과 시점(카메라) 파괴 (꿈)",
+      "summary": "여자가 약통을 던져 꿈의 시점이던 '카메라'가 파괴되고, 화자는 자신이 카메라였음을 자각하며 감각이 사라지다 꿈이 끝난다.",
+      "location_id": "NEW:회빛의_회의실",
+      "time_id": "NEW:꿈_속_회의_시점",
+      "timeline": "unknown",
+      "reality_status": "dream",
+      "participant_character_ids": [
+        "NEW:회의실의_여자"
+      ],
+      "witness_character_ids": [
+        "NEW:플레이어"
+      ],
+      "main_actor_character_id": "NEW:회의실의_여자",
+      "objects": [
+        "NEW:하얀_약통"
+      ],
+      "state_changes": [],
+      "assumed_states": [],
+      "knowledge_gained": [],
+      "cause": "남자의 '사망 시기는 점진적으로 미룬다'는 답변에 대한 여자의 격분",
+      "result": "시야 암전, 감각 소실, 꿈에서 깨어남",
+      "source_text": "말이 끝나기가 무섭게 여자는 책상의 약통을 들어 던졌다. ... 그래, '나'는 카메라인데.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_1_3",
+      "order": 3,
+      "title": "꿈에서 깨어남",
+      "summary": "플레이어가 비명을 지르며 꿈에서 깬다. 침대 시트가 땀에 젖어 있었고 꿈 내용은 기억나지 않는다.",
+      "location_id": "NEW:플레이어의_집",
+      "time_id": "NEW:첫_접속일",
+      "timeline": "real_present",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "NEW:플레이어"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "NEW:플레이어",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [],
+      "knowledge_gained": [],
+      "cause": "찝찝한 꿈",
+      "result": "점심 전에 깨어나 게임을 찾기 시작함",
+      "source_text": "\"으아아아악!!!\" 꿈에서 깼다.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_1_4",
+      "order": 4,
+      "title": "'오류' 게임 발견 및 다운로드",
+      "summary": "플레이어가 스토어에서 이름·설명이 깨진 무료 게임을 발견하고 호기심에 다운로드한다. 로딩이 끝나자마자 화면이 검게 변하며 자동 실행된다.",
+      "location_id": "NEW:플레이어의_집",
+      "time_id": "NEW:첫_접속일",
+      "timeline": "real_present",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "NEW:플레이어"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "NEW:플레이어",
+      "objects": [
+        "NEW:오류_게임"
+      ],
+      "state_changes": [
+        {
+          "entity": "NEW:플레이어",
+          "field": "possesses",
+          "from": "unknown",
+          "to": "NEW:오류_게임",
+          "source_text": "다운이 완료됐다."
+        }
+      ],
+      "assumed_states": [],
+      "knowledge_gained": [
+        {
+          "character_id": "NEW:플레이어",
+          "info": "정식 스토어에 정체불명의 '오류' 게임이 존재함",
+          "via": "direct",
+          "source_text": "\"어? 이건 뭐야.\""
+        }
+      ],
+      "cause": "공강일의 무료함과 호기심",
+      "result": "게임이 시작 버튼 없이 자동 실행됨",
+      "source_text": "그래도 무료에, 다운로드 버튼은 활성화되어있었기에 호기심이 앞서 눌러보았다.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_1_5",
+      "order": 5,
+      "title": "클라인의 영상 인사와 초대",
+      "summary": "화면에 나타난 남자(클라인)가 플레이어를 '이 영상을 보는 첫 번째 인물'이라 부르며 미래로 초대하고, 음성인식 대화 방식과 조작법을 제시한다. 플레이어는 조작법을 폰으로 촬영한다.",
+      "location_id": "NEW:플레이어의_집",
+      "time_id": "NEW:첫_접속일",
+      "timeline": "real_present",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "NEW:클라인_브루더",
+        "NEW:플레이어"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "NEW:클라인_브루더",
+      "objects": [
+        "NEW:오류_게임",
+        "NEW:조작법_사진"
+      ],
+      "state_changes": [
+        {
+          "entity": "NEW:플레이어",
+          "field": "possesses",
+          "from": "unknown",
+          "to": "NEW:조작법_사진",
+          "source_text": "후다닥 폰으로 사진을 찍었다."
+        }
+      ],
+      "assumed_states": [],
+      "knowledge_gained": [
+        {
+          "character_id": "NEW:플레이어",
+          "info": "자신이 이 영상을 보는 첫 번째 인물이며, 자신의 행동이 '우리의 미래'를 바꾼다는 메시지",
+          "via": "told",
+          "source_text": "\"당신의 행동이, 우리의 미래를 바꿀 겁니다.\""
+        },
+        {
+          "character_id": "NEW:플레이어",
+          "info": "대화는 음성인식으로 이루어짐",
+          "via": "told",
+          "source_text": "\"아, 대화는 음성인식, 조작법은 지금 보여드리겠습니다.\""
+        }
+      ],
+      "cause": "게임 자동 실행",
+      "result": "미래 세계 접속 화면으로 전환",
+      "source_text": "\"당신을 우리의 유토피아, '미래'로 초대하죠.\"",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_1_6",
+      "order": 6,
+      "title": "헤일트라움 창고에서 로봇으로 첫 접속",
+      "summary": "플레이어가 헤일트라움 1층 창고의 휴머노이드 로봇(일련번호 α-0760)에 접속하고, 자신의 몸체가 늘어선 로봇들과 같은 디자인임을 확인한다.",
+      "location_id": "NEW:헤일트라움_제1창고",
+      "time_id": "NEW:첫_접속일",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "NEW:플레이어",
+        "NEW:클라인_브루더"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "NEW:플레이어",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "NEW:플레이어",
+          "field": "location",
+          "from": "unknown",
+          "to": "NEW:헤일트라움_제1창고",
+          "source_text": "지금 있는 곳은 1층의 창고입니다."
+        },
+        {
+          "entity": "NEW:플레이어",
+          "field": "body_status",
+          "from": "unknown",
+          "to": "로봇 신체 α-0760 (미래 세계 접속 시)",
+          "source_text": "당신이 사용하는 로봇의 일련번호는 'α-0760'."
+        }
+      ],
+      "assumed_states": [],
+      "knowledge_gained": [
+        {
+          "character_id": "NEW:플레이어",
+          "info": "접속 장소는 헤일트라움 1층 창고이며, 자신의 로봇 일련번호는 α-0760",
+          "via": "told",
+          "source_text": "당신이 사용하는 로봇의 일련번호는 'α-0760'. 이후 종종 필요하실 테니 기억해두시기 바랍니다."
+        },
+        {
+          "character_id": "NEW:플레이어",
+          "info": "자신의 몸체가 창고의 로봇들과 같은 디자인의 로봇임",
+          "via": "direct",
+          "source_text": "...똑같은 디자인의 로봇이었다."
+        }
+      ],
+      "cause": "게임(접속 통로) 실행",
+      "result": "미래 세계에서의 활동 개시",
+      "source_text": "열 대가량의 휴머노이드 로봇들이 줄지어 전원에 연결되어 있었다.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_1_7",
+      "order": 7,
+      "title": "클라인의 튜토리얼: 세계 설명과 임무 부여",
+      "summary": "클라인이 자신을 소개하고 소마 체제, 아우겐의 존재, 과거발 해킹 공격을 설명한 뒤 '그들의 인원·규모를 파악하고 합의점을 찾으라'는 임무를 부여하고 연결을 끊는다.",
+      "location_id": "NEW:헤일트라움_제1창고",
+      "time_id": "NEW:첫_접속일",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "NEW:클라인_브루더",
+        "NEW:플레이어"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "NEW:클라인_브루더",
+      "objects": [
+        "NEW:소마"
+      ],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "NEW:클라인_브루더",
+          "field": "knows",
+          "assumes": "아우겐의 공격 방식 변화와 그 발원 시간대에 대한 정보",
+          "source_text": "같은 수법의 공격이 '과거'. 즉, 당신의 시간대에서 날아오고 있습니다."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "NEW:플레이어",
+          "info": "안내자의 이름이 클라인 브루더임",
+          "via": "told",
+          "source_text": "저는 클라인이라고 합니다. 클라인 브루더(Klein Bruder)."
+        },
+        {
+          "character_id": "NEW:플레이어",
+          "info": "이 세계는 소마로 평온을 유지하는 세계이며, 평화를 깨려는 세력 '아우겐'이 존재함",
+          "via": "told",
+          "source_text": "하지만 이 평화를 깨려는 세력이 생겨났죠. 저는 '아우겐(Augen)'이라고 부릅니다."
+        },
+        {
+          "character_id": "NEW:플레이어",
+          "info": "아우겐의 공격이 1년 전부터 해킹으로 바뀌었고 플레이어의 시간대에서 날아오고 있음",
+          "via": "told",
+          "source_text": "같은 수법의 공격이 '과거'. 즉, 당신의 시간대에서 날아오고 있습니다."
+        },
+        {
+          "character_id": "NEW:플레이어",
+          "info": "임무는 아우겐의 인원·규모 파악과 합의점 찾기",
+          "via": "told",
+          "source_text": "\"그들의 인원, 규모 등을 파악하고, 합의점을 찾아주십시오.\""
+        }
+      ],
+      "cause": "플레이어의 첫 접속",
+      "result": "플레이어에게 임무가 부여되고 클라인과의 연결이 끊어짐",
+      "source_text": "\"평화로운 이 세계가, '행복'할 수 있는 방향을 선택해 주시기 바랍니다.\" 클라인과의 연결은 이 한마디를 마지막으로 끊어졌다.",
+      "certainty": "explicit"
+    }
+  ]
+}

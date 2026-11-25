@@ -1,0 +1,115 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "정호의 카운터 업무와 아버지 사진 회상",
+   "summary": "정호가 카운터 뒤 선반에 수건을 채우고 아버지 사진을 보며 과거를 회상한 뒤 손님이 놓고 간 돈을 서랍에 넣고 수건을 갠다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:십이월_첫날_오전_영업시간",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_002",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "손님이 놓고 간 육백 원을 서랍에 넣고"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "수건 (카운터 뒤 선반에 채움)",
+     "source_text": "카운터 뒤 선반에 수건을 채우고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "건강하여 카운터 업무 수행 가능",
+     "source_text": "고개를 들었다. 벽에 아버지 사진이 걸려 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "아버지 사진이 이십 년째 그 자리에 걸려 있음을 앎",
+     "source_text": "이십 년째 그 자리였다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "현금 계산 및 서랍 관리 능력",
+     "source_text": "손님이 놓고 간 육백 원을 서랍에 넣고"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "아버지 사진이 이십 년째 같은 자리에 걸려 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이십 년째 그 자리였다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "사진 속 아버지가 현재 자신보다 젊었음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "사진 속 아버지는 지금 정호보다 젊었다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "어머니는 텔레비전을 켜 놓고 보지 않는 습관이 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "어머니는 그것을 켜 놓고 보지 않는 사람이었다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "수건은 이층 물건방에서 한 아름씩 내려오며 오늘은 두 번 내려옴",
+     "via": "direct",
+     "retained": true,
+     "source_text": "수건은 이층 물건방에서 한 아름씩 내려오는 것이었다. 오늘은 두 번 내려왔다."
+    }
+   ],
+   "cause": "영업 준비 및 손님 응대",
+   "result": "수건 정리 완료, 매출금 서랍 보관, 아버지 사진 회상",
+   "source_text": "정호는 카운터 뒤 선반에 수건을 채우고 고개를 들었다. 벽에 아버지 사진이 걸려 있었다. 이십 년째 그 자리였다. 액자 유리에 카운터 불빛이 비쳐서 정호는 고개를 조금 옆으로 기울였다. 사진 속 아버지는 지금 정호보다 젊었다. 이 사람이 앉아 있던 자리에 지금 자기가 앉아 있었다. 정호는 손님이 놓고 간 육백 원을 서랍에 넣고 다시 수건을 갰다. 골방 쪽에서는 텔레비전 소리가 났다. 어머니는 그것을 켜 놓고 보지 않는 사람이었다. 수건은 이층 물건방에서 한 아름씩 내려오는 것이었다. 오늘은 두 번 내려왔다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:40:50Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 22.38
+ }
+}

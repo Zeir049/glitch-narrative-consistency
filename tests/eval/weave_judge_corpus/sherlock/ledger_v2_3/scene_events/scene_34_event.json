@@ -1,0 +1,124 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "마구간 모퉁이에서 마부들의 이야기 듣기",
+   "summary": "홈즈는 서펜타인 마구간 모퉁이에서 아이린 애들러가 매일 다섯 시에 마차로 나갔다가 일곱 시에 정확히 돌아온다는 마부들 사이의 이야기를 다시 듣는다.",
+   "location_id": "LOC_005",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_008",
+     "field": "location",
+     "assumes": "LOC_004 (브라이오니 로지에 거주 중)",
+     "source_text": "아이린 애들러는 여전히 브라이오니 로지에 살고 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "아이린 애들러가 매일 5시에 마차로 외출하여 7시에 정확히 브라이오니 로지로 돌아온다",
+     "via": "told",
+     "retained": true,
+     "source_text": "마부들 사이에서는 그녀가 매일 다섯 시에 마차로 나갔다가 일곱 시에 정확히 돌아온다는 이야기가 돌았다."
+    }
+   ],
+   "cause": "홈즈가 아이린의 동선을 파악하기 위해 마구간에서 마부들의 전언을 수집함",
+   "result": "홈즈는 아이린의 외출·귀가 시각 정보를 확보한다.",
+   "source_text": "홈즈는 서펜타인 마구간 모퉁이에서 그 이야기를 다시 들었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_2",
+   "order": 2,
+   "title": "브라이오니 로지 외부 관찰",
+   "summary": "홈즈는 브라이오니 로지 건너편에서 처브 자물쇠가 달린 닫힌 문과 블라인드가 내려오지 않은 응접실 긴 창을 관찰한다.",
+   "location_id": "LOC_004",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "외투를 입고 있음 (외투 깃을 세울 수 있으므로)",
+     "source_text": "그는 외투 깃을 세운 채 길 건너편에 서서"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "장시간 가만히 서서 관찰할 수 있는 의지/체력",
+     "source_text": "한동안 그 창을 바라보았다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "EVENT_6_1에서 마구간에서 이야기를 듣는 행위와 본 관찰 행위가 시간적으로 이어진다 (사건 사이에 의미 있는 시간 경과 부재 가정)",
+     "source_text": "홈즈는 서펜타인 마구간 모퉁이에서 그 이야기를 다시 들었다. ... 그는 외투 깃을 세운 채 길 건너편에 서서"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "브라이오니 로지에는 처브 자물쇠가 달린 문이 있으며 문이 굳게 닫혀 있다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "처브 자물쇠가 달린 문은 굳게 닫혀 있었고"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "브라이오니 로지 응접실의 긴 창에는 블라인드가 내려져 있지 않다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "응접실의 긴 창에는 블라인드가 내려져 있지 않았다."
+    }
+   ],
+   "cause": "아이린의 동선 정보를 얻은 뒤 그 집의 현관과 창문을 직접 확인하기 위함",
+   "result": "홈즈는 브라이오니 로지의 문·창 상태를 눈으로 확인한다.",
+   "source_text": "처브 자물쇠가 달린 문은 굳게 닫혀 있었고, 응접실의 긴 창에는 블라인드가 내려져 있지 않았다. 그는 외투 깃을 세운 채 길 건너편에 서서 한동안 그 창을 바라보았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:09:29Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 11.06
+ }
+}

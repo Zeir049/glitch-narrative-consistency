@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [
+    {
+      "time_id": "NEW:현실_새벽_2시",
+      "expression": "현실 새벽 두 시",
+      "description": "알파가 과제를 마치고 접속한 시각.",
+      "timeline": "real_present",
+      "source_text": "과제를 끝내니 새벽 두 시였다.",
+      "certainty": "explicit"
+    },
+    {
+      "time_id": "NEW:접속_직후_한낮",
+      "expression": "접속 직후의 한낮",
+      "description": "새벽 접속 직후 미래 세계는 한낮이었다.",
+      "timeline": "future_world",
+      "source_text": "모니터 속 프리든 광장은 한낮의 햇살로 눈이 부셨다.",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S09_1",
+      "order": 1,
+      "title": "새벽 두 시의 접속",
+      "summary": "과제를 마친 알파가 현실 새벽 두 시에 삼십 분만 둘러볼 생각으로 접속한다.",
+      "location_id": "LOC_002",
+      "time_id": "NEW:현실_새벽_2시",
+      "timeline": "real_present",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [],
+      "knowledge_gained": [],
+      "cause": "과제 후의 야식 같은 접속",
+      "result": "미래 세계 접속",
+      "source_text": "과제를 끝내니 새벽 두 시였다.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_S09_2",
+      "order": 2,
+      "title": "한낮의 프리든 광장",
+      "summary": "접속하자 프리든 광장은 한낮의 햇살로 눈부셨고, 산책 나온 사람들이 광장을 여유롭게 오갔다. 알파는 그늘을 찾아 걷는다.",
+      "location_id": "LOC_005",
+      "time_id": "NEW:접속_직후_한낮",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [],
+      "knowledge_gained": [],
+      "cause": "새벽의 접속",
+      "result": "알파가 그늘로 이동",
+      "source_text": "모니터 속 프리든 광장은 한낮의 햇살로 눈이 부셨다.",
+      "certainty": "explicit"
+    }
+  ]
+}

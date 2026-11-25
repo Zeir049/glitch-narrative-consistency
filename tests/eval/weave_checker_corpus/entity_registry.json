@@ -1,0 +1,69 @@
+{
+  "description": "Weave 상태 원장 — 1~5화 추출 후 발급된 정식 엔티티 ID 목록. 각 화 JSON의 NEW:라벨은 아래 매핑으로 정식 ID에 대응된다. 다음 화(6화~) 추출 시 이 목록을 [기존 엔티티 목록]으로 입력하면 된다.",
+  "schema_version": 2,
+  "last_episode": 5,
+  "characters": [
+    { "id": "CHAR_001", "new_label": "NEW:클라인_브루더", "name": "클라인 브루더 (Klein Bruder)", "entity_type": "person", "first_episode": 1, "note": "프리든 대표. 플레이어의 안내자" },
+    { "id": "CHAR_002", "new_label": "NEW:플레이어", "name": "플레이어 ('나', 알파)", "entity_type": "person", "first_episode": 1, "note": "미래 세계에서는 로봇 α-0760 사용. 5화에서 프리든 출입 권한 획득" },
+    { "id": "CHAR_003", "new_label": "NEW:회의실의_여자", "name": "회의실의 여자", "entity_type": "person", "first_episode": 1, "note": "꿈 속 인물, 실존 미확정" },
+    { "id": "CHAR_004", "new_label": "NEW:백발의_노년_남자", "name": "백발의 노년 남자", "entity_type": "person", "first_episode": 1, "note": "꿈 속 인물, 실존 미확정" },
+    { "id": "CHAR_005", "new_label": "NEW:아우겐", "name": "아우겐 (Augen)", "entity_type": "faction", "first_episode": 1, "note": "반체제 세력. 클라인의 명명" },
+    { "id": "CHAR_006", "new_label": "NEW:노이즈_옷의_범인", "name": "슐라우 프로비에렌", "entity_type": "person", "first_episode": 2, "note": "2화 '범인' → 4화 '슐라우' → 5화 풀네임 확정. 손목 수술 후 회복 중" },
+    { "id": "CHAR_007", "new_label": "NEW:알라인_쉭살", "name": "알라인 쉭살 (Allein Schicksal)", "entity_type": "person", "first_episode": 3, "note": "프리든 3번 방, 컴퓨터 기술자" },
+    { "id": "CHAR_008", "new_label": "NEW:그로스", "name": "그로스", "entity_type": "ai", "first_episode": 3, "note": "감시 체계 관련 AI로 추정, 정체 미설명" },
+    { "id": "CHAR_009", "new_label": "NEW:레인_코프키노", "name": "레인 코프키노", "entity_type": "person", "first_episode": 4, "note": "아우겐 추정 추적 대상, 이름만 등장" },
+    { "id": "CHAR_010", "new_label": "NEW:요한_페어슈프레헨", "name": "요한 페어슈프레헨", "entity_type": "person", "first_episode": 4, "note": "아우겐 추정 추적 대상, 이름만 등장" },
+    { "id": "CHAR_011", "new_label": "NEW:적갈색_머리_거구_남자", "name": "적갈색 머리의 거구 남자", "entity_type": "person", "first_episode": 4, "note": "슐라우의 동행. 레인/요한 중 한 명일 가능성 미확정" },
+    { "id": "CHAR_012", "new_label": "NEW:블루멘_랑잠", "name": "블루멘 랑잠 (Blumen Langsam)", "entity_type": "person", "first_episode": 5, "note": "프리든 1번 방, 의사" }
+  ],
+  "locations": [
+    { "id": "LOC_001", "new_label": "NEW:회빛의_회의실", "name": "회빛의 회의실", "first_episode": 1, "note": "꿈 속 공간, 실존 미확정" },
+    { "id": "LOC_002", "new_label": "NEW:플레이어의_집", "name": "플레이어의 집", "first_episode": 1, "note": "현실 세계" },
+    { "id": "LOC_003", "new_label": "NEW:헤일트라움", "name": "헤일트라움 (Heiltraum)", "first_episode": 1, "note": "5화에서 병원으로 확정" },
+    { "id": "LOC_004", "new_label": "NEW:헤일트라움_제1창고", "name": "헤일트라움 제1창고", "first_episode": 1, "note": "2화 폭발로 벽 파손, 5화 내부 복구" },
+    { "id": "LOC_005", "new_label": "NEW:프리든", "name": "프리든 (Friden)", "first_episode": 2, "note": "클라인이 대표인 회사. 소마 제작·유통" },
+    { "id": "LOC_006", "new_label": "NEW:1번가", "name": "1번가", "first_episode": 2 },
+    { "id": "LOC_007", "new_label": "NEW:원호_공원", "name": "원호형 공원", "first_episode": 2 },
+    { "id": "LOC_008", "new_label": "NEW:3번가", "name": "3번가", "first_episode": 2, "note": "끝에 소나무 군락지. 4화 사고 현장" },
+    { "id": "LOC_009", "new_label": "NEW:알라인의_방", "name": "알라인의 방 (프리든 3번 방)", "first_episode": 3 },
+    { "id": "LOC_010", "new_label": "NEW:4번가", "name": "4번가", "first_episode": 3 },
+    { "id": "LOC_011", "new_label": "NEW:프리든_4번_방", "name": "프리든 4번 방 (알파의 방)", "first_episode": 5 },
+    { "id": "LOC_012", "new_label": "NEW:블루멘의_방", "name": "블루멘의 방 (프리든 1번 방)", "first_episode": 5 },
+    { "id": "LOC_013", "new_label": "NEW:헤일트라움_병실", "name": "헤일트라움 병실", "first_episode": 5 }
+  ],
+  "objects": [
+    { "id": "OBJ_001", "new_label": "NEW:하얀_약통", "name": "하얀 약통", "first_episode": 1, "note": "꿈 속 사물" },
+    { "id": "OBJ_002", "new_label": "NEW:오류_게임", "name": "'오류' 게임 프로그램", "first_episode": 1 },
+    { "id": "OBJ_003", "new_label": "NEW:조작법_사진", "name": "조작법 사진", "first_episode": 1 },
+    { "id": "OBJ_004", "new_label": "NEW:소마", "name": "소마", "first_episode": 1 },
+    { "id": "OBJ_005", "new_label": "NEW:폭탄_1차", "name": "폭탄 (1차, 폭발)", "first_episode": 2 },
+    { "id": "OBJ_006", "new_label": "NEW:불발탄", "name": "불발탄 (2차 폭탄)", "first_episode": 2, "note": "2화에서 파열·파괴됨" },
+    { "id": "OBJ_007", "new_label": "NEW:연막탄", "name": "연막탄", "first_episode": 2 },
+    { "id": "OBJ_008", "new_label": "NEW:노이즈_무늬_옷", "name": "노이즈 무늬 옷", "first_episode": 2, "note": "AI 인식 회피 패턴 패브릭(3화 문서로 시사). 4화부터 알파 소지" },
+    { "id": "OBJ_009", "new_label": "NEW:CCTV_영상_자료", "name": "CCTV 영상 자료", "first_episode": 3 },
+    { "id": "OBJ_010", "new_label": "NEW:P-000-01_문서", "name": "[P-000-01] 문서", "first_episode": 3 }
+  ],
+  "times": [
+    { "id": "TIME_001", "new_label": "NEW:꿈_속_회의_시점", "expression": "꿈 속 회의 시점", "timeline": "unknown", "first_episode": 1 },
+    { "id": "TIME_002", "new_label": "NEW:첫_접속일", "expression": "강의가 없는 목요일 (첫 접속일)", "timeline": "real_present", "first_episode": 1 },
+    { "id": "TIME_003", "new_label": "NEW:폭발_당일", "expression": "접속 한 달 후, 폭발 당일 (작중 104/06/07 오후)", "timeline": "future_world", "first_episode": 2 },
+    { "id": "TIME_004", "new_label": "NEW:로봇_수리일", "expression": "폭발 다음날 (현실 기준 월요일)", "timeline": "future_world", "first_episode": 3 },
+    { "id": "TIME_005", "new_label": "NEW:CCTV_검토일", "expression": "폭발 약 일주일 후 토요일", "timeline": "future_world", "first_episode": 3 },
+    { "id": "TIME_006", "new_label": "NEW:잠복일", "expression": "잠복 결정 다음날 12~2시경", "timeline": "future_world", "first_episode": 4 },
+    { "id": "TIME_007", "new_label": "NEW:사고_다음날", "expression": "사고 다음날 (재접속일)", "timeline": "future_world", "first_episode": 5 }
+  ],
+  "worldview_rules": [
+    { "id": "RULE_001", "new_label": "NEW:수명_단축_정책", "content": "미래 세계에서는 사망 시기가 설계된다('수명 단축')", "first_episode": 1, "certainty": "uncertain" },
+    { "id": "RULE_002", "new_label": "NEW:음성인식_대화", "content": "게임(미래 세계)과의 대화는 음성인식", "first_episode": 1 },
+    { "id": "RULE_003", "new_label": "NEW:소마_체제", "content": "소마로 평온·행복 상태 유지 (2화에서 상세화)", "first_episode": 1 },
+    { "id": "RULE_004", "new_label": "NEW:아우겐_세력", "content": "평화를 깨려는 세력 아우겐 존재", "first_episode": 1 },
+    { "id": "RULE_005", "new_label": "NEW:과거발_해킹_공격", "content": "아우겐의 공격이 과거(플레이어 시간대)에서 해킹으로 옴", "first_episode": 1 },
+    { "id": "RULE_006", "new_label": "NEW:현실_시간_동기화", "content": "미래 세계의 시간·날짜는 현실과 동기화", "first_episode": 2 },
+    { "id": "RULE_007", "new_label": "NEW:화폐_없는_사회", "content": "돈이 없고 대가 없이 물자를 얻는 사회", "first_episode": 2 },
+    { "id": "RULE_008", "new_label": "NEW:상태_지속_원칙", "content": "원상복구 없이 조금씩 복구되는 연속적 세계", "first_episode": 3 },
+    { "id": "RULE_009", "new_label": "NEW:CCTV_분산_저장", "content": "CCTV는 카메라별 개별 저장, 위험 신호만 전송", "first_episode": 3 },
+    { "id": "RULE_010", "new_label": "NEW:AI_감지_상태값", "content": "idle/active/anomaly_detected/alert 감지 체계", "first_episode": 3 },
+    { "id": "RULE_011", "new_label": "NEW:로봇_운영과_무료_보급", "content": "로봇이 세계를 운영하며 물자는 신청제 무료 보급", "first_episode": 4 },
+    { "id": "RULE_012", "new_label": "NEW:헤일트라움은_병원", "content": "헤일트라움은 병원", "first_episode": 5 }
+  ]
+}

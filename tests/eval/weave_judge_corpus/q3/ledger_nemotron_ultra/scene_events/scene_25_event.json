@@ -1,0 +1,135 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [
+  {
+   "rule_id": "NEW:격벽_관리_규정",
+   "content": "통로 격벽은 설비 담당이 관리한다",
+   "description": "격벽 열쇠의 관리 권한이 설비 담당에게 있음을 명시",
+   "source_text": "통로 격벽은 설비 담당이 관리한다.",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:청문_일정_및_운영체제_유지",
+   "content": "청문은 20일이고 본부는 그 전까지 현 운영 체제 유지",
+   "description": "청문 일정과 본부의 운영 체제 유지 지시",
+   "source_text": "청문은 20일이고 본부는 그 전까지 현 운영 체제 유지라고 했다.",
+   "certainty": "explicit"
+  }
+ ],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:5월_17일",
+   "expression": "5월 17일",
+   "description": "에피소드 6의 시작 날짜",
+   "timeline": "main",
+   "source_text": "5월 17일.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "가온이 격벽 열쇠를 받아 설비실로 이동",
+   "summary": "가온이 카림에게 격벽 열쇠를 받아 광학부 온도계 확인을 위해 설비실 쪽으로 이동한다.",
+   "location_id": "LOC_006",
+   "time_id": "NEW:5월_17일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_005",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [
+    "OBJ_007"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_007",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림은 벽의 열쇠판을 열고 격벽 열쇠를 꺼내 건넸다. 가온은 열쇠를 장갑 안쪽 주머니에 넣고"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "assumes": "OBJ_007 (격벽 열쇠를 받아 소지함)",
+     "source_text": "가온은 열쇠를 장갑 안쪽 주머니에 넣고"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "광학부 온도계만 확인하고 분전반은 열지 말라는 지시 사항",
+     "source_text": "광학부 온도계만 보고 와요. 분전반은 열지 말고."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_007 (열쇠판에서 격벽 열쇠를 꺼내 건네줄 수 있는 상태)",
+     "source_text": "카림은 벽의 열쇠판을 열고 격벽 열쇠를 꺼내 건넸다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "격벽 열쇠의 위치와 사용 권한, 설비 담당의 격벽 관리 규정",
+     "source_text": "통로 격벽은 설비 담당이 관리한다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_005",
+     "info": "격벽 열쇠 사용 권한 및 광학부 온도계 확인 임무",
+     "via": "told",
+     "retained": true,
+     "source_text": "열쇠요. 광학부 온도계만 보고 와요. 분전반은 열지 말고."
+    },
+    {
+     "character_id": "CHAR_005",
+     "info": "통로 격벽은 설비 담당이 관리한다는 규정",
+     "via": "told",
+     "retained": true,
+     "source_text": "통로 격벽은 설비 담당이 관리한다."
+    },
+    {
+     "character_id": "CHAR_005",
+     "info": "청문은 20일이며 본부는 그 전까지 현 운영 체제 유지",
+     "via": "told",
+     "retained": true,
+     "source_text": "청문은 20일이고 본부는 그 전까지 현 운영 체제 유지라고 했다."
+    }
+   ],
+   "cause": "설비 담당인 가온이 격벽 열쇠가 필요하여 카림에게 요청",
+   "result": "가온이 격벽 열쇠를 소지하고 설비실/사다리 쪽으로 이동함",
+   "source_text": "5월 17일. \"열쇠요.\" 가온이 설비실 문 안쪽에 서 있었다. 카림은 벽의 열쇠판을 열고 격벽 열쇠를 꺼내 건넸다. \"광학부 온도계만 보고 와요. 분전반은 열지 말고.\" \"네.\" 가온은 열쇠를 장갑 안쪽 주머니에 넣고 사다리 쪽으로 갔다. 카림은 열쇠판을 다시 잠갔다. 3조였다. 통로 격벽은 설비 담당이 관리한다. 청문은 20일이고 본부는 그 전까지 현 운영 체제 유지라고 했다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:58:38Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 67.57
+ }
+}

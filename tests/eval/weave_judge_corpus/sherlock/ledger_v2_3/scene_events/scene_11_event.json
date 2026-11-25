@@ -1,0 +1,93 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:밀물이_가장_높을_때",
+   "expression": "밀물이 가장 높을 때",
+   "description": "부두 뒤편 좁은 땅에 어른 키 절반이 넘는 물이 차오르는 시각",
+   "timeline": "main",
+   "source_text": "밀물이 가장 높을 때면 이 자리에 어른 키의 절반이 넘는 물이 들어찬다고 했다",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "브래드스트리트의 부두 뒤편 수위 관찰",
+   "summary": "브래드스트리트가 부두 뒤편의 좁은 땅에서 밀물 당시 수위와 창문·강 사이 거리를 측정한 뒤, 물건이 투기되었다면 가라앉거나 떠내려갔을 것이고 썰물을 기다려야 한다는 결론을 내린다.",
+   "location_id": "NEW:부두_뒤편의_좁은_땅",
+   "time_id": "NEW:밀물이_가장_높을_때",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_023"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_023",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_023",
+     "field": "possesses",
+     "assumes": "수첩",
+     "source_text": "그는 수첩을 덮었다."
+    },
+    {
+     "entity": "CHAR_023",
+     "field": "knows",
+     "assumes": "밀물 수위(어른 키 절반 이상)와 창문~강 거리, 소용돌이 강도",
+     "source_text": "밀물이 가장 높을 때면 이 자리에 어른 키의 절반이 넘는 물이 들어찬다고 했다. ... 소용돌이가 사나웠다."
+    },
+    {
+     "entity": "CHAR_023",
+     "field": "ability",
+     "assumes": "쏟아지는 물·소용돌이 속에서도 헤엄쳐 나올 수 있는 상황은 아니라고 판단함",
+     "source_text": "창턱에서 강까지는 사람이 뛰어내려 헤엄쳐 나갈 만한 거리였지만, 소용돌이가 사나웠다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_023",
+     "info": "밀물 당시 이 자리의 수위와 창문~강 거리, 소용돌이 강도",
+     "via": "direct",
+     "retained": true,
+     "source_text": "밀물이 가장 높을 때면 이 자리에 어른 키의 절반이 넘는 물이 들어찬다고 했다. ... 소용돌이가 사나웠다."
+    },
+    {
+     "character_id": "CHAR_023",
+     "info": "밤사이 창밖으로 무언가 투기되었다면 그것은 가라앉거나 떠내려갔을 것이며, 썰물을 기다려야 한다는 점",
+     "via": "inference",
+     "retained": true,
+     "source_text": "창밖으로 무언가 던져졌다면 그것은 가라앉거나 떠내려갔을 것이고, 어느 쪽이든 썰물을 기다리는 수밖에 없었다."
+    }
+   ],
+   "cause": "브래드스트리트가 부두 뒤편의 지형·수위·소용돌이 강도를 직접 확인함",
+   "result": "밤사이 창밖으로 무언가 던져졌다면 가라앉거나 떠내려갔을 것이며, 썰물을 기다릴 수밖에 없다는 결론",
+   "source_text": "부두 뒤편의 좁은 땅은 물이 빠져 드러나 있었다. ... 어느 쪽이든 썰물을 기다리는 수밖에 없었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:04:24Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 8.04
+ }
+}

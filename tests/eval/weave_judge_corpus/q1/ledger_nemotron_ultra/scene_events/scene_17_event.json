@@ -1,0 +1,127 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "휴무 후 물 데우기",
+   "summary": "어제 휴무였으므로 오늘 물을 다시 데운다.",
+   "location_id": "LOC_001",
+   "time_id": "NEW:십이월_이십일_아침",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [],
+   "witness_character_ids": [],
+   "main_actor_character_id": "unknown",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "어제 휴무",
+   "result": "오늘 물 다시 데움",
+   "source_text": "어제가 휴무였으니 오늘은 물을 다시 데운 날이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "정호가 골목에서 정미를 붙듦",
+   "summary": "정호가 골목에서 정미를 붙잡고 박 사장 마감일과 엄마 일을 걱정하며 대화한다.",
+   "location_id": "NEW:골목",
+   "time_id": "NEW:십이월_이십일_아침",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "박 사장이 스무날까지 돈을 못 부치면 내려온다",
+     "source_text": "\"스무날까지 못 부치면 박 사장이 내려온다 캤다.\""
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "박 사장이 저번에도 내려온 적 있다",
+     "source_text": "\"저번에도 왔다.\""
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "박 사장이 오면 동네 사람들이 알게 되고 엄마 얼굴이 안 좋아질 것",
+     "source_text": "\"그 사람 여기까지 오면 동네가 안다. 엄마 얼굴 어떻게 되겠노.\""
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "박 사장 채무 상황과 마감일(스무날)을 인지함",
+     "source_text": "정미가 오빠를 봤다. \"그래서.\""
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_021 (열쇠 고리, 쇠 부딪히는 소리로 추정)",
+     "source_text": "정호는 잠바 주머니에 손을 넣었다. 쇠 부딪히는 소리가 났다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "박 사장이 스무날까지 돈을 못 부치면 내려온다",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"스무날까지 못 부치면 박 사장이 내려온다 캤다.\""
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "박 사장이 저번에도 내려온 적 있다",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"저번에도 왔다.\""
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "박 사장이 오면 동네가 알게 되고 엄마 얼굴이 안 좋아질 것",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"그 사람 여기까지 오면 동네가 안다. 엄마 얼굴 어떻게 되겠노.\""
+    }
+   ],
+   "cause": "박 사장 채무 마감일 임박",
+   "result": "정미에게 상황 전달, 정미가 가게 쪽을 봄",
+   "source_text": "정호는 골목에서 정미를 붙들었다. \"스무날까지 못 부치면 박 사장이 내려온다 캤다.\" 정미가 오빠를 봤다. \"그래서.\" \"그 전에 어떻게든 해야 된다. 그 사람 여기까지 오면 동네가 안다. 엄마 얼굴 어떻게 되겠노.\" \"오빠.\" \"그 사람은 마음만 먹으면 온다. 저번에도 왔다.\" 정미는 뭐라고 하려다가 가게 쪽을 봤다. 골목은 좁아서 둘이 서면 어깨가 벽에 닿았다. 정호는 잠바 주머니에 손을 넣었다. 쇠 부딪히는 소리가 났다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:32:36Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 23.74
+ }
+}

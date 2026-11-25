@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [
+    {
+      "time_id": "NEW:밤_10시_접속",
+      "expression": "밤 열 시경",
+      "description": "저녁 식사 후 접속한 시각. 미래 세계도 밤이었다.",
+      "timeline": "future_world",
+      "source_text": "저녁을 먹고 밤 열 시쯤 접속했다.",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S24_1",
+      "order": 1,
+      "title": "밤의 1번가 산책",
+      "summary": "밤에 접속한 알파가 남색 하늘 아래 조명이 켜진 1번가를 산책한다. 가로등 카메라 아래에서 손을 흔들어 본다.",
+      "location_id": "LOC_006",
+      "time_id": "NEW:밤_10시_접속",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "가로등 카메라가 개별적으로 영상을 저장한다는 사실",
+          "source_text": "어딘가의 저장소에 오늘의 나가 기록되고 있겠지."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "저녁 식사 후의 여유",
+      "result": "고요한 밤 산책",
+      "source_text": "복도로 나와 올려다본 하늘은 짙은 남색이었다.",
+      "certainty": "explicit"
+    }
+  ]
+}

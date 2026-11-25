@@ -1,0 +1,108 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "홈즈가 청년에게 진술을 다시 들음",
+   "summary": "보스콤 못 사건의 청년이 감옥에서 회색 물체에 대한 이야기를 반복했고, 홈즈는 추가 캐물을 멈추었다.",
+   "location_id": "LOC_033",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_015"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_015",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_033",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "감옥의 벽은 축축했고 창은 높았다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_015",
+     "field": "body_status",
+     "assumes": "발언 가능한 상태(건강 또는 정서적 발언 가능 상태)",
+     "source_text": "그가 말했다."
+    },
+    {
+     "entity": "CHAR_015",
+     "field": "knows",
+     "assumes": "자신이 사건 당일 아버지 곁에서 일어났다는 사실, 회색 물체가 그 후 사라졌다는 사실",
+     "source_text": "청년은 자기가 아버지 곁에서 일어났을 때 회색 물체가 사라지고 없었다는 이야기를 다시 했다."
+    },
+    {
+     "entity": "CHAR_015",
+     "field": "knows",
+     "assumes": "not_knows: 회색 물체의 정체(무엇인지)",
+     "source_text": "그것이 무엇이었는지는 여전히 말하지 못했다. '무언가 있었다는 느낌만 남았습니다.'"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "청년의 진술이 신뢰에 가까울 것이라는 가정(진실에서 출발)",
+     "source_text": "자네가 진실을 말하고 있다는 쪽에서 출발해 보겠네."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "심문技法 — 미확인 부분을 억지로 묻지 않고 진술의 붕괴를 막는 판단력",
+     "source_text": "후자를 억지로 채우게 하면 진술이 망가진다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "청년이 사건 당일 아버지 곁에서 일어났을 때 회색 물체가 사라져 있었다는 진술(재확인)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "청년은 자기가 아버지 곁에서 일어났을 때 회색 물체가 사라지고 없었다는 이야기를 다시 했다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "청년이 회색 물체의 정체는 여전히 모른다는 점",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그것이 무엇이었는지는 여전히 말하지 못했다."
+    }
+   ],
+   "cause": "홈즈의 심문 시작 발언",
+   "result": "청년이 회색 물체 정체에 대해 모른다는 점을 재확인하고, 홈즈는 추가 심문을 단념함",
+   "source_text": "\"자네가 진실을 말하고 있다는 쪽에서 출발해 보겠네.\" 홈즈가 말했다. 감옥의 벽은 축축했고 창은 높았다. 청년은 자기가 아버지 곁에서 일어났을 때 회색 물체가 사라지고 없었다는 이야기를 다시 했다. 그것이 무엇이었는지는 여전히 말하지 못했다. \"무언가 있었다는 느낌만 남았습니다.\" 그가 말했다. 홈즈는 고개를 끄덕이고 더 캐묻지 않았다. 있었다는 느낌과 무엇이었는지는 서로 다른 것이며, 후자를 억지로 채우게 하면 진술이 망가진다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:04:55Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 9.87
+ }
+}

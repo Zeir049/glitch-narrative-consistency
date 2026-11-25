@@ -1,0 +1,87 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "브래드스트리트가 아편굴 앞방을 수색함",
+   "summary": "브래드스트리트가 아편굴 앞방 커튼 뒤에 걸린 세인트클레어의 코트와 구두·양말·모자·시계를 확인하고, 코트 주머니에 손을 넣어보나 동전 무게로 축 처진 것을 확인하고 곧 손을 뺐다.",
+   "location_id": "LOC_008",
+   "time_id": "NEW:에피소드_6_시점",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_023"
+   ],
+   "witness_character_ids": [
+    "CHAR_018"
+   ],
+   "main_actor_character_id": "CHAR_023",
+   "objects": [
+    "OBJ_035",
+    "OBJ_034"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_035",
+     "field": "body_status",
+     "from": "코트 자체는 커튼 뒤에 걸린 채로 보존됨",
+     "to": "주머니에 동전 무게로 축 처진 상태로 확인됨",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "코트 주머니에 손을 넣어 보았다가 이내 뺐다. 동전 무게로 축 처져 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_023",
+     "field": "possesses",
+     "assumes": "OBJ_035 (코트 주머니에 손을 넣어봄)",
+     "source_text": "그는 코트 주머니에 손을 넣어 보았다가 이내 뺐다."
+    },
+    {
+     "entity": "CHAR_018",
+     "field": "knows",
+     "assumes": "not_knows: 코트가 그 자리에 그대로 남아 있었던 점의 의미",
+     "source_text": "\"이걸 그대로 두었다는 게 이상하지 않습니까.\""
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_023",
+     "info": "세인트클레어의 코트가 아편굴 앞방 커튼 뒤에 그대로 걸려 있고, 주머니는 동전 무게로 축 처진 상태라는 점",
+     "via": "direct",
+     "retained": true,
+     "source_text": "세인트클레어의 코트는 아직도 커튼 뒤에 걸린 채였다. … 동전 무게로 축 처져 있었다."
+    }
+   ],
+   "cause": "브래드스트리트가 아편굴 앞방의 커튼을 젖혀 코트의 보존 상태를 확인함",
+   "result": "코트가 동전 무게로 축 처진 상태임이 드러나고, 순경은 그것이 그대로 남아 있었음을 이상하게 여긴다",
+   "source_text": "브래드스트리트가 아편굴 앞방의 커튼을 젖혔다. 세인트클레어의 코트는 아직도 커튼 뒤에 걸린 채였다. 구두와 양말과 모자와 시계도 그 곁에 그대로 있었다. 그는 코트 주머니에 손을 넣어 보았다가 이내 뺐다. 동전 무게로 축 처져 있었다. \"이걸 그대로 두었다는 게 이상하지 않습니까.\" 순경이 물었다. 경위는 대답하지 않고 있었다. 창밖으로는 물이 빠져 자갈이 드러난 좁은 땅이 보였다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-31T06:33:06Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 9.45
+ }
+}

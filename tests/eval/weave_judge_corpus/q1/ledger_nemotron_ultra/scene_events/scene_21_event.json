@@ -1,0 +1,124 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:새벽",
+   "expression": "새벽",
+   "description": "정문 여닫는 소리가 들린 시간대",
+   "timeline": "main",
+   "source_text": "새벽에 정문 여닫는 소리가 들렸다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "새벽 첫 손님 입장",
+   "summary": "새벽에 정문 여닫는 소리가 들리고, 외투를 입은 손님이 카운터에서 요금 800원을 내고 수건을 받아 남탕으로 들어갔다. 정호는 장부에 어른 하나를 기록했다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:새벽",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "NEW:첫_손님"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "NEW:첫_손님",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "NEW:첫_손님",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_005",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "손님은 수건을 집어 들고 남탕 문을 열고 안으로 들어갔다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_006",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 아무 말 없이 돈을 거두어 서랍 안에 넣어 두었다."
+    },
+    {
+     "entity": "NEW:첫_손님",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_001",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 개어 놓은 수건 한 장을 손님 쪽으로 밀어주었다. 손님은 수건을 집어 들고"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "NEW:첫_손님",
+     "field": "possesses",
+     "assumes": "동전 800원 (목욕 요금)",
+     "source_text": "손님은 주머니에서 동전을 꺼내 나무 서랍 위에 놓았다. 동전은 모두 팔백 원이었다."
+    },
+    {
+     "entity": "NEW:첫_손님",
+     "field": "body_status",
+     "assumes": "목욕 가능한 신체 상태",
+     "source_text": "손님은 수건을 집어 들고 남탕 문을 열고 안으로 들어갔다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "목욕 요금이 800원임을 알고 있음",
+     "source_text": "정호는 아무 말 없이 돈을 거두어 서랍 안에 넣어 두었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "장부 기록 및 요금 수납 업무 수행 가능",
+     "source_text": "정호는 얇은 연필을 들어 장부에 어른 하나를 적었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "첫 손님이 입장하여 800원을 내고 남탕을 이용함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "손님은 주머니에서 동전을 꺼내 나무 서랍 위에 놓았다. 동전은 모두 팔백 원이었다. ... 정호는 얇은 연필을 들어 장부에 어른 하나를 적었다."
+    }
+   ],
+   "cause": "새벽에 손님이 목욕탕을 이용하러 옴",
+   "result": "정호가 요금 800원을 받고 수건을 내어주며 장부에 기록함",
+   "source_text": "새벽에 정문 여닫는 소리가 들렸다. 카운터에 앉아 있던 정호가 장부에서 눈을 뗐다. 외투를 입은 손님이 카운터 앞으로 다가왔다. 손님은 주머니에서 동전을 꺼내 나무 서랍 위에 놓았다. 동전은 모두 팔백 원이었다. 정호는 아무 말 없이 돈을 거두어 서랍 안에 넣어 두었다. 정호는 개어 놓은 수건 한 장을 손님 쪽으로 밀어주었다. 손님은 수건을 집어 들고 남탕 문을 열고 안으로 들어갔다. 닫힌 문 너머에서 뜨거운 김이 새어 나왔다. 정호는 얇은 연필을 들어 장부에 어른 하나를 적었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:34:14Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 98.68
+ }
+}

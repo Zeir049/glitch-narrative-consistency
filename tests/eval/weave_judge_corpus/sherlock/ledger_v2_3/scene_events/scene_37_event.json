@@ -1,0 +1,181 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:검시_심리_당일_화요일",
+   "expression": "화요일",
+   "description": "검시 심리가 열린 요일",
+   "timeline": "main",
+   "source_text": "검시 심리는 화요일에 열렸고",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "NEW:치안판사_심문_당일_수요일",
+   "expression": "수요일",
+   "description": "치안판사 심문이 열린 요일 (검시 다음 날)",
+   "timeline": "main",
+   "source_text": "수요일에는 로스의 치안판사 앞에 섰고",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "검시 심리에서 살인 평결",
+   "summary": "화요일에 검시 심리가 열렸고, 배심원들은 고의 살인이라는 평결을 내렸다.",
+   "location_id": "LOC_020",
+   "time_id": "NEW:검시_심리_당일_화요일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [],
+   "witness_character_ids": [],
+   "main_actor_character_id": "unknown",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_015",
+     "field": "alive",
+     "from": "true",
+     "to": "true",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "배심원들은 고의 살인이라는 평결을 냈다"
+    }
+   ],
+   "assumed_states": [],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_017",
+     "info": "검시 배심의 고의 살인 평결",
+     "via": "direct",
+     "retained": true,
+     "source_text": "방청석에 앉아 있던 앨리스 터너는"
+    }
+   ],
+   "cause": "보스콤 못 사건에 대한 검시 심리 개최",
+   "result": "배심의 고의 살인 평결",
+   "source_text": "검시 심리는 화요일에 열렸고 배심원들은 고의 살인이라는 평결을 냈다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "치안판사 심리 및 다음 순회재판으로 이송",
+   "summary": "수요일에 로스의 치안판사 앞에 선 청년은, 검시관이 답변을 거부하면 불리해질 수 있다는 고지에도 끝내 그 질문에 답하지 않았다. 판사들은 사건을 다음 순회재판으로 넘겼다.",
+   "location_id": "LOC_020",
+   "time_id": "NEW:치안판사_심문_당일_수요일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_015"
+   ],
+   "witness_character_ids": [
+    "CHAR_017"
+   ],
+   "main_actor_character_id": "CHAR_015",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_015",
+     "field": "body_status",
+     "assumes": "치안판사 앞에 설 수 있는 자유 신분 (구속되지 않음)",
+     "source_text": "수요일에는 로스의 치안판사 앞에 섰고"
+    },
+    {
+     "entity": "CHAR_017",
+     "field": "body_status",
+     "assumes": "방청석에 앉아 심리 전과정을 지켜볼 수 있는 일반 시민 신분",
+     "source_text": "방청석에 앉아 있던 앨리스 터너는"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "EVENT_6_1의 고의 살인 평결이 내려진 검시 심리가 EVENT_6_2의 치안판사 심문으로 이어지는 연속 절차다",
+     "source_text": "검시 심리는 화요일에 열렸고 ... 수요일에는 로스의 치안판사 앞에 섰고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_017",
+     "info": "검시관이 청년에게 답변 거부 시 불리해질 수 있다고 고지한 사실",
+     "via": "direct",
+     "retained": true,
+     "source_text": "검시관이 청년에게 답변을 거부하면 불리해질 수 있다고 고지하는 대목에서"
+    },
+    {
+     "character_id": "CHAR_017",
+     "info": "청년이 그 고지에도 답변을 거부한 사실",
+     "via": "direct",
+     "retained": true,
+     "source_text": "청년은 끝내 그 질문에는 답하지 않았다"
+    },
+    {
+     "character_id": "CHAR_017",
+     "info": "사건이 다음 순회재판으로 넘어갔다는 사실",
+     "via": "direct",
+     "retained": true,
+     "source_text": "판사들은 사건을 다음 순회재판으로 넘겼다"
+    }
+   ],
+   "cause": "검시 심리에서 고의 살인 평결이 나온 후속 절차",
+   "result": "사건이 다음 순회재판으로 이송됨",
+   "source_text": "수요일에는 로스의 치안판사 앞에 섰고, 판사들은 사건을 다음 순회재판으로 넘겼다. 방청석에 앉아 있던 앨리스 터너는 검시관이 청년에게 답변을 거부하면 불리해질 수 있다고 고지하는 대목에서 손수건을 쥐었다. 청년은 끝내 그 질문에는 답하지 않았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_3",
+   "scene_id": "scene_6_1",
+   "order": 3,
+   "title": "심리 축어록이 주간지에 게재됨",
+   "summary": "치안판사 심리의 축어록이 그 주 지역 주간지에 그대로 실렸다.",
+   "location_id": "unknown",
+   "time_id": "NEW:치안판사_심문_당일_수요일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [],
+   "witness_character_ids": [],
+   "main_actor_character_id": "unknown",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_2",
+     "assumes": "EVENT_6_2의 치안판사 심문 내용이 축어록 형태로 기록되어 본 사건의 게재 대상이 되었다",
+     "source_text": "심리 축어록은 그 주 지역 주간지에 그대로 실렸다"
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "치안판사 심문 기록의 존재",
+   "result": "심리 축어록이 지역 주간지에 게재됨",
+   "source_text": "심리 축어록은 그 주 지역 주간지에 그대로 실렸다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:07:31Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 14.21
+ }
+}

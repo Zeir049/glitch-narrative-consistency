@@ -1,0 +1,89 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "홈즈가 전날 밤의 이론을 철회함",
+   "summary": "홈즈가 어제 자기가 세운 이론(범인이 바깥에서 들어왔으리라는 추정)이 틀렸다고 왓슨에게 말하며 처음부터 다시 시작하겠다고 선언했다.",
+   "location_id": "LOC_010",
+   "time_id": "NEW:6화_아침_대화_시점",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "범인이 바깥에서 들어왔으리라는 확신",
+     "to": "범인이 바깥에서 들어왔으리라는 이론이 틀렸다는 결론",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "어제 내가 자네에게 말한 것은 틀렸네."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "찻잔을 들고 내려놓을 수 있는 상태 (양손 사용 가능)",
+     "source_text": "홈즈가 찻잔을 내려놓으며 말했다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "자신의 이론을 스스로 폐기하고 다시 시작할 수 있는 성격적 특성",
+     "source_text": "나는 지금 처음부터 다시 시작할 참이야."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "이 사건의 범인이 바깥에서 들어왔으리라는 홈즈의 전날 밤 이론(전날 전해 들음)",
+     "source_text": "전날 밤 그는 이 사건의 범인이 바깥에서 들어왔으리라고 꽤 확신에 차서 설명했었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "자신의 전날 밤 이론(범인이 바깥에서 들어왔으리라는 추정)이 자료 부족으로 틀렸다는 점",
+     "via": "told",
+     "retained": true,
+     "source_text": "어제 내가 자네에게 말한 것은 틀렸네."
+    }
+   ],
+   "cause": "자료가 모자란 채로 세운 이론의 한계(덧문을 직접 만져 본 후 깨달음)",
+   "result": "홈즈가 처음부터 다시 시작하겠다고 선언함; 왓슨은 반박하지 않음",
+   "source_text": "\"어제 내가 자네에게 말한 것은 틀렸네.\" 홈즈가 찻잔을 내려놓으며 말했다. ... \"덧문을 직접 만져 보기 전까지는 그럴듯했지.\" 그가 이어 말했다. \"자료가 모자란 채로 세운 이론은 언제나 그렇게 무너지네. 나는 지금 처음부터 다시 시작할 참이야.\"",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:03:33Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 9.12
+ }
+}

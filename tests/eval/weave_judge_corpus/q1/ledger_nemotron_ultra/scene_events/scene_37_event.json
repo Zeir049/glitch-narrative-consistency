@@ -1,0 +1,134 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "NEW:관",
+   "name": "관",
+   "description": "헝겊으로 감겨 있고 밑에 깡통이 받쳐진 관",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "문이 닫히기 전에 헝겊으로 감은 관이 보였다. 밑에 깡통이 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "NEW:십이월_첫날_오전",
+   "expression": "십이월 첫날 오전",
+   "description": "십이월 첫날 아침, 정호가 연탄을 배달하러 온 시각",
+   "timeline": "main",
+   "source_text": "십이월 첫날",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "정호가 문식에게 연탄 배달 및 계약금 요구",
+   "summary": "정호가 연탄을 문 앞에 놓고 계약금 115원을 요구했으나 문식은 관 값만 안다며 연탄만 들고 들어감",
+   "location_id": "LOC_008",
+   "time_id": "NEW:십이월_첫날_오전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_003",
+    "NEW:관",
+    "OBJ_011"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "OBJ_003",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호가 연탄을 문 앞에 놓고"
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_003",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "문식은 연탄을 들고 안으로 들어갔다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_003 (연탄을 들고 옴)",
+     "source_text": "정호가 연탄을 문 앞에 놓고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "설비집 사장이 관 값을 두드려 보고 숫자를 불렀음",
+     "source_text": "설비집 사장 왔던 날 아저씨도 옆에 계셨잖습니까. 관 두드려 보고 숫자 부를 때요."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "관 값(인입관 180, 순환관 50)을 알고 있음",
+     "source_text": "나는 관만 봅니다. 숫자는 몰라요. / 그날 수첩에 적히던 숫자를 떠올렸다. 인입관 백팔십에 순환관 오십이었다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "body_status",
+     "assumes": "관을 들 수 있는 신체 상태",
+     "source_text": "문식은 연탄을 들고 안으로 들어갔다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "문식의 집에 헝겊으로 감은 관과 깡통이 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "문이 닫히기 전에 헝겊으로 감은 관이 보였다. 밑에 깡통이 있었다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "관 설치 비용이 인입관 180원, 순환관 50원임",
+     "via": "inference",
+     "retained": true,
+     "source_text": "그날 수첩에 적히던 숫자를 떠올렸다. 인입관 백팔십에 순환관 오십이었다."
+    }
+   ],
+   "cause": "정호가 연탄 배달 및 계약금 수금하러 옴",
+   "result": "문식이 연탄만 받고 계약금 지불 거부, 정호는 관 설치 비용 기억함",
+   "source_text": "정호가 연탄을 문 앞에 놓고 서 있는데 문식이 나왔다. \"아저씨. 계약금이 백십오입니더. 절반이요.\" 문식은 연탄을 내려다봤다. \"관 가는 데 얼마 드는지는 나는 모릅니다.\" \"설비집 사장 왔던 날 아저씨도 옆에 계셨잖습니까. 관 두드려 보고 숫자 부를 때요.\" \"나는 관만 봅니다. 숫자는 몰라요.\" 정호는 더 묻지 않았다. 문식은 연탄을 들고 안으로 들어갔다. 문이 닫히기 전에 헝겊으로 감은 관이 보였다. 밑에 깡통이 있었다. 정호는 계단을 올라오면서 그날 수첩에 적히던 숫자를 떠올렸다. 인입관 백팔십에 순환관 오십이었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:45:01Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 62.85
+ }
+}

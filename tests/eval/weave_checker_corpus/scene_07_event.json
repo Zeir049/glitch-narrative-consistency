@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S07_1",
+      "order": 1,
+      "title": "알라인의 '플랜 A' 언급",
+      "summary": "영상 정리를 마친 알라인이 상대 측 계획 '플랜 A'가 오차 범위 안에서 진행 중이라고 지나가듯 말한다. 출처를 묻자 얼버무린다.",
+      "location_id": "LOC_009",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_007",
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_007",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "아우겐 측 계획명 '플랜 A'와 그 진행 상황(오차 범위 이내)",
+          "source_text": "어차피 '플랜 A'인지 뭔지는 오차 범위 안에서 굴러가고 있다던데요."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "상대 측에 '플랜 A'라는 이름의 계획이 존재한다는 말을 들음",
+          "via": "told",
+          "source_text": "'플랜 A'인지 뭔지는 오차 범위 안에서 굴러가고 있다던데요."
+        }
+      ],
+      "cause": "영상 정리 후의 잡담",
+      "result": "알파가 출처 불명의 정보에 불안을 느낌",
+      "source_text": "\"어차피 '플랜 A'인지 뭔지는 오차 범위 안에서 굴러가고 있다던데요.\"",
+      "certainty": "explicit"
+    }
+  ]
+}

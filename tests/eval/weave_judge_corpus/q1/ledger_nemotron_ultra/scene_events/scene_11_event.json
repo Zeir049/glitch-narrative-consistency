@@ -1,0 +1,308 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "마지막 손님 요금 수납",
+   "summary": "순덕이 마지막 손님 요금을 받고 의자에서 몸을 돌린다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:마지막_손님_나간_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_006 (요금통)",
+     "source_text": "마지막 손님 요금을 받고"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "오른쪽 무릎에 파스 두 장 겹쳐 붙임",
+     "source_text": "그 무릎에는 파스가 두 장 겹쳐 붙어 있었다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "마지막 손님이 나갔다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "마지막 손님 요금을 받고 나서"
+    }
+   ],
+   "cause": "영업 종료 시점",
+   "result": "순덕이 골방으로 이동함",
+   "source_text": "순덕은 마지막 손님 요금을 받고 나서 의자에서 몸을 돌렸다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "골방 이동 및 휴식",
+   "summary": "순덕이 카운터에서 골방으로 두 걸음 이동해 오른쪽 다리를 펴고 눕는다.",
+   "location_id": "LOC_003",
+   "time_id": "NEW:마지막_손님_나간_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_002",
+     "to": "LOC_003",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카운터에서 골방까지는 두 걸음이었다. 그 두 걸음을 걷고 들어가"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "오른쪽 무릎에 파스 두 장 겹쳐 붙임",
+     "source_text": "그 무릎에는 파스가 두 장 겹쳐 붙어 있었다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "두 걸음 걷기 가능",
+     "source_text": "카운터에서 골방까지는 두 걸음이었다. 그 두 걸음을 걷고 들어가"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "EVENT_6_1의 요금 수납 직후이며 같은 연속된 시간 흐름 안에 있다",
+     "source_text": "순덕은 마지막 손님 요금을 받고 나서 의자에서 몸을 돌렸다. 카운터에서 골방까지는 두 걸음이었다."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "영업 종료 후 휴식",
+   "result": "순덕이 골방에 누움",
+   "source_text": "카운터에서 골방까지는 두 걸음이었다. 그 두 걸음을 걷고 들어가 오른쪽 다리를 펴고 누웠다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_3",
+   "scene_id": "scene_6_1",
+   "order": 3,
+   "title": "문 개방 상태 유지",
+   "summary": "순덕이 골방 문을 열어 두어 정문 여닫는 소리가 들리게 한다.",
+   "location_id": "LOC_003",
+   "time_id": "NEW:마지막_손님_나간_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "문을 열면 정문 여닫는 소리가 들림",
+     "source_text": "열어 두면 정문 여닫는 소리가 다 들렸다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "이십 년 동안 그 소리 안에서 살았음",
+     "source_text": "이십 년을 그 소리 안에서 살았다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_2",
+     "assumes": "골방에 누운 상태에서 문을 열어 둠",
+     "source_text": "문은 열어 두었다. 열어 두면 정문 여닫는 소리가 다 들렸다."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "손님 출입 소리 감지 목적",
+   "result": "정문 소리 청취 가능 상태 유지",
+   "source_text": "문은 열어 두었다. 열어 두면 정문 여닫는 소리가 다 들렸다. 이십 년을 그 소리 안에서 살았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_4",
+   "scene_id": "scene_6_1",
+   "order": 4,
+   "title": "정호의 동전 정리 관측",
+   "summary": "순덕이 골방에서 카운터 쪽 정호가 손님 동전을 서랍에 넣는 소리를 듣는다.",
+   "location_id": "LOC_003",
+   "time_id": "NEW:마지막_손님_나간_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "정호가 카운터에서 동전을 서랍에 넣고 있음",
+     "source_text": "카운터에서는 정호가 손님 동전을 서랍에 넣고 있었다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "assumes": "LOC_002 (카운터)",
+     "source_text": "카운터에서는 정호가"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_3",
+     "assumes": "문을 열어 두었기에 카운터 소리가 골방까지 들림",
+     "source_text": "열어 두면 정문 여닫는 소리가 다 들렸다. ... 카운터에서는 정호가 손님 동전을 서랍에 넣고 있었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "정호가 손님 동전을 서랍에 넣고 있다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "카운터에서는 정호가 손님 동전을 서랍에 넣고 있었다"
+    }
+   ],
+   "cause": "문 개방으로 소리 전달",
+   "result": "순덕이 정호의 마감 업무 소리 청취",
+   "source_text": "카운터에서는 정호가 손님 동전을 서랍에 넣고 있었다. 순덕은 그 소리를 세지 않았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_5",
+   "scene_id": "scene_6_1",
+   "order": 5,
+   "title": "소리 세지 않음의 익숙함",
+   "summary": "순덕이 정호의 동전 세는 소리를 세지 않으며, 세지 않아도 되는 것이 아직 익숙하지 않음을 느낀다.",
+   "location_id": "LOC_003",
+   "time_id": "NEW:마지막_손님_나간_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "과거에는 손님 수/요금을 소리로 세었음",
+     "source_text": "세지 않아도 되는 것이 아직 익숙하지 않았다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_4",
+     "assumes": "같은 청취 상황 내에서 내적 반응",
+     "source_text": "순덕은 그 소리를 세지 않았다. 세지 않아도 되는 것이 아직 익숙하지 않았다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "세지 않아도 되는 상황이 아직 익숙하지 않다",
+     "via": "inference",
+     "retained": true,
+     "source_text": "세지 않아도 되는 것이 아직 익숙하지 않았다"
+    }
+   ],
+   "cause": "역할 변화(은퇴/위임)에 따른 심리 상태",
+   "result": "내적 위화감 인식",
+   "source_text": "순덕은 그 소리를 세지 않았다. 세지 않아도 되는 것이 아직 익숙하지 않았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_6",
+   "scene_id": "scene_6_1",
+   "order": 6,
+   "title": "천장 얼룩 응시 후 취침",
+   "summary": "순덕이 골방 천장의 이십 년 된 얼룩을 보다가 눈을 감는다.",
+   "location_id": "LOC_003",
+   "time_id": "NEW:마지막_손님_나간_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "골방 천장에 이십 년 동안 같은 자리 얼룩이 있음",
+     "source_text": "골방 천장에는 이십 년 동안 같은 자리에 얼룩이 있었다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_2",
+     "assumes": "골방에 누운 자세에서 천장 응시",
+     "source_text": "오른쪽 다리를 펴고 누웠다. ... 골방 천장에는 이십 년 동안 같은 자리에 얼룩이 있었다. 순덕은 그것을 보다가 눈을 감았다."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "휴식 중 시선 처리",
+   "result": "취침 진입(눈을 감음)",
+   "source_text": "골방 천장에는 이십 년 동안 같은 자리에 얼룩이 있었다. 순덕은 그것을 보다가 눈을 감았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-27T04:52:00Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 40.1
+ }
+}

@@ -1,0 +1,154 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "OBJ_028",
+   "name": "터너의 자백서",
+   "description": "터너가 작성한 자백서",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "레스트레이드는 터너의 자백서를 펼쳐 놓고",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "레스트레이드의 자백서 독해",
+   "summary": "레스트레이드가 로스의 좁은 숙소에서 등불 아래 터너의 자백서를 펼쳐 읽으며, 노인이 범인이라고 결론짓는다.",
+   "location_id": "LOC_020",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_018",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_018",
+   "objects": [
+    "OBJ_028"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_018",
+     "field": "knows",
+     "from": "unknown",
+     "to": "터너의 자백서 내용(노인이 범인이라는 결론)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "\"그러니까 이 노인이 다 했다는 거군요.\""
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_018",
+     "field": "possesses",
+     "assumes": "OBJ_028",
+     "source_text": "레스트레이드는 터너의 자백서를 펼쳐 놓고"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_028",
+     "source_text": "\"이런 걸 여태 쥐고 계셨습니까.\""
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "서 있을 수 있는 상태",
+     "source_text": "홈즈는 벽난로 쪽에 서서"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_018",
+     "info": "터너의 자백서가 이 사건의 노인이 범인이라는 결론을 담고 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "\"그러니까 이 노인이 다 했다는 거군요.\""
+    },
+    {
+     "character_id": "CHAR_018",
+     "info": "홈즈가 이 자백서를 이미 소지하고 있었음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "\"이런 걸 여태 쥐고 계셨습니까.\""
+    }
+   ],
+   "cause": "레스트레이드가 자백서의 마지막 서명까지 확인",
+   "result": "레스트레이드는 자백서를 접고 사건 해결의 단서를 확보함",
+   "source_text": "레스트레이드는 터너의 자백서를 펼쳐 놓고 손가락으로 줄을 짚어 갔다. 로스의 숙소는 좁았고 등불은 어두웠다. \"그러니까 이 노인이 다 했다는 거군요.\" 그가 말했다. \"이런 걸 여태 쥐고 계셨습니까.\" 홈즈는 벽난로 쪽에 서서 대답하지 않았다. 경위는 마지막 줄의 서명을 한참 들여다보다가 종이를 접었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "밖의 비가 시작됨",
+   "summary": "숙소 밖에서 비가 내리기 시작해 창틀을 두드리는 소리가 방 안까지 들려온다.",
+   "location_id": "LOC_020",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [],
+   "witness_character_ids": [
+    "CHAR_018",
+    "CHAR_001"
+   ],
+   "main_actor_character_id": "unknown",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "EVENT_6_1과 같은 시각·장소(로스 숙소)에서 발생하며, 자백서를 접은 직후 시점이다",
+     "source_text": "경위는 마지막 줄의 서명을 한참 들여다보다가 종이를 접었다. 밖에서는 비가 오기 시작했고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "밖에 비가 오기 시작했음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "밖에서는 비가 오기 시작했고, 창틀을 두드리는 소리가 방 안까지 들어왔다."
+    },
+    {
+     "character_id": "CHAR_018",
+     "info": "밖에 비가 오기 시작했음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "밖에서는 비가 오기 시작했고, 창틀을 두드리는 소리가 방 안까지 들어왔다."
+    }
+   ],
+   "cause": "날씨 변화(비 시작)",
+   "result": "방 안까지 빗소리가 들려옴",
+   "source_text": "밖에서는 비가 오기 시작했고, 창틀을 두드리는 소리가 방 안까지 들어왔다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-31T06:34:44Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 42.15
+ }
+}

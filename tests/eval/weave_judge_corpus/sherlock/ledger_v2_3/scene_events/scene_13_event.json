@@ -1,0 +1,339 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "헬렌이 홈즈와 왓슨을 침실 복도로 안내함",
+   "summary": "헬렌이 침실들이 있는 일 층 복도로 두 사람을 안내했다.",
+   "location_id": "LOC_004",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "assumes": "LOC_004",
+     "source_text": "헬렌은 우리를 침실들이 있는 일 층 복도로 안내했다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "assumes": "LOC_004",
+     "source_text": "침실들이 있는 일 층 복도"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "assumes": "LOC_004",
+     "source_text": "침실들이 있는 일 층 복도"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "일 층에 침실들이 있는 복도가 존재함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "헬렌은 우리를 침실들이 있는 일 층 복도로 안내했다"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "일 층에 침실들이 있는 복도가 존재함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "헬렌은 우리를 침실들이 있는 일 층 복도로 안내했다"
+    }
+   ],
+   "cause": "사건 조사 진행",
+   "result": "침실 복도에서 조사가 시작됨",
+   "source_text": "헬렌은 우리를 침실들이 있는 일 층 복도로 안내했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "홈즈가 줄리아의 죽은 방(헬렌이 쓰는 방)을 살핌",
+   "summary": "홈즈가 줄리아가 죽은 두 번째 방, 현재 수리 때문에 헬렌이 쓰고 있는 방을 벽과 마루를 렌즈로 훑어 살폈다.",
+   "location_id": "LOC_004",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_003",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "렌즈를 사용해 벽과 마루를 세밀히 조사할 수 있음",
+     "source_text": "벽과 마루를 렌즈로 훑는 데 몇 분이 걸렸다"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "두 번째 방(줄리아가 죽은 방)의 사용권 — 수리 때문에 그 방을 쓰고 있음",
+     "source_text": "지금은 수리 때문에 헬렌이 쓰고 있다는 두 번째 방"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "이 사건은 EVENT_6_1의 안내 직후 같은 복도/집 안에서 이루어진다",
+     "source_text": "헬렌은 우리를 침실들이 있는 일 층 복도로 안내했다 / 줄리아가 죽은 방, 지금은 수리 때문에 헬렌이 쓰고 있다는 두 번째 방부터 살폈다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "두 번째 방은 줄리아가 죽은 방이며 현재 수리 때문에 헬렌이 사용 중임",
+     "via": "told",
+     "retained": true,
+     "source_text": "줄리아가 죽은 방, 지금은 수리 때문에 헬렌이 쓰고 있다는 두 번째 방"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "두 번째 방은 줄리아가 죽은 방이며 현재 수리 때문에 헬렌이 사용 중임",
+     "via": "told",
+     "retained": true,
+     "source_text": "줄리아가 죽은 방, 지금은 수리 때문에 헬렌이 쓰고 있다는 두 번째 방"
+    }
+   ],
+   "cause": "줄리아가 죽은 방부터 조사하기 위함",
+   "result": "두 번째 방에 대한 관찰이 이루어짐",
+   "source_text": "홈즈는 줄리아가 죽은 방, 지금은 수리 때문에 헬렌이 쓰고 있다는 두 번째 방부터 살폈다. 벽과 마루를 렌즈로 훑는 데 몇 분이 걸렸다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_3",
+   "scene_id": "scene_6_1",
+   "order": 3,
+   "title": "헬렌의 허가와 홈즈의 답변",
+   "summary": "홈즈가 옆방도 보고 싶다고 묻자, 헬렌은 의붓아버지가 안 계시니 보아도 된다고 허가했다.",
+   "location_id": "LOC_004",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "assumes": "방(로일럿 박사의 방)에 없는 상태",
+     "source_text": "의붓아버지는 안 계세요"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "ability",
+     "assumes": "집안의 방에 대한 입장을 대리 표명할 수 있는 지위(또는 권한)",
+     "source_text": "보셔도 돼요"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_2",
+     "assumes": "두 번째 방 조사 도중/직후 같은 자리에서 이루어진 대화",
+     "source_text": "옆방도 보고 싶습니다. 괜찮으시겠습니까?"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "로일럿 박사는 옆방에 부재 중이며 헬렌이 조사 진입을 허가함",
+     "via": "told",
+     "retained": true,
+     "source_text": "의붓아버지는 안 계세요. 보셔도 돼요."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "로일럿 박사는 옆방에 부재 중이며 헬렌이 조사 진입을 허가함",
+     "via": "told",
+     "retained": true,
+     "source_text": "의붓아버지는 안 계세요. 보셔도 돼요."
+    }
+   ],
+   "cause": "홈즈의 옆방 조사 요청",
+   "result": "옆방 조사 허가 획득",
+   "source_text": "\"옆방도 보고 싶습니다. 괜찮으시겠습니까?\" \"의붓아버지는 안 계세요. 보셔도 돼요.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_4",
+   "scene_id": "scene_6_1",
+   "order": 4,
+   "title": "홈즈가 안쪽 벽 문을 통해 로일럿 박사의 방으로 건너감",
+   "summary": "홈즈는 복도로 나가지 않고 안쪽 벽의 문을 열어 곧장 로일럿 박사의 방으로 건너갔다.",
+   "location_id": "LOC_015",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "NEW:안쪽_벽의_문"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_004",
+     "to": "LOC_015",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "안쪽 벽의 문을 열고 곧장 로일럿 박사의 방으로 건너갔다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "NEW:안쪽_벽의_문",
+     "field": "possesses",
+     "assumes": "안쪽 벽에 두 방을 잇는 출입문이 존재함(헬렌의 방과 로일럿 박사의 방을 연결)",
+     "source_text": "안쪽 벽의 문을 열고 곧장 로일럿 박사의 방으로 건너갔다"
+    },
+    {
+     "entity": "LOC_004",
+     "field": "condition",
+     "assumes": "헬렌의 방과 로일럿 박사의 방 사이에 안쪽 벽 문이 설치되어 있음",
+     "source_text": "안쪽 벽의 문을 열고 곧장 로일럿 박사의 방으로 건너갔다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_3",
+     "assumes": "허가를 받은 직후 즉시 옆방으로 이동함",
+     "source_text": "옆방도 보고 싶습니다 / 안쪽 벽의 문을 열고 곧장 로일럿 박사의 방으로 건너갔다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "헬렌의 방과 로일럿 박사의 방이 안쪽 벽 문으로 연결되어 있다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "안쪽 벽의 문을 열고 곧장 로일럿 박사의 방으로 건너갔다"
+    }
+   ],
+   "cause": "옆방(로일럿 박사의 방) 조사",
+   "result": "로일럿 박사의 방에 진입함",
+   "source_text": "홈즈는 복도로 나가는 대신 안쪽 벽의 문을 열고 곧장 로일럿 박사의 방으로 건너갔다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_5",
+   "scene_id": "scene_6_1",
+   "order": 5,
+   "title": "왓슨이 홈즈를 따라 로일럿 박사의 방으로 들어감",
+   "summary": "홈즈가 부르자 왓슨은 그 뒤를 따라 로일럿 박사의 방으로 들어갔다. 이백 년 된 집이라 문이 낮았다.",
+   "location_id": "LOC_015",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_004",
+     "to": "LOC_015",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "나는 그 뒤를 따랐다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "LOC_015",
+     "field": "condition",
+     "assumes": "이백 년 된 집답게 문이 낮음",
+     "source_text": "이백 년 된 집답게 문이 낮았다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_4",
+     "assumes": "EVENT_6_4의 홈즈 이동 직후, 거의 동시에 왓슨이 같은 문을 통해 뒤따름",
+     "source_text": "\"왓슨, 이리 오게. 여기서부터가 볼 만하네.\" 나는 그 뒤를 따랐다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "로일럿 저택은 약 이백 년 된 집이며 문이 낮다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이백 년 된 집답게 문이 낮았다"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "로일럿 저택은 약 이백 년 된 집이며 문이 낮다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이백 년 된 집답게 문이 낮았다"
+    }
+   ],
+   "cause": "홈즈의 호출 \"이리 오게\"",
+   "result": "왓슨이 로일럿 박사의 방에 진입함",
+   "source_text": "\"왓슨, 이리 오게. 여기서부터가 볼 만하네.\" 나는 그 뒤를 따랐다. 이백 년 된 집답게 문이 낮았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-31T06:29:33Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": true,
+  "parse_retried": false,
+  "attempts": 2,
+  "elapsed_sec": 142.86
+ }
+}

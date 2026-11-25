@@ -1,0 +1,213 @@
+{
+  "schema_version": 2,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 1,
+  "batch_id": "T2-R1-B",
+  "scene_id": "scene_26",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_26.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:36:49Z",
+  "episode": 6,
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:이_세계와의_대화는_채팅_입력만_가능",
+      "content": "플레이어가 이 세계와 대화하는 수단은 채팅 입력뿐이며, 음성은 처음부터 지원된 적이 없다.",
+      "description": "플레이어와 미래 세계 인물 간의 소통은 문자 입력 대화창을 통해서만 이루어진다. 음성 지원은 존재한 적이 없다고 서술된다.",
+      "source_text": "이 세계와의 대화는 원래 이 채팅 입력만 가능하다. 음성은 처음부터 지원된 적이 없다고 했던가.",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "키보드로 대화창에 문장을 입력해 이 세계와 소통하는 화자.",
+      "traits": [
+        {
+          "trait": "말로 하면 될 일을 문자로 옮기는 것을 답답해함",
+          "trait_type": "personality",
+          "source_text": "말로 하면 십 초면 될 이야기를 손가락으로 옮기자니 영 답답했지만, 어쩔 수 없는 규칙이다.",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S26_1",
+      "source_text": "보고할 게 생겨 클라인을 찾았다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_001",
+      "name": "클라인 브루더 (Klein Bruder)",
+      "aliases": ["클라인", "클라인님"],
+      "entity_type": "person",
+      "description": "알파의 보고를 받는 상대. 채팅 답신으로 등장한다.",
+      "traits": [
+        {
+          "trait": "짧고 정중한 존댓말로 응답함",
+          "trait_type": "speech",
+          "source_text": "[네, 알파. 말씀하시죠.]",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S26_1",
+      "source_text": "보고할 게 생겨 클라인을 찾았다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_002",
+      "name": "플레이어의 집",
+      "description": "책상과 서랍, 키보드가 있는 화자의 현실 공간.",
+      "source_text": "책상 서랍에서 키보드를 당겨와, 대화창을 열었다.",
+      "certainty": "inferred"
+    },
+    {
+      "location_id": "NEW:3번가_보급소",
+      "name": "3번가 보급소",
+      "description": "알파가 클라인에게 보고하려는 사안의 대상 장소.",
+      "source_text": "[클라인님, 3번가 보급소 건으로 보고드립니다.]",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "NEW:키보드",
+      "name": "키보드",
+      "description": "화자가 책상 서랍에서 꺼내 문장을 입력하는 데 쓰는 입력 장치.",
+      "first_appearance_event_id": "EVENT_S26_1",
+      "source_text": "책상 서랍에서 키보드를 당겨와",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S26_1",
+      "scene_id": "scene_26",
+      "order": 1,
+      "title": "채팅 대화창으로 클라인에게 보고 개시",
+      "summary": "알파는 보고할 일이 생겨 책상 서랍에서 키보드를 꺼내 대화창을 열고, 3번가 보급소 건으로 보고하겠다는 문장을 입력해 보낸다. 잠시 후 클라인이 말하라는 답신을 화면에 띄운다.",
+      "location_id": "LOC_002",
+      "time_id": "unknown",
+      "timeline": "real_present",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002", "CHAR_001"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["NEW:키보드", "OBJ_002"],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "from": "unknown",
+          "to": "NEW:키보드",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "책상 서랍에서 키보드를 당겨와"
+        },
+        {
+          "entity": "CHAR_001",
+          "field": "knows",
+          "from": "unknown",
+          "to": "알파가 3번가 보급소 건으로 보고할 것이 있음",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "[클라인님, 3번가 보급소 건으로 보고드립니다.] … [네, 알파. 말씀하시죠.]"
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "NEW:키보드 (책상 서랍에서 꺼내 자판을 누름)",
+          "source_text": "책상 서랍에서 키보드를 당겨와, 대화창을 열었다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "OBJ_002 (대화창을 열려면 이 세계와 연결되는 프로그램이 화자 쪽에 있어야 함)",
+          "source_text": "대화창을 열었다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "이 세계와의 대화는 채팅 입력만 가능하고 음성은 지원되지 않는다는 규칙",
+          "source_text": "이 세계와의 대화는 원래 이 채팅 입력만 가능하다. 음성은 처음부터 지원된 적이 없다고 했던가."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "3번가 보급소 건 — 보고할 사안의 내용을 이미 알고 있음",
+          "source_text": "보고할 게 생겨 클라인을 찾았다. / [클라인님, 3번가 보급소 건으로 보고드립니다.]"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "클라인이 자신의 보고를 올릴 상대이며 대화창으로 연락할 수 있다는 것",
+          "source_text": "보고할 게 생겨 클라인을 찾았다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "손가락으로 자판을 누를 수 있는 현실 쪽 신체로 책상 앞에 있음",
+          "source_text": "또각또각 자판을 눌러 문장을 만들어 보냈다. / 손가락으로 옮기자니 영 답답했지만"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "이 세계와 음성으로 말할 수 없음 — 문자 입력으로만 소통 가능",
+          "source_text": "말로 하면 십 초면 될 이야기를 손가락으로 옮기자니 영 답답했지만, 어쩔 수 없는 규칙이다."
+        },
+        {
+          "entity": "CHAR_001",
+          "field": "knows",
+          "assumes": "대화 상대가 알파라는 것 (호칭으로 곧바로 식별)",
+          "source_text": "[네, 알파. 말씀하시죠.]"
+        },
+        {
+          "entity": "CHAR_001",
+          "field": "knows",
+          "assumes": "not_knows: 3번가 보급소 건의 보고 내용 (아직 듣지 못해 말하라고 청함)",
+          "source_text": "[네, 알파. 말씀하시죠.]"
+        },
+        {
+          "entity": "CHAR_001",
+          "field": "ability",
+          "assumes": "알파가 보낸 채팅 문장을 읽고 화면으로 답신할 수 있음",
+          "source_text": "잠시 후 화면에 답신이 떠올랐다."
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_001",
+          "info": "알파가 3번가 보급소 건으로 보고할 것이 있음",
+          "via": "told",
+          "retained": true,
+          "source_text": "[클라인님, 3번가 보급소 건으로 보고드립니다.] / [네, 알파. 말씀하시죠.]"
+        }
+      ],
+      "cause": "알파에게 클라인에게 보고할 사안(3번가 보급소 건)이 생김.",
+      "result": "알파가 채팅으로 보고를 개시했고, 클라인이 말하라고 답신함. 음성이 아닌 문자 입력이라 진행이 더딤.",
+      "source_text": "보고할 게 생겨 클라인을 찾았다. 책상 서랍에서 키보드를 당겨와, 대화창을 열었다. … 잠시 후 화면에 답신이 떠올랐다. [네, 알파. 말씀하시죠.]",
+      "certainty": "explicit"
+    }
+  ]
+}

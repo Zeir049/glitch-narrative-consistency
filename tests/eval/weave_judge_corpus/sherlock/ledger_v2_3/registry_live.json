@@ -1,0 +1,1283 @@
+{
+ "description": "sherlock_adventures 추출용 엔티티 레지스트리 — 시작 시드 (추출 전, setting_book.md 기반 사전 등재). 추출이 진행되며 NEW: 라벨이 정식 ID로 추가된다. 모든 name/alias 문자열은 sources/ 번역문에 실재함을 프로그램으로 확인했다 (verify_registry_sherlock.py).",
+ "schema_version": 2,
+ "work_id": "sherlock_adventures",
+ "last_episode": 0,
+ "seed_policy_notes": [
+  "금지 슬롯 회피: 하숙집 주인(허드슨/터너 부인, F-01)은 등재하지 않는다 — 어느 쪽 이름도 정답으로 못 박을 수 없다.",
+  "금지 슬롯 회피: '제임스'를 왓슨의 alias로 등재하지 않는다 (F-17, 외부 지식 필요 + 화4 제임스 매카시와 문자열 충돌).",
+  "금지 슬롯 회피: '로일럿 양'을 헬렌 스토너의 alias로 등재하지 않는다 (F-06 성씨 혼선을 정답으로 굳히지 않는다).",
+  "'터너' 단독 문자열은 화2 터너 부인(F-01)과 충돌하므로 존 터너의 alias로 쓰지 않는다."
+ ],
+ "characters": [
+  {
+   "id": "CHAR_001",
+   "name": "셜록 홈즈",
+   "aliases": [
+    "홈즈"
+   ],
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "자문 탐정. 베이커가 거주"
+  },
+  {
+   "id": "CHAR_002",
+   "name": "왓슨",
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "화자. 화1 미혼·베이커가 동거 → 화2 이후 기혼·분가"
+  },
+  {
+   "id": "CHAR_003",
+   "name": "헬렌 스토너",
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "화1 의뢰인"
+  },
+  {
+   "id": "CHAR_004",
+   "name": "줄리아",
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "헬렌의 쌍둥이 언니(스토너가), 2년 전 사망 — 원문 표기는 '줄리아' 단독"
+  },
+  {
+   "id": "CHAR_005",
+   "name": "그림스비 로일럿",
+   "aliases": [
+    "로일럿 박사"
+   ],
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "의붓아버지, 화1 말미 사망"
+  },
+  {
+   "id": "CHAR_006",
+   "name": "웨스트페일",
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "해로의 이모"
+  },
+  {
+   "id": "CHAR_007",
+   "name": "퍼시 아미티지",
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "헬렌의 약혼자"
+  },
+  {
+   "id": "CHAR_008",
+   "name": "아이린 애들러",
+   "entity_type": "person",
+   "first_episode": 2,
+   "note": "화2의 '그 여인'"
+  },
+  {
+   "id": "CHAR_009",
+   "name": "보헤미아 왕",
+   "entity_type": "person",
+   "first_episode": 2,
+   "note": "화2 의뢰인"
+  },
+  {
+   "id": "CHAR_010",
+   "name": "고드프리 노턴",
+   "entity_type": "person",
+   "first_episode": 2,
+   "note": "변호사, 아이린과 결혼"
+  },
+  {
+   "id": "CHAR_011",
+   "name": "메리 서덜랜드",
+   "entity_type": "person",
+   "first_episode": 3,
+   "note": "화3 의뢰인"
+  },
+  {
+   "id": "CHAR_012",
+   "name": "제임스 윈디뱅크",
+   "aliases": [
+    "윈디뱅크",
+    "호스머 에인절"
+   ],
+   "entity_type": "person",
+   "first_episode": 3,
+   "note": "메리의 의붓아버지. '호스머 에인절'은 그의 변장 정체 — 화3 안에서 텍스트로 확정"
+  },
+  {
+   "id": "CHAR_013",
+   "name": "하디",
+   "entity_type": "person",
+   "first_episode": 3,
+   "note": "무도회 표를 준 십장"
+  },
+  {
+   "id": "CHAR_014",
+   "name": "찰스 매카시",
+   "entity_type": "person",
+   "first_episode": 4,
+   "note": "피해자"
+  },
+  {
+   "id": "CHAR_015",
+   "name": "제임스 매카시",
+   "entity_type": "person",
+   "first_episode": 4,
+   "note": "찰스의 아들, 무죄 방면"
+  },
+  {
+   "id": "CHAR_016",
+   "name": "존 터너",
+   "entity_type": "person",
+   "first_episode": 4,
+   "note": "실제 범인. 자백 후 7개월 더 살고 사망"
+  },
+  {
+   "id": "CHAR_017",
+   "name": "앨리스",
+   "entity_type": "person",
+   "first_episode": 4,
+   "note": "존 터너의 딸 — 원문 표기는 '앨리스' 단독(성 병기 없음) · alias '터너 양' 추가 (인수 심사 08-29: ep4 내 CHAR_017/NEW:터너_양 분열 병합)",
+   "aliases": [
+    "터너 양"
+   ]
+  },
+  {
+   "id": "CHAR_018",
+   "name": "레스트레이드",
+   "entity_type": "person",
+   "first_episode": 4,
+   "note": "스코틀랜드 야드 경위"
+  },
+  {
+   "id": "CHAR_019",
+   "name": "네빌 세인트클레어",
+   "aliases": [
+    "세인트클레어",
+    "휴 분"
+   ],
+   "entity_type": "person",
+   "first_episode": 5,
+   "note": "'휴 분'은 그의 변장 정체 — 화5 안에서 텍스트로 확정"
+  },
+  {
+   "id": "CHAR_020",
+   "name": "세인트클레어 부인",
+   "entity_type": "person",
+   "first_episode": 5,
+   "note": "네빌의 아내"
+  },
+  {
+   "id": "CHAR_021",
+   "name": "아이자 휘트니",
+   "entity_type": "person",
+   "first_episode": 5,
+   "note": "아편 중독자, 케이트의 남편"
+  },
+  {
+   "id": "CHAR_022",
+   "name": "케이트",
+   "entity_type": "person",
+   "first_episode": 5,
+   "note": "휘트니 부인, 왓슨 아내의 친구"
+  },
+  {
+   "id": "CHAR_023",
+   "name": "브래드스트리트",
+   "entity_type": "person",
+   "first_episode": 5,
+   "note": "경위"
+  },
+  {
+   "id": "CHAR_024",
+   "name": "라스카",
+   "entity_type": "person",
+   "first_episode": 5,
+   "note": "아편굴 관리인"
+  },
+  {
+   "id": "CHAR_025",
+   "new_label": "NEW:베일을_쓴_부인",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "베일을 쓴 부인",
+   "entity_type": "person"
+  },
+  {
+   "id": "CHAR_026",
+   "new_label": "NEW:허드슨_부인",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "허드슨 부인",
+   "entity_type": "person"
+  },
+  {
+   "id": "CHAR_027",
+   "new_label": "NEW:패린토시_부인",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "패린토시 부인",
+   "entity_type": "person"
+  },
+  {
+   "id": "CHAR_028",
+   "new_label": "NEW:스토너_소장",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "스토너 소장",
+   "entity_type": "person"
+  },
+  {
+   "id": "CHAR_029",
+   "new_label": "NEW:스토너_부인",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "스토너 부인 (헬렌의 친어머니)",
+   "entity_type": "person"
+  },
+  {
+   "id": "CHAR_030",
+   "new_label": "NEW:도박꾼",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "도박꾼",
+   "entity_type": "person"
+  },
+  {
+   "id": "CHAR_031",
+   "new_label": "NEW:인도인_집사",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "인도인 집사",
+   "entity_type": "person"
+  },
+  {
+   "id": "CHAR_032",
+   "new_label": "NEW:마지막_영주",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "마지막 영주",
+   "entity_type": "person"
+  },
+  {
+   "id": "CHAR_033",
+   "new_label": "NEW:기차_마부",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "기차 마부",
+   "entity_type": "person"
+  },
+  {
+   "id": "CHAR_034",
+   "new_label": "NEW:개코원숭이",
+   "first_episode": 1,
+   "note": "auto (episode_01_c05.txt)",
+   "name": "개코원숭이",
+   "entity_type": "unknown"
+  },
+  {
+   "id": "CHAR_035",
+   "new_label": "NEW:왕의_쌍두마차_마부",
+   "first_episode": 2,
+   "note": "auto (episode_02_c02.txt)",
+   "name": "왕의 마부",
+   "entity_type": "person"
+  },
+  {
+   "id": "CHAR_036",
+   "new_label": "NEW:얼스터_코트_차림의_청년",
+   "first_episode": 2,
+   "note": "auto (episode_02_c05.txt)",
+   "name": "얼스터 코트",
+   "entity_type": "unknown"
+  },
+  {
+   "id": "CHAR_037",
+   "new_label": "NEW:발라랏의_블랙잭",
+   "first_episode": 4,
+   "note": "auto (episode_04_c05.txt)",
+   "name": "발라랏의 블랙 잭",
+   "entity_type": "person"
+  },
+  {
+   "id": "CHAR_038",
+   "new_label": "NEW:케이트_휘트니",
+   "first_episode": 5,
+   "note": "auto (episode_05_c01.txt)",
+   "name": "케이트 휘트니",
+   "entity_type": "person"
+  },
+  {
+   "id": "CHAR_039",
+   "new_label": "NEW:일라이어스_휘트니",
+   "first_episode": 5,
+   "note": "auto (episode_05_c01.txt)",
+   "name": "고 일라이어스 휘트니",
+   "entity_type": "person"
+  },
+  {
+   "id": "CHAR_040",
+   "new_label": "NEW:거지_분장_전의_세인트클레어",
+   "first_episode": 5,
+   "note": "auto (episode_05_c05.txt)",
+   "name": "거지로 분장한 세인트클레어",
+   "entity_type": "person"
+  },
+  {
+   "id": "CHAR_041",
+   "name": "왓슨의 아내",
+   "new_label": "NEW:왓슨의_아내",
+   "entity_type": "person",
+   "first_episode": 4,
+   "note": "ep4 아침 식사 장면 등장. 시드 누락분 — 인수 심사 08-29 등재 (케이트 휘트니와 별개 인물)"
+  }
+ ],
+ "locations": [
+  {
+   "id": "LOC_001",
+   "name": "베이커가",
+   "first_episode": 1,
+   "note": "홈즈의 하숙집"
+  },
+  {
+   "id": "LOC_002",
+   "name": "스토크 모런",
+   "first_episode": 1,
+   "note": "로일럿 저택"
+  },
+  {
+   "id": "LOC_003",
+   "name": "해로",
+   "first_episode": 1,
+   "note": "이모의 거주지"
+  },
+  {
+   "id": "LOC_004",
+   "name": "브라이오니 로지",
+   "first_episode": 2,
+   "note": "아이린의 집"
+  },
+  {
+   "id": "LOC_005",
+   "name": "서펜타인",
+   "first_episode": 2,
+   "note": "서펜타인가 (마구간 골목)"
+  },
+  {
+   "id": "LOC_006",
+   "name": "보스콤",
+   "first_episode": 4,
+   "note": "보스콤 밸리"
+  },
+  {
+   "id": "LOC_007",
+   "name": "해서리",
+   "first_episode": 4,
+   "note": "해서리 농장"
+  },
+  {
+   "id": "LOC_008",
+   "name": "아편굴",
+   "first_episode": 5,
+   "note": "층수 표기는 금지 슬롯 F-16 — 원문 그대로 기록할 것"
+  },
+  {
+   "id": "LOC_009",
+   "name": "시더스",
+   "first_episode": 5,
+   "note": "네빌의 자택, 리 소재"
+  },
+  {
+   "id": "LOC_010",
+   "new_label": "NEW:베이커가_응접실",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "베이커가 응접실"
+  },
+  {
+   "id": "LOC_011",
+   "new_label": "NEW:베이커가_왓슨의_침실",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "베이커가 왓슨의 침실"
+  },
+  {
+   "id": "LOC_012",
+   "new_label": "NEW:레더헤드",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "레더헤드"
+  },
+  {
+   "id": "LOC_013",
+   "new_label": "NEW:워털루",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "워털루"
+  },
+  {
+   "id": "LOC_014",
+   "new_label": "NEW:캘커타",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "캘커타"
+  },
+  {
+   "id": "LOC_015",
+   "new_label": "NEW:로일럿_저택",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "로일럿 저택"
+  },
+  {
+   "id": "LOC_016",
+   "new_label": "NEW:크루_부근",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "크루 부근"
+  },
+  {
+   "id": "LOC_017",
+   "new_label": "NEW:랭엄_호텔",
+   "first_episode": 2,
+   "note": "auto (episode_02_c02.txt)",
+   "name": "랭엄 호텔"
+  },
+  {
+   "id": "LOC_018",
+   "new_label": "NEW:세인트_모니카_교회",
+   "first_episode": 2,
+   "note": "auto (episode_02_c03.txt)",
+   "name": "세인트 모니카 교회"
+  },
+  {
+   "id": "LOC_019",
+   "new_label": "NEW:스윈던",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "name": "스윈던"
+  },
+  {
+   "id": "LOC_020",
+   "new_label": "NEW:로스",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "name": "로스"
+  },
+  {
+   "id": "LOC_021",
+   "new_label": "NEW:헤리퍼드_암스",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "name": "헤리퍼드 암스"
+  },
+  {
+   "id": "LOC_022",
+   "new_label": "NEW:스트라우드_밸리",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "name": "스트라우드 밸리"
+  },
+  {
+   "id": "LOC_023",
+   "new_label": "NEW:세번강",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "name": "세번강"
+  },
+  {
+   "id": "LOC_024",
+   "new_label": "NEW:호텔_응접실",
+   "first_episode": 4,
+   "note": "auto (episode_04_c05.txt)",
+   "name": "호텔 응접실"
+  },
+  {
+   "id": "LOC_025",
+   "new_label": "NEW:왓슨의_저택_거실",
+   "first_episode": 5,
+   "note": "auto (episode_05_c01.txt)",
+   "name": "왓슨의 저택 거실"
+  },
+  {
+   "id": "LOC_026",
+   "new_label": "NEW:어퍼_스완덤_레인",
+   "first_episode": 5,
+   "note": "auto (episode_05_c01.txt)",
+   "name": "어퍼 스완덤 레인"
+  },
+  {
+   "id": "LOC_027",
+   "new_label": "NEW:스레드니들가_모퉁이",
+   "first_episode": 5,
+   "note": "auto (episode_05_c03.txt)",
+   "name": "스레드니들가 모퉁이"
+  },
+  {
+   "id": "LOC_028",
+   "new_label": "NEW:시더스_저택",
+   "first_episode": 5,
+   "note": "auto (episode_05_c03.txt)",
+   "name": "시더스의 세인트클레어 저택"
+  },
+  {
+   "id": "LOC_029",
+   "new_label": "NEW:시의_식당",
+   "first_episode": 5,
+   "note": "auto (episode_05_c03.txt)",
+   "name": "세인트클레어 저택 식당"
+  },
+  {
+   "id": "LOC_030",
+   "new_label": "NEW:서리_잉글랜드_변두리",
+   "first_episode": 5,
+   "note": "auto (episode_05_c03.txt)",
+   "name": "잉글랜드 시골변두리"
+  },
+  {
+   "id": "LOC_031",
+   "new_label": "NEW:보_스트리트_유치장_경위_사무실",
+   "first_episode": 5,
+   "note": "auto (episode_05_c05.txt)",
+   "name": "보 스트리트 유치장 경위 사무실"
+  },
+  {
+   "id": "LOC_032",
+   "new_label": "NEW:보_스트리트_유치장_복도",
+   "first_episode": 5,
+   "note": "auto (episode_05_c05.txt)",
+   "name": "보 스트리트 유치장 복도"
+  },
+  {
+   "id": "LOC_033",
+   "new_label": "NEW:보_스트리트_유치장_감방",
+   "first_episode": 5,
+   "note": "auto (episode_05_c05.txt)",
+   "name": "보 스트리트 유치장 감방"
+  }
+ ],
+ "objects": [
+  {
+   "id": "OBJ_001",
+   "name": "부지깽이",
+   "first_episode": 1,
+   "note": "로일럿이 구부리고 홈즈가 폄"
+  },
+  {
+   "id": "OBJ_002",
+   "name": "개 채찍",
+   "first_episode": 1,
+   "note": "고리 매듭"
+  },
+  {
+   "id": "OBJ_003",
+   "name": "금고",
+   "first_episode": 1,
+   "note": "로일럿 방의 철제 금고"
+  },
+  {
+   "id": "OBJ_004",
+   "name": "살무사",
+   "first_episode": 1,
+   "note": "늪 살무사 — 흉기"
+  },
+  {
+   "id": "OBJ_005",
+   "name": "사진",
+   "first_episode": 2,
+   "note": "아이린-왕의 사진 (화2의 목표물)"
+  },
+  {
+   "id": "OBJ_006",
+   "name": "코담배",
+   "first_episode": 3,
+   "note": "자수정 박힌 코담배 갑 — 화2 사건의 사례, 화3에서 언급"
+  },
+  {
+   "id": "OBJ_007",
+   "name": "자백서",
+   "first_episode": 4,
+   "note": "존 터너의 조건부 자백서"
+  },
+  {
+   "id": "OBJ_008",
+   "new_label": "NEW:왕복표_뒷반쪽",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "왕복표 뒷반쪽"
+  },
+  {
+   "id": "OBJ_009",
+   "new_label": "NEW:사건_기록장",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "사건 기록장"
+  },
+  {
+   "id": "OBJ_010",
+   "new_label": "NEW:진흙_묻은_재킷",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "진흙 묻은 재킷"
+  },
+  {
+   "id": "OBJ_011",
+   "new_label": "NEW:오팔_티아라",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "name": "오팔 티아라"
+  },
+  {
+   "id": "OBJ_012",
+   "new_label": "NEW:사냥용_채찍",
+   "first_episode": 1,
+   "note": "auto (episode_01_c03.json)",
+   "name": "사냥용 채찍"
+  },
+  {
+   "id": "OBJ_013",
+   "new_label": "NEW:성냥갑",
+   "first_episode": 1,
+   "note": "auto (episode_01_c05.txt)",
+   "name": "성냥갑"
+  },
+  {
+   "id": "OBJ_014",
+   "new_label": "NEW:초_동강",
+   "first_episode": 1,
+   "note": "auto (episode_01_c05.txt)",
+   "name": "초 동강"
+  },
+  {
+   "id": "OBJ_015",
+   "new_label": "NEW:지팡이",
+   "first_episode": 1,
+   "note": "auto (episode_01_c05.txt)",
+   "name": "길고 가느다란 지팡이"
+  },
+  {
+   "id": "OBJ_016",
+   "new_label": "NEW:권총",
+   "first_episode": 1,
+   "note": "auto (episode_01_c05.txt)",
+   "name": "권총"
+  },
+  {
+   "id": "OBJ_017",
+   "new_label": "NEW:섀미가죽_주머니",
+   "first_episode": 2,
+   "note": "auto (episode_02_c03.txt)",
+   "name": "섀미가죽 주머니"
+  },
+  {
+   "id": "OBJ_018",
+   "new_label": "NEW:영수증",
+   "first_episode": 2,
+   "note": "auto (episode_02_c03.txt)",
+   "name": "영수증"
+  },
+  {
+   "id": "OBJ_019",
+   "new_label": "NEW:에메랄드_뱀_반지",
+   "first_episode": 2,
+   "note": "auto (episode_02_c05.txt)",
+   "name": "에메랄드 뱀 반지"
+  },
+  {
+   "id": "OBJ_020",
+   "new_label": "NEW:편지_네_통",
+   "first_episode": 3,
+   "note": "auto (episode_03_c02.txt)",
+   "name": "편지 네 통"
+  },
+  {
+   "id": "OBJ_021",
+   "new_label": "NEW:크로니클_광고_조각",
+   "first_episode": 3,
+   "note": "auto (episode_03_c02.txt)",
+   "name": "크로니클지 광고 조각"
+  },
+  {
+   "id": "OBJ_022",
+   "new_label": "NEW:헤리퍼드셔_지방_신문",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "name": "헤리퍼드셔 지방 신문"
+  },
+  {
+   "id": "OBJ_023",
+   "new_label": "NEW:휴대용_페트라르카_시집",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "name": "휴대용 페트라르카 시집"
+  },
+  {
+   "id": "OBJ_024",
+   "new_label": "NEW:마차_로스_예약",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "name": "마차 (로스에서 예약된)"
+  },
+  {
+   "id": "OBJ_025",
+   "new_label": "NEW:검시_신문_조각_회색빛_천",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "name": "회색빛 외투/격자무늬 천 조각 (검시 진술 속 무언가)"
+  },
+  {
+   "id": "OBJ_026",
+   "new_label": "NEW:살인_무기로_사용된_돌",
+   "first_episode": 4,
+   "note": "auto (episode_04_c04.txt)",
+   "name": "살인 무기로 사용된 돌"
+  },
+  {
+   "id": "OBJ_027",
+   "new_label": "NEW:빅토리아_식민지_지도",
+   "first_episode": 4,
+   "note": "auto (episode_04_c05.txt)",
+   "name": "빅토리아 식민지 지도"
+  },
+  {
+   "id": "OBJ_028",
+   "new_label": "NEW:터너의_자백서",
+   "first_episode": 4,
+   "note": "auto (episode_04_c05.txt)",
+   "name": "터너의 자백서"
+  },
+  {
+   "id": "OBJ_029",
+   "new_label": "NEW:아편_파이프",
+   "first_episode": 5,
+   "note": "auto (episode_05_c01.txt)",
+   "name": "아편 파이프"
+  },
+  {
+   "id": "OBJ_030",
+   "new_label": "NEW:화로_타는_숯",
+   "first_episode": 5,
+   "note": "auto (episode_05_c01.txt)",
+   "name": "화로(타는 숯)"
+  },
+  {
+   "id": "OBJ_031",
+   "new_label": "NEW:말레이인_종업원",
+   "first_episode": 5,
+   "note": "auto (episode_05_c01.txt)",
+   "name": "말레이인 종업원 (아편굴)"
+  },
+  {
+   "id": "OBJ_032",
+   "new_label": "NEW:장난감_벽돌_상자",
+   "first_episode": 5,
+   "note": "auto (episode_05_c02.txt)",
+   "name": "장난감 벽돌 상자"
+  },
+  {
+   "id": "OBJ_033",
+   "new_label": "NEW:밀랍_성냥",
+   "first_episode": 5,
+   "note": "auto (episode_05_c03.txt)",
+   "name": "밀랍 성냥"
+  },
+  {
+   "id": "OBJ_034",
+   "new_label": "NEW:기름때_가죽_모자",
+   "first_episode": 5,
+   "note": "auto (episode_05_c03.txt)",
+   "name": "기름때 묻은 가죽 모자"
+  },
+  {
+   "id": "OBJ_035",
+   "new_label": "NEW:동전_주머니_들어있는_코트",
+   "first_episode": 5,
+   "note": "auto (episode_05_c03.txt)",
+   "name": "동전(421개 페니, 270개 반페니)으로 채워진 네빌 세인트클레어의 코트"
+  },
+  {
+   "id": "OBJ_036",
+   "new_label": "NEW:편지_봉투",
+   "first_episode": 5,
+   "note": "auto (episode_05_c04.txt)",
+   "name": "편지 봉투"
+  },
+  {
+   "id": "OBJ_037",
+   "new_label": "NEW:네빌의_편지",
+   "first_episode": 5,
+   "note": "auto (episode_05_c04.txt)",
+   "name": "편지"
+  },
+  {
+   "id": "OBJ_038",
+   "new_label": "NEW:네빌의_도장_반지",
+   "first_episode": 5,
+   "note": "auto (episode_05_c04.txt)",
+   "name": "네빌의 도장 반지"
+  },
+  {
+   "id": "OBJ_039",
+   "new_label": "NEW:장부",
+   "first_episode": 5,
+   "note": "auto (episode_05_c05.txt)",
+   "name": "거대한 장부"
+  },
+  {
+   "id": "OBJ_040",
+   "new_label": "NEW:글래드스턴_가방",
+   "first_episode": 5,
+   "note": "auto (episode_05_c05.txt)",
+   "name": "글래드스턴 가방"
+  },
+  {
+   "id": "OBJ_041",
+   "new_label": "NEW:목욕용_스펀지",
+   "first_episode": 5,
+   "note": "auto (episode_05_c05.txt)",
+   "name": "목욕용 스펀지"
+  },
+  {
+   "id": "OBJ_042",
+   "new_label": "NEW:물주전자",
+   "first_episode": 5,
+   "note": "auto (episode_05_c05.txt)",
+   "name": "물주전자"
+  },
+  {
+   "id": "OBJ_043",
+   "new_label": "NEW:붉은_가발",
+   "first_episode": 5,
+   "note": "auto (episode_05_c05.txt)",
+   "name": "붉은 가발"
+  },
+  {
+   "id": "OBJ_044",
+   "new_label": "NEW:분장_도구_일체",
+   "first_episode": 5,
+   "note": "auto (episode_05_c05.txt)",
+   "name": "분장 도구 일체"
+  }
+ ],
+ "times": [
+  {
+   "id": "TIME_001",
+   "expression": "83년 4월 초",
+   "timeline": "ep1",
+   "first_episode": 1
+  },
+  {
+   "id": "TIME_002",
+   "expression": "1888년 3월 20일",
+   "timeline": "ep2",
+   "first_episode": 2
+  },
+  {
+   "id": "TIME_003",
+   "expression": "6월 19일",
+   "timeline": "ep5",
+   "first_episode": 5,
+   "note": "요일 표기는 금지 슬롯 F-18 — 등재하지 않음"
+  },
+  {
+   "id": "TIME_004",
+   "new_label": "NEW:83년_4월_초_아침_7시_15분",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "expression": "83년 4월 초의 어느 날 아침, 7시 15분",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_005",
+   "new_label": "NEW:헬렌_출발_6시_전",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "expression": "헬렌이 집을 나선 시각 (6시 전)",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_006",
+   "new_label": "NEW:8년_전",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "expression": "8년 전",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_007",
+   "new_label": "NEW:한두_달_후",
+   "first_episode": 1,
+   "note": "auto (episode_01_c01.txt)",
+   "expression": "한두 달 안",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_008",
+   "new_label": "NEW:오늘_아침",
+   "first_episode": 1,
+   "note": "auto (episode_01_c03.txt)",
+   "expression": "오늘 아침",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_009",
+   "new_label": "NEW:오후_이른_시간",
+   "first_episode": 1,
+   "note": "auto (episode_01_c03.txt)",
+   "expression": "오늘 오후 이른 시간",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_010",
+   "new_label": "NEW:해_질_무렵",
+   "first_episode": 1,
+   "note": "auto (episode_01_c05.txt)",
+   "expression": "해 질 무렵",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_011",
+   "new_label": "NEW:저녁_9시",
+   "first_episode": 1,
+   "note": "auto (episode_01_c05.txt)",
+   "expression": "아홉 시",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_012",
+   "new_label": "NEW:밤_11시",
+   "first_episode": 1,
+   "note": "auto (episode_01_c05.txt)",
+   "expression": "열한 시",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_013",
+   "new_label": "NEW:한밤중_12시_2시_3시",
+   "first_episode": 1,
+   "note": "auto (episode_01_c05.txt)",
+   "expression": "열두 시, 한 시, 두 시, 세 시",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_014",
+   "new_label": "NEW:이_편지_도착_직후",
+   "first_episode": 2,
+   "note": "auto (episode_02_c02.txt)",
+   "expression": "편지가 도착한 직후",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_015",
+   "new_label": "NEW:약혼_발표일_다음주_월요일",
+   "first_episode": 2,
+   "note": "auto (episode_02_c02.txt)",
+   "expression": "다음 월요일(약혼 공식 발표일)",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_016",
+   "new_label": "NEW:내일_오후_세_시",
+   "first_episode": 2,
+   "note": "auto (episode_02_c03.txt)",
+   "expression": "내일 오후 세 시",
+   "timeline": "unknown"
+  },
+  {
+   "id": "TIME_017",
+   "new_label": "NEW:다음_날_오후_(세_시_정각)",
+   "first_episode": 2,
+   "note": "auto (episode_02_c03.txt)",
+   "expression": "다음 날 오후 (세 시 정각)",
+   "timeline": "unknown"
+  },
+  {
+   "id": "TIME_018",
+   "new_label": "NEW:거의_네_시",
+   "first_episode": 2,
+   "note": "auto (episode_02_c03.txt)",
+   "expression": "거의 네 시",
+   "timeline": "unknown"
+  },
+  {
+   "id": "TIME_019",
+   "new_label": "NEW:그날_아침_여덟_시가_조금_지난_시각",
+   "first_episode": 2,
+   "note": "auto (episode_02_c03.txt)",
+   "expression": "그날 아침 여덟 시가 조금 지난 시각",
+   "timeline": "unknown"
+  },
+  {
+   "id": "TIME_020",
+   "new_label": "NEW:열두_시_이십오_분_전",
+   "first_episode": 2,
+   "note": "auto (episode_02_c03.txt)",
+   "expression": "열두 시 이십오 분 전",
+   "timeline": "unknown"
+  },
+  {
+   "id": "TIME_021",
+   "new_label": "NEW:그날_밤",
+   "first_episode": 2,
+   "note": "auto (episode_02_c05.txt)",
+   "expression": "그날 밤",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_022",
+   "new_label": "NEW:다음_날_아침",
+   "first_episode": 2,
+   "note": "auto (episode_02_c05.txt)",
+   "expression": "다음 날 아침",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_023",
+   "new_label": "NEW:아침_여덟_시",
+   "first_episode": 2,
+   "note": "auto (episode_02_c05.txt)",
+   "expression": "아침 여덟 시",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_024",
+   "new_label": "NEW:어제",
+   "first_episode": 2,
+   "note": "auto (episode_02_c05.txt)",
+   "expression": "어제",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_025",
+   "new_label": "NEW:지난주_금요일",
+   "first_episode": 3,
+   "note": "auto (episode_03_c02.txt)",
+   "expression": "지난주 금요일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_026",
+   "new_label": "NEW:지난주_토요일",
+   "first_episode": 3,
+   "note": "auto (episode_03_c02.txt)",
+   "expression": "지난주 토요일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_027",
+   "new_label": "NEW:윈디뱅크가_도망친_직후",
+   "first_episode": 3,
+   "note": "auto (episode_03_c04.txt)",
+   "expression": "윈디뱅크가 도망친 직후",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_028",
+   "new_label": "NEW:거의_동시에",
+   "first_episode": 3,
+   "note": "auto (episode_03_c04.txt)",
+   "expression": "거의 동시에",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_029",
+   "new_label": "NEW:보스콤_밸리_사건_전보_수신_당일_아침",
+   "first_episode": 4,
+   "note": "auto (episode_04_c01.txt)",
+   "expression": "보스콤 밸리 사건 전보 수신 당일 아침",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_030",
+   "new_label": "NEW:11시_15분_패딩턴_출발",
+   "first_episode": 4,
+   "note": "auto (episode_04_c01.txt)",
+   "expression": "11시 15분 패딩턴 출발",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_031",
+   "new_label": "NEW:6월_3일_(지난_월요일)_오후_세_시",
+   "first_episode": 4,
+   "note": "auto (episode_04_c01.txt)",
+   "expression": "6월 3일 (지난 월요일) 오후 세 시",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_032",
+   "new_label": "NEW:보스콤_못_사건_직후_그날_저녁",
+   "first_episode": 4,
+   "note": "auto (episode_04_c01.txt)",
+   "expression": "보스콤 못 사건 직후 그날 저녁",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_033",
+   "new_label": "NEW:화요일_검시_심리",
+   "first_episode": 4,
+   "note": "auto (episode_04_c01.txt)",
+   "expression": "화요일 검시 심리",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_034",
+   "new_label": "NEW:수요일_(치안판사_법정)",
+   "first_episode": 4,
+   "note": "auto (episode_04_c01.txt)",
+   "expression": "수요일 (치안판사 법정)",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_035",
+   "new_label": "NEW:이십분후",
+   "first_episode": 4,
+   "note": "auto (episode_04_c02.txt)",
+   "expression": "약 20분 후",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_036",
+   "new_label": "NEW:오늘_밤",
+   "first_episode": 4,
+   "note": "auto (episode_04_c03.txt)",
+   "expression": "오늘 밤",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_037",
+   "new_label": "NEW:그_밤_늦게",
+   "first_episode": 4,
+   "note": "auto (episode_04_c03.txt)",
+   "expression": "그 밤 늦게",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_038",
+   "new_label": "NEW:점심_식후",
+   "first_episode": 4,
+   "note": "auto (episode_04_c05.txt)",
+   "expression": "점심 식후",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_039",
+   "new_label": "NEW:60년대_초_호주",
+   "first_episode": 4,
+   "note": "auto (episode_04_c05.txt)",
+   "expression": "60년대 초 (호주, 발라랏)",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_040",
+   "new_label": "NEW:89년_6월_어느날_밤",
+   "first_episode": 5,
+   "note": "auto (episode_05_c01.txt)",
+   "expression": "89년 6월 어느 날 밤 (사람이 첫 하품을 하며 시계를 볼 즈음)",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_041",
+   "new_label": "NEW:이틀째",
+   "first_episode": 5,
+   "note": "auto (episode_05_c01.txt)",
+   "expression": "이틀째 (48시간)",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_042",
+   "new_label": "NEW:거의_열한_시",
+   "first_episode": 5,
+   "note": "auto (episode_05_c01.txt)",
+   "expression": "거의 열한 시",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_043",
+   "new_label": "NEW:6월_19일_금요일",
+   "first_episode": 5,
+   "note": "auto (episode_05_c01.txt)",
+   "expression": "6월 19일 금요일",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_044",
+   "new_label": "NEW:월요일_이른_시각",
+   "first_episode": 5,
+   "note": "auto (episode_05_c02.txt)",
+   "expression": "지난 월요일, 평소보다 다소 이른 시각",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_045",
+   "new_label": "NEW:월요일_오후_4시_35분",
+   "first_episode": 5,
+   "note": "auto (episode_05_c02.txt)",
+   "expression": "월요일 오후 4시 35분",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_046",
+   "new_label": "NEW:그날_오후",
+   "first_episode": 5,
+   "note": "auto (episode_05_c02.txt)",
+   "expression": "그날 오후 (세인트클레어 부인이 창문에서 남편을 목격한 시각)",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_047",
+   "new_label": "NEW:그_순간_밀물_최고",
+   "first_episode": 5,
+   "note": "auto (episode_05_c02.txt)",
+   "expression": "비극이 일어난 순간 (밀물이 가장 높은 시각)",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_048",
+   "new_label": "NEW:밀물_빠진_직후",
+   "first_episode": 5,
+   "note": "auto (episode_05_c03.txt)",
+   "expression": "밀물 빠진 직후",
+   "timeline": "unknown"
+  },
+  {
+   "id": "TIME_049",
+   "new_label": "NEW:리에_도착한_밤",
+   "first_episode": 5,
+   "note": "auto (episode_05_c03.txt)",
+   "expression": "리에 도착한 밤",
+   "timeline": "unknown"
+  },
+  {
+   "id": "TIME_050",
+   "new_label": "NEW:편지_도착일",
+   "first_episode": 5,
+   "note": "auto (episode_05_c04.txt)",
+   "expression": "그날 (편지가 부쳐진 그 다음 날 새벽 4시 25분경)",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_051",
+   "new_label": "NEW:새벽_4시_25분",
+   "first_episode": 5,
+   "note": "auto (episode_05_c04.txt)",
+   "expression": "새벽 4시 25분",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_052",
+   "new_label": "NEW:여름_아침",
+   "first_episode": 5,
+   "note": "auto (episode_05_c04.txt)",
+   "expression": "여름 햇살이 방 안으로 비쳐 드는 아침",
+   "timeline": "main"
+  },
+  {
+   "id": "TIME_053",
+   "new_label": "NEW:5화_유치장_방문_당일",
+   "first_episode": 5,
+   "note": "auto (episode_05_c05.txt)",
+   "expression": "5화 유치장 방문 당일",
+   "timeline": "main"
+  }
+ ]
+}

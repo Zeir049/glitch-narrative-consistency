@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S06_1",
+      "order": 1,
+      "title": "온전한 불발탄 발견",
+      "summary": "제1창고에 들른 알파가 구석 선반 위에 두 번째 폭탄(불발탄)이 찌그러진 자국 하나 없이 온전하게 보관된 것을 확인한다.",
+      "location_id": "LOC_004",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [
+        "OBJ_006"
+      ],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "OBJ_006",
+          "field": "condition",
+          "assumes": "불발 상태로 온전함 (파손 흔적 없음)",
+          "source_text": "그날의 두 번째 폭탄이 불발된 채 고스란히 놓여 있었다. 멀쩡했다."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "불발탄이 온전한 상태로 창고 선반에 보관되어 있음",
+          "via": "direct",
+          "source_text": "멀쩡했다. 찌그러진 자국 하나 없이."
+        }
+      ],
+      "cause": "피해 조사 마무리 방문",
+      "result": "알파가 이번에는 집어 들지 않기로 함",
+      "source_text": "그날의 두 번째 폭탄이 불발된 채 고스란히 놓여 있었다.",
+      "certainty": "explicit"
+    }
+  ]
+}

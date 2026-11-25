@@ -1,0 +1,322 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "정호가 서랍에서 서류를 꺼내 확인함",
+   "summary": "정호가 카운터 서랍에서 장부 사이에 둔 서류를 꺼내 보고 봉투에 넣어 다시 서랍에 넣는다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:십이월_첫날_아침_이후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_002",
+    "NEW:서류_봉투"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "NEW:서류_봉투",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서랍 안쪽에 있던 장부 사이에 넣어 둔 서류를 꺼내 살폈다. ... 서류를 봉투 안으로 집어넣으며"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "NEW:서류_봉투",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서류 봉투와 장부를 서랍 깊숙이 밀어 넣고 서랍을 닫았다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_002 (장부)",
+     "source_text": "장부 사이에 넣어 둔 서류를 꺼내"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "서류의 내용과 보관 위치",
+     "source_text": "서랍 안쪽에 있던 장부 사이에 넣어 둔 서류를 꺼내 살폈다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "서류 내용 확인 필요",
+   "result": "서류를 봉투에 넣어 서랍에 다시 보관함",
+   "source_text": "정호는 카운터 아래 서랍을 당겨 열었다. 서랍 안쪽에 있던 장부 사이에 넣어 둔 서류를 꺼내 살폈다. ... 정호는 서류를 봉투 안으로 집어넣으며 정미에게 소리를 죽여 말했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "순덕이 골방으로 들어감",
+   "summary": "순덕이 카운터 근처에서 골방으로 이동한다.",
+   "location_id": "LOC_003",
+   "time_id": "NEW:십이월_첫날_아침_이후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002",
+    "CHAR_003"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_002",
+     "to": "LOC_003",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "순덕이 골방 안으로 들어간 뒤"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "스스로 걸어서 이동 가능",
+     "source_text": "골방 안으로 들어간 뒤"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "순덕이 골방으로 들어간 뒤에 정호가 정미에게 말을 걸었다",
+     "source_text": "순덕이 골방 안으로 들어간 뒤 정미가 카운터 옆으로 다가왔다. 정호는 서류를 봉투 안으로 집어넣으며 정미에게 소리를 죽여 말했다."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "",
+   "result": "순덕이 골방에 머무름",
+   "source_text": "순덕이 골방 안으로 들어간 뒤",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_3",
+   "scene_id": "scene_6_1",
+   "order": 3,
+   "title": "정미가 카운터로 다가와 정호의 발언을 들음",
+   "summary": "정미가 카운터 옆으로 다가오고 정호가 선희의 사채 상황에 대해 발언한다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:십이월_첫날_아침_이후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "assumes": "LOC_002 (카운터 옆)",
+     "source_text": "정미가 카운터 옆으로 다가왔다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "선희가 박 사장에게 사채를 빌렸고 그 금액의 절반만 선희가 알고 있음",
+     "source_text": "\"선희는 아직 박 사장한테 얻어 쓴 사채에 대해서는 절반밖에 모른다.\""
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "not_knows: 선희의 사채 총액 (정호의 발언으로 처음 인지)",
+     "source_text": "정미는 오빠의 얼굴을 가만히 바라보며 입을 다물었다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "정호가 서류를 봉투에 넣은 직후 정미에게 발언함",
+     "source_text": "정호는 서류를 봉투 안으로 집어넣으며 정미에게 소리를 죽여 말했다."
+    },
+    {
+     "with_event_id": "EVENT_6_2",
+     "assumes": "순덕이 골방에 들어간 뒤에 정미가 카운터로 다가옴",
+     "source_text": "순덕이 골방 안으로 들어간 뒤 정미가 카운터 옆으로 다가왔다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "선희가 박 사장에게 사채를 빌렸고 그 총액의 절반만 선희가 알고 있음",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"선희는 아직 박 사장한테 얻어 쓴 사채에 대해서는 절반밖에 모른다.\""
+    }
+   ],
+   "cause": "정호가 정미에게 정보 전달 의도",
+   "result": "정미가 선희의 사채 상황 일부를 알게 됨",
+   "source_text": "정미가 카운터 옆으로 다가왔다. 정호는 서류를 봉투 안으로 집어넣으며 정미에게 소리를 죽여 말했다. \"선희는 아직 박 사장한테 얻어 쓴 사채에 대해서는 절반밖에 모른다.\" 정미는 오빠의 얼굴을 가만히 바라보며 입을 다물었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_4",
+   "scene_id": "scene_6_1",
+   "order": 4,
+   "title": "정미가 골방 쪽으로 이동함",
+   "summary": "정미가 카운터 뒤를 떠나 골방 방향으로 간다.",
+   "location_id": "LOC_003",
+   "time_id": "NEW:십이월_첫날_아침_이후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "LOC_002",
+     "to": "LOC_003",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정미는 카운터 뒤를 떠나 골방 쪽으로 발길을 돌렸다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "body_status",
+     "assumes": "스스로 걸어서 이동 가능",
+     "source_text": "골방 쪽으로 발길을 돌렸다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_3",
+     "assumes": "정호의 발언을 들은 직후 정미가 골방으로 이동함",
+     "source_text": "정미는 오빠의 얼굴을 가만히 바라보며 입을 다물었다. ... 정미는 카운터 뒤를 떠나 골방 쪽으로 발길을 돌렸다"
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "정호의 발언 후 행동",
+   "result": "정미가 골방 쪽으로 감",
+   "source_text": "정미는 카운터 뒤를 떠나 골방 쪽으로 발길을 돌렸다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_5",
+   "scene_id": "scene_6_1",
+   "order": 5,
+   "title": "정호가 카운터에 앉아 정문을 바라봄",
+   "summary": "정호가 카운터 자리에 앉아 정문 쪽을 주시한다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:십이월_첫날_아침_이후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_002",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 카운터 자리에 앉아 정문을 바라보았다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "from": "서서 서류 확인 중",
+     "to": "앉아 정문 주시 중",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "이동 또는 다른 행동",
+     "certainty": "explicit",
+     "source_text": "정호는 카운터 자리에 앉아 정문을 바라보았다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "정문 쪽 상황을 시각적으로 확인 가능",
+     "source_text": "정문을 바라보았다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_4",
+     "assumes": "정미가 골방으로 간 뒤에 정호가 앉아 정문을 봄",
+     "source_text": "정미는 카운터 뒤를 떠나 골방 쪽으로 발길을 돌렸다. 정호는 카운터 자리에 앉아 정문을 바라보았다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "정문 앞 상황 관찰 중",
+     "via": "direct",
+     "retained": true,
+     "source_text": "정호는 카운터 자리에 앉아 정문을 바라보았다"
+    }
+   ],
+   "cause": "정미가 떠난 후 정문 감시",
+   "result": "정호가 정문 주시 상태",
+   "source_text": "정호는 카운터 자리에 앉아 정문을 바라보았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:29:19Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 136.31
+ }
+}

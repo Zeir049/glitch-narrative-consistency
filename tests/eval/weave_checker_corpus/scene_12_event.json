@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S12_1",
+      "order": 1,
+      "title": "클라인, 폭발 사건을 처음 듣는다고 반응",
+      "summary": "수사 보고 중 알파가 폭발 사건을 언급하자 클라인이 진심으로 놀라며 그런 일이 있었는지 금시초문이라고 답한다.",
+      "location_id": "unknown",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002",
+        "CHAR_001"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_001",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_001",
+          "field": "knows",
+          "assumes": "not_knows: 헤일트라움 폭발 사건의 발생",
+          "source_text": "폭발이라니요? 헤일트라움에서 그런 일이 있었습니까? 금시초문이군요."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_001",
+          "info": "헤일트라움 폭발 사건과 알파 로봇 고장 사실",
+          "via": "told",
+          "source_text": "창고 벽이 뚫리고, 제 로봇도 고장 났었잖아요."
+        }
+      ],
+      "cause": "수사 방향 보고",
+      "result": "알파가 당혹감을 느낌",
+      "source_text": "\"폭발이라니요? 헤일트라움에서 그런 일이 있었습니까? 금시초문이군요.\"",
+      "certainty": "explicit"
+    }
+  ]
+}

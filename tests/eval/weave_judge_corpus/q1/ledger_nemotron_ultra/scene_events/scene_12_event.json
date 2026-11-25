@@ -1,0 +1,124 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "강씨 저녁 방문과 관 계약 대화",
+   "summary": "강씨가 저녁 7시에 금호탕에 들어와 정호와 관 계약 시기를 논의하고 남탕으로 들어간다. 정호는 장부에 어른 한 명을 기록한다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_022",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_009",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_009",
+   "objects": [
+    "OBJ_002"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_009",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "저녁 일곱 시에 강씨가 들어왔다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카운터에 앉은 정호를 봤다"
+    },
+    {
+     "entity": "OBJ_002",
+     "field": "condition",
+     "from": "기존 기록 상태",
+     "to": "어른 한 명 추가 기록됨",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 서랍을 닫고 장부에 어른 하나를 적었다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_009",
+     "field": "possesses",
+     "assumes": "육백 원 (목욕비)",
+     "source_text": "육백 원을 서랍에 넣으면서"
+    },
+    {
+     "entity": "CHAR_009",
+     "field": "knows",
+     "assumes": "관 계약금 납부 관행과 일월 계약 시기",
+     "source_text": "계약금부터 넣고요. / 일월에요."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "어머니(배순덕)가 관 시기를 정할 권한이 있음",
+     "source_text": "관 갈면 어머니가 다시 정하실 겁니다."
+    },
+    {
+     "entity": "CHAR_009",
+     "field": "body_status",
+     "assumes": "목욕 가능한 신체 상태",
+     "source_text": "남탕으로 들어갔다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "강씨가 관 계약금을 일월에 납부할 예정임을 알게 됨",
+     "via": "told",
+     "retained": true,
+     "source_text": "일월에요. 계약금부터 넣고요."
+    },
+    {
+     "character_id": "CHAR_009",
+     "info": "관 교체 시 어머니(배순덕)가 다시 정한다는 정호의 입장 확인",
+     "via": "told",
+     "retained": true,
+     "source_text": "관 갈면 어머니가 다시 정하실 겁니다."
+    }
+   ],
+   "cause": "강씨가 저녁 시간 목욕하러 오면서 관 계약 시기를 묻기 위해 정호와 대화함",
+   "result": "강씨가 남탕으로 들어갔고, 정호가 장부에 손님 한 명을 기록함. 관 계약은 일월로 예정됨.",
+   "source_text": "저녁 일곱 시에 강씨가 들어왔다. 육백 원을 서랍에 넣으면서 카운터에 앉은 정호를 봤다. \"여섯 시가 뭐꼬. 내 이십 년을 아침에 왔다.\" \"관 갈면 어머니가 다시 정하실 겁니다.\" \"니가 정하는 거 아이고?\" \"제가 정할 일이 아입니더.\" \"관은 언제 가노.\" \"일월에요. 계약금부터 넣고요.\" \"일월이 언제 오노.\" 강씨는 뭐라고 중얼거리며 남탕으로 들어갔다. 정호는 서랍을 닫고 장부에 어른 하나를 적었다. 정문 유리에 붙은 종이가 안쪽에서 뒤집혀 보였다. 밖에서는 반듯한 글씨였다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-27T04:52:14Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 14.17
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "NEW:자수정이_박힌_코담배_갑",
+   "name": "자수정이 박힌 코담배 갑",
+   "description": "보헤미아 왕이 보낸 것으로 알려진 자수정 박힘 코담배 갑",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "자수정이 박힌 코담배 갑이 탁자 위에 놓여 있었다. 보헤미아 왕이 보낸 것이라고 했다.",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "자수정 코담배 갑과 아침 응접실",
+   "summary": "왓슨이 자수정 박힌 코담배 갑(보헤미아 왕이 보낸 것으로 알려짐)을 응접실 탁자에서 발견하고, 이미 일어나 창가에 선 홈즈와 잠시 대화를 나눈다.",
+   "location_id": "LOC_010",
+   "time_id": "NEW:그날_아침",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "NEW:자수정이_박힌_코담배_갑"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "assumes": "베이커가 응접실에 있음",
+     "source_text": "나는 내 방에서 옷을 걸치고 아래층 응접실로 내려갔다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "assumes": "베이커가 응접실 창가에 이미 서 있음",
+     "source_text": "홈즈는 이미 일어나 창가에 서 있었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "이미 일어나 활동 가능한 상태",
+     "source_text": "홈즈는 이미 일어나 창가에 서 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "자수정 박힌 코담배 갑이 보헤미아 왕이 보낸 것이라는 점",
+     "via": "told",
+     "retained": true,
+     "source_text": "자수정이 박힌 코담배 갑이 탁자 위에 놓여 있었다. 보헤미아 왕이 보낸 것이라고 했다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "자수정 박힌 코담배 갑이 보헤미아 왕이 보낸 것이라는 점",
+     "via": "told",
+     "retained": true,
+     "source_text": "자수정이 박힌 코담배 갑이 탁자 위에 놓여 있었다. 보헤미아 왕이 보낸 것이라고 했다."
+    }
+   ],
+   "cause": "이전 화의 흐름에서 이어지는 아침 장면",
+   "result": "보헤미아 왕이 보낸 코담배 갑이 응접실 탁자 위에 존재함이 확인됨",
+   "source_text": "자수정이 박힌 코담배 갑이 탁자 위에 놓여 있었다. 보헤미아 왕이 보낸 것이라고 했다. 나는 내 방에서 옷을 걸치고 아래층 응접실로 내려갔다. 홈즈는 이미 일어나 창가에 서 있었다. \"오늘은 자네가 나보다 늦었군.\" 그가 말했다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-31T06:29:55Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 8.58
+ }
+}

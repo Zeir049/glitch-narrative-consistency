@@ -1,0 +1,85 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "가온이 S-3에서 관측 데이터 그래프 확인",
+   "summary": "가온이 S-3 숙소에서 관측 모듈에서 가져온 노트북을 열어 3월 31일부터 4월 14일까지의 오존 부분 압력과 에어로졸 산란 계수 그래프를 확인하고 덮는다.",
+   "location_id": "LOC_019",
+   "time_id": "NEW:4월 14일 이후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [
+    "OBJ_028"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "assumes": "OBJ_028 (가온의 노트북)",
+     "source_text": "노트북을 열었다. 관측 모듈에서 들고 나온 것이었다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "3월 31일~4월 14일 오존 부분 압력 및 에어로졸 산란 계수 그래프가 노트북에 저장되어 있음",
+     "source_text": "화면에 15일치 그래프가 떴다. 3월 31일부터 4월 14일까지. 오존 부분 압력과 에어로졸 산란 계수."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "이 데이터가 서버로 전송되지 않았음",
+     "source_text": "서버로 보낸 적은 없었다. 이 그래프는 이 노트북 안에만 있었고"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "ability",
+     "assumes": "매일 한 번씩 노트북을 열어 데이터 존재 여부를 확인하는 습관/루틴",
+     "source_text": "가온은 매일 한 번씩 열어서 아직 거기 있는지 확인했다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_005",
+     "info": "관측 데이터(오존 부분 압력, 에어로졸 산란 계수)가 3월 31일~4월 14일까지 노트북에만 저장되어 서버 미전송 상태임을 재확인",
+     "via": "direct",
+     "retained": true,
+     "source_text": "가온은 매일 한 번씩 열어서 아직 거기 있는지 확인했다. 그러고는 덮었다."
+    }
+   ],
+   "cause": "일상적인 데이터 확인 루틴",
+   "result": "데이터가 노트북에만 존재함을 재확인함",
+   "source_text": "S-3은 좁고 따뜻했다. 벽 안쪽으로 발전기실 폐열 배관이 지나갔다. 가온은 침구 더미에 등을 기대고 노트북을 열었다. 관측 모듈에서 들고 나온 것이었다. 화면에 15일치 그래프가 떴다. 3월 31일부터 4월 14일까지. 오존 부분 압력과 에어로졸 산란 계수. 서버로 보낸 적은 없었다. 이 그래프는 이 노트북 안에만 있었고, 가온은 매일 한 번씩 열어서 아직 거기 있는지 확인했다. 그러고는 덮었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:43:55Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 26.34
+ }
+}

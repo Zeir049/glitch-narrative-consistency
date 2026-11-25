@@ -1,0 +1,137 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:다섯_시_정각",
+   "expression": "다섯 시 정각",
+   "description": "금호탕 정문 개장 시각",
+   "timeline": "main",
+   "source_text": "다섯 시 정각에 순덕이 열쇠로 정문을 열었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "정문 개장과 최영감 입장",
+   "summary": "순덕이 정문을 열자 기다리고 있던 최영감이 들어와 요금을 내고 남탕으로 들어간다.",
+   "location_id": "LOC_010",
+   "time_id": "NEW:다섯_시_정각",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_001",
+    "OBJ_021"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_010",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "다섯 시 정각에 순덕이 열쇠로 정문을 열었다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_010",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "최영감은 문이 열리는 것과 동시에 들어왔다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "location",
+     "from": "LOC_010",
+     "to": "LOC_005",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "최영감은 육백 원을 서랍에 넣고 남탕으로 들어갔다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_010",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "순덕은 카운터 의자에 앉았다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_021 (정문 열쇠)",
+     "source_text": "순덕이 열쇠로 정문을 열었다."
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "assumes": "현금 600원 (입욕료)",
+     "source_text": "최영감은 육백 원을 서랍에 넣고"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "최영감이 20년 가까이 매일 새벽 첫 손님으로 온다는 사실",
+     "source_text": "이십 년 가까이 그랬다. 문 밖에서 기다리고 있다가 들어오는 사람이었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "무릎 통증 있음",
+     "source_text": "무릎이 아팠다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "지하 순환관이 물을 반씩 흘리고 있으며 1월에 교체 예정이고 계약금은 29일 설비집에 넣기로 함",
+     "via": "inference",
+     "retained": true,
+     "source_text": "지하에서는 헝겊으로 감은 관이 물을 반씩 흘리면서 도는 소리가 났다. 그 관은 일월에 갈릴 것이었고, 계약금은 스무아흐렛날 설비집에 넣기로 돼 있었다."
+    }
+   ],
+   "cause": "정문 개장 시각(다섯 시 정각)이 되어 순덕이 열쇠로 문을 열었음",
+   "result": "최영감이 입장해 요금을 내고 남탕으로 들어갔으며, 순덕은 카운터에 앉아 장부를 기록함",
+   "source_text": "다섯 시 정각에 순덕이 열쇠로 정문을 열었다. 최영감은 문이 열리는 것과 동시에 들어왔다. 이십 년 가까이 그랬다. 문 밖에서 기다리고 있다가 들어오는 사람이었다. \"춥다.\" 최영감은 육백 원을 서랍에 넣고 남탕으로 들어갔다. 순덕은 카운터 의자에 앉았다. 지하에서는 헝겊으로 감은 관이 물을 반씩 흘리면서 도는 소리가 났다. 그 관은 일월에 갈릴 것이었고, 계약금은 스무아흐렛날 설비집에 넣기로 돼 있었다. 순덕은 장부를 펴 놓고 첫 줄에 어른 하나를 적었다. 무릎이 아팠다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:30:36Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 76.37
+ }
+}

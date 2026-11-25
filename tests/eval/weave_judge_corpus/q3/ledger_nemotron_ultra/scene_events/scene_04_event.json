@@ -1,0 +1,98 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:5월 15일 22시 34분",
+   "expression": "5월 15일 22시 34분",
+   "description": "큐가 빈 시각",
+   "timeline": "main",
+   "source_text": "5월 15일 22시 34분에 큐가 비었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "큐 완료 및 청문 일정 확인",
+   "summary": "5월 15일 22시 34분 큐가 비고, 도현과 서율이 남은 시간과 청문 일정을 확인한다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:5월 15일 22시 34분",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "ability",
+     "from": "작업 진행 중",
+     "to": "작업 완료(큐 비움)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "도현이 진행 막대에서 손을 떼고 메시지 창을 열었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "콘솔/작업 단말 접근 권한",
+     "source_text": "도현이 진행 막대에서 손을 떼고 메시지 창을 열었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "청문 일정(5월 20일) 및 본부 방침(현 운영 체제 유지)",
+     "source_text": "청문은 20일이고 본부는 그 전까지 현 운영 체제 유지라고 했다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "7조 작업 배정 사실",
+     "source_text": "\"7조 맞죠.\""
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "청문은 5월 20일이며 본부는 그때까지 현 운영 체제 유지",
+     "via": "told",
+     "retained": true,
+     "source_text": "청문은 20일이고 본부는 그 전까지 현 운영 체제 유지라고 했다."
+    }
+   ],
+   "cause": "작업 큐 완료",
+   "result": "남은 시간 6분 확인, 청문 일정 재확인",
+   "source_text": "5월 15일 22시 34분에 큐가 비었다. 도현이 진행 막대에서 손을 떼고 메시지 창을 열었다. 서율은 콘솔 옆에서 시계를 보았다. 6분이 남아 있었다. \"5분입니다.\" 도현이 말했다. \"7조 맞죠.\" \"맞아.\" 서율이 말했다. \"업무 끝났으니까 남는 시간은 네 거야. 5분 넘기지만 마.\" 청문은 20일이고 본부는 그 전까지 현 운영 체제 유지라고 했다. 서율은 문 쪽으로 물러섰다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:50:07Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 80.62
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "존 터너, 앨리스의 문병을 받다",
+   "summary": "윌로스 박사의 진찰이 끝난 뒤, 앨리스가 병문안 와서 아버지 컨디션을 묻고 터너는 창밖을 가리킨다.",
+   "location_id": "LOC_025",
+   "time_id": "NEW:윌로스_박사_진찰_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_016",
+    "CHAR_017"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_016",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_016",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_025",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "존 터너는 창가의 의자에 앉아 담요를 무릎까지 덮고 있었다."
+    },
+    {
+     "entity": "CHAR_017",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_025",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "딸이 문을 열고 들어오자"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_016",
+     "field": "body_status",
+     "assumes": "병약하여 담요를 덮고 의자에 앉아 있을 정도로 쇠약함",
+     "source_text": "창가의 의자에 앉아 담요를 무릎까지 덮고 있었다"
+    },
+    {
+     "entity": "CHAR_016",
+     "field": "knows",
+     "assumes": "자신의 병이 한 달을 넘기기 어렵다는 진단을 이미 들었음",
+     "source_text": "그의 한 달을 넘기기 어렵다는 말을 이미 들은 참이었고"
+    },
+    {
+     "entity": "CHAR_016",
+     "field": "possesses",
+     "assumes": "무릎 위에 종이(서류)를 펼쳐 두고 있었음",
+     "source_text": "그는 무릎 위의 종이를 접어 옆으로 밀어 놓았다"
+    },
+    {
+     "entity": "CHAR_017",
+     "field": "knows",
+     "assumes": "아버지의 병이 심각한 상태임을 인지하고 병문안하러 온 것",
+     "source_text": "오늘은 좀 어떠세요."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_017",
+     "info": "윌로스 박사의 진찰이 끝난 직후의 아버지 상태(아무 대답 없이 창밖만 가리킴)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그는 대답 대신 창밖을 가리켰다."
+    }
+   ],
+   "cause": "윌로스 박사의 진찰이 끝난 직후라서",
+   "result": "앨리스는 아버지의 상태가 답할 수 없을 만큼 나쁘다는 것을 목격한다.",
+   "source_text": "존 터너는 창가의 의자에 앉아 담요를 무릎까지 덮고 있었다. 윌로스 박사가 다녀간 뒤였다. 그는 한 달을 넘기기 어렵다는 말을 이미 들은 참이었고, 그 말에 놀라지도 않았다. 딸이 문을 열고 들어오자 그는 무릎 위의 종이를 접어 옆으로 밀어 놓았다. \"오늘은 좀 어떠세요.\" 앨리스가 물었다. 그는 대답 대신 창밖을 가리켰다. 숲 너머로 해서리 쪽 지붕이 보이고 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:08:06Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 9.11
+ }
+}

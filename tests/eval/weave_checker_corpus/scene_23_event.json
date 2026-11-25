@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S23_1",
+      "order": 1,
+      "title": "폐허로 방치된 제1창고 내부 확인",
+      "summary": "알파가 제1창고에 들어서니 내부가 그을린 벽과 로봇 잔해, 콘크리트 부스러기로 사건 당일 그대로 방치되어 있다. 쓰러진 로봇 하나를 일으켜 세운다.",
+      "location_id": "LOC_004",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "LOC_004",
+          "field": "body_status",
+          "from": "unknown",
+          "to": "내부 미복구 — 그을음·로봇 잔해·부스러기 방치",
+          "source_text": "치워진 것이라곤 하나도 없이, 폐허째로 방치되어 있었다."
+        }
+      ],
+      "assumed_states": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "창고 내부 복구가 전혀 진행되지 않았음",
+          "via": "direct",
+          "source_text": "내부는 그날 그대로였다."
+        }
+      ],
+      "cause": "오랜만의 창고 방문",
+      "result": "로봇 하나를 일으켜 두고 나옴",
+      "source_text": "내부는 그날 그대로였다. ... 폐허째로 방치되어 있었다.",
+      "certainty": "explicit"
+    }
+  ]
+}

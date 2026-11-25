@@ -1,0 +1,219 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 1,
+  "batch_id": "T2-R1-A",
+  "scene_id": "scene_11",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_11.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:32:07Z",
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:음성_호출_통신",
+      "content": "상대의 이름을 부르면 잠시 후 연결음이 울리며 원격 통신이 연결된다",
+      "description": "별도의 기기 조작 묘사 없이 호명만으로 통신이 성립하는 통신 체계가 존재한다",
+      "source_text": "\"클라인!\"\n\n부르고 나서 잠시. 익숙한 연결음이 들렸다.",
+      "certainty": "inferred"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["알파", "나"],
+      "entity_type": "person",
+      "description": "거구의 남자 추적 조사를 진행하며 클라인에게 보고하는 인물",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S11_1",
+      "source_text": "\"네, 알파. 무슨 일 있으신가요?\"",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_001",
+      "name": "클라인 브루더 (Klein Bruder)",
+      "aliases": ["클라인"],
+      "entity_type": "person",
+      "description": "알파의 보고를 받고 무리한 접촉을 만류하는 인물",
+      "traits": [
+        {
+          "trait": "상대에게 존댓말로 정중하게 말한다",
+          "trait_type": "speech",
+          "source_text": "\"수고하셨습니다. 무리하게 접촉하지는 마십시오.\"",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S11_1",
+      "source_text": "\"네, 알파. 무슨 일 있으신가요?\"",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_011",
+      "name": "적갈색 머리의 거구 남자",
+      "aliases": ["그 거구의 남자"],
+      "entity_type": "person",
+      "description": "알파가 영상으로 이동 경로를 추적 중인 대상 (이 장면에 직접 등장하지는 않음)",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S11_1",
+      "source_text": "그 거구의 남자가 다니는 경로가 어느 정도 잡혔어요.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_008",
+      "name": "3번가",
+      "description": "알파가 영상을 다시 훑어본 구역",
+      "source_text": "3번가 쪽 영상을 다시 훑었는데,",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:보급소_두_곳",
+      "name": "보급소 두 곳",
+      "description": "거구의 남자가 번갈아 이용하는 것으로 파악된 보급소 두 곳",
+      "source_text": "보급소 두 곳을 번갈아 쓰는 것 같아요.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "OBJ_009",
+      "name": "CCTV 영상 자료",
+      "description": "알파가 다시 훑어본 3번가 쪽 영상 자료",
+      "first_appearance_event_id": "EVENT_S11_1",
+      "source_text": "3번가 쪽 영상을 다시 훑었는데,",
+      "certainty": "inferred"
+    }
+  ],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S11_1",
+      "scene_id": "scene_11",
+      "order": 1,
+      "title": "알파가 클라인에게 거구 남자의 이동 경로를 보고하다",
+      "summary": "알파가 클라인을 호출해 통신을 연결하고, 3번가 영상을 재검토해 거구의 남자가 보급소 두 곳을 번갈아 쓰는 경로를 파악했다고 보고한다. 클라인은 치하하면서도 지난번 같은 일을 언급하며 무리한 접촉을 만류하고, 알파는 조심하겠다고 답한 뒤 통화가 짧게 끝난다.",
+      "location_id": "unknown",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002", "CHAR_001"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["OBJ_009"],
+      "state_changes": [
+        {
+          "entity": "CHAR_001",
+          "field": "knows",
+          "from": "unknown",
+          "to": "거구의 남자의 이동 경로 및 보급소 두 곳 번갈아 이용",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "그 거구의 남자가 다니는 경로가 어느 정도 잡혔어요. 보급소 두 곳을 번갈아 쓰는 것 같아요."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "클라인의 존재와 호명만으로 연결되는 통신 방식 (연결음을 '익숙한' 것으로 인식)",
+          "source_text": "\"클라인!\"\n\n부르고 나서 잠시. 익숙한 연결음이 들렸다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "3번가 쪽 영상 자료의 존재와 열람 경로 (이전에도 한 번 이상 훑었음)",
+          "source_text": "3번가 쪽 영상을 다시 훑었는데,"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "거구의 남자(CHAR_011)가 추적 대상이라는 사실과 그의 외형 식별 정보",
+          "source_text": "그 거구의 남자가 다니는 경로가 어느 정도 잡혔어요."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "클라인이 말한 '지난번 같은 일'이 무엇인지 (되묻지 않고 바로 수긍)",
+          "source_text": "\"지난번 같은 일은... 서로에게 좋지 않으니까요.\" / \"...네. 조심할게요.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "3번가에 보급소가 복수로 존재한다는 사실",
+          "source_text": "보급소 두 곳을 번갈아 쓰는 것 같아요."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "이름을 부르는 것만으로 원격 통신을 개시할 수 있음 (별도 기기 조작 없음)",
+          "source_text": "\"클라인!\"\n\n부르고 나서 잠시. 익숙한 연결음이 들렸다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "영상 자료를 반복 열람하고 인물의 이동 경로를 분석할 수 있음",
+          "source_text": "3번가 쪽 영상을 다시 훑었는데, 그 거구의 남자가 다니는 경로가 어느 정도 잡혔어요."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "OBJ_009 (3번가 쪽 영상 자료를 재열람 가능한 형태로 보유·접근)",
+          "source_text": "3번가 쪽 영상을 다시 훑었는데,"
+        },
+        {
+          "entity": "CHAR_001",
+          "field": "knows",
+          "assumes": "알파의 목소리만으로 상대를 식별할 수 있음",
+          "source_text": "\"네, 알파. 무슨 일 있으신가요?\""
+        },
+        {
+          "entity": "CHAR_001",
+          "field": "knows",
+          "assumes": "알파가 수행 중인 거구의 남자 추적·조사 임무의 존재 (보고를 되묻지 않고 치하)",
+          "source_text": "\"수고하셨습니다. 무리하게 접촉하지는 마십시오.\""
+        },
+        {
+          "entity": "CHAR_001",
+          "field": "knows",
+          "assumes": "알파가 관여한 '지난번 같은 일' — 접촉으로 인해 서로에게 좋지 않았던 과거 사건",
+          "source_text": "\"지난번 같은 일은... 서로에게 좋지 않으니까요.\""
+        },
+        {
+          "entity": "CHAR_001",
+          "field": "ability",
+          "assumes": "호명에 응답해 원격 통신에 접속할 수 있음",
+          "source_text": "부르고 나서 잠시. 익숙한 연결음이 들렸다. / \"네, 알파. 무슨 일 있으신가요?\""
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_001",
+          "info": "거구의 남자의 이동 경로가 어느 정도 파악되었고, 그가 보급소 두 곳을 번갈아 사용한다",
+          "via": "told",
+          "retained": true,
+          "source_text": "그 거구의 남자가 다니는 경로가 어느 정도 잡혔어요. 보급소 두 곳을 번갈아 쓰는 것 같아요."
+        }
+      ],
+      "cause": "알파가 3번가 쪽 영상을 재검토해 거구의 남자의 이동 경로를 파악했고, 이를 보고하기 위해 클라인을 호출했다.",
+      "result": "클라인이 경로 정보를 알게 되었고, 무리한 접촉을 하지 말라고 당부했으며 알파가 이에 동의한 채 통화가 짧게 종료되었다.",
+      "source_text": "\"클라인!\"\n\n부르고 나서 잠시. 익숙한 연결음이 들렸다.\n\n\"네, 알파. 무슨 일 있으신가요?\"\n\n\"보고할 게 있어서요. 3번가 쪽 영상을 다시 훑었는데, 그 거구의 남자가 다니는 경로가 어느 정도 잡혔어요. 보급소 두 곳을 번갈아 쓰는 것 같아요.\"\n\n\"수고하셨습니다. 무리하게 접촉하지는 마십시오. 지난번 같은 일은... 서로에게 좋지 않으니까요.\"\n\n\"...네. 조심할게요.\"\n\n통화는 짧게 끝났다.",
+      "certainty": "explicit"
+    }
+  ]
+}

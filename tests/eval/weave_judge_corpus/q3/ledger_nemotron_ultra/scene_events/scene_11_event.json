@@ -1,0 +1,126 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "NEW:게시판_종이_다섯_장",
+   "name": "게시판에 붙은 종이 다섯 장",
+   "description": "마르타의 이의서 3장과 서율의 문서 3장이 나란히 붙어 있으나 총 5장만 확인됨",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "게시판 앞에서 마르타가 벽을 짚었다. \"다섯 장이네요.\" 서율이 말했다. \"그중에 세 장이 내 거야.\" 마르타가 말했다. \"7조 이의서, 격벽 이의서, 그리고 5월 8일 것. 셋 다 저기 붙어 있어. 당신 것 세 장하고 나란히.\" 서율은 벽을 다시 세어 보았다. 다섯 장이었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "NEW:게시판_확인_시점",
+   "expression": "게시판 확인 시점",
+   "description": "마르타와 서율이 게시판 앞 종이 장수를 확인한 시점",
+   "timeline": "main",
+   "source_text": "게시판 앞에서 마르타가 벽을 짚었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "게시판 종이 장수 확인",
+   "summary": "마르타와 서율이 게시판 앞 종이 장수를 세어보니 마르타의 3장과 서율의 3장이 나란히 붙어 있어야 하나 총 5장만 확인됨",
+   "location_id": "LOC_002",
+   "time_id": "NEW:게시판_확인_시점",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "NEW:게시판_종이_다섯_장"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "게시판에 종이 총 5장만 붙어 있음 (예상 6장과 불일치)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율은 벽을 다시 세어 보았다. 다섯 장이었다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "from": "unknown",
+     "to": "게시판에 종이 총 5장만 붙어 있음 (예상 6장과 불일치)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "\"다섯 장이네요.\""
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "assumes": "OBJ_024 (마르타 이의서 사본), OBJ_030 (마르타의 두 번째 이의서), OBJ_021 또는 관련 문서 (5월 8일 것)",
+     "source_text": "\"그중에 세 장이 내 거야.\" 마르타가 말했다. \"7조 이의서, 격벽 이의서, 그리고 5월 8일 것.\""
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_023 (규정 7조 임시 개정문), OBJ_024 또는 관련 문서, OBJ_031 또는 OBJ_032 중 하나 (5월 8일 22시 문서)",
+     "source_text": "\"당신 것 세 장하고 나란히.\""
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "body_status",
+     "assumes": "걷기 가능 (의무실 쪽으로 걸어감)",
+     "source_text": "마르타는 이미 의무실 쪽으로 걸어가고 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "게시판에 마르타 문서 3장과 본인 문서 3장이 나란히 붙어 있어야 하나 실제로는 5장만 붙어 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "서율은 벽을 다시 세어 보았다. 다섯 장이었다."
+    },
+    {
+     "character_id": "CHAR_004",
+     "info": "게시판에 본인 문서 3장과 서율 문서 3장이 나란히 붙어 있어야 하나 실제로는 5장만 붙어 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "\"다섯 장이네요.\""
+    }
+   ],
+   "cause": "게시판 문서 현황 확인",
+   "result": "예상 6장과 실제 5장 불일치 발견",
+   "source_text": "게시판 앞에서 마르타가 벽을 짚었다. \"다섯 장이네요.\" 서율이 말했다. \"그중에 세 장이 내 거야.\" 마르타가 말했다. \"7조 이의서, 격벽 이의서, 그리고 5월 8일 것. 셋 다 저기 붙어 있어. 당신 것 세 장하고 나란히.\" 서율은 벽을 다시 세어 보았다. 다섯 장이었다. 마르타는 이미 의무실 쪽으로 걸어가고 있었다. 서율은 벽 앞에 남아 한 번 더 세었다. 다섯 장이었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:53:44Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 43.46
+ }
+}

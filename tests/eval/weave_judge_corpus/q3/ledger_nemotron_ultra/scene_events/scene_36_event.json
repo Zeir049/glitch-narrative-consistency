@@ -1,0 +1,97 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "NEW:빙하_코어_단면_사진_세_장",
+   "name": "빙하 코어 단면 사진 세 장",
+   "description": "깊이 800m, 1,200m, 1,900m 지점의 빙하 코어 단면 사진. 서율이 이사 오던 날 선반 사이 빈 자리에 붙여 매일 밤 보고 잔다.",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "머리맡에 빙하 코어 단면 사진 세 장이 붙어 있었다. 800미터, 1,200미터, 1,900미터. 깊이마다 층의 간격이 달랐다. 서율은 그것을 뚫은 사람이었다. 이사 오던 날 선반과 선반 사이의 빈 자리에 그 세 장을 옮겨 붙였고, 그 뒤로 매일 밤 그것을 보고 잤다.",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "NEW:매일_밤",
+   "expression": "매일 밤",
+   "description": "서율이 빙하 코어 사진을 보며 잠드는 습관적 시간",
+   "timeline": "main",
+   "source_text": "그 뒤로 매일 밤 그것을 보고 잤다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "서율의 숙소에서 빙하 코어 사진을 보며 취침",
+   "summary": "서율이 간이침대에 누워 머리맡에 붙인 빙하 코어 단면 사진 세 장을 보며 잠든다. 사진은 서율이 직접 뚫은 800m, 1,200m, 1,900m 깊이의 코어 단면이다.",
+   "location_id": "unknown",
+   "time_id": "NEW:매일_밤",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "NEW:빙하_코어_단면_사진_세_장"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "NEW:빙하_코어_단면_사진_세_장 (머리맡에 부착)",
+     "source_text": "머리맡에 빙하 코어 단면 사진 세 장이 붙어 있었다. 이사 오던 날 선반과 선반 사이의 빈 자리에 그 세 장을 옮겨 붙였고"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "빙하 코어 800m, 1,200m, 1,900m 깊이별 층 간격 차이",
+     "source_text": "깊이마다 층의 간격이 달랐다. 서율은 그것을 뚫은 사람이었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "빙하 코어 시추/채취 수행 능력 (800m, 1,200m, 1,900m 깊이 도달)",
+     "source_text": "서율은 그것을 뚫은 사람이었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "자신의 숙소 벽에 빙하 코어 단면 사진이 붙어 있으며 선반에서 기름 냄새가 난다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "서율은 간이침대에 누워 천장 대신 벽을 보았다. 머리맡에 빙하 코어 단면 사진 세 장이 붙어 있었다. 선반에서는 기름 냄새가 났다."
+    }
+   ],
+   "cause": "습관적 취침 루틴",
+   "result": "수면 진입",
+   "source_text": "서율은 간이침대에 누워 천장 대신 벽을 보았다. 머리맡에 빙하 코어 단면 사진 세 장이 붙어 있었다. 800미터, 1,200미터, 1,900미터. 깊이마다 층의 간격이 달랐다. 서율은 그것을 뚫은 사람이었다. 이사 오던 날 선반과 선반 사이의 빈 자리에 그 세 장을 옮겨 붙였고, 그 뒤로 매일 밤 그것을 보고 잤다. 선반에서는 기름 냄새가 났다. 사진에서는 아무 냄새도 나지 않았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:59:14Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 36.79
+ }
+}

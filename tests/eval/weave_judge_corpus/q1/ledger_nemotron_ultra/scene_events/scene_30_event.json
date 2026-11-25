@@ -1,0 +1,354 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "여탕 세신 호출",
+   "summary": "순덕이 정미를 불러 여탕 세신 손님이 둘임을 알린다.",
+   "location_id": "LOC_006",
+   "time_id": "NEW:십이월_이십일일_오전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "assumes": "LOC_006",
+     "source_text": "여탕 쪽에서 순덕이 정미를 불렀다"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "assumes": "LOC_003 또는 LOC_002",
+     "source_text": "여탕 쪽에서 순덕이 정미를 불렀다"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "ability",
+     "assumes": "세신 업무 수행 가능",
+     "source_text": "세신 손님이 둘이라고 했다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "여탕 세신 손님이 둘 있음",
+     "via": "told",
+     "retained": true,
+     "source_text": "세신 손님이 둘이라고 했다"
+    }
+   ],
+   "cause": "여탕에 세신 손님이 도착함",
+   "result": "정미가 세신 준비 위해 이동",
+   "source_text": "여탕 쪽에서 순덕이 정미를 불렀다. 세신 손님이 둘이라고 했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "정미 세신 준비 및 이동",
+   "summary": "정미가 가게 문을 잠그고 여탕으로 올라가 앞치마를 두른다.",
+   "location_id": "LOC_006",
+   "time_id": "NEW:십이월_이십일일_오전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [
+    "OBJ_001"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_001",
+     "field": "body_status",
+     "from": "열림",
+     "to": "잠김",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정미는 가게 문을 잠그고 올라와"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "LOC_003 또는 LOC_002",
+     "to": "LOC_006",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "올라와 앞치마를 둘렀다"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_앞치마",
+     "op": "add",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "앞치마를 둘렀다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "OBJ_001 (가게 열쇠 소지)",
+     "source_text": "정미는 가게 문을 잠그고"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "body_status",
+     "assumes": "세신 작업 가능한 신체 상태",
+     "source_text": "올라와 앞치마를 둘렀다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "정미가 호출을 받고 즉시 세신 준비에 들어감",
+     "source_text": "여탕 쪽에서 순덕이 정미를 불렀다. 세신 손님이 둘이라고 했다. 정미는 가게 문을 잠그고 올라와 앞치마를 둘렀다."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "순덕의 세신 호출",
+   "result": "여탕에서 세신 작업 시작",
+   "source_text": "정미는 가게 문을 잠그고 올라와 앞치마를 둘렀다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_3",
+   "scene_id": "scene_6_1",
+   "order": 3,
+   "title": "첫 손님 등 밀기",
+   "summary": "정미가 첫 손님의 등을 밀며 물 온도를 확인한다.",
+   "location_id": "LOC_006",
+   "time_id": "NEW:십이월_이십일일_오전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003",
+    "NEW:세신_손님1"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "ability",
+     "assumes": "등 밀기 기술 보유",
+     "source_text": "정미는 첫 손님 등을 밀면서"
+    },
+    {
+     "entity": "NEW:세신_손님1",
+     "field": "body_status",
+     "assumes": "목욕 중, 등 밀기 받을 상태",
+     "source_text": "첫 손님 등을 밀면서"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "물 온도 확인 필요함",
+     "source_text": "물이 뜨거운지 물었다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "여섯 시에 연 물이 현재 알맞은 온도임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "여섯 시에 연 물이 이 시간에는 알맞았다"
+    }
+   ],
+   "cause": "세신 작업 진행",
+   "result": "첫 손님 등 밀기 완료",
+   "source_text": "여탕 안은 김이 차 있었다. 정미는 첫 손님 등을 밀면서 물이 뜨거운지 물었다. 손님이 됐다고 했다. 여섯 시에 연 물이 이 시간에는 알맞았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_4",
+   "scene_id": "scene_6_1",
+   "order": 4,
+   "title": "두 사람 등 밀기 완료 및 정리",
+   "summary": "정미가 두 손님의 등을 다 밀고 나와 손을 닦고 앞치마를 벗는다.",
+   "location_id": "LOC_006",
+   "time_id": "NEW:십이월_이십일일_오전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003",
+    "NEW:세신_손님1",
+    "NEW:세신_손님2"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "from": "OBJ_앞치마",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "정미는 앞치마를 벗어 접었다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "ability",
+     "assumes": "두 사람 연속 등 밀기 체력 보유",
+     "source_text": "정미는 두 사람 등을 다 밀고"
+    },
+    {
+     "entity": "NEW:세신_손님2",
+     "field": "body_status",
+     "assumes": "목욕 중, 등 밀기 받을 상태",
+     "source_text": "두 사람 등을 다 밀고"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "세신 작업 계속",
+   "result": "세신 작업 종료, 정미 카운터로 이동",
+   "source_text": "정미는 두 사람 등을 다 밀고 나와 손을 닦았다. 정미는 앞치마를 벗어 접었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_5",
+   "scene_id": "scene_6_1",
+   "order": 5,
+   "title": "카운터에서 어머니 확인 및 국그릇 회수",
+   "summary": "정미가 카운터에 앉은 어머니와 무거워진 서랍을 보고 점심 국그릇을 개수대로 가져간다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:십이월_이십일일_오전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [
+    "OBJ_002",
+    "NEW:국그릇"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "LOC_006",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카운터에는 어머니가 앉아 있었고"
+    },
+    {
+     "entity": "OBJ_002",
+     "field": "body_status",
+     "from": "가벼움",
+     "to": "무거워짐",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "서랍은 아까보다 무거워 보였다"
+    },
+    {
+     "entity": "NEW:국그릇",
+     "field": "location",
+     "from": "LOC_002",
+     "to": "개수대",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정미는 그것을 들고 개수대로 갔다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "assumes": "LOC_002",
+     "source_text": "카운터에는 어머니가 앉아 있었고"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "카운터 업무 수행 중",
+     "source_text": "카운터에는 어머니가 앉아 있었고"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "점심때 국그릇을 카운터에 두고 옴",
+     "source_text": "점심때 가져온 국그릇이 아직 카운터에 있었다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_4",
+     "assumes": "세신 작업 후 정미가 카운터로 이동함",
+     "source_text": "정미는 두 사람 등을 다 밀고 나와 손을 닦았다. ... 카운터에는 어머니가 앉아 있었고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "오늘 장부 수입이 늘어 서랍이 무거워짐",
+     "via": "inference",
+     "retained": true,
+     "source_text": "서랍은 아까보다 무거워 보였다"
+    }
+   ],
+   "cause": "세신 작업 완료 후 카운터 복귀",
+   "result": "국그릇 정리, 장부 수입 증가 인지",
+   "source_text": "카운터에는 어머니가 앉아 있었고 서랍은 아까보다 무거워 보였다. 정미는 앞치마를 벗어 접었다. 점심때 가져온 국그릇이 아직 카운터에 있었다. 정미는 그것을 들고 개수대로 갔다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-27T04:54:44Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 38.67
+ }
+}

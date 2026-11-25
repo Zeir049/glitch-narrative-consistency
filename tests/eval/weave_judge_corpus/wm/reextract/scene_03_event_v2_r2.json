@@ -1,0 +1,364 @@
+{
+  "schema_version": 2,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 2,
+  "batch_id": "T2-R2-A",
+  "scene_id": "scene_03",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_03.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r3)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:40:14Z",
+  "episode": 6,
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:소마_상점_판매_규칙",
+      "content": "소마는 상점에서 동전 화폐로 사고팔 수 있는 상품이다.",
+      "description": "파란 표지판이 달린 상점에서 소마 통이 손님에게 건네지고, 그 대가로 동전이 지불되며 거스름돈이 반환된다. 소마가 화폐 거래 대상 상품으로 유통된다는 것을 원문이 보여준다.",
+      "source_text": "앞줄의 여자가 소마 통을 받아 들더니, 익숙하게 동전 몇 닢을 점원에게 건넸다.",
+      "certainty": "explicit"
+    },
+    {
+      "rule_id": "NEW:동전_화폐_및_거스름돈_체계",
+      "content": "이 세계에는 낱개로 셀 수 있는 동전 화폐와 거스름돈 개념이 존재한다.",
+      "description": "'동전 몇 닢'이라는 낱개 단위와 '거스름돈을 세어 내주었다'는 서술은 액면가가 나뉜 동전 화폐 체계와 잔돈 반환 관행을 전제한다.",
+      "source_text": "익숙하게 동전 몇 닢을 점원에게 건넸다. 점원은 손바닥 위에서 거스름돈을 세어 내주었다.",
+      "certainty": "explicit"
+    },
+    {
+      "rule_id": "NEW:가격표_진열_상거래_관행",
+      "content": "상점은 진열대에 가격표를 붙여 상품을 판매하고, 손님은 줄을 서서 구매한다.",
+      "description": "가격표·진열대·대기 줄이 있는 소매 상거래 형태가 이 세계에서 보편적이라고 화자가 서술한다.",
+      "source_text": "가격표가 붙은 진열대 사이로 사람들이 오가는 풍경은 어딜 가나 비슷한 모양이다.",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "1번가를 걸어 프리든으로 향하던 중 상점 앞 줄을 구경하는 화자.",
+      "traits": [
+        {
+          "trait": "지나가던 풍경에도 걸음을 늦추고 구경하는 호기심",
+          "trait_type": "personality",
+          "source_text": "구경 삼아 걸음을 늦췄다.",
+          "certainty": "inferred"
+        },
+        {
+          "trait": "'~구만' 같은 혼잣말 어조로 감상을 내뱉는 말투",
+          "trait_type": "speech",
+          "source_text": "\"흠~ 오늘도 평화롭구만.\"",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S03_1",
+      "source_text": "오늘도 1번가를 걸어 프리든으로 향하는 길.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "NEW:앞줄의_여자",
+      "name": "앞줄의 여자",
+      "aliases": ["앞줄의 여자"],
+      "entity_type": "person",
+      "description": "상점 줄 앞쪽에서 소마 통을 받아 들고 동전으로 값을 치른 여자 손님.",
+      "traits": [
+        {
+          "trait": "값을 치르는 동작이 익숙한 태도",
+          "trait_type": "habit",
+          "source_text": "익숙하게 동전 몇 닢을 점원에게 건넸다.",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S03_1",
+      "source_text": "앞줄의 여자가 소마 통을 받아 들더니,",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "NEW:상점_점원",
+      "name": "상점 점원",
+      "aliases": ["점원"],
+      "entity_type": "person",
+      "description": "파란 표지판 상점에서 소마를 내주고 거스름돈을 세어 건네는 점원.",
+      "traits": [
+        {
+          "trait": "손바닥 위에 잔돈을 올려놓고 세어 건네는 습관",
+          "trait_type": "habit",
+          "source_text": "점원은 손바닥 위에서 거스름돈을 세어 내주었다.",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S03_1",
+      "source_text": "익숙하게 동전 몇 닢을 점원에게 건넸다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_006",
+      "name": "1번가",
+      "description": "프리든으로 향하는 길목의 거리. 파란 표지판이 달린 상점과 오가는 사람들이 있다.",
+      "source_text": "오늘도 1번가를 걸어 프리든으로 향하는 길.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:파란_표지판의_상점",
+      "name": "파란 표지판이 달린 상점",
+      "description": "1번가에 있는 상점. 가격표가 붙은 진열대가 있고 사람들이 줄을 서서 소마를 구매한다.",
+      "source_text": "파란 표지판이 달린 상점 앞에 사람이 줄지어 있었다.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "LOC_005",
+      "name": "프리든 (Friden)",
+      "description": "화자가 이 장면에서 향하고 있는 목적지.",
+      "source_text": "나는 다시 프리든 쪽으로 걸음을 옮겼다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "OBJ_004",
+      "name": "소마",
+      "description": "통에 담겨 상점에서 판매되는 물품. 앞줄의 여자가 통 단위로 받아 갔다.",
+      "first_appearance_event_id": "EVENT_S03_1",
+      "source_text": "앞줄의 여자가 소마 통을 받아 들더니,",
+      "certainty": "explicit"
+    },
+    {
+      "object_id": "NEW:동전",
+      "name": "동전",
+      "description": "낱 단위('닢')로 세어 지불하는 화폐.",
+      "first_appearance_event_id": "EVENT_S03_1",
+      "source_text": "익숙하게 동전 몇 닢을 점원에게 건넸다.",
+      "certainty": "explicit"
+    },
+    {
+      "object_id": "NEW:거스름돈",
+      "name": "거스름돈",
+      "description": "점원이 손바닥 위에서 세어 손님에게 되돌려준 잔돈.",
+      "first_appearance_event_id": "EVENT_S03_1",
+      "source_text": "점원은 손바닥 위에서 거스름돈을 세어 내주었다.",
+      "certainty": "explicit"
+    },
+    {
+      "object_id": "NEW:가격표",
+      "name": "가격표",
+      "description": "상점 진열대에 붙어 있는 가격 표시.",
+      "first_appearance_event_id": "EVENT_S03_1",
+      "source_text": "가격표가 붙은 진열대 사이로 사람들이 오가는 풍경은",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [
+    {
+      "time_id": "NEW:프리든으로_향하던_어느_날",
+      "expression": "오늘도 (프리든으로 향하던 어느 날)",
+      "description": "화자가 반복적으로 1번가를 지나 프리든으로 가는 일과 중 하루.",
+      "timeline": "future_world",
+      "source_text": "오늘도 1번가를 걸어 프리든으로 향하는 길.",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S03_1",
+      "scene_id": "scene_03",
+      "order": 1,
+      "title": "1번가 상점 앞의 소마 구매 목격",
+      "summary": "프리든으로 향하던 화자가 1번가의 파란 표지판 상점 앞 줄을 구경하다가, 앞줄의 여자가 소마 통을 받아 들고 동전 몇 닢으로 값을 치르고 점원이 거스름돈을 세어 내주는 장면을 본다. 화자는 평화롭다고 중얼거린 뒤 다시 프리든 쪽으로 걸음을 옮긴다.",
+      "location_id": "LOC_006",
+      "time_id": "NEW:프리든으로_향하던_어느_날",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002", "NEW:앞줄의_여자", "NEW:상점_점원"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["OBJ_004", "NEW:동전", "NEW:거스름돈", "NEW:가격표"],
+      "state_changes": [
+        {
+          "entity": "NEW:앞줄의_여자",
+          "field": "possesses",
+          "from": "unknown",
+          "to": "OBJ_004",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "앞줄의 여자가 소마 통을 받아 들더니,"
+        },
+        {
+          "entity": "NEW:상점_점원",
+          "field": "possesses",
+          "from": "OBJ_004",
+          "to": "unknown",
+          "op": "remove",
+          "volatility": "persistent",
+          "certainty": "inferred",
+          "certainty_reason": "여자가 '받아 들었다'고만 명시되고, 건넨 주체가 점원이라는 서술은 정황 추정이다",
+          "source_text": "앞줄의 여자가 소마 통을 받아 들더니,"
+        },
+        {
+          "entity": "NEW:앞줄의_여자",
+          "field": "possesses",
+          "from": "NEW:동전",
+          "to": "unknown",
+          "op": "remove",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "익숙하게 동전 몇 닢을 점원에게 건넸다."
+        },
+        {
+          "entity": "NEW:상점_점원",
+          "field": "possesses",
+          "from": "unknown",
+          "to": "NEW:동전",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "익숙하게 동전 몇 닢을 점원에게 건넸다."
+        },
+        {
+          "entity": "NEW:상점_점원",
+          "field": "possesses",
+          "from": "NEW:거스름돈",
+          "to": "unknown",
+          "op": "remove",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "점원은 손바닥 위에서 거스름돈을 세어 내주었다."
+        },
+        {
+          "entity": "NEW:앞줄의_여자",
+          "field": "possesses",
+          "from": "unknown",
+          "to": "NEW:거스름돈",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "inferred",
+          "certainty_reason": "점원이 '내주었다'까지만 명시되고 여자가 받았다는 서술은 원문에 없다",
+          "source_text": "점원은 손바닥 위에서 거스름돈을 세어 내주었다."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "미래 세계에서 1번가 거리를 직접 걸어 이동 중인 신체",
+          "source_text": "오늘도 1번가를 걸어 프리든으로 향하는 길."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "1번가를 지나 프리든으로 가는 경로",
+          "source_text": "오늘도 1번가를 걸어 프리든으로 향하는 길."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "소마(OBJ_004)의 존재와 통에 담긴 외형 — 보자마자 '소마 통'으로 식별함",
+          "source_text": "앞줄의 여자가 소마 통을 받아 들더니,"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "이전에도 이 거리를 지나며 본 평상시 풍경 — '오늘도'라는 비교 기준이 성립해야 함",
+          "source_text": "\"흠~ 오늘도 평화롭구만.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "가격표가 붙은 진열대와 줄을 선 손님이 상거래 장면임을 알아보는 지식",
+          "source_text": "가격표가 붙은 진열대 사이로 사람들이 오가는 풍경은 어딜 가나 비슷한 모양이다."
+        },
+        {
+          "entity": "NEW:앞줄의_여자",
+          "field": "possesses",
+          "assumes": "NEW:동전 (건네기 전 값을 치를 만큼의 동전을 소지)",
+          "source_text": "익숙하게 동전 몇 닢을 점원에게 건넸다."
+        },
+        {
+          "entity": "NEW:앞줄의_여자",
+          "field": "possesses",
+          "assumes": "OBJ_004 (받아 들어 손에 쥔 소마 통)",
+          "source_text": "앞줄의 여자가 소마 통을 받아 들더니,"
+        },
+        {
+          "entity": "NEW:앞줄의_여자",
+          "field": "knows",
+          "assumes": "소마의 가격과 구매 절차 — 값을 묻지 않고 '익숙하게' 지불함",
+          "source_text": "익숙하게 동전 몇 닢을 점원에게 건넸다."
+        },
+        {
+          "entity": "NEW:앞줄의_여자",
+          "field": "body_status",
+          "assumes": "통을 받아 들면서 동시에 동전을 건넬 수 있는 손 사용 가능한 신체",
+          "source_text": "앞줄의 여자가 소마 통을 받아 들더니, 익숙하게 동전 몇 닢을 점원에게 건넸다."
+        },
+        {
+          "entity": "NEW:상점_점원",
+          "field": "possesses",
+          "assumes": "NEW:거스름돈 (내주기 전 잔돈을 보유)",
+          "source_text": "점원은 손바닥 위에서 거스름돈을 세어 내주었다."
+        },
+        {
+          "entity": "NEW:상점_점원",
+          "field": "possesses",
+          "assumes": "OBJ_004 (손님에게 건네기 전 상점에서 판매할 소마를 보유)",
+          "source_text": "앞줄의 여자가 소마 통을 받아 들더니,"
+        },
+        {
+          "entity": "NEW:상점_점원",
+          "field": "knows",
+          "assumes": "소마의 판매 가격과 받은 금액에서 거슬러 줄 액수",
+          "source_text": "점원은 손바닥 위에서 거스름돈을 세어 내주었다."
+        },
+        {
+          "entity": "NEW:상점_점원",
+          "field": "ability",
+          "assumes": "동전을 낱개로 세어 계산할 수 있음",
+          "source_text": "점원은 손바닥 위에서 거스름돈을 세어 내주었다."
+        },
+        {
+          "entity": "NEW:상점_점원",
+          "field": "body_status",
+          "assumes": "동전을 올려놓고 셀 수 있는 손바닥을 가진 신체",
+          "source_text": "점원은 손바닥 위에서 거스름돈을 세어 내주었다."
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "1번가의 파란 표지판 상점에서 소마가 동전으로 거래된다",
+          "via": "direct",
+          "retained": true,
+          "source_text": "앞줄의 여자가 소마 통을 받아 들더니, 익숙하게 동전 몇 닢을 점원에게 건넸다."
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "점원이 거스름돈을 세어 돌려주는 잔돈 반환 관행이 있다",
+          "via": "direct",
+          "retained": true,
+          "source_text": "점원은 손바닥 위에서 거스름돈을 세어 내주었다."
+        }
+      ],
+      "cause": "프리든으로 가던 화자가 상점 앞에 줄지어 선 사람들을 보고 구경 삼아 걸음을 늦췄다.",
+      "result": "앞줄의 여자가 소마를 사고 거스름돈을 받는 거래가 끝나고, 화자는 평화롭다고 중얼거린 뒤 다시 프리든 쪽으로 걸음을 옮겼다.",
+      "source_text": "오늘도 1번가를 걸어 프리든으로 향하는 길. 파란 표지판이 달린 상점 앞에 사람이 줄지어 있었다. 구경 삼아 걸음을 늦췄다. 앞줄의 여자가 소마 통을 받아 들더니, 익숙하게 동전 몇 닢을 점원에게 건넸다. 점원은 손바닥 위에서 거스름돈을 세어 내주었다. \"흠~ 오늘도 평화롭구만.\" 가격표가 붙은 진열대 사이로 사람들이 오가는 풍경은 어딜 가나 비슷한 모양이다. 나는 다시 프리든 쪽으로 걸음을 옮겼다.",
+      "certainty": "explicit"
+    }
+  ]
+}

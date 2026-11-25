@@ -1,0 +1,538 @@
+{
+  "schema_version": 2,
+  "episode": 5,
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:헤일트라움은_병원",
+      "content": "헤일트라움은 병원이다",
+      "description": "클라인이 처음으로 헤일트라움의 정체를 병원이라고 밝힌다. 문을 열면 바로 유리벽 너머로 8개가량의 침상이 있는 병실이 보인다.",
+      "source_text": "\"헤일트라움은 병원입니다. 환자가 있어요.\"",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_006",
+      "name": "슐라우 프로비에렌",
+      "aliases": [
+        "범인",
+        "노이즈 무늬 옷의 범인",
+        "슐라우"
+      ],
+      "entity_type": "person",
+      "description": "(갱신) 클라인이 풀네임 '슐라우 프로비에렌'을 밝힘. 폭발 사건의 범인으로, 손목 수술 후 헤일트라움 병실에서 회복 중. 소마 성분을 의심해 투약을 거부하며, 알파(로봇)에 극심한 공포 반응을 보인다. 블루멘의 추정으로는 알파와 또래(20대 초중반).",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_2_2",
+      "source_text": "\"네... '슐라우 프로비에렌'. 어제 실려 온 폭발 사건의 범인이요.\"",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "NEW:블루멘_랑잠",
+      "name": "블루멘 랑잠 (Blumen Langsam)",
+      "aliases": [
+        "블루멘"
+      ],
+      "entity_type": "person",
+      "description": "프리든 1번 방을 쓰는 의사. 슐라우의 손목 수술을 직접 집도했다. 알라인과 친한 사이.",
+      "traits": [
+        {
+          "trait": "분홍빛이 살짝 섞인 금발 단발머리, 앳되고 차분해 보이는 얼굴",
+          "trait_type": "appearance",
+          "source_text": "붉은, 분홍빛이 살짝 섞인 금발 단발머리.",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "키가 작음 (쪽지가 알파 눈높이보다 한참 아래, 의자에서 뛰어내림)",
+          "trait_type": "appearance",
+          "source_text": "내 눈높이보다 한참 아래에, 그녀의 키 높이 정도였다.",
+          "certainty": "inferred"
+        },
+        {
+          "trait": "겉모습과 달리 거친 말투와 욕설을 씀",
+          "trait_type": "speech",
+          "source_text": "어디서 배운 건지 이 세계엔 존재하지도 않는 욕을...",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "글씨를 심하게 휘갈겨 씀",
+          "trait_type": "habit",
+          "source_text": "상당히 휘갈겨 쓴 글씨체로 쪽지가 붙어있었다.",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "무심한 듯하지만 눈치가 빠르고 상대를 챙기는 성격",
+          "trait_type": "personality",
+          "source_text": "나도 모르던 내 상태를 바로 알아차리다니... 생각보다 눈치가 빠르네...",
+          "certainty": "inferred"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_5_6",
+      "source_text": "1번 방의 '블루멘 랑잠(Blumen Langsam)'.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_003",
+      "name": "헤일트라움 (Heiltraum)",
+      "description": "(갱신) 정체는 병원. 정문은 별다른 절차 없이 열리며, 문 안쪽에 유리벽 너머로 보이는 병실이 있다.",
+      "source_text": "\"헤일트라움은 병원입니다. 환자가 있어요.\"",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:프리든_4번_방",
+      "name": "프리든 4번 방 (알파의 방)",
+      "description": "알파가 새로 배정받은 방. 들어가서 왼쪽 가장 안쪽. 알라인의 방과 위치상 옆이지만 복도의 정체불명 해치 때문에 사실상 가장 먼 방. 이전 사용자의 책장과 자료, 먼지가 남아 있다.",
+      "source_text": "들어가서 왼쪽, 가장 안쪽의 4번 방을 배정받았다.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:블루멘의_방",
+      "name": "블루멘의 방 (프리든 1번 방)",
+      "description": "프리든 1번 방. 5화에서는 부재 쪽지만 확인됨.",
+      "source_text": "1번 방의 '블루멘 랑잠(Blumen Langsam)'.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:헤일트라움_병실",
+      "name": "헤일트라움 병실",
+      "description": "정문 안쪽, 유리벽으로 둘러싸여 내부가 보이는 8개가량의 침상이 있는 병실. 바로 옆에 사람보다 큰 수술용 로봇(추정)이 있는 방이 붙어 있다.",
+      "source_text": "8개 정도의 침상이 있는 병실 안에,",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [],
+  "times": [
+    {
+      "time_id": "NEW:사고_다음날",
+      "expression": "사고 다음날 (재접속일)",
+      "description": "플레이어가 하루를 앓고 다시 접속한 날. 클라인과의 통화, 프리든 방 배정, 병실 방문이 이날 이루어진다.",
+      "timeline": "future_world",
+      "source_text": "하루가 지났다. ... 컴퓨터를 켰다. 이제는 게임이 아닌 그 세계에 접속했다.",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_5_1",
+      "order": 1,
+      "title": "감각의 각성 — 세계의 실재 자각",
+      "summary": "사고 직후, 플레이어는 존재하지 않아야 할 바람 소리와 감각을 '보고 듣는다'. 사이렌이 울리는 빈 거리에서 이곳이 또 다른 세계임을 자각한다.",
+      "location_id": "LOC_008",
+      "time_id": "TIME_006",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [
+        "OBJ_008"
+      ],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "OBJ_008 (손에 쥐고 있음)",
+          "source_text": "내 손에 들린 옷이 나부꼈고,"
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "이곳은 게임이 아닌, 실재하는 또 다른 세계임",
+          "via": "inference",
+          "source_text": "이곳은, 또 다른 세계였다."
+        }
+      ],
+      "cause": "슐라우 중상 사건의 충격",
+      "result": "플레이어가 옷을 쥔 채 이송 로봇을 따라 달리기 시작",
+      "source_text": "존재하지 않았지만, 분명히 존재했다.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_5_2",
+      "order": 2,
+      "title": "헤일트라움 복귀와 벽 파쇄, 접속 종료",
+      "summary": "슐라우를 실은 로봇들을 따라 헤일트라움까지 간 플레이어는 뚫린 벽으로 돌아간다. 내부는 완전히 복구되어 있었다. 부서진 벽면을 쥐자 10cm 두께의 콘크리트가 가볍게 부서졌고, 플레이어는 접속을 종료한다.",
+      "location_id": "LOC_004",
+      "time_id": "TIME_006",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "LOC_004",
+          "field": "condition",
+          "from": "벽 뚫림, 내부 손상",
+          "to": "내부 완전 복구, 벽은 뚫린 채 (알파가 단면 일부를 추가로 부숨)",
+          "source_text": "벽은 아직 뚫린 채였지만 내부는 완전히 복구되어 있었다.",
+          "certainty": "inferred",
+          "certainty_reason": "'(알파가 단면 일부를 추가로 부숨)' 부분은 source_text에 없는 추론 서술"
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "location",
+          "from": "unknown",
+          "to": "LOC_003",
+          "source_text": "앞에는 범인이- 아니, '그 사람'을 실은 로봇들이 보였다.",
+          "certainty": "inferred",
+          "certainty_reason": "이송 장면은 직접 서술, 도착지(헤일트라움)는 동행 서술('헤일트라움까지 간')로 추론. B-007 보강 (2026-08-17)",
+          "op": "set",
+          "volatility": "durable"
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "10cm 두께 콘크리트를 손아귀 힘으로 부술 수 있는 로봇의 완력",
+          "source_text": "10cm는 넘을 듯한 두께의 콘크리트가 가볍게 부서져 내렸다."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우가 실려 간 곳은 헤일트라움이며, 창고 내부가 이미 복구됨",
+          "via": "direct",
+          "source_text": "앞에는 범인이- 아니, '그 사람'을 실은 로봇들이 보였다. 헤일트라움으로 향했다."
+        }
+      ],
+      "cause": "슐라우의 행방 확인과 충격의 여파",
+      "result": "접속 종료, 현실에서 하루 앓음",
+      "source_text": "손을 움켜쥐었다. ... 접속을 종료했다.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_5_3",
+      "order": 3,
+      "title": "재접속과 클라인의 통화: 슐라우 생존 확인, 프리든 권한 부여",
+      "summary": "하루 뒤 재접속하니 '접속하면 연락하십시오' 메시지가 떠 있었다. 클라인은 프리든 출입 권한 부여와 접속 지점 변경을 알리고, 헤일트라움이 병원이며 범인 '슐라우 프로비에렌'이 수술을 마치고 회복 중임을 전한다. 면회는 만류한다.",
+      "location_id": "LOC_003",
+      "time_id": "NEW:사고_다음날",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_001",
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_001",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "from": "프리든 단독 출입 불가",
+          "to": "프리든 출입 권한 보유",
+          "source_text": "\"프리든 출입 권한을 부여했습니다. 접속 지점을 바꾸죠.\""
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_001",
+          "field": "knows",
+          "assumes": "슐라우의 신원과 상태 (이름·수술 경과를 즉답)",
+          "source_text": "\"네... '슐라우 프로비에렌'. 어제 실려 온 폭발 사건의 범인이요.\""
+        },
+        {
+          "entity": "CHAR_001",
+          "field": "ability",
+          "assumes": "프리든 출입 권한을 부여할 수 있는 권한 (대표)",
+          "source_text": "\"프리든 출입 권한을 부여했습니다.\""
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "헤일트라움은 병원이며 환자가 있음",
+          "via": "told",
+          "source_text": "\"헤일트라움은 병원입니다. 환자가 있어요.\""
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "범인의 풀네임은 슐라우 프로비에렌이며, 수술이 잘 끝나 회복 중임",
+          "via": "told",
+          "source_text": "\"네, 일단 수술이 잘 끝났고, 회복 중입니다.\""
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "수술 집도의는 블루멘이며, 걱정되면 그녀에게 물어보면 됨",
+          "via": "told",
+          "source_text": "'정 걱정되시면 블루멘에게 물어보십시오. 어제 수술을 집도했습니다.'"
+        }
+      ],
+      "cause": "슐라우 이송 사건과 플레이어의 동요",
+      "result": "접속 지점이 프리든으로 변경됨",
+      "source_text": "'접속하면 연락하십시오.' 클라인이다.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_5_4",
+      "order": 4,
+      "title": "프리든 4번 방 배정과 기체 등록",
+      "summary": "플레이어가 프리든 정문을 무사통과해 4번 방을 배정받고, 새로 설치된 충전 플랫폼에 로봇 기체를 등록한다. 짐이라곤 '그 옷'뿐이었다. 방에는 이전 사용자의 흔적이 남아 있었다.",
+      "location_id": "NEW:프리든_4번_방",
+      "time_id": "NEW:사고_다음날",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [
+        "OBJ_008"
+      ],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "location",
+          "from": "LOC_003",
+          "to": "NEW:프리든_4번_방",
+          "source_text": "들어가서 왼쪽, 가장 안쪽의 4번 방을 배정받았다."
+        },
+        {
+          "entity": "OBJ_008",
+          "field": "location",
+          "from": "unknown",
+          "to": "NEW:프리든_4번_방",
+          "source_text": "짐이라고 해봐야, '그 옷' 밖에 없었지만."
+        }
+      ],
+      "assumed_states": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "4번 방에 이전 사용자의 흔적(책장·자료·먼지)이 남아 있음",
+          "via": "direct",
+          "source_text": "내부의 책장이나 자료도 그대로였다. 이전 사람의 흔적인 듯했다."
+        }
+      ],
+      "cause": "클라인의 접속 지점 변경 조치",
+      "result": "플레이어의 거점이 프리든으로 이동",
+      "source_text": "플랫폼에 내 아바타인 로봇의 기체 등록을 마치고. 간단히 짐을 정리했다.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_5_5",
+      "order": 5,
+      "title": "블루멘의 부재 쪽지 확인",
+      "summary": "슐라우의 상태를 물으러 1번 방을 찾았으나, 휘갈겨 쓴 '외출. 헤일트라움' 쪽지만 붙어 있었다.",
+      "location_id": "NEW:블루멘의_방",
+      "time_id": "NEW:사고_다음날",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "블루멘이 헤일트라움으로 외출 중임",
+          "via": "document",
+          "source_text": "<외출. 헤일트라움> 상당히 휘갈겨 쓴 글씨체로 쪽지가 붙어있었다."
+        }
+      ],
+      "cause": "슐라우의 상태를 확인하고 싶은 죄책감",
+      "result": "플레이어가 헤일트라움으로 향함",
+      "source_text": "<외출. 헤일트라움>",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_5_6",
+      "order": 6,
+      "title": "헤일트라움 병실 방문 — 세 사람 목격",
+      "summary": "헤일트라움 문 안쪽에서 유리벽 너머 병실을 발견한다. 가장 안쪽에 잠든 슐라우와 간병 중인 알라인, 바깥쪽 침상에서 자는 블루멘이 보였다. 알라인과 눈이 마주치자 블루멘이 깨어나 나온다.",
+      "location_id": "NEW:헤일트라움_병실",
+      "time_id": "NEW:사고_다음날",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002",
+        "CHAR_007",
+        "NEW:블루멘_랑잠"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우는 아직 깨어나지 못했고, 알라인이 간병 중이며 블루멘은 병실에서 자고 있음",
+          "via": "direct",
+          "source_text": "가장 안쪽에는 슐라우와 알라인. 가장 바깥쪽에는 블루멘이 있었다."
+        }
+      ],
+      "cause": "블루멘을 찾아 헤일트라움에 옴",
+      "result": "블루멘과의 대화로 이어짐",
+      "source_text": "...그리고 블루멘은 그 침상 중 하나에 누워 자고 있었다.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_5_7",
+      "order": 7,
+      "title": "블루멘과의 대화: 수술 경과 설명",
+      "summary": "옆방(수술 로봇이 있는 방)에서 블루멘이 슐라우의 상태를 설명한다. 손목은 잘 붙였고 1년 정도면 생활에 큰 문제가 없지만 세밀한 작업은 어려울 수 있다. AI에 학습이 안 된 수술이라 직접 집도했고 8시간이 걸렸다.",
+      "location_id": "LOC_003",
+      "time_id": "NEW:사고_다음날",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "NEW:블루멘_랑잠",
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "NEW:블루멘_랑잠",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "from": "오른 손목 파손",
+          "to": "오른 손목 수술 완료·회복 중 (약 1년, 세밀한 작업 어려움 가능)",
+          "source_text": "\"슐라우요? 손목 잘 붙여놨으니까 걱정하지 마요.\"",
+          "certainty": "explicit",
+          "certainty_reason": "B-007 보강 (2026-08-17) — EVENT_5_7 수술 경과 설명",
+          "op": "set",
+          "volatility": "durable"
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "NEW:블루멘_랑잠",
+          "field": "ability",
+          "assumes": "신경 접합을 포함한 외과 수술 집도 능력",
+          "source_text": "신경까지 이어 붙이느라 고생 좀 했죠."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우의 손목은 접합 성공, 회복에 약 1년, 세밀한 작업은 어려울 수 있음. 수술은 AI 미학습으로 블루멘이 직접 8시간 집도",
+          "via": "told",
+          "source_text": "\"AI에 학습이 안 되어 있어서 직접 하느라 8시간이나 걸렸다구요.\""
+        },
+        {
+          "character_id": "NEW:블루멘_랑잠",
+          "info": "알파가 말투로 보아 자신들과 또래(20대 초중반)로 추정됨",
+          "via": "inference",
+          "source_text": "\"말투 보니까 20대 초반? 중반? 또래네~\""
+        }
+      ],
+      "cause": "플레이어의 죄책감과 문병",
+      "result": "플레이어의 마음이 다소 놓임, 복도 소동으로 중단",
+      "source_text": "\"슐라우요? 손목 잘 붙여놨으니까 걱정하지 마요.\"",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_5_8",
+      "order": 8,
+      "title": "슐라우의 투약 거부 소동과 쇼크 실신",
+      "summary": "잠에서 깬 슐라우가 소마 성분을 의심하며 주사를 거부해 알라인·블루멘과 실랑이가 벌어진다. 다가선 알파를 본 슐라우는 극도로 놀라 구역질하다 다시 의식을 잃고, 블루멘이 진정제를 투여한다.",
+      "location_id": "NEW:헤일트라움_병실",
+      "time_id": "NEW:사고_다음날",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_006",
+        "CHAR_007",
+        "NEW:블루멘_랑잠",
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_006",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "CHAR_006",
+          "field": "alive",
+          "from": "true",
+          "to": "unconscious",
+          "source_text": "내가 주춤대는 동안 슐라우는 또 의식을 잃고 쓰러지고 말았다.",
+          "volatility": "transient",
+          "decays_to": "true",
+          "volatility_reason": "쇼크 실신 + 블루멘의 진정제 투여. 진정은 시간 경과로 해소되는 상태"
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_006",
+          "field": "knows",
+          "assumes": "소마의 존재와 그 성분에 대한 강한 경계심",
+          "source_text": "\"아니, 이건 소마 성분 없다니까?! 내가 확인했다고!\""
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우는 소마 성분을 의심해 투약을 거부하며, 알파(로봇)에 극심한 공포 반응을 보임",
+          "via": "direct",
+          "source_text": "나를 본 슐라우는 숨이 넘어갈 듯 놀라더니 이내 얼굴이 창백해지기 시작했다."
+        },
+        {
+          "character_id": "CHAR_006",
+          "info": "자신을 제압했던 로봇(알파)이 병실에 나타남",
+          "via": "direct",
+          "source_text": "내 기척을 느낀 슐라우가 나를 바라보기 전까지는 자각하지 못했다."
+        }
+      ],
+      "cause": "투약 거부 소동 중 알파가 무심코 접근",
+      "result": "슐라우 재실신, 진정제 투여",
+      "source_text": "\"싫어요. 안, 맞는다고요.\"",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_5_9",
+      "order": 9,
+      "title": "블루멘의 설명과 당부",
+      "summary": "건물 밖에서 블루멘이 슐라우가 원래 신경 과민 상태였다며 알파를 다독이고, 산책과 식사를 챙기라는 당부를 한다. 대화 중 블루멘이 의사임이 확인되고, 알파는 기분이 나아진 채 프리든으로 돌아간다.",
+      "location_id": "LOC_003",
+      "time_id": "NEW:사고_다음날",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "NEW:블루멘_랑잠",
+        "CHAR_007",
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "NEW:블루멘_랑잠",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우는 알파를 보기 전부터 신경이 과민한 상태였고, 이전에도 투약 거부 중 쇼크로 쓰러진 적이 있음",
+          "via": "told",
+          "source_text": "\"쟤, 아까도 약 안 맞겠다고 지랄하다가 쇼크 와서 뻗은 거예요.\""
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "블루멘의 직업이 의사임",
+          "via": "told",
+          "source_text": "\"아니?! 그럼 내가 의사지! 백순줄 알았어??\""
+        }
+      ],
+      "cause": "슐라우 소동 후 침울해진 알파에 대한 배려",
+      "result": "알파가 기분을 회복하고 프리든으로 복귀",
+      "source_text": "덕분에 기분이 한결 나아졌다. 블루멘에게 인사를 하고 프리든으로 돌아갔다.",
+      "certainty": "explicit"
+    }
+  ]
+}

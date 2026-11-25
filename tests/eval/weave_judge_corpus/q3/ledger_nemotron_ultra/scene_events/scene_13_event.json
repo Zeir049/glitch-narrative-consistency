@@ -1,0 +1,175 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "청문 자료 분할 업로드 지시",
+   "summary": "서율이 도현에게 청문 자료를 오전과 밤 두 번에 나누어 업로드하라고 지시하고, 도현이 이를 수행하기 시작한다.",
+   "location_id": "LOC_008",
+   "time_id": "NEW:기지_시각_오전_10시_경",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "from": "unknown",
+     "to": "청문 자료를 오전 10시경과 밤에 두 번 나누어 업로드해야 함",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "\"청문 자료가 커. 오전 창에 먼저 절반을 올리고 나머지는 밤에 올려. 두 번에 나누면 막히지 않아.\""
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "from": "unknown",
+     "to": "오전 10시쯤 위성이 한 번 지나감",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "\"10시쯤. 그때 위성 한 번 지나가잖아.\""
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "청문 자료의 크기가 커서 한 번에 업로드하면 막힘",
+     "source_text": "\"청문 자료가 커. 오전 창에 먼저 절반을 올리고 나머지는 밤에 올려. 두 번에 나누면 막히지 않아.\""
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "오전 10시경과 밤에 위성 통신 창이 열림",
+     "source_text": "\"10시쯤. 그때 위성 한 번 지나가잖아.\""
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "콘솔(업무 단말) 접근 권한",
+     "source_text": "도현이 콘솔에서 손을 뗐다. ... 큐 목록을 둘로 나누기 시작했다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "ability",
+     "assumes": "통신 업로드 큐 조작 능력",
+     "source_text": "큐 목록을 둘로 나누기 시작했다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "청문 자료를 오전 10시경과 밤에 두 번 나누어 업로드해야 함",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"청문 자료가 커. 오전 창에 먼저 절반을 올리고 나머지는 밤에 올려. 두 번에 나누면 막히지 않아.\""
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "오전 10시쯤 위성이 한 번 지나감",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"10시쯤. 그때 위성 한 번 지나가잖아.\""
+    }
+   ],
+   "cause": "청문 자료 용량이 커서 한 번에 업로드 시 차단될 위험이 있음",
+   "result": "도현이 업로드 큐를 오전/밤 두 차례로 분할 설정함",
+   "source_text": "\"청문 자료가 커. 오전 창에 먼저 절반을 올리고 나머지는 밤에 올려. 두 번에 나누면 막히지 않아.\" 서율이 말했다. \"오전에요.\" \"10시쯤. 그때 위성 한 번 지나가잖아.\" 도현이 콘솔에서 손을 뗐다. \"……네.\" 그러고는 큐 목록을 둘로 나누기 시작했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "서율의 통신실 퇴실 및 2층 복도 이동",
+   "summary": "서율이 통신실을 나와 2층 복도를 거쳐 계단을 내려간다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:기지_시각_오전_10시_경",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_008",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율은 통신실을 나왔다. 2층 복도는 영하 18도였고, 계단을 내려가는 동안 숨이 허옇게 흩어졌다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "영하 18도 환경에서 활동 가능한 신체 상태",
+     "source_text": "2층 복도는 영하 18도였고, 계단을 내려가는 동안 숨이 허옇게 흩어졌다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "계단 보행 가능",
+     "source_text": "계단을 내려가는 동안"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "두 사건은 연속된 시간 흐름 상에서 발생하며, 서율은 EVENT_6_1 직후 통신실을 떠났다.",
+     "source_text": "서율은 통신실을 나왔다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "2층 복도 기온이 영하 18도임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "2층 복도는 영하 18도였고"
+    }
+   ],
+   "cause": "통신실 업무(청문 자료 업로드 지시) 완료 후 이동",
+   "result": "서율이 2층 복도를 거쳐 계단으로 이동함",
+   "source_text": "서율은 통신실을 나왔다. 2층 복도는 영하 18도였고, 계단을 내려가는 동안 숨이 허옇게 흩어졌다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:55:13Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 52.89
+ }
+}

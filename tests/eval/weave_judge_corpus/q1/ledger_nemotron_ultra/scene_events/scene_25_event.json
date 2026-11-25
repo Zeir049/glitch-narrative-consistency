@@ -1,0 +1,101 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "정호가 수건을 들고 계단을 올라 다락방으로 들어감",
+   "summary": "정호가 수건을 안고 계단을 올라 다락방에 들어가 문을 닫는다. 어머니가 골방에서 자고 있어 삐걱거리는 셋째 칸을 피해 넷째 칸으로 건너뛴다.",
+   "location_id": "LOC_004",
+   "time_id": "NEW:십이월_첫날_밤_이후_새벽",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_003",
+     "to": "LOC_004",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 수건을 한 아름 안고 계단을 올라갔다. ... 정호는 다락방에 들어가 문을 닫았다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "수건 (한 아름)",
+     "source_text": "정호는 수건을 한 아름 안고 계단을 올라갔다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "계단을 소리 없이 오를 수 있음 (넷째 칸으로 건너뛰기)",
+     "source_text": "셋째 칸에서 발을 들어 넷째 칸으로 건너뛰었다. 수건이 흔들렸지만 소리는 나지 않았다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "alive",
+     "assumes": "unconscious (골방에서 잠)",
+     "source_text": "밑에서 어머니가 자고 있었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "assumes": "LOC_003",
+     "source_text": "골방 문은 닫혀 있었다. 밑에서 어머니가 자고 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "어머니가 골방에서 자고 있다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "밑에서 어머니가 자고 있었다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "계단 셋째 칸은 아버지 때부터 삐걱거렸고 고치자는 말이 없었다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "셋째 칸은 아버지 때부터 삐걱거렸다. 고치자는 말은 아무도 한 적이 없었다."
+    }
+   ],
+   "cause": "수건을 다락방(물건방)에 두러 올라감",
+   "result": "다락방에 들어가 문을 닫음, 어머니를 깨우지 않음",
+   "source_text": "정호는 수건을 한 아름 안고 계단을 올라갔다. 셋째 칸에서 발을 들어 넷째 칸으로 건너뛰었다. 수건이 흔들렸지만 소리는 나지 않았다. 밑에서 어머니가 자고 있었다. 골방 문은 닫혀 있었다. 어릴 때는 일부러 셋째 칸을 밟았다. 밟으면 아래에서 누가 이름을 불렀다. 지금은 부를 사람이 자고 있어서 밟지 않았다. 물건방에 수건을 내려놓고 내려올 때도 넷째 칸으로 건너뛰었다. 셋째 칸은 아버지 때부터 삐걱거렸다. 고치자는 말은 아무도 한 적이 없었다. 그것도 이 집 소리였다. 정호는 다락방에 들어가 문을 닫았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-27T04:53:46Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 13.19
+ }
+}

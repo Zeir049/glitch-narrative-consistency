@@ -1,0 +1,307 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 1,
+  "batch_id": "T2-R1-B",
+  "scene_id": "scene_17",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_17.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:35:44Z",
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:도시_CCTV_통합_관제",
+      "content": "도시 전역의 CCTV 영상은 모두 프리든 지하의 통합 관제실로 실시간 집결된다.",
+      "description": "1번가·3번가·공원·헤일트라움 뒷길 등 도시 전역 카메라 영상이 한 곳(통합 관제실)의 벽면 모니터로 실시간으로 모여 흐른다.",
+      "source_text": "모든 카메라 영상은 일단 여기로 모이죠. / 도시 전역의 CCTV 영상이 실시간으로 모여 흐르고 있었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "알라인의 안내를 받아 프리든 지하 통합 관제실에 처음 들어선 시점 화자.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S17_1",
+      "source_text": "알라인을 따라 프리든의 계단을 내려갔다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_007",
+      "name": "알라인 쉭살 (Allein Schicksal)",
+      "aliases": ["알라인"],
+      "entity_type": "person",
+      "description": "통합 관제실로 앞장서 안내하며 시설의 기능을 설명하는 인물.",
+      "traits": [
+        {
+          "trait": "상대에게 존댓말로 시설·상황을 설명하듯 말한다",
+          "trait_type": "speech",
+          "source_text": "여기가 통합 관제실이에요. 모든 카메라 영상은 일단 여기로 모이죠.",
+          "certainty": "inferred"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S17_1",
+      "source_text": "알라인을 따라 프리든의 계단을 내려갔다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "NEW:프리든_지하_통합_관제실",
+      "name": "통합 관제실 (프리든 지하)",
+      "description": "프리든의 계단을 내려간 지하에 있는 공간. 한쪽 벽면이 모니터로 가득 차 있고 도시 전역 CCTV 영상이 실시간으로 모인다. 의자가 있어 앉아서 화면을 볼 수 있다.",
+      "source_text": "여기가 통합 관제실이에요. / 문이 열리자 한쪽 벽면을 가득 채운 모니터들이 보였다.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:헤일트라움_뒷길",
+      "name": "헤일트라움 뒷길",
+      "description": "관제실 모니터에 CCTV 영상으로 비치는 구역 중 하나.",
+      "source_text": "1번가, 3번가, 공원, 헤일트라움 뒷길.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "NEW:관제실_모니터_벽면",
+      "name": "관제실 벽면 모니터군",
+      "description": "통합 관제실 한쪽 벽면을 가득 채운 모니터들. 도시 각 구역의 CCTV 영상을 동시에 표시한다.",
+      "first_appearance_event_id": "EVENT_S17_2",
+      "source_text": "한쪽 벽면을 가득 채운 모니터들이 보였다.",
+      "certainty": "explicit"
+    },
+    {
+      "object_id": "NEW:도시_전역_실시간_CCTV_영상",
+      "name": "도시 전역 실시간 CCTV 영상",
+      "description": "1번가·3번가·공원·헤일트라움 뒷길 등 도시 전역 카메라에서 관제실로 실시간으로 흘러드는 영상.",
+      "first_appearance_event_id": "EVENT_S17_2",
+      "source_text": "도시 전역의 CCTV 영상이 실시간으로 모여 흐르고 있었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [
+    {
+      "time_id": "NEW:관제실_감시_당일",
+      "expression": "오늘 (관제실에서 감시하기로 한 날)",
+      "description": "알라인이 '오늘은 여기서 편하게 봅시다'라고 말한 날. 구체적 일자는 원문에 명시되지 않는다.",
+      "timeline": "future_world",
+      "source_text": "오늘은 여기서 편하게 봅시다.",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S17_1",
+      "scene_id": "scene_17",
+      "order": 1,
+      "title": "알라인을 따라 프리든 지하로 내려감",
+      "summary": "화자가 알라인을 따라 프리든의 계단을 내려간다. 화자는 프리든 지하에 그런 공간이 있는 줄 몰랐다.",
+      "location_id": "LOC_005",
+      "time_id": "NEW:관제실_감시_당일",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002", "CHAR_007"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_007",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "from": "unknown",
+          "to": "프리든 지하에 별도의 공간이 존재함",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "지하에 이런 공간이 있는 줄은 몰랐다."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "not_knows: 프리든 지하 공간(통합 관제실)의 존재 — 이 사건 직전까지 몰랐음",
+          "source_text": "지하에 이런 공간이 있는 줄은 몰랐다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "자력으로 계단을 내려갈 수 있는 신체 상태 (미래 세계에서 활동 가능한 신체)",
+          "source_text": "알라인을 따라 프리든의 계단을 내려갔다."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "프리든 지하로 내려가는 계단과 그 아래 공간의 위치를 알고 있음 (앞장서 안내)",
+          "source_text": "알라인을 따라 프리든의 계단을 내려갔다."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "body_status",
+          "assumes": "자력으로 계단을 내려가며 타인을 인솔할 수 있는 신체 상태",
+          "source_text": "알라인을 따라 프리든의 계단을 내려갔다."
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S17_2",
+          "assumes": "이 계단을 내려간 직후 도착한 지하 공간이 EVENT_S17_2의 통합 관제실이며, 두 사건 사이에 다른 이동이나 시간 경과가 없다",
+          "source_text": "알라인을 따라 프리든의 계단을 내려갔다. / 문이 열리자 한쪽 벽면을 가득 채운 모니터들이 보였다."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "프리든 지하에 별도의 공간이 존재한다",
+          "via": "direct",
+          "retained": true,
+          "source_text": "지하에 이런 공간이 있는 줄은 몰랐다."
+        }
+      ],
+      "cause": "알라인이 화자를 프리든 지하로 데려감",
+      "result": "화자가 몰랐던 프리든 지하 공간에 도달함",
+      "source_text": "알라인을 따라 프리든의 계단을 내려갔다. 지하에 이런 공간이 있는 줄은 몰랐다.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_S17_2",
+      "scene_id": "scene_17",
+      "order": 2,
+      "title": "통합 관제실 입장과 CCTV 감시 착석",
+      "summary": "문이 열리자 벽면을 채운 모니터에 도시 전역 CCTV 영상이 실시간으로 흐르고 있었다. 알라인이 이곳이 통합 관제실이며 모든 카메라 영상이 여기로 모인다고 설명하고 오늘은 여기서 보자고 제안하자, 화자는 진작 여기서 볼 걸 그랬다고 답하며 의자에 앉는다.",
+      "location_id": "NEW:프리든_지하_통합_관제실",
+      "time_id": "NEW:관제실_감시_당일",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002", "CHAR_007"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_007",
+      "objects": ["NEW:관제실_모니터_벽면", "NEW:도시_전역_실시간_CCTV_영상"],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "location",
+          "from": "LOC_005",
+          "to": "NEW:프리든_지하_통합_관제실",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "문이 열리자 한쪽 벽면을 가득 채운 모니터들이 보였다. / 의자에 앉으니 화면 속 도시가 한눈에 들어왔다."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "location",
+          "from": "LOC_005",
+          "to": "NEW:프리든_지하_통합_관제실",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "여기가 통합 관제실이에요. 오늘은 여기서 편하게 봅시다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "from": "unknown",
+          "to": "통합 관제실의 존재와 기능 — 도시 모든 카메라 영상이 이곳으로 모임",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "여기가 통합 관제실이에요. 모든 카메라 영상은 일단 여기로 모이죠."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "통합 관제실의 명칭·기능과 도시 카메라 영상 집결 구조를 이미 알고 있음",
+          "source_text": "여기가 통합 관제실이에요. 모든 카메라 영상은 일단 여기로 모이죠."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "ability",
+          "assumes": "프리든 지하 통합 관제실에 출입하고 타인을 들일 수 있는 접근 권한이 있음",
+          "source_text": "오늘은 여기서 편하게 봅시다."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "ability",
+          "assumes": "음성으로 대화·설명이 가능함",
+          "source_text": "여기가 통합 관제실이에요."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "이전에도 CCTV 영상을 관제실이 아닌 다른 곳에서 확인해 온 작업이 진행 중이었음 ('진작 여기서 볼 걸'이 성립하려면 참이어야 함)",
+          "source_text": "오~ 진작 여기서 볼 걸 그랬네요."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "not_knows: 통합 관제실에서 CCTV를 볼 수 있다는 선택지 — 이 사건 전까지 알지 못했음",
+          "source_text": "오~ 진작 여기서 볼 걸 그랬네요."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "의자에 앉아 모니터 화면을 볼 수 있는 신체 상태",
+          "source_text": "의자에 앉으니 화면 속 도시가 한눈에 들어왔다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "다수 모니터의 영상을 동시에 시각적으로 인식·판독할 수 있음",
+          "source_text": "화면 속 도시가 한눈에 들어왔다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "음성으로 대화·응답이 가능함",
+          "source_text": "오~ 진작 여기서 볼 걸 그랬네요."
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S17_1",
+          "assumes": "이 통합 관제실이 EVENT_S17_1에서 내려간 프리든 계단 아래의 그 지하 공간이며, 화자와 알라인은 같은 이동으로 이곳에 도달했다",
+          "source_text": "지하에 이런 공간이 있는 줄은 몰랐다. / 여기가 통합 관제실이에요."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "프리든 지하 공간의 명칭이 '통합 관제실'이며 도시의 모든 카메라 영상이 이곳으로 모인다",
+          "via": "told",
+          "retained": true,
+          "source_text": "여기가 통합 관제실이에요. 모든 카메라 영상은 일단 여기로 모이죠."
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "1번가·3번가·공원·헤일트라움 뒷길 등 도시 전역 CCTV 영상을 관제실에서 실시간으로 한눈에 볼 수 있다",
+          "via": "direct",
+          "retained": true,
+          "source_text": "도시 전역의 CCTV 영상이 실시간으로 모여 흐르고 있었다. / 의자에 앉으니 화면 속 도시가 한눈에 들어왔다."
+        }
+      ],
+      "cause": "알라인이 오늘은 관제실에서 감시하자고 제안함",
+      "result": "화자가 관제실 의자에 앉아 도시 전역 CCTV를 한눈에 보게 됨",
+      "source_text": "문이 열리자 한쪽 벽면을 가득 채운 모니터들이 보였다. … 의자에 앉으니 화면 속 도시가 한눈에 들어왔다.",
+      "certainty": "explicit"
+    }
+  ]
+}

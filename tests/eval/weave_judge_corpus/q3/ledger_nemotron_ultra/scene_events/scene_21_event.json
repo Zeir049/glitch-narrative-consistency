@@ -1,0 +1,96 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:3월_25일_부터_4월_14일까지_21일간",
+   "expression": "3월 25일부터 4월 14일까지, 21일간",
+   "description": "관측 로그 기록 기간이자 극야 진입기 전체를 포함하는 21일 구간",
+   "timeline": "main",
+   "source_text": "\"3월 25일부터 4월 14일까지예요. 21일치.\" ... \"21일이면 극야 진입기가 통째로 들어가요.\"",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "가온이 관측 로그 기간을 설명함",
+   "summary": "가온이 노트북을 보여주며 관측 로그가 3월 25일부터 4월 14일까지 21일간 매일 밤 6시간씩 기록되었음을 설명한다. 이 기간이 극야 진입기 전체를 포함함을 강조한다.",
+   "location_id": "unknown",
+   "time_id": "NEW:3월_25일_부터_4월_14일까지_21일간",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [
+    "OBJ_028"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "assumes": "OBJ_028 (가온의 노트북)",
+     "source_text": "가온이 노트북을 돌려 놓았다"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "관측 로그 기록 기간(3월 25일~4월 14일, 21일간) 및 매일 밤 6시간씩 기록했음",
+     "source_text": "\"3월 25일부터 4월 14일까지예요. 21일치.\" \"그날부터 매일 밤 여섯 시간씩 돌렸어요. 하루도 안 빼먹었어요.\""
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "관측 로그의 첫 줄이 3월 25일임",
+     "source_text": "관측 로그의 첫 줄도 3월 25일이었다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "관측 로그가 3월 25일부터 4월 14일까지 21일간 매일 밤 6시간씩 기록됨",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"3월 25일부터 4월 14일까지예요. 21일치.\" \"그날부터 매일 밤 여섯 시간씩 돌렸어요. 하루도 안 빼먹었어요.\""
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "이 21일 기간이 극야 진입기 전체를 포함함",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"21일이면 극야 진입기가 통째로 들어가요. 그게 이 데이터의 값이에요.\""
+    }
+   ],
+   "cause": "가온이 서율에게 관측 로그 데이터의 기간과 의의를 설명하기 위해 노트북을 보여줌",
+   "result": "서율이 관측 로그의 기간(3월 25일~4월 14일, 21일)과 극야 진입기와의 연관성을 알게 됨",
+   "source_text": "\"기간이요.\" 가온이 노트북을 돌려 놓았다. \"3월 25일부터 4월 14일까지예요. 21일치.\" 관측 로그의 첫 줄도 3월 25일이었다. 서율은 화면을 보았다. \"3월 25일.\" \"네. 관측 모듈 전원 끊긴 날 밤부터요. 그날부터 매일 밤 여섯 시간씩 돌렸어요. 하루도 안 빼먹었어요.\" 가온은 노트북을 닫았다. \"21일이면 극야 진입기가 통째로 들어가요. 그게 이 데이터의 값이에요.\"",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:56:46Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 25.1
+ }
+}

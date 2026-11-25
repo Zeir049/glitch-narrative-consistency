@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S15_1",
+      "order": 1,
+      "title": "4번 방 문손잡이 파손",
+      "summary": "알파가 4번 방 문을 열다 힘 조절에 실패해 문손잡이를 통째로 구겨 뜯어낸다. 손잡이를 책상 위에 올려둔다.",
+      "location_id": "LOC_011",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "LOC_011",
+          "field": "condition",
+          "from": "unknown",
+          "to": "문손잡이 파손(뜯겨 나감)",
+          "source_text": "문손잡이가 통째로 떨어져 나왔다."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "힘 조절 불가 (살살 잡아도 금속이 구겨짐)",
+          "source_text": "아니 살살 잡았다고, 진짜로!"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "로봇 신체 (손끝 감각이 키보드뿐이라 쥐는 힘을 가늠 못함)",
+          "source_text": "손끝에 닿는 건 여전히 가벼운 플라스틱 키보드뿐이라"
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "문을 여는 일상 동작",
+      "result": "손잡이 파손, 알라인에게 들킬 걱정",
+      "source_text": "뚝. 문손잡이가 통째로 떨어져 나왔다.",
+      "certainty": "explicit"
+    }
+  ]
+}

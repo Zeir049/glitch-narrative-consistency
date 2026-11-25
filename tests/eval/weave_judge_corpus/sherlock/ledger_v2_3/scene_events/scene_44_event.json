@@ -1,0 +1,79 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [
+  {
+   "location_id": "NEW:보스콤_못",
+   "name": "보스콤 못",
+   "description": "폭이 오십 야드쯤 되는 못으로, 갈대가 빙 둘러 서 있고, 물가에서 해서리 농장과 터너 씨의 사유 공원이 경계를 이룸. 숲은 농장 쪽으로 빽빽하며, 나무 가장자리와 갈대 사이에는 스무 걸음쯤 되는 축축한 풀밭이 있음. 못으로 들어가는 길은 농장이나 영지를 지나는 것뿐임.",
+   "source_text": "보스콤 못은 폭이 오십 야드쯤 되었고 갈대가 빙 둘러 서 있었다. 해서리 농장과 터너 씨의 사유 공원이 바로 그 물가에서 경계를 이루었다. 숲은 농장 쪽으로 빽빽했고, 나무 가장자리와 갈대 사이에는 스무 걸음쯤 되는 축축한 풀밭이 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "보스콤 못 물가에서 발자국 조사",
+   "summary": "홈즈가 보스콤 못의 축축한 풀밭에 방수포를 펴고 엎드려 렌즈로 자국을 살핀다.",
+   "location_id": "NEW:보스콤_못",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "렌즈",
+     "source_text": "홈즈는 방수포를 펴고 그 위에 엎드려 렌즈를 들이댔다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "방수포",
+     "source_text": "홈즈는 방수포를 펴고 그 위에 엎드려"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "보스콤 못의 지형과 접근로(농장·영지를 통해서만 진입 가능), 풀밭의 습기로 발자국이 오래 남음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "보스콤 못은 폭이 오십 야드쯤 되었고 갈대가 빙 둘러 서 있었다. … 땅이 습해 발자국은 오래 남았다. … 그 못으로 들어오는 길은 농장이나 영지를 지나는 것뿐이었다."
+    }
+   ],
+   "cause": "보스콤 못 사건의 단서 확보를 위한 현장 조사",
+   "result": "못의 지형·습기·접근로에 대한 관측 정보를 홈즈가 얻게 됨",
+   "source_text": "보스콤 못은 폭이 오십 야드쯤 되었고 갈대가 빙 둘러 서 있었다. 해서리 농장과 터너 씨의 사유 공원이 바로 그 물가에서 경계를 이루었다. 숲은 농장 쪽으로 빽빽했고, 나무 가장자리와 갈대 사이에는 스무 걸음쯤 되는 축축한 풀밭이 있었다. 땅이 습해 발자국은 오래 남았다. 홈즈는 방수포를 펴고 그 위에 엎드려 렌즈를 들이댔다. 그 못으로 들어오는 길은 농장이나 영지를 지나는 것뿐이었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:07:57Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 8.85
+ }
+}

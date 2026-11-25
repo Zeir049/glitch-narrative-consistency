@@ -1,0 +1,128 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "정호, 뒷문으로 금호탕 출입",
+   "summary": "정호가 밤 11시경 정문 셔터가 내려진 금호탕의 뒷문으로 들어가 빗장을 걸고 안으로 들어간다.",
+   "location_id": "LOC_009",
+   "time_id": "TIME_014",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_009",
+    "OBJ_021"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_009",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "열한 시가 다 되어 정호는 뒷문 앞에 섰다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_021",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 잠바 주머니에서 고리를 꺼냈다. 정문 것과 뒷문 것, 두 개가 달린 고리였다."
+    },
+    {
+     "entity": "OBJ_009",
+     "field": "body_status",
+     "from": "잠김",
+     "to": "열림",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "뒷문 열쇠를 넣고 돌리자 문이 안으로 열렸다."
+    },
+    {
+     "entity": "OBJ_009",
+     "field": "body_status",
+     "from": "열림",
+     "to": "빗장 걸림",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 들어가서 빗장을 도로 걸었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_001 (정문 열쇠도 고리에 있음)",
+     "source_text": "정문 것과 뒷문 것, 두 개가 달린 고리였다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "걸을 수 있고 열쇠를 조작할 수 있는 신체 상태",
+     "source_text": "뒷문 열쇠를 넣고 돌리자 문이 안으로 열렸다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "뒷문 빗장이 안에서 걸리는 구조임을 앎",
+     "source_text": "정호는 들어가서 빗장을 도로 걸었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "보일러가 가동 중임 (지하에서 소리 남)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "지하에서 보일러 도는 소리가 났고"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "위층(목욕탕 영업층)은 인기척이 없음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "위층은 조용했다."
+    }
+   ],
+   "cause": "정문 셔터가 내려져 있어 뒷문으로 출입함",
+   "result": "금호탕 내부로 진입, 보일러 가동 확인",
+   "source_text": "열한 시가 다 되어 정호는 뒷문 앞에 섰다. 정문 셔터는 여덟 시에 자기 손으로 내렸고, 골목을 돌아오는 편이 가까웠다. 쇠문은 안에서 빗장이 걸려 있었다. 그래도 열쇠가 있으니 상관없었다. 정호는 잠바 주머니에서 고리를 꺼냈다. 정문 것과 뒷문 것, 두 개가 달린 고리였다. 뒷문 열쇠를 넣고 돌리자 문이 안으로 열렸다. 정호는 들어가서 빗장을 도로 걸었다. 지하에서 보일러 도는 소리가 났고 위층은 조용했다. 스무아흐렛날 설비집에 넣을 계약금 생각이 났다가 말았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-30T09:30:43Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 24.91
+ }
+}

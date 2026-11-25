@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:CCTV_중앙_관제",
+      "content": "도시 전역의 CCTV 영상이 프리든 지하 통합 관제실로 실시간으로 모인다",
+      "description": "알라인이 통합 관제실을 소개하며 모든 카메라 영상이 이곳으로 모인다고 설명.",
+      "source_text": "여기가 통합 관제실이에요. 모든 카메라 영상은 일단 여기로 모이죠.",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [],
+  "locations": [
+    {
+      "location_id": "NEW:프리든_통합_관제실",
+      "name": "프리든 지하 통합 관제실",
+      "description": "프리든 지하의, 벽면 가득 모니터가 설치된 CCTV 관제 공간.",
+      "source_text": "한쪽 벽면을 가득 채운 모니터들이 보였다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S17_1",
+      "order": 1,
+      "title": "통합 관제실 방문",
+      "summary": "알라인이 알파를 프리든 지하 통합 관제실로 안내한다. 도시 전역의 CCTV 영상이 실시간으로 벽면 모니터에 모여 흐른다.",
+      "location_id": "NEW:프리든_통합_관제실",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_007",
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_007",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_007",
+          "field": "ability",
+          "assumes": "관제실 출입 및 안내 권한",
+          "source_text": "알라인을 따라 프리든의 계단을 내려갔다."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "프리든 지하에 도시 전역 CCTV가 모이는 통합 관제실이 있음",
+          "via": "told",
+          "source_text": "모든 카메라 영상은 일단 여기로 모이죠."
+        }
+      ],
+      "cause": "영상 검토 편의",
+      "result": "관제실에서 검토 시작",
+      "source_text": "\"여기가 통합 관제실이에요. 모든 카메라 영상은 일단 여기로 모이죠.\"",
+      "certainty": "explicit"
+    }
+  ]
+}

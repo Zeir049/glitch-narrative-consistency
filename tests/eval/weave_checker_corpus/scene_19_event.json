@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S19_1",
+      "order": 1,
+      "title": "프리든 정문에서 출입 거부",
+      "summary": "알파가 프리든 정문 앞에 섰지만 문이 열리지 않아 알라인의 출근을 기다린다. 알라인은 권한 없는 로봇은 못 들어온다며 동행 입장시킨다.",
+      "location_id": "LOC_005",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002",
+        "CHAR_007"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_007",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "프리든 단독 출입 불가 (출입 권한 없음)",
+          "source_text": "권한 없는 로봇은 원래 못 들어와요~ 제가 데리고 들어가야죠."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "출근",
+      "result": "알라인 동행으로 입장",
+      "source_text": "정문 앞에 서자, 문은 꿈쩍도 하지 않았다.",
+      "certainty": "explicit"
+    }
+  ]
+}

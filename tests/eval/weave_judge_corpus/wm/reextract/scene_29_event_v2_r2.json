@@ -1,0 +1,236 @@
+{
+  "schema_version": 2,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 2,
+  "batch_id": "T2-R2-C",
+  "scene_id": "scene_29",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_29.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r3)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T13:21:33Z",
+  "episode": 6,
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:접속_기상_지점_규칙",
+      "content": "접속하면 매번 충전 플랫폼이 있는 헤일트라움 창고에서 눈을 뜬다.",
+      "description": "플레이어의 로봇 신체는 충전 플랫폼이 놓인 장소에서 기동을 시작하므로, 접속 시 기상 지점이 그 창고로 고정된다.",
+      "source_text": "접속하면 매번 헤일트라움 1층 창고에서 눈을 뜬다. 내 충전 플랫폼은 여전히 그 창고에만 있으니까.",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "접속해 미래 세계의 로봇 신체로 활동하는 화자. 창고에서 기상해 프리든까지 도보로 이동한다.",
+      "traits": [
+        {
+          "trait": "일상을 출근길에 빗대어 혼잣말로 푸념하는 말투",
+          "trait_type": "speech",
+          "source_text": "\"아침마다 이 출근길이라니. 회사가 코앞인 자취생이 부러울 지경이야.\"",
+          "certainty": "inferred"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S29_1",
+      "source_text": "접속하면 매번 헤일트라움 1층 창고에서 눈을 뜬다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_004",
+      "name": "헤일트라움 제1창고",
+      "description": "원문 표현은 '헤일트라움 1층 창고'. 로봇들이 줄지어 서 있고 플레이어의 충전 플랫폼이 놓인 창고. 뒷문이 있다.",
+      "source_text": "접속하면 매번 헤일트라움 1층 창고에서 눈을 뜬다. / 줄지어 선 로봇들 사이에서 걸어 나와, 뒷문을 지나,",
+      "certainty": "inferred"
+    },
+    {
+      "location_id": "LOC_006",
+      "name": "1번가",
+      "description": "헤일트라움 창고 뒷문에서 프리든으로 가는 경로에 있는 거리.",
+      "source_text": "뒷문을 지나, 1번가를 따라, 프리든까지.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "LOC_005",
+      "name": "프리든 (Friden)",
+      "description": "플레이어의 방(4번 방)이 있는 시설. 창고에서 걸어 도착하는 목적지.",
+      "source_text": "프리든 앞에 도착해서야 내 방이 4번 방이라는 사실이 실감 났다.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "LOC_011",
+      "name": "프리든 4번 방 (알파의 방)",
+      "description": "프리든 안쪽에 있는 플레이어의 방. 잠은 이 방이 아니라 창고에서 잔다.",
+      "source_text": "내 방이 4번 방이라는 사실이 실감 났다. 방은 저 안에 있는데, 잠은 창고에서 잔다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "NEW:충전_플랫폼",
+      "name": "충전 플랫폼",
+      "description": "플레이어의 로봇 신체가 충전·대기하는 설비. 헤일트라움 창고에만 있다.",
+      "first_appearance_event_id": "EVENT_S29_1",
+      "source_text": "내 충전 플랫폼은 여전히 그 창고에만 있으니까.",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [
+    {
+      "time_id": "NEW:접속_직후_아침_출근길",
+      "expression": "접속 직후의 아침 (창고에서 프리든으로 향하는 출근길)",
+      "description": "접속할 때마다 반복되는 아침 이동 시간대. 이 장면은 그 중 '오늘'에 해당한다.",
+      "timeline": "future_world",
+      "source_text": "\"아침마다 이 출근길이라니.\" / 익숙해질 만도 한데, 오늘따라 길이 길게 느껴졌다.",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S29_1",
+      "scene_id": "scene_29",
+      "order": 1,
+      "title": "창고에서 기상해 프리든으로 출발",
+      "summary": "접속한 플레이어가 충전 플랫폼이 있는 헤일트라움 창고에서 눈을 뜨고, 줄지어 선 로봇들 사이를 빠져나와 뒷문과 1번가를 거쳐 프리든으로 향한다. 이동하며 매일의 출근길을 푸념한다.",
+      "location_id": "LOC_004",
+      "time_id": "NEW:접속_직후_아침_출근길",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["NEW:충전_플랫폼"],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "location",
+          "from": "unknown",
+          "to": "LOC_004",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "inferred",
+          "certainty_reason": "원문 표현은 '헤일트라움 1층 창고'로, 기존 ID의 명칭('헤일트라움 제1창고')과 문자 그대로 일치하지는 않는다",
+          "source_text": "접속하면 매번 헤일트라움 1층 창고에서 눈을 뜬다."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "충전 플랫폼에서 충전·대기하다 기동하는 로봇 신체",
+          "source_text": "내 충전 플랫폼은 여전히 그 창고에만 있으니까."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "NEW:충전_플랫폼 (본인 전용으로 그 창고에 있음)",
+          "source_text": "내 충전 플랫폼은 여전히 그 창고에만 있으니까."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "접속할 때마다 헤일트라움 창고에서 기상한다는 반복적 사실",
+          "source_text": "접속하면 매번 헤일트라움 1층 창고에서 눈을 뜬다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "창고 뒷문에서 1번가를 거쳐 프리든에 이르는 경로",
+          "source_text": "뒷문을 지나, 1번가를 따라, 프리든까지."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "프리든이 자신이 매일 출근하듯 향하는 목적지(근무·소속 시설)라는 것",
+          "source_text": "\"아침마다 이 출근길이라니. 회사가 코앞인 자취생이 부러울 지경이야.\""
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S29_2",
+          "assumes": "창고에서 출발한 이 이동이 끊김 없이 이어져 같은 아침에 프리든 도착으로 연결된다",
+          "source_text": "뒷문을 지나, 1번가를 따라, 프리든까지. / 프리든 앞에 도착해서야"
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "접속으로 로봇 신체가 창고의 충전 플랫폼에서 기동함",
+      "result": "플레이어가 창고를 나와 1번가를 따라 프리든으로 이동함",
+      "source_text": "접속하면 매번 헤일트라움 1층 창고에서 눈을 뜬다. 내 충전 플랫폼은 여전히 그 창고에만 있으니까. 줄지어 선 로봇들 사이에서 걸어 나와, 뒷문을 지나, 1번가를 따라, 프리든까지.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_S29_2",
+      "scene_id": "scene_29",
+      "order": 2,
+      "title": "프리든 앞 도착과 4번 방 자각",
+      "summary": "평소보다 길게 느껴진 길 끝에 프리든 앞에 도착한 플레이어는 자기 방이 4번 방이라는 사실을 실감하며, 방은 프리든 안에 있는데 잠은 창고에서 자는 생활을 이상하다고 여긴다.",
+      "location_id": "LOC_005",
+      "time_id": "NEW:접속_직후_아침_출근길",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "location",
+          "from": "LOC_004",
+          "to": "LOC_005",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "프리든 앞에 도착해서야"
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "자신에게 배정된 방이 프리든 4번 방(LOC_011)이라는 것",
+          "source_text": "내 방이 4번 방이라는 사실이 실감 났다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "취침(충전)을 배정된 방이 아니라 창고의 충전 플랫폼에서 하는 로봇 신체",
+          "source_text": "방은 저 안에 있는데, 잠은 창고에서 잔다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "이 출근길을 여러 번 반복해 왔다는 것(오늘의 체감을 평소와 비교할 수 있음)",
+          "source_text": "익숙해질 만도 한데, 오늘따라 길이 길게 느껴졌다."
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S29_1",
+          "assumes": "EVENT_S29_1에서 기상·취침 장소로 서술된 창고와, 여기서 '잠은 창고에서 잔다'는 창고가 같은 장소를 가리켜야 한다",
+          "source_text": "접속하면 매번 헤일트라움 1층 창고에서 눈을 뜬다. / 방은 저 안에 있는데, 잠은 창고에서 잔다."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "창고에서 출발한 도보 이동이 프리든 앞에서 끝남",
+      "result": "플레이어가 프리든 앞에 도착하고, 방과 취침 장소가 분리된 생활을 자각함",
+      "source_text": "익숙해질 만도 한데, 오늘따라 길이 길게 느껴졌다. 프리든 앞에 도착해서야 내 방이 4번 방이라는 사실이 실감 났다. 방은 저 안에 있는데, 잠은 창고에서 잔다. 이상한 생활이다.",
+      "certainty": "explicit"
+    }
+  ]
+}

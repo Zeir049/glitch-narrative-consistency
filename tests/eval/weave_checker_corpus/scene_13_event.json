@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:헤일트라움_공장설",
+      "content": "헤일트라움은 소마를 만드는 공장이며 환자를 받지 않는다 (주민의 주장)",
+      "description": "공원 주민이 헤일트라움을 공장으로 인식하고 환자·출입을 부정함.",
+      "source_text": "저긴 소마 만드는 공장이에요. 환자는 무슨. 사람이 드나드는 것도 못 봤는걸요.",
+      "certainty": "uncertain"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "NEW:공원의_주민",
+      "name": "공원의 주민",
+      "aliases": [],
+      "entity_type": "person",
+      "description": "공원 벤치에서 알파에게 말을 건 주민.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S13_1",
+      "source_text": "옆자리의 주민이 말을 걸어왔다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S13_1",
+      "order": 1,
+      "title": "주민의 '헤일트라움 공장' 발언",
+      "summary": "공원에서 주민이 헤일트라움을 소마 공장이라 부르며 환자도 출입도 없다고 주장한다. 알파는 답하지 못한다.",
+      "location_id": "LOC_007",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "NEW:공원의_주민",
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "NEW:공원의_주민",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "NEW:공원의_주민",
+          "field": "knows",
+          "assumes": "헤일트라움이 공장이라는 (자신의) 인식",
+          "source_text": "우리 동네 살면서 그것도 몰라요?"
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "주민들이 헤일트라움을 병원이 아닌 공장으로 알고 있음",
+          "via": "told",
+          "source_text": "저긴 소마 만드는 공장이에요."
+        }
+      ],
+      "cause": "주민의 말 걸기",
+      "result": "알파의 어색한 침묵",
+      "source_text": "\"병원요? 하하, 저긴 소마 만드는 공장이에요.\"",
+      "certainty": "explicit"
+    }
+  ]
+}

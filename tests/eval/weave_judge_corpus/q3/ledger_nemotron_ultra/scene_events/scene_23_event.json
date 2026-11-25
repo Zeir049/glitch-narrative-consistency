@@ -1,0 +1,147 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:5월 16일 저녁",
+   "expression": "5월 16일 저녁",
+   "description": "기지 시각 5월 16일 저녁 시간대",
+   "timeline": "main",
+   "source_text": "5월 16일 저녁",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "카림의 예비 부품 상자 이동 및 재고 확인",
+   "summary": "카림이 밤에 급히 쓸 예비 부품 상자를 S-2 선반에서 자기 방으로 옮겼다가 설비실 옆 R-5 문 앞으로 가져와 재고를 확인한다. 서율이 이를 목격하고 수첩 사용 이유를 묻는다.",
+   "location_id": "LOC_016",
+   "time_id": "NEW:5월 16일 저녁",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_018",
+    "OBJ_017"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_018",
+     "field": "location",
+     "from": "LOC_018",
+     "to": "LOC_016",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "밤에 급히 쓸지 몰라 S-2 선반 대신 자기 방에 옮겨 둔 상자였다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_018",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림이 소모품 상자를 꺼내고 있었다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_017",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림은 종이 수첩을 꺼내 재고를 적었다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_018 (소모품 상자 소지)",
+     "source_text": "카림이 소모품 상자를 꺼내고 있었다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "부하 21킬로와트 유지 중",
+     "source_text": "부하 21킬로와트는 유지되지만"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "밤에 필터 교체 필요 가능성",
+     "source_text": "밤에 급히 필터를 갈아야 할 수 있으니까요"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "종이 수첩으로 재고 관리 가능 (전기 없이 작동)",
+     "source_text": "전기가 나가도 읽을 수 있으니까요"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "카림이 종이 수첩을 습관적으로 사용함",
+     "source_text": "여전히 그 수첩에 적네"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "카림이 밤 대비 예비 부품을 자기 방에 옮겨뒀다가 설비실 앞으로 가져옴",
+     "via": "direct",
+     "retained": true,
+     "source_text": "밤에 급히 쓸지 몰라 S-2 선반 대신 자기 방에 옮겨 둔 상자였다"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "현재 기지 부하가 21킬로와트로 유지 중",
+     "via": "told",
+     "retained": true,
+     "source_text": "부하 21킬로와트는 유지되지만"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "카림이 종이 수첩을 쓰는 이유는 정전 대비",
+     "via": "told",
+     "retained": true,
+     "source_text": "전기가 나가도 읽을 수 있으니까요"
+    }
+   ],
+   "cause": "야간 비상 사태 대비 예비 부품 사전 배치",
+   "result": "예비 필터 등 소모품 상자가 설비실 인근에 비치됨, 서율이 카림의 수첩 사용 이유 파악",
+   "source_text": "5월 16일 저녁, 1층 설비실 옆 R-5 문 앞에서 카림이 소모품 상자를 꺼내고 있었다. 밤에 급히 쓸지 몰라 S-2 선반 대신 자기 방에 옮겨 둔 상자였다. 다가온 서율이 상자 안의 예비 필터를 보며 물었다. \"밤에 설비실에서 쓸 예비 부품부터 챙기는 거야?\" \"네, 기지장님. 부하 21킬로와트는 유지되지만 밤에 급히 필터를 갈아야 할 수 있으니까요.\" 카림은 종이 수첩을 꺼내 재고를 적었다. \"여전히 그 수첩에 적네.\" \"전기가 나가도 읽을 수 있으니까요.\"",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:49:54Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 50.6
+ }
+}

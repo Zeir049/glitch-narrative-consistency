@@ -1,0 +1,180 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 3,
+  "batch_id": "T2-R3-A",
+  "scene_id": "scene_06",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_06.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r2)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T13:22:09Z",
+  "worldview_rules": [],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": [
+        "나",
+        "알파"
+      ],
+      "entity_type": "person",
+      "description": "제1창고의 피해 조사를 마무리하러 들른 화자.",
+      "traits": [
+        {
+          "trait": "혼잣말로 대상에 애착을 드러내는 농담조 말투",
+          "trait_type": "speech",
+          "source_text": "저거 만들다 만 것 같이 생긴 게 은근 정이 간단 말이지.",
+          "certainty": "inferred"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S06_1",
+      "source_text": "피해 조사를 마무리할 겸 제1창고에 들렀다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_004",
+      "name": "헤일트라움 제1창고",
+      "description": "로봇들이 제자리로 돌아가고 바닥이 치워진, 정리가 끝난 창고. 구석에 선반이 있다.",
+      "source_text": "로봇들은 가지런히 제자리로 돌아가 있었고, 바닥도 말끔히 치워져 있었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "OBJ_006",
+      "name": "불발탄 (2차 폭탄)",
+      "description": "어른 주먹만 한 구형의 투박한 물건. 그날 불발된 두 번째 폭탄으로, 창고 구석 선반 위에 놓여 있다.",
+      "first_appearance_event_id": "EVENT_S06_1",
+      "source_text": "어른 주먹만 한 구형의 그 투박한 물건",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [
+    {
+      "time_id": "NEW:피해_조사_마무리_시점",
+      "expression": "피해 조사를 마무리하는 시점",
+      "description": "창고 정리가 끝난 뒤, 화자가 피해 조사를 마무리하려고 제1창고에 다시 들른 시점.",
+      "timeline": "future_world",
+      "source_text": "피해 조사를 마무리할 겸 제1창고에 들렀다.",
+      "certainty": "inferred"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S06_1",
+      "scene_id": "scene_06",
+      "order": 1,
+      "title": "정리된 제1창고와 선반 위의 불발탄",
+      "summary": "피해 조사를 마무리하려 제1창고에 들른 화자는 로봇들이 제자리로 돌아가고 바닥이 치워진 것을 확인한다. 구석 선반 위에는 그날의 두 번째 폭탄이 찌그러진 자국 하나 없이 온전한 채 놓여 있었고, 화자는 이번에는 그것을 집어 들지 않기로 한다.",
+      "location_id": "LOC_004",
+      "time_id": "NEW:피해_조사_마무리_시점",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [
+        "OBJ_006"
+      ],
+      "state_changes": [
+        {
+          "entity": "LOC_004",
+          "field": "condition",
+          "from": "unknown",
+          "to": "로봇 제자리 정렬·바닥 청소 완료",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "inferred",
+          "certainty_reason": "원문은 정리된 결과만 서술하고 이전 상태를 명시하지 않는다 — from은 정황 미상",
+          "source_text": "로봇들은 가지런히 제자리로 돌아가 있었고, 바닥도 말끔히 치워져 있었다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "from": "unknown",
+          "to": "제1창고 정리 완료 및 불발탄이 선반 위에 온전히 놓여 있음",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "그리고 구석의 선반 위. 그날의 두 번째 폭탄이 불발된 채 고스란히 놓여 있었다. 멀쩡했다. 찌그러진 자국 하나 없이."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "제1창고 폭발 사고의 피해 조사를 진행 중이며 아직 마무리되지 않았음",
+          "source_text": "피해 조사를 마무리할 겸 제1창고에 들렀다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "그날 제1창고에서 두 번째 폭탄이 불발되었다는 사실",
+          "source_text": "그날의 두 번째 폭탄이 불발된 채 고스란히 놓여 있었다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "과거에 이 불발탄을 집어 든 적이 있고 그 결과가 좋지 않았음 ('이번엔'·'학습'이 이전 시도를 전제)",
+          "source_text": "이번엔 집어 들지 않기로 했다. 나도 학습이란 걸 하니까."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "손에 쥔 물건을 의도치 않게 망가뜨릴 수 있는 힘 조절 불가 — 그래서 집기를 스스로 피함",
+          "source_text": "이번엔 집어 들지 않기로 했다. 나도 학습이란 걸 하니까."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "미래 세계의 신체로 창고 내부를 직접 돌아다니며 관찰 가능한 상태",
+          "source_text": "피해 조사를 마무리할 겸 제1창고에 들렀다."
+        },
+        {
+          "entity": "OBJ_006",
+          "field": "condition",
+          "assumes": "불발 상태 그대로 온전함 — 찌그러진 자국 없음",
+          "source_text": "멀쩡했다. 찌그러진 자국 하나 없이."
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "제1창고가 정리되어 로봇과 바닥이 원상태로 돌아옴",
+          "via": "direct",
+          "retained": true,
+          "source_text": "로봇들은 가지런히 제자리로 돌아가 있었고, 바닥도 말끔히 치워져 있었다."
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "불발된 두 번째 폭탄이 구석 선반 위에 찌그러진 자국 없이 놓여 있음",
+          "via": "direct",
+          "retained": true,
+          "source_text": "그날의 두 번째 폭탄이 불발된 채 고스란히 놓여 있었다. 멀쩡했다. 찌그러진 자국 하나 없이."
+        }
+      ],
+      "cause": "피해 조사를 마무리하기 위해 제1창고를 다시 방문함.",
+      "result": "창고가 정리된 것과 불발탄이 선반 위에 온전히 놓인 것을 확인하고, 이번에는 집어 들지 않기로 결정함.",
+      "source_text": "피해 조사를 마무리할 겸 제1창고에 들렀다. … 어른 주먹만 한 구형의 그 투박한 물건을 이번엔 집어 들지 않기로 했다. 나도 학습이란 걸 하니까.",
+      "certainty": "explicit"
+    }
+  ]
+}

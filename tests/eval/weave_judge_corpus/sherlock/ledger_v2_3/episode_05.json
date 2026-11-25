@@ -1,0 +1,4488 @@
+{
+ "schema_version": 2,
+ "episode": 5,
+ "worldview_rules": [
+  {
+   "rule_id": "NEW:입이_비뚤어진_사내",
+   "content": "스토리 제목 '입이 비뚤어진 사내' (VI) — 본 화는 이 사건을 다룬다",
+   "description": "원문의 챕터 제목",
+   "source_text": "VI. 입이 비뚤어진 사내",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:아편_흡연_방식",
+   "content": "아편굴에서는 아편을 금속 파이프 대롱에서 태워 흡입한다",
+   "description": "원문이 묘사한 아편 흡연 도구",
+   "source_text": "타는 독물이 금속 파이프 대롱 안에서 세지거나 잦아듦에 따라 밝아졌다 흐려졌다 하며 어른거렸다",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:휘트니_아편_중독_원인",
+   "content": "아이자 휘트니는 대학 시절 드퀸시 글에 영향받아 아편에 중독되었다",
+   "description": "중독의 기원",
+   "source_text": "드퀸시가 자신의 꿈과 감각을 묘사한 글을 읽고서, 그는 같은 효과를 내 보려고 담배에 아편팅크를 흠뻑 적셨던 것이다",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "NEW:휴분_동전으로_코트_가라앉힘",
+   "content": "휴 분은 자신의 구걸 재산을 코트 주머니에 쑤셔 넣어 가라앉게 만들었다",
+   "description": "코트가 밀물에 떠오르지 않도록 동전으로 무게를 보강한 행동",
+   "source_text": "자신의 구걸로 모아 둔 재산이 있는 비밀 은닉처로 달려가, 손에 잡히는 대로 모든 동전을 주머니에 쑤셔 넣어 코트가 확실히 가라앉게 만들네",
+   "certainty": "inferred"
+  }
+ ],
+ "characters": [
+  {
+   "character_id": "CHAR_038",
+   "name": "케이트 휘트니",
+   "aliases": [
+    "케이트"
+   ],
+   "entity_type": "person",
+   "description": "아이자 휘트니의 아내. 왓슨 부인의 오랜 친구이자 학교 동창. 젊고 소심한 여성.",
+   "traits": [
+    {
+     "trait": "젊고 소심한 여성",
+     "trait_type": "personality",
+     "source_text": "젊고 소심한 여자인 그녀가",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_5_2",
+   "source_text": "젊고 소심한 여자인 그녀가 어떻게 그런 곳에 들어가서 그를 둘러싼 불한당들 사이에서 남편을 끌어낼 수 있었을까?",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_039",
+   "name": "고 일라이어스 휘트니",
+   "aliases": [
+    "일라이어스 휘트니 신학박사"
+   ],
+   "entity_type": "person",
+   "description": "아이자 휘트니의 형. 세인트 조지 신학대학 학장이었던 인물 (사망).",
+   "traits": [
+    {
+     "trait": "세인트 조지 신학대학 학장 (사망한 인물)",
+     "trait_type": "personality",
+     "source_text": "세인트 조지 신학대학 학장이었던 고 일라이어스 휘트니 신학박사",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_5_1",
+   "source_text": "세인트 조지 신학대학 학장이었던 고 일라이어스 휘트니 신학박사의 동생인 아이자 휘트니는",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_019",
+   "name": "네빌 세인트클레어",
+   "entity_type": "person",
+   "aliases": [
+    "세인트클레어",
+    "휴 분"
+   ],
+   "first_appearance_event_id": "EVENT_5_23",
+   "source_text": "휴 분이 그의 실종과 무슨 관계 있는지",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_020",
+   "name": "세인트클레어 부인",
+   "aliases": [],
+   "entity_type": "person",
+   "description": "네빌 세인트클레어의 아내. 남편의 생사에 대해 홈즈에게 상담하러 온 젊은 부인.",
+   "traits": [
+    {
+     "trait": "남편의 기분이나 상태에 예민하게 공감하는 성격",
+     "trait_type": "personality",
+     "source_text": "저희 사이에는 아주 예민한 공감이 있어서, 그이에게 나쁜 일이 생기면 저는 알 수 있을 거예요.",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_5_34",
+   "source_text": "그녀가 다시 말했다, 양탄자 위에 서서 등나무 의자에 몸을 기댄 그를 날카롭게 내려다보며.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_001",
+   "name": "셜록 홈즈",
+   "aliases": [
+    "홈즈"
+   ],
+   "entity_type": "person",
+   "description": "추리를 담당하는 탐정",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_5_41",
+   "source_text": "셜록 홈즈는 그의 곁 소파에 앉아 다정하게 어깨를 두드렸다.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_002",
+   "name": "왓슨",
+   "entity_type": "person",
+   "description": "홈즈의 동료, 의사",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_5_41",
+   "source_text": "내 평생 그런 광경은 본 적이 없다.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_023",
+   "name": "브래드스트리트",
+   "entity_type": "person",
+   "description": "경위",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_5_41",
+   "source_text": "브래드스트리트 경위는 분명 당신이 저희에게 말씀하시는 것을 기록해서 관계 당국에 제출할 겁니다.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_024",
+   "name": "라스카",
+   "entity_type": "person",
+   "description": "스완덤 레인에서 세인트클레어가 묵던 초라한 소굴의 주인",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_5_54",
+   "source_text": "이 라스카는 제게서 방세를 넉넉히 받고 있었으니, 저는 제 비밀이 그의 손에서 안전하다는 것을 알고 있었습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_040",
+   "name": "거지로 분장한 세인트클레어",
+   "entity_type": "person",
+   "description": "분장·가발로 흉터 얼굴과 붉은 머리를 연출한 상태의 세인트클레어",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_5_41",
+   "source_text": "죄수는 얼굴을 우리 쪽으로 향한 채 아주 깊은 잠에 빠져 있었는데",
+   "certainty": "explicit"
+  }
+ ],
+ "locations": [
+  {
+   "location_id": "LOC_025",
+   "name": "왓슨의 저택 거실",
+   "description": "왓슨과 아내가 거처하는 거실. 늦은 밤 방문객을 맞이하는 공간.",
+   "source_text": "우리 방 문이 벌컥 열리더니, 짙은 색 옷을 입고 검은 베일을 쓴 한 부인이 방으로 들어왔다",
+   "certainty": "inferred"
+  },
+  {
+   "location_id": "LOC_008",
+   "name": "아편굴",
+   "description": "어퍼 스완덤 레인 골든 바. 시티 동쪽 끝, 런던 브리지 동쪽 강 북안. 부둣가 부근.",
+   "source_text": "어퍼 스완덤 레인의 '골든 바'였다 / 런던 브리지 동쪽 강 북안을 따라 늘어선 높은 부두 건물들 뒤에 숨어 있는 지저분한 골목",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_026",
+   "name": "어퍼 스완덤 레인",
+   "description": "시커먼 골목, 헌옷 가게와 술집 사이로 계단이 내려가는 지저분한 곳",
+   "source_text": "어퍼 스완덤 레인은 런던 브리지 동쪽 강 북안을 따라 늘어선 높은 부두 건물들 뒤에 숨어 있는 지저분한 골목이었다",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_027",
+   "name": "스레드니들가 모퉁이",
+   "description": "밀랍 성냥을 팔며 거지 생활을 하는 장소",
+   "source_text": "스레드니들가를 조금 내려가면 왼쪽에, 자네도 눈여겨봤을지 모르지만, 벽에 작은 모퉁이가 하나 있네",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_028",
+   "name": "시더스의 세인트클레어 저택",
+   "description": "세인트클레어 부인이 살고 있는 큰 저택",
+   "source_text": "자체 부지 안에 서 있는 큰 저택 앞에 멈춰 섰다",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_029",
+   "name": "세인트클레어 저택 식당",
+   "description": "불이 환하게 켜진 식탁에 차가운 저녁 식사가 차려진 식당",
+   "source_text": "불이 환하게 켜진, 식탁 위에 차가운 저녁 식사가 차려진 식당으로 들어서자",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_030",
+   "name": "잉글랜드 시골변두리",
+   "description": "양쪽에 시골 산울타리를 낀 도로, 리의 변두리",
+   "source_text": "우리는 대도시 외곽을 빙빙 돌아 마지막 흩어진 집들마저 뒤로하고, 양쪽에 시골 산울타리를 낀 채 덜컹거리며 달리고 있었다",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_031",
+   "name": "보 스트리트 유치장 경위 사무실",
+   "description": "경위의 작은 사무실 같은 방",
+   "source_text": "그곳은 사무실처럼 생긴 작은 방으로, 탁자 위에는 거대한 장부가 있었고 벽에는 전화기가 튀어나와 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_032",
+   "name": "보 스트리트 유치장 복도",
+   "description": "양쪽으로 문이 늘어선 회칠한 복도",
+   "source_text": "구불구불한 계단을 내려가, 양쪽으로 문이 늘어선 회칠한 복도로 안내했다.",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_033",
+   "name": "보 스트리트 유치장 감방",
+   "description": "오른쪽 세 번째 감방",
+   "source_text": "오른쪽 세 번째가 그의 방입니다",
+   "certainty": "explicit"
+  }
+ ],
+ "objects": [
+  {
+   "object_id": "OBJ_029",
+   "name": "아편 파이프",
+   "description": "금속 파이프 대롱 안에서 독물을 태워 흡입하는 도구",
+   "first_appearance_event_id": "EVENT_5_5",
+   "source_text": "타는 독물이 금속 파이프 대롱 안에서 세지거나 잦아듦에 따라",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_030",
+   "name": "화로(타는 숯)",
+   "description": "안쪽 끝에 놓인 작은 화로에 타는 숯이 들어 있음",
+   "first_appearance_event_id": "EVENT_5_5",
+   "source_text": "안쪽 끝에는 타는 숯이 든 작은 화로가 있었고",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_031",
+   "name": "말레이인 종업원 (아편굴)",
+   "description": "누르스름한 얼굴의 말레이인 종업원. 파이프와 약물을 제공",
+   "first_appearance_event_id": "EVENT_5_6",
+   "source_text": "누르스름한 얼굴의 말레이인 종업원이 파이프와 약물을 가지고 서둘러 다가와",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_032",
+   "name": "장난감 벽돌 상자",
+   "description": "세인트클레어가 아들에게 사다주기로 한 벽돌 장난감이 담긴 작은 나무 상자",
+   "first_appearance_event_id": "EVENT_5_21",
+   "source_text": "탁자 위에 놓인 작은 나무 상자에 달려들어 뚜껑을 뜯어냈네. 그 안에서 아이들 장난감 벽돌이 쏟아져 나왔네.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_033",
+   "name": "밀랍 성냥",
+   "description": "휴 분이 파는 척하는 성냥, 실제 생활비는 동전 구걸로 얻음",
+   "first_appearance_event_id": "EVENT_5_23",
+   "source_text": "경찰 단속을 피하려고 밀랍 성냥을 조금씩 파는 척하고 있네",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_034",
+   "name": "기름때 묻은 가죽 모자",
+   "description": "동전을 받기 위해 휴 분 옆 보도에 놓인 모자",
+   "first_appearance_event_id": "EVENT_5_23",
+   "source_text": "그의 옆 보도에 놓인 기름때 묻은 가죽 모자 안으로 자잘한 동전이 비처럼 내려오지",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_035",
+   "name": "동전(421개 페니, 270개 반페니)으로 채워진 네빌 세인트클레어의 코트",
+   "description": "밀물 빠진 후 진흙 둔덕에서 발견된, 동전으로 가득 찬 코트",
+   "first_appearance_event_id": "EVENT_5_27",
+   "source_text": "밀물이 빠지면서 드러난 것은 네빌 세인트클레어의 코트였지, 네빌 세인트클레어 자신이 아니었네... 모든 주머니마다 페니와 반 페니 동전이 가득 채워져 있었네—페니 421개와 반 페니 270개였지",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_036",
+   "name": "편지 봉투",
+   "description": "그레이브젠드 소인이 찍힌 조잡한 봉투. 그레이브젠드에서 부쳐짐. 봉투 덮개는 담배를 씹던 사람이 풀칠을 한 흔적이 있음.",
+   "first_appearance_event_id": "EVENT_5_35",
+   "source_text": "봉투는 아주 조잡한 것이었고 그레이브젠드 소인이 찍혀 있었으며, 날짜는 바로 그날, 아니 정확히는 전날이었는데, 이미 자정을 상당히 지난 시각이었기 때문이다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_037",
+   "name": "편지",
+   "description": "옥타보 크기, 워터마크 없는 책의 면지에 연필로 쓰인 네빌의 서둘러 쓴 필체의 편지. '사랑하는 당신, 겁내지 마오. 다 잘될 거요. 바로잡는 데 다소 시간이 걸릴 커다란 오해가 있소. 참고 기다려 주오.—네빌.'",
+   "first_appearance_event_id": "EVENT_5_35",
+   "source_text": "'사랑하는 당신, 겁내지 마오. 다 잘될 거요. 바로잡는 데 다소 시간이 걸릴 커다란 오해가 있소. 참고 기다려 주오.—네빌.' 옥타보 크기, 워터마크 없는 책의 면지에 연필로 쓰였군요.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_038",
+   "name": "네빌의 도장 반지",
+   "description": "편지에 동봉되어 있던 반지. 네빌의 도장 반지로 확인됨.",
+   "first_appearance_event_id": "EVENT_5_35",
+   "source_text": "네, 반지가 있었어요. 그이의 도장 반지요.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_039",
+   "name": "거대한 장부",
+   "description": "경위 사무실 탁자 위의 거대한 장부",
+   "first_appearance_event_id": "EVENT_5_41",
+   "source_text": "탁자 위에는 거대한 장부가 있었고",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_040",
+   "name": "글래드스턴 가방",
+   "description": "홈즈가 가져온 가방",
+   "first_appearance_event_id": "EVENT_5_47",
+   "source_text": "그는 말하면서 글래드스턴 가방을 열더니, 놀랍게도 아주 커다란 목욕용 스펀지를 꺼냈다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_041",
+   "name": "목욕용 스펀지",
+   "description": "글래드스턴 가방 안에 있던 커다란 목욕용 스펀지",
+   "first_appearance_event_id": "EVENT_5_47",
+   "source_text": "놀랍게도 아주 커다란 목욕용 스펀지를 꺼냈다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_042",
+   "name": "물주전자",
+   "description": "감방 안의 물주전자",
+   "first_appearance_event_id": "EVENT_5_48",
+   "source_text": "홈즈는 물주전자 쪽으로 몸을 굽혀 스펀지를 적신 뒤",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_043",
+   "name": "붉은 가발",
+   "description": "세인트클레어가 분장에 사용한 붉은 가발",
+   "first_appearance_event_id": "EVENT_5_49",
+   "source_text": "한 번의 잡아당김에 헝클어진 붉은 가발이 벗겨졌고,",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_044",
+   "name": "분장 도구 일체",
+   "description": "세인트클레어가 거짓 얼굴을 만드는 데 사용한 칠, 살색 반창고, 가발 등",
+   "first_appearance_event_id": "EVENT_5_52",
+   "source_text": "저는 얼굴을 칠했고, 최대한 가련해 보이려고 살색 반창고 조각으로 그럴싸한 흉터를 만들고 입술 한쪽을 비뚤게 고정시켰습니다. 그런 다음 붉은 머리 가발과 어울리는 옷차림으로,",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "TIME_040",
+   "expression": "89년 6월 어느 날 밤 (사람이 첫 하품을 하며 시계를 볼 즈음)",
+   "description": "원문이 시점을 묘사하는 표현",
+   "timeline": "main",
+   "source_text": "89년 6월이었다—사람이 첫 하품을 하며 시계를 흘끗 볼 즈음에",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_041",
+   "expression": "이틀째 (48시간)",
+   "description": "아이자가 집에 안 들어온 지 마흔여덟 시간",
+   "timeline": "main",
+   "source_text": "그 마력이 그를 사로잡은 지 마흔여덟 시간이 지났고",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_042",
+   "expression": "거의 열한 시",
+   "description": "왓슨이 아편굴에서 휘트니와 대면한 시각",
+   "timeline": "main",
+   "source_text": "거의 열한 시일세.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_043",
+   "expression": "6월 19일 금요일",
+   "description": "이 사건이 벌어진 실제 날짜",
+   "timeline": "main",
+   "source_text": "6월 19일 금요일일세.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_044",
+   "expression": "지난 월요일, 평소보다 다소 이른 시각",
+   "description": "세인트클레어가 평소보다 일찍 시내로 출발한 시각",
+   "timeline": "main",
+   "source_text": "지난 월요일 네빌 세인트클레어 씨는 평소보다 다소 이른 시각에 시내로 나갔는데",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_045",
+   "expression": "월요일 오후 4시 35분",
+   "description": "세인트클레어 부인이 역으로 돌아가는 길에 스완덤 레인을 걷고 있던 시각",
+   "timeline": "main",
+   "source_text": "정확히 4시 35분에 역으로 돌아가는 길에 스완덤 레인을 걷고 있는 자신을 발견했네.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_046",
+   "expression": "그날 오후 (세인트클레어 부인이 창문에서 남편을 목격한 시각)",
+   "description": "세인트클레어 부인이 아편굴 이층 창문에서 남편을 본 직후의 시각",
+   "timeline": "main",
+   "source_text": "그의 얼굴이 몹시 동요한 모습이었다고 그녀는 묘사하네.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_047",
+   "expression": "비극이 일어난 순간 (밀물이 가장 높은 시각)",
+   "description": "창문에서 빠져나가려 했다면 헤엄쳐 살아남을 가망이 거의 없었던 시각",
+   "timeline": "main",
+   "source_text": "창턱의 불길한 핏자국은 그가 헤엄쳐서 목숨을 구했을 가망을 거의 남기지 않았네, 비극이 일어난 순간 밀물이 가장 높았기 때문이지.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_036",
+   "expression": "오늘 밤",
+   "description": "홈즈가 마차로 왓슨을 데리러 온 밤",
+   "timeline": "main",
+   "source_text": "어둠 속을 뚫고 키 큰 개마차 한 대가 옆 등에서 노란빛의 두 개 황금빛 터널을 던지며 달려오자",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_048",
+   "expression": "밀물 빠진 직후",
+   "description": "썰물로 진흙 둔덕이 드러난 시점",
+   "source_text": "밀물이 빠지면서 드러난 것은 네빌 세인트클레어의 코트였지",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_049",
+   "expression": "리에 도착한 밤",
+   "description": "저택에 도착했을 때의 시간대",
+   "source_text": "리의 변두리에 왔군",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_050",
+   "expression": "그날 (편지가 부쳐진 그 다음 날 새벽 4시 25분경)",
+   "description": "세인트클레어 부인이 편지를 받은 당일. 자정 상당히 지난 시각에 그레이브젠드에서 부쳐졌으므로 수령일 = 부친일 다음 날.",
+   "timeline": "main",
+   "source_text": "그레이브젠드에서, 손가락이 더러운 남자가 부친 것이군요. ... 옷을 입으면서 나는 시계를 힐끗 보았다. ... 네 시 이십오 분이었다.",
+   "certainty": "inferred"
+  },
+  {
+   "time_id": "TIME_051",
+   "expression": "새벽 4시 25분",
+   "description": "홈즈와 왓슨이 마차를 타고 런던으로 출발하기 직전, 왓슨이 시계를 본 시각",
+   "timeline": "main",
+   "source_text": "옷을 입으면서 나는 시계를 힐끗 보았다. 아무도 일어나 않은 것도 무리가 아니었다. 네 시 이십오 분이었다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_052",
+   "expression": "여름 햇살이 방 안으로 비쳐 드는 아침",
+   "description": "홈즈가 밤새 사고한 끝에 왓슨이 잠에서 깬 여름 아침",
+   "timeline": "main",
+   "source_text": "그때 나는 여름 햇살이 방 안으로 비쳐 드는 것을 보았다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_053",
+   "expression": "5화 유치장 방문 당일",
+   "description": "경위 사무실에서 홈즈와 경위가 대화하는 시간대 (명시 없음)",
+   "timeline": "main",
+   "source_text": "무슨 일로 오셨습니까, 홈즈 씨?",
+   "certainty": "uncertain"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T15:54:35Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 55.39
+ },
+ "_merge": {
+  "spec": "handoff/chunked_extract_spec.md",
+  "chunks": [
+   "episode_05_c01.json",
+   "episode_05_c02.json",
+   "episode_05_c03.json",
+   "episode_05_c04.json",
+   "episode_05_c05.json",
+   "episode_05_c06.json"
+  ],
+  "name_resolved": {
+   "NEW:아이자_휘트니": "CHAR_021"
+  },
+  "unmapped_new": [
+   "NEW:경찰서(불명)",
+   "NEW:글래드스턴_가방 (실제 소지)",
+   "NEW:동전_주머니_들어있는_코트 (페니 421, 반페니 270)",
+   "NEW:런던_거리",
+   "NEW:런던_로드",
+   "NEW:런던_로드_마차",
+   "NEW:마부존에게_준_반크라운",
+   "NEW:마차_안",
+   "NEW:보_스트리트",
+   "NEW:사건의_열쇠",
+   "NEW:세인트클레어_저택_욕실",
+   "NEW:세인트클레어_저택_침실",
+   "NEW:스완덤_레인의_초라한_소굴",
+   "NEW:아편_흡연_방식",
+   "NEW:아편굴_화로_곶",
+   "NEW:애버딘_해운_소포",
+   "NEW:입이_비뚤어진_사내",
+   "NEW:지난_주_월요일_아편굴_위_방",
+   "NEW:지난_주_월요일_아편굴_위_방_이후_수분",
+   "NEW:체포_이후_구금_중",
+   "NEW:화로_곶의_노인",
+   "NEW:휘트니_아편_중독_원인",
+   "NEW:휘트니_집",
+   "NEW:휴분_동전으로_코트_가라앉힘"
+  ]
+ },
+ "events": [
+  {
+   "event_id": "EVENT_5_1",
+   "scene_id": "scene_5_0",
+   "order": 0,
+   "title": "아내(스토커 헬렌)의 자백 — 자기가 아이자 휘트니의 아내였다고 밝힘",
+   "summary": "앞서 이름을 밝히지 않았던 '그 부인'이 아이자 휘트니의 아내임이 밝혀진다. 아편굴로 향하는 동기가 형성된다.",
+   "location_id": "LOC_025",
+   "time_id": "TIME_040",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_021"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_021",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_021",
+     "field": "knows",
+     "from": "unknown",
+     "to": "not_knows: 아편굴 위치",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그녀가 무엇을 할 수 있었을까? 젊고 소심한 여자인 그녀가 어떻게 그런 곳에 들어가서"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_021",
+     "field": "knows",
+     "assumes": "남편이 아편굴을 이용한 사실",
+     "source_text": "그녀는 요즘 들어 그가 발작이 일면 시티 동쪽 끝에 있는 어느 아편굴을 이용해 왔다는 확실한 정보를 가지고 있었다"
+    },
+    {
+     "entity": "CHAR_021",
+     "field": "knows",
+     "assumes": "남편이 있을 장소 = 어퍼 스완덤 레인의 '골든 바'",
+     "source_text": "그가 있을 곳은, 그녀가 확신하기로는, 어퍼 스완덤 레인의 '골든 바'였다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "고단한 하루를 마치고 지침",
+     "source_text": "신음을 냈다, 고단한 하루를 마치고 막 돌아온 참이었기 때문이다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "방문객이 '케이트 휘트니'라는 사실과 그녀의 남편이 이틀째 집에 없다는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "케이트 휘트니잖아요 / 아이자에 관한 일이에요. 그이가 이틀째 집에 안 들어왔어요"
+    }
+   ],
+   "cause": "케이트 휘트니가 남편의 부재를 호소하며 찾아옴",
+   "result": "왓슨이 아편굴로 향하기로 결심",
+   "source_text": "이틀째 집에 안 들어왔어요 / 나는 아이자 휘트니의 주치의였고",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_2",
+   "scene_id": "scene_5_1",
+   "order": 1,
+   "title": "왓슨, 아편굴로 출발",
+   "summary": "왓슨이 이륜마차를 타고 시티 동쪽의 어퍼 스완덤 레인 골든 바로 향한다.",
+   "location_id": "LOC_026",
+   "time_id": "TIME_040",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_025",
+     "to": "LOC_026",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "이륜마차를 타고 동쪽으로 서둘러 갔다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "아편굴 입구에 들어갈 수 있는 의학적 영향력",
+     "source_text": "나는 아이자 휘트니의 주치의였고, 그런 만큼 그에게 영향력이 있었다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "이동 시작 — 어퍼 스완덤 레인 아편굴로 향함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "십 분 만에 나는 안락의자와 아늑한 응접실을 뒤로하고"
+    }
+   ],
+   "cause": "아이자 휘트니의 부재와 부인의 호소",
+   "result": "아편굴에 도착",
+   "source_text": "이륜마차를 타고 동쪽으로 서둘러 갔다",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_3",
+   "scene_id": "scene_5_1",
+   "order": 2,
+   "title": "아편굴 입구 발견",
+   "summary": "어퍼 스완덤 레인의 계단 아래 아편굴을 발견하고 내려간다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_040",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_026",
+     "to": "LOC_008",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "나는 찾고 있던 그 소굴을 발견했다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "LOC_008",
+     "field": "condition",
+     "assumes": "갈색 아편 연기로 자욱하고 무거운 상태",
+     "source_text": "그곳은 갈색 아편 연기로 자욱하고 무거웠으며"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_2",
+     "assumes": "이 사건은 EVENT_5_1의 이동 직후 발생 — 두 사건 사이의 시간 경과가 거의 없음",
+     "source_text": "마차를 기다리게 해 놓고, 나는 술 취한 발길에 끊임없이 밟혀 가운데가 움푹 팬 계단을 내려갔다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "아편굴의 외관 — 높은 부두 건물 뒤 골목, 계단 아래 입구, 깜빡이는 석유 램프",
+     "via": "direct",
+     "retained": true,
+     "source_text": "헌옷 가게와 술집 사이, 마치 동굴 입구처럼 시커먼 틈으로 내려가는 가파른 계단을 통해 들어가는 곳에서"
+    }
+   ],
+   "cause": "아편굴을 찾기 위함",
+   "result": "아편굴 내부로 진입",
+   "source_text": "나는 찾고 있던 그 소굴을 발견했다",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_4",
+   "scene_id": "scene_5_2",
+   "order": 3,
+   "title": "아편굴 내부 관찰",
+   "summary": "길고 낮은 방 안에 나무 침상들이 층층이 놓여 있고, 아편에 취한 몸뚱이들이 기이한 자세로 누워 있다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_040",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_030",
+    "OBJ_031"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "LOC_008",
+     "field": "condition",
+     "assumes": "나무 침상들이 층층이 놓인 길고 낮은 방",
+     "source_text": "이민선의 선수루처럼 나무 침상들이 층층이 놓여 있었다"
+    },
+    {
+     "entity": "LOC_008",
+     "field": "condition",
+     "assumes": "어둡고 타는 아편 빛의 원들이 어른거리는 상태",
+     "source_text": "검은 그림자 속에서 작고 붉은 빛의 원들이, 타는 독물이 금속 파이프 대롱 안에서 세지거나 잦아듦에 따라 밝아졌다 흐려졌다 하며 어른거렸다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "아편굴 내부 구조와 분위기",
+     "via": "direct",
+     "retained": true,
+     "source_text": "갈색 아편 연기로 자욱하고 무거웠으며, 마치 이민선의 선수루처럼 나무 침상들이 층층이 놓여 있었다"
+    }
+   ],
+   "cause": "아편굴에 들어선 후",
+   "result": "내부 상황을 파악",
+   "source_text": "이민선의 선수루처럼 나무 침상들이 츈층이 놓여 있었다",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_5",
+   "scene_id": "scene_5_2",
+   "order": 4,
+   "title": "화로 곁 노년 남성 발견",
+   "summary": "안쪽 끝 화로 옆 세 발 나무 걸상에 키 크고 마른 노인이 불을 응시하며 앉아 있다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_040",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_030"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "NEW:화로_곶의_노인",
+     "field": "body_status",
+     "assumes": "몹시 마르고, 몹시 주름지고, 나이로 굽은 상태",
+     "source_text": "몹시 마르고, 몹시 주름지고, 나이로 굽은 채"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "화로 곁에 노인이 앉아 있다는 것",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그 옆 세 발 나무 걸상에는 키 크고 마른 노인이, 두 주먹으로 턱을 괴고 무릎에 팔꿈치를 얹은 채 불을 응시하며 앉아 있었다"
+    }
+   ],
+   "cause": "아편굴 내부 관찰 중",
+   "result": "화로 곁 노인의 존재를 인지",
+   "source_text": "키 크고 마른 노인이, 두 주먹으로 턱을 괴고 무릎에 팔꿈치를 얹은 채 불을 응시하며 앉아 있었다",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_6",
+   "scene_id": "scene_5_3",
+   "order": 5,
+   "title": "아이자 휘트니 발견",
+   "summary": "말레이인 종업원이 빈 침상을 권하지만 왓슨은 친구 면회를 요청한다. 오른쪽에서 휘트니가 나타난다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_040",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_021"
+   ],
+   "witness_character_ids": [
+    "OBJ_031"
+   ],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_031"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_021",
+     "field": "body_status",
+     "from": "unknown",
+     "to": "창백하고 초췌하고 헝클어진 모습, 온몸의 신경이 파르르 떨리는 상태",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "어둠 속을 응시하자 나는 휘트니가 창백하고 초췌하고 헝클어진 모습으로 나를 응시하고 있는 것을 보았다 / 그는 온몸의 신경이 파르르 떨리는, 딱한 반작용 상태에 있었다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_021",
+     "field": "body_status",
+     "assumes": "아편에 취해 있는 상태 (반작용 상태)",
+     "source_text": "딱한 반작용 상태에 있었다"
+    },
+    {
+     "entity": "CHAR_021",
+     "field": "knows",
+     "assumes": "현재 시점을 수요일로 오인",
+     "source_text": "수요일인 줄 알았네. 오늘은 수요일이야"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "아이자 휘트니의 위치를 찾아냄",
+     "source_text": "그와 이야기를 좀 나누고 싶네"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "아이자 휘트니의 상태 — 창백, 초췌, 헝클어짐, 반작용 상태, 시간 착각",
+     "via": "direct",
+     "retained": true,
+     "source_text": "휘트니가 창백하고 초췌하고 헝클어진 모습으로 나를 응시하고 있는 것을 보았다 / 수요일인 줄 알았네"
+    }
+   ],
+   "cause": "아편굴에서 친구 면회를 요청함",
+   "result": "아이자 휘트니와 재회",
+   "source_text": "내가 찾고 있던 그 소굴을 발견했다... 어둠 속을 응시하자 나는 휘트니가",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_7",
+   "scene_id": "scene_5_3",
+   "order": 6,
+   "title": "휘트니와 시간 확인 대화",
+   "summary": "휘트니가 시간을 묻고 왓슨이 열한 시, 6월 19일 금요일이라 답한다. 휘트니는 흐느끼고 집에 가겠다고 한다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_042",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_021"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_021",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_021",
+     "field": "body_status",
+     "from": "파르르 떨리는 반작용 상태",
+     "to": "얼굴을 팔에 파묻고 흐느끼는 상태",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "그는 얼굴을 팔에 파묻고 높은 음으로 흐느끼기 시작했다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_021",
+     "field": "knows",
+     "assumes": "자신이 어디에 있는지 인식하지 못하는 상태 (정신이 나가 있음)",
+     "source_text": "나는 완전히 정신이 나가 있어서, 아무것도 스스로 할 수가 없네"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_6",
+     "assumes": "휘트니는 EVENT_5_5에서 발견된 그 인물의 연속 — 같은 인물이며 시간 경과가 거의 없음",
+     "source_text": "내 오른쪽에서 움직임과 함께 탄성이 들렸고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_021",
+     "info": "현재 시각이 열한 시, 6월 19일 금요일이라는 사실 (자기가 수요일로 착각했음을 인지)",
+     "via": "told",
+     "retained": true,
+     "source_text": "거의 열한 시일세 / 6월 19일 금요일일세"
+    }
+   ],
+   "cause": "휘트니가 시간을 물음",
+   "result": "휘트니가 집에 가기로 결심",
+   "source_text": "어쨌든 자네와 함께 집에 가겠네. 케이트를 놀라게 하고 싶지 않아",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_8",
+   "scene_id": "scene_5_3",
+   "order": 7,
+   "title": "관리인(화로 곁 노인)이 옷자락을 잡아끈다",
+   "summary": "계산을 위해 관리인을 찾던 중 화로 곁의 노인이 왓슨의 옷자락을 잡아당기며 '곁을 지나갔다가 돌아보라'고 속삭인다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_040",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "NEW:화로_곶의_노인"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "NEW:화로_곶의_노인",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "NEW:화로_곶의_노인",
+     "field": "body_status",
+     "assumes": "겉보기에는 노쇠한 노인의 외양 (속이는 외관)",
+     "source_text": "흐리멍덩하고 입술이 늘어진 노망든 노인의 모습으로 되돌아갔다"
+    },
+    {
+     "entity": "NEW:화로_곶의_노인",
+     "field": "ability",
+     "assumes": "낮은 목소리로 속삭임이 또렷이 들릴 수 있을 만큼 청력이 예리하거나 가까이서 들려줄 수 있는 능력",
+     "source_text": "그 말은 아주 또렷이 내 귀에 들어왔다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_5",
+     "assumes": "이 사건의 노인은 EVENT_5_4에서 발견된 그 노인과 동일 인물",
+     "source_text": "그 말은 내 옆의 그 노인에게서 나온 것일 수밖에 없었지만, 그는 여전히 그 어느 때처럼 골똘히 앉아 있었다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "화로 곁의 노인이 자신에게 말을 걸어왔다는 사실",
+     "via": "direct",
+     "retained": true,
+     "source_text": "낮은 목소리가 속삭였다. '내 곁을 지나갔다가, 그다음 나를 돌아보게.'"
+    }
+   ],
+   "cause": "휘트니의 빚 계산을 위해 관리인을 찾음",
+   "result": "화로 곁 노인의 정체 미스터리 발단",
+   "source_text": "낮은 목소리가 속삭였다. '내 곁을 지나갔다가, 그다음 나를 돌아보게.'",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_9",
+   "scene_id": "scene_5_3",
+   "order": 8,
+   "title": "홈즈의 정체 발각",
+   "summary": "돌아보자 흐릿하던 노인이 다시 생기를 되찾아 셜록 홈즈임이 드러난다. 노쇠한 모습은 위장이었다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_040",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "from": "노쇠한 노인 위장 (몹시 마르고, 주름지고, 나이로 굽은 상태)",
+     "to": "젊은 정상 상태로 회복 (몸은 다시 채워졌고, 주름은 사라졌으며, 흐릿하던 눈은 다시 생기를 되찾음)",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "노쇠한 노인 위장으로 되돌아감",
+     "certainty": "explicit",
+     "source_text": "그의 몸은 다시 채워졌고, 주름은 사라졌으며, 흐릿하던 눈은 다시 생기를 되찾았다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "NEW:아편굴_화로_곶",
+     "to": "LOC_008",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그곳, 불 곁에 앉아 나의 놀라움에 씩 웃고 있는 것은 다름 아닌 셜록 홈즈였다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "몸과 얼굴의 외양을 자유자재로 변장할 수 있는 능력 (연기력)",
+     "source_text": "몸은 다시 채워졌고, 주름은 사라졌으며, 흐릿하던 눈은 다시 생기를 되찾았다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "원래의 젋은 외양을 유지하고 있었음 (노쇠함은 위장)",
+     "source_text": "몸은 다시 채워졌고, 주름은 사라졌으며"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_8",
+     "assumes": "이 노인이 사건 5-7에서 속삭인 그 노인과 동일 인물임. 노쇠함은 변장이었음",
+     "source_text": "그 말은 내 옆의 그 노인에게서 나온 것일 수밖에 없었지만"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "화로 곁의 노인이 사실은 셜록 홈즈였다는 사실",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그곳, 불 곁에 앉아 나의 놀라움에 씩 웃고 있는 것은 다름 아닌 셜록 홈즈였다"
+    }
+   ],
+   "cause": "화로 곁 노인의 속삭임에 따라 돌아봄",
+   "result": "홈즈의 정체 발각 — 다음 사건의 의뢰로 이어짐",
+   "source_text": "놀라움의 탄성을 터뜨리지 않으려면 온 자제력을 쥐어짜야 했다",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_10",
+   "scene_id": "scene_5_4",
+   "order": 9,
+   "title": "휘트니 계산을 처리하고 마차에 태움",
+   "summary": "홈즈의 요청에 따라 휘트니의 계산을 치르고, 왓슨 부인에게 쪽지를 보내며 그를 마차에 태워 보낸다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_040",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_021",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_021",
+     "field": "location",
+     "from": "LOC_008",
+     "to": "NEW:마차_안",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "NEW:휘트니_집",
+     "certainty": "explicit",
+     "source_text": "그를 마차까지 데려가 어둠 속으로 실려 가는 것을 지켜보았다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "휘트니의 아내(케이트)에게 자신이 아편굴에 나온 일을 알려야 한다는 점 (쪽지 발송)",
+     "source_text": "마부 편에 자네 부인께 자네가 나와 함께하게 되었다는 쪽지도 보내라고 권하고 싶군"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_9",
+     "assumes": "이 사건은 EVENT_5_8의 직후 — 홈즈의 요청에 응하여 즉시 처리",
+     "source_text": "자네의 그 술 취한—아니 아편에 취한 친구를 처리해 주는 큰 친절을 베풀어 준다면, 자네와 잠깐 이야기를 나누고 싶어서"
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "홈즈의 의뢰 — 휘트니를 마차로 보내고 밖에서 기다려 달라",
+   "result": "휘트니가 아편굴을 떠남, 왓슨이 홈즈와 함께할 준비",
+   "source_text": "몇 분 만에 나는 쪽지를 쓰고, 휘트니의 계산을 치르고, 그를 마차까지 데려가 어둠 속으로 실려 가는 것을 지켜보았다",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_11",
+   "scene_id": "scene_5_4",
+   "order": 10,
+   "title": "홈즈가 아편굴에서 나와 거리를 걷다 정체를 벗다",
+   "summary": "아편굴에서 노쇠한 모습의 홈즈가 나와 두 블록을 걸으며 발을 끌고 걷다가, 재빨리 몸을 곧게 펴고 웃음을 터뜨린다.",
+   "location_id": "NEW:런던_거리",
+   "time_id": "TIME_040",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "from": "젊은 정상 상태(아편굴 안에서 회복)",
+     "to": "몸을 곧게 펴고 유쾌하게 웃는 상태",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "몸을 곧게 펴고는 유쾌하게 웃음을 터뜨렸다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_008",
+     "to": "NEW:런던_거리",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "아편굴에서 노쇠한 모습 하나가 나타났고, 나는 셜록 홈즈와 함께 거리를 걷고 있었다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "몸가짐을 굽은 노인에서 곧은 젊은이로 즉시 바꿀 수 있는 연기력",
+     "source_text": "두 블록 동안 그는 굽은 등에 불안정한 발걸음으로 발을 끌며 걸었다. 그러다 재빨리 주위를 둘러보더니, 몸을 곧게 펴고는"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_10",
+     "assumes": "이 사건은 EVENT_5_9(휘트니 마차 송별) 직후 발생 — 시간 경과 거의 없음",
+     "source_text": "아주 짧은 시간 안에 아편굴에서 노쇠한 모습 하나가 나타났고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈가 거리에서 변장을 해제하고 원래의 젊은 모습으로 돌아왔다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "몸을 곧게 펴고는 유쾌하게 웃음을 터뜨렸다"
+    }
+   ],
+   "cause": "휘트니를 마차로 보낸 후",
+   "result": "홈즈가 다음 의뢰(다음 사건) 설명으로 들어가는 도입",
+   "source_text": "몸을 곧게 펴고는 유쾌하게 웃음을 터뜨렸다",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_12",
+   "scene_id": "scene_5_1",
+   "order": 1,
+   "title": "아편굴에서의 대화",
+   "summary": "홈즈와 왓슨이 아편굴 앞에서 만나 좌담하며 홈즈가 라스카의 복수 맹세와 지하 통로 뚜껑문에 대해 언급한다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_036",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "네빌 세인트클레어가 아편굴에 들어간 뒤 다시 나오지 못했을 가능성",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "나는 네빌 세인트클레어가 그 안에 들어간 뒤 다시는 나오지 못한 게 아닐까 두렵네."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "아편굴 인근에서 활동할 수 있는 상태 (코카인 주사·아편 흡연 습관에 대해 왓슨에게 짐작을 허용)",
+     "source_text": "자네는 내가 코카인 주사에다 아편 흡연까지 더했다고, 그리고 자네가 의학적 견해로 나에게 지적해 준 온갖 다른 사소한 약점들까지 다 더했다고 상상하고 있겠지."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "이 사건에 연관된 '타고난 적' 또는 '사냥감'이 있다",
+     "source_text": "나는 적을 찾으러 왔지."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "아편굴 출입이 자신의 정체를 드러내면 목숨이 위험하다",
+     "source_text": "만약 그 소굴에서 내가 정체를 들켰더라면, 내 목숨은 한 시간어치도 안 되었을 걸세"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "라스카가 자신에게 복수를 맹세했다",
+     "source_text": "그곳을 운영하는 그 악랄한 라스카가 나에게 복수했으니까"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "폴스 워프 모퉁이 근처 지하 통로 뚜껑문을 지난 밤 무언가가 지나갔다는 사실",
+     "source_text": "달 없는 밤에 그 문을 통해 무엇이 지나갔는지 안다면 참으로 기이한 이야기들을 들려줄 걸세."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "홈즈가 아편굴 인근에서 조사를 마치고 나와 있던 중 왓슨을 발견함",
+   "result": "두 사람이 마차를 타고 리로 향하기로 함",
+   "source_text": "짐작건대, 왓슨, 그가 말했다. 자네는 내가 코카인 주사에다 아편 흡연까지 더했다고",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_13",
+   "scene_id": "scene_5_1",
+   "order": 2,
+   "title": "마차 호출",
+   "summary": "홈즈가 휘파람으로 마차를 부르고, 마부 존에게 반 크라운을 주고 내일 11시에 다시 와달라고 부탁한다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_036",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "NEW:마부존에게_준_반크라운",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "여기 반 크라운일세."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "반 크라운 (지급용)",
+     "source_text": "여기 반 크라운일세."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "마부 존의 이름과 얼굴, 그리고 다음 날 11시에 다시 와야 한다는 일정",
+     "source_text": "됐네, 존, 자네는 이제 필요 없네. 여기 반 크라운일세. 내일 열한 시쯤 나를 기다려 주게."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_12",
+     "assumes": "EVENT_5_1 직후 즉시 같은 장소에서 발생한 동작이다",
+     "source_text": "그는 검지 두 개를 이 사이에 넣고 날카롭게 휘파람을 불었다."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "EVENT_5_1의 대화 후 시더스(리)로 이동할 마차가 필요했기 때문",
+   "result": "키 큰 개마차가 다가오고 홈즈와 왓슨이 함께 타게 됨",
+   "source_text": "그는 검지 두 개를 이 사이에 넣고 날카롭게 휘파람을 불었다. 그 신호에 멀리서 비슷한 휘파람 소리가 응답했고",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_14",
+   "scene_id": "scene_5_2",
+   "order": 3,
+   "title": "마차로 시더스(리) 향해 출발",
+   "summary": "홈즈와 왓슨이 마차를 타고 켄트의 리 근처로 칠 마일을 달리며 사건의 경위를 설명하기 시작한다.",
+   "location_id": "unknown",
+   "time_id": "TIME_036",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_008",
+     "to": "LOC_009",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "시더스에 있는 내 방은 침대가 두 개 있는 방일세. 시더스라니? 그래, 세인트클레어 씨의 집일세."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_008",
+     "to": "LOC_009",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "켄트의 리 근처일세. 앞으로 칠 마일을 달려야 하네."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "네빌 세인트클레어 사건의 사실관계 — 1884년 5월 리에 온 것, 1887년 결혼, 투자 생활, 통근 습관, 부채와 예금",
+     "source_text": "몇 해 전—정확히 말하자면 1884년 5월—리에 네빌 세인트클레어라는 신사가 찾아왔는데"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "네빌 세인트클레어 사건의 기본 사실(직업·결혼·통근·재정) — 이 사건이 무엇인지 전혀 모른다고 본인이 말함",
+     "source_text": "하지만 나는 아무것도 모르네. / 물론 그렇겠지. 곧 다 알게 될 걸세."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "네빌 세인트클레어의 기본 프로필 (1884년 5월 리 정착, 1887년 결혼, 아이 둘, 투자로 생계, 캐논가 5시 14분 기차 통근, 37세, 부채 88파운드 10실링, 예금 220파운드)",
+     "via": "told",
+     "retained": true,
+     "source_text": "몇 해 전—정확히 말하자면 1884년 5월—리에 네빌 세인트클레어라는 신사가 찾아왔는데"
+    }
+   ],
+   "cause": "EVENT_5_2에서 마차를 호출함",
+   "result": "여행 중 홈즈가 사건의 사정을 왓슨에게 들려주기 시작함",
+   "source_text": "그는 채찍으로 말을 가볍게 치고, 우리는 어둡고 인적 없는 거리들이 끝없이 이어지는 길을 달렸는데",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_15",
+   "scene_id": "scene_5_2",
+   "order": 4,
+   "title": "월요일 오전 세인트클레어의 시내 출발",
+   "summary": "지난 월요일 세인트클레어가 평소보다 일찍 시내로 나가며 아들에게 벽돌 장난감 상자를 사겠다고 말하고, 같은 시각 부인에게 애버딘 해운회사 소포가 있다는 전보가 도착한다.",
+   "location_id": "unknown",
+   "time_id": "TIME_044",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_019",
+    "CHAR_020"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_019",
+   "objects": [
+    "OBJ_032"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_019",
+     "field": "body_status",
+     "from": "unknown",
+     "to": "시내로 출발 (월요일 이른 시각)",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "지난 월요일 네빌 세인트클레어 씨는 평소보다 다소 이른 시각에 시내로 나갔는데"
+    },
+    {
+     "entity": "CHAR_020",
+     "field": "knows",
+     "from": "unknown",
+     "to": "애버딘 해운회사 사무소에 기다리던 소포가 있다 (전보로 통보받음)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그녀가 기다리고 있던 상당한 값어치의 소포가 애버딘 해운회사 사무소에서 그녀를 기다리고 있다는 전보를 받았네."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_019",
+     "field": "possesses",
+     "assumes": "벽돌 장난감 상자를 사갈 돈/의지",
+     "source_text": "어린 아들에게 벽돌 장난감 상자를 사다 주겠다고 말했네."
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "assumes": "시내에 '중요한 용무 두 가지'가 있다",
+     "source_text": "떠나기 전 중요한 용무 두 가지가 있다고"
+    },
+    {
+     "entity": "CHAR_020",
+     "field": "knows",
+     "assumes": "애버딘 해운회사 사무소가 프레즈노가(어퍼 스완덤 레인에서 갈라지는 거리)에 있다",
+     "source_text": "그 회사 사무소가 프레즈노가에 있다는 걸 알 걸세"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_16",
+     "assumes": "EVENT_5_4(세인트클레어의 시내 출발) 이후 같은 날 EVENT_5_5(부인의 시티행)가 뒤따른다",
+     "source_text": "그녀는 점심을 먹고, 시티로 출발해서"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_020",
+     "info": "애버딘 해운회사 사무소(프레즈노가)에 본인 소포가 도착해 있다",
+     "via": "document",
+     "retained": true,
+     "source_text": "그녀가 기다리고 있던 상당한 값어치의 소포가 애버딘 해운회사 사무소에서 그녀를 기다리고 있다는 전보를 받았네."
+    }
+   ],
+   "cause": "월요일 아침, 평소보다 이른 시각",
+   "result": "세인트클레어가 시내로 출발하고, 부인은 시티로 출발할 채비를 함",
+   "source_text": "지난 월요일 네빌 세인트클레어 씨는 평소보다 다소 이른 시각에 시내로 나갔는데",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_16",
+   "scene_id": "scene_5_2",
+   "order": 5,
+   "title": "세인트클레어 부인의 시티행과 프레즈노가 도착",
+   "summary": "세인트클레어 부인이 점심 후 시티로 가서 쇼핑하고, 애버딘 해운회사 사무소에서 소포를 받아 4시 35분경 역으로 돌아가는 길에 스완덤 레인을 걷고 있다.",
+   "location_id": "LOC_026",
+   "time_id": "TIME_045",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_020"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_020",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_020",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_026",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "정확히 4시 35분에 역으로 돌아가는 길에 스완덤 레인을 걷고 있는 자신을 발견했네."
+    },
+    {
+     "entity": "CHAR_020",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "NEW:애버딘_해운_소포",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "그 회사 사무소로 가서 소포를 받은 뒤,"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_020",
+     "field": "body_status",
+     "assumes": "더운 날씨에 천천히 걸을 수 있는 상태",
+     "source_text": "월요일은 몹시 더운 날이었고, 세인트클레어 부인은 자신이 있는 동네가 마음에 들지 않아 마차를 찾을까 두리번거리며 천천히 걸었네."
+    },
+    {
+     "entity": "CHAR_020",
+     "field": "knows",
+     "assumes": "런던의 거리 배치(스완덤 레인, 프레즈노가)를 안다",
+     "source_text": "자네가 런던에 밝다면, 그 회사 사무소가 프레즈노가에 있다는 걸 알 걸세"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_15",
+     "assumes": "이 사건은 EVENT_5_4(남편의 시내 출발) 이후 같은 날에 발생한다",
+     "source_text": "떠나기 전 중요한 용무 두 가지가 있다고"
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "남편이 시내로 떠난 후 부인이 전보를 받고 시티로 향함",
+   "result": "부인이 소포를 들고 4시 35분경 스완덤 레인을 걷고 있음",
+   "source_text": "정확히 4시 35분에 역으로 돌아가는 길에 스완덤 레인을 걷고 있는 자신을 발견했네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_17",
+   "scene_id": "scene_5_2",
+   "order": 6,
+   "title": "부인이 이층 창문에서 남편을 목격",
+   "summary": "세인트클레어 부인이 스완덤 레인을 걷다 그 건물 이층 창문에서 남편이 자신을 내려다보며 손짓하는 것을 본다. 짙은 코트만 입고 옷깃·넥타이는 하지 않았다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_046",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_019",
+    "CHAR_020"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_020",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_020",
+     "field": "knows",
+     "from": "unknown",
+     "to": "남편 네빌 세인트클레어가 그 건물의 이층 창문에 있다(짙은 코트만, 옷깃·넥타이 없음, 몹시 동요한 표정)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그녀는 남편의 얼굴을 또렷이 보았는데, 그것은 몹시 동요한 모습이었다고 그녀는 묘사하네."
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_008",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "남편이 이층 창문에서 자신을 내려다보며"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "body_status",
+     "from": "unknown",
+     "to": "짙은 색 코트 착용, 옷깃과 넥타이 없음, 몹시 동요한 표정, 두 손을 미친 듯이 흔듦",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "그가 시내로 나갈 때 입고 있던 것과 같은 짙은 색 코트를 입고 있었지만, 옷깃도 넥타이도 하지 않은 상태였다는 것이었네."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_020",
+     "field": "body_status",
+     "assumes": "스완덤 레인의 보행자로서 두 손을 비운 채 천천히 걷는 중",
+     "source_text": "천천히 걸었네."
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "body_status",
+     "assumes": "창문 밖으로 몸을 내밀고 두 손을 흔들 수 있는 상태",
+     "source_text": "그는 미친 듯이 그녀에게 두 손을 흔들었고"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "ability",
+     "assumes": "부인의 시야에서 '또렷이' 식별될 만큼의 시력과 노출",
+     "source_text": "창문은 열려 있었고, 그녀는 남편의 얼굴을 또렷이 보았는데"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_16",
+     "assumes": "이 사건은 EVENT_5_5 직후, 같은 장소·같은 시각에 발생한다",
+     "source_text": "그렇게 스완덤 레인을 걸어 내려가던 중, 그녀는 갑자기 감탄사 같은 외침을 들었고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_020",
+     "info": "남편 네빌 세인트클레어가 이층 창문에 짙은 코트만 입고 몹시 동요한 모습으로 자신을 향해 손짓하다 사라졌다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그녀는 남편의 얼굴을 또렷이 보았는데, 그것은 몹시 동요한 모습이었다고 그녀는 묘사하네."
+    }
+   ],
+   "cause": "부인이 스완덤 레인을 걷던 중 위를 올려다봄",
+   "result": "남편이 홱 잡아채인 듯 갑자기 창문에서 사라짐",
+   "source_text": "그렇게 스완덤 레인을 걸어 내려가던 중, 그녀는 갑자기 감탄사 같은 외침을 들었고, 자신의 남편이 이층 창문에서 자신을 내려다보며, 그녀에게는 손짓하는 것처럼 보이는 모습을 보고는 오싹해졌네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_18",
+   "scene_id": "scene_5_2",
+   "order": 7,
+   "title": "부인이 계단 아래에서 라스카에게 저지됨",
+   "summary": "세인트클레어 부인이 계단을 뛰어 내려가 그 건물(아편굴)에 들어가자 라스카와 덴마크인 조수가 그녀를 거리로 밀어낸다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_046",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_020",
+    "CHAR_024"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_020",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_020",
+     "field": "location",
+     "from": "LOC_026",
+     "to": "LOC_008",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "남편에게 뭔가 문제가 생겼다고 확신한 그녀는 계단을 뛰어 내려갔네"
+    },
+    {
+     "entity": "CHAR_020",
+     "field": "location",
+     "from": "LOC_008",
+     "to": "LOC_026",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "그는 그녀를 밀쳐 냈으며, 그곳에서 조수로 일하는 어느 덴마크인의 도움을 받아 그녀를 거리로 밀어냈네."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_020",
+     "field": "body_status",
+     "assumes": "계단을 뛸 수 있는 발·다리 상태",
+     "source_text": "계단을 뛰어 내려갔네"
+    },
+    {
+     "entity": "CHAR_024",
+     "field": "body_status",
+     "assumes": "부인을 밀어낼 수 있을 만큼의 체격·위치",
+     "source_text": "그는 그녀를 밀쳐 냈으며,"
+    },
+    {
+     "entity": "CHAR_024",
+     "field": "knows",
+     "assumes": "이 건물이 아편굴이며 부인이 남편을 찾으러 왔다는 사실을 알아챌 수 있는 상황 인식",
+     "source_text": "내가 말했던 그 라스카 악당과 마주쳤고"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_17",
+     "assumes": "이 사건은 EVENT_5_6 직후 같은 장소에서 일어난다(부인이 그 집으로 뛰어 들어감)",
+     "source_text": "남편에게 뭔가 문제가 생겼다고 확신한 그녀는 계단을 뛰어 내려갔네"
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "EVENT_5_6에서 남편이 홱 잡아채인 듯 사라진 직후",
+   "result": "부인이 거리로 밀려나고, 경위를 만나 다시 돌아옴",
+   "source_text": "계단 아래에서, 그녀는 내가 말했던 그 라스카 악당과 마주쳤고, 그는 그녀를 밀쳐 냈으며, 그곳에서 조수로 일하는 어느 덴마크인의 도움을 받아 그녀를 거리로 밀어냈네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_19",
+   "scene_id": "scene_5_2",
+   "order": 8,
+   "title": "부인이 순경과 함께 현장으로 복귀",
+   "summary": "세인트클레어 부인이 골목을 내려가다 프레즈노가에서 순찰 중인 경위와 순경들을 만나 같은 건물로 돌아온다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_046",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_020"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_020",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_020",
+     "field": "location",
+     "from": "LOC_026",
+     "to": "LOC_008",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "경위와 순경 두 명이 그녀와 함께 돌아왔고,"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_020",
+     "field": "knows",
+     "assumes": "순경을 만나 도움을 요청해야 한다는 판단 (미칠 듯한 의심과 두려움)",
+     "source_text": "몹시 미칠 듯한 의심과 두려움에 사로잡힌 그녀는 골목을 뛰어 내려갔고, 운 좋게도 프레즈노가에서 순찰을 나가는 경위와 여러 순경들을 만났네."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_18",
+     "assumes": "이 사건은 EVENT_5_7 직후 발생한다 (거리로 밀려난 뒤 바로 다시 들어옴)",
+     "source_text": "경위와 순경 두 명이 그녀와 함께 돌아왔고,"
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "라스카에게 밀려난 뒤",
+   "result": "부인이 경위·순경의 호위 아래 건물로 다시 진입함",
+   "source_text": "경위와 순경 두 명이 그녀와 함께 돌아왔고, 그 주인의 계속된 저항에도 불구하고 그들은 세인트클레어 씨가 마지막으로 목격된 그 방으로 나아갔네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_20",
+   "scene_id": "scene_5_2",
+   "order": 9,
+   "title": "방의 조사와 세인트클레어 흔적 부재",
+   "summary": "경위와 순경이 건물 안을 수색해 세인트클레어의 흔적을 찾지 못한다. 라스카와 절름발이만 발견되고, 앞쪽 방에 다른 사람은 없었다고 맹세한다. 경위도 부인의 착각이 아닌가 흔들린다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_046",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_024"
+   ],
+   "witness_character_ids": [
+    "CHAR_020"
+   ],
+   "main_actor_character_id": "CHAR_024",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_019",
+     "field": "alive",
+     "from": "unknown",
+     "to": "unknown",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "uncertain",
+     "source_text": "그곳에는 그의 흔적이 전혀 없었네."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_024",
+     "field": "knows",
+     "assumes": "그날 오후 앞쪽 방에 다른 사람은 없었다고 진술할 입장의 정보",
+     "source_text": "그와 그 라스카는 둘 다 그날 오후 앞쪽 방에는 다른 누구도 없었다고 강하게 맹세했네."
+    },
+    {
+     "entity": "CHAR_024",
+     "field": "body_status",
+     "assumes": "흉측한 몰골의 절름발이",
+     "source_text": "그곳에 사는 것 같은 흉측한 몰골의 절름발이 한 명 말고는 아무도 찾을 수 없었네."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_19",
+     "assumes": "이 사건은 EVENT_5_8로 들어온 직후 같은 방에서 일어난다",
+     "source_text": "경위와 순경 두 명이 그녀와 함께 돌아왔고, 그 주인의 계속된 저항에도 불구하고 그들은 세인트클레어 씨가 마지막으로 목격된 그 방으로 나아갔네."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_020",
+     "info": "그 방에 남편의 흔적이 전혀 없다 (경위·순경의 수색 결과)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그곳에는 그의 흔적이 전혀 없었네."
+    }
+   ],
+   "cause": "EVENT_5_8에서 부인이 경위·순경과 함께 들어옴",
+   "result": "남편이 사라졌다는 정황이 굳어지고 부인이 장난감 상자를 발견하게 됨",
+   "source_text": "그곳에는 그의 흔적이 전혀 없었네. 사실, 그 층 전체에서 그곳에 사는 것 같은 흉측한 몰골의 절름발이 한 명 말고는 아무도 찾을 수 없었네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_21",
+   "scene_id": "scene_5_2",
+   "order": 10,
+   "title": "탁자 위 벽돌 장난감 상자 발견",
+   "summary": "세인트클레어 부인이 비명을 지르며 탁자 위 작은 나무 상자에 달려들어 뚜껑을 뜯고, 안에서 아이들 장난감 벽돌이 쏟아져 나온다. 절름발이는 당혹감을 보인다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_046",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_020"
+   ],
+   "witness_character_ids": [
+    "CHAR_024"
+   ],
+   "main_actor_character_id": "CHAR_020",
+   "objects": [
+    "OBJ_032"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_032",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_008",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "탁자 위에 놓인 작은 나무 상자에 달려들어"
+    },
+    {
+     "entity": "OBJ_032",
+     "field": "body_status",
+     "from": "unknown",
+     "to": "뚜껑이 뜯겨 열림 (안의 벽돌이 쏟아짐)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그 안에서 아이들 장난감 벽돌이 쏟아져 나왔네."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_020",
+     "field": "knows",
+     "assumes": "이 상자가 남편이 아들에게 사다주기로 한 바로 그 물건이라는 식별",
+     "source_text": "그것은 그가 집에 가져다주겠다고 약속했던 그 장난감이었네."
+    },
+    {
+     "entity": "CHAR_020",
+     "field": "body_status",
+     "assumes": "상자의 뚜껑을 뜯어낼 수 있을 만큼의 체력·손 상태",
+     "source_text": "탁자 위에 놓인 작은 나무 상자에 달려들어 뚜껑을 뜯어냈네."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_20",
+     "assumes": "이 사건은 EVENT_5_9의 수색이 거의 끝나갈 즈음 같은 방에서 일어난다",
+     "source_text": "경위도 흔들려서, 세인트클레어 부인이 착각한 게 아닐까 거의 믿게 되었을 때, 그녀가 비명을 지르며 탁자 위에 놓인 작은 나무 상자에 달려들어"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_020",
+     "info": "남편이 사다주기로 한 벽돌 장난감 상자가 그 방 탁자 위에 놓여 있었다 (남편이 그 방에 갔다는 직접 증거)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그것은 그가 집에 가져다주겠다고 약속했던 그 장난감이었네."
+    }
+   ],
+   "cause": "EVENT_5_9에서 수색이 부인의 착각이 아닌가 의심되는 순간",
+   "result": "경위가 사건의 심각성을 자각하고 방들을 꼼꼼히 조사하기 시작함",
+   "source_text": "그녀가 비명을 지르며 탁자 위에 놓인 작은 나무 상자에 달려들어 뚜껑을 뜯어냈네. 그 안에서 아이들 장난감 벽돌이 쏟아져 나왔네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_22",
+   "scene_id": "scene_5_2",
+   "order": 11,
+   "title": "꼼꼼한 수색 — 핏자국과 옷가지 발견",
+   "summary": "방들이 꼼꼼히 조사되어 앞쪽 방은 소박한 응접실, 안쪽은 부두 창으로 이어지는 작은 침실임이 밝혀진다. 침실 창턱과 바닥에 핏자국이 있고, 커튼 뒤에 세인트클레어의 옷가지(코트 제외)·구두·양말·모자·시계가 모두 있고 폭력 흔적은 없으며 다른 흔적도 없다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_047",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [],
+   "witness_character_ids": [
+    "CHAR_020"
+   ],
+   "main_actor_character_id": "unknown",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_019",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "unknown",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "uncertain",
+     "source_text": "네빌 세인트클레어 씨의 다른 흔적도 없었네."
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "body_status",
+     "from": "unknown",
+     "to": "창문 너머로 사라짐 (헤엄쳐 살아남았을 가망이 거의 없음, 당시 밀물이 가장 높았음)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "다른 출구를 찾을 수 없었으니 그는 분명 창문으로 나갔을 텐데, 창턱의 불길한 핏자국은 그가 헤엄쳐서 목숨을 구했을 가망을 거의 남기지 않았네, 비극이 일어난 순간 밀물이 가장 높았기 때문이지."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "LOC_008",
+     "field": "condition",
+     "assumes": "앞쪽 방은 소박한 응접실, 안쪽에 부두 창으로 이어지는 작은 침실이 딸려 있다",
+     "source_text": "앞쪽 방은 소박한 응접실로 꾸며져 있었고, 그 안쪽으로는 작은 침실이 딸려 있었는데, 그 창은 어느 부두의 뒤편을 향해 나 있었네."
+    },
+    {
+     "entity": "LOC_008",
+     "field": "condition",
+     "assumes": "침실 창턱에 핏자국, 침실 나무 바닥에 핏방울이 흩어져 있고, 부두와 침실 창문 사이 좁은 땅은 밀물 때 최소 4피트 반이 잠긴다",
+     "source_text": "부두와 침실 창문 사이에는 좁은 땅이 있는데, 썰물 때는 말라 있지만 밀물 때는 적어도 4피트 반의 물이 들어차네."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_21",
+     "assumes": "이 사건은 EVENT_5_10 직후 같은 장소에서 시작된 수색의 후속 단계다",
+     "source_text": "이 발견과, 그 절름발이가 보인 명백한 당혹감으로, 경위는 이 문제가 심각하다는 것을 깨달았네. 방들은 꼼꼼히 조사되었고,"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_020",
+     "info": "남편의 옷가지(코트 제외)가 커튼 뒤에 모두 있고, 침실 창턱·바닥에 핏자국이 있으며, 다른 출구도 없고, 다른 흔적도 없다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "앞쪽 방의 커튼 뒤에는 네빌 세인트클레어 씨의 옷이 전부 밀쳐져 있었네, 코트 한 벌만 빼고 말일세. 그의 구두, 양말, 모자, 시계—전부 거기 있었네."
+    }
+   ],
+   "cause": "EVENT_5_10에서 장난감 상자 발견 → 경위가 사건의 심각성을 자각",
+   "result": "흉악한 범죄 정황이 굳어짐",
+   "source_text": "방들은 꼼꼼히 조사되었고, 결과는 모두 흉악한 범죄를 가리켰네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_23",
+   "scene_id": "scene_5_1",
+   "order": 1,
+   "title": "휴 분의 신원과 행적에 대한 홈즈의 설명",
+   "summary": "홈즈가 라스카를 정리하고, 아편굴 2층의 하숙인 휴 분의 정체, 외모, 거지 생활, 스레드니들가에서의 구걸 행태를 설명함.",
+   "location_id": "LOC_027",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_019"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_033",
+    "OBJ_034"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_019",
+     "field": "body_status",
+     "assumes": "절름발이(다리를 절음), 그러나 그 외는 강건하고 잘 먹은 남자",
+     "source_text": "그는 다리를 저는 정도의 의미에서만 절름발이일세, 다른 면에서는 강건하고 잘 먹은 남자로 보이네"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "assumes": "네빌 세인트클레어를 마지막으로 본 사람이라는 사실",
+     "source_text": "그가 확실히 네빌 세인트클레어를 마지막으로 본 인간이었지"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "ability",
+     "assumes": "한쪽 다리의 약점을 다른 쪽 팔다리의 비범한 힘으로 보상함",
+     "source_text": "자네의 의학적 경험이라면 한쪽 팔다리의 약점이 흔히 다른 쪽의 비범한 힘으로 보상된다는 걸 말해 주지 않겠나"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "아편굴 2층의 하숙인 휴 분이 네빌 세인트클레어를 마지막으로 본 사람이다",
+     "via": "told",
+     "retained": true,
+     "source_text": "그가 확실히 네빌 세인트클레어를 마지막으로 본 인간이었지"
+    }
+   ],
+   "cause": "이전 사건에서 라스카가 세인트클레어 부인 남편 사건의 공범일 수 없는 것이 드러남",
+   "result": "다음 정점(범인) 휴 분으로 조사 대상이 이동함",
+   "source_text": "라스카 관리인에 관해서는 이 정도로 해 두세. 이제 아편굴 이 층에 사는 그 불길한 절룸발이에 대해 말해 보세, 그는 확실히 네빌 세인트클레어를 마지막으로 본 인간이었지. 그의 이름은 휴 분이고, 그 흉측한 얼굴은 시티에 자주 드나드는 사람이라면 누구에게나 낯익은 얼굴이라네. 그는 직업적인 거지인데, 경찰 단속을 피하려고 밀랍 성냥을 조금씩 파는 척하고 있네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_24",
+   "scene_id": "scene_5_1",
+   "order": 2,
+   "title": "세인트클레어 부인의 기절과 브래드스트리트 경위의 현장 조사",
+   "summary": "부인이 창가 핏자국을 보고 기절해 마차로 집까지 호송됨. 브래드스트리트 경위가 방을 꼼꼼히 조사하지만 단서는 찾지 못함.",
+   "location_id": "LOC_008",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_018",
+    "CHAR_020",
+    "CHAR_019"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_018",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_020",
+     "field": "alive",
+     "from": "true",
+     "to": "unconscious",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "true",
+     "certainty": "explicit",
+     "source_text": "세인트클레어 부인은 창가의 핏자국을 보고 기절했고, 경찰이 마차로 그녀를 집까지 데려다주었네"
+    },
+    {
+     "entity": "CHAR_020",
+     "field": "location",
+     "from": "LOC_008",
+     "to": "LOC_028",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "경찰이 마차로 그녀를 집까지 데려다주었네"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_018",
+     "field": "ability",
+     "assumes": "꼼꼼한 현장 조사 능력",
+     "source_text": "이 사건을 맡은 브래드스트리트 경위는 아주 꼼꼼히 그 방을 조사했지만"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "브래드스트리트 경위가 즉시 휴 분을 체포하지 않은 실수가 있었다",
+     "via": "told",
+     "retained": true,
+     "source_text": "실수가 하나 있었다면, 분을 즉시 체포하지 않았다는 것이었는데"
+    }
+   ],
+   "cause": "세인트클레어 부인이 창가의 핏자국을 발견함",
+   "result": "부인은 기절하여 호송됨, 분은 잠시 시간을 벌어 라스카와 연락 가능성 생김",
+   "source_text": "세인트클레어 부인은 창가의 핏자국을 보고 기절했고, 경찰이 마차로 그녀를 집까지 데려다주었네, 그녀가 있어 봤자 조사에 도움이 되지 않았으니까. 이 사건을 맡은 브래드스트리트 경위는 아주 꼼꼼히 그 방을 조사했지만, 이 문제에 조금이라도 빛을 던져 줄 만한 것은 찾지 못했네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_25",
+   "scene_id": "scene_5_1",
+   "order": 3,
+   "title": "휴 분의 체포와 몸수색",
+   "summary": "브래드스트리트가 실수를 바로잡아 휴 분을 체포, 몸수색. 오른쪽 셔츠 소매에 핏자국이 있으나 약손가락 베인 데서 난 것이라고 해명함.",
+   "location_id": "LOC_008",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_018",
+    "CHAR_019"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_018",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_019",
+     "field": "location",
+     "from": "LOC_008",
+     "to": "unknown",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "그는 큰 소리로 항의하며 경찰서로 연행되었고"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "body_status",
+     "from": "정상",
+     "to": "약손가락이 베인 상태",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "약손가락을 가리키며 그곳에서 피가 났다고 설명했고"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "assumes": "네빌 세인트클레어의 옷가지가 자기 방에 있는 이유를 모름(또는 모른다고 주장)",
+     "source_text": "자기 방에 그 옷들이 있는 것은 경찰만큼이나 자기에게도 수수께끼라고 맹세했네"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "휴 분이 네빌 세인트클레어의 마지막 목격자임에도 완강히 부인함",
+     "via": "told",
+     "retained": true,
+     "source_text": "그는 네빌 세인트클레어 씨를 본 적이 있다는 것을 완강히 부인했고"
+    }
+   ],
+   "cause": "브래드스트리트가 체포 실수를 바로잡음",
+   "result": "분은 경찰서로 연행됨, 경위는 썰물에 새로운 단서가 나오기를 기다림",
+   "source_text": "하지만 이 실수는 곧 바로잡혔고, 그는 붙잡혀 몸수색을 받았지만 그를 옭아맬 만한 것은 아무것도 발견되지 않았네. 사실 그의 오른쪽 셔츠 소매에 몇 군데 핏자국이 있긴 했지만, 그는 손톱 근처가 베인 약손가락을 가리키며 그곳에서 피가 났다고 설명했고, 얼마 전 창가에 갔었으니 거기서 관찰된 얼룩도 필시 같은 출처에서 나온 것이라고 덧붙였네. 그는 네빌 세인트클레어 씨를 본 적이 있다는 것을 완강히 부인했고, 자기 방에 그 옷들이 있는 것은 경찰만큼이나 자기에게도 수수께끼라고 맹세했네. 세인트클레어 부인이 실제로 창가에서 남편을 보았다는 주장에 대해서는, 그녀가 미쳤거나 꿈을 꾼 것이 틀림없다고 단언했네. 그는 큰 소리로 항의하며 경찰서로 연행되었고, 경위는 썰물이 뭔가 새로운 단서를 던져 줄까 하는 희망으로 그 자리에 남았네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_26",
+   "scene_id": "scene_5_1",
+   "order": 4,
+   "title": "밀물이 빠지며 네빌 세인트클레어의 코트가 드러남",
+   "summary": "밀물 빠진 후 진흙 둔덕에서 네빌 세인트클레어의 코트만 발견됨. 몸은 발견되지 않음.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_048",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_018"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "unknown",
+   "objects": [
+    "OBJ_035"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_035",
+     "field": "body_status",
+     "from": "잠겨 있음",
+     "to": "밀물 빠진 진흙 둔덕에 드러남",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "밀물이 빠지면서 드러난 것은 네빌 세인트클레어의 코트였지, 네빌 세인트클레어 자신이 아니었네"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "LOC_008",
+     "field": "condition",
+     "assumes": "부두와 그 집 사이에 사나운 소용돌이가 존재함",
+     "source_text": "부두와 그 집 사이에는 사나운 소용돌이가 있네"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "네빌 세인트클레어의 시신이 아닌 코트만 발견됨",
+     "via": "told",
+     "retained": true,
+     "source_text": "밀물이 빠지면서 드러난 것은 네빌 세인트클레어의 코트였지, 네빌 세인트클레어 자신이 아니었네"
+    }
+   ],
+   "cause": "밀물이 빠짐",
+   "result": "코트가 발견되었고, 동전 주머니 조사로 이어짐",
+   "source_text": "밀물이 빠지면서 드러난 것은 네빌 세인트클레어의 코트였지, 네빌 세인트클레어 자신이 아니었네. 그런데 그 주머니에서 뭘 발견했을 것 같나?",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_27",
+   "scene_id": "scene_5_1",
+   "order": 5,
+   "title": "코트 주머니에서 421개 페니와 270개 반페니 발견",
+   "summary": "발견된 코트의 모든 주머니에 페니와 반페니 동전이 가득 들어 있었음.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_048",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_018"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "unknown",
+   "objects": [
+    "OBJ_035"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_035",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "NEW:동전_주머니_들어있는_코트 (페니 421, 반페니 270)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "모든 주머니마다 페니와 반 페니 동전이 가득 채워져 있었네—페니 421개와 반 페니 270개였지"
+    }
+   ],
+   "assumed_states": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "코트 주머니에 페니 421개와 반페니 270개가 동전으로 가득 차 있었음",
+     "via": "told",
+     "retained": true,
+     "source_text": "모든 주머니마다 페니와 반 페니 동전이 가득 채워져 있었네—페니 421개와 반 페니 270개였지"
+    }
+   ],
+   "cause": "코트가 발견되어 주머니를 조사함",
+   "result": "휴 분이 동전으로 코트를 가라앉혔다는 가설이 도출됨",
+   "source_text": "모든 주머니마다 페니와 반 페니 동전이 가득 채워져 있었네—페니 421개와 반 페니 270개였지. 그러니 밀물에 쓸려 가지 않은 것도 놀랍지 않았네. 하지만 사람의 몸은 다른 문제일세. 부두와 그 집 사이에는 사나운 소용돌이가 있네. 그 무게가 실린 코트는 그대로 남았고, 발가벗겨진 시신은 강물로 빨려 들어갔을 가능성이 꽤 있어 보였네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_28",
+   "scene_id": "scene_5_1",
+   "order": 6,
+   "title": "왓슨의 질문과 홈즈의 작업가설 설명",
+   "summary": "왓슨이 다른 옷은 어쩌었냐 묻고, 홈즈가 휴 분이 세인트클레어를 창밖으로 밀어낸 뒤 증거 옷을 처리하려 했으나 동전으로 코트만 가라앉히고 나머지는 경찰 도착으로 못 버렸다는 가설을 설명함.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_019"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_019",
+     "field": "possesses",
+     "from": "동전(구걸 재산)",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "자신의 구걸로 모아 둔 재산이 있는 비밀 은닉처로 달려가, 손에 잡히는 대로 모든 동전을 주머니에 쑤셔 넣어 코트가 확실히 가라앉게 만들네"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_019",
+     "field": "ability",
+     "assumes": "네빌 세인트클레어를 창밖으로 밀어낼 수 있는 신체적 능력",
+     "source_text": "만약 이 사내 분이 네빌 세인트클레어를 창밖으로 밀어냈다고 가정해 보세"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "assumes": "옷가지가 증거임을 알고 즉시 처리해야 함을 인식",
+     "source_text": "그럼 그는 무엇을 했을까? 물론 그는 즉시 그 증거가 되는 옷가지들을 없애야 한다는 생각이 떠올랐을 걸세"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "휴 분이 동전으로 코트를 가라앉혔고, 다른 옷은 경찰 도착으로 못 버렸다는 가설",
+     "via": "told",
+     "retained": true,
+     "source_text": "그는 그것을 창밖으로 던졌고, 아래층에서 발소리가 몰려오는 것을 듣지만 않았더라면 다른 옷가지들도 똑같이 했을 것이지만"
+    }
+   ],
+   "cause": "왓슨의 질문 '시신이 코트 한 벌만 걸치고 있었을까?'",
+   "result": "작업가설이 세워졌고, 사건은 분의 체포로 일단 중단됨",
+   "source_text": "만약 이 사내 분이 네빌 세인트클레어를 창밖으로 밀어냈다고 가정해 보세, 그 행위를 볼 수 있는 인간의 눈은 없었네. 그럼 그는 무엇을 했을까? 물론 그는 즉시 그 증거가 되는 옷가지들을 없애야 한다는 생각이 떠올랐을 걸세. 그러면 그는 코트를 집어 들고 그것을 던져 버리려던 참에, 그것이 가라앉지 않고 뜰 거라는 생각이 들었을 걸세. 그는 시간이 별로 없었네, 아내가 위로 올라오려고 밀고 들어오려 할 때 아래층에서 몸싸움 소리를 들었을 테고, 어쩌면 이미 라스카 공범자에게서 경찰이 거리를 서둘러 올라오고 있다는 소식을 들었을지도 모르니까. 한순간도 지체할 수 없었네. 그는 자신의 구걸로 모아 둔 재산이 있는 비밀 은닉처로 달려가, 손에 잡히는 대로 모든 동전을 주머니에 쑤셔 넣어 코트가 확실히 가라앉게 만들네. 그는 그것을 창밖으로 던졌고, 아래층에서 발소리가 몰려오는 것을 듣지만 않았더라면 다른 옷가지들도 똑같이 했을 것이지만, 겨우 창문을 닫을 시간밖에 없을 때 경찰이 나타난 걸세.",
+   "certainty": "inferred"
+  },
+  {
+   "event_id": "EVENT_5_29",
+   "scene_id": "scene_5_1",
+   "order": 7,
+   "title": "분은 체포되었고 사건은 해결되지 못함",
+   "summary": "휴 분은 체포되어 경찰서로 끌려갔고, 불리한 이력은 밝혀지지 않았음. 네빌 세인트클레어가 무엇을 하고 있었는지, 그에게 무슨 일이 있었는지, 현재 어디에 있는지, 분과 실종의 관계는 여전히 미해결.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_019"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "unknown",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_019",
+     "field": "location",
+     "from": "unknown",
+     "to": "NEW:경찰서(불명)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "분은 체포되어 경찰서로 끌려갔지만"
+    }
+   ],
+   "assumed_states": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "분에게 불리한 이력이 밝혀지지 않았고, 사건은 미해결 상태임",
+     "via": "told",
+     "retained": true,
+     "source_text": "그에게 전에 뭔가 불리한 이력이 있었다는 것은 밝혀지지 않았네. 그는 여러 해 동안 직업적인 거지로 알려져 왔지만, 그의 삶은 아주 조용하고 무해했던 것 같네. 지금으로서는 사건이 거기서 멈춰 있고"
+    }
+   ],
+   "cause": "휴 분의 체포와 조사 진행",
+   "result": "사건은 미해결로 중단됨",
+   "source_text": "내가 말했듯이 분은 체포되어 경찰서로 끌려갔지만, 그에게 전에 뭔가 불리한 이력이 있었다는 것은 밝혀지지 않았네. 그는 여러 해 동안 직업적인 거지로 알려져 왔지만, 그의 삶은 아주 조용하고 무해했던 것 같네. 지금으로서는 사건이 거기서 멈춰 있고, 풀어야 할 문제들—네빌 세인트클레어가 그 아편굴에서 무엇을 하고 있었는지, 거기서 그에게 무슨 일이 있었는지, 지금 그는 어디 있는지, 휴 분이 그의 실종과 무슨 관계가 있는지—전부 여전히 해결과는 거리가 머네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_30",
+   "scene_id": "scene_5_2",
+   "order": 1,
+   "title": "세 주의 시골을 지나 리의 변두리에 도착",
+   "summary": "홈즈가 설명하는 동안 마차는 대도시 외곽을 지나 잉글랜드의 미들섹스, 서리, 켄트 세 주를 가로질러 리의 변두리에 다다름.",
+   "location_id": "LOC_030",
+   "time_id": "TIME_049",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_001",
+     "to": "LOC_030",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "짧은 마차 여행 동안 우리는 잉글랜드의 세 주를 스쳐 지났네, 미들섹스에서 시작해서 서리의 한 모서리를 지나 켄트에서 끝났지"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_001",
+     "to": "LOC_030",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "짧은 마차 여행 동안 우리는 잉글랜드의 세 주를 스쳐 지났네, 미들섹스에서 시작해서 서리의 한 모서리를 지나 켄트에서 끝났지"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "세인트클레어 부인이 시더스에서 초조히 기다리고 있을 것이라 예상함",
+     "source_text": "그 등불 옆에는 이미 우리 말발굽 소리를 놓치지 않고 들었을 초조한 귀를 가진 한 여인이 앉아 있을 것이 틀림없네"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "세인트클레어 부인이 시더스에 살고 있음",
+     "via": "told",
+     "retained": true,
+     "source_text": "저것이 시더스일세"
+    }
+   ],
+   "cause": "마차를 타고 시골을 이동함",
+   "result": "홈즈는 사건 정리를 끝내고 시더스 저택 도착 직전까지 도달함",
+   "source_text": "셜록 홈즈가 이 기이한 일련의 사건들을 상세히 설명하는 동안, 우리는 대도시 외곽을 빙빙 돌아 마지막 흩어진 집들마저 뒤로하고, 양쪽에 시골 산울타리를 낀 채 덜컹거리며 달리고 있었다. 그런데 그가 이야기를 막 끝냈을 때, 우리는 창문에 아직 몇 개의 불빛이 반짝이는 작은 두 마을을 지나갔다. \"리의 변두리에 왔군,\" 내 동행이 말했다. \"짧은 마차 여행 동안 우리는 잉글랜드의 세 주를 스쳐 지났네, 미들섹스에서 시작해서 서리의 한 모서리를 지나 켄트에서 끝났지. 저 나무들 사이 불빛이 보이나? 저것이 시더스일세",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_31",
+   "scene_id": "scene_5_2",
+   "order": 2,
+   "title": "왓슨이 왜 베이커가가 아닌 시더스에서 지휘하느냐 묻고 홈즈가 부인과의 관계와 조사를 설명함",
+   "summary": "왓슨이 질문하고 홈즈는 시더스에서 할 조사가 많으며 부인이 방 두 개를 내주었고, 아내에게 남편의 소식이 없을 때 그녀를 만나는 것이 싫다고 답함.",
+   "location_id": "unknown",
+   "time_id": "TIME_049",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "부인이 남편의 소식이 없을 때 자신을 만나기 싫어할 것임을 알고 있음",
+     "source_text": "나는 그녀 남편에 관한 소식이 없을 때 그녀를 만나는 게 정말 싫다네"
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "왓슨의 질문",
+   "result": "저택 도착 직전 대화 종료",
+   "source_text": "\"그런데 왜 베이커가에서 이 사건을 지휘하지 않나?\" 내가 물었다. \"여기서 해야 할 조사가 많기 때문일세. 세인트클레어 부인이 아주 친절하게도 방 두 개를 내 마음대로 쓰라고 내주었고, 내 벗이자 동료를 그녀가 오직 환영해 줄 것이라 안심해도 좋네. 나는 그녀 남편에 관한 소식이 없을 때 그녀를 만나는 게 정말 싫다네, 왓슨. 다 왔군. 워, 워!\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_32",
+   "scene_id": "scene_5_2",
+   "order": 3,
+   "title": "시더스 저택 도착과 세인트클레어 부인의 만남",
+   "summary": "자체 부지 안에 있는 큰 저택에 도착. 금발 여인이 문간에서 기다리다 둘인 것을 보고 희망했다가 고개짓에 절망함. 부인은 좋은 소식/나쁜 소식 모두 없다고 들은 뒤 그나마 안도함.",
+   "location_id": "LOC_028",
+   "time_id": "TIME_049",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_020"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_020",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_020",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_028",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "자체 부지 안에 서 있는 큰 저택 앞에 멈춰 섰다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_020",
+     "field": "knows",
+     "assumes": "남편의 실종에 대한 소식을 기다리고 있음",
+     "source_text": "어떻게 됐나요?\" 그녀가 외쳤다. \"어떻게 됐어요?\""
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "전장 경험으로 위기에 익숙함",
+     "source_text": "저는 오랜 전장 경험이 있는 사람이고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_020",
+     "info": "남편 사건에 대한 좋은 소식도 나쁜 소식도 아직 없음",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"좋은 소식은 없나요?\" \"없습니다.\" \"나쁜 소식도요?\" \"없습니다.\""
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "세인트클레어 부인이 시더스 저택에서 남편의 소식을 기다리며 살고 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "자체 부지 안에 서 있는 큰 저택 앞에 멈춰 섰다"
+    }
+   ],
+   "cause": "마차가 시더스 저택에 도착함",
+   "result": "세 명이 저택에서 만남, 부인은 아직 소식이 없다는 사실에 좌절하지만 그나마 안도함",
+   "source_text": "우리는 자체 부지 안에 서 있는 큰 저택 앞에 멈춰 섰다. 마구간지기 소년이 말 머리 쪽으로 달려 나왔고, 나는 마차에서 뛰어내려 저택으로 이어지는 작고 구불구불한 자갈길을 따라 홈즈를 따라갔다. 우리가 다가가자 문이 벌컥 열리더니, 작은 체구의 금발 여인이 문간에 섰는데... \"어떻게 됐나요?\" 그녀가 외쳤다. \"어떻게 됐어요?\" 그러다 우리가 둘인 것을 보고는 희망에 찬 외침을 냈지만, 내 동행이 고개를 젓고 어깨를 으쓱하는 것을 보고는 그 외침이 신음으로 잦아들었다. \"좋은 소식은 없나요?\" \"없습니다.\" \"나쁜 소식도요?\" \"없습니다.\" \"그것만도 신께 감사드려요.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_33",
+   "scene_id": "scene_5_2",
+   "order": 4,
+   "title": "식당에서 부인이 솔직한 답변을 요청함",
+   "summary": "저녁 식사 자리에서 부인이 솔직한 의견—남편 네빌이 살아 있다고 진심으로 생각하느냐—를 묻고 홈즈는 솔직한 대답을 약속함.",
+   "location_id": "LOC_029",
+   "time_id": "TIME_049",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_020",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_020",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_020",
+     "field": "knows",
+     "assumes": "네빌의 실종에 대한 홈즈의 솔직한 견해를 아직 듣지 못함",
+     "source_text": "선생님의 진짜, 진짜 의견을 듣고 싶을 뿐이에요"
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "저택에 도착하여 식당으로 들어섬",
+   "result": "부인이 핵심 질문을 던지고, 홈즈가 이어서 대답할 자리로 넘어감",
+   "source_text": "\"자, 셜록 홈즈 씨,\" 우리가 불이 환하게 켜진, 식탁 위에 차가운 저녁 식사가 차려진 식당으로 들어서자 그 부인이 말했다. \"선생님께 한두 가지 솔직한 질문을 드리고 싶은데, 솔직한 대답을 부탁드려요.\" \"그러지요, 부인.\" \"제 감정은 신경 쓰지 마세요. 저는 히스테리를 부리거나 잘 기절하는 사람이 아니에요. 그저 선생님의 진짜, 진짜 의견을 듣고 싶을 뿐이에요.\" \"어떤 점에 대해서 말입니까?\" \"진심으로, 네빌이 살아 있다고 생각하세요?\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_34",
+   "scene_id": "scene_5_1",
+   "order": 1,
+   "title": "세인트클레어 부인과의 첫 문답",
+   "summary": "세인트클레어 부인이 남편의 생사 여부에 대해 홈즈에게 묻고, 홈즈는 그가 월요일에 죽었다고 답한다.",
+   "location_id": "LOC_028",
+   "time_id": "TIME_050",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_020",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_020",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "세인트클레어 부인 남편이 월요일에 죽었다고 추정",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "월요일입니다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_020",
+     "field": "knows",
+     "assumes": "남편이 죽었을 가능성에 대한 의견이 없었음 (홈즈에게 직접 물음)",
+     "source_text": "그가 죽었다고 생각하시는군요?"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_020",
+     "info": "홈즈는 남편이 월요일에 죽었다고 추정하고 있음",
+     "via": "told",
+     "retained": true,
+     "source_text": "월요일입니다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈는 세인트클레어를 월요일에 죽었다고 추정함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "월요일입니다."
+    }
+   ],
+   "cause": "세인트클레어 부인이 남편의 생사에 대해 홈즈에게 묻다",
+   "result": "홈즈가 월요일 사망 추정을 밝힘",
+   "source_text": "“그가 죽었다고 생각하시는군요?” / “그렇습니다.” / “그럼 그가 며칠에 죽음을 맞았다고 생각하세요?” / “월요일입니다.”",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_35",
+   "scene_id": "scene_5_1",
+   "order": 2,
+   "title": "편지 공개와 필체 감정",
+   "summary": "세인트클레어 부인이 오늘 그레이브젠드에서 온 남편의 편지를 꺼내 보여주고, 홈즈가 편지와 봉투의 필체를 분석한다.",
+   "location_id": "LOC_028",
+   "time_id": "TIME_050",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_020",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_036",
+    "OBJ_037",
+    "OBJ_038"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_036",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_028",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "그는 조급하게 그것을 그녀에게서 낚아채, 탁자 위에 펴 놓고 램프를 끌어당겨 유심히 살펴보았다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "필체와 잉크 상태로 봉투 작성 과정을 복원하는 관찰력",
+     "source_text": "이름 부분은 완전히 검은 잉크로, 저절로 말라 있습니다. 나머지는 회색빛인데, 이건 압지를 썼다는 걸 보여 주지요."
+    },
+    {
+     "entity": "CHAR_020",
+     "field": "knows",
+     "assumes": "남편이 서둘러 쓸 때의 필체와 평소 필체를 구별할 수 있음",
+     "source_text": "그가 서둘러 쓸 때의 필체예요. 평소 필체와는 아주 다르지만, 저는 그걸 잘 알아요."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_34",
+     "assumes": "EVENT_5_1에서 홈즈가 추정한 월요일 사망과, 이 편지가 오늘 그레이브젠드에서 부쳐졌다는 사실이 양립해야 함 (또는 그 추정이 틀렸을 가능성)",
+     "source_text": "“그렇다면 홈즈 선생님, 제가 오늘 그이에게서 편지를 받은 것을 어떻게 설명해 주시겠어요.”"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "네빌이 죽지 않았을 가능성이 있음 (그레이브젠드에서 온 편지·도장 반지)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "하지만 그는 분명 살아 있는 거예요, 홈즈 선생님."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "그레이브젠드에서 온 편지의 존재와 도장 반지 동봉",
+     "via": "direct",
+     "retained": true,
+     "source_text": "네, 반지가 있었어요. 그이의 도장 반지요."
+    },
+    {
+     "character_id": "CHAR_020",
+     "info": "홈즈는 편지가 단순 위조일 가능성을 열어두고 있음",
+     "via": "told",
+     "retained": true,
+     "source_text": "이것이 우리를 엉뚱한 길로 이끌기 위한 교묘한 위조가 아니라면 말이지요."
+    }
+   ],
+   "cause": "세인트클레어 부인이 남편의 편지를 공개함",
+   "result": "홈즈는 위조 가능성을 제시하면서도 편지를 분석함",
+   "source_text": "봉투는 아주 조잡한 것이었고 그레이브젠드 소인이 찍혀 있었으며, 날짜는 바로 그날, 아니 정확히는 전날이었는데, 이미 자정을 상당히 지난 시각이었기 때문이다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_36",
+   "scene_id": "scene_5_1",
+   "order": 3,
+   "title": "추가 심문 — 스완덤 레인 목격 재확인",
+   "summary": "홈즈가 부인에게 월요일 외침·창문·옷차림·아편 흡연 여부 등 주요 사실을 재확인한다.",
+   "location_id": "LOC_028",
+   "time_id": "TIME_050",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_020",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_020",
+     "field": "knows",
+     "assumes": "남편의 월요일 외침이 '놀라움'이 아닌 '도움 요청'이었다는 자신의 해석을 갖고 있음 (그러나 홈즈가 놀라움일 가능성을 제기함)",
+     "source_text": "도움을 청하는 소리라고 생각하셨습니까? / “네. 그는 손을 흔들었어요.”"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_34",
+     "assumes": "네빌이 월요일에 사라진 그날의 외침이 이번 사건의 추론에 결정적 정보로 사용됨",
+     "source_text": "그리고 월요일에 그는 떠나기 전에 아무 말도 하지 않았습니까?"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "네빌은 스완덤 레인에서 옷깃·넥타이 없이 맨목으로 목격됨",
+     "via": "told",
+     "retained": true,
+     "source_text": "하지만 옷깃이나 넥타이는 없었어요. 저는 맨목을 또렷이 봤어요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "네빌이 스완덤 레인에 대해 말한 적이 없고 아편 흡연 흔적도 없음",
+     "via": "told",
+     "retained": true,
+     "source_text": "스완덤 레인에 대해 말한 적이 있었습니까? / “전혀요.” / “아편을 흡연한 적이 있다는 낌새를 보인 적은요?” / “전혀요.”"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "네빌이 부인에게 외침을 통해 도움을 청했으며, 곧바로 뒤로 끌려가 사라짐",
+     "via": "told",
+     "retained": true,
+     "source_text": "네. 그는 손을 흔들었어요. / “그리고 부인은 그가 뒤로 끌려갔다고 생각하셨고요?”"
+    }
+   ],
+   "cause": "홈즈가 사건의 핵심 사실들을 확인하려 함",
+   "result": "홈즈는 사건의 주요한 점들을 확인하고 저녁 휴식을 선언함",
+   "source_text": "감사합니다, 세인트클레어 부인. 그것이 제가 확실히 해 두고 싶었던 주요한 점들이었습니다. 이제 간단히 저녁을 먹고 쉬어야겠습니다, 내일은 아주 바쁜 하루가 될지도 모르니까요.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_37",
+   "scene_id": "scene_5_2",
+   "order": 4,
+   "title": "밤샘 사고",
+   "summary": "홈즈는 파이프를 물고 베개·쿠션으로 좌탑을 만들어 밤새 사건을 되씹으며 앉아 있다.",
+   "location_id": "NEW:세인트클레어_저택_침실",
+   "time_id": "TIME_052",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "from": "정상",
+     "to": "밤새 잠을 자지 않음",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "정상",
+     "certainty": "explicit",
+     "source_text": "나는 곧 그가 밤새 앉아 있을 준비를 하고 있다는 걸 알아챘다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "낡은 브라이어 파이프, 살담배 한 온스, 성냥갑, 글래드스턴 가방",
+     "source_text": "낡은 브라이어 파이프를 입술 사이에 물고 ... 살담배 한 온스와 성냥갑을 앞에 늘어놓았다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "사건의 사실을 재배열하고 여러 관점에서 살피는 추론 습관",
+     "source_text": "마음속에 풀리지 않은 문제가 있으면 며칠씩, 심지어 일주일씩이라도 쉬지 않고 그것을 이리저리 뒤집어 보고, 사실들을 재배열하고, 온갖 관점에서 살펴보다가 마침내 그것을 깊이 파악하거나 자료가 불충분하다는 확신에 이르는 사람이었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈가 밤새 사건을 곱씹고 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "나는 곧 그가 밤새 앉아 있을 준비를 하고 있다는 걸 알아챘다."
+    }
+   ],
+   "cause": "이전에 세인트클레어 부인에게서 들은 정보가 마음에 걸림",
+   "result": "왓슨이 아침에 깨어났을 때도 홈즈는 여전히 추론 중",
+   "source_text": "내가 잠에 빠져들 때도 그는 그렇게 앉아 있었고, 갑작스러운 탄성에 내가 잠에서 깼을 때도 그렇게 앉아 있었으며, 그때 나는 여름 햇살이 방 안으로 비쳐 드는 것을 보았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_38",
+   "scene_id": "scene_5_2",
+   "order": 5,
+   "title": "사건의 열쇠 발견",
+   "summary": "홈즈는 욕실에서 사건의 열쇠를 꺼내 글래드스턴 가방에 넣어 두었고, 가설을 시험하려 새벽 4시 25분에 마차를 떠난다.",
+   "location_id": "NEW:세인트클레어_저택_침실",
+   "time_id": "TIME_051",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "NEW:사건의_열쇠",
+     "field": "location",
+     "from": "NEW:세인트클레어_저택_욕실",
+     "to": "OBJ_040",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "욕실에, ... 방금 거기 다녀와서 그것을 꺼내 이 글래드스턴 가방에 넣어 두었네."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "사건의 열쇠를 찾았다는 강한 확신",
+     "source_text": "하지만 이제는 이 사건의 열쇠를 손에 넣은 것 같군."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "글래드스턴 가방에 사건의 열쇠",
+     "source_text": "이 글래드스턴 가방에 넣어 두었네."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈는 사건의 열쇠를 글래드스턴 가방에 넣고 그것이 자물쇠에 맞는지 확인하려 함",
+     "via": "told",
+     "retained": true,
+     "source_text": "자, 이 사람아, 가서 그것이 자물쇠에 맞는지 보세."
+    }
+   ],
+   "cause": "밤새 사고 끝에 가설이 형성됨",
+   "result": "둘은 새벽 마차로 런던을 향해 출발함",
+   "source_text": "그럼 옷을 입게. ... 내 작은 가설 하나를 시험해 보고 싶네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_39",
+   "scene_id": "scene_5_3",
+   "order": 6,
+   "title": "런던으로의 마차 행",
+   "summary": "홈즈와 왓슨은 새벽 4시 25분에 세인트클레어 저택을 떠나 런던으로 향한다. 마차 안에서 홈즈는 자신이 두더지만큼 눈이 멀었다고 고백한다.",
+   "location_id": "NEW:런던_로드",
+   "time_id": "TIME_051",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "NEW:세인트클레어_저택_침실",
+     "to": "NEW:런던_로드_마차",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "그럼 옷을 입게. ... 우리는 최대한 조용히 아래층으로 내려가 밝은 아침 햇살 속으로 나섰다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "NEW:세인트클레어_저택_침실",
+     "to": "NEW:런던_로드_마차",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "우리는 최대한 조용히 아래층으로 내려가 밝은 아침 햇살 속으로 나섰다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "자신이 사건의 핵심 단서를 놓치고 있었음을 인정함",
+     "source_text": "고백하건대 나는 두더지만큼이나 눈이 멀어 있었지만, 지혜를 늦게라도 배우는 편이 아예 배우지 못하는 것보다는 낫지."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈는 사건을 보면서 두더지만큼 눈이 멀었다고 자평함",
+     "via": "told",
+     "retained": true,
+     "source_text": "고백하건대 나는 두더지만큼이나 눈이 멀어 있었지만, 지혜를 늦게라도 배우는 편이 아예 배우지 못하는 것보다는 낫지."
+    }
+   ],
+   "cause": "가설 시험을 위해 런던으로 향함",
+   "result": "런던 시내로 진입하여 보 스트리트로 향함",
+   "source_text": "런던 로드를 따라 쏜살같이 내달렸다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_40",
+   "scene_id": "scene_5_4",
+   "order": 7,
+   "title": "보 스트리트 도착과 브래드스트리트 경위 만남",
+   "summary": "홈즈와 왓슨이 보 스트리트에 도착하여 당직인 브래드스트리트 경위와 조용히 면담을 요청한다.",
+   "location_id": "NEW:보_스트리트",
+   "time_id": "TIME_051",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_023"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "NEW:런던_로드_마차",
+     "to": "NEW:보_스트리트",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "오른쪽으로 급히 꺾어 들어서니 우리는 보 스트리트에 와 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "NEW:런던_로드_마차",
+     "to": "NEW:보_스트리트",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "오른쪽으로 급히 꺾어 들어서니 우리는 보 스트리트에 와 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "브래드스트리트의 이름과 직위",
+     "source_text": "브래드스트리트 경위입니다, 선생님."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "당직은 브래드스트리트 경위임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "브래드스트리트 경위입니다, 선생님."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "당직이 브래드스트리트 경위임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "브래드스트리트 경위입니다, 선생님."
+    }
+   ],
+   "cause": "런던으로의 마차 행",
+   "result": "브래드스트리트 경위와의 면담이 시작됨",
+   "source_text": "“누가 당직인가?” 홈즈가 물었다. / “브래드스트리트 경위입니다, 선생님.” / “아, 브래드스트리트, 잘 지내나?”",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_41",
+   "scene_id": "scene_5_1",
+   "order": 1,
+   "title": "경위 사무실에서 대화 시작",
+   "summary": "홈즈와 왓슨이 경위의 사무실 같은 작은 방으로 들어간다. 홈즈는 분 사건에 대해 묻고, 죄수가 유치장에 있다고 듣는다.",
+   "location_id": "LOC_031",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_023"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_039"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_040",
+     "field": "alive",
+     "from": "unknown",
+     "to": "true",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "유치장에 있습니다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_023",
+     "field": "body_status",
+     "assumes": "책상에 앉을 수 있는 정상 신체",
+     "source_text": "경위는 책상에 앉았다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "분으로 불리는 거지 남자가 유치장에 수감되어 있다",
+     "via": "told",
+     "retained": true,
+     "source_text": "네. 데려와서 추가 조사를 위해 유치했습니다."
+    }
+   ],
+   "cause": "홈즈가 분 사건 관련하여 경위에게 면회를 요청함",
+   "result": "경위가 죄수 면회를 허가함",
+   "source_text": "물론입니다, 홈즈 씨. 이쪽 제 방으로 들어오시지요.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_42",
+   "scene_id": "scene_5_1",
+   "order": 2,
+   "title": "분에 대한 묘사 — 손이 더러움",
+   "summary": "경위가 분의 외양 — 손을 씻기 어렵고 얼굴이 땜장처럼 새까맣다고 묘사한다.",
+   "location_id": "LOC_031",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_023"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_023",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "분의 손은 씻기 어렵고 얼굴이 새까맣다",
+     "via": "told",
+     "retained": true,
+     "source_text": "손을 씻게 하는 것도 온갖 애를 써야 하고, 얼굴은 땜장이처럼 새까맣습니다."
+    }
+   ],
+   "cause": "홈즈가 분의 외양에 대해 질문함",
+   "result": "경위가 분의 외양을 묘사함",
+   "source_text": "손을 씻게 하는 것도 온갖 애를 써야 하고, 얼굴은 땜장이처럼 새까맣습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_43",
+   "scene_id": "scene_5_1",
+   "order": 3,
+   "title": "분 면회 요청",
+   "summary": "홈즈가 직접 분을 보고 싶다고 말하고, 경위가 가방을 두고 가도 된다고 한다. 홈즈는 가져가겠다고 한다.",
+   "location_id": "LOC_031",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_023"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_040"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_040",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "아니, 가져가는 게 좋겠네."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "NEW:글래드스턴_가방 (실제 소지)",
+     "source_text": "가방은 여기 두셔도 됩니다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "홈즈가 분을 직접 보고 싶다는 의사를 밝힘",
+   "result": "가방은 가져가기로 하고 감방으로 향함",
+   "source_text": "그를 아주 한번 보고 싶군.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_44",
+   "scene_id": "scene_5_2",
+   "order": 4,
+   "title": "감방 복도까지 이동",
+   "summary": "경위가 홈즈와 왓슨을 데리고 복도, 창살 문, 구불구불한 계단을 지나 회칠한 복도까지 안내한다.",
+   "location_id": "LOC_032",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_023",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_023",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_031",
+     "to": "LOC_032",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그는 우리를 데리고 복도를 지나, 창살 문을 열고, 구불구불한 계단을 내려가, 양쪽으로 문이 늘어선 회칠한 복도로 안내했다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_031",
+     "to": "LOC_032",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그는 우리를 데리고 복도를 지나"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "계단을 내려갈 수 있는 정상 신체",
+     "source_text": "구불구불한 계단을 내려가"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "계단을 내려갈 수 있는 정상 신체",
+     "source_text": "구불구불한 계단을 내려가"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_43",
+     "assumes": "EVENT_5_3에서 가져가기로 한 가방을 EVENT_5_4~에서도 소지하고 있다",
+     "source_text": "가방은 여기 두셔도 됩니다. / 아니, 가져가는 게 좋겠네."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "경위가 감방으로 안내함",
+   "result": "회칠한 복도 도착",
+   "source_text": "오른쪽 세 번째가 그의 방입니다,",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_45",
+   "scene_id": "scene_5_3",
+   "order": 5,
+   "title": "창살 너머로 죄수 관찰",
+   "summary": "경위가 판을 뒤로 밀고 안을 들여다보며 잠들어 있다고 말한다. 홈즈와 왓슨도 창살에 눈을 댄다. 죄수는 깊이 잠들어 있다.",
+   "location_id": "LOC_033",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_023",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_023",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_040",
+     "field": "alive",
+     "from": "true",
+     "to": "unconscious",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "true",
+     "certainty": "explicit",
+     "source_text": "죄수는 얼굴을 우리 쪽으로 향한 채 아주 깊은 잠에 빠져 있었는데, 느리고 무겁게 숨을 쉬고 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_040",
+     "field": "body_status",
+     "assumes": "거친 옷, 색깔 있는 셔츠, 해진 코트 (분장된 거지 모습)",
+     "source_text": "그는 중키의 남자로, 자기 직업에 어울리게 거친 옷을 입고 있었고, 색깔 있는 셔츠가 해진 코트의 찢어진 틈 사이로 삐져나와 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "거지 남자는 깊이 잠들어 있다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "자고 있군요, 그가 말했다. 아주 잘 보실 수 있을 겁니다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "거지 남자는 깊이 잠들어 있다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "아주 잘 보실 수 있을 겁니다."
+    }
+   ],
+   "cause": "경위가 창살 너머로 관찰을 시도함",
+   "result": "죄수가 깊이 잠들어 있음이 확인됨",
+   "source_text": "자고 있군요,",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_46",
+   "scene_id": "scene_5_3",
+   "order": 6,
+   "title": "죄수의 외모 묘사",
+   "summary": "지저분한 거지 얼굴 — 흉터, 비뚤어진 입술, 붉은 머리카락이 묘사된다. 경위가 '미남'이라고 비꼰다.",
+   "location_id": "LOC_033",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_023"
+   ],
+   "main_actor_character_id": "unknown",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_040",
+     "field": "body_status",
+     "assumes": "오래된 흉터로 인한 넓은 자국이 눈에서 턱까지 가로질러 있고, 수축으로 윗입술이 말려 올라가 이빨 세 개가 드러나 있음. 부스스한 붉은 머리카락. 얼굴이 때로 덮여 있음",
+     "source_text": "경위가 말한 대로 몹시 지저분했지만, 얼굴을 덮은 때로도 그 흉측한 못생김은 가릴 수 없었다. 오래된 흉터로 인한 넓은 자국이 눈에서 턱까지 얼굴을 가로질러 나 있었고, 그것이 수축하면서 윗입술 한쪽이 말려 올라가 이빨 세 개가 영구적인 으르렁거림처럼 드러나 있었다. 아주 밝은 붉은 머리카락이 부스스하게 눈과 이마 위로 낮게 자라 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "분은 흉측하게 흉터진 얼굴에 이빨이 드러나 있고 붉은 머리카락이다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "오래된 흉터로 인한 넓은 자국이 눈에서 턱까지 얼굴을 가로질러 나 있었고"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "분은 흉측하게 흉터진 얼굴에 이빨이 드러나 있고 붉은 머리카락이다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "오래된 흉터로 인한 넓은 자국이 눈에서 턱까지 얼굴을 가로질러 나 있었고"
+    }
+   ],
+   "cause": "창살 너머로 죄수 관찰",
+   "result": "죄수 외모의 상세 묘사가 텍스트로 제시됨",
+   "source_text": "미남이지요, 안 그렇습니까?",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_47",
+   "scene_id": "scene_5_3",
+   "order": 7,
+   "title": "홈즈가 글래드스턴 가방에서 스펀지를 꺼냄",
+   "summary": "홈즈는 씻겨야 할 것 같다는 말을 하며 글래드스턴 가방을 열고 커다란 목욕용 스펀지를 꺼낸다.",
+   "location_id": "LOC_033",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_023"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_040",
+    "OBJ_041"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_041",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그는 말하면서 글래드스턴 가방을 열더니, 놀랍게도 아주 커다란 목욕용 스펀지를 꺼냈다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_040",
+     "source_text": "가방은 여기 두셔도 됩니다. / 아니, 가져가는 게 좋겠네."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_45",
+     "assumes": "EVENT_5_5의 잠든 상태가 여전히 유지되어 있어야 깨지 않고 문질러질 수 있다",
+     "source_text": "자고 있군요, / 잠든 자는 반쯤 몸을 돌리다가 다시 깊은 잠 속으로 가라앉았다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_023",
+     "info": "홈즈가 글래드스턴 가방에서 목욕용 스펀지를 갖고 있다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "놀랍게도 아주 커다란 목욕용 스펀지를 꺼냈다."
+    }
+   ],
+   "cause": "홈즈의 사전 계획 (가방에 스펀지를 준비함)",
+   "result": "경위의 호의적 동의",
+   "source_text": "확실히 씻어야 할 것 같군, 홈즈가 말했다. 그럴 것 같아서, 내가 도구를 가져오는 실례를 범했네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_48",
+   "scene_id": "scene_5_3",
+   "order": 8,
+   "title": "감방 문이 열리고 홈즈가 얼굴을 문지름",
+   "summary": "경위가 감방 문을 열고 모두 조용히 들어간다. 홈즈는 물주전자로 스펀지를 적시고 죄수의 얼굴을 위아래로 두 번 문질러 분장을 벗겨낸다. 그 남자는 네빌 세인트클레어로 소개된다.",
+   "location_id": "LOC_033",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_023",
+    "CHAR_040"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_041",
+    "OBJ_042",
+    "OBJ_044",
+    "OBJ_043"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_040",
+     "field": "body_status",
+     "from": "거친 갈색 색조, 흉터, 비뚤어진 입술, 헝클어진 붉은 가발로 위장된 거지 외모",
+     "to": "창백하고 슬픈 얼굴, 검은 머리, 매끄러운 피부의 기품 있는 남성 외모 (분장 제거)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그 남자의 얼굴이 스펀지 아래에서 나무껍질처럼 벗겨져 나갔다. 그 거친 갈색 색조는 사라졌다! 그 얼굴을 가로질러 새겨져 있던 끔찍한 흉터도 사라졌고, 얼굴에 그 역겨운 냉소를 안겨 주었던 그 비뚤어진 입술도 사라졌다!"
+    },
+    {
+     "entity": "CHAR_040",
+     "field": "possesses",
+     "from": "OBJ_043",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "한 번의 잡아당김에 헝클어진 붉은 가발이 벗겨졌고,"
+    },
+    {
+     "entity": "CHAR_040",
+     "field": "possesses",
+     "from": "OBJ_044",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그 얼굴을 가로질러 새겨져 있던 끔찍한 흉터도 사라졌고, 얼굴에 그 역겨운 냉소를 안겨 주었던 그 비뚤어진 입술도 사라졌다!"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "분은 네빌 세인트클레어이다",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "소개하지, 그가 외쳤다. 켄트주 리의 네빌 세인트클레어 씨일세."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_040",
+     "field": "body_status",
+     "assumes": "분장 전 매끄러운 피부, 검은 머리, 기품 있는 외모 (분장 밑에 숨겨진 본래의 얼굴)",
+     "source_text": "한 번의 잡아당김에 헝클어진 붉은 가발이 벗겨졌고, 그곳에는, 침대에 일어나 앉은, 창백하고 슬픈 얼굴에 기품 있어 보이는 남자가 있었다. 검은 머리에 매끄러운 피부를 가진,"
+    },
+    {
+     "entity": "CHAR_040",
+     "field": "ability",
+     "assumes": "분장은 물로 문지르면 떨어지는 물성",
+     "source_text": "홈즈는 물주전자 쪽으로 몸을 굽혀 스펀지를 적신 뒤, 죄수의 얼굴을 위아래로 힘차게 두 번 문질렀다."
+    },
+    {
+     "entity": "CHAR_023",
+     "field": "knows",
+     "assumes": "분은 거지이고 사진으로 본 세인트클레어는 별개인 인물로 알고 있었음 (지금 깨닫게 됨)",
+     "source_text": "맙소사! 경위가 외쳤다. 정말로, 실종된 그 남자로군요. 사진으로 그를 압니다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_45",
+     "assumes": "EVENT_5_5에서 잠든 상태인 죄수와 EVENT_5_8의 얼굴이 문질러진 인물은 동일인이다",
+     "source_text": "죄수는 얼굴을 우리 쪽으로 향한 채 / 잠든 자는 반쯤 몸을 돌리다가"
+    },
+    {
+     "with_event_id": "EVENT_5_46",
+     "assumes": "EVENT_5_6에서 묘사된 흉터·붉은 머리는 분장이며, EVENT_5_8의 분장 제거 시 사라진다",
+     "source_text": "오래된 흉터로 인한 넓은 자국이 눈에서 턱까지 얼굴을 가로질러 나 있었고 / 그 얼굴을 가로질러 새겨져 있던 끔찍한 흉터도 사라졌고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_023",
+     "info": "분이라는 거지 남자는 사실 실종된 네빌 세인트클레어이다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "맙소사! 경위가 외쳤다. 정말로, 실종된 그 남자로군요. 사진으로 그를 압니다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "분이라는 거지 남자는 사실 네빌 세인트클레어이다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "내 평생 그런 광경은 본 적이 없다."
+    }
+   ],
+   "cause": "홈즈가 사전에 스펀지를 준비하고 글래드스턴 가방을 가져왔다",
+   "result": "분장이 벗겨지고 세인트클레어의 본래 정체가 드러남",
+   "source_text": "소개하지, 그가 외쳤다. 켄트주 리의 네빌 세인트클레어 씨일세.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_49",
+   "scene_id": "scene_5_3",
+   "order": 9,
+   "title": "세인트클레어가 드러남에 비명을 지름",
+   "summary": "세인트클레어는 자신이 드러난 것을 깨닫고 비명을 지르며 베개에 얼굴을 파묻는다.",
+   "location_id": "LOC_033",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_019"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_023"
+   ],
+   "main_actor_character_id": "CHAR_019",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_019",
+     "field": "ability",
+     "assumes": "소리를 지를 수 있는 정상 신체",
+     "source_text": "그는 비명을 지르며 베개에 얼굴을 파묻고 몸을 던졌다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_48",
+     "assumes": "EVENT_5_8의 얼굴 문질러짐으로 분장이 제거되어 진짜 얼굴이 드러난 상태가 지속된다",
+     "source_text": "한 번의 잡아당김에 헝클어진 붉은 가발이 벗겨졌고, / 그러다 갑자기 자신이 드러났다는 것을 깨닫고는,"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_019",
+     "info": "자신의 정체가 다른 사람들 앞에서 드러났다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그러다 갑자기 자신이 드러났다는 것을 깨닫고는,"
+    }
+   ],
+   "cause": "홈즈의 분장 제거",
+   "result": "세인트클레어가 당혹과 공포를 표현함",
+   "source_text": "그는 비명을 지르며 베개에 얼굴을 파묻고 몸을 던졌다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_50",
+   "scene_id": "scene_5_3",
+   "order": 10,
+   "title": "세인트클레어가 운명에 맡기는 태도를 보임",
+   "summary": "세인트클레어는 자기 운명에 스스로를 내맡긴 채 되려는 대로 되라는 태도로 몸을 돌린다. 무슨 혐의로 기소되었냐고 묻는다.",
+   "location_id": "LOC_033",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_019",
+    "CHAR_023"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_019",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "assumes": "자신의 신원이 드러났음을 인지",
+     "source_text": "죄수는 자기 운명에 스스로를 내맡긴 사람의 될 대로 되라는 태도로 몸을 돌렸다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "세인트클레어가 자수/항복 자세로 무슨 혐의인지 묻고 있다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그런데 저는 무슨 혐의로 기소된 겁니까?"
+    }
+   ],
+   "cause": "분장이 벗겨지고 본인이 드러난 사실",
+   "result": "세인트클레어가 운명에 맡기는 발언을 함",
+   "source_text": "그렇다고 칩시다, 그가 말했다. 그런데 저는 무슨 혐의로 기소된 겁니까?",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_51",
+   "scene_id": "scene_5_3",
+   "order": 11,
+   "title": "홈즈의 협박 섞인 충고",
+   "summary": "홈즈는 법정에 가면 신문에 알려질 것이고, 경찰 당국에 납득시키면 법정까지 가지 않을 거라고 충고한다.",
+   "location_id": "LOC_033",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_019"
+   ],
+   "witness_character_ids": [
+    "CHAR_002",
+    "CHAR_023"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "from": "unknown",
+     "to": "법정에 가면 신문에 알려질 수 있다",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "이 일을 법정에 맡겨 밝히려 하신다면, 당연히 세상에 알려지는 것을 피하기 어려울 겁니다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "세인트클레어가 아이들에게 가문의 오점을 남기고 싶지 않다는 점",
+     "source_text": "범죄는 없지만, 아주 큰 잘못이 저질러졌지요, 홈즈가 말했다. 아내분을 믿었더라면 더 좋았을 겁니다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_48",
+     "assumes": "EVENT_5_8에서 분장이 제거된 인물과 EVENT_5_11의 청자는 동일인이다",
+     "source_text": "소개하지, 그가 외쳤다. 켄트주 리의 네빌 세인트클레어 씨일세. / 당신이 저희에게 말씀하시는 것을 기록해서"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_019",
+     "info": "경찰 당국에 납득시키면 법정까지 가지 않을 수 있다",
+     "via": "told",
+     "retained": true,
+     "source_text": "반면 경찰 당국에 당신에게 불리한 사건이 성립할 수 없다는 것을 납득시키신다면, 그 세부 사항이 신문에 실릴 이유가 있을지 모르겠습니다."
+    }
+   ],
+   "cause": "세인트클레어가 자수의 태도를 보임",
+   "result": "세인트클레어가 자신의 비밀을 털어놓기로 결심함",
+   "source_text": "범죄는 없지만, 아주 큰 잘못이 저질러졌지요, 홈즈가 말했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_52",
+   "scene_id": "scene_5_3",
+   "order": 12,
+   "title": "세인트클레어가 자신의 과거를 털어놓기 시작함",
+   "summary": "세인트클레어가 부친의 직업, 교육, 여행, 연극 경험, 기자 경험, 변장 구걸의 시작을 이야기한다.",
+   "location_id": "LOC_033",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_019"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_023"
+   ],
+   "main_actor_character_id": "CHAR_019",
+   "objects": [
+    "OBJ_044",
+    "OBJ_043"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "assumes": "분장 기술 (얼굴 칠, 살색 반창고, 입술 고정, 붉은 머리 가발, 옷차림)을 구사할 수 있다",
+     "source_text": "저는 얼굴을 칠했고, 최대한 가련해 보이려고 살색 반창고 조각으로 그럴싸한 흉터를 만들고 입술 한쪽을 비뚤게 고정시켰습니다. 그런 다음 붉은 머리 가발과 어울리는 옷차림으로,"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_51",
+     "assumes": "EVENT_5_11의 협박/충고에 응하여 EVENT_5_12에서 진술이 시작되었다",
+     "source_text": "당신이 저희에게 말씀하시는 것을 기록해서 관계 당국에 제출할 겁니다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "세인트클레어는 체스터필드에서 학교 교사인 아버지 밑에서 자랐고, 여행·무대·런던의 어느 석간신문 기자를 거쳐 거지 분장 기사를 쓰게 됨",
+     "via": "told",
+     "retained": true,
+     "source_text": "제 아버지는 체스터필드에서 학교 교사였고, 저는 거기서 훌륭한 교육을 받았습니다. 젊을 때 여행을 했고, 무대에 섰다가, 마침내 런던의 어느 석간신문 기자가 되었습니다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "세인트클레어는 무대 경력에서 분장 비법을 익혔고, 시티의 상업 지구에서 성냥 장수로 위장한 채 실제로 거지 구걸을 했다",
+     "via": "told",
+     "retained": true,
+     "source_text": "배우였을 때 저는 물론 분장의 온갖 비법을 익혔고, ... 이제 그 기량을 활용했습니다. 저는 얼굴을 칠했고, ... 그런 다음 붉은 머리 가발과 어울리는 옷차림으로, 저는 시티의 상업 지구에 자리를 잡았는데, 겉으로는 성냥 장수였지만 실제로는 거지였습니다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "세인트클레어가 첫날 26실링 4펜스를 벌어들였다",
+     "via": "told",
+     "retained": true,
+     "source_text": "저녁에 집에 돌아왔을 때 놀랍게도 26실링 4펜스나 벌어들였다는 것을 알았습니다."
+    }
+   ],
+   "cause": "홈즈의 충고(법정 가면 신문 보도)와 세인트클레어가 아이들 앞에서 비밀을 지키고 싶다는 마음",
+   "result": "세인트클레어가 자신의 전과 분장 기법을 상세히 진술하기 시작함",
+   "source_text": "당신들이 제 이야기를 듣는 첫 사람들입니다. 제 아버지는 체스터필드에서 학교 교사였고,",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_53",
+   "scene_id": "scene_5_3",
+   "order": 13,
+   "title": "세인트클레어가 빚과 구걸을 설명함",
+   "summary": "세인트클레어가 친구를 위해 어음에 배서하여 25파운드 빚이 생겼고, 보름 유예를 받아 열흘간 변장 구걸로 빚을 갚았다는 것을 이야기한다.",
+   "location_id": "LOC_033",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_019"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_023"
+   ],
+   "main_actor_character_id": "CHAR_019",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "assumes": "구걸로 하루 2파운드 이상 벌 수 있다는 가능성 (실증적 자기 지식)",
+     "source_text": "얼굴에 물감을 조금 바르고 모자를 땅에 놓고 가만히 앉아 있기만 해도 하루에 그만큼을 벌 수 있다는 걸 알면서"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_52",
+     "assumes": "EVENT_5_12의 분장 기법 진술이 EVENT_5_13의 빚 변제 이야기와 같은 인물의 연속된 진술이다",
+     "source_text": "얼마 후 제가 친구를 위해 어음에 배서를 해 주었다가 25파운드짜리 소환장이 저에게 날아들기 전까지는요."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "세인트클레어는 친구의 어음에 배서했다가 25파운드 빚을 떠안았고, 변장 구걸로 열흘 만에 갚았다",
+     "via": "told",
+     "retained": true,
+     "source_text": "얼마 후 제가 친구를 위해 어음에 배서를 해 주었다가 25파운드짜리 소환장이 저에게 날아들기 전까지는요. ... 열흘 만에 저는 그 돈을 마련해 빚을 갚았습니다."
+    }
+   ],
+   "cause": "친구의 어음 배서로 인한 25파운드 빚",
+   "result": "구걸로 빚을 갚게 되었고, 이 경험이 구걸을 계속하게 만드는 전환점이 됨",
+   "source_text": "열흘 만에 저는 그 돈을 마련해 빚을 갚았습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_54",
+   "scene_id": "scene_5_3",
+   "order": 14,
+   "title": "라스카와의 관계와 돈의 증가",
+   "summary": "세인트클레어가 주급 2파운드짜리 힘든 일 대신 구걸을 택하게 된 과정과, 스완덤 레인의 라스카의 초라한 소굴에서 아침엔 거지로 저녁엔 도시 남자로 변신했다는 것을 설명한다.",
+   "location_id": "LOC_033",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_019",
+    "CHAR_024"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_023"
+   ],
+   "main_actor_character_id": "CHAR_019",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_019",
+     "field": "location",
+     "from": "unknown",
+     "to": "NEW:스완덤_레인의_초라한_소굴",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "단 한 사람만이 제 비밀을 알았습니다. 그는 스완덤 레인에서 제가 묵던 어느 초라한 소굴의 주인이었는데, 그곳에서 저는 매일 아침 남루한 거지로 나설 수 있었고 저녁에는 옷 잘 입은 도시 남자로 변신할 수 있었습니다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_024",
+     "field": "ability",
+     "assumes": "세인트클레어의 비밀을 입 밖에 내지 않을 수 있다 (비밀 유지 능력)",
+     "source_text": "이 라스카는 제게서 방세를 넉넉히 받고 있었으니, 저는 제 비밀을 그의 손에서 안전하다는 것을 알고 있었습니다."
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "assumes": "라스카가 방세를 넉넉히 받고 있으므로 비밀을 안전하게 지킬 것이라는 계산",
+     "source_text": "이 라스카는 제게서 방세를 넉넋히 받고 있었으니, 저는 제 비밀이 그의 손에서 안전하다는 것을 알고 있었습니다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_53",
+     "assumes": "EVENT_5_13의 빚 변제 후 구걸을 지속하기로 한 결정이 EVENT_5_14의 라스카와의 관계 형성으로 이어진다",
+     "source_text": "얼마 후 제가 친구를 위해 / 저는 기자 일을 그만두고 처음 골랐던 그 모퉁이에 날마다 앉아"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "세인트클레어가 매일 아침 거지로 변장해 나갔다 저녁에 도시 남자로 돌아올 수 있었던 곳은 스완덤 레인의 라스카의 초라한 소굴이다",
+     "via": "told",
+     "retained": true,
+     "source_text": "그는 스완덤 레인에서 제가 묵던 어느 초라한 소굴의 주인이었는데, 그곳에서 저는 매일 아침 남루한 거지로 나설 수 있었고 저녁에는 옷 잘 입은 도시 남자로 변신할 수 있었습니다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "세인트클레어의 일일 수입이 2파운드에 미치지 못하는 날은 아주 나쁜 날이었다",
+     "via": "told",
+     "retained": true,
+     "source_text": "2파운드를 못 채운 날은 아주 나쁜 날이었습니다."
+    }
+   ],
+   "cause": "돈벌이의 용이함과 주급 2파운드짜리 힘든 일 사이의 갈등",
+   "result": "기자 일을 그만두고 매일 구걸에 나서는 생활로 정착함",
+   "source_text": "결국 돈이 이겼고, 저는 기자 일을 그만두고 처음 골랐던 그 모퉁이에 날마다 앉아,",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_55",
+   "scene_id": "scene_5_3",
+   "order": 15,
+   "title": "결혼과 시골 저택, 아내의 무지",
+   "summary": "세인트클레어가 시골에 집을 얻고 결혼했으며, 아내는 그가 시티에 사업이 있다고만 알고 구체적 직업을 모른다는 것을 밝힌다.",
+   "location_id": "LOC_033",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_019"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_023"
+   ],
+   "main_actor_character_id": "CHAR_019",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_020",
+     "field": "knows",
+     "assumes": "남편이 시티에 사업이 있다는 것 (구체적 거지 행위까지는 모름)",
+     "source_text": "사랑하는 아내는 제가 시티에 사업이 있다는 것은 알았습니다. 무슨 사업인지는 알 리 없었지요."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_54",
+     "assumes": "EVENT_5_14의 매일 구걸로 번 돈이 EVENT_5_15의 시골 저택과 결혼을 가능케 했다",
+     "source_text": "부유해질수록 저는 더 야심이 커졌고, 시골에 집을 얻었으며, 마침내 아무도 제 진짜 직업을 의심하지 못한 채 결혼했습니다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "세인트클레어는 시골에 집을 얻고 결혼했으며, 아내는 그가 시티에 사업이 있다고만 알고 있다",
+     "via": "told",
+     "retained": true,
+     "source_text": "부유해질수록 저는 더 야심이 커졌고, 시골에 집을 얻었으며, 마침내 아무도 제 진짜 직업을 의심하지 못한 채 결혼했습니다. 사랑하는 아내는 제가 시티에 사업이 있다는 것은 알았습니다. 무슨 사업인지는 알 리 없었지요."
+    }
+   ],
+   "cause": "구걸로 모인 돈과 야심",
+   "result": "시골 저택과 결혼, 그러나 정체는 아내에게도 비밀로 유지됨",
+   "source_text": "부유해질수록 저는 더 야심이 커졌고, 시골에 집을 얻었으며,",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_56",
+   "scene_id": "scene_5_1",
+   "order": 1,
+   "title": "네빌 세인트클레어의 진술 — 거지 분장 과정과 아내 목격",
+   "summary": "지난 월요일 아편굴 위 자기 방에서 옷을 갈아입던 중, 창밖으로 아내의 눈과 마주쳤다. 놀라 소리를 지르고 라스카에게 올라오지 못하게 막아 달라고 한 뒤, 재빨리 거지 옷·분장·가발로 변장했다.",
+   "location_id": "LOC_008",
+   "time_id": "NEW:지난_주_월요일_아편굴_위_방",
+   "timeline": "main",
+   "reality_status": "memory",
+   "participant_character_ids": [
+    "CHAR_019",
+    "CHAR_024",
+    "CHAR_020"
+   ],
+   "witness_character_ids": [
+    "CHAR_018",
+    "CHAR_023",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_019",
+   "objects": [
+    "OBJ_043",
+    "OBJ_044",
+    "OBJ_017"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_019",
+     "field": "body_status",
+     "from": "정상",
+     "to": "자기 방에서 거지 분장(붉은 가발·얼굴 분장) 중, 창문을 활짝 여는 격렬한 동작으로 그날 아침의 작은 상처가 다시 벌어짐",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "정상(상처 회복)",
+     "certainty": "explicit",
+     "source_text": "저는 재빨리 옷을 벗어 던지고 거지의 옷을 걸치고 분장과 가발을 썼습니다. … 저는 창문을 활짝 열었는데, 그 격렬한 동작에 그날 아침 침실에서 스스로 낸 작은 상처가 다시 벌어졌습니다."
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_043",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "거지의 옷을 걸치고 분장과 가발을 썼습니다."
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_044",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "거지의 옷을 걸치고 분장과 가발을 썼습니다."
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_017",
+     "op": "add",
+     "volatility": "transient",
+     "decays_to": "unknown(강에 버린 뒤)",
+     "certainty": "explicit",
+     "source_text": "저는 그것을 창밖으로 던졌고, 그것은 템스강으로 사라졌습니다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_019",
+     "field": "possesses",
+     "assumes": "거지의 옷(분장용)",
+     "source_text": "거지의 옷을 걸치고"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "body_status",
+     "assumes": "아침에 이미 작은 상처를 스스로 내어 둔 상태",
+     "source_text": "그날 아침 침실에서 스스로 낸 작은 상처가 다시 벌어졌습니다"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "ability",
+     "assumes": "창문을 활짝 열 수 있을 정도의 신체 능력 보유",
+     "source_text": "저는 창문을 활짝 열었는데"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "assumes": "아내가 거리의 창밖에서 자신을 올려다보고 있었다는 사실",
+     "source_text": "제 아내가 거리에 서서 눈을 제게 똑바로 고정하고 있는 것을 보았습니다"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "assumes": "아내가 자기 방으로 올라올 수 없는 구조라는 점",
+     "source_text": "아래층에서 아내의 목소리가 들렸지만, 저는 그녀가 올라올 수 없다는 것을 알고 있었습니다"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "assumes": "완벽한 변장은 아내의 눈도 꿰뚫지 못할 것",
+     "source_text": "아무리 아내의 눈이라도 그토록 완벽한 변장은 꿰뚫어 볼 수 없었을 겁니다"
+    },
+    {
+     "entity": "CHAR_020",
+     "field": "knows",
+     "assumes": "남편이 그 방 안에 있다는 것(아내 측 발화·행동의 전제)",
+     "source_text": "제 아내가 거리에 서서 눈을 제게 똑바로 고정하고 있는 것을 보았습니다"
+    },
+    {
+     "entity": "CHAR_024",
+     "field": "knows",
+     "assumes": "주인이 분장 중이며, 위층으로 아무도 올려 보내지 말라는 지시를 내릴 수 있을 만큼 신뢰받는 측근 관계",
+     "source_text": "제 심복인 라스카에게 달려가 아무도 저에게 올라오지 못하게 해 달라고 애원했습니다"
+    },
+    {
+     "entity": "CHAR_024",
+     "field": "ability",
+     "assumes": "아편굴 출입을 통제할 수 있는 위치/능력",
+     "source_text": "아무도 저에게 올라오지 못하게 해 달라고"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_57",
+     "assumes": "EVENT_5_1의 변장 후 곧바로 코트 투척과 체포가 이어진다 — 두 사건 사이에 시간 경과가 거의 없다",
+     "source_text": "바로 그 순간 계단으로 순경들이 몰려오는 소리가 들렸고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "네빌 세인트클레어가 지난주 월요일 자기 방에서 아내를 목격한 뒤 거지로 변장했다는 사실의 전모",
+     "via": "told",
+     "retained": true,
+     "source_text": "“지난 월요일 저는 그날 일을 마치고 아편굴 위 제 방에서 옷을 갈아입고 있었는데…”"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "네빌 세인트클레어가 지난주 월요일 자기 방에서 아내를 목격한 뒤 거지로 변장했다는 사실의 전모",
+     "via": "told",
+     "retained": true,
+     "source_text": "“지난 월요일 저는 그날 일을 마치고 아편굴 위 제 방에서 옷을 갈아입고 있었는데…”"
+    },
+    {
+     "character_id": "CHAR_018",
+     "info": "네빌 세인트클레어가 지난주 월요일 자기 방에서 아내를 목격한 뒤 거지로 변장했다는 사실의 전모",
+     "via": "told",
+     "retained": true,
+     "source_text": "“지난 월요일 저는 그날 일을 마치고 아편굴 위 제 방에서 옷을 갈아입고 있었는데…”"
+    },
+    {
+     "character_id": "CHAR_023",
+     "info": "네빌 세인트클레어가 지난주 월요일 자기 방에서 아내를 목격한 뒤 거지로 변장했다는 사실의 전모",
+     "via": "told",
+     "retained": true,
+     "source_text": "“지난 월요일 저는 그날 일을 마치고 아편굴 위 제 방에서 옷을 갈아입고 있었는데…”"
+    }
+   ],
+   "cause": "창밖에서 아내와 눈이 마주친 공포",
+   "result": "재빨리 거지 분장을 하고 라스카에게 접근을 막아 달라고 부탁함",
+   "source_text": "“지난 월요일 저는 그날 일을 마치고 아편굴 위 제 방에서 옷을 갈아입고 있었는데, 창밖을 내다보다가, 공포와 경악 속에서, 제 아내가 거리에 서서 눈을 제게 똑바로 고정하고 있는 것을 보았습니다. … 저는 재빨리 옷을 벗어 던지고 거지의 옷을 걸치고 분장과 가발을 썼습니다.”",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_57",
+   "scene_id": "scene_5_1",
+   "order": 2,
+   "title": "코트를 템스강에 투척하고 살인범으로 체포됨",
+   "summary": "변장 후 그날 아침의 작은 상처가 다시 벌어졌고, 가죽 가방에서 옮겨 둔 동전들이 들어 있던 코트를 창밖으로 템스강에 던졌다. 곧바로 순경들이 계단으로 몰려와, 네빌 세인트클레어 신원 대신 살인범으로 체포되었다.",
+   "location_id": "LOC_008",
+   "time_id": "NEW:지난_주_월요일_아편굴_위_방_이후_수분",
+   "timeline": "main",
+   "reality_status": "memory",
+   "participant_character_ids": [
+    "CHAR_019"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_018",
+    "CHAR_023"
+   ],
+   "main_actor_character_id": "CHAR_019",
+   "objects": [
+    "OBJ_035"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_019",
+     "field": "possesses",
+     "from": "OBJ_035",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "저는 그것을 창밖으로 던졌고, 그것은 템스강으로 사라졌습니다."
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "alive",
+     "from": "true",
+     "to": "false(살인범으로 체포됨, 이후 신원 확인 전까지 구금 상태)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "제가 네빌 세인트클레어로 신원이 확인되는 대신 그의 살인범으로 체포되었다는 것을 알게 되었습니다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_019",
+     "field": "possesses",
+     "assumes": "코트 안에 동전들이 들어 있었다(글래드스턴 가방에서 옮겨 둠)",
+     "source_text": "제가 방금 제 수입을 담아 다니던 가죽 가방에서 옮겨 넣은 동전들의 무게로 묵직했습니다"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "assumes": "분장만으로는 불충분하며 옷 자체가 자신을 배신할 수 있다는 위험",
+     "source_text": "방을 수색할지도 모른다는 생각이 들었고, 그 옷들이 저를 배신할 수도 있었습니다"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "ability",
+     "assumes": "무거운 코트를 창밖으로 던질 수 있는 신체 능력",
+     "source_text": "저는 그것을 창밖으로 던졌고"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_56",
+     "assumes": "EVENT_5_1의 분장 직후 곧이어 일어난 일련의 행동이며, 거지 의상·분장·가발이 이미 갖추어진 상태",
+     "source_text": "저는 그것을 창밖으로 던졌고, 그것은 템스강으로 사라졌습니다. 다른 옷들도 뒤따랐을 테지만"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_019",
+     "info": "네빌 세인트클레어의 살인범으로 신원이 확인되어 체포됨",
+     "via": "direct",
+     "retained": true,
+     "source_text": "제가 네빌 세인트클레어로 신원이 확인되는 대신 그의 살인범으로 체포되었다는 것을 알게 되었습니다."
+    }
+   ],
+   "cause": "분장만으로 발각을 피할 수 없다는 판단과, 옷 자체가 증거가 될 수 있다는 우려",
+   "result": "코트가 템스강에 투척되었고, 세인트클레어는 살인범으로 체포됨",
+   "source_text": "저는 코트를 집었는데, 그것은 제가 방금 제 수입을 담아 다니던 가죽 가방에서 옮겨 넣은 동전들의 무게로 묵직했습니다. 저는 그것을 창밖으로 던졌고, 그것은 템스강으로 사라졌습니다. … 제가 네빌 세인트클레어로 신원이 확인되는 대신 그의 살인범으로 체포되었다는 것을 알게 되었습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_58",
+   "scene_id": "scene_5_1",
+   "order": 3,
+   "title": "구금 중 변장 유지와 라스카에 반지·쪽지 전달",
+   "summary": "체포된 뒤 가능한 한 오래 거지 분장을 유지하기로 결심하고 더러운 얼굴을 그대로 두었다. 아내의 걱정을 알기에, 누구도 보지 않는 순간 라스카에게 반지를 맡기고 안심시키라는 쪽지를 함께 건넸다.",
+   "location_id": "LOC_033",
+   "time_id": "NEW:체포_이후_구금_중",
+   "timeline": "main",
+   "reality_status": "memory",
+   "participant_character_ids": [
+    "CHAR_019",
+    "CHAR_024",
+    "CHAR_020"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_018",
+    "CHAR_023"
+   ],
+   "main_actor_character_id": "CHAR_019",
+   "objects": [
+    "OBJ_038",
+    "OBJ_037",
+    "OBJ_043",
+    "OBJ_044"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_019",
+     "field": "possesses",
+     "from": "OBJ_038",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "저는 반지를 빼서 라스카에게 맡기며"
+    },
+    {
+     "entity": "CHAR_024",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_038",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "저는 반지를 빼서 라스카에게 맡기며"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_037",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그녀에게 두려워할 이유가 없다고 알리는 급히 휘갈긴 쪽지도 함께 건넸습니다."
+    },
+    {
+     "entity": "CHAR_024",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_037",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그녀에게 두려워할 이유가 없다고 알리는 급히 휘갈긴 쪽지도 함께 건넸습니다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_019",
+     "field": "possesses",
+     "assumes": "거지 분장(붉은 가발·얼굴 분장)을 여전히 유지 중",
+     "source_text": "저는 가능한 한 오래 이 변장을 유지하기로 결심했고, 그래서 더러운 얼굴을 그대로 두는 편을 택했습니다"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "assumes": "아내가 몹시 걱정하고 있을 것",
+     "source_text": "아내가 몹시 걱정하고 있으리라는 것을 알기에"
+    },
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "assumes": "감시하는 순경들의 시선을 피할 수 있는 틈이 존재",
+     "source_text": "어떤 순경도 저를 지켜보지 않는 순간에"
+    },
+    {
+     "entity": "CHAR_024",
+     "field": "knows",
+     "assumes": "주인에게 절대 충성하며, 비밀을 유지할 수 있는 신뢰관계",
+     "source_text": "라스카에게 맡기며"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_57",
+     "assumes": "EVENT_5_2의 체포 직후 구금된 상태에서 이루어진 행동이다",
+     "source_text": "몇 분 뒤 저는, 고백하건대 오히려 안도하며, … 더 설명드릴 것이 있는지 모르겠습니다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "세인트클레어가 구금 중에도 변장을 유지했고 라스카에게 반지와 쪽지를 맡겼다는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "저는 반지를 빼서 라스카에게 맡기며, … 급히 휘갈긴 쪽지도 함께 건넸습니다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "세인트클레어가 구금 중에도 변장을 유지했고 라스카에게 반지와 쪽지를 맡겼다는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "저는 반지를 빼서 라스카에게 맡기며, … 급히 휘갈긴 쪽지도 함께 건넸습니다."
+    }
+   ],
+   "cause": "체포 후 거지 신분을 유지하려는 결심과 아내를 안심시키려는 의지",
+   "result": "반지와 쪽지가 라스카에게 넘어갔고, 이후 쪽지가 배달될 때까지의 사정이 뒤따름",
+   "source_text": "저는 가능한 한 오래 이 변장을 유지하기로 결심했고, 그래서 더러운 얼굴을 그대로 두는 편을 택했습니다. … 저는 반지를 빼서 라스카에게 맡기며, 그녀에게 두려워할 이유가 없다고 알리는 급히 휘갈긴 쪽지도 함께 건넸습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_59",
+   "scene_id": "scene_5_1",
+   "order": 4,
+   "title": "홈즈 — 그 쪽지는 어제서야 세인트클레어 부인에게 도착했다",
+   "summary": "홈즈가 세인트클레어의 진술에 대해, 라스카가 맡았던 쪽지가 어제서야 부인에게 도착했다고 알려준다. 세인트클레어는 부인이 얼마나 힘든 한 주를 보냈을지 안타까워한다.",
+   "location_id": "LOC_033",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_019",
+    "CHAR_023",
+    "CHAR_018",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [
+    "CHAR_024",
+    "CHAR_020"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_037"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_020",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_037",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "“그 쪽지는 어제서야 그녀에게 도착했습니다,” 홈즈가 말했다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "쪽지가 부인에게 어제 도착했다는 사실(미리 수사한 결과)",
+     "source_text": "“그 쪽지는 어제서야 그녀에게 도착했습니다,” 홈즈가 말했다."
+    },
+    {
+     "entity": "CHAR_023",
+     "field": "knows",
+     "assumes": "경찰이 라스카를 감시해 왔다는 사실",
+     "source_text": "“경찰이 이 라스카를 감시해 왔습니다,”"
+    },
+    {
+     "entity": "CHAR_024",
+     "field": "knows",
+     "assumes": "경찰의 감시를 피해 남몰래 편지를 부쳐야 했다는 점",
+     "source_text": "그가 남의 눈에 띄지 않고 편지를 부치기가 어려웠을 거라는 걸 충분히 이해할 수 있습니다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_58",
+     "assumes": "EVENT_5_3의 라스카에 대한 반지·쪽지 위임이 실제로 발효되어, 결국 그 쪽지가 부인에게 어제 도착하는 데까지 이어졌다",
+     "source_text": "그녀에게 두려워할 이유가 없다고 알리는 급히 휘갈긴 쪽지도 함께 건넸습니다. / “그 쪽지는 어제서야 그녀에게 도착했습니다,”"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_019",
+     "info": "자신이 라스카에게 맡긴 쪽지가 어제서야 부인에게 도착했다는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "“그 쪽지는 어제서야 그녀에게 도착했습니다,” 홈즈가 말했다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "쪽지가 어제서야 세인트클레어 부인에게 도착했다는 사실과, 라스카가 경찰 감시 때문에 발송이 늦어졌다는 브래드스트리트의 설명",
+     "via": "direct",
+     "retained": true,
+     "source_text": "“그 쪽지는 어제서야 그녀에게 도착했습니다,” 홈즈가 말했다. / “경찰이 이 라스카를 감시해 왔습니다,”"
+    }
+   ],
+   "cause": "브래드스트리트의 설명 — 경찰이 라스카를 감시해 왔기 때문에 단골 선원에게 위탁해 며칠간 발송이 늦어짐",
+   "result": "세인트클레어가 부인의 한 주를 짐작하며 안타까워함",
+   "source_text": "“그 쪽지는 어제서야 그녀에게 도착했습니다,” 홈즈가 말했다. “맙소사! 그녀가 얼마나 힘든 한 주를 보냈을까요!” “경찰이 이 라스카를 감시해 왔습니다,” 브래드스트리트 경위가 말했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_60",
+   "scene_id": "scene_5_1",
+   "order": 5,
+   "title": "구걸 전과 확인과 신원·처벌 합의",
+   "summary": "홈즈가 세인트클레어에게 구걸로 기소된 적이 있는지 묻고, 세인트클레어는 여러 번 있었지만 벌금은 문제되지 않았다고 답한다. 브래드스트리트는 경찰이 이 일을 덮어 준다면 더 이상 휴 분이 있어서는 안 된다고 못박고, 세인트클레어는 가장 엄숙한 맹세로 다시는 그러지 않겠다고 다짐한다.",
+   "location_id": "LOC_033",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_019",
+    "CHAR_023",
+    "CHAR_018",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [
+    "CHAR_024",
+    "CHAR_020"
+   ],
+   "main_actor_character_id": "CHAR_018",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "from": "unknown",
+     "to": "구걸로 여러 번 기소된 전과가 있음",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "“여러 번 있었습니다, 하지만 벌금이야 저에게 무슨 대수겠습니까?”"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_019",
+     "field": "knows",
+     "assumes": "구벌금이 자신의 재력에 비해 부담이 되지 않는다는 점",
+     "source_text": "벌금이야 저에게 무슨 대수겠습니까?"
+    },
+    {
+     "entity": "CHAR_018",
+     "field": "ability",
+     "assumes": "이 사건을 경찰 측이 덮을지 여부를 결정할 수 있는 권한",
+     "source_text": "경찰이 이 일을 덮어 준다면, 더 이상 휴 분이 있어서는 안 됩니다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_59",
+     "assumes": "이전 사건의 합의(세인트클레어의 정체 회복)가 마무리되는 장면의 연속",
+     "source_text": "“그렇다면 더 이상의 조치는 취해지지 않을 것 같습니다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_018",
+     "info": "세인트클레어가 구걸로 여러 번 기소된 전과가 있다는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "“여러 번 있었습니다, 하지만 벌금이야 저에게 무슨 대수겠습니까?”"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "브래드스트리트가 휴 분의 재등장을 경고하고, 세인트클레어가 엄숙한 맹세로 다시는 그러지 않겠다는 합의를 맺은 사실",
+     "via": "direct",
+     "retained": true,
+     "source_text": "“하지만 이제 여기서 멈춰야 합니다,” 브래드스트리트가 말했다. … “사람이 할 수 있는 가장 엄숙한 맹세로 그리 맹세했습니다.”"
+    }
+   ],
+   "cause": "구걸 전과 존재 확인",
+   "result": "다시는 휴 분을 자처하지 않겠다는 합의와 사건 종결",
+   "source_text": "“구걸로 기소된 적이 없었나?” “여러 번 있었습니다, 하지만 벌금이야 저에게 무슨 대수겠습니까?” “하지만 이제 여기서 멈춰야 합니다,” 브래드스트리트가 말했다. … “사람이 할 수 있는 가장 엄숙한 맹세로 그리 맹세했습니다.”",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_5_61",
+   "scene_id": "scene_5_1",
+   "order": 6,
+   "title": "브래드스트리트의 감사 표명과 홈즈의 수사 방법 발언",
+   "summary": "브래드스트리트가 이 사건을 밝혀준 데 대해 감사를 표하고, 홈즈의 추리 과정을 묻는다. 홈즈는 베개 다섯 개 위에 앉아 살담배 한 온스를 소비해서 이 결론에 이르렀다고 답하며, 왓슨에게 베이커가로 마차를 몰면 아침 식사 시간에 맞출 수 있겠다고 제안한다.",
+   "location_id": "LOC_033",
+   "time_id": "TIME_053",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_018",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [
+    "CHAR_019",
+    "CHAR_023"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_006",
+    "OBJ_009"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "베개 다섯 개(사건 기록용)",
+     "source_text": "베개 다섯 개 위에 앉아"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "살담배 한 온스(소비)",
+     "source_text": "살담배 한 온스를 소비해서"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "누워서/앉아서 사색만으로 추론을 완성할 수 있는 능력",
+     "source_text": "베개 다섯 개 위에 앉아 살담배 한 온스를 소비해서 이르렀지"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_5_60",
+     "assumes": "사건 합의가 끝난 직후의 마무리 대화",
+     "source_text": "“그렇다면 더 이상의 조치는 취해지지 않을 것 같습니다. 하지만 다시 발견된다면, 그때는 모든 게 다 밝혀질 겁니다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_018",
+     "info": "홈즈가 베개 다섯 개와 살담배 한 온스만으로 결론에 이르렀다는 사실(수사 방법의 자평)",
+     "via": "told",
+     "retained": true,
+     "source_text": "“이번 것은,” 내 친구가 말했다. “베개 다섯 개 위에 앉아 살담배 한 온스를 소비해서 이르렀지.”"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "브래드스트리트가 홈즈에게 수사 결론 도출 경위를 물었지만, 홈즈는 자신만의 사색적 방법만 언급했다는 사실",
+     "via": "direct",
+     "retained": true,
+     "source_text": "어떻게 그런 결론에 이르셨는지 정말 알고 싶군요. / “이번 것은,” 내 친구가 말했다. “베개 다섯 개 위에 앉아 살담배 한 온스를 소비해서 이르렀지.”"
+    }
+   ],
+   "cause": "브래드스트리트의 감사 표명과 수사 과정 질문",
+   "result": "홈즈가 사색적 방법만 밝히고, 베이커가 귀환을 제안함",
+   "source_text": "“홈즈 씨, 이 일을 밝혀 주셔서 저희가 큰 신세를 졌습니다. 어떻게 그런 결론에 이르셨는지 정말 알고 싶군요.” “이번 것은,” 내 친구가 말했다. “베개 다섯 개 위에 앉아 살담배 한 온스를 소비해서 이르렀지. 왓슨, 우리가 베이커가로 마차를 몰면 아침 식사 시간에 딱 맞춰 도착할 것 같군.”",
+   "certainty": "explicit"
+  }
+ ]
+}

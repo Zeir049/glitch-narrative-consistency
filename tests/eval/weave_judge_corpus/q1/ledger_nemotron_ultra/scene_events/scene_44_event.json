@@ -1,0 +1,270 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:월요일_일월_사일_첫째_월요일_휴무",
+   "expression": "월요일 일월 사일, 첫째 월요일 휴무",
+   "description": "12월 4일 월요일, 첫째 월요일이라 목욕탕 휴무일",
+   "timeline": "main",
+   "source_text": "월요일은 일월 사일이었다. 첫째 월요일이라 휴무였다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_058",
+   "expression": "내일 새벽 여섯 시",
+   "description": "화요일 새벽 6시, 물을 채우기 위해 일어나야 할 시각",
+   "timeline": "main",
+   "source_text": "내일 새벽에는 세 시에 일어나야 했다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "휴무일 보일러 끄기와 물 빼기",
+   "summary": "첫째 월요일 휴무일에 문식이 보일러를 완전히 끄고 탕의 물을 모두 뺀다. 정호가 깡통으로 물을 퍼내고, 둘이 남탕 바닥을 밀며 청소한다.",
+   "location_id": "LOC_007",
+   "time_id": "NEW:월요일_일월_사일_첫째_월요일_휴무",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_004",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [
+    "OBJ_004",
+    "OBJ_011",
+    "OBJ_012"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_004",
+     "field": "body_status",
+     "from": "가동 중",
+     "to": "완전히 꺼짐",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "문식은 보일러를 완전히 껐다."
+    },
+    {
+     "entity": "LOC_005",
+     "field": "condition",
+     "from": "물 차 있음",
+     "to": "물 다 빠짐",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "탕의 물을 다 뺐다."
+    },
+    {
+     "entity": "LOC_005",
+     "field": "condition",
+     "from": "더러움",
+     "to": "바닥 청소됨",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "남탕 바닥은 둘이 나란히 엎드려 밀었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "assumes": "OBJ_015 (연탄집게 등 보일러 조작 도구)",
+     "source_text": "문식은 보일러를 완전히 껐다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "ability",
+     "assumes": "보일러 조작 및 관리 능력",
+     "source_text": "문식은 보일러를 완전히 껐다. 밤새 죽이지 않던 불을 끄고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_011 (깡통)",
+     "source_text": "정호가 그 깡통을 비웠다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "엎드려 바닥을 밀 수 있는 신체 상태",
+     "source_text": "남탕 바닥은 둘이 나란히 엎드려 밀었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "물을 다 뺀 다음 날은 예열이 오래 걸린다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "물을 다 뺀 다음 날은 예열이 오래 걸렸다."
+    },
+    {
+     "character_id": "CHAR_004",
+     "info": "물을 다 뺀 다음 날은 예열이 오래 걸린다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "물을 다 뺀 다음 날은 예열이 오래 걸렸다."
+    }
+   ],
+   "cause": "첫째 월요일 정기 휴무",
+   "result": "보일러 정지, 탕 물 완전 배수, 남탕 바닥 청소 완료, 다음 날 새벽 3시 기상 예고",
+   "source_text": "월요일은 일월 사일이었다. 첫째 월요일이라 휴무였다. 문식은 보일러를 완전히 껐다. 밤새 죽이지 않던 불을 끄고 탕의 물을 다 뺐다. 헝겊으로 감은 관에서 마지막 물이 깡통으로 떨어졌다. 정호가 그 깡통을 비웠다. 남탕 바닥은 둘이 나란히 엎드려 밀었다. 내일 새벽에는 세 시에 일어나야 했다. 물을 다 뺀 다음 날은 예열이 오래 걸렸다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "여탕 청소와 셔터 내림",
+   "summary": "정미가 여탕 바닥을 밀고, 순덕은 카운터에서 지켜본다. 셔터는 아침부터 내려져 있다.",
+   "location_id": "LOC_006",
+   "time_id": "NEW:월요일_일월_사일_첫째_월요일_휴무",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003"
+   ],
+   "witness_character_ids": [
+    "CHAR_001"
+   ],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "LOC_006",
+     "field": "condition",
+     "from": "더러움",
+     "to": "바닥 청소됨",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정미가 여탕 바닥을 밀러 들어갔다."
+    },
+    {
+     "entity": "OBJ_005",
+     "field": "body_status",
+     "from": "올라가 있음",
+     "to": "내려져 있음",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "셔터는 아침부터 내려져 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "body_status",
+     "assumes": "여탕 바닥을 밀 수 있는 신체 상태",
+     "source_text": "정미가 여탕 바닥을 밀러 들어갔다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "무릎을 펴고 앉을 수 있는 상태",
+     "source_text": "순덕은 카운터에 앉아 무릎을 펴고 그것을 보고 있었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "같은 휴무일 오전 시간대에 남탕과 여탕 청소가 병행됨",
+     "source_text": "문식은 보일러를 완전히 껐다. / 정미가 여탕 바닥을 밀러 들어갔다."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "휴무일 청소 작업",
+   "result": "여탕 바닥 청소 완료, 영업 중단 상태 유지(셔터 내림)",
+   "source_text": "정미가 여탕 바닥을 밀러 들어갔다. 순덕은 카운터에 앉아 무릎을 펴고 그것을 보고 있었다. 셔터는 아침부터 내려져 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_3",
+   "scene_id": "scene_6_1",
+   "order": 3,
+   "title": "설비집 계약금 수령 및 공사 일정 미정",
+   "summary": "설비집 사장이 계약금만 받아 가고 수도관 교체 공사 날짜는 아직 잡히지 않았다.",
+   "location_id": "LOC_001",
+   "time_id": "NEW:월요일_일월_사일_첫째_월요일_휴무",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_014"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_014",
+   "objects": [
+    "OBJ_018"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_014",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "계약금",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "설비집은 계약금만 받아 갔고"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_014",
+     "field": "ability",
+     "assumes": "노후 급수관 교체 공사 시공 능력",
+     "source_text": "설비집은 계약금만 받아 갔고 공사 날짜는 아직 잡히지 않았다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "설비집이 계약금만 받아 가고 공사 날짜는 미정임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "설비집은 계약금만 받아 갔고 공사 날짜는 아직 잡히지 않았다."
+    },
+    {
+     "character_id": "CHAR_004",
+     "info": "설비집이 계약금만 받아 가고 공사 날짜는 미정임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "설비집은 계약금만 받아 갔고 공사 날짜는 아직 잡히지 않았다."
+    }
+   ],
+   "cause": "노후 급수관 교체 공사 계약",
+   "result": "계약금 수수 완료, 공사 일정 미확정 상태",
+   "source_text": "설비집은 계약금만 받아 갔고 공사 날짜는 아직 잡히지 않았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:39:28Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 60.97
+ }
+}

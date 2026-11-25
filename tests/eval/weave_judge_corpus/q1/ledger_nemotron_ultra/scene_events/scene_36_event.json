@@ -1,0 +1,97 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "순덕, 노후 급수관 교체 안내문 확인 및 계약금 준비 계획",
+   "summary": "순덕이 장부 서랍에서 노후 급수관 교체 안내문을 꺼내 읽고, 계약금만 내면 1월에 공사가 시작됨을 확인한 뒤 서랍에 도로 넣고 카운터 의자에 앉는다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:십이월_중순_아침",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_018",
+    "OBJ_002"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "노후 급수관 교체 안내 내용(인입관 수용가 부담, 기한, 본관 교체 일정, 계약금 납부 시 1월 공사 착수)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "돋보기를 쓰고 읽었다. 노후 급수관 교체 안내. 인입관 수용가 부담. 기한이 적힌 줄에 손가락을 얹었다. ... 계약금만 넣으면 일월에 공사가 들어간다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_018 (노후 급수관 교체 통보서)",
+     "source_text": "순덕은 장부 서랍에서 사업소 서류를 꺼냈다. 돋보기를 쓰고 읽었다. 노후 급수관 교체 안내."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "이 주사가 잔금은 이월 말까지 봐 주기로 했음",
+     "source_text": "이 주사가 잔금은 이월 말까지 봐 주기로 했으니 급한 것은 계약금이었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "본관 교체는 이월 첫 주부터 시작됨",
+     "source_text": "본관 교체가 이 골목은 이월 첫 주부터라고 했다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "돋보기로 소문자 문서 판독 가능",
+     "source_text": "돋보기를 쓰고 읽었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "노후 급수관 교체 안내 내용(인입관 수용가 부담, 기한, 본관 교체 일정, 계약금 납부 시 1월 공사 착수)",
+     "via": "document",
+     "retained": true,
+     "source_text": "돋보기를 쓰고 읽었다. 노후 급수관 교체 안내. 인입관 수용가 부담. 기한이 적힌 줄에 손가락을 얹었다. ... 계약금만 넣으면 일월에 공사가 들어간다."
+    }
+   ],
+   "cause": "수도사업소에서 노후 급수관 교체 안내문이 도착함",
+   "result": "순덕이 안내문 내용을 숙지하고 계약금 준비 필요성을 인지함",
+   "source_text": "순덕은 장부 서랍에서 사업소 서류를 꺼냈다. 돋보기를 쓰고 읽었다. 노후 급수관 교체 안내. 인입관 수용가 부담. 기한이 적힌 줄에 손가락을 얹었다. 이 주사가 잔금은 이월 말까지 봐 주기로 했으니 급한 것은 계약금이었다. 본관 교체가 이 골목은 이월 첫 주부터라고 했다. 그 전에 인입관만 새로 들어가 있으면 됐다. 순덕은 서류를 접어 도로 서랍에 넣었다. 요금통이 아니라 그 옆 서랍이었다. 돋보기를 벗었다. 계약금만 넣으면 일월에 공사가 들어간다. 그 다음은 이월이었다. 순덕은 서랍을 닫고 카운터 의자에 앉았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-27T04:55:56Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 12.35
+ }
+}

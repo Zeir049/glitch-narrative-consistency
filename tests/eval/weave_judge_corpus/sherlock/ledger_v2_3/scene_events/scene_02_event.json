@@ -1,0 +1,258 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "의뢰인이 왓슨의 퇴거를 요청함",
+   "summary": "베이커가 홈즈의 방에 들어선 의뢰인이 왓슨을 흘끗 보더니 홈즈와 단둘이 이야기하고 싶다고 한다.",
+   "location_id": "LOC_001",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "NEW:의뢰인_6화"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "NEW:의뢰인_6화",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "NEW:의뢰인_6화",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "베이커가 홈즈의 방에 들어선 의뢰인은"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "NEW:의뢰인_6화",
+     "field": "body_status",
+     "assumes": "직접 베이커가까지 찾아올 수 있는 신체 상태",
+     "source_text": "베이커가 홈즈의 방에 들어선"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "NEW:의뢰인_6화",
+     "info": "왓슨이 홈즈의 동거인이라는 사실",
+     "via": "direct",
+     "retained": true,
+     "source_text": "베이커가 홈즈의 방에 들어선 의뢰인은 나를 흘끗 보더니"
+    }
+   ],
+   "cause": "의뢰인이 왓존의 존재를 인식함",
+   "result": "홈즈와 단둘이 이야기하겠다는 의뢰인의 요구로 이어짐",
+   "source_text": "베이커가 홈즈의 방에 들어선 의뢰인은 나를 흘끗 보더니 홈즈와 단둘이 이야기하고 싶다고 했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "홈즈가 왓슨의 퇴거를 제지함",
+   "summary": "일어서려던 왓슨을 홈즈가 손을 들어 막으며, 이 자리를 비우면 일도 맡지 않겠다고 의뢰인에게 못 박는다.",
+   "location_id": "LOC_001",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [
+    "NEW:의뢰인_6화"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "왓슨을 사건에 함께 데리고 일하는 것이 자신의 작업 방식에 필수라는 입장",
+     "source_text": "이 친구가 자리를 비우면 저도 이 일을 맡지 않습니다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "자리에 앉은 상태에서 손을 들어 움직일 수 있는 상태",
+     "source_text": "홈즈가 손을 들어 막았다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "일어서려다 멈출 수 있는 신체 상태",
+     "source_text": "내가 일어서자 홈즈가 손을 들어 막았다. \"앉게, 왓슨.\""
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "이 사건은 EVENT_6_1의 의뢰인 발언 직후 발생하며, 동일한 의뢰인·장소에서 진행된다",
+     "source_text": "내가 일어서자 홈즈가 손을 들어 막았다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "NEW:의뢰인_6화",
+     "info": "왓슨 없이 단둘이 이야기하는 것은 불가능하다는 홈즈의 입장",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이 친구가 자리를 비우면 저도 이 일을 맡지 않습니다"
+    }
+   ],
+   "cause": "의뢰인의 단둘이 대화하겠다는 요구(EVENT_6_1)",
+   "result": "의뢰인이 머뭇거리며 다음 발언으로 넘어감",
+   "source_text": "\"앉게, 왓슨.\" 그리고 의뢰인에게 몸을 돌렸다. \"이 친구가 자리를 비우면 저도 이 일을 맡지 않습니다. 제게 하실 말씀이라면 무엇이든 이 사람 앞에서 하셔도 됩니다.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_3",
+   "scene_id": "scene_6_1",
+   "order": 3,
+   "title": "의뢰인이 형편이 당장 안 됨을 고함",
+   "summary": "의뢰인이 잠시 머뭇거리다 당장 사례를 드릴 형편이 아니라고 털어놓는다.",
+   "location_id": "LOC_001",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "NEW:의뢰인_6화"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "NEW:의뢰인_6화",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_2",
+     "assumes": "홈즈의 단둘 거부 발언 직후의 연속된 대화 흐름",
+     "source_text": "의뢰인은 잠시 머뭇거리다가"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "의뢰인이 당장 사례를 지불할 형편이 아니다",
+     "via": "told",
+     "retained": true,
+     "source_text": "당장은 사례를 드릴 형편이 아니라고 털어놓았다"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "의뢰인이 당장 사례를 지불할 형편이 아니다",
+     "via": "told",
+     "retained": true,
+     "source_text": "당장은 사례를 드릴 형편이 아니라고 털어놓았다"
+    }
+   ],
+   "cause": "홈즈의 단둘 거부 발언으로 거리를 두기 어려워진 상황",
+   "result": "홈즈가 비용 문제에 대한 자신의 입장으로 응답하게 됨",
+   "source_text": "의뢰인은 잠시 머뭇거리다가 당장은 사례를 드릴 형편이 아니라고 털어놓았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_4",
+   "scene_id": "scene_6_1",
+   "order": 4,
+   "title": "홈즈가 사건 기록장을 꺼내며 보수관을 밝힘",
+   "summary": "홈즈는 책상 자물쇠를 열어 사건 기록장을 꺼내며, 일 자체가 보수라고 답한다. 비용은 형편 닿는 때에 치러도 된다고 못 박는다.",
+   "location_id": "LOC_001",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002",
+    "NEW:의뢰인_6화"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_009"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_009",
+     "op": "add",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "책상 자물쇠를 열어 작은 사건 기록장을 꺼내며"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "책상 자물쇠와 그 열쇠",
+     "source_text": "책상 자물쇠를 열어"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "자신이 사건을 맡는다는 사실 자체를 보수로 여기며 비용은 후불도 받아들인다는 보수관",
+     "source_text": "제 일은 그 자체가 보수입니다. 비용만 형편이 닿는 때에 치러 주시면 됩니다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_3",
+     "assumes": "이 사건은 EVENT_6_3의 사례 형편 발언 직후 발생하며, 그 발언에 대한 응답이다",
+     "source_text": "홈즈는 책상 자물쇠를 열어 작은 사건 기록장을 꺼내며 대답했다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "NEW:의뢰인_6화",
+     "info": "홈즈의 보수관 — 일 자체가 보수이며 비용은 후불도 가능",
+     "via": "told",
+     "retained": true,
+     "source_text": "제 일은 그 자체가 보수입니다. 비용만 형편이 닿는 때에 치러 주시면 됩니다."
+    }
+   ],
+   "cause": "의뢰인의 사례 형편 발언(EVENT_6_3)",
+   "result": "의뢰인이 비용 문제를 안고도 의뢰를 이어갈 여지가 생김",
+   "source_text": "홈즈는 책상 자물쇠를 열어 작은 사건 기록장을 꺼내며 대답했다. \"제 일은 그 자체가 보수입니다. 비용만 형편이 닿는 때에 치러 주시면 됩니다.\"",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:02:58Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 18.15
+ }
+}

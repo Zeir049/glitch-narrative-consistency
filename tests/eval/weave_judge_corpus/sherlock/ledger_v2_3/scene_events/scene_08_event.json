@@ -1,0 +1,116 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "OBJ_036",
+   "name": "편지 봉투",
+   "description": "왕이 대륙 어딘가에서 받아 접었다 폈다 한 봉투. 발신지는 적혀 있지 않다.",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "왕은 봉투를 두 번 접었다가 다시 폈다. 대륙 어딘가에서 온 것이었지만 발신지는 적혀 있지 않았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "NEW:왕이_봉투를_받은_직후",
+   "expression": "왕이 봉투를 손에 든 시점",
+   "description": "왕이 봉투를 만지고 있던 순간. 원문에 명확한 시각 표시 없음.",
+   "timeline": "main",
+   "source_text": "왕은 봉투를 두 번 접었다가 다시 폈다.",
+   "certainty": "uncertain"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "왕이 봉투를 만지작거리다 벽난로 쪽으로 가져가다 도로 주머니에 넣음",
+   "summary": "왕은 대륙에서 온 봉투를 두 번 접었다 폈다. 발신지는 없었다. 홈즈에게 그녀가 잉글랜드를 떠났는지 확인했고, 잠시 창밖을 보다가 봉투를 벽난로 쪽으로 가져갔으나 태우지 않고 주머니에 넣었다.",
+   "location_id": "unknown",
+   "time_id": "NEW:왕이_봉투를_받은_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_009",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_009",
+   "objects": [
+    "OBJ_036"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_009",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_036",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "왕은 봉투를 두 번 접었다가 다시 폈다. ... 다시 주머니에 넣었다.",
+     "certainty_reason": "원문은 왕이 봉투를 가지고 있음을 보여주지만 '소유' 표현은 없음 — 행동으로 추정"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_009",
+     "field": "body_status",
+     "assumes": "봉투를 두 번 접고 폈다가 벽난로 쪽으로 가져갈 수 있을 만큼 정상 활동 가능",
+     "source_text": "왕은 봉투를 두 번 접었다가 다시 폈다. ... 봉투를 벽난로 쪽으로 가져갔다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "왕이 '그녀'(아이린 애들러)가 채링 크로스에서 아침 기차를 타고 잉글랜드를 떠났다는 사실, 그리고 그 뒤 잉글랜드 땅을 밟지 않았다는 사실",
+     "source_text": "\"채링 크로스에서 아침 기차를 탔습니다.\" / \"그 뒤로는 잉글랜드 땅을 밟지 않았습니다.\""
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "왕이 '그녀'의 말이 불가침(다시는 돌아오지 않음)이라는 것을 이미 알고 있음 — 그 점을 왕에게 직접 확인해준 사실",
+     "source_text": "\"그녀가 돌아올 일은 없다고 하셨지요.\""
+    },
+    {
+     "entity": "CHAR_009",
+     "field": "knows",
+     "assumes": "채링 크로스에서 아침 기차를 타고 떠난 '그녀'(아이린 애들러)의 귀국 여부 및 이후 행적",
+     "source_text": "\"그녀가 돌아올 일은 없다고 하셨지요.\" 그가 물었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "왕이 봉투를 태우려다 만 사실 — '그녀'(아이린 애들러)의 말이 불가침임을 시사",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그러나 태우지는 않고 다시 주머니에 넣었다. 그녀의 말이 불가침이라는 것을 그는 이미 알고 있었다."
+    }
+   ],
+   "cause": "왕이 봉투(아이린의 대륙행 발신 불명 서신)를 만지작거리며 '그녀'의 귀환 여부를 홈즈에게 재확인",
+   "result": "왕은 봉투를 태우지 않고 주머니에 넣음 — 그녀의 귀환이 없음을 사실상 인정",
+   "source_text": "왕은 봉투를 두 번 접었다가 다시 폈다. 대륙 어딘가에서 온 것이었지만 발신지는 적혀 있지 않았다. \"그녀가 돌아올 일은 없다고 하셨지요.\" 그가 물었다. \"채링 크로스에서 아침 기차를 탔습니다.\" 홈즈가 대답했다. \"그 뒤로는 잉글랜드 땅을 밟지 않았습니다.\" 왕은 한동안 창밖을 보다가 봉투를 벽난로 쪽으로 가져갔다. 그러나 태우지는 않고 다시 주머니에 넣었다. 그녀의 말이 불가침이라는 것을 그는 이미 알고 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:03:45Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 12.2
+ }
+}

@@ -1,0 +1,104 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:5월 15일 오후",
+   "expression": "5월 15일 오후",
+   "description": "심리 점검 실시 시점",
+   "timeline": "main",
+   "source_text": "5월 15일 오후, 의무실 병상 칸의 커튼 너머로 약품 냉장고 모터 소리가 울렸다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "서율의 네 번째 심리 점검",
+   "summary": "마르타가 서율의 수면·식욕·두통·분노 상태를 묻는 심리 점검을 진행한다. 청문 전 수면 확보를 권고한다.",
+   "location_id": "LOC_010",
+   "time_id": "NEW:5월 15일 오후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "청문 전 수면 확보 필요성 인지",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "청문 전이라도 잠은 좀 더 자 둬."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "수면 4시간, 식욕 보통, 두통 가끔",
+     "source_text": "수면은 네 시간, 식욕은 보통, 두통은 가끔."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "5월 20일 청문 일정 확정",
+     "source_text": "5월 20일 청문까지 잡혔는데도?"
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "서율의 심리 점검 2주 간격 규정 및 5월 10일 예정이었다는 사실",
+     "source_text": "2주 간격이라 5월 10일에 했어야 하지만 그 뒤 청문 준비에 밀린 심리 점검이었다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "assumes": "펜, 수첩(심리 점검 기록용)",
+     "source_text": "마르타는 펜을 움직였다. 수첩엔 그대로 적어 둘게."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "청문 전 수면 확보가 필요하다는 마르타의 권고",
+     "via": "told",
+     "retained": true,
+     "source_text": "청문 전이라도 잠은 좀 더 자 둬."
+    }
+   ],
+   "cause": "정기 심리 점검 주기(2주) 도래 및 청문 준비로 인한 연기",
+   "result": "심리 점검 완료, 청문 전 수면 확보 권고 받음",
+   "source_text": "5월 15일 오후, 의무실 병상 칸의 커튼 너머로 약품 냉장고 모터 소리가 울렸다. 2주 간격이라 5월 10일에 했어야 하지만 그 뒤 청문 준비에 밀린 심리 점검이었다. \"수면은 네 시간, 식욕은 보통, 두통은 가끔. 네 번째 질문이야, 서율. 최근에 화가 난 일은?\" \"없어요, 선생님.\" \"5월 20일 청문까지 잡혔는데도?\" \"그 전까진 현 체제를 유지하면 되니까요.\" 마르타는 펜을 움직였다. \"수첩엔 그대로 적어 둘게. 청문 전이라도 잠은 좀 더 자 둬.\"",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:45:46Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 33.86
+ }
+}

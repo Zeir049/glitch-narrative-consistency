@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S02_1",
+      "order": 1,
+      "title": "슐라우의 문진표 서명 목격",
+      "summary": "알파가 유리벽 너머로 병실을 보는데, 블루멘이 내민 문진표에 슐라우가 오른손으로 펜을 쥐고 막힘없이 이름을 적는다.",
+      "location_id": "LOC_013",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_012",
+        "CHAR_006"
+      ],
+      "witness_character_ids": [
+        "CHAR_002"
+      ],
+      "main_actor_character_id": "CHAR_006",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "assumes": "오른손으로 펜을 쥐고 정밀한 필기가 가능한 상태",
+          "source_text": "슐라우는 오른손으로 펜을 쥐더니 막힘없이 또박또박 이름을 적어 내려갔다."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우가 회복 경과 기록(문진표)에 직접 서명함",
+          "via": "direct",
+          "source_text": "막힘없이 또박또박 이름을 적어 내려갔다."
+        }
+      ],
+      "cause": "블루멘의 회복 경과 기록",
+      "result": "알파가 들키기 전에 물러남",
+      "source_text": "슐라우는 오른손으로 펜을 쥐더니 막힘없이 또박또박 이름을 적어 내려갔다.",
+      "certainty": "explicit"
+    }
+  ]
+}

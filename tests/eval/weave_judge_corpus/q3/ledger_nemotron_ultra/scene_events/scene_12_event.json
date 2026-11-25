@@ -1,0 +1,141 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "청문 준비 대화",
+   "summary": "서율이 청문 준비에 대해 묻자 마르타는 준비할 게 없으며 이의서를 두 번 보냈으나 본부에서 답이 없었고 20일에 처음으로 대면한다고 말한다.",
+   "location_id": "LOC_009",
+   "time_id": "TIME_018",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [
+    "OBJ_019"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "assumes": "OBJ_019 (수첩)",
+     "source_text": "마르타는 수첩을 덮었다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "본부가 이의서에 답하지 않았음",
+     "source_text": "본부는 한 번도 답을 안 했어. 접수했다는 줄 하나 온 적 없어."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "청문회가 20일에 예정되어 있음",
+     "source_text": "그래서 20일에 처음으로 얼굴을 보고 말하는 거야."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "not_knows: 청문 준비 세부 사항",
+     "source_text": "청문 준비는 뭘 해요."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "마르타가 이의서를 두 번 보냈으나 본부에서 답이 없었음",
+     "via": "told",
+     "retained": true,
+     "source_text": "나는 이의서를 두 번 썼고 본부는 한 번도 답을 안 했어."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "청문회가 20일에 대면으로 열림",
+     "via": "told",
+     "retained": true,
+     "source_text": "그래서 20일에 처음으로 얼굴을 보고 말하는 거야."
+    }
+   ],
+   "cause": "서율이 청문 준비 상황을 파악하기 위해 질문함",
+   "result": "마르타가 본부의 무대응과 청문회 일정을 설명함",
+   "source_text": "\"청문 준비는 뭘 해요.\" 서율이 물었다. 마르타는 수첩을 덮었다. \"준비할 게 없어. 나는 이의서를 두 번 썼고 본부는 한 번도 답을 안 했어. 접수했다는 줄 하나 온 적 없어. 그래서 20일에 처음으로 얼굴을 보고 말하는 거야.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "마르타의 독백과 커튼 젖히기",
+   "summary": "마르타가 본부의 무대응을 알면서도 이의서를 보냈음을 말하고 커튼을 젖힌다.",
+   "location_id": "LOC_009",
+   "time_id": "TIME_018",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_004"
+   ],
+   "witness_character_ids": [
+    "CHAR_001"
+   ],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "본부가 종이를 받고도 아무것도 하지 않음을 알고 있었음",
+     "source_text": "나는 그걸 알면서도 보낸 거고."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "같은 장소·시간에서 이어지는 대화 흐름임",
+     "source_text": "\"선생님.\" \"1,100킬로미터 밖에 있는 사람들이야, 서율. 종이는 받고 아무것도 안 해. 나는 그걸 알면서도 보낸 거고.\" 마르타는 커튼을 젖혔다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "마르타가 본부의 무대응을 예상하고도 이의서를 보냈음",
+     "via": "told",
+     "retained": true,
+     "source_text": "나는 그걸 알면서도 보낸 거고."
+    }
+   ],
+   "cause": "마르타가 본부의 태도에 대한 생각을 이어서 말함",
+   "result": "마르타가 커튼을 젖히며 장면 전환",
+   "source_text": "\"선생님.\" \"1,100킬로미터 밖에 있는 사람들이야, 서율. 종이는 받고 아무것도 안 해. 나는 그걸 알면서도 보낸 거고.\" 마르타는 커튼을 젖혔다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:54:20Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 36.4
+ }
+}

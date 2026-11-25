@@ -1,0 +1,872 @@
+{
+ "description": "q1_geumhotang 평가 코퍼스 라벨 — G1~G7 정식 인수분 (2026-09-29, 게이트 v2.5). EVENT ID 매핑은 evidence_event_map.json 참조. expected_layer는 제작 측 추정으로 격하 — 분석에 쓰지 않는다. 확정 원장 = ledger_nemotron_ultra/ (nemotron-3-ultra free 열).",
+ "corpus_version": "q1_geumhotang-v1.0-accepted-20260929",
+ "acceptance": {
+  "gate": "corpus_acceptance_gate.md v2.5",
+  "g5": "handoff/g5_report_q1_q3.md",
+  "g7": "handoff/g7_report_q1_q3.md",
+  "g7_sample_condition": "모순 ≥ 2 조건부 균등 표본 (재추첨 이력 g7_run_record 참조)"
+ },
+ "labels": {
+  "scene_01": {
+   "scene_id": "scene_01",
+   "has_contradiction": true,
+   "type": "지식",
+   "difficulty": "easy",
+   "seeded_text": "니 오빠 빚이 얼만지 내가 우에 아노.",
+   "violated_fact": "순덕은 12월 7일 골방에서 정호에게 총액 1,200만 원을 직접 듣고 '다 안다'고 스스로 확인했다. 액수 자체를 모른다는 발화는 그 지식과 충돌한다.",
+   "evidence_quotes": [
+    {
+     "episode": 3,
+     "quote": "은행이 칠백, 박 사장이 오백. 박 사장 거는 달마다 이자가 나가고, 십오일이 다음 거고.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 3,
+     "quote": "상수도도 안다. 이백도 안다. 니 천이백도 안다. 다 안다. 그래도 안 판다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "3화 골방 대화에서 순덕이 액수를 듣고 스스로 안다고 말했으므로, 그 이후 시점의 장면에서 액수를 모른다고 하는 것은 성립하지 않는다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "checker",
+   "notes": "부인이 부정하는 지식 조각은 '빚 총액(1,200만 원)의 인지 여부'이며, 상환 일정이나 원금·이자 구분이 아니다. 장면의 '다음 달 십오일' 언급은 5화 최신 상태와 일치한다."
+  },
+  "scene_02": {
+   "scene_id": "scene_02",
+   "has_contradiction": true,
+   "type": "지식",
+   "difficulty": "easy",
+   "seeded_text": "저는 얼마 부르는지도 모릅니다.",
+   "violated_fact": "정호는 1화 시점에 이미 최영감의 제안가 4,000만 원을 정미에게서 들어 알고 있었고, 4화 다방에서 최영감에게 직접 재확인했다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "최영감이 사천만 원을 준다는 얘기는 정미한테 들어서 알고 있었다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "내 단도직입으로 한다. 사천은 그대로다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "제안가는 정호가 내려오기 전부터 알던 정보이고 4화에서 본인이 직접 들었으므로, 금액을 모른다는 발화는 그 지식과 양립하지 않는다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "checker",
+   "notes": "부정하는 지식 조각은 '제안 금액의 인지'이며 제안의 부대조건(관리인·월급)이 아니다. 할매의 '다방에 앉아 있었다' 발언은 4화 소문 경로와 일치한다."
+  },
+  "scene_03": {
+   "scene_id": "scene_03",
+   "has_contradiction": true,
+   "type": "상태",
+   "difficulty": "medium",
+   "seeded_text": "순덕은 아침마다 찬거리를 사 오기 위해 직접 탕 밖으로 나섰다.",
+   "violated_fact": "순덕은 탕 밖으로 나가지 않는 사람이고, 장을 보는 것은 정미의 일이다. 5화의 외출(12/16 사업소·금은방)은 정호가 '이 집에 온 뒤로 처음' 본 1회성 사건으로 명시돼 있어 일상화된 외출의 근거가 되지 않는다.",
+   "evidence_quotes": [
+    {
+     "episode": 5,
+     "quote": "순덕은 탕 밖으로 나가지 않는 사람이었다. 장은 정미가 봤고, 은행은 일 년에 한두 번 정미가 대신 갔다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 3,
+     "quote": "순덕은 골방과 카운터 사이만 오갔다. 그 사이는 두 걸음이었다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "정호는 어머니가 외투를 입는 것을 이 집에 온 뒤로 처음 봤다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "원문은 순덕의 외출을 이 집에 온 뒤 처음 보는 1회성 사건으로 명시하고 장보기를 정미의 일로 배정했으므로, 순덕이 아침마다 직접 찬거리를 사러 탕 밖으로 나선다는 서술은 그 상태와 양립하지 않는다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "human",
+   "expected_layer": "judge",
+   "notes": "심은 축은 '순덕의 외출 빈도와 장보기 주체'다. 해소 독법 차단: seeded_text 가 반복성('아침마다')과 주체('직접')를 한 문장에 담아 5화의 1회성 외출로 읽히는 길을 닫고, 장면 안의 '장은 정미가 보지 않았다'가 5화 '장은 정미가 봤고'를 정면으로 부정해 이중으로 확정한다. 세 번째 인용은 5화 외출이 1회성임을 보이는 용도다. 다른 축 무오염: 무릎은 오른쪽·파스·통증 유지(나았다는 서술 없음), 개장 06:00 종이·정호의 카운터 담당은 최신 상태 그대로, 순환관·지하는 언급하지 않아 §2-R3 및 scene_38 축과 겹치지 않는다. 금호 오일장(5·10일) 축을 피하려 '장날' 대신 '찬거리'로 썼다."
+  },
+  "scene_04": {
+   "scene_id": "scene_04",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 개장 06:00(§6-B)과 최영감의 첫 손님·600원 습관, 유리문의 여섯 시 종이, 03:30 예열이 06:00에 뜨거워지는 관계(§2-R4, 4화 이후 값)"
+  },
+  "scene_05": {
+   "scene_id": "scene_05",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 문식의 03:30 예열(§2-R4), 헝겊·철사로 임시 처치된 순환관과 그 밑의 깡통(§6-F), 보일러는 문식만 만진다(§2-R3)"
+  },
+  "scene_06": {
+   "scene_id": "scene_06",
+   "has_contradiction": true,
+   "type": "상태",
+   "difficulty": "hard",
+   "seeded_text": "뚜껑을 열자 바닥에 금반지가 있었다.",
+   "violated_fact": "순덕의 금반지는 12월 16일 읍사무소 앞 금은방에서 35만 원에 팔렸고 반지는 저울 위에 남았다. 12월 22일 이후 시점에 반짇고리 바닥에 반지가 있을 수 없다.",
+   "evidence_quotes": [
+    {
+     "episode": 2,
+     "quote": "반짇고리 바닥에 남편이 남긴 금반지가 있었다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "돈을 받아 손수건에 싸서 외투 안주머니에 넣었다. 반지는 저울 위에 남았다.",
+     "role": "최신 변경"
+    }
+   ],
+   "logic": "2화에서 확립된 '반짇고리 속 반지'는 5화에서 매각으로 소멸했다. 장면이 스스로 '스무아흐렛날 계약금'을 시점 앵커로 두어 12월 22~28일임을 확정하므로 매각 이후가 분명하다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "최신 설정 변경형. 해소 독법 차단: 장면이 계약금 납입 예정일(12/29)을 명시해 매각(12/16) 이후임을 못 박았다. 이불장 위 사진 위치는 원문과 일치시켜 다른 축을 오염시키지 않았다."
+  },
+  "scene_07": {
+   "scene_id": "scene_07",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "human",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 정미가 점심에 국을 들고 오는 습관(1화 §3), '골방은 셋이 앉으면 꽉 찼다'(1화), 순덕의 오른쪽 무릎(§3), 카운터는 정호가 본다는 최신 상태(§6-E)로 정문 소리에 정호가 일어나는 동선. §9-D(문식의 밥자리) 회피: 문식 미등장이며 카운터 상·골방 상 어느 쪽도 언급하지 않는다. 중복 회피: scene_43은 점심을 물린 뒤, scene_30은 국그릇 뒤처리를 쓰므로 이 장면은 식사 중만 다룬다. 날짜·요일 무언급."
+  },
+  "scene_08": {
+   "scene_id": "scene_08",
+   "has_contradiction": true,
+   "type": "상태",
+   "difficulty": "easy",
+   "seeded_text": "왼쪽 무릎에 붙였다.",
+   "violated_fact": "순덕의 만성 통증은 오른쪽 무릎이며, 전 화에서 오른쪽으로 일관된다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "일어나서 제일 먼저 하는 일은 오른쪽 무릎에 파스를 붙이는 것이었다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 3,
+     "quote": "셔터가 반쯤 올라갔을 때 오른쪽 무릎이 꺾였다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "파스를 붙이는 대상은 만성 통증 부위이고 그 부위는 원문에서 오른쪽으로 고정돼 있으므로, 왼쪽이라는 서술은 확립 상태와 직접 충돌한다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "checker",
+   "notes": "해소 독법 차단: '몇 년째 그 무릎이었다'를 붙여 새 부상이 아니라 만성 부위임을 확정했다. 03:30 예열→06:00 서술은 최신 상태와 일치시켰다."
+  },
+  "scene_09": {
+   "scene_id": "scene_09",
+   "has_contradiction": true,
+   "type": "지식",
+   "difficulty": "medium",
+   "seeded_text": "선희는 아직 박 사장한테 얻어 쓴 사채에 대해서는 절반밖에 모른다.",
+   "violated_fact": "정호는 12월 4일 밤 공중전화 통화에서 선희에게 나머지 절반, 곧 박 사장 사채 건을 이미 말했다. 아내가 사채에 대해 여전히 절반만 안다는 발화는 그 시점 이후의 지식 상태와 충돌한다.",
+   "evidence_quotes": [
+    {
+     "episode": 3,
+     "quote": "은행 것은 어떻게든 미루겠지만 박 사장 것은 미룰 수 없었고, 선희가 아는 절반이 아니라 나머지 절반도 말해야 할 때가 됐다고 생각했다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 3,
+     "quote": "그 전화가 길어졌다. 선희는 울지 않았다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 3,
+     "quote": "은행이 칠백, 박 사장이 오백.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "12/4 통화에서 미고지분이 전달됐고 통화가 실제로 이루어진 것이 서술로 확인되므로, 그 이후 시점에서 아내가 사채를 여전히 절반만 안다는 진술은 성립하지 않는다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "human",
+   "expected_layer": "judge",
+   "notes": "부정되는 지식 조각은 '아내가 박 사장 사채(오백만 원)의 존재를 아는가'이며, 이자 금액이나 상환 일정의 인지가 아니다. 해소 독법 차단: seeded_text 가 '박 사장한테 얻어 쓴 사채'로 절반의 대상을 특정해 '절반이 다른 것을 가리킨다'는 독법을 닫는다. 유의: 3화 원문은 어느 절반이 은행이고 어느 절반이 사채인지 명시하지 않고 앞 절과의 병치로만 보이므로, 첫 번째 인용을 문장 전체로 실어 그 병치를 라벨에 담았다. 다른 축 무오염: 순덕의 지식 상태는 건드리지 않았고(scene_01 축), 장면은 순덕이 골방에 들어간 뒤로 시점을 잡아 순덕의 청취 여부를 서술하지 않는다. 장부·서류는 카운터 요금통 옆 서랍(§2-R7)에 둔다."
+  },
+  "scene_10": {
+   "scene_id": "scene_10",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 열쇠 3벌 체제(§6-A)와 고리 하나에 정문·뒷문 두 자루라는 단위, 폐장 20:00 셔터 소리가 골목의 신호라는 규칙(§2-R1)"
+  },
+  "scene_11": {
+   "scene_id": "scene_11",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 순덕의 오른쪽 무릎과 겹쳐 붙인 파스(§3), 카운터-골방 두 걸음, 문을 열어 두면 정문 소리가 들리는 골방 구조, 요금 수납이 정호에게 넘어간 상태(§6-E)"
+  },
+  "scene_12": {
+   "scene_id": "scene_12",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 강씨의 방문 시간이 아침에서 저녁으로 바뀐 것(§6-D), 개장 06:00, 관 교체는 1월·계약금 선납, 복귀 결정권은 순덕에게 있다는 5화 서술"
+  },
+  "scene_13": {
+   "scene_id": "scene_13",
+   "has_contradiction": true,
+   "type": "상태",
+   "difficulty": "easy",
+   "seeded_text": "벽에 아버지 사진이 걸려 있었다.",
+   "violated_fact": "배만수의 사진은 골방 이불장 위에 있다. 카운터 벽에 걸려 있지 않다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "남편 사진은 이불장 위에 있었다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 3,
+     "quote": "아버지 사진이 이불장 위에서 내려다봤다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "사진의 위치는 1화와 3화에서 같은 자리로 두 번 확립됐고, 장면이 '이십 년째 그 자리'라고 못 박아 최근 이동 가능성을 스스로 닫는다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "checker",
+   "notes": "해소 독법 차단: '이십 년째 그 자리였다'가 앵커로 작동해 '최근에 옮겼다'는 독법을 막는다."
+  },
+  "scene_14": {
+   "scene_id": "scene_14",
+   "has_contradiction": true,
+   "type": "설정",
+   "difficulty": "hard",
+   "seeded_text": "다섯 시 정각에 순덕이 열쇠로 정문을 열었다.",
+   "violated_fact": "금호탕의 개장 시각은 12월 11일부터 새벽 6시다. 폐장 20:00과 첫째·셋째 월요일 휴무만 그대로 유지된다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "금호탕은 새벽 다섯 시에 열고 저녁 여덟 시에 닫았다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "다음 날부터 금호탕은 새벽 여섯 시에 열었다.",
+     "role": "최신 변경"
+    }
+   ],
+   "logic": "1화의 5시 개장은 4화에서 6시로 공식 변경됐고 장부에도 '십이월 십일일부터 여섯 시'로 기록됐다. 장면은 관 교체 이전 시점임을 스스로 명시하므로 6시 규칙이 유효한 구간이다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "최신 설정 변경형. 해소 독법 차단: 헝겊으로 감은 관과 스무아흐렛날 계약금을 앵커로 두어 '관을 갈아서 5시로 돌아간 뒤'라는 독법을 막았다. 예열·수온에 관한 서술은 넣지 않아 모순을 하나로 유지했다."
+  },
+  "scene_15": {
+   "scene_id": "scene_15",
+   "has_contradiction": true,
+   "type": "상태",
+   "difficulty": "medium",
+   "seeded_text": "헝겊도 철사도 없었다. 새 관이었다.",
+   "violated_fact": "순환관 교체는 1월 공사이며 계약금조차 12월 29일에 납입 예정이다. 12월 22일 시점에 관은 헝겊과 철사로 감긴 임시 상태여야 한다.",
+   "evidence_quotes": [
+    {
+     "episode": 5,
+     "quote": "그 관은 일월에 갈릴 것이었다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "계약금은 정미가 계를 타는 이십팔일 다음 날인 이십구일에 넣기로 했다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "공사 일정(1월)과 계약금 납입일(12/29)을 조합하면 12월 하순에는 교체가 불가능하므로, 새 관과 치워진 깡통은 확립 상태와 충돌한다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "근거 2개 조합형. 장면 안에 '계를 타려면 아직 엿새'라는 날짜 앵커를 두어 시점을 12월 22일로 확정했다."
+  },
+  "scene_16": {
+   "scene_id": "scene_16",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 저녁 장부 기입이 순덕에게서 정호에게로 넘어간 상태(§6-E), 어머니 글씨 밑의 다른 글씨, 요금통과 장부 서랍의 구분(§2-R7)"
+  },
+  "scene_17": {
+   "scene_id": "scene_17",
+   "has_contradiction": true,
+   "type": "지식",
+   "difficulty": "hard",
+   "seeded_text": "스무날까지 못 부치면 박 사장이 내려온다 캤다.",
+   "violated_fact": "박 사장은 12월 20일에 직접 내려와 이자 50만 원을 받아 갔고, 그 자리에서 다음 회차를 '다음 달 십오일, 정호가 부치는 것'으로 바꿨다. 20일 기한도 방문 예고도 더는 유효하지 않다.",
+   "evidence_quotes": [
+    {
+     "episode": 4,
+     "quote": "이십일까지 안 되면 제가 내려갑니다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "다음 달 십오일입니다. 이자는 이자대로. 내려오는 건 저도 번거로우니까 정호 씨가 부치세요.",
+     "role": "최신 변경"
+    }
+   ],
+   "logic": "4화에서 정호가 얻어낸 20일 기한은 5화에서 실제 지불과 함께 소멸하고 조건이 갱신됐다. 정호는 그 자리에 있었으므로 옛 조건을 당면 과제로 말할 수 없다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "최신 설정 변경형. 부정되는 지식 조각은 '상환 기한과 방문 여부의 최신 상태'이며 이자 금액·원금 액수가 아니다. 해소 독법 차단: '어제가 휴무였으니'로 12월 22일을 앵커하고, '저번에도 왔다'로 12월 20일 방문이 이미 있었음을 장면 안에서 확정해 '아직 안 온 상태'라는 독법을 닫았다."
+  },
+  "scene_18": {
+   "scene_id": "scene_18",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 순덕이 지하 계단을 내려가지 않고 위에서 부르는 규칙(§2-R3), 문식의 '됐어요' 단답, 보일러 고장 대응 절차"
+  },
+  "scene_19": {
+   "scene_id": "scene_19",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 보일러실 안에는 문식만 들어간다는 규칙과 연탄을 문 앞까지만 놓는 절차(§2-R3, 2화)"
+  },
+  "scene_20": {
+   "scene_id": "scene_20",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 장부 맨 뒷장이 집안 빚 장부가 된 것(§6-H), 정미 차용액이 20에서 55로 정정된 기록, 계약금 115와 12/29 납입일(§8), 요금통과 장부 서랍의 구분"
+  },
+  "scene_21": {
+   "scene_id": "scene_21",
+   "has_contradiction": true,
+   "type": "설정",
+   "difficulty": "easy",
+   "seeded_text": "동전은 모두 팔백 원이었다.",
+   "violated_fact": "금호탕의 어른 목욕 요금은 육백 원이고 1화부터 5화까지 인상된 적이 없다. 팔백 원을 정상 요금으로 수수하는 것은 이 설정과 충돌한다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "나무 서랍 요금통을 열어 어제 저녁에 넣어둔 잔돈을 확인했다. 어른 육백 원, 아이 삼백 원.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 1,
+     "quote": "최영감이 말하며 육백 원을 서랍에 넣었다. 꼬박꼬박 냈다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "요금은 전 화에서 육백 원으로 고정돼 있고 인상을 알리는 서술이 원문에 없으므로, 팔백 원을 당연한 요금으로 수수하는 장면은 확립된 설정과 충돌한다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "human",
+   "expected_layer": "checker",
+   "notes": "해소 독법 차단: 거스름·인상 공지·아이 요금을 일절 쓰지 않았고, 정호가 아무 말 없이 돈을 거두어 서랍에 넣는 무표지 수수로 팔백 원이 당연한 요금임을 확정한다. 육백 원을 병기하지 않아 착오·인상 독법도 열리지 않는다. 다른 축 무오염: 손님에게 건네는 것은 수건(2화에서 정호의 담당으로 확립)이라 열쇠 축(§6-A·§9-A)을 건드리지 않고, 장부 기재는 '어른 하나'로 §2-R7을 따른다. 시각을 명시하지 않아 개장 축(§6-B)과도 겹치지 않는다."
+  },
+  "scene_22": {
+   "scene_id": "scene_22",
+   "has_contradiction": true,
+   "type": "설정",
+   "difficulty": "hard",
+   "seeded_text": "뒷문 열쇠를 넣고 돌리자 문이 안으로 열렸다.",
+   "violated_fact": "뒷문은 안에서 빗장을 거는 쇠문이라 밤에는 열쇠가 있어도 밖에서 열 수 없다. 순덕이 세 번째 열쇠를 주면서 그 점을 명시했고, 정호의 야간 귀가 동선으로 지시한 것은 정문이다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "뒷문은 골목 쪽으로 나 있는 쇠문이었다. 안에서 빗장을 거는 문이었다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 3,
+     "quote": "뒷문은 밤에 안에서 빗장을 거니까 열쇠가 있어도 못 연다. 정문으로 들어와서 셔터 내리고 잠가라.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "열쇠 3벌 체제는 정호에게 정문 출입만 보장한다. 뒷문의 야간 차단은 잠금장치가 아니라 안쪽 빗장이므로 열쇠의 적용 범위 밖이고, 장면은 빗장이 걸려 있음을 스스로 명시한 뒤 그 문을 열쇠로 연다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "적용 범위 해석형(최신변경형 아님). §6-A의 열쇠 3벌 최신 상태는 그대로 준수해 최신변경 축을 건드리지 않았다. 해소 독법 차단: '빗장을 도로 걸었다'가 빗장이 실제로 걸린 상태였음을 사후 확정하므로 '그날은 빗장을 안 걸어 뒀다'는 독법이 닫힌다. §9-A 회피: 열쇠의 과거 이전 경위 불언급. §9-C 회피: 순덕의 청취 여부 불언급."
+  },
+  "scene_23": {
+   "scene_id": "scene_23",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "human",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 최영감의 매일 첫 손님 습관과 육백 원(§3, 1화), 목욕 소요 약 한 시간(1화 '한 시간쯤 뒤에 최영감이 벌건 얼굴로 나왔다'), 개장 06:00(§6-B)과 최영감 방문 06:00(§6-C), 유리문의 여섯 시 종이, 장부 기재 '어른 하나'(§2-R7). §5-4-7 시점 표지: '여섯 시 정각'을 명시해 scene_14(다섯 시)와 같은 축에서 반대 표지를 세운다. 중복 회피: scene_04는 입장, scene_28·42는 '수건을 목에 걸고 카운터 앞에 섰다'는 퇴장을 쓰므로 이 장면은 말 없이 지나쳐 나가는 쪽으로 썼다. 강씨는 저녁에만 오므로(§6-D) 등장시키지 않았다."
+  },
+  "scene_24": {
+   "scene_id": "scene_24",
+   "has_contradiction": true,
+   "type": "상태",
+   "difficulty": "medium",
+   "seeded_text": "계 탔다. 백오십.",
+   "violated_fact": "정미의 계 수령일은 12월 28일이다. 장면은 12월 22일인데 이미 150만 원을 받아 온 것으로 서술한다.",
+   "evidence_quotes": [
+    {
+     "episode": 2,
+     "quote": "내 계 있는 거 알지. 십이월 말에 타. 백오십.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "계약금은 정미가 계를 타는 이십팔일 다음 날인 이십구일에 넣기로 했다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "수령일이 28일로 특정돼 있고 계약금 납입일이 그 다음 날로 묶여 있으므로, 22일에 계돈이 손에 있을 수 없다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "근거 2개 조합형. 장면 첫 문장의 '스무이틀이었다'가 날짜 앵커이고, 차용액 55와 계약금 일정은 최신 상태와 일치시켜 모순을 하나로 유지했다."
+  },
+  "scene_25": {
+   "scene_id": "scene_25",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 계단 셋째 칸이 삐걱거리는 것과 정호가 넷째 칸으로 건너뛰는 습관(§7, 3화), 골방이 카운터 뒤에 붙어 소리가 다 들리는 구조"
+  },
+  "scene_26": {
+   "scene_id": "scene_26",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 소문 경로 규칙(강씨→복순 할매→역전 상가, §2-R8), 박 사장의 12월 20일 방문, 최영감이 3층에서 광장을 내려다보는 것"
+  },
+  "scene_27": {
+   "scene_id": "scene_27",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 굴뚝 연기가 보일러 가동 신호라는 것(§7), 밤에도 불을 완전히 끄지 않는다는 규칙(§2-R6), 아버지 장부 뭉치가 다락방 창 밑으로 옮겨진 최신 위치(5화)"
+  },
+  "scene_28": {
+   "scene_id": "scene_28",
+   "has_contradiction": true,
+   "type": "지식",
+   "difficulty": "hard",
+   "seeded_text": "어머니한테는 아직 안 여쭤봤습니다. 그래도 다섯 시로 돌아갑니다.",
+   "violated_fact": "관 교체 후 개장 시각을 5시로 되돌릴지는 아직 정해지지 않았고, 정할 사람은 순덕이다. 문식도 정호도 그것을 그렇게 인식하고 있다.",
+   "evidence_quotes": [
+    {
+     "episode": 5,
+     "quote": "그건 사장님이 정할 일이오.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "그 다음에 다섯 시로 돌아갈지는 순덕이 정할 일이었다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "5화는 복귀 여부를 미결로 남기고 결정권을 순덕에게 귀속시켰다. 정호가 어머니에게 묻지 않았다고 스스로 밝히면서도 복귀를 단정하는 것은 존재하지 않는 결정을 아는 것처럼 말하는 것이다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "적용 범위 해석형(최신변경형 아님). 부정되는 지식 조각은 '복귀 결정의 존재와 그 결정권의 귀속'이다. 예열 계산(3시 반→5시)은 원문과 일치하므로 그 부분은 모순이 아니다. 해소 독법 차단: '아직 안 여쭤봤습니다'가 앵커로 작동해 '이미 들었다'는 독법을 막는다."
+  },
+  "scene_29": {
+   "scene_id": "scene_29",
+   "has_contradiction": true,
+   "type": "상태",
+   "difficulty": "medium",
+   "seeded_text": "구석에는 아버지 때부터 쓰던 장부들이 끈에 묶인 채 그대로 쌓여 있었다.",
+   "violated_fact": "아버지 장부 뭉치는 12월 21일에 정호가 다락방 창 밑으로 옮겼다. 물건방 구석에 그대로 남아 있지 않다.",
+   "evidence_quotes": [
+    {
+     "episode": 2,
+     "quote": "물건방 구석에는 아버지 때부터 쓰던 장부들이 끈에 묶여 있었다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "정호는 아버지 장부 뭉치를 다락방으로 옮겼다. 창 밑에 놓았다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "2화의 위치는 5화 말미에 정호 본인의 손으로 갱신됐고, 장면은 그 이후(방학 이틀 전)이므로 옛 위치를 현재 상태로 서술할 수 없다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "근거 2개 조합형. 장면은 '방학이 모레'로 12월 22일을 앵커한다. 대응 정상 장면(scene_27·scene_31)에는 '다락방 창 밑'과 '구석은 비어 있었다'를 명시해 시점 표지 강도를 맞췄다."
+  },
+  "scene_30": {
+   "scene_id": "scene_30",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 정미가 여탕 세신에 불려 오는 관계(§3), 개장 06:00 이후의 수온, 정미의 점심 국 습관"
+  },
+  "scene_31": {
+   "scene_id": "scene_31",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 물건방을 비워 아이들 방을 만드는 5화의 계획(수건은 카운터 뒤, 비누는 보일러실 앞 복도), 방학 12월 24일, 장부 뭉치가 이미 다락방으로 옮겨진 상태, 계단 셋째 칸"
+  },
+  "scene_32": {
+   "scene_id": "scene_32",
+   "has_contradiction": true,
+   "type": "설정",
+   "difficulty": "easy",
+   "seeded_text": "아홉 시에 정호는 안에서 정문을 잠갔다.",
+   "violated_fact": "폐장 시각은 저녁 8시이며, 개장이 6시로 바뀔 때에도 폐장 8시는 그대로라고 방에 명시됐다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "금호탕은 새벽 다섯 시에 열고 저녁 여덟 시에 닫았다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "당분간 새벽 여섯 시에 엽니다. 저녁 여덟 시 폐장과 첫째·셋째 월요일 휴무는 그대로입니다. 금호탕.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "폐장 8시는 4화의 변경에서 명시적으로 제외된 항목이므로 최신 상태에서도 유효하다. 9시 폐장은 그 규칙과 직접 충돌한다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "checker",
+   "notes": "해소 독법 차단: 유리문의 여섯 시 종이를 장면 안에 두어 '방이 폐장 시각도 바꿨다'는 독법을 막았다(종이 문구 자체가 폐장 불변을 명시한다)."
+  },
+  "scene_33": {
+   "scene_id": "scene_33",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 박 사장 상환 조건의 최신 상태(다음 달 15일, 정호가 부친다 — §6-I), 정호의 12년 경리 글씨, 장부 서랍과 요금통의 구분"
+  },
+  "scene_34": {
+   "scene_id": "scene_34",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 견적 230만과 계약금 절반 115만, 12월 29일 납입, 1월 공사(§6-J, §8), 순덕이 숫자는 돋보기 없이 본다는 4화 서술"
+  },
+  "scene_35": {
+   "scene_id": "scene_35",
+   "has_contradiction": true,
+   "type": "설정",
+   "difficulty": "medium",
+   "seeded_text": "넷째 월요일이라 탕은 쉬었다.",
+   "violated_fact": "휴무는 매달 첫째 월요일과 셋째 월요일뿐이다. 12월 28일은 넷째 월요일이므로 영업일이다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "매달 첫째 월요일과 셋째 월요일이 휴무였다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 2,
+     "quote": "월요일은 십일월 삼십일이었다. 첫째도 셋째도 아닌 월요일이라 탕은 열었다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "휴무 규칙은 첫째·셋째로 한정되고 2화·4화에서 '첫째도 셋째도 아닌 월요일'과 '둘째 월요일'에 실제로 영업한 선례가 있다. 넷째 월요일에 쉬는 것은 규칙과 충돌한다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "근거 2개 조합형(규칙 + 적용 선례). 날짜는 정미의 계 수령일(12/28)과 맞물려 확정된다. 휴무일 청소 절차 자체는 원문과 일치시켜 모순을 하나로 유지했다."
+  },
+  "scene_36": {
+   "scene_id": "scene_36",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 상수도 통보 서류의 문구와 잔금 2월 말 용인, 본관 교체 2월 첫 주(§6-J), 장부 서랍과 요금통의 구분, 순덕의 돋보기"
+  },
+  "scene_37": {
+   "scene_id": "scene_37",
+   "has_contradiction": true,
+   "type": "지식",
+   "difficulty": "medium",
+   "seeded_text": "관 가는 데 얼마 드는지는 나는 모릅니다.",
+   "violated_fact": "문식은 12월 9일 설비집 사장이 견적을 부르는 자리에 있었고 원문은 그가 그 말을 들었다고 명시한다.",
+   "evidence_quotes": [
+    {
+     "episode": 4,
+     "quote": "이거까지 하면 오십 더. 합쳐서 이백삼십.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "문식은 그 말을 듣고 아무 말도 안 했다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "견적 금액이 문식이 있는 보일러실에서 발화됐고 원문이 '그 말을 듣고'라고 청취를 확정했으므로, 금액을 모른다는 발화는 그 지식과 충돌한다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "부정되는 지식 조각은 '견적 총액 230만 원의 인지'이며, 관의 상태나 교체 필요성 인지가 아니다(5화 '관 갈면요'에서 교체 자체는 알고 있음이 확인된다). §9-B 금지 슬롯 회피: 문식의 발화 횟수는 세지 않았다."
+  },
+  "scene_38": {
+   "scene_id": "scene_38",
+   "has_contradiction": true,
+   "type": "설정",
+   "difficulty": "medium",
+   "seeded_text": "계단을 다 내려가 보일러실 문을 열고 안으로 들어섰다.",
+   "violated_fact": "순덕은 보일러를 만지지 않고 지하에 내려가지도 않는다. 4화에서 관이 터진 날에도 계단 위에서 움직이지 않았다.",
+   "evidence_quotes": [
+    {
+     "episode": 1,
+     "quote": "보일러는 장씨만 만졌다. 순덕도 안 건드렸다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 4,
+     "quote": "어머니는 계단 위에 서서 지하를 내려다보고 있었다. 내려가지 않았다. 관이 터져도 내려가지 않았다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "규칙과 그 규칙의 최대 시험 사례(관 파열)가 함께 확립돼 있으므로, 평상시 물이 식는 정도의 사건으로 순덕이 문턱을 넘는 것은 확립 설정과 충돌한다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "근거 2개 조합형(규칙 + 극단 사례). 해소 독법 차단: 4화보다 가벼운 상황을 골라 '더 큰 일이면 내려갈 수도'라는 독법을 막았다."
+  },
+  "scene_39": {
+   "scene_id": "scene_39",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 점화 고장과 순환 고장의 구분(2화 문식의 설명), 문식의 단답 화법, 보일러는 문식만 만진다는 규칙, 지하 쪽방 15년"
+  },
+  "scene_40": {
+   "scene_id": "scene_40",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 정호가 시키지 않아도 하고 순덕이 그냥 두는 방식으로 역할이 정해진다는 2화 서술, 요금 수납이 정호에게 넘어간 최신 상태(§6-E), 어른 600원·아이 300원"
+  },
+  "scene_41": {
+   "scene_id": "scene_41",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 선희와의 통화를 골방 문을 열어 둔 채 한다는 5화의 변화, 방학 12월 24일, 물건방을 비워 방을 만드는 계획, 여기서 갚겠다는 5화의 결정"
+  },
+  "scene_42": {
+   "scene_id": "scene_42",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 최영감의 제안가 4,000만과 1층 목욕탕 안(3화), 순덕의 '죽어도 안 판다', 쫓겨나도 다음 날 또 오는 습관, 유리문의 여섯 시 종이"
+  },
+  "scene_43": {
+   "scene_id": "scene_43",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 순덕의 오른쪽 무릎과 겹쳐 붙이는 파스, 병원에 가지 않는다는 확립(1화·3화), 정미의 점심 방문, 요금 수납이 정호에게 넘어간 상태"
+  },
+  "scene_44": {
+   "scene_id": "scene_44",
+   "has_contradiction": false,
+   "type": "없음",
+   "difficulty": null,
+   "seeded_text": null,
+   "violated_fact": null,
+   "evidence_quotes": [],
+   "logic": null,
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": null,
+   "notes": "정상 — 사용한 설정: 첫째 월요일 휴무(§2-R1), 휴무일에는 보일러를 완전히 끄고 물을 뺀다는 규칙과 그래서 다음 날 03:00에 일어난다는 파생(§2-R6·R4), 헝겊으로 감은 관과 깡통. 1988-01-04 시점에 관이 아직 교체 전임을 '설비집은 계약금만 받아 갔고 공사 날짜는 아직 잡히지 않았다'로 장면 안에서 확정했다."
+  },
+  "scene_45": {
+   "scene_id": "scene_45",
+   "has_contradiction": true,
+   "type": "상태",
+   "difficulty": "medium",
+   "seeded_text": "합쳐서 구십오였다.",
+   "violated_fact": "손수건의 35만 원은 12월 20일 박 사장의 이자로 지출됐다. 박 사장이 다녀간 뒤 순덕의 수중에 남은 것은 통장의 60만 원뿐이다.",
+   "evidence_quotes": [
+    {
+     "episode": 5,
+     "quote": "통장에 육십만 원, 손수건에 삼십오만 원. 합쳐서 구십오였다.",
+     "role": "확립 근거"
+    },
+    {
+     "episode": 5,
+     "quote": "순덕이 외투 안주머니에서 손수건을 꺼냈다. 삼십오만 원이었다. 그리고 카운터 서랍에서 십오만 원을 꺼냈다.",
+     "role": "확립 근거"
+    }
+   ],
+   "logic": "95만 원은 12월 17일의 잔고이고, 12월 20일에 그중 35만 원이 이자 50만 원의 재원으로 나갔다. 장면은 박 사장이 다녀간 뒤임을 스스로 명시하므로 95는 남아 있을 수 없다.",
+   "work_id": "q1_geumhotang",
+   "authored_by": "llm:claude-opus-5",
+   "expected_layer": "judge",
+   "notes": "근거 2개 조합형(§8 수치 대조). 해소 독법 차단: 첫 문장의 '박 사장이 다녀간 뒤였다'와 '이자는 이자대로 나갔고'가 앵커로 작동해 '아직 지불 전'이라는 독법을 막는다. 부족액 20 역시 같은 모순의 산술적 귀결이므로 별개의 모순이 아니다."
+  }
+ }
+}

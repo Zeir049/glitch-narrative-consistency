@@ -1,0 +1,162 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "헬렌, 스토크 모런 부엌에서 아침 설거",
+   "summary": "헬렌 스토너가 스토크 모런 부엌에서 아침 그릇을 씻고 있었다. 서쪽 동의 인부들은 아직 오지 않았고, 로일럿 박사가 없는 뒤로 저택이 조용하다.",
+   "location_id": "LOC_002",
+   "time_id": "TIME_011",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "헬렌 스토너는 그날도 스토크 모런의 부엌에서 아침 그릇을 씻고 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "body_status",
+     "assumes": "두 손을 자유롭게 사용 가능 (그릇 씻기)",
+     "source_text": "헬렌 스토너는 그날도 스토크 모런의 부엌에서 아침 그릇을 씻고 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "",
+   "result": "",
+   "source_text": "헬렌 스토너는 그날도 스토크 모런의 부엌에서 아침 그릇을 씻고 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "헬렌, 복도로 나서며 줄리아의 방문을 지나침",
+   "summary": "헬렌이 부엌에서 복도로 나서, 닫힌 줄리아의 방문을 지나가면서 고개를 돌리지 않았다.",
+   "location_id": "LOC_002",
+   "time_id": "TIME_011",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "LOC_002",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그녀는 행주를 걸어 두고 복도로 나섰다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "줄리아의 방문이 어느 방인지 알고 있음",
+     "source_text": "언니가 쓰던 방문은 닫힌 채였다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "location",
+     "assumes": "자기 방문에 있지 않음 (방이 닫혀 있되 줄리아 자신은 언급되지 않음)",
+     "source_text": "언니가 쓰던 방문은 닫힌 채였다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "EVENT_6_1의 직후 시점이며 시간 경과가 거의 없음",
+     "source_text": "그녀는 행주를 걸어 두고 복도로 나섰다."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "행주를 걸어 두고 복도로 나서서",
+   "result": "줄리아의 닫힌 방문을 지나침",
+   "source_text": "그녀는 행주를 걸어 두고 복도로 나섰다. 언니가 쓰던 방문은 닫힌 채였다. 지나가면서도 그녀는 그 문 쪽으로 고개를 돌리지 않았다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_3",
+   "scene_id": "scene_6_1",
+   "order": 3,
+   "title": "마을 교구 시계가 아홉 시를 알림",
+   "summary": "마을 쪽에서 교구 시계가 아홉 시를 알렸다. 시간은 아직 아침 인부들이 오기 전.",
+   "location_id": "LOC_002",
+   "time_id": "TIME_011",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [],
+   "witness_character_ids": [
+    "CHAR_003"
+   ],
+   "main_actor_character_id": "unknown",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_2",
+     "assumes": "EVENT_6_2와 같은 시각(아침 9시)에 발생",
+     "source_text": "마을 쪽에서 교구 시계가 아홉 시를 알렸다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "현재 시각이 아침 아홉 시임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "마을 쪽에서 교구 시계가 아홉 시를 알렸다."
+    }
+   ],
+   "cause": "",
+   "result": "",
+   "source_text": "마을 쪽에서 교구 시계가 아홉 시를 알렸다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-31T06:31:53Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 31.78
+ }
+}

@@ -1,0 +1,211 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 1,
+  "batch_id": "T2-R1-B",
+  "scene_id": "scene_19",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_19.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:35:46Z",
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:프리든_출입_권한_규칙",
+      "content": "권한이 없는 로봇은 프리든 정문을 단독으로 통과할 수 없고, 권한자가 동행해야 입장할 수 있다.",
+      "description": "프리든 정문은 출입 권한을 가진 자에게만 열린다. 권한 없는 로봇은 혼자 다가서도 문이 열리지 않으며, 권한을 가진 인물이 앞장서서 데리고 들어가야 통과할 수 있다.",
+      "source_text": "권한 없는 로봇은 원래 못 들어와요~ / 제가 데리고 들어가야죠. / 알라인이 앞장서자 그제야 문이 열렸다.",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "프리든으로 출근하는 화자. 이 장면에서 '권한 없는 로봇'으로 지칭된다.",
+      "traits": [
+        {
+          "trait": "뜻대로 되지 않으면 소리 내어 투덜거리는 성격",
+          "trait_type": "personality",
+          "source_text": "\"매번 이래야 한다니, 동선 낭비가 너무 심하지 않나?!\" 투덜거리며 나는 그 뒤를 따라 들어갔다.",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S19_1",
+      "source_text": "오늘도 프리든으로 출근. 정문 앞에 서자, 문은 꿈쩍도 하지 않았다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_007",
+      "name": "알라인 쉭살 (Allein Schicksal)",
+      "aliases": ["알라인"],
+      "entity_type": "person",
+      "description": "프리든에 출근하며, 정문 출입 권한을 가지고 알파를 데리고 들어가는 인물.",
+      "traits": [
+        {
+          "trait": "말끝을 늘여 빼는 가벼운 말투 ('~요~')",
+          "trait_type": "speech",
+          "source_text": "\"권한 없는 로봇은 원래 못 들어와요~\"",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S19_1",
+      "source_text": "\"권한 없는 로봇은 원래 못 들어와요~ 제가 데리고 들어가야죠. 자, 갑시다.\"",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_005",
+      "name": "프리든 (Friden)",
+      "description": "알파가 출근하는 장소. 정문을 통해 출입한다.",
+      "source_text": "오늘도 프리든으로 출근.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:프리든_정문",
+      "name": "프리든 정문",
+      "description": "프리든의 출입구. 출입 권한이 없는 로봇 앞에서는 열리지 않는다.",
+      "source_text": "정문 앞에 서자, 문은 꿈쩍도 하지 않았다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [],
+  "times": [
+    {
+      "time_id": "NEW:프리든_출근일_아침",
+      "expression": "오늘도 프리든으로 출근하는 날",
+      "description": "알파가 프리든으로 출근한 날. 알라인의 출근 시각과 겹친다.",
+      "timeline": "future_world",
+      "source_text": "오늘도 프리든으로 출근. / 알라인의 출근을 기다렸다.",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S19_1",
+      "scene_id": "scene_19",
+      "order": 1,
+      "title": "열리지 않는 프리든 정문과 알라인의 동행 입장",
+      "summary": "프리든으로 출근한 알파가 정문 앞에 섰으나 문이 열리지 않아, 문 옆에서 알라인의 출근을 기다린다. 알라인이 권한 없는 로봇은 못 들어온다며 앞장서자 문이 열렸고, 알파는 동선 낭비라고 투덜거리며 뒤를 따라 들어갔다.",
+      "location_id": "NEW:프리든_정문",
+      "time_id": "NEW:프리든_출근일_아침",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002", "CHAR_007"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "location",
+          "from": "NEW:프리든_정문",
+          "to": "LOC_005",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "투덜거리며 나는 그 뒤를 따라 들어갔다."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "location",
+          "from": "NEW:프리든_정문",
+          "to": "LOC_005",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "알라인이 앞장서자 그제야 문이 열렸다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "from": "unknown",
+          "to": "권한 없는 로봇은 프리든 정문을 단독 통과 불가, 권한자 동행 필요",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "\"권한 없는 로봇은 원래 못 들어와요~ 제가 데리고 들어가야죠.\""
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "로봇 신체 (알라인이 알파를 '권한 없는 로봇'으로 지칭)",
+          "source_text": "\"권한 없는 로봇은 원래 못 들어와요~\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "프리든 정문 출입 권한 없음 — 단독으로는 문을 열 수 없음",
+          "source_text": "정문 앞에 서자, 문은 꿈쩍도 하지 않았다. 몇 번을 다가섰다 물러서도 마찬가지였다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "not_knows: 문이 열리지 않는 이유(권한 없는 로봇의 단독 출입 불가)",
+          "source_text": "\"...어? 왜 안 열려.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "알라인이 프리든에 출근한다는 사실 (기다리면 만날 수 있음)",
+          "source_text": "결국 문 옆에 뻘쭘하게 서서 알라인의 출근을 기다렸다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "프리든이 자신의 출근처이며 이전에도 반복해 출입해 왔음",
+          "source_text": "오늘도 프리든으로 출근. / \"매번 이래야 한다니, 동선 낭비가 너무 심하지 않나?!\""
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "ability",
+          "assumes": "프리든 정문 출입 권한 보유 — 본인 통과 및 동행자 입장 가능",
+          "source_text": "\"제가 데리고 들어가야죠.\" / 알라인이 앞장서자 그제야 문이 열렸다."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "프리든 출입 권한 규칙(권한 없는 로봇의 단독 출입 불가)",
+          "source_text": "\"권한 없는 로봇은 원래 못 들어와요~\""
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "알파가 출입 권한이 없는 로봇이라는 사실",
+          "source_text": "\"권한 없는 로봇은 원래 못 들어와요~ 제가 데리고 들어가야죠.\""
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "권한 없는 로봇은 프리든 정문을 단독으로 통과할 수 없고 권한자가 동행해야 한다",
+          "via": "told",
+          "retained": true,
+          "source_text": "\"권한 없는 로봇은 원래 못 들어와요~ 제가 데리고 들어가야죠. 자, 갑시다.\""
+        }
+      ],
+      "cause": "알파에게 프리든 정문 출입 권한이 없어 혼자서는 문이 열리지 않았다.",
+      "result": "알라인이 앞장서 문이 열렸고, 알파는 알라인을 따라 프리든 안으로 들어갔다. 알파는 출입 권한 규칙을 알게 되었고 동선 낭비라고 불평했다.",
+      "source_text": "오늘도 프리든으로 출근. 정문 앞에 서자, 문은 꿈쩍도 하지 않았다. \"...어? 왜 안 열려.\" 몇 번을 다가섰다 물러서도 마찬가지였다. 결국 문 옆에 뻘쭘하게 서서 알라인의 출근을 기다렸다. \"권한 없는 로봇은 원래 못 들어와요~ 제가 데리고 들어가야죠. 자, 갑시다.\" 알라인이 앞장서자 그제야 문이 열렸다. \"매번 이래야 한다니, 동선 낭비가 너무 심하지 않나?!\" 투덜거리며 나는 그 뒤를 따라 들어갔다.",
+      "certainty": "explicit"
+    }
+  ]
+}

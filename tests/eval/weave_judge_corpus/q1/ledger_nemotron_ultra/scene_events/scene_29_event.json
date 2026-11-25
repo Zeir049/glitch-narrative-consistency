@@ -1,0 +1,104 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "물건방 정리 시작",
+   "summary": "정호가 물건방 문을 열고 비누 상자를 밀어내며 방학 전 은지와 민수의 잘 자리를 위해 짐을 빼기 시작한다.",
+   "location_id": "LOC_011",
+   "time_id": "NEW:방학_모레",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_020",
+    "OBJ_002"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_020",
+     "field": "location",
+     "from": "LOC_011",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 물건방 문을 열고 비누 상자를 밀어냈다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_020 (비누 상자)",
+     "source_text": "정호는 물건방 문을 열고 비누 상자를 밀어냈다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "방학이 모레임",
+     "source_text": "방학이 모레였다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "은지와 민수가 잘 자리가 필요함",
+     "source_text": "은지와 민수가 잘 자리를 만들려면 이 짐을 다 빼야 했다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "장부 뭉치를 들 수 있는 힘",
+     "source_text": "정호는 그 뭉치를 한 번 들어 보고 도로 내려놓았다. 무거웠다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "물건방에 아버지 때부터 쓰던 장부들이 끈에 묶인 채 쌓여 있음 (1962년 개업 첫해 것 포함)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "구석에는 아버지 때부터 쓰던 장부들이 끈에 묶인 채 그대로 쌓여 있었다. 1962년 개업 첫해 것이 맨 밑이었다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "이틀 안에 짐을 다 빼기는 어려울 것 같음",
+     "via": "inference",
+     "retained": true,
+     "source_text": "이틀 안에 다 빼기는 어려울 것 같았다."
+    }
+   ],
+   "cause": "방학 전 은지와 민수의 잘 자리를 마련하기 위해",
+   "result": "비누 상자를 문 밖으로 밀어냈고, 장부 뭉치 등 남은 짐의 양을 파악함",
+   "source_text": "정호는 물건방 문을 열고 비누 상자를 밀어냈다. 방학이 모레였다. 은지와 민수가 잘 자리를 만들려면 이 짐을 다 빼야 했다. 구석에는 아버지 때부터 쓰던 장부들이 끈에 묶인 채 그대로 쌓여 있었다. 1962년 개업 첫해 것이 맨 밑이었다. 정호는 그 뭉치를 한 번 들어 보고 도로 내려놓았다. 무거웠다. 이것부터 어디로 옮길지 정해야 했다. 벽이 찼다. 여기는 불이 들어오지 않았다. 정호는 비누 상자를 문 밖으로 밀어 놓고 방 가운데 서서 남은 짐을 세었다. 이틀 안에 다 빼기는 어려울 것 같았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:38:51Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 31.19
+ }
+}

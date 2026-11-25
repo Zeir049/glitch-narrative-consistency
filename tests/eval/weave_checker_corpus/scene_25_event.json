@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S25_1",
+      "order": 1,
+      "title": "블루멘, 옷의 회피 기능을 출처 없이 언급",
+      "summary": "복도에서 블루멘이 슐라우의 옷 무늬가 AI 탐지 회피용 패브릭이라는 이야기를 꺼낸다. 알파가 출처를 묻자 그냥 알고 있었다고 답하고 지나간다.",
+      "location_id": "LOC_003",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_012",
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_012",
+      "objects": [
+        "OBJ_008"
+      ],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_012",
+          "field": "knows",
+          "assumes": "노이즈 무늬 옷이 AI 탐지를 피하기 위해 제작된 패브릭이라는 정보",
+          "source_text": "AI 탐지를 피하려고 일부러 짜낸 패브릭이라며?"
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "블루멘이 출처 불명으로 옷의 회피 기능을 알고 있음",
+          "via": "direct",
+          "source_text": "어? 글쎄. 그냥... 알고 있었는데?"
+        }
+      ],
+      "cause": "복도에서의 우연한 대화",
+      "result": "알파가 출처 불명에 의문을 품음",
+      "source_text": "\"그 얘기, 누구한테 들었어요? 저 아직 아무한테도 결론 말한 적 없는데.\"",
+      "certainty": "explicit"
+    }
+  ]
+}

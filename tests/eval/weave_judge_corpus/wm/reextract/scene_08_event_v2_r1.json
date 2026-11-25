@@ -1,0 +1,235 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 1,
+  "batch_id": "T2-R1-A",
+  "scene_id": "scene_08",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_08.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:32:05Z",
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:낙상_자동_감지_및_로봇_즉시_대응",
+      "content": "이 도시에서는 사람이 넘어지는 정도의 사소한 이상도 시스템에 즉시 포착되어 인근 로봇이 자율적으로 대응한다.",
+      "description": "화자가 인간보다 먼저 반응하는 로봇 두 대를 보고, 사전에 들었던 '넘어진 것 정도도 다 뜬다'는 설명이 사실임을 확인한다.",
+      "source_text": "\"...빠르네. 넘어진 것 정도도 다 뜬다더니, 진짜였어.\"",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "공원을 지나던 중 노인의 낙상과 로봇들의 대응을 목격한 화자.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S08_1",
+      "source_text": "내가 달려가기도 전에,",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "NEW:공원의_백발_노인",
+      "name": "공원의 백발 노인",
+      "aliases": ["노인"],
+      "entity_type": "person",
+      "description": "두 번째 공원 벤치 옆에서 힘이 풀려 주저앉았다가 로봇의 부축으로 일어난 백발의 노인.",
+      "traits": [
+        {
+          "trait": "백발",
+          "trait_type": "appearance",
+          "source_text": "벤치 옆에서 백발의 노인이 힘이 풀렸는지 주저앉았다.",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S08_1",
+      "source_text": "벤치 옆에서 백발의 노인이 힘이 풀렸는지 주저앉았다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "NEW:가로수_옆_로봇_A",
+      "name": "가로수 옆 로봇 A (부축한 쪽)",
+      "aliases": ["로봇 두 대 중 한 대"],
+      "entity_type": "robot",
+      "description": "가로수 옆에 서 있다가 주저앉은 노인에게 다가가 부축한 로봇.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S08_1",
+      "source_text": "가로수 옆에 서 있던 로봇 두 대가 먼저 움직였다. 한 대는 노인을 부축하고",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "NEW:가로수_옆_로봇_B",
+      "name": "가로수 옆 로봇 B (상태를 살핀 쪽)",
+      "aliases": ["로봇 두 대 중 한 대"],
+      "entity_type": "robot",
+      "description": "가로수 옆에 서 있다가 주저앉은 노인과 마주 앉아 상태를 살핀 로봇.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S08_1",
+      "source_text": "한 대는 상태를 살피는 듯 마주 앉았다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "NEW:두_번째_공원",
+      "name": "두 번째 공원",
+      "description": "화자가 이동 중 지나던 두 번째 공원. 벤치와 가로수가 있고, 가로수 옆에 로봇 두 대가 상시 대기하고 있다.",
+      "source_text": "두 번째 공원을 지나던 참이었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S08_1",
+      "scene_id": "scene_08",
+      "order": 1,
+      "title": "주저앉은 노인에게 로봇 두 대가 즉시 대응",
+      "summary": "두 번째 공원을 지나던 화자 앞에서 백발의 노인이 힘이 풀려 주저앉자, 화자가 달려가기도 전에 가로수 옆에 서 있던 로봇 두 대가 먼저 움직여 한 대는 부축하고 한 대는 마주 앉아 상태를 살폈다. 노인은 로봇의 팔을 잡고 일어나 손을 흔들어 보였고, 로봇들은 제자리로 돌아갔다.",
+      "location_id": "NEW:두_번째_공원",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "NEW:공원의_백발_노인",
+        "NEW:가로수_옆_로봇_A",
+        "NEW:가로수_옆_로봇_B"
+      ],
+      "witness_character_ids": ["CHAR_002"],
+      "main_actor_character_id": "NEW:가로수_옆_로봇_A",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "NEW:공원의_백발_노인",
+          "field": "body_status",
+          "from": "스스로 서 있는 상태",
+          "to": "힘이 풀려 주저앉음",
+          "op": "set",
+          "volatility": "transient",
+          "decays_to": "스스로 서 있는 상태",
+          "certainty": "explicit",
+          "source_text": "벤치 옆에서 백발의 노인이 힘이 풀렸는지 주저앉았다."
+        },
+        {
+          "entity": "NEW:공원의_백발_노인",
+          "field": "body_status",
+          "from": "힘이 풀려 주저앉음",
+          "to": "로봇의 팔을 잡고 일어나 손을 흔듦",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "노인은 로봇의 팔을 잡고 일어나 손을 흔들어 보였고,"
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "알라인에게서 이 도시의 자동 감지·로봇 대응 체계에 대한 설명을 이미 들었음",
+          "source_text": "알라인의 설명 그대로의 풍경이었다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "넘어진 것 정도의 사소한 일도 시스템에 '뜬다'는 말을 사전에 전해 들었음",
+          "source_text": "\"...빠르네. 넘어진 것 정도도 다 뜬다더니, 진짜였어.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "이미 다른 공원을 하나 지나왔고, 이 공원이 경로상 두 번째임을 인지하고 있음",
+          "source_text": "두 번째 공원을 지나던 참이었다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "미래 세계에서 스스로 거리를 이동하며 달려갈 수 있는 신체 상태",
+          "source_text": "내가 달려가기도 전에,"
+        },
+        {
+          "entity": "NEW:공원의_백발_노인",
+          "field": "body_status",
+          "assumes": "주저앉기 직전까지 스스로 보행·기립이 가능했던 상태",
+          "source_text": "벤치 옆에서 백발의 노인이 힘이 풀렸는지 주저앉았다."
+        },
+        {
+          "entity": "NEW:공원의_백발_노인",
+          "field": "body_status",
+          "assumes": "의식이 있고 팔을 써서 지지물을 잡고 손을 흔들 수 있는 상태",
+          "source_text": "노인은 로봇의 팔을 잡고 일어나 손을 흔들어 보였고,"
+        },
+        {
+          "entity": "NEW:공원의_백발_노인",
+          "field": "ability",
+          "assumes": "부축 없이 즉시 스스로 일어서지는 못함 (로봇의 팔에 의지해 기립)",
+          "source_text": "노인은 로봇의 팔을 잡고 일어나"
+        },
+        {
+          "entity": "NEW:가로수_옆_로봇_A",
+          "field": "ability",
+          "assumes": "인근 인물의 낙상을 사람보다 빠르게 감지하고 지시 없이 자율 대응 가능",
+          "source_text": "내가 달려가기도 전에, 가로수 옆에 서 있던 로봇 두 대가 먼저 움직였다."
+        },
+        {
+          "entity": "NEW:가로수_옆_로봇_A",
+          "field": "ability",
+          "assumes": "사람을 부축해 체중을 지탱하고 기립을 보조할 수 있음",
+          "source_text": "한 대는 노인을 부축하고,"
+        },
+        {
+          "entity": "NEW:가로수_옆_로봇_A",
+          "field": "body_status",
+          "assumes": "사람이 붙잡고 일어설 수 있는 팔을 갖춘 신체",
+          "source_text": "노인은 로봇의 팔을 잡고 일어나"
+        },
+        {
+          "entity": "NEW:가로수_옆_로봇_B",
+          "field": "ability",
+          "assumes": "인근 인물의 낙상을 사람보다 빠르게 감지하고 지시 없이 자율 대응 가능",
+          "source_text": "내가 달려가기도 전에, 가로수 옆에 서 있던 로봇 두 대가 먼저 움직였다."
+        },
+        {
+          "entity": "NEW:가로수_옆_로봇_B",
+          "field": "ability",
+          "assumes": "대상과 마주 앉아 상태를 확인·점검하는 동작 수행 가능",
+          "source_text": "한 대는 상태를 살피는 듯 마주 앉았다."
+        },
+        {
+          "entity": "NEW:가로수_옆_로봇_B",
+          "field": "ability",
+          "assumes": "대응 종료 여부를 판단하고 원래 대기 위치로 자율 복귀 가능",
+          "source_text": "로봇들은 아무 일 없었다는 듯 제자리로 돌아갔다."
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "넘어짐 수준의 사소한 일까지 감지되어 로봇이 즉시 대응한다는 설명이 실제로 사실임",
+          "via": "direct",
+          "retained": true,
+          "source_text": "\"...빠르네. 넘어진 것 정도도 다 뜬다더니, 진짜였어.\""
+        }
+      ],
+      "cause": "두 번째 공원을 지나던 중 벤치 옆에서 백발의 노인이 힘이 풀려 주저앉았다.",
+      "result": "로봇 두 대가 화자보다 먼저 대응해 노인을 부축·점검했고, 노인이 일어난 뒤 로봇들은 제자리로 돌아갔다. 화자는 사전에 들은 설명이 사실임을 확인했다.",
+      "source_text": "두 번째 공원을 지나던 참이었다. 벤치 옆에서 백발의 노인이 힘이 풀렸는지 주저앉았다. 내가 달려가기도 전에, 가로수 옆에 서 있던 로봇 두 대가 먼저 움직였다. 한 대는 노인을 부축하고, 한 대는 상태를 살피는 듯 마주 앉았다. ... 노인은 로봇의 팔을 잡고 일어나 손을 흔들어 보였고, 로봇들은 아무 일 없었다는 듯 제자리로 돌아갔다. 알라인의 설명 그대로의 풍경이었다.",
+      "certainty": "explicit"
+    }
+  ]
+}

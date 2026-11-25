@@ -1,0 +1,294 @@
+{
+  "schema_version": 2,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 1,
+  "batch_id": "T2-R1-B",
+  "scene_id": "scene_28",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_28.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:37:42Z",
+  "episode": 6,
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:병실_간병_교대_체제",
+      "content": "헤일트라움 병실의 환자는 담당자들이 교대로 상주하며 밤새 간병한다.",
+      "description": "알라인이 저녁에 짐을 챙겨 나가면서 블루멘에게 '교대'를 인계하고, 블루멘이 침상 옆 의자에 자리를 잡는다.",
+      "source_text": "\"교대 시간이에요. 블루멘, 잘 부탁해요.\" / 블루멘이 침상 옆 의자에 자리를 잡았고,",
+      "certainty": "inferred"
+    },
+    {
+      "rule_id": "NEW:진정제_야간_수면_유지",
+      "content": "환자에게 투여한 진정제는 밤새 각성을 막는 수준으로 지속된다.",
+      "description": "알라인이 '아까 약 잘 맞았으니까 밤새 깰 일은 없을 것'이라고 인계한다.",
+      "source_text": "쟤 아까 약 잘 맞았으니까 밤새 깰 일은 없을 거예요.",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_007",
+      "name": "알라인 쉭살 (Allein Schicksal)",
+      "aliases": ["알라인"],
+      "entity_type": "person",
+      "description": "저녁 교대 시간에 짐을 챙겨 병실을 나서며 블루멘에게 야간 간병을 인계하는 인물.",
+      "traits": [
+        {
+          "trait": "어미를 늘여 빼는 부드러운 존댓말 말투 ('없어요~', '들어가요')",
+          "trait_type": "speech",
+          "source_text": "\"알파도 이제 들어가요. 여기 있어 봐야 할 일 없어요~\"",
+          "certainty": "explicit"
+        }
+      ],
+      "source_text": "알라인이 짐을 챙기며 하품을 눌러 삼켰다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_012",
+      "name": "블루멘 랑잠 (Blumen Langsam)",
+      "aliases": ["블루멘"],
+      "entity_type": "person",
+      "description": "저녁 교대를 받아 슐라우의 침상 옆에 자리를 잡고 야간 간병을 맡는 인물.",
+      "traits": [
+        {
+          "trait": "느긋한 반말 어투로 짧게 응답함 ('덕분에~ 빨리 들어가.')",
+          "trait_type": "speech",
+          "source_text": "\"덕분에~ 빨리 들어가. 너도 좀 자고.\"",
+          "certainty": "explicit"
+        }
+      ],
+      "source_text": "블루멘이 침상 옆 의자에 자리를 잡았고,",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["알파", "나"],
+      "entity_type": "person",
+      "description": "병실 유리벽 앞에서 안을 지켜보다 알라인에게 발견되어 귀가를 권유받는다.",
+      "traits": [],
+      "source_text": "알라인은 병실을 나서다 유리벽 앞의 나를 발견했다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_006",
+      "name": "슐라우 프로비에렌",
+      "aliases": ["슐라우", "쟤"],
+      "entity_type": "person",
+      "description": "병실 침상에서 진정제로 잠들어 있는 환자.",
+      "traits": [],
+      "source_text": "진정제에 잠든 슐라우의 숨소리가 고르게 이어지고 있었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_013",
+      "name": "헤일트라움 병실",
+      "description": "슐라우가 누워 있는 병실. 침상 옆 의자가 있고 저녁에는 조용하다.",
+      "source_text": "저녁의 병실은 조용했다.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:병실_유리벽_앞",
+      "name": "병실 유리벽 앞",
+      "description": "병실 안이 들여다보이는 유리벽 바깥 공간. 알파가 서 있던 자리.",
+      "source_text": "알라인은 병실을 나서다 유리벽 앞의 나를 발견했다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "NEW:알라인의_짐",
+      "name": "알라인의 짐",
+      "description": "알라인이 교대 시간에 챙겨 나가는 개인 짐.",
+      "first_appearance_event_id": "EVENT_S28_1",
+      "source_text": "알라인이 짐을 챙기며 하품을 눌러 삼켰다.",
+      "certainty": "explicit"
+    },
+    {
+      "object_id": "NEW:진정제",
+      "name": "진정제 (슐라우에게 투여된 약)",
+      "description": "이 장면 이전('아까')에 슐라우에게 투여된 약. 밤새 깨지 않게 하는 효과로 설명된다.",
+      "first_appearance_event_id": "EVENT_S28_1",
+      "source_text": "진정제에 잠든 슐라우의 숨소리가 고르게 이어지고 있었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [
+    {
+      "time_id": "NEW:병실_교대_저녁",
+      "expression": "저녁 (간병 교대 시간)",
+      "description": "병실이 조용한 저녁, 알라인에서 블루멘으로 간병이 교대되는 시각.",
+      "timeline": "future_world",
+      "source_text": "저녁의 병실은 조용했다. / \"교대 시간이에요.\"",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S28_1",
+      "scene_id": "scene_28",
+      "order": 1,
+      "title": "저녁 병실의 간병 교대",
+      "summary": "저녁의 병실에서 알라인이 짐을 챙기며 블루멘에게 야간 간병을 인계하고, 슐라우가 아까 약을 맞아 밤새 깨지 않을 것이라고 전한다. 블루멘이 침상 옆 의자에 자리를 잡고, 병실을 나서던 알라인은 유리벽 앞의 알파를 발견해 귀가를 권한다.",
+      "location_id": "LOC_013",
+      "time_id": "NEW:병실_교대_저녁",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_007", "CHAR_012", "CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_007",
+      "objects": ["NEW:알라인의_짐", "NEW:진정제"],
+      "state_changes": [
+        {
+          "entity": "CHAR_007",
+          "field": "possesses",
+          "from": "unknown",
+          "to": "NEW:알라인의_짐",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "알라인이 짐을 챙기며 하품을 눌러 삼켰다."
+        },
+        {
+          "entity": "CHAR_012",
+          "field": "location",
+          "from": "unknown",
+          "to": "LOC_013",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "블루멘이 침상 옆 의자에 자리를 잡았고,"
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "alive",
+          "from": "true",
+          "to": "unconscious",
+          "op": "set",
+          "volatility": "transient",
+          "decays_to": "true",
+          "certainty": "inferred",
+          "certainty_reason": "원문은 '진정제에 잠든' 상태만 서술하고 투약은 장면 이전('아까')에 일어났다 — unconscious는 문자 그대로의 표현이 아니다",
+          "volatility_reason": "진정제로 인한 수면은 약효가 끝나면 해소되는 상태",
+          "source_text": "진정제에 잠든 슐라우의 숨소리가 고르게 이어지고 있었다."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "슐라우에게 '아까' 약(진정제)이 투여되었고 그 효과가 밤새 지속된다는 것",
+          "source_text": "쟤 아까 약 잘 맞았으니까 밤새 깰 일은 없을 거예요."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "블루멘이 다음 교대 담당자라는 것 (이름을 부르며 인계함)",
+          "source_text": "\"교대 시간이에요. 블루멘, 잘 부탁해요.\""
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "유리벽 앞에 서 있는 인물이 알파라는 것 (얼굴/정체를 이미 알아봄)",
+          "source_text": "알라인은 병실을 나서다 유리벽 앞의 나를 발견했다. / \"알파도 이제 들어가요.\""
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "body_status",
+          "assumes": "간병 근무를 마친 피로한 상태 (하품을 참음)",
+          "source_text": "알라인이 짐을 챙기며 하품을 눌러 삼켰다."
+        },
+        {
+          "entity": "CHAR_012",
+          "field": "knows",
+          "assumes": "자신이 이번 교대의 야간 간병 담당이라는 것 (별도 설명 없이 곧바로 자리를 잡음)",
+          "source_text": "\"덕분에~ 빨리 들어가. 너도 좀 자고.\" / 블루멘이 침상 옆 의자에 자리를 잡았고,"
+        },
+        {
+          "entity": "CHAR_012",
+          "field": "knows",
+          "assumes": "알라인과 반말을 쓸 만큼 서로 아는 사이라는 것",
+          "source_text": "\"덕분에~ 빨리 들어가. 너도 좀 자고.\""
+        },
+        {
+          "entity": "CHAR_012",
+          "field": "ability",
+          "assumes": "밤새 환자 곁을 지키며 간병할 수 있음",
+          "source_text": "블루멘이 침상 옆 의자에 자리를 잡았고,"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "미래 세계의 신체로 유리벽 앞에 서서 병실 안을 지켜보는 중",
+          "source_text": "알라인은 병실을 나서다 유리벽 앞의 나를 발견했다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "알라인의 말을 알아듣고 음성으로 대답할 수 있음",
+          "source_text": "\"...네. 내일 봬요.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "슐라우가 이 병실에 있고 자신이 지켜볼 대상이라는 것",
+          "source_text": "알라인은 병실을 나서다 유리벽 앞의 나를 발견했다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "다음 날에도 이곳/이들을 다시 만날 수 있다는 것 (재방문 가능성을 전제한 인사)",
+          "source_text": "\"...네. 내일 봬요.\""
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "assumes": "침상에 누워 간병과 투약을 받는 환자 상태 (스스로 깨어나거나 응답하지 못함)",
+          "source_text": "진정제에 잠든 슐라우의 숨소리가 고르게 이어지고 있었다."
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_012",
+          "info": "슐라우가 아까 약을 맞아 밤새 깨지 않을 것이라는 사실",
+          "via": "told",
+          "retained": true,
+          "source_text": "쟤 아까 약 잘 맞았으니까 밤새 깰 일은 없을 거예요."
+        },
+        {
+          "character_id": "CHAR_007",
+          "info": "알파가 병실 유리벽 앞에 있었다는 사실",
+          "via": "direct",
+          "retained": true,
+          "source_text": "알라인은 병실을 나서다 유리벽 앞의 나를 발견했다."
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "알라인이 퇴근하고 블루멘이 야간 간병을 맡는다는 사실",
+          "via": "direct",
+          "retained": true,
+          "source_text": "\"교대 시간이에요. 블루멘, 잘 부탁해요.\" / \"알파도 이제 들어가요. 여기 있어 봐야 할 일 없어요~\""
+        }
+      ],
+      "cause": "저녁 교대 시간이 되어 알라인이 근무를 마치고 블루멘에게 슐라우의 야간 간병을 인계함.",
+      "result": "블루멘이 침상 옆에 자리를 잡아 야간 간병을 맡고, 알라인은 병실을 나서며 알파에게도 귀가를 권한다. 슐라우는 진정제로 잠든 상태를 유지한다.",
+      "source_text": "저녁의 병실은 조용했다. 알라인이 짐을 챙기며 하품을 눌러 삼켰다. \"교대 시간이에요. 블루멘, 잘 부탁해요. 쟤 아까 약 잘 맞았으니까 밤새 깰 일은 없을 거예요.\" ... 진정제에 잠든 슐라우의 숨소리가 고르게 이어지고 있었다.",
+      "certainty": "explicit"
+    }
+  ]
+}

@@ -1,0 +1,440 @@
+{
+ "description": "q1_geumhotang 추출용 엔티티 레지스트리 — 시작 시드 (추출 전, setting_book.md 기반 사전 등재). 추출이 진행되며 NEW: 라벨이 정식 ID로 추가된다. 모든 name/alias/expression 문자열은 sources/ 원문에 실재함을 프로그램으로 확인했다 (verify_registry_q1.py). 시간축은 단일 연속 타임라인이므로 timeline은 전부 \"main\".",
+ "schema_version": 2,
+ "work_id": "q1_geumhotang",
+ "last_episode": 0,
+ "seed_policy_notes": [
+  "금지 슬롯 회피(§9-A): 배만수의 열쇠가 문식에게 넘어간 시점(1967 사망 시 / 1972 문식 입주 후)을 어느 쪽으로도 note에 못 박지 않는다. 열쇠(OBJ_001)·배만수(CHAR_006)·장문식(CHAR_004) note는 이전 시점을 언급하지 않는다.",
+  "금지 슬롯 회피(§9-B): 문식이 정호에게 '용건 아닌 말'을 먼저 꺼낸 최초 시점·횟수를 어떤 note에도 적지 않는다. 말수가 적다는 성질만 기록한다.",
+  "금지 슬롯 회피(§9-C): 12/4 밤 순덕이 뒷문 두드리는 소리를 들었는지 여부를 뒷문(LOC_009)·골방(LOC_003)·배순덕(CHAR_001) note에서 단정하지 않는다.",
+  "금지 슬롯 회피(§9-D): 문식의 밥자리(카운터 상 / 골방)를 고정 사실로 등재하지 않는다. 카운터(LOC_002)·골방(LOC_003) note에 밥상 위치 규칙을 쓰지 않는다.",
+  "alias는 first_episode 원문에 실재하는 표기만 등재한다. 그래서 '최 영감'(띄어쓰기, 화2·3)·'대구 박'(화2)·'김선희'(원문 미등장, 설정 대장만)는 alias로 넣지 않았다.",
+  "'엄마'·'어머니'·'아저씨'·'할매'·'사장님' 같은 호칭 단독 문자열은 지시 대상이 문맥 의존이므로 alias로 등재하지 않는다.",
+  "경계 표현(§9 말미): '육십이 년 동안 4시 기상'·'이십 년 가까이'는 note의 근거로 쓰지 않는다."
+ ],
+ "characters": [
+  {
+   "id": "CHAR_001",
+   "name": "배순덕",
+   "aliases": [
+    "순덕",
+    "배 여사"
+   ],
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "62세. 금호탕 주인. 카운터 뒤 골방 거주, 새벽 4시 기상. 오른쪽 무릎이 안 좋음"
+  },
+  {
+   "id": "CHAR_002",
+   "name": "배정호",
+   "aliases": [
+    "정호",
+    "정호 씨"
+   ],
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "38세. 순덕의 장남. 대구 대성운수 경리 12년, 9월 정리해고. 11/24 밤기차로 귀향, 2층 다락방 거주"
+  },
+  {
+   "id": "CHAR_003",
+   "name": "배정미",
+   "aliases": [
+    "정미"
+   ],
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "29세. 막내딸. '정미 세신·이발' 운영(개업 3년째), 가게 뒷방 거주. 점심에 국을 들고 탕에 옴"
+  },
+  {
+   "id": "CHAR_004",
+   "name": "장문식",
+   "aliases": [
+    "문식",
+    "장씨",
+    "장 아저씨"
+   ],
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "55세. 보일러공 겸 남탕 때밀이. 1972년 겨울부터 지하 쪽방 거주. 고향 상주. 말수가 극히 적음. 보일러는 문식만 만짐"
+  },
+  {
+   "id": "CHAR_005",
+   "name": "최병구",
+   "aliases": [
+    "최영감"
+   ],
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "74세. 역전 상가 3층 거주·건물주. 매일 첫 손님, 요금 600원. 부지 4,000만 원 매입 제안. 화2·3에는 '최 영감'(띄어쓰기) 표기도 있음"
+  },
+  {
+   "id": "CHAR_006",
+   "name": "배만수",
+   "aliases": [
+    "만수"
+   ],
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "순덕의 남편. 1967년 겨울 심장으로 사망. 사진이 골방 이불장 위에 있음"
+  },
+  {
+   "id": "CHAR_007",
+   "name": "선희",
+   "aliases": [
+    "선희 언니"
+   ],
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "정호의 아내. 대구 비산동 셋집에서 아이들과 거주. 원문에 성(姓) 표기 없음"
+  },
+  {
+   "id": "CHAR_008",
+   "name": "박 사장",
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "대구 사채업자. 정호에게 원금 500만 원. 화2에서는 '대구 박'으로도 불림"
+  },
+  {
+   "id": "CHAR_009",
+   "name": "강씨",
+   "aliases": [
+    "쌀집 강씨"
+   ],
+   "entity_type": "person",
+   "first_episode": 1,
+   "note": "역전 상가 쌀집. 남탕 단골, 소문의 출발점"
+  },
+  {
+   "id": "CHAR_010",
+   "name": "복순 할매",
+   "entity_type": "person",
+   "first_episode": 2,
+   "note": "70대 여탕 단골. 목소리가 크고 소문을 퍼뜨림"
+  },
+  {
+   "id": "CHAR_011",
+   "name": "이 주사",
+   "entity_type": "person",
+   "first_episode": 2,
+   "note": "상수도사업소 직원, 30대. 노후 급수관 교체 통보 담당"
+  },
+  {
+   "id": "CHAR_012",
+   "name": "은지",
+   "entity_type": "person",
+   "first_episode": 2,
+   "note": "정호의 딸, 9세"
+  },
+  {
+   "id": "CHAR_013",
+   "name": "민수",
+   "entity_type": "person",
+   "first_episode": 5,
+   "note": "정호의 아들, 6세"
+  },
+  {
+   "id": "CHAR_014",
+   "name": "설비집 사장",
+   "entity_type": "person",
+   "first_episode": 4,
+   "note": "읍내 설비업자, 50대. 인입관·순환관 견적"
+  },
+  {
+   "id": "CHAR_015",
+   "name": "미스 김",
+   "entity_type": "person",
+   "first_episode": 4,
+   "note": "역전다방 종업원. 정미네 가게 손님"
+  },
+  {
+   "id": "CHAR_016",
+   "name": "금은방 주인",
+   "entity_type": "person",
+   "first_episode": 5,
+   "note": "읍사무소 앞 금은방"
+  }
+ ],
+ "locations": [
+  {
+   "id": "LOC_001",
+   "name": "금호탕",
+   "first_episode": 1,
+   "note": "금호읍 역전 골목의 목욕탕. 1962년 개업. 새벽 5시 개장·저녁 8시 폐장, 첫째·셋째 월요일 휴무(초기값)"
+  },
+  {
+   "id": "LOC_002",
+   "name": "카운터",
+   "first_episode": 1,
+   "note": "1층 정문 안. 나무 서랍 요금통·장부 서랍·전화기"
+  },
+  {
+   "id": "LOC_003",
+   "name": "골방",
+   "first_episode": 1,
+   "note": "카운터 바로 뒤 순덕의 방. 이불장 위에 남편 사진. 카운터와 두 걸음 거리"
+  },
+  {
+   "id": "LOC_004",
+   "name": "다락방",
+   "first_episode": 1,
+   "note": "2층. 천장이 낮고 창이 굴뚝 쪽으로 남. 정호가 묵는 방, 예전 아버지가 장부 보던 방"
+  },
+  {
+   "id": "LOC_005",
+   "name": "남탕",
+   "first_episode": 1,
+   "note": "1층. 최영감·강씨가 쓰는 쪽"
+  },
+  {
+   "id": "LOC_006",
+   "name": "여탕",
+   "first_episode": 1,
+   "note": "1층. 복순 할매가 쓰는 쪽. 정호가 슬리퍼 정리"
+  },
+  {
+   "id": "LOC_007",
+   "name": "보일러실",
+   "first_episode": 1,
+   "note": "지하. 문식만 들어감. 연탄은 문 앞까지"
+  },
+  {
+   "id": "LOC_008",
+   "name": "쪽방",
+   "first_episode": 1,
+   "note": "지하 보일러실 옆 문식의 방. 야전침대·라디오·공구함"
+  },
+  {
+   "id": "LOC_009",
+   "name": "뒷문",
+   "first_episode": 1,
+   "note": "골목 쪽 쇠문. 밤에는 안에서 빗장을 검. 옆에 연탄 더미와 밸브"
+  },
+  {
+   "id": "LOC_010",
+   "name": "정문",
+   "first_episode": 1,
+   "note": "셔터가 있는 1층 출입문. 열쇠로 여닫음. 화4부터 유리 안쪽에 개장 시각 종이"
+  },
+  {
+   "id": "LOC_011",
+   "name": "물건방",
+   "first_episode": 2,
+   "note": "2층. 수건·비누 상자·아버지 때 장부 뭉치 보관"
+  },
+  {
+   "id": "LOC_012",
+   "name": "역전 상가",
+   "first_episode": 1,
+   "note": "광장 오른쪽 3층 건물. 최영감 소유·3층 거주. 쌀집·약국·2층 다방"
+  },
+  {
+   "id": "LOC_013",
+   "name": "정미 세신·이발",
+   "first_episode": 1,
+   "note": "탕 옆 골목 정미의 가게. 의자 둘, 안쪽 뒷방. '정미네 가게'로도 지칭"
+  },
+  {
+   "id": "LOC_014",
+   "name": "광장",
+   "first_episode": 1,
+   "note": "역 앞 광장. 가로등 둘, 공중전화"
+  },
+  {
+   "id": "LOC_015",
+   "name": "금호역",
+   "first_episode": 1,
+   "note": "밤기차 23:40 도착"
+  },
+  {
+   "id": "LOC_016",
+   "name": "역전다방",
+   "first_episode": 4,
+   "note": "역전 상가 2층. 창이 광장을 향함"
+  },
+  {
+   "id": "LOC_017",
+   "name": "상수도사업소",
+   "first_episode": 2,
+   "note": "읍사무소 옆 단층 건물"
+  },
+  {
+   "id": "LOC_018",
+   "name": "금은방",
+   "first_episode": 5,
+   "note": "읍사무소 앞"
+  }
+ ],
+ "objects": [
+  {
+   "id": "OBJ_001",
+   "name": "열쇠",
+   "first_episode": 1,
+   "note": "고리 하나에 정문 것·뒷문 것 두 개가 달림. 화1 기준 고리 두 벌(순덕·문식)"
+  },
+  {
+   "id": "OBJ_002",
+   "name": "장부",
+   "first_episode": 1,
+   "note": "순덕이 매일 저녁 어른/아이 수를 적음. 카운터 요금통 옆 서랍 보관. 물건방에 아버지 때 장부 뭉치"
+  },
+  {
+   "id": "OBJ_003",
+   "name": "연탄",
+   "first_episode": 1,
+   "note": "뒷문 옆에 쌓임. 문식이 자정 무렵 갈음"
+  },
+  {
+   "id": "OBJ_004",
+   "name": "보일러",
+   "first_episode": 1,
+   "note": "지하. 문식만 만짐. 새벽 3시 반 점화(평시)"
+  },
+  {
+   "id": "OBJ_005",
+   "name": "셔터",
+   "first_episode": 1,
+   "note": "정문 셔터. 4시 50분 올리고 8시 내림"
+  },
+  {
+   "id": "OBJ_006",
+   "name": "요금통",
+   "first_episode": 1,
+   "note": "카운터 나무 서랍. 어른 600원·아이 300원"
+  },
+  {
+   "id": "OBJ_007",
+   "name": "통장",
+   "first_episode": 1,
+   "note": "정호의 통장(잔고 거의 없음)·순덕의 통장"
+  },
+  {
+   "id": "OBJ_008",
+   "name": "파스",
+   "first_episode": 1,
+   "note": "순덕이 매일 아침 오른쪽 무릎에 붙임"
+  },
+  {
+   "id": "OBJ_009",
+   "name": "빗장",
+   "first_episode": 1,
+   "note": "뒷문 안쪽 빗장. 문식이 연탄 갈 때 여닫음"
+  },
+  {
+   "id": "OBJ_010",
+   "name": "금반지",
+   "first_episode": 2,
+   "note": "남편이 남긴 반지. 골방 이불장 밑 반짇고리 바닥에 20년 보관"
+  },
+  {
+   "id": "OBJ_011",
+   "name": "깡통",
+   "first_episode": 3,
+   "note": "보일러실 녹슨 관 밑에 받쳐 둔 깡통"
+  },
+  {
+   "id": "OBJ_012",
+   "name": "순환관",
+   "first_episode": 4,
+   "note": "보일러 배관 중 녹슨 관. 설비집 견적 50만"
+  },
+  {
+   "id": "OBJ_013",
+   "name": "종이",
+   "first_episode": 4,
+   "note": "정호가 도화지에 매직으로 쓴 개장 시각 안내. 정문 유리 안쪽에 붙임, 안에서는 뒤집혀 보임"
+  }
+ ],
+ "times": [
+  {
+   "id": "TIME_001",
+   "expression": "1962년",
+   "timeline": "main",
+   "first_episode": 2,
+   "note": "금호탕 개업 연도"
+  },
+  {
+   "id": "TIME_002",
+   "expression": "1967년 겨울",
+   "timeline": "main",
+   "first_episode": 1,
+   "note": "배만수 사망"
+  },
+  {
+   "id": "TIME_003",
+   "expression": "1972년 겨울",
+   "timeline": "main",
+   "first_episode": 1,
+   "note": "문식이 금호탕에 옴"
+  },
+  {
+   "id": "TIME_004",
+   "expression": "십오일",
+   "timeline": "main",
+   "first_episode": 2,
+   "note": "박 사장이 말한 다음 달 이자 기일"
+  },
+  {
+   "id": "TIME_005",
+   "expression": "십일월 삼십일",
+   "timeline": "main",
+   "first_episode": 2,
+   "note": "월요일, 영업일"
+  },
+  {
+   "id": "TIME_006",
+   "expression": "십이월 첫날",
+   "timeline": "main",
+   "first_episode": 2,
+   "note": "화요일. 상수도사업소 통보"
+  },
+  {
+   "id": "TIME_007",
+   "expression": "1988년 1월 31일",
+   "timeline": "main",
+   "first_episode": 2,
+   "note": "급수관 교체 통보서의 기한"
+  },
+  {
+   "id": "TIME_008",
+   "expression": "십이월 칠일",
+   "timeline": "main",
+   "first_episode": 3,
+   "note": "첫째 월요일, 휴무"
+  },
+  {
+   "id": "TIME_009",
+   "expression": "십이월 십일일",
+   "timeline": "main",
+   "first_episode": 4,
+   "note": "장부 기록 '십이월 십일일부터 여섯 시'"
+  },
+  {
+   "id": "TIME_010",
+   "expression": "십이월 십사일",
+   "timeline": "main",
+   "first_episode": 4,
+   "note": "둘째 월요일, 영업일"
+  },
+  {
+   "id": "TIME_011",
+   "expression": "십이월 이십일",
+   "timeline": "main",
+   "first_episode": 5,
+   "note": "장부 뒷장 기록 날짜(박 사장 방문일)"
+  },
+  {
+   "id": "TIME_012",
+   "expression": "십이월 이십일일",
+   "timeline": "main",
+   "first_episode": 5,
+   "note": "셋째 월요일, 휴무"
+  },
+  {
+   "id": "TIME_013",
+   "expression": "십이월 이십팔일",
+   "timeline": "main",
+   "first_episode": 5,
+   "note": "정미 계 수령일"
+  }
+ ]
+}

@@ -1,0 +1,154 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "헬렌 스토너의 고백",
+   "summary": "헬렌 스토너가 홈즈에게 언니 줄리아를 그렇게 만든 원인을 처음부터 알고 있었다고 말하지만, 아무에게도 말하지 못했다고 고백한다.",
+   "location_id": "LOC_001",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "줄리아를 그렇게 만든 원인",
+     "source_text": "저는 무엇이 언니를 그렇게 만들었는지 처음부터 알고 있었습니다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "not_knows: 검시관에게 그 원인을 말함",
+     "source_text": "다만 아무에게도 말할 수 없었을 뿐이지요."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "body_status",
+     "assumes": "장갑을 낀 상태 (양손)",
+     "source_text": "그녀는 장갑 낀 손을 무릎 위에 포갰다."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "장갑 (양손에 착용)",
+     "source_text": "그녀는 장갑 낀 손을 무릎 위에 포갰다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "not_knows: 줄리아를 그렇게 만든 원인 (헬렌의 고백을 듣는 중)",
+     "source_text": "그렇다면 검시관 앞에서는 왜 그렇게 말씀하지 않으셨습니까."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "앉은 자세로 등을 기댈 수 있음",
+     "source_text": "홈즈는 의자에 등을 기댄 채 그녀를 바라보았다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "헬렌 스토너가 줄리아를 그렇게 만든 원인을 처음부터 알고 있었다는 점",
+     "via": "told",
+     "retained": true,
+     "source_text": "저는 무엇이 언니를 그렇게 만들었는지 처음부터 알고 있었습니다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "헬렌 스토너가 그 원인을 검시관에게 말하지 않았다는 점",
+     "via": "told",
+     "retained": true,
+     "source_text": "다만 아무에게도 말할 수 없었을 뿐이지요."
+    }
+   ],
+   "cause": "홈즈가 검시관 앞에서 왜 그렇게 말하지 않았는지 물은 것",
+   "result": "헬렌은 원인을 알고 있었지만 말할 수 없었다고 고백함",
+   "source_text": "\"저는 무엇이 언니를 그렇게 만들었는지 처음부터 알고 있었습니다.\" 헬렌 스토너가 말했다. 그녀는 장갑 낀 손을 무릎 위에 포갰다. \"다만 아무에게도 말할 수 없었을 뿐이지요.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "홈즈의 질문과 헬렌의 침묵",
+   "summary": "홈즈가 검시관 앞에서 왜 진술하지 않았는지 묻고, 헬렌은 대답 대신 창밖을 본다. 창밖으로 마차 한 대가 지나간다.",
+   "location_id": "LOC_001",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "LOC_001",
+     "field": "condition",
+     "from": "unknown",
+     "to": "벽난로에 불이 낮게 타고 있음",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "벽난로의 불이 낮게 타고 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "body_status",
+     "assumes": "고개를 돌려 창밖을 볼 수 있는 자세",
+     "source_text": "그녀는 대답 대신 창밖으로 눈을 돌렸다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "EVENT_6_1의 대화 직후 이어지는 상황이며, 두 사건 사이에 시간 경과가 크지 않다",
+     "source_text": "그렇다면 검시관 앞에서는 왜 그렇게 말씀하지 않으셨습니까. 그가 물었다."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "홈즈의 질문",
+   "result": "헬렌은 대답을 회피하고 창밖으로 주의를 돌림",
+   "source_text": "\"그렇다면 검시관 앞에서는 왜 그렇게 말씀하지 않으셨습니까.\" 그가 물었다. 그녀는 대답 대신 창밖으로 눈을 돌렸다. 밖에서는 마차 한 대가 지나가고 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-31T06:31:21Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 37.86
+ }
+}

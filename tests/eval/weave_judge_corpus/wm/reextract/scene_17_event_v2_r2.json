@@ -1,0 +1,250 @@
+{
+  "schema_version": 2,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 2,
+  "batch_id": "T2-R2-B",
+  "scene_id": "scene_17",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_17.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r3)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:44:25Z",
+  "episode": 6,
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:프리든_지하_통합_관제실",
+      "content": "프리든 지하에 통합 관제실이 있고, 도시 전역의 CCTV 영상이 실시간으로 그곳에 모인다.",
+      "description": "1번가·3번가·공원·헤일트라움 뒷길 등 도시 각 구역의 카메라 영상이 프리든 지하 통합 관제실의 벽면 모니터로 일단 집결해 실시간으로 흐른다.",
+      "source_text": "여기가 통합 관제실이에요.\n모든 카메라 영상은 일단 여기로 모이죠.",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "알라인을 따라 프리든 지하로 내려가 통합 관제실에서 CCTV 화면을 보게 되는 시점 인물.",
+      "traits": [],
+      "source_text": "알라인을 따라 프리든의 계단을 내려갔다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_007",
+      "name": "알라인 쉭살 (Allein Schicksal)",
+      "aliases": ["알라인"],
+      "entity_type": "person",
+      "description": "프리든 지하 통합 관제실로 화자를 안내하고 시설을 설명하는 인물.",
+      "traits": [],
+      "source_text": "알라인을 따라 프리든의 계단을 내려갔다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "NEW:프리든_지하_통합_관제실",
+      "name": "통합 관제실 (프리든 지하)",
+      "description": "프리든의 계단을 내려간 지하에 있는 공간. 한쪽 벽면을 가득 채운 모니터로 도시 전역 CCTV 영상이 실시간으로 흐른다.",
+      "source_text": "여기가 통합 관제실이에요.\n모든 카메라 영상은 일단 여기로 모이죠.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:헤일트라움_뒷길",
+      "name": "헤일트라움 뒷길",
+      "description": "관제실 모니터에 실시간 CCTV 영상이 표시되는 구역 중 하나.",
+      "source_text": "1번가, 3번가, 공원, 헤일트라움 뒷길.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "NEW:관제실_모니터_벽",
+      "name": "관제실 모니터 벽",
+      "description": "통합 관제실 한쪽 벽면을 가득 채운 모니터 군. 도시 전역 CCTV 실시간 영상을 출력한다.",
+      "first_appearance_event_id": "EVENT_S17_2",
+      "source_text": "문이 열리자 한쪽 벽면을 가득 채운 모니터들이 보였다.",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [
+    {
+      "time_id": "NEW:관제실_방문_당일",
+      "expression": "오늘 (관제실에서 CCTV를 보기로 한 날)",
+      "description": "알라인이 '오늘은 여기서 편하게 봅시다'라고 말한 시점. 구체적 날짜·시각은 원문에 없다.",
+      "timeline": "future_world",
+      "source_text": "오늘은 여기서 편하게 봅시다.",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S17_1",
+      "scene_id": "scene_17",
+      "order": 1,
+      "title": "알라인을 따라 프리든 지하로 내려감",
+      "summary": "화자는 알라인을 따라 프리든의 계단을 내려가 지하로 이동한다. 화자는 프리든 지하에 그런 공간이 있다는 것을 몰랐다.",
+      "location_id": "LOC_005",
+      "time_id": "NEW:관제실_방문_당일",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002", "CHAR_007"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_007",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "location",
+          "from": "LOC_005",
+          "to": "NEW:프리든_지하_통합_관제실",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "inferred",
+          "certainty_reason": "원문은 '프리든의 계단을 내려갔다'까지만 명시하고, 도착지 이름은 뒤 발화에서 밝혀진다",
+          "source_text": "알라인을 따라 프리든의 계단을 내려갔다."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "location",
+          "from": "LOC_005",
+          "to": "NEW:프리든_지하_통합_관제실",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "inferred",
+          "certainty_reason": "알라인이 앞장서 내려갔다는 서술에서 도착지를 정황으로 메움",
+          "source_text": "알라인을 따라 프리든의 계단을 내려갔다."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "프리든 지하에 통합 관제실이 있다는 것과 그곳으로 가는 경로",
+          "source_text": "알라인을 따라 프리든의 계단을 내려갔다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "not_knows: 프리든 지하에 그런 공간(통합 관제실)이 존재함",
+          "source_text": "지하에 이런 공간이 있는 줄은 몰랐다."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "ability",
+          "assumes": "프리든 지하 관제실의 문을 열 수 있는 출입 권한·수단을 가짐",
+          "source_text": "문이 열리자 한쪽 벽면을 가득 채운 모니터들이 보였다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "미래 세계의 로봇 신체(알파)로 프리든 내부를 스스로 이동하는 중",
+          "source_text": "알라인을 따라 프리든의 계단을 내려갔다."
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S17_2",
+          "assumes": "계단을 내려가 도착한 지하 공간이 곧 EVENT_S17_2의 통합 관제실이며, 두 사건 사이에 다른 이동이나 시간 경과가 없다",
+          "source_text": "알라인을 따라 프리든의 계단을 내려갔다. / 문이 열리자 한쪽 벽면을 가득 채운 모니터들이 보였다."
+        }
+      ],
+      "knowledge_gained": [],
+      "cause": "알라인이 화자를 프리든 지하로 안내했다.",
+      "result": "두 사람이 프리든 지하 공간에 도착했다.",
+      "source_text": "알라인을 따라 프리든의 계단을 내려갔다.\n지하에 이런 공간이 있는 줄은 몰랐다.",
+      "certainty": "explicit"
+    },
+    {
+      "event_id": "EVENT_S17_2",
+      "scene_id": "scene_17",
+      "order": 2,
+      "title": "통합 관제실에서 도시 전역 CCTV를 열람",
+      "summary": "문이 열리자 벽면을 가득 채운 모니터에 1번가·3번가·공원·헤일트라움 뒷길 등 도시 전역 CCTV 영상이 실시간으로 흐르고 있었다. 알라인은 이곳이 통합 관제실이며 모든 카메라 영상이 여기로 모인다고 설명하고 오늘은 여기서 보자고 제안하며, 화자는 의자에 앉아 화면 속 도시를 한눈에 본다.",
+      "location_id": "NEW:프리든_지하_통합_관제실",
+      "time_id": "NEW:관제실_방문_당일",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002", "CHAR_007"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_007",
+      "objects": ["NEW:관제실_모니터_벽"],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "from": "unknown",
+          "to": "프리든 지하 통합 관제실의 존재와 그곳에 모든 카메라 영상이 모인다는 사실",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "여기가 통합 관제실이에요.\n모든 카메라 영상은 일단 여기로 모이죠."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "이전에도 CCTV 영상을 확인해 왔으며, 그 열람이 이곳이 아닌 다른 곳에서 이루어졌음",
+          "source_text": "오~ 진작 여기서 볼 걸 그랬네요."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "1번가·3번가·공원·헤일트라움 뒷길 등 화면에 비친 도시 구역을 구분해 식별할 수 있음",
+          "source_text": "1번가, 3번가, 공원, 헤일트라움 뒷길."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "모든 카메라 영상이 통합 관제실로 모인다는 시설의 구조·운용을 이미 알고 있음",
+          "source_text": "모든 카메라 영상은 일단 여기로 모이죠."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "ability",
+          "assumes": "통합 관제실에서 CCTV 영상을 열람·이용할 수 있는 권한을 가짐",
+          "source_text": "오늘은 여기서 편하게 봅시다."
+        }
+      ],
+      "cross_event_assumptions": [
+        {
+          "with_event_id": "EVENT_S17_1",
+          "assumes": "EVENT_S17_1에서 계단을 내려간 직후의 시점이며, 문 너머 공간이 프리든 지하에 있다",
+          "source_text": "지하에 이런 공간이 있는 줄은 몰랐다. / 문이 열리자 한쪽 벽면을 가득 채운 모니터들이 보였다."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "프리든 지하에 통합 관제실이 있고 벽면 모니터로 도시 전역 CCTV가 실시간으로 흐른다",
+          "via": "direct",
+          "retained": true,
+          "source_text": "문이 열리자 한쪽 벽면을 가득 채운 모니터들이 보였다.\n도시 전역의 CCTV 영상이 실시간으로 모여 흐르고 있었다."
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "모든 카메라 영상이 일단 통합 관제실로 모인다",
+          "via": "told",
+          "retained": true,
+          "source_text": "모든 카메라 영상은 일단 여기로 모이죠."
+        }
+      ],
+      "cause": "알라인이 화자를 통합 관제실로 데려와 오늘은 여기서 영상을 보자고 제안했다.",
+      "result": "화자가 의자에 앉아 도시 전역 CCTV 영상을 한눈에 볼 수 있게 되었다.",
+      "source_text": "문이 열리자 한쪽 벽면을 가득 채운 모니터들이 보였다.\n1번가, 3번가, 공원, 헤일트라움 뒷길.\n도시 전역의 CCTV 영상이 실시간으로 모여 흐르고 있었다.\n\n\"여기가 통합 관제실이에요.\n모든 카메라 영상은 일단 여기로 모이죠.\n오늘은 여기서 편하게 봅시다.\"\n\n\"오~ 진작 여기서 볼 걸 그랬네요.\"\n\n의자에 앉으니 화면 속 도시가 한눈에 들어왔다.",
+      "certainty": "explicit"
+    }
+  ]
+}

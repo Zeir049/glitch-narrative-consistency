@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S18_1",
+      "order": 1,
+      "title": "슐라우의 왼손 물컵 연습",
+      "summary": "회진을 따라간 알파가, 붕대 감은 오른팔을 무릎에 둔 슐라우가 왼손으로 서툴게 물컵을 쥐는 모습을 본다. 블루멘은 회복 방향에 만족한다.",
+      "location_id": "LOC_013",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_012",
+        "CHAR_006"
+      ],
+      "witness_character_ids": [
+        "CHAR_002"
+      ],
+      "main_actor_character_id": "CHAR_006",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "assumes": "오른팔 부상(붕대) 상태, 왼손만 사용 가능",
+          "source_text": "붕대에 감긴 오른팔은 무릎 위에 얌전히 놓여 있었다."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우가 왼손 사용에 적응 중이며 회복이 진행되고 있음",
+          "via": "direct",
+          "source_text": "왼손으로, 서툴게."
+        }
+      ],
+      "cause": "블루멘의 회진",
+      "result": "회복 경과 확인",
+      "source_text": "슐라우는 침상에 앉아 물컵을 받아 들고 있었다. 왼손으로, 서툴게.",
+      "certainty": "explicit"
+    }
+  ]
+}

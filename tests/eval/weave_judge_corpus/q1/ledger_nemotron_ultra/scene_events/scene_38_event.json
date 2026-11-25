@@ -1,0 +1,177 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "순덕, 보일러실 점검",
+   "summary": "물이 식는 소리에 순덕이 보일러실로 내려가 문식이 감은 관의 철사 매듭과 깡통의 물 높이를 확인한다.",
+   "location_id": "LOC_007",
+   "time_id": "NEW:물이_식는_소리_난_시점",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_011",
+    "OBJ_012"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_002",
+     "to": "LOC_007",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "순덕은 카운터에서 일어나 지하로 내려갔다. 계단을 다 내려가 보일러실 문을 열고 안으로 들어섰다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "from": "기름 없음",
+     "to": "손에 기름 묻음",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "기름 없음",
+     "certainty": "explicit",
+     "source_text": "순덕은 손을 뻗어 철사 매듭을 짚어 봤다. 기름이 손에 묻었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "from": "손에 기름 묻음",
+     "to": "기름 닦음",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "기름 없음",
+     "certainty": "explicit",
+     "source_text": "순덕은 손에 묻은 기름을 앞치마에 닦았다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_011 (깡통)",
+     "source_text": "깡통에는 물이 반쯤 차 있었다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "body_status",
+     "assumes": "관 앞에 쭈그리고 앉을 수 있는 신체 상태",
+     "source_text": "문식이 관 앞에 쭈그리고 앉아 있다가 고개를 들었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "보일러 상태를 점검할 지식/능력",
+     "source_text": "순덕은 손을 뻗어 철사 매듭을 짚어 봤다. 기름이 손에 묻었다. 깡통에는 물이 반쯤 차 있었다. 순덕은 그것까지 보고 나서야 계단을 올라갔다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "보일러 관의 철사 매듭 상태와 깡통 물 높이가 반쯤 참",
+     "via": "direct",
+     "retained": true,
+     "source_text": "순덕은 손을 뻗어 철사 매듭을 짚어 봤다. 기름이 손에 묻었다. 깡통에는 물이 반쯤 차 있었다."
+    }
+   ],
+   "cause": "물이 식는 소리가 남",
+   "result": "순덕이 보일러 상태를 확인하고 카운터로 돌아옴",
+   "source_text": "물이 식는다는 소리가 나자 순덕은 카운터에서 일어나 지하로 내려갔다. 계단을 다 내려가 보일러실 문을 열고 안으로 들어섰다. 문식이 관 앞에 쭈그리고 앉아 있다가 고개를 들었다. 순덕은 그 옆에 서서 헝겊으로 감은 자리를 들여다봤다. \"여기가.\" \"예.\" 순덕은 손을 뻗어 철사 매듭을 짚어 봤다. 기름이 손에 묻었다. 깡통에는 물이 반쯤 차 있었다. 순덕은 그것까지 보고 나서야 계단을 올라갔다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "정호, 순덕의 보일러실 출입 목격",
+   "summary": "계단 위에서 정호가 순덕이 보일러실 문턱을 넘는 것을 처음 목격한다.",
+   "location_id": "LOC_007",
+   "time_id": "NEW:물이_식는_소리_난_시점",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_007",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 계단 위에서 그것을 보고 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "not_knows: 어머니가 보일러실 문턱을 넘는 모습",
+     "source_text": "어머니가 저 문턱을 넘는 것을 본 적이 없었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "계단 위에서 보일러실 내부를 볼 수 있는 시야",
+     "source_text": "정호는 계단 위에서 그것을 보고 있었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "정호가 계단 위에 있는 동안 순덕이 보일러실에서 나와 계단을 올라오고 있다",
+     "source_text": "정호는 계단 위에서 그것을 보고 있었다. 어머니가 저 문턱을 넘는 것을 본 적이 없었다. 순덕은 손에 묻은 기름을 앞치마에 닦았다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "어머니(순덕)가 보일러실 문턱을 넘나들며 직접 보일러를 점검함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "정호는 계단 위에서 그것을 보고 있었다. 어머니가 저 문턱을 넘는 것을 본 적이 없었다."
+    }
+   ],
+   "cause": "순덕이 보일러실 점검을 위해 이동함",
+   "result": "정호가 어머니의 새로운 면모를 목격함",
+   "source_text": "정호는 계단 위에서 그것을 보고 있었다. 어머니가 저 문턱을 넘는 것을 본 적이 없었다. 순덕은 손에 묻은 기름을 앞치마에 닦았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:46:00Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 59.52
+ }
+}

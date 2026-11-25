@@ -1,0 +1,97 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "다음 심리 점검 일정 확정",
+   "summary": "마르타가 의무실에서 달력을 확인하며 서율에게 다음 심리 점검을 5월 26일로 정한다고 알리고, 서율이 일정표에 기록하겠다고 답한다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_013",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_004",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [
+    "OBJ_013"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "다음 심리 점검은 5월 26일에 진행됨",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "다음 점검은 5월 26일에 진행할 거야. / 알겠어요. 일정표에 그렇게 적어 둘게요."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "assumes": "OBJ_013 (안전 기록부)",
+     "source_text": "안전 기록부를 정리하던 마르타가"
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "지난 심리 점검이 4월 26일이었음",
+     "source_text": "지난번 심리 점검이 4월 26일이었지"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "지난 심리 점검에서 커튼 안쪽에서 열두 개 질문을 다 답했음",
+     "source_text": "그때도 커튼 안쪽에서 열두 개 질문을 다 답했어요"
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "이번 겨울에도 심리 점검은 한 달 간격으로 하기로 정해져 있음",
+     "source_text": "이번 겨울에도 심리 점검은 한 달 간격으로 하기로 정해 두었으니까"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "다음 심리 점검은 5월 26일에 진행됨",
+     "via": "told",
+     "retained": true,
+     "source_text": "다음 점검은 5월 26일에 진행할 거야."
+    }
+   ],
+   "cause": "마르타가 달력을 확인하며 심리 점검 주기(한 달 간격)에 따라 다음 일정을 산출함",
+   "result": "서율이 다음 심리 점검 일정(5월 26일)을 인지하고 일정표에 기록하기로 함",
+   "source_text": "5월 13일 낮, 의무실 안쪽 병상 칸에서 마르타가 약품 냉장고 옆 달력을 확인하고 있었다. 안전 기록부를 정리하던 마르타가 의무실에 들른 서율을 돌아보며 말했다. \"서율, 지난번 심리 점검이 4월 26일이었지.\" \"네, 선생님. 그때도 커튼 안쪽에서 열두 개 질문을 다 답했어요.\" \"이번 겨울에도 심리 점검은 한 달 간격으로 하기로 정해 두었으니까, 다음 점검은 5월 26일에 진행할 거야.\" \"알겠어요. 일정표에 그렇게 적어 둘게요.\"",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T10:00:37Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 87.23
+ }
+}

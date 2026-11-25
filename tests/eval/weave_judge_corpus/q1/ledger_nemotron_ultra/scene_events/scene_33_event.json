@@ -1,0 +1,133 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "NEW:봉투",
+   "name": "봉투",
+   "description": "정호가 대구 박 사장 사무실로 보낼 봉투. 주소가 적혀 있고 장부 서랍에 보관 중.",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "정호는 카운터에서 봉투에 주소를 썼다. 대구 박 사장 사무실이었다. ... 봉투를 반듯하게 접어 장부 서랍에 넣었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "NEW:다음_달_십오일까지",
+   "expression": "다음 달 십오일까지",
+   "description": "봉투를 부쳐야 하는 마감 기한",
+   "timeline": "main",
+   "source_text": "다음 달 십오일까지 부치면 됐다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "정호가 박 사장에게 보낼 봉투를 작성해 장부 서랍에 넣다",
+   "summary": "정호가 카운터에서 대구 박 사장 사무실 주소를 봉투에 적고, 반듯하게 접어 장부 서랍(요금통 옆 서랍)에 보관한다. 순덕은 골방에서 다리를 펴고 누워 있다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:다음_달_십오일까지",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_002",
+    "NEW:봉투"
+   ],
+   "state_changes": [
+    {
+     "entity": "NEW:봉투",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "CHAR_002",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 카운터에서 봉투에 주소를 썼다. ... 봉투를 반듯하게 접어 장부 서랍에 넣었다."
+    },
+    {
+     "entity": "NEW:봉투",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "봉투를 반듯하게 접어 장부 서랍에 넣었다. 요금통이 아니라 그 옆 서랍이었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_002 (장부)",
+     "source_text": "장부 서랍에 넣었다. 요금통이 아니라 그 옆 서랍이었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "대구 박 사장 사무실 주소",
+     "source_text": "대구 박 사장 사무실이었다. 십이 년 경리 글씨였다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "주소 쓰기/경리 업무 능력",
+     "source_text": "십이 년 경리 글씨였다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "골방에서 다리를 펴고 누운 상태",
+     "source_text": "순덕은 골방에서 다리를 펴고 누워 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "다음 달 십오일까지 봉투를 부치면 된다",
+     "via": "told",
+     "retained": true,
+     "source_text": "다음 달 십오일까지 부치면 됐다. 내려오는 건 서로 번거로우니까 부치라고 그 사람이 말했고 정호는 예라고 했다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "봉투에 넣을 것은 다음 달에 이 카운터에서 나와야 한다",
+     "via": "inference",
+     "retained": true,
+     "source_text": "넣을 것은 다음 달에 이 카운터에서 나와야 했다."
+    }
+   ],
+   "cause": "박 사장 사무실로 보낼 서류 준비를 위해 봉투에 주소를 적고 보관함",
+   "result": "봉투가 장부 서랍에 보관됨. 다음 달 십오일까지 발송 예정",
+   "source_text": "정호는 카운터에서 봉투에 주소를 썼다. 대구 박 사장 사무실이었다. 십이 년 경리 글씨였다. 다음 달 십오일까지 부치면 됐다. 내려오는 건 서로 번거로우니까 부치라고 그 사람이 말했고 정호는 예라고 했다. 봉투를 반듯하게 접어 장부 서랍에 넣었다. 요금통이 아니라 그 옆 서랍이었다. 순덕은 골방에서 다리를 펴고 누워 있었다. 문은 열려 있었고 정호는 닫지 않았다. 봉투에는 아직 아무것도 넣지 않았다. 넣을 것은 다음 달에 이 카운터에서 나와야 했다. 정호는 서랍을 닫고 손을 얹었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-27T04:55:29Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 21.58
+ }
+}

@@ -1,0 +1,142 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [
+  {
+   "rule_id": "NEW:규정_4조_안전기록_승인_규정",
+   "content": "규정 4조에 따라 부기지장의 안전 기록은 기지장의 승인란이 채워지지 않으면 본부로 전송되지 않는다.",
+   "description": "안전 기록 전송 시 기지장 승인이 필수이며, 승인 없이 나가는 것은 의료 보고뿐이다.",
+   "source_text": "\"4조야. 부기지장 안전 기록은 기지장 승인란이 채워지지 않으면 본부로 못 나가.\" / \"승인 없이 나가는 건 의료 보고뿐이야. 안전 기록은 아니고.\"",
+   "certainty": "explicit"
+  }
+ ],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "NEW:안전_기록_5월분",
+   "name": "안전 기록 5월분",
+   "description": "마르타가 작성한 5월분 손으로 쓴 안전 기록",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "종이 두 장을 내밀었다. 손으로 쓴 안전 기록 5월분",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "NEW:전송_요청서",
+   "name": "전송 요청서",
+   "description": "안전 기록과 함께 제출된 본부 전송 요청서",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "그 아래의 전송 요청서였다",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "NEW:5월_안전기록_기간",
+   "expression": "5월분",
+   "description": "안전 기록 5월분 해당 기간",
+   "timeline": "main",
+   "source_text": "손으로 쓴 안전 기록 5월분",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "마르타의 5월분 안전 기록 승인 요청",
+   "summary": "마르타가 5월분 안전 기록과 전송 요청서를 서율에게 내밀며 기지장 승인을 요청한다. 규정 4조에 따라 부기지장 안전 기록은 기지장 승인란이 채워지지 않으면 본부로 전송되지 않으며, 승인 없이 나가는 것은 의료 보고뿐임을 설명한다.",
+   "location_id": "unknown",
+   "time_id": "NEW:5월_안전기록_기간",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [
+    "NEW:안전_기록_5월분",
+    "NEW:전송_요청서"
+   ],
+   "state_changes": [
+    {
+     "entity": "NEW:안전_기록_5월분",
+     "field": "condition",
+     "from": "작성 완료, 미승인",
+     "to": "기지장 승인 대기",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "기지장 승인란이 채워지지 않으면 본부로 못 나가"
+    },
+    {
+     "entity": "NEW:전송_요청서",
+     "field": "condition",
+     "from": "작성 완료, 미승인",
+     "to": "기지장 승인 대기",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "기지장 승인란이 채워지지 않으면 본부로 못 나가"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "assumes": "NEW:안전_기록_5월분, NEW:전송_요청서 (작성하여 소지)",
+     "source_text": "마르타가 종이 두 장을 내밀었다. 손으로 쓴 안전 기록 5월분과 그 아래의 전송 요청서였다"
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "규정 4조 내용 (부기지장 안전 기록은 기지장 승인 필요, 승인 없이 나가는 건 의료 보고뿐)",
+     "source_text": "\"4조야. 부기지장 안전 기록은 기지장 승인란이 채워지지 않으면 본부로 못 나가.\" / \"승인 없이 나가는 건 의료 보고뿐이야. 안전 기록은 아니고.\""
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "부기지장 안전 기록에 기지장 승인란이 존재함",
+     "source_text": "서율은 빈 칸을 내려다보았다. \"선생님 기록이잖아요.\""
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "기지장으로서 안전 기록 승인 권한 보유",
+     "source_text": "마르타가 종이 두 장을 내밀었다. / 펜을 건넸다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "규정 4조: 부기지장 안전 기록은 기지장 승인란이 채워지지 않으면 본부로 전송되지 않음, 승인 없이 나가는 건 의료 보고뿐",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"4조야. 부기지장 안전 기록은 기지장 승인란이 채워지지 않으면 본부로 못 나가.\" / \"승인 없이 나가는 건 의료 보고뿐이야. 안전 기록은 아니고.\""
+    }
+   ],
+   "cause": "마르타가 5월분 안전 기록을 본부로 전송하기 위해 기지장 승인이 필요함",
+   "result": "서율이 안전 기록과 전송 요청서를 검토하며 승인란을 확인함",
+   "source_text": "\"서명이 필요해.\" 마르타가 종이 두 장을 내밀었다. 손으로 쓴 안전 기록 5월분과 그 아래의 전송 요청서였다. \"4조야. 부기지장 안전 기록은 기지장 승인란이 채워지지 않으면 본부로 못 나가.\" 서율은 빈 칸을 내려다보았다. \"선생님 기록이잖아요.\" \"내 기록이지. 근데 4조가 그래.\" 마르타는 펜을 건넸다. \"승인 없이 나가는 건 의료 보고뿐이야. 안전 기록은 아니고.\"",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:57:31Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 44.32
+ }
+}

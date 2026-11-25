@@ -1,0 +1,119 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:4월 10일",
+   "expression": "4월 10일",
+   "description": "도현이 통신실에서 식사를 시작한 날짜",
+   "timeline": "main",
+   "source_text": "4월 10일부터 이 방에서 먹었다",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "NEW:4월 8일",
+   "expression": "4월 8일",
+   "description": "도현이 어머니 안부를 묻는 메시지를 보낸 날짜",
+   "timeline": "main",
+   "source_text": "4월 8일에 보낸 것과 같은 문장이었다",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "통신실에서의 식사",
+   "summary": "도현이 통신실 바닥에서 차가운 밥을 먹으며 어머니에게 보낼 수 없는 메시지를 생각한다.",
+   "location_id": "LOC_008",
+   "time_id": "NEW:4월 10일",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_008",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "도현은 통신실 바닥에 앉아 식판을 무릎에 올렸다. 4월 10일부터 이 방에서 먹었다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "식판, 숟가락",
+     "source_text": "도현은 통신실 바닥에 앉아 식판을 무릎에 올렸다. 숟가락을 들었다"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "개인 단말",
+     "source_text": "개인 단말에는 쓰다 만 문장이 하나 있었다"
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "어머니 안부를 묻는 메시지를 4월 8일에 보냈으나 답장이 없음",
+     "source_text": "개인 단말에는 쓰다 만 문장이 하나 있었다. 어머니 어떠셔. 4월 8일에 보낸 것과 같은 문장이었다. 보낼 수 없으니 지우지도 않았다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "4월 10일부터 통신실에서 식사하고 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "4월 10일부터 이 방에서 먹었다"
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "식당에 종이 다섯 장이 붙어 있어 40분을 뺏김",
+     "via": "direct",
+     "retained": true,
+     "source_text": "식당에는 종이 다섯 장이 붙어 있었고 그중 하나가 도현의 40분을 가져간 것이었다"
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "통신실 온도가 4도임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "밥에서 김이 나지 않았다. 4도였다"
+    }
+   ],
+   "cause": "식당에 붙은 종이들로 인해 식사 시간이 지연되어 통신실에서 식사하게 됨",
+   "result": "도현이 통신실에서 차가운 밥을 먹으며 어머니에게 보낼 수 없는 메시지를 남겨둠",
+   "source_text": "도현은 통신실 바닥에 앉아 식판을 무릎에 올렸다. 밥에서 김이 나지 않았다. 4도였다. 4월 10일부터 이 방에서 먹었다. 식당에는 종이 다섯 장이 붙어 있었고 그중 하나가 도현의 40분을 가져간 것이었다. 개인 단말에는 쓰다 만 문장이 하나 있었다. 어머니 어떠셔. 4월 8일에 보낸 것과 같은 문장이었다. 보낼 수 없으니 지우지도 않았다. 도현은 단말을 엎어 놓고 숟가락을 들었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:53:29Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 64.31
+ }
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [
+    {
+      "time_id": "NEW:이송_이틀_뒤_이른_아침",
+      "expression": "이송 이틀 뒤 이른 아침",
+      "description": "알파가 3번가에서 슐라우를 목격한 시각.",
+      "timeline": "future_world",
+      "source_text": "이송 이틀 뒤, 이른 아침의 3번가였다.",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S10_1",
+      "order": 1,
+      "title": "3번가를 걷는 슐라우 목격",
+      "summary": "이송 이틀 뒤 이른 아침, 알파가 3번가에서 하얀 머리칼의 슐라우가 혼자 멀쩡히 걸어가는 모습을 목격한다. 망설이는 사이 골목으로 사라진다.",
+      "location_id": "LOC_008",
+      "time_id": "NEW:이송_이틀_뒤_이른_아침",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_006"
+      ],
+      "witness_character_ids": [
+        "CHAR_002"
+      ],
+      "main_actor_character_id": "CHAR_006",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "assumes": "자력 보행이 가능할 만큼 회복된 상태",
+          "source_text": "혼자서, 제 발로, 멀쩡히 걷고 있었다."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우로 보이는 인물이 3번가를 혼자 걷고 있음",
+          "via": "direct",
+          "source_text": "하얀 머리칼. 170을 조금 넘긴 키. 슐라우였다."
+        }
+      ],
+      "cause": "unknown",
+      "result": "슐라우가 골목으로 사라짐",
+      "source_text": "슐라우였다. 혼자서, 제 발로, 멀쩡히 걷고 있었다.",
+      "certainty": "explicit"
+    }
+  ]
+}

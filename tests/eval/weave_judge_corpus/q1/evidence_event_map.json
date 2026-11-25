@@ -1,0 +1,648 @@
+{
+ "note": "문자열 대조 후보 — 확정 전 사람 확인 필수 (인수 후 절차 2)",
+ "scenes": {
+  "scene_01": [
+   {
+    "quote": "은행이 칠백, 박 사장이 오백. 박 사장 거는 달마다 이자가 나가고, 십오일이 다음 거고.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_3_14",
+      "via": [
+       "assumed_states",
+       "knowledge_gained",
+       "source_text",
+       "state_changes"
+      ]
+     }
+    ]
+   },
+   {
+    "quote": "상수도도 안다. 이백도 안다. 니 천이백도 안다. 다 안다. 그래도 안 판다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_3_14",
+      "via": [
+       "assumed_states",
+       "knowledge_gained",
+       "source_text"
+      ]
+     }
+    ]
+   }
+  ],
+  "scene_02": [
+   {
+    "quote": "최영감이 사천만 원을 준다는 얘기는 정미한테 들어서 알고 있었다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_1_7",
+      "via": [
+       "assumed_states"
+      ]
+     }
+    ]
+   },
+   {
+    "quote": "내 단도직입으로 한다. 사천은 그대로다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_4_12",
+      "via": [
+       "source_text"
+      ]
+     }
+    ]
+   }
+  ],
+  "scene_03": [
+   {
+    "quote": "순덕은 탕 밖으로 나가지 않는 사람이었다. 장은 정미가 봤고, 은행은 일 년에 한두 번 정미가 대신 갔다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_5_2",
+      "via": [
+       "source_text"
+      ]
+     }
+    ]
+   },
+   {
+    "quote": "순덕은 골방과 카운터 사이만 오갔다. 그 사이는 두 걸음이었다.",
+    "role": "확립 근거",
+    "status": "unmatched",
+    "candidates": []
+   },
+   {
+    "quote": "정호는 어머니가 외투를 입는 것을 이 집에 온 뒤로 처음 봤다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_5_2",
+      "via": [
+       "source_text"
+      ]
+     }
+    ]
+   }
+  ],
+  "scene_06": [
+   {
+    "quote": "반짇고리 바닥에 남편이 남긴 금반지가 있었다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_2_20",
+      "via": [
+       "assumed_states",
+       "source_text"
+      ]
+     }
+    ]
+   },
+   {
+    "quote": "돈을 받아 손수건에 싸서 외투 안주머니에 넣었다. 반지는 저울 위에 남았다.",
+    "role": "최신 변경",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_5_2",
+      "via": [
+       "source_text",
+       "state_changes"
+      ]
+     }
+    ]
+   }
+  ],
+  "scene_08": [
+   {
+    "quote": "일어나서 제일 먼저 하는 일은 오른쪽 무릎에 파스를 붙이는 것이었다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_1_2",
+      "via": [
+       "assumed_states",
+       "state_changes"
+      ]
+     }
+    ]
+   },
+   {
+    "quote": "셔터가 반쯤 올라갔을 때 오른쪽 무릎이 꺾였다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_3_1",
+      "via": [
+       "state_changes"
+      ]
+     }
+    ]
+   }
+  ],
+  "scene_09": [
+   {
+    "quote": "은행 것은 어떻게든 미루겠지만 박 사장 것은 미룰 수 없었고, 선희가 아는 절반이 아니라 나머지 절반도 말해",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_3_3",
+      "via": [
+       "assumed_states",
+       "knowledge_gained"
+      ]
+     }
+    ]
+   },
+   {
+    "quote": "그 전화가 길어졌다. 선희는 울지 않았다.",
+    "role": "확립 근거",
+    "status": "unmatched",
+    "candidates": []
+   },
+   {
+    "quote": "은행이 칠백, 박 사장이 오백.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_3_14",
+      "via": [
+       "knowledge_gained",
+       "source_text",
+       "state_changes"
+      ]
+     }
+    ]
+   }
+  ],
+  "scene_13": [
+   {
+    "quote": "남편 사진은 이불장 위에 있었다.",
+    "role": "확립 근거",
+    "status": "unmatched",
+    "candidates": []
+   },
+   {
+    "quote": "아버지 사진이 이불장 위에서 내려다봤다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_3_14",
+      "via": [
+       "source_text"
+      ]
+     }
+    ]
+   }
+  ],
+  "scene_14": [
+   {
+    "quote": "금호탕은 새벽 다섯 시에 열고 저녁 여덟 시에 닫았다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_1_3",
+      "via": [
+       "knowledge_gained"
+      ]
+     }
+    ]
+   },
+   {
+    "quote": "다음 날부터 금호탕은 새벽 여섯 시에 열었다.",
+    "role": "최신 변경",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_4_10",
+      "via": [
+       "source_text"
+      ]
+     }
+    ]
+   }
+  ],
+  "scene_15": [
+   {
+    "quote": "그 관은 일월에 갈릴 것이었다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_5_9",
+      "via": [
+       "source_text",
+       "state_changes"
+      ]
+     }
+    ]
+   },
+   {
+    "quote": "계약금은 정미가 계를 타는 이십팔일 다음 날인 이십구일에 넣기로 했다.",
+    "role": "확립 근거",
+    "status": "ambiguous",
+    "candidates": [
+     {
+      "event_id": "EVENT_5_8",
+      "via": [
+       "assumed_states",
+       "knowledge_gained"
+      ]
+     },
+     {
+      "event_id": "EVENT_5_9",
+      "via": [
+       "source_text"
+      ]
+     }
+    ],
+    "resolved": "EVENT_5_9",
+    "resolved_by": "인수 측 사람 확인 2026-09-29: 사건 본문/변경 기록에 실린 후보 채택, 참고 전제만인 후보 제외"
+   }
+  ],
+  "scene_17": [
+   {
+    "quote": "이십일까지 안 되면 제가 내려갑니다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_4_19",
+      "via": [
+       "knowledge_gained",
+       "source_text",
+       "state_changes"
+      ]
+     }
+    ]
+   },
+   {
+    "quote": "다음 달 십오일입니다. 이자는 이자대로. 내려오는 건 저도 번거로우니까 정호 씨가 부치세요.",
+    "role": "최신 변경",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_5_7",
+      "via": [
+       "knowledge_gained",
+       "source_text",
+       "state_changes"
+      ]
+     }
+    ]
+   }
+  ],
+  "scene_21": [
+   {
+    "quote": "나무 서랍 요금통을 열어 어제 저녁에 넣어둔 잔돈을 확인했다. 어른 육백 원, 아이 삼백 원.",
+    "role": "확립 근거",
+    "status": "unmatched",
+    "candidates": []
+   },
+   {
+    "quote": "최영감이 말하며 육백 원을 서랍에 넣었다. 꼬박꼬박 냈다.",
+    "role": "확립 근거",
+    "status": "ambiguous",
+    "candidates": [
+     {
+      "event_id": "EVENT_1_4",
+      "via": [
+       "assumed_states",
+       "state_changes"
+      ]
+     },
+     {
+      "event_id": "EVENT_2_2",
+      "via": [
+       "assumed_states"
+      ]
+     }
+    ],
+    "resolved": "EVENT_1_4",
+    "resolved_by": "인수 측 사람 확인 2026-09-29: 사건 본문/변경 기록에 실린 후보 채택, 참고 전제만인 후보 제외"
+   }
+  ],
+  "scene_22": [
+   {
+    "quote": "뒷문은 골목 쪽으로 나 있는 쇠문이었다. 안에서 빗장을 거는 문이었다.",
+    "role": "확립 근거",
+    "status": "unmatched",
+    "candidates": []
+   },
+   {
+    "quote": "뒷문은 밤에 안에서 빗장을 거니까 열쇠가 있어도 못 연다. 정문으로 들어와서 셔터 내리고 잠가라.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_3_6",
+      "via": [
+       "assumed_states",
+       "knowledge_gained",
+       "source_text"
+      ]
+     }
+    ]
+   }
+  ],
+  "scene_24": [
+   {
+    "quote": "내 계 있는 거 알지. 십이월 말에 타. 백오십.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_2_11",
+      "via": [
+       "assumed_states",
+       "knowledge_gained",
+       "source_text"
+      ]
+     }
+    ]
+   },
+   {
+    "quote": "계약금은 정미가 계를 타는 이십팔일 다음 날인 이십구일에 넣기로 했다.",
+    "role": "확립 근거",
+    "status": "ambiguous",
+    "candidates": [
+     {
+      "event_id": "EVENT_5_8",
+      "via": [
+       "assumed_states",
+       "knowledge_gained"
+      ]
+     },
+     {
+      "event_id": "EVENT_5_9",
+      "via": [
+       "source_text"
+      ]
+     }
+    ],
+    "resolved": "EVENT_5_9",
+    "resolved_by": "인수 측 사람 확인 2026-09-29: 사건 본문/변경 기록에 실린 후보 채택, 참고 전제만인 후보 제외"
+   }
+  ],
+  "scene_28": [
+   {
+    "quote": "그건 사장님이 정할 일이오.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_5_9",
+      "via": [
+       "assumed_states",
+       "knowledge_gained",
+       "source_text",
+       "state_changes"
+      ]
+     }
+    ]
+   },
+   {
+    "quote": "그 다음에 다섯 시로 돌아갈지는 순덕이 정할 일이었다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_5_11",
+      "via": [
+       "assumed_states",
+       "source_text"
+      ]
+     }
+    ]
+   }
+  ],
+  "scene_29": [
+   {
+    "quote": "물건방 구석에는 아버지 때부터 쓰던 장부들이 끈에 묶여 있었다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_2_5",
+      "via": [
+       "assumed_states",
+       "knowledge_gained",
+       "source_text"
+      ]
+     }
+    ]
+   },
+   {
+    "quote": "정호는 아버지 장부 뭉치를 다락방으로 옮겼다. 창 밑에 놓았다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_5_11",
+      "via": [
+       "source_text",
+       "state_changes"
+      ]
+     }
+    ]
+   }
+  ],
+  "scene_32": [
+   {
+    "quote": "금호탕은 새벽 다섯 시에 열고 저녁 여덟 시에 닫았다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_1_3",
+      "via": [
+       "knowledge_gained"
+      ]
+     }
+    ]
+   },
+   {
+    "quote": "당분간 새벽 여섯 시에 엽니다. 저녁 여덟 시 폐장과 첫째·셋째 월요일 휴무는 그대로입니다. 금호탕.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_4_8",
+      "via": [
+       "source_text"
+      ]
+     }
+    ]
+   }
+  ],
+  "scene_35": [
+   {
+    "quote": "매달 첫째 월요일과 셋째 월요일이 휴무였다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_1_3",
+      "via": [
+       "knowledge_gained"
+      ]
+     }
+    ]
+   },
+   {
+    "quote": "월요일은 십일월 삼십일이었다. 첫째도 셋째도 아닌 월요일이라 탕은 열었다.",
+    "role": "확립 근거",
+    "status": "unmatched",
+    "candidates": []
+   }
+  ],
+  "scene_37": [
+   {
+    "quote": "이거까지 하면 오십 더. 합쳐서 이백삼십.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_4_3",
+      "via": [
+       "knowledge_gained",
+       "source_text"
+      ]
+     }
+    ]
+   },
+   {
+    "quote": "문식은 그 말을 듣고 아무 말도 안 했다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_4_3",
+      "via": [
+       "source_text"
+      ]
+     }
+    ]
+   }
+  ],
+  "scene_38": [
+   {
+    "quote": "보일러는 장씨만 만졌다. 순덕도 안 건드렸다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_1_12",
+      "via": [
+       "assumed_states"
+      ]
+     }
+    ]
+   },
+   {
+    "quote": "어머니는 계단 위에 서서 지하를 내려다보고 있었다. 내려가지 않았다. 관이 터져도 내려가지 않았다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_4_4",
+      "via": [
+       "source_text"
+      ]
+     }
+    ]
+   }
+  ],
+  "scene_45": [
+   {
+    "quote": "통장에 육십만 원, 손수건에 삼십오만 원. 합쳐서 구십오였다.",
+    "role": "확립 근거",
+    "status": "ambiguous",
+    "candidates": [
+     {
+      "event_id": "EVENT_5_2",
+      "via": [
+       "knowledge_gained"
+      ]
+     },
+     {
+      "event_id": "EVENT_5_3",
+      "via": [
+       "source_text",
+       "state_changes"
+      ]
+     }
+    ],
+    "resolved": "EVENT_5_3",
+    "resolved_by": "인수 측 사람 확인 2026-09-29: 사건 본문/변경 기록에 실린 후보 채택, 참고 전제만인 후보 제외"
+   },
+   {
+    "quote": "순덕이 외투 안주머니에서 손수건을 꺼냈다. 삼십오만 원이었다. 그리고 카운터 서랍에서 십오만 원을 꺼냈다.",
+    "role": "확립 근거",
+    "status": "matched",
+    "candidates": [
+     {
+      "event_id": "EVENT_5_6",
+      "via": [
+       "assumed_states",
+       "state_changes"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "stats": {
+  "matched": 32,
+  "ambiguous": 4,
+  "unmatched": 6
+ },
+ "ledger_absent_scenes": {
+  "note": "인용이 원장 어느 사건에도 없음 → 종단 §2-7 미탐 귀속에서 '원장 부재' 후보. 원장은 수정하지 않는다.",
+  "scenes": {
+   "scene_03": [
+    "순덕은 골방과 카운터 사이만 오갔다. 그 사이는 두 걸음이었다."
+   ],
+   "scene_09": [
+    "그 전화가 길어졌다. 선희는 울지 않았다."
+   ],
+   "scene_13": [
+    "남편 사진은 이불장 위에 있었다."
+   ],
+   "scene_21": [
+    "나무 서랍 요금통을 열어 어제 저녁에 넣어둔 잔돈을 확인했다. 어른 육백 원, 아이 삼백 원."
+   ],
+   "scene_22": [
+    "뒷문은 골목 쪽으로 나 있는 쇠문이었다. 안에서 빗장을 거는 문이었다."
+   ],
+   "scene_35": [
+    "월요일은 십일월 삼십일이었다. 첫째도 셋째도 아닌 월요일이라 탕은 열었다."
+   ]
+  }
+ },
+ "_meta": {
+  "work": "q1",
+  "ledger": "ledger_nemotron_ultra (nemotron-3-ultra free, C=2500)",
+  "date": "2026-09-29",
+  "human_check": "ambiguous 전건 확정, unmatched는 원장 부재로 기록"
+ }
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:상점_화폐_거래",
+      "content": "1번가 상점에서 동전으로 대금을 지불하고 점원이 거스름돈을 내준다",
+      "description": "가격표가 붙은 진열대와 점원, 화폐 거래가 목격됨.",
+      "source_text": "익숙하게 동전 몇 닢을 점원에게 건넸다. 점원은 손바닥 위에서 거스름돈을 세어 내주었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "NEW:소마를_산_여자",
+      "name": "소마를 산 여자",
+      "aliases": [],
+      "entity_type": "person",
+      "description": "1번가 상점에서 소마 통을 받고 동전을 지불한 여자.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S03_1",
+      "source_text": "앞줄의 여자가 소마 통을 받아 들더니,",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "NEW:보급소_점원",
+      "name": "상점 점원",
+      "aliases": [],
+      "entity_type": "unknown",
+      "description": "1번가 상점에서 대금을 받고 거스름돈을 내준 점원.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S03_1",
+      "source_text": "점원은 손바닥 위에서 거스름돈을 세어 내주었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [],
+  "objects": [
+    {
+      "object_id": "NEW:동전",
+      "name": "동전",
+      "description": "상점 거래에 사용된 화폐.",
+      "first_appearance_event_id": "EVENT_S03_1",
+      "source_text": "동전 몇 닢을 점원에게 건넸다.",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S03_1",
+      "order": 1,
+      "title": "상점의 화폐 거래 목격",
+      "summary": "프리든으로 가던 알파가 1번가 상점 앞에서 여자가 소마 통을 받고 점원에게 동전을 지불, 거스름돈을 받는 장면을 본다.",
+      "location_id": "LOC_006",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "NEW:소마를_산_여자",
+        "NEW:보급소_점원"
+      ],
+      "witness_character_ids": [
+        "CHAR_002"
+      ],
+      "main_actor_character_id": "NEW:소마를_산_여자",
+      "objects": [
+        "OBJ_004",
+        "NEW:동전"
+      ],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "NEW:소마를_산_여자",
+          "field": "possesses",
+          "assumes": "NEW:동전 (대금으로 지불)",
+          "source_text": "익숙하게 동전 몇 닢을 점원에게 건넸다."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "1번가 상점에서 화폐 거래가 이루어짐",
+          "via": "direct",
+          "source_text": "점원은 손바닥 위에서 거스름돈을 세어 내주었다."
+        }
+      ],
+      "cause": "출근길의 구경",
+      "result": "알파가 다시 프리든으로 향함",
+      "source_text": "앞줄의 여자가 소마 통을 받아 들더니, 익숙하게 동전 몇 닢을 점원에게 건넸다.",
+      "certainty": "explicit"
+    }
+  ]
+}

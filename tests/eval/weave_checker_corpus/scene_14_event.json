@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S14_1",
+      "order": 1,
+      "title": "노이즈 무늬 옷을 입은 채 잠든 슐라우",
+      "summary": "알파가 유리벽 너머로 병실을 살피니, 슐라우가 흑백 노이즈 무늬 옷을 머리끝까지 걸친 채 잠들어 있다. 혈색은 돌아와 있었다.",
+      "location_id": "LOC_013",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_006"
+      ],
+      "witness_character_ids": [
+        "CHAR_002"
+      ],
+      "main_actor_character_id": "CHAR_006",
+      "objects": [
+        "OBJ_008"
+      ],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_006",
+          "field": "possesses",
+          "assumes": "OBJ_008 (환자복 위에 그대로 착용 중)",
+          "source_text": "침상의 슐라우는 그 흑백 노이즈 무늬 옷을 머리끝까지 그대로 걸친 채였다."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우의 혈색이 처음 봤을 때보다 회복됨",
+          "via": "direct",
+          "source_text": "곤히 잠든 얼굴은 처음 봤을 때보다 혈색이 돌아와 있었다."
+        }
+      ],
+      "cause": "블루멘을 찾으러 온 김의 병문안",
+      "result": "알파가 안심하고 물러남",
+      "source_text": "침상의 슐라우는 그 흑백 노이즈 무늬 옷을 머리끝까지 그대로 걸친 채였다.",
+      "certainty": "explicit"
+    }
+  ]
+}

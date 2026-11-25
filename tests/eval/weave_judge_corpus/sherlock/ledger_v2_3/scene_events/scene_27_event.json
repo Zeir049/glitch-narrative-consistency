@@ -1,0 +1,114 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:열_시",
+   "expression": "열 시",
+   "description": "벽난로 위의 시계가 알린 시각",
+   "timeline": "main",
+   "source_text": "벽난로 위의 시계가 열 시를 알렸고",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "베이커가 응접실에서 젊은 여자 의뢰인 면담 시작",
+   "summary": "젊은 여자가 모자를 무릎에 놓고 앉아 하숙집 알바 수입이 적다고 미리 밝힌 가운데, 홈즈가 사건 해결 시 오십 파운드를, 착수금으로 지금 십 파운드를 주겠다고 제시하고 수첩을 찢어 건넨다. 벽시계가 열 시를 알리며 면담이 시작된다.",
+   "location_id": "LOC_010",
+   "time_id": "NEW:열_시",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "NEW:젊은_여자_의뢰인"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "NEW:젊은_여자_의뢰인",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "NEW:수첩_액수_종이",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그는 수첩을 펴 액수를 적어 넣고 그 장을 찢어 건넸다. 그녀는 종이를 두 손으로 받아 들었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "NEW:수첩_액수_종이",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그는 수첩을 펴 액수를 적어 넣고 그 장을 찢어 건넸다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "수첩 (액수를 적고 한 장을 찢어 건네는 행위)",
+     "source_text": "그는 수첩을 펴 액수를 적어 넣고 그 장을 찢어 건넸다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "수첩 한 장을 손으로 찢어낼 수 있는 신체 능력",
+     "source_text": "그 장을 찢어 건넸다."
+    },
+    {
+     "entity": "NEW:젊은_여자_의뢰인",
+     "field": "body_status",
+     "assumes": "두 손으로 종이를 받을 수 있는 양손 사용 가능 상태",
+     "source_text": "그녀는 종이를 두 손으로 받아 들었다."
+    },
+    {
+     "entity": "NEW:젊은_여자_의뢰인",
+     "field": "knows",
+     "assumes": "홈즈가 사건 해결 대가로 오십 파운드, 지금 십 파운드의 착수금을 제시한다는 조건",
+     "source_text": "\"사건이 해결되면 오십 파운드를 주시면 됩니다.\" 홈즈가 말했다. \"착수금은 지금 십 파운드입니다.\""
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "NEW:젊은_여자_의뢰인",
+     "info": "홈즈가 사건 해결 시 오십 파운드를, 지금 십 파운드를 착수금으로 제시한다는 조건",
+     "via": "direct",
+     "retained": true,
+     "source_text": "\"사건이 해결되면 오십 파운드를 주시면 됩니다.\" 홈즈가 말했다. \"착수금은 지금 십 파운드입니다.\""
+    }
+   ],
+   "cause": "젊은 여자 의뢰인이 베이커가에 사건 의뢰를 위해 방문함",
+   "result": "홈즈가 보수 조건을 제시하고 수첩 종이를 찢어 건네며 면담이 시작됨",
+   "source_text": "젊은 여자는 모자를 무릎에 놓고 앉아 있었다. 하숙집에서 일하며 모은 돈이 얼마 되지 않는다고 그녀는 미리 말해 두었다. \"사건이 해결되면 오십 파운드를 주시면 됩니다.\" 홈즈가 말했다. \"착수금은 지금 십 파운드입니다.\" 그는 수첩을 펴 액수를 적어 넣고 그 장을 찢어 건넸다. 그녀는 종이를 두 손으로 받아 들었다. 벽난로 위의 시계가 열 시를 알렸고, 그는 이야기를 시작해 보라고 말했다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-31T06:32:57Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 13.32
+ }
+}

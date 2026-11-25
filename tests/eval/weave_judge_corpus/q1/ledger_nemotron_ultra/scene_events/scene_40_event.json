@@ -1,0 +1,95 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "정호의 카운터 업무 시작",
+   "summary": "정호가 여탕 슬리퍼를 정리하고 수건을 채운 뒤 요금을 받으며 카운터 업무를 시작한다. 순덕은 이를 지켜보다 골방으로 들어간다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:십이월_첫날_아침_개장_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "from": "unknown",
+     "to": "카운터 요금 수납 및 개장 준비 수행",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "요금을 받는 것도 이제 정호가 했다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "열쇠 (정문·뒷문·새 열쇠)",
+     "source_text": "유리문에 붙은 종이가 안에서 뒤집혀 보였다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "목욕탕 개장 준비와 카운터 업무를 수행할 신체 상태",
+     "source_text": "여탕 쪽 슬리퍼를 짝을 맞춰 세우고 카운터 뒤 선반에 수건을 채웠다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "정호가 카운터 업무를 맡게 되었음",
+     "source_text": "순덕은 골방 문턱에 앉아 그것을 보고 있다가 아무 말 없이 안으로 들어갔다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "카운터 업무를 감독하거나 개입하지 않음",
+     "source_text": "아무 말 없이 안으로 들어갔다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "어른 요금 600원, 아이 요금 300원",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이제 어른 육백 원과 아이 삼백 원을 셌다"
+    }
+   ],
+   "cause": "목욕탕 개장 시간 도래 및 순덕의 묵인",
+   "result": "정호가 카운터 주 업무 담당자로 자리잡음",
+   "source_text": "정호는 여탕 쪽 슬리퍼를 짝을 맞춰 세우고 카운터 뒤 선반에 수건을 채웠다. 어머니가 시킨 일은 아니었다. 정호가 하면 어머니가 그냥 두었다. 그게 이 집에서 뭔가가 정해지는 방식이었다. 요금을 받는 것도 이제 정호가 했다. 순덕은 골방 문턱에 앉아 그것을 보고 있다가 아무 말 없이 안으로 들어갔다. 십이 년 동안 남의 회사 숫자를 셌는데 이제 어른 육백 원과 아이 삼백 원을 셌다. 정호는 서랍을 닫고 카운터 의자에 앉았다. 유리문에 붙은 종이가 안에서 뒤집혀 보였다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-27T04:56:25Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 13.71
+ }
+}

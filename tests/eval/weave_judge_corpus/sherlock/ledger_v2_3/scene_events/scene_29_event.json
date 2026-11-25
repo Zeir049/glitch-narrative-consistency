@@ -1,0 +1,76 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "브래드스트리트가 보 스트리트 유치장 감방으로 안내함",
+   "summary": "브래드스트리트는 창살 문과 구불구불한 계단, 회칠한 복도를 지나 오른쪽 세 번째 감방 앞에서 멈춘 뒤 판을 열어 안을 들여다보고 다시 닫은 다음 열쇠를 꺼냈다.",
+   "location_id": "LOC_032",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_023"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_023",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_023",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_032",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "보 스트리트의 유치장으로 내려가는 길은 창살 문 하나를 지나야 했다. 그 너머로 구불구불한 계단이 이어졌고, 아래는 회칠한 복도였으며 양쪽으로 문이 늘어서 있었다. 브래드스트리트는 오른쪽 세 번째 문 앞에서 걸음을 멈췄다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_023",
+     "field": "possesses",
+     "assumes": "열쇠 (감방 문을 열기 위해 꺼냄)",
+     "source_text": "그는 판을 도로 닫고 열쇠를 꺼냈다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_023",
+     "info": "사건 정리 전까지는 정식 목욕을 시킬 수 없다는 규정",
+     "via": "direct",
+     "retained": true,
+     "source_text": "사건이 정리되기 전까지는 정식 목욕도 시킬 수 없었다."
+    }
+   ],
+   "cause": "보 스트리트 유치장의 구조를 따라 오른쪽 세 번째 감방까지 안내함",
+   "result": "브래드스트리트가 감방 문 앞으로 도착하여 열쇠를 꺼냄",
+   "source_text": "브래드스트리트는 오른쪽 세 번째 문 앞에서 걸음을 멈췄다. 문 위쪽의 작은 판을 밀자 안이 들여다보였다. 그는 판을 도로 닫고 열쇠를 꺼냈다. 사건이 정리되기 전까지는 정식 목욕도 시킬 수 없었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:06:03Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 7.66
+ }
+}

@@ -1,0 +1,229 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 3,
+  "batch_id": "T2-R3-A",
+  "scene_id": "scene_10",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_10.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r2)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T13:22:36Z",
+  "worldview_rules": [],
+  "characters": [
+    {
+      "character_id": "CHAR_006",
+      "name": "슐라우 프로비에렌",
+      "aliases": ["슐라우"],
+      "entity_type": "person",
+      "description": "하얀 머리칼에 170을 조금 넘긴 키의 인물. 이 장면에서 3번가를 혼자 걸어간다.",
+      "traits": [
+        {
+          "trait": "하얀 머리칼",
+          "trait_type": "appearance",
+          "source_text": "하얀 머리칼.",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "170을 조금 넘긴 키",
+          "trait_type": "appearance",
+          "source_text": "170을 조금 넘긴 키.",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S10_1",
+      "source_text": "슐라우였다. 혼자서, 제 발로, 멀쩡히 걷고 있었다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "3번가에서 슐라우를 목격하고 뒤따를지 망설이는 화자.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S10_1",
+      "source_text": "\"어? 어?? 아니, 저 사람이 왜 여기에?\"",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_008",
+      "name": "3번가",
+      "description": "이른 아침에 슐라우가 지나간 거리. 소나무 군락지 쪽과 골목이 이어져 있다.",
+      "source_text": "이송 이틀 뒤, 이른 아침의 3번가였다.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:소나무_군락지",
+      "name": "소나무 군락지",
+      "description": "3번가에 인접한 구역. 슐라우가 이쪽에서 걸어왔다.",
+      "source_text": "소나무 군락지 쪽에서 익숙한 실루엣이 걸어오고 있었다.",
+      "certainty": "explicit"
+    },
+    {
+      "location_id": "NEW:3번가_골목",
+      "name": "3번가의 골목",
+      "description": "슐라우의 뒷모습이 사라진 골목.",
+      "source_text": "망설이는 사이 그 뒷모습은 골목으로 사라졌다.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [],
+  "times": [
+    {
+      "time_id": "NEW:이송_이틀_뒤_이른_아침",
+      "expression": "이송 이틀 뒤, 이른 아침",
+      "description": "이송이라 불리는 사건으로부터 이틀이 지난 날의 이른 아침.",
+      "timeline": "future_world",
+      "source_text": "이송 이틀 뒤, 이른 아침의 3번가였다.",
+      "certainty": "explicit"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S10_1",
+      "scene_id": "scene_10",
+      "order": 1,
+      "title": "3번가를 혼자 걸어가는 슐라우 목격",
+      "summary": "이송 이틀 뒤 이른 아침의 3번가에서, 화자는 소나무 군락지 쪽에서 걸어오는 슐라우를 발견한다. 슐라우는 혼자서 제 발로 멀쩡히 걷고 있었고, 화자가 따라갈지 망설이는 사이 그 뒷모습은 골목으로 사라진다.",
+      "location_id": "LOC_008",
+      "time_id": "NEW:이송_이틀_뒤_이른_아침",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_006"],
+      "witness_character_ids": ["CHAR_002"],
+      "main_actor_character_id": "CHAR_006",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "CHAR_006",
+          "field": "location",
+          "from": "LOC_013",
+          "to": "LOC_008",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "inferred",
+          "certainty_reason": "3번가에 있다는 것은 원문 명시이나, 직전 위치(병실)는 \"병실에 누워 있어야 할 사람\"이라는 서술에서 정황으로 메운 값이다",
+          "source_text": "이송 이틀 뒤, 이른 아침의 3번가였다. … 병실에 누워 있어야 할 사람이"
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "from": "unknown",
+          "to": "혼자서 제 발로 멀쩡히 걷는 상태",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "슐라우였다. 혼자서, 제 발로, 멀쩡히 걷고 있었다."
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "location",
+          "from": "LOC_008",
+          "to": "NEW:3번가_골목",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "망설이는 사이 그 뒷모습은 골목으로 사라졌다."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "assumes": "부축·보조 기구 없이 자력 보행이 가능한 신체 상태",
+          "source_text": "혼자서, 제 발로, 멀쩡히 걷고 있었다"
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "body_status",
+          "assumes": "하얀 머리칼과 170을 조금 넘긴 키의 외형을 그대로 유지하고 있음",
+          "source_text": "하얀 머리칼. 170을 조금 넘긴 키."
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "ability",
+          "assumes": "산책하듯 거리를 이동할 수 있음 (거동 가능)",
+          "source_text": "아침 산책이라도 나온 듯한 걸음걸이로 거리를 지나갔다"
+        },
+        {
+          "entity": "CHAR_006",
+          "field": "knows",
+          "assumes": "3번가에서 골목으로 빠지는 길을 알고 있음 (목적지를 향해 이동)",
+          "source_text": "그 뒷모습은 골목으로 사라졌다"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "슐라우의 외형(하얀 머리칼, 170을 조금 넘긴 키)을 실루엣만으로 알아볼 만큼 알고 있음",
+          "source_text": "소나무 군락지 쪽에서 익숙한 실루엣이 걸어오고 있었다. … 슐라우였다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "슐라우가 병실에 누워 있는 상태라고 알고 있음",
+          "source_text": "병실에 누워 있어야 할 사람이"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "이틀 전에 '이송'이 있었다는 사실을 알고 있음",
+          "source_text": "이송 이틀 뒤, 이른 아침의 3번가였다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "not_knows: 슐라우가 3번가에 나와 있는 이유",
+          "source_text": "\"어? 어?? 아니, 저 사람이 왜 여기에?\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "미래 세계 쪽 신체로 3번가에 있으며 거리를 직접 보고 발화할 수 있는 상태",
+          "source_text": "\"어? 어?? 아니, 저 사람이 왜 여기에?\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "마음먹으면 슐라우를 뒤따라갈 수 있는 이동 능력 (실제로는 망설여 실행하지 않음)",
+          "source_text": "따라가야 하나, 말아야 하나."
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우가 이송 이틀 뒤 3번가를 혼자 제 발로 걷고 있음",
+          "via": "direct",
+          "retained": true,
+          "source_text": "슐라우였다. 혼자서, 제 발로, 멀쩡히 걷고 있었다."
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "슐라우가 3번가의 골목 방향으로 사라짐",
+          "via": "direct",
+          "retained": true,
+          "source_text": "망설이는 사이 그 뒷모습은 골목으로 사라졌다."
+        }
+      ],
+      "cause": "이송 이틀 뒤 이른 아침, 화자가 3번가에 있던 중 소나무 군락지 쪽에서 걸어오는 익숙한 실루엣을 발견했다.",
+      "result": "화자는 슐라우임을 알아보고 놀라 따라갈지 망설였고, 그 사이 슐라우는 골목으로 사라져 추적하지 못했다.",
+      "source_text": "이송 이틀 뒤, 이른 아침의 3번가였다. … 슐라우였다. 혼자서, 제 발로, 멀쩡히 걷고 있었다. … 망설이는 사이 그 뒷모습은 골목으로 사라졌다.",
+      "certainty": "explicit"
+    }
+  ]
+}

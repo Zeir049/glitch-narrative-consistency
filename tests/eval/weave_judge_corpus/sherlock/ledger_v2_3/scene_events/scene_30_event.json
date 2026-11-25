@@ -1,0 +1,167 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [
+  {
+   "location_id": "NEW:마차_안",
+   "name": "마차 안",
+   "description": "레스트레이드, 홈즈, 왓슨이 탄 마차 내부",
+   "source_text": "레스트레이드는 마차에 오르며",
+   "certainty": "explicit"
+  }
+ ],
+ "objects": [
+  {
+   "object_id": "OBJ_026",
+   "name": "살인 무기로 사용된 돌",
+   "description": "홈즈가 손에 들고 있던 돌",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "홈즈는 손에 든 돌을 주머니에 넣고",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "마차에 오르며 레스트레이드가 불평하다",
+   "summary": "레스트레이드는 마차에 오르며 왼손잡이에 다리를 저는 사내를 찾느라 시골을 뒤지는 것은 스코틀랜드 야드의 웃음거리가 될 거라고 코웃음을 친다. 홈즈는 손에 든 돌을 주머니에 넣고 침묵하고, 왓슨은 말하려다 멈춘다. 마차는 로스 쪽으로 향한다.",
+   "location_id": "NEW:마차_안",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_018",
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_018",
+   "objects": [
+    "OBJ_026"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_026",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "홈즈는 손에 든 돌을 주머니에 넣고"
+    },
+    {
+     "entity": "CHAR_018",
+     "field": "location",
+     "from": "unknown",
+     "to": "NEW:마차_안",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "레스트레이드는 마차에 오르며"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "unknown",
+     "to": "NEW:마차_안",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "홈즈는 손에 든 돌을 주머니에 넣고 아무 말도 하지 않았다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "unknown",
+     "to": "NEW:마차_안",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "왓슨이 무어라 하려다 그만두었다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_018",
+     "field": "body_status",
+     "assumes": "마차에 오를 수 있는 신체 상태",
+     "source_text": "레스트레이드는 마차에 오르며"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_026 (손에 들고 있었음)",
+     "source_text": "홈즈는 손에 든 돌을 주머니에 넣고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "마차에 동승 중 (왓슨 또한 마차에 있음)",
+     "source_text": "왓슨이 무어라 하려다 그만두었다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "발화 능력 (말하려다 멈춤)",
+     "source_text": "왓슨이 무어라 하려다 그만두었다"
+    },
+    {
+     "entity": "CHAR_018",
+     "field": "knows",
+     "assumes": "왼손잡이에 다리를 저는 사내의 인상착의",
+     "source_text": "인상착의는 이미 빠짐없이 전해졌고"
+    },
+    {
+     "entity": "CHAR_018",
+     "field": "knows",
+     "assumes": "수사를 시골 전역에서 벌이는 것에 대한 부정적 평판 우려",
+     "source_text": "스코틀랜드 야드의 웃음거리가 될 거라고도 했다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "레스트레이드가 왼손잡이에 다리를 저는 사내 수사를 시골 전체에서 벌이는 것에 부정적 견해를 갖고 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "스코틀랜드 야드의 웃음거리가 될 거라고도 했다"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "수사를 하지 않기로 한 것은 경위(레스트레이드) 본인의 판단이었다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그것을 쓰지 않기로 한 것은 경위 자신이었다"
+    }
+   ],
+   "cause": "보스콤 밸리 사건 수사를 위해 시골로 향함",
+   "result": "세 사람은 마차를 타고 로스 쪽으로 이동한다",
+   "source_text": "레스트레이드는 마차에 오르며 코웃음을 쳤다. 왼손잡이에 다리를 저는 사내를 찾겠다고 이 시골을 온통 뒤지고 다닐 수는 없다는 것이었다. 스코틀랜드 야드의 웃음거리가 될 거라고도 했다. 홈즈는 손에 든 돌을 주머니에 넣고 아무 말도 하지 않았다. 왓슨이 무어라 하려다 그만두었다. 인상착의는 이미 빠짐없이 전해졌고, 그것을 쓰지 않기로 한 것은 경위 자신이었다. 마차가 흔들리며 로스 쪽으로 방향을 잡았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:06:20Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 16.72
+ }
+}

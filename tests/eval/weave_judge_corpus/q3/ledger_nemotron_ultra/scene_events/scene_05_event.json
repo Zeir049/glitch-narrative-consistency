@@ -1,0 +1,88 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "22시 통신 창에서 서율이 보고 전송",
+   "summary": "서율이 통신실에서 위성 안테나를 맞추고 마르타의 의료 보고와 기지 일일 보고를 압축해 전송 큐에 넣는다. 도현이 이 콘솔을 보여준 적 없지만 서율은 작동법을 알고 있다.",
+   "location_id": "LOC_008",
+   "time_id": "TIME_022",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "통신 콘솔 조작법 (위성 안테나 추적 각도 맞추기, 전송 큐 구성, 압축률 조정, 재전송 간격 설정)",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "도현은 이 콘솔을 서율에게 한 번도 보여 준 적이 없었다. 그래도 손은 멈추지 않았다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_011 (태블릿 또는 통신 콘솔 접근 권한)",
+     "source_text": "서율은 콘솔 앞에 앉아 위성 안테나의 추적 각도를 맞추고 전송 큐를 열었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "마르타의 의료 보고 내용과 기지 일일 보고 내용이 이미 작성되어 전송 대기 중임",
+     "source_text": "마르타의 의료 보고를 첫 번째에 걸고, 기지 일일 보고를 그 뒤에 붙이고"
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "의료 보고서를 작성해 서율에게 전달했음",
+     "source_text": "마르타의 의료 보고를 첫 번째에 걸고"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "통신 콘솔 조작법 (도현의 도움 없이 단독 수행 가능)",
+     "via": "inference",
+     "retained": true,
+     "source_text": "도현은 이 콘솔을 서율에게 한 번도 보여 준 적이 없었다. 그래도 손은 멈추지 않았다."
+    }
+   ],
+   "cause": "22시 통신 창이 열려 위성 링크가 잡힘",
+   "result": "마르타의 의료 보고와 기지 일일 보고가 전송 큐에 등록됨",
+   "source_text": "22시 정각. 통신실에는 서율뿐이었다. 링크가 잡혔다는 표시가 초록으로 바뀌었다. 서율은 콘솔 앞에 앉아 위성 안테나의 추적 각도를 맞추고 전송 큐를 열었다. 마르타의 의료 보고를 첫 번째에 걸고, 기지 일일 보고를 그 뒤에 붙이고, 압축률을 한 단계 올리고, 재전송 간격을 30초로 잡았다. 도현은 이 콘솔을 서율에게 한 번도 보여 준 적이 없었다. 그래도 손은 멈추지 않았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:51:11Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 63.89
+ }
+}

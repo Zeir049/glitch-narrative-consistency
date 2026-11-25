@@ -1,0 +1,183 @@
+{
+  "schema_version": 2,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 2,
+  "batch_id": "T2-R2-B",
+  "scene_id": "scene_23",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_23.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과(r1/r3)",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:44:41Z",
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "폭발 이후 오랜만에 제1창고를 다시 찾아, 방치된 로봇 잔해를 안타까워하며 쓰러진 로봇 하나를 일으켜 세운다.",
+      "traits": [
+        {
+          "trait": "부서진 로봇들을 불쌍히 여기며 연민을 표하는 성격",
+          "trait_type": "personality",
+          "source_text": "바쁜 건 알겠는데, 로봇들이 불쌍하잖아.",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S23_1",
+      "source_text": "오랜만에 제1창고에 들렀다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_004",
+      "name": "헤일트라움 제1창고",
+      "description": "벽이 뚫린 채 검게 그을리고 로봇 잔해와 콘크리트 부스러기가 나뒹구는, 폭발 당시 그대로 방치된 폐허.",
+      "source_text": "내부는 그날 그대로였다. 검게 그을린 벽, 나뒹구는 로봇들의 잔해, 바닥을 덮은 콘크리트 부스러기까지.",
+      "certainty": "explicit"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "NEW:제1창고의_쓰러진_로봇",
+      "name": "제1창고의 쓰러진 로봇",
+      "description": "제1창고 안에 나뒹구는 로봇 잔해 중 하나. 알파가 일으켜 벽에 기대어 둔 개체.",
+      "first_appearance_event_id": "EVENT_S23_1",
+      "source_text": "쓰러진 로봇 하나를 일으켜 벽에 기대어 두었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "times": [
+    {
+      "time_id": "NEW:오랜만의_제1창고_재방문_시점",
+      "expression": "오랜만에 (제1창고 재방문 시점)",
+      "description": "창고 폭발 이후 상당한 시간이 지나 알파가 제1창고를 다시 찾은 시점. 구체적 날짜는 원문에 없음.",
+      "timeline": "future_world",
+      "source_text": "오랜만에 제1창고에 들렀다.",
+      "certainty": "inferred"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT_S23_1",
+      "scene_id": "scene_23",
+      "order": 1,
+      "title": "폐허 그대로인 제1창고 재방문",
+      "summary": "알파가 오랜만에 뚫린 벽을 통해 제1창고에 들어가, 복구가 전혀 되지 않은 채 그날 그대로 방치된 내부를 확인한다. 로봇들이 불쌍하다고 중얼거리며 쓰러진 로봇 하나를 일으켜 벽에 기대어 둔다.",
+      "location_id": "LOC_004",
+      "time_id": "NEW:오랜만의_제1창고_재방문_시점",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": ["NEW:제1창고의_쓰러진_로봇"],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "location",
+          "from": "unknown",
+          "to": "LOC_004",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "오랜만에 제1창고에 들렀다. 뚫린 벽 안쪽으로 발을 들이자 잿내가 훅 끼쳤다."
+        },
+        {
+          "entity": "NEW:제1창고의_쓰러진_로봇",
+          "field": "body_status",
+          "from": "바닥에 쓰러져 있음",
+          "to": "벽에 기대어 세워짐",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "쓰러진 로봇 하나를 일으켜 벽에 기대어 두었다."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "LOC_004",
+          "field": "condition",
+          "assumes": "폭발 당시의 파손 상태(그을린 벽, 로봇 잔해, 콘크리트 부스러기)가 치워지지 않고 그대로 남아 있음 — 복구 미진행",
+          "source_text": "치워진 것이라곤 하나도 없이, 폐허째로 방치되어 있었다."
+        },
+        {
+          "entity": "LOC_004",
+          "field": "condition",
+          "assumes": "벽에 뚫린 구멍이 막히지 않고 출입 가능한 상태로 남아 있음",
+          "source_text": "뚫린 벽 안쪽으로 발을 들이자"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "폭발 당일 제1창고 내부의 모습을 직접 알고 있음 (그래서 '그날 그대로'라고 비교할 수 있음)",
+          "source_text": "내부는 그날 그대로였다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "제1창고 복구를 맡을 측이 다른 일로 바쁜 사정을 알고 있음",
+          "source_text": "바쁜 건 알겠는데, 로봇들이 불쌍하잖아."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "창고에 나뒹구는 잔해가 로봇들의 것임을 식별하고 있음",
+          "source_text": "나뒹구는 로봇들의 잔해"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "미래 세계의 신체로 창고 안을 걸어 들어가 활동 중이며, 쓰러진 로봇을 들어 올릴 만큼 온전한 상태",
+          "source_text": "뚫린 벽 안쪽으로 발을 들이자 / 쓰러진 로봇 하나를 일으켜"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "냄새를 감지할 수 있음 (잿내·연기 냄새를 지각)",
+          "source_text": "잿내가 훅 끼쳤다 / 연기 냄새만 아니면"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "쓰러진 로봇 한 대를 들어 올려 세울 만한 힘이 있음",
+          "source_text": "쓰러진 로봇 하나를 일으켜"
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "대상을 부수지 않고 벽에 기대어 둘 정도로 힘을 조절할 수 있음",
+          "source_text": "벽에 기대어 두었다."
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "제1창고가 폭발 당시 상태 그대로 전혀 복구되지 않은 채 방치되어 있다",
+          "via": "direct",
+          "retained": true,
+          "source_text": "치워진 것이라곤 하나도 없이, 폐허째로 방치되어 있었다. \"...복구가 하나도 안 됐네.\""
+        }
+      ],
+      "cause": "알파가 오랜만에 제1창고를 다시 찾음",
+      "result": "창고가 복구되지 않은 폐허 상태임을 확인하고, 쓰러진 로봇 하나를 벽에 기대어 세워 둠",
+      "source_text": "오랜만에 제1창고에 들렀다. 뚫린 벽 안쪽으로 발을 들이자 잿내가 훅 끼쳤다. 내부는 그날 그대로였다. … 쓰러진 로봇 하나를 일으켜 벽에 기대어 두었다.",
+      "certainty": "explicit"
+    }
+  ]
+}

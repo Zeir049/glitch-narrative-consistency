@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [],
+  "characters": [],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S27_1",
+      "order": 1,
+      "title": "미수리 상태의 화면 노이즈 호소",
+      "summary": "알파의 시야 오른쪽에 노이즈가 계속 낀다. 폭발 때의 손상이 아직 수리되지 않았고 수리는 기약 없이 밀렸다는 서술과 함께, 알파는 일찍 접속을 종료한다.",
+      "location_id": "LOC_006",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "CHAR_002"
+      ],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "로봇 신체 손상(화면 노이즈) 미수리 상태",
+          "source_text": "폭발 때 손상된 게 아직도 안 고쳐졌으니까."
+        }
+      ],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "자신의 로봇 수리가 기약 없이 밀려 있다는 안내를 들음",
+          "via": "told",
+          "source_text": "수리는 밀리고 밀려서 기약이 없다고 했다."
+        }
+      ],
+      "cause": "폭발 당시의 손상",
+      "result": "이른 접속 종료",
+      "source_text": "폭발 때 손상된 게 아직도 안 고쳐졌으니까. 수리는 밀리고 밀려서 기약이 없다고 했다.",
+      "certainty": "explicit"
+    }
+  ]
+}

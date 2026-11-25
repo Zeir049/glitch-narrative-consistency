@@ -1,0 +1,129 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:점심때",
+   "expression": "점심때",
+   "description": "점심 식사 시간",
+   "timeline": "main",
+   "source_text": "점심때가 되자",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "점심 식사 준비와 정문 소리",
+   "summary": "정미가 국그릇을 들고 골방으로 들어와 순덕, 정호, 정미가 둘러앉아 식사를 시작하려던 중 정문 여닫는 소리가 들려 정호가 카운터로 나간다.",
+   "location_id": "LOC_003",
+   "time_id": "NEW:점심때",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_003",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정미가 국그릇을 받쳐 들고 골방 안으로 들어왔다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_003",
+     "to": "LOC_002",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "정호는 수저를 내려놓고 요금을 받으러 카운터로 나갔다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "possesses",
+     "assumes": "OBJ_국그릇 (국그릇을 받쳐 들고)",
+     "source_text": "정미가 국그릇을 받쳐 들고 골방 안으로 들어왔다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "오른쪽 무릎 통증 (통증이 오는 오른쪽 무릎을 펴며)",
+     "source_text": "순덕은 통증이 오는 오른쪽 무릎을 펴며 숟가락을 들었다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "식사 가능 (숟가락을 들어 국물을 뜸)",
+     "source_text": "순덕이 국물을 한 숟가락 뜨는 순간"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "요금 수납 업무 수행 가능 (요금을 받으러 카운터로 나감)",
+     "source_text": "정호는 수저를 내려놓고 요금을 받으러 카운터로 나갔다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "정문 여닫는 소리 발생 (손님 도착 가능성)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "정문 여닫는 소리가 들렸다"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "정문 여닫는 소리 발생 (손님 도착 가능성)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "정문 여닫는 소리가 들렸다"
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "정문 여닫는 소리 발생 (손님 도착 가능성)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "정문 여닫는 소리가 들렸다"
+    }
+   ],
+   "cause": "점심 시간이 되어 정미가 식사를 준비함",
+   "result": "정문 소리가 들려 정호가 카운터로 이동, 식사 중단",
+   "source_text": "점심때가 되자 정미가 국그릇을 받쳐 들고 골방 안으로 들어왔다. 국그릇에서 김이 올라오고 있었다. 순덕과 정호, 정미 세 사람이 작은 밥상 앞에 둘러앉았다. 조그만 골방은 셋이 앉으면 꽉 찼다. 순덕은 통증이 오는 오른쪽 무릎을 펴며 숟가락을 들었다. 정미가 수저를 순덕 앞으로 바짝 붙여 놓았다. \"국 식기 전에 드소.\" 순덕이 국물을 한 숟가락 뜨는 순간 정문 여닫는 소리가 들렸다. 정호는 수저를 내려놓고 요금을 받으러 카운터로 나갔다. 순덕은 카운터 쪽을 바라보며 숟가락을 고쳐 쥐었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-27T04:51:09Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 11.15
+ }
+}

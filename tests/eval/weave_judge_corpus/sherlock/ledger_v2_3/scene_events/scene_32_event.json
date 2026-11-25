@@ -1,0 +1,123 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "NEW:왕진_가방",
+   "name": "왕진 가방",
+   "description": "의사가 왕진 시 청진기·붕대·약병 등을 담아 두는 가방",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "내가 왕진 가방을 꺼내는 것을 보고",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "NEW:아침상_식후_곧",
+   "expression": "아침상을 물리기도 전",
+   "description": "왓슨이 집을 나서기 직전의 아침 시각",
+   "timeline": "main",
+   "source_text": "아내는 아침상을 물리기도 전에 내가 왕진 가방을 꺼내는 것을 보고",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "아침에 왕진 가방을 챙겨 나선 왓슨",
+   "summary": "왓슨은 아침상을 물리기 전 왕진 가방을 준비하고, 아내의 만류에도 점심 전 복귀를 약속한 뒤 가방에 청진기·붕대·약병을 챙겨 집을 나선다.",
+   "location_id": "NEW:왓슨의_저택",
+   "time_id": "NEW:아침상_식후_곧",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002",
+    "CHAR_041"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "NEW:왕진_가방"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "NEW:왕진_가방",
+     "op": "add",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "내가 왕진 가방을 꺼내는 것을 보고"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "청진기, 붕대, 약병 (가방 안에 넣어 둠)",
+     "source_text": "청진기와 붕대, 약병 몇 개를 언제나 두던 자리에 넣고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "모자와 지팡이 (현관에서 건네받음)",
+     "source_text": "하녀가 현관에서 모자와 지팡이를 건네주었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "의료 행위 가능 (청진기·붕대·약병을 사용하는 의사)",
+     "source_text": "청진기와 붕대, 약병 몇 개를 언제나 두던 자리에 넣고"
+    },
+    {
+     "entity": "CHAR_041",
+     "field": "ability",
+     "assumes": "말할 수 있음 (반박 발화)",
+     "source_text": "\"오늘은 안스트루터에게 맡겨도 되잖아요.\""
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "오늘의 왕진 거리는 멀지 않으며 점심 전 귀가가 가능하다고 스스로 판단함",
+     "via": "inference",
+     "retained": true,
+     "source_text": "\"멀지 않은 곳이야. 점심 전에는 돌아올 거네.\""
+    },
+    {
+     "character_id": "CHAR_041",
+     "info": "남편이 오늘 다른 의사(안스트루터)에게 일을 맡길 수 있었다는 사실",
+     "via": "inference",
+     "retained": true,
+     "source_text": "\"오늘은 안스트루터에게 맡겨도 되잖아요.\""
+    }
+   ],
+   "cause": "왕진 가방을 꺼내려 한 행위와 아내의 만류",
+   "result": "왓슨이 왕진 가방과 모자·지팡이를 챙겨 집을 나서고, 아내는 창가에서 손을 흔든다",
+   "source_text": "아내는 아침상을 물리기도 전에 내가 왕진 가방을 꺼내는 것을 보고 눈살을 찌푸렸다. \"오늘은 안스트루터에게 맡겨도 되잖아요.\" \"멀지 않은 곳이야. 점심 전에는 돌아올 거네.\" 청진기와 붕대, 약병 몇 개를 언제나 두던 자리에 넣고죔쇠를 채우는 데는 일 분이면 졌다. 군대 시절이 남긴 습관이 이럴 때는 요긴했다. 하녀가 현관에서 모자와 지팡이를 건네주었다. 문을 나서며 돌아보니 아내가 창가에 서서 손을 흔들고 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:06:52Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 32.12
+ }
+}

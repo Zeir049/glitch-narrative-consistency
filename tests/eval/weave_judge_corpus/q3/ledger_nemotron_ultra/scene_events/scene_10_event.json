@@ -1,0 +1,160 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "NEW:필터_상자",
+   "name": "필터 상자",
+   "description": "간이침대 벽면 선반에 놓인 필터 상자",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "필터 상자",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "NEW:벨트_상자",
+   "name": "벨트 상자",
+   "description": "간이침대 벽면 선반에 놓인 벨트 상자",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "벨트 상자",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "NEW:배관_이음쇠",
+   "name": "배관 이음쇠",
+   "description": "간이침대 벽면 선반에 놓인 배관 이음쇠",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "배관 이음쇠",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_003",
+   "name": "황동 밸브",
+   "description": "간이침대 벽면 선반의 작은 상자에 든 황동 밸브 예비품",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "그 옆에 황동 밸브 예비품이 든 작은 상자가 있었고",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_025",
+   "name": "배선용 점퍼 케이블 상자",
+   "description": "간이침대 벽면 선반에 놓인 점퍼 케이블 상자",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "그 옆이 점퍼 케이블 상자였다",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "NEW:4월_간이침대_관찰_시점",
+   "expression": "4월 중순경 (간이침대 선반 관찰 시점)",
+   "description": "서율이 간이침대 선반을 관찰하는 시점, 4월과 같다는 언급으로 미루어 4월 중순",
+   "timeline": "main",
+   "source_text": "몇 개가 있어야 하는지 모르는 것은 4월과 같았다",
+   "certainty": "inferred"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "간이침대 선반 물품 관찰",
+   "summary": "서율이 간이침대 벽면 선반에 놓인 필터 상자, 벨트 상자, 배관 이음쇠, 황동 밸브 예비품 상자, 점퍼 케이블 상자를 관찰한다.",
+   "location_id": "LOC_012",
+   "time_id": "NEW:4월_간이침대_관찰_시점",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "NEW:필터_상자",
+    "NEW:벨트_상자",
+    "NEW:배관_이음쇠",
+    "OBJ_003",
+    "OBJ_025"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "NEW:필터_상자, NEW:벨트_상자, NEW:배관_이음쇠, OBJ_003, OBJ_025 (선반 위 물품들을 인지함)",
+     "source_text": "서율은 간이침대에 앉아 벽 세 면을 차지한 선반을 올려다보았다. 필터 상자, 벨트 상자, 배관 이음쇠. 그 옆에 황동 밸브 예비품이 든 작은 상자가 있었고, 그 옆이 점퍼 케이블 상자였다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "점퍼 케이블 상자 안의 개수를 모름",
+     "source_text": "서율은 점퍼 상자를 다시 열어 보지 않았다. 몇 개가 있어야 하는지 모르는 것은 4월과 같았다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "큰 상자들은 2층으로 올라갔음",
+     "source_text": "큰 상자들은 2층으로 올라갔고 이것들만 남았다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "남은 물품들이 무언가를 잠그거나 여는 물건이라는 것",
+     "source_text": "남은 것이 전부 무언가를 잠그거나 여는 물건이라는 생각이 들었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "간이침대 선반에 필터 상자, 벨트 상자, 배관 이음쇠, 황동 밸브 예비품 상자, 점퍼 케이블 상자가 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "필터 상자, 벨트 상자, 배관 이음쇠. 그 옆에 황동 밸브 예비품이 든 작은 상자가 있었고, 그 옆이 점퍼 케이블 상자였다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "점퍼 케이블 상자 안의 개수를 모름",
+     "via": "direct",
+     "retained": true,
+     "source_text": "서율은 점퍼 상자를 다시 열어 보지 않았다. 몇 개가 있어야 하는지 모르는 것은 4월과 같았다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "큰 상자들은 2층으로 올라갔고 작은 상자들만 남음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "큰 상자들은 2층으로 올라갔고 이것들만 남았다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "남은 물품들이 전부 무언가를 잠그거나 여는 물건임",
+     "via": "inference",
+     "retained": true,
+     "source_text": "남은 것이 전부 무언가를 잠그거나 여는 물건이라는 생각이 들었다."
+    }
+   ],
+   "cause": "서율이 간이침대에 앉아 선반을 올려다봄",
+   "result": "선반 위 물품들을 확인하고 그 성격을 파악함",
+   "source_text": "서율은 간이침대에 앉아 벽 세 면을 차지한 선반을 올려다보았다. 필터 상자, 벨트 상자, 배관 이음쇠. 그 옆에 황동 밸브 예비품이 든 작은 상자가 있었고, 그 옆이 점퍼 케이블 상자였다. 서율은 점퍼 상자를 다시 열어 보지 않았다. 몇 개가 있어야 하는지 모르는 것은 4월과 같았다. 큰 상자들은 2층으로 올라갔고 이것들만 남았다. 남은 것이 전부 무언가를 잠그거나 여는 물건이라는 생각이 들었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:44:28Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 33.05
+ }
+}

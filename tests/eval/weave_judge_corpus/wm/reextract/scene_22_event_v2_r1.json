@@ -1,0 +1,237 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 1,
+  "batch_id": "T2-R1-B",
+  "scene_id": "scene_22",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_22.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:36:26Z",
+  "worldview_rules": [
+    {
+      "rule_id": "NEW:로봇_비개입_관행",
+      "content": "쓰러진 사람에게 로봇은 반응하지 않고, 사람이 스스로 일어나는 것이 통례다.",
+      "description": "공원에서 중년 남자가 쓰러져도 주변 로봇 누구도 움직이지 않으며, 알라인은 이를 당연한 관행으로 설명한다.",
+      "source_text": "원래 저런 건 사람이 알아서 일어나는 거예요. / 로봇이 일일이 반응하면 서로 피곤하잖아요?",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "쓰러진 남자를 보고 반사적으로 주변 로봇들을 둘러보며 도움을 요청한 화자.",
+      "traits": [
+        {
+          "trait": "위급 상황에 반사적으로 주위에 도움을 요청하는 성격",
+          "trait_type": "personality",
+          "source_text": "나는 반사적으로 주변의 로봇들을 둘러보았다. / \"저기요! 사람이 쓰러졌는데요?!\"",
+          "certainty": "inferred"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S22_1",
+      "source_text": "나는 반사적으로 주변의 로봇들을 둘러보았다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_007",
+      "name": "알라인 쉭살 (Allein Schicksal)",
+      "aliases": ["알라인"],
+      "entity_type": "person",
+      "description": "화자와 동행 중이며, 쓰러진 사람에 대한 로봇의 비개입 관행을 대수롭지 않게 설명한다.",
+      "traits": [
+        {
+          "trait": "어깨를 으쓱하며 대수롭지 않게 반응하는 습관",
+          "trait_type": "habit",
+          "source_text": "동행하던 알라인이 어깨를 으쓱했다.",
+          "certainty": "inferred"
+        },
+        {
+          "trait": "존댓말로 가볍게 되묻는 말투",
+          "trait_type": "speech",
+          "source_text": "로봇이 일일이 반응하면 서로 피곤하잖아요?",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S22_1",
+      "source_text": "동행하던 알라인이 어깨를 으쓱했다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "NEW:쓰러진_중년_남자",
+      "name": "쓰러진 중년 남자",
+      "aliases": [],
+      "entity_type": "person",
+      "description": "공원 한복판에서 쓰러졌다가 혼자 힘으로 일어난 중년 남자.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S22_1",
+      "source_text": "공원 한복판에서 중년 남자가 픽 쓰러졌다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "NEW:공원의_로봇들",
+      "name": "공원의 로봇들",
+      "aliases": ["가로수 옆의 로봇", "벤치 뒤의 로봇"],
+      "entity_type": "robot",
+      "description": "공원 곳곳에 있으나 사람이 쓰러져도 미동조차 하지 않은 로봇들.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S22_1",
+      "source_text": "가로수 옆의 로봇도, 벤치 뒤의 로봇도, 미동조차 없었다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC_007",
+      "name": "공원",
+      "description": "중년 남자가 쓰러진 공원. 원문은 '공원'으로만 지칭하며, 기존 원호형 공원(LOC_007)으로 참조했다.",
+      "source_text": "공원 한복판에서 중년 남자가 픽 쓰러졌다.",
+      "certainty": "inferred"
+    }
+  ],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S22_1",
+      "scene_id": "scene_22",
+      "order": 1,
+      "title": "공원에서 쓰러진 남자와 반응하지 않는 로봇들",
+      "summary": "공원 한복판에서 중년 남자가 쓰러지자 화자가 주변 로봇들에게 도움을 요청하지만 어떤 로봇도 움직이지 않는다. 동행하던 알라인이 사람이 알아서 일어나는 것이 원래 그런 것이라 설명하고, 남자는 혼자 끙끙대다 일어나 옷을 턴다.",
+      "location_id": "LOC_007",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_002", "CHAR_007", "NEW:쓰러진_중년_남자"],
+      "witness_character_ids": ["NEW:공원의_로봇들"],
+      "main_actor_character_id": "CHAR_002",
+      "objects": [],
+      "state_changes": [
+        {
+          "entity": "NEW:쓰러진_중년_남자",
+          "field": "body_status",
+          "from": "서서 이동 중",
+          "to": "쓰러져 있음",
+          "op": "set",
+          "volatility": "transient",
+          "decays_to": "서서 이동 중",
+          "certainty": "explicit",
+          "source_text": "공원 한복판에서 중년 남자가 픽 쓰러졌다.",
+          "volatility_reason": "원문에서 남자가 혼자 일어나 해소되는 일시적 상태"
+        },
+        {
+          "entity": "NEW:쓰러진_중년_남자",
+          "field": "body_status",
+          "from": "쓰러져 있음",
+          "to": "혼자 일어나 옷을 턴 상태",
+          "op": "set",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "남자는 한참을 혼자 끙끙대다 일어나 옷을 털었다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "from": "unknown",
+          "to": "로봇은 쓰러진 사람에게 반응하지 않는 것이 통례",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "원래 저런 건 사람이 알아서 일어나는 거예요."
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "not_knows: 로봇이 쓰러진 사람에게 반응하지 않는 것이 이 세계의 통례",
+          "source_text": "\"저기요! 사람이 쓰러졌는데요?!\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "주변 로봇들이 위급 상황에 반응할 수 있는 존재라고 여김",
+          "source_text": "나는 반사적으로 주변의 로봇들을 둘러보았다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "body_status",
+          "assumes": "미래 세계 현장에 있는 신체로 주변을 둘러보고 있음",
+          "source_text": "나는 반사적으로 주변의 로봇들을 둘러보았다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "음성으로 크게 외쳐 부를 수 있음",
+          "source_text": "\"저기요! 사람이 쓰러졌는데요?!\""
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "쓰러진 사람에게 로봇이 개입하지 않는 것이 통상적 관행임을 이미 알고 있음",
+          "source_text": "원래 저런 건 사람이 알아서 일어나는 거예요."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "body_status",
+          "assumes": "어깨를 으쓱하는 동작이 가능한 신체로 화자와 동행 중",
+          "source_text": "동행하던 알라인이 어깨를 으쓱했다."
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "ability",
+          "assumes": "음성 대화 가능",
+          "source_text": "로봇이 일일이 반응하면 서로 피곤하잖아요?"
+        },
+        {
+          "entity": "NEW:쓰러진_중년_남자",
+          "field": "body_status",
+          "assumes": "외부 도움 없이 스스로 일어설 수 있는 신체",
+          "source_text": "남자는 한참을 혼자 끙끙대다 일어나 옷을 털었다."
+        },
+        {
+          "entity": "NEW:쓰러진_중년_남자",
+          "field": "ability",
+          "assumes": "자력 기립 가능하나 상당한 시간이 걸림",
+          "source_text": "한참을 혼자 끙끙대다"
+        },
+        {
+          "entity": "NEW:공원의_로봇들",
+          "field": "ability",
+          "assumes": "쓰러진 인간에게 자동으로 반응·개입하지 않음",
+          "source_text": "아무도 움직이지 않았다. / 가로수 옆의 로봇도, 벤치 뒤의 로봇도, 미동조차 없었다."
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "이 세계에서는 쓰러진 사람에게 로봇이 반응하지 않고 사람이 알아서 일어난다",
+          "via": "told",
+          "retained": true,
+          "source_text": "원래 저런 건 사람이 알아서 일어나는 거예요. / 로봇이 일일이 반응하면 서로 피곤하잖아요?"
+        }
+      ],
+      "cause": "공원 한복판에서 중년 남자가 갑자기 쓰러졌다.",
+      "result": "어떤 로봇도 반응하지 않았고, 남자는 혼자 일어났으며 거리는 다시 평온해졌다. 화자는 로봇의 비개입 관행을 알게 되었다.",
+      "source_text": "공원 한복판에서 중년 남자가 픽 쓰러졌다. … 아무 일도 없었다는 듯, 거리는 다시 평화로웠다.",
+      "certainty": "explicit"
+    }
+  ]
+}

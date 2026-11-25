@@ -1,0 +1,110 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:그날_오후",
+   "expression": "그날 오후",
+   "description": "못가에서 말다툼이 있었던 시각",
+   "timeline": "main",
+   "source_text": "그날 오후 못가를 지나던 낯선 행인이 두 사람의 말다툼을 들었다",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "못가에서 레스트레이드가 낯선 행인의 진술을 보고함",
+   "summary": "레스트레이드가 수첩을 펼쳐, 못가를 지나던 정체불명의 행인이 두 사람의 말다툼을 들었다는 진술을 홈즈에게 보고한다.",
+   "location_id": "NEW:못가_풀밭",
+   "time_id": "NEW:그날_오후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_018",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_018",
+   "objects": [
+    "OBJ_009"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_018",
+     "field": "location",
+     "from": "unknown",
+     "to": "NEW:못가_풀밭",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "레스트레이드가 수첩을 펼쳤다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "unknown",
+     "to": "NEW:못가_풀밭",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "홈즈는 젖은 풀밭을 내려다보고 있었다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_018",
+     "field": "possesses",
+     "assumes": "OBJ_009 (수첩을 펼침)",
+     "source_text": "레스트레이드가 수첩을 펼쳤다"
+    },
+    {
+     "entity": "CHAR_018",
+     "field": "knows",
+     "assumes": "못가에서 두 사람의 말다툼을 목격한 정체불명의 행인이 존재하며, 그 행인은 이름과 행방이 불명임",
+     "source_text": "그날 오후 못가를 지나던 낯선 행인이 두 사람의 말다툼을 들었다고 했습니다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "not_knows: 행인이 어느 쪽에서 접근했는지 (레스트레이드의 수첩에 미기재)",
+     "source_text": "레스트레이드는 수첩을 넘겼지만 거기까지는 적혀 있지 않았다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "못가에서 정체불명의 행인이 두 사람의 말다툼을 목격했다는 진술이 존재함 (행인의 이름·행방 불명)",
+     "via": "told",
+     "retained": true,
+     "source_text": "그날 오후 못가를 지나던 낯선 행인이 두 사람의 말다툼을 들었다고 했습니다"
+    }
+   ],
+   "cause": "레스트레이드가 사건 현장 인근에서 수집한 목격 정보를 홈즈에게 전달하기 위해",
+   "result": "홈즈는 행인의 접근 방향을 묻지만, 레스트레이드의 수첩에는 그 정보가 기재되어 있지 않음이 확인됨",
+   "source_text": "레스트레이드가 수첩을 펼쳤다. \"그날 오후 못가를 지나던 낯선 행인이 두 사람의 말다툼을 들었다고 했습니다.\" 그가 말했다. \"이름도 모르고 어디로 갔는지도 모릅니다만, 진술은 분명했습니다.\" 홈즈는 젖은 풀밭을 내려다보고 있었다. 갈대가 못을 빙 둘러 서 있었고 그 너머로는 빽빽한 숲이었다. \"그 사람이 어느 쪽에서 들어왔다고 하던가요.\" 그가 물었다. 레스트레이드는 수첩을 넘겼지만 거기까지는 적혀 있지 않았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-31T06:27:10Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 11.69
+ }
+}

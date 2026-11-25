@@ -1,0 +1,156 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "카림, 설비 일지 확인 및 기록",
+   "summary": "카림이 태블릿으로 지난주 설비 일지 수치를 확인하고 오늘 수치 0.9를 입력해 저장한다.",
+   "location_id": "LOC_007",
+   "time_id": "TIME_070",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_027",
+    "OBJ_012"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_012",
+     "field": "body_status",
+     "from": "5월 6일까지 기록됨",
+     "to": "5월 20일 0.9 기록 추가됨",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "5월 4일 1.2, 5일 1.0, 6일 0.9. 숫자를 확인하고 오늘 칸에 0.9를 입력했다. 저장."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "OBJ_027 (태블릿 소지)",
+     "source_text": "카림은 태블릿을 켜고 설비 일지를 열었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "설비 일지 조작법 및 과거 수치(1.2, 1.0, 0.9) 인지",
+     "source_text": "손가락으로 화면을 쓸어 지난주로 돌아갔다. 5월 4일 1.2, 5일 1.0, 6일 0.9. 숫자를 확인하고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "장갑 낀 손으로 태블릿 조작 가능",
+     "source_text": "기름 묻은 장갑으로도 눌리는 것이 좋았다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "오늘(5월 20일) 설비 수치 0.9 기록",
+     "via": "direct",
+     "retained": true,
+     "source_text": "오늘 칸에 0.9를 입력했다. 저장."
+    }
+   ],
+   "cause": "정기 점검 및 기록 업무",
+   "result": "설비 일지에 5월 20일 수치 0.9 추가 저장됨",
+   "source_text": "카림은 태블릿을 켜고 설비 일지를 열었다. 손가락으로 화면을 쓸어 지난주로 돌아갔다. 5월 4일 1.2, 5일 1.0, 6일 0.9. 숫자를 확인하고 오늘 칸에 0.9를 입력했다. 저장. 화면이 한 번 깜박였다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "카림, 태블릿 내려놓고 공구 준비",
+   "summary": "카림이 태블릿을 작업대 위에 엎어놓고 공구를 집으며 발전기실 작업 준비를 한다.",
+   "location_id": "LOC_007",
+   "time_id": "TIME_070",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_027"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "OBJ_027",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "카림은 태블릿을 작업대 위에 엎어 놓고 공구를 집었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "작업용 공구 세트 (소지 시작)",
+     "source_text": "공구를 집었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "기름 묻은 장갑 착용 중",
+     "source_text": "기름 묻은 장갑으로도 눌리는 것이 좋았다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "두 사건은 같은 장소(발전기실)에서 연속된 시간대에 발생하며, 태블릿 기록 완료 후 바로 현장 작업으로 전환한다.",
+     "source_text": "화면이 한 번 깜박였다. 카림은 태블릿을 작업대 위에 엎어 놓고 공구를 집었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "발전기실에서 태블릿 화면 밝기를 최저로 낮춰야 장갑 조작이 용이함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "발전기실에서 태블릿을 쓸 때는 화면 밝기를 최저로 낮췄다. 기름 묻은 장갑으로도 눌리는 것이 좋았다."
+    }
+   ],
+   "cause": "설비 일지 기록 완료 후 현장 점검·작업 개시",
+   "result": "태블릿 작업대 보관, 공구 착수 준비 완료",
+   "source_text": "카림은 태블릿을 작업대 위에 엎어 놓고 공구를 집었다. 발전기실에서 태블릿을 쓸 때는 화면 밝기를 최저로 낮췄다. 기름 묻은 장갑으로도 눌리는 것이 좋았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:59:54Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 39.34
+ }
+}

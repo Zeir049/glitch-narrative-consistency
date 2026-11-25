@@ -1,0 +1,71 @@
+# 배포용 오버레이 — 기본 compose(db/redis, adminer 는 tools 프로필) 위에 api·worker 컨테이너를 얹는다.
+# (AI 서버 없는 복사본: 파이프라인은 PIPELINE_MODE 로 고른다 — 기본 fake)
+#
+#   기동:  docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build api worker
+#   중지:  docker compose -f docker-compose.yml -f docker-compose.prod.yml stop api worker
+#
+# 외부 노출은 api 의 127.0.0.1:8000 하나뿐이다 — 그 앞에 리버스 프록시(Caddy/nginx)나
+# Tailscale serve 를 둔다. db·redis 는 컨테이너 내부망으로만 오간다.
+#
+# api는 시작 시 alembic 마이그레이션을 적용한 뒤 서버를 띄운다.
+# DATABASE/REDIS 주소는 컨테이너 네트워크 기준(서비스명)으로 여기서 강제하고,
+# 나머지 설정(JWT, 기능 플래그…)은 .env 를 그대로 쓴다.
+#
+# .env 에 반드시 있어야 하는 값 (없으면 compose 가 기동을 거부한다):
+#   POSTGRES_PASSWORD, REDIS_PASSWORD
+#
+# APP_ENV=prod 를 여기서 강제한다 — 아래 .env 값이면 api·worker 가 기동을 거부한다(app/core/config.py):
+#   JWT_SECRET 이 자리표시자이거나 32자 미만 / FIREBASE_MODE=fake / SEED_ON_STARTUP=true
+x-backend-env: &backend-env
+  APP_ENV: prod
+  DATABASE_URL: postgresql+asyncpg://glitch:${POSTGRES_PASSWORD:?.env 에 POSTGRES_PASSWORD 를 설정하세요}@db:5432/glitch_integrated
+  DATABASE_URL_SYNC: postgresql+psycopg2://glitch:${POSTGRES_PASSWORD:?.env 에 POSTGRES_PASSWORD 를 설정하세요}@db:5432/glitch_integrated
+  REDIS_URL: redis://:${REDIS_PASSWORD}@redis:6379/0
+  QUEUE_MODE: arq
+  ENABLE_API_DOCS: "false"
+  PIPELINE_MODE: ${PIPELINE_MODE:-fake}
+
+services:
+  db:
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?.env 에 POSTGRES_PASSWORD 를 설정하세요}
+
+  api:
+    build: .
+    container_name: glitch-api
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8000:8000"
+    env_file: [.env]
+    environment: *backend-env
+    command: sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000"
+    volumes:
+      - glitch_uploads:/srv/glitch/uploads
+      # Weave 작품 상태(레지스트리·회차별 사건 로그) — DB 와 같은 시점으로 백업할 것
+      - glitch_weave_data:/srv/glitch/weave_data
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  worker:
+    build: .
+    container_name: glitch-worker
+    restart: unless-stopped
+    env_file: [.env]
+    environment: *backend-env
+    command: arq app.workers.worker.WorkerSettings
+    volumes:
+      - glitch_uploads:/srv/glitch/uploads
+      # Weave 작품 상태(레지스트리·회차별 사건 로그) — DB 와 같은 시점으로 백업할 것
+      - glitch_weave_data:/srv/glitch/weave_data
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+volumes:
+  glitch_uploads:
+  glitch_weave_data:

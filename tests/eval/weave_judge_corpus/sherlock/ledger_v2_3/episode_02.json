@@ -1,0 +1,3711 @@
+{
+ "schema_version": 2,
+ "episode": 2,
+ "worldview_rules": [
+  {
+   "rule_id": "RULE_001",
+   "content": "보헤미아 왕(오름슈타인 대공)은 현재 런던에 랭엄 호텔에 '폰 크람 백작'으로 위장 체류 중이다.",
+   "description": "왕이 익명으로 와서 직접 사건을 의뢰하고 있으며, 호텔에서 가명으로 찾을 수 있다고 명시함.",
+   "source_text": "물론이오. 랭엄 호텔에서 폰 크람 백작이라는 이름으로 나를 찾을 수 있소.",
+   "certainty": "explicit"
+  },
+  {
+   "rule_id": "RULE_002",
+   "content": "비밀은 이 년간 유지해야 한다. 이 기간이 지나면 사건의 중요성이 사라진다.",
+   "description": "왕이 의뢰 시 요구한 비밀 유지 조건.",
+   "source_text": "먼저 두 사람 모두에게 이 년 동안 절대 비밀을 지킬 것을 약속받아야겠소. 그 시간이 지나면 이 일은 더 이상 중요하지 않을 것이오.",
+   "certainty": "explicit"
+  }
+ ],
+ "characters": [
+  {
+   "character_id": "CHAR_009",
+   "name": "보헤미아 왕",
+   "aliases": [
+    "카셀펠슈타인 대공",
+    "빌헬름 고츠라이히 지기스몬트 폰 오름슈타인",
+    "오름슈타인 대공",
+    "폰 크람 백작"
+   ],
+   "entity_type": "person",
+   "description": "보헤미아 세습 왕. 현재 런던에 '폰 크람 백작'으로 위장해 체류 중.",
+   "traits": [
+    {
+     "trait": "거대한 체격(6피트 6인치 이상, 헤라클레스 같은 가슴과 팔다리)",
+     "trait_type": "appearance",
+     "source_text": "키가 6피트 6인치는 족히 되어 보이는 한 남자가 헤라클레스와 같은 가슴과 팔다리를 하고 들어왔다.",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "화려하고 야만적인 호사스러움의 옷차림(영국 기준으로는 좋지 못한 취향)",
+     "trait_type": "appearance",
+     "source_text": "그의 옷차림은 영국에서라면 좋지 못한 취향에 가깝다고 여겨질 만한 화려함으로 넘쳐흘렀다.",
+     "certainty": "explicit"
+    },
+    {
+     "trait": "뚜렷한 독일 억양이 섞인 짙고 거친 목소리",
+     "trait_type": "speech",
+     "source_text": "그가 짙고 거친 목소리로, 뚜렷한 독일 억양이 섞인 채 물었다.",
+     "certainty": "explicit"
+    }
+   ],
+   "first_appearance_event_id": "EVENT_2_8",
+   "source_text": "보헤미아 종이에 편지를 쓰고 얼굴을 드러내기보다 가면을 쓰는 것을 선호하는 이 독일인",
+   "certainty": "explicit"
+  },
+  {
+   "character_id": "CHAR_035",
+   "name": "왕의 마부",
+   "aliases": [],
+   "entity_type": "person",
+   "description": "보헤미아 왕을 태우고 쌍두마차를 몰고 온 마부.",
+   "traits": [],
+   "first_appearance_event_id": "EVENT_2_9",
+   "source_text": "말발굽 소리와 연석에 마찰하는 바퀴 소리가 날카롭게 들려왔고",
+   "certainty": "inferred"
+  },
+  {
+   "name": "얼스터 코트",
+   "description": "지나가던 호리호리한 청년이 입고 있던 얼스터 코트",
+   "first_appearance_event_id": "EVENT_2_42",
+   "source_text": "그 인사는 서둘러 지나가던 얼스터 코트 차림의 호리호리한 청년에게서 나온 것 같았다",
+   "certainty": "explicit",
+   "character_id": "CHAR_036"
+  }
+ ],
+ "locations": [
+  {
+   "location_id": "LOC_010",
+   "name": "베이커가 응접실",
+   "description": "홈즈의 거실로, 의뢰인 접대용 안락의자가 있는 공간.",
+   "source_text": "그 안락의자에 앉게, 박사, 그리고 우리에게 최선의 주의를 기울여 주게.",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_017",
+   "name": "랭엄 호텔",
+   "description": "보헤미아 왕이 '폰 크람 백작'이라는 이름으로 체류 중인 런던의 호텔.",
+   "source_text": "물론이오. 랭엄 호텔에서 폰 크람 백작이라는 이름으로 나를 찾을 수 있소.",
+   "certainty": "explicit"
+  },
+  {
+   "location_id": "LOC_018",
+   "name": "세인트 모니카 교회",
+   "description": "에지웨어 로드에 위치한 교회. 고드프리 노턴과 아이린 애들러의 결혼식이 거행된 장소.",
+   "source_text": "에지웨어 로드의 세인트 모니카 교회로",
+   "certainty": "explicit"
+  }
+ ],
+ "objects": [
+  {
+   "object_id": "OBJ_017",
+   "name": "섀미가죽 주머니",
+   "description": "왕이 비용 명목으로 탁자 위에 놓았던 가죽 주머니. 금화 300파운드와 지폐 700파운드가 들어 있음.",
+   "source_text": "왕은 망토 아래에서 두툼한 섀미가죽 주머니를 꺼내 탁자 위에 놓았다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_018",
+   "name": "영수증",
+   "description": "홈즈가 섀미가죽 주머니 인수에 대해 수첩에 휘갈겨 쓴 영수증.",
+   "source_text": "홈즈는 수첩 한 장에 영수증을 휘갈겨 써서 그에게 건넸다.",
+   "certainty": "explicit"
+  },
+  {
+   "object_id": "OBJ_019",
+   "name": "에메랄드 뱀 반지",
+   "description": "보헤미아 왕이 손가락에서 빼낸 보답용 반지",
+   "first_appearance_event_id": "EVENT_2_51",
+   "source_text": "그는 손가락에서 에메랄드 뱀 반지를 빼내 손바닥 위에 올려 내밀었다",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "TIME_002",
+   "expression": "1888년 3월 20일",
+   "description": "왓슨이 베이커가를 방문한 그 밤",
+   "timeline": "main",
+   "source_text": "어느 날 밤—1888년 3월 20일이었다—나는 환자를 왕진하고 돌아오는 길이었고",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_014",
+   "expression": "편지가 도착한 직후",
+   "description": "보헤미아 왕의 편지가 베이커가에 도착한 직후 시점.",
+   "timeline": "main",
+   "source_text": "그리고 내가 틀리지 않았다면, 우리의 모든 의문을 풀어 줄 그가 지금 오는군.",
+   "certainty": "inferred"
+  },
+  {
+   "time_id": "TIME_015",
+   "expression": "다음 월요일(약혼 공식 발표일)",
+   "description": "아이린 애들러가 사진을 보낼 예정일이자 왕의 약혼이 공식 발표되는 날. 현재 시점에서 사흘 후.",
+   "timeline": "main",
+   "source_text": "그녀가 약혼이 공식적으로 발표되는 날 그것을 보내겠다고 말했기 때문이오. 그날은 다음 월요일이오.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_016",
+   "expression": "내일 오후 세 시",
+   "description": "홈즈가 왓슨에게 브라이오니 로지 조사 결과를 이야기하기 위해 베이커가에 오기로 한 시각.",
+   "source_text": "내일 오후 세 시에 와 줄 수 있으면, 이 작은 사건에 대해 자네와 이야기를 나누고 싶네.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_017",
+   "expression": "다음 날 오후 (세 시 정각)",
+   "description": "왓슨이 약속대로 베이커가에 도착한 시각. 홈즈는 아직 돌아오지 않은 상태.",
+   "source_text": "세 시 정각에 나는 베이커가에 있었지만, 홈즈는 아직 돌아오지 않았다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_018",
+   "expression": "거의 네 시",
+   "description": "문이 열리고 술 취한 듯한 마부로 변장한 홈즈가 베이커가 응접실에 들어온 시각.",
+   "source_text": "문이 열린 것은 거의 네 시가 다 되어서였고",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_019",
+   "expression": "그날 아침 여덟 시가 조금 지난 시각",
+   "description": "홈즈가 실직한 마부의 변장으로 베이커가를 나선 시각.",
+   "source_text": "하숙집 주인은 그가 아침 여덟 시가 조금 지나 집을 나섰다고 알려 주었다.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_020",
+   "expression": "열두 시 이십오 분 전",
+   "description": "홈즈가 교회로 향하는 마차에 오른 시각. 결혼식 거행 시점 추정 근거.",
+   "source_text": "열두 시 이십오 분 전이었으니, 물론 무슨 일이 벌어지고 있는지는 뻔했네.",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_021",
+   "expression": "그날 밤",
+   "description": "브라이오니 로지 작전 직후 밤",
+   "timeline": "main",
+   "source_text": "나는 그날 밤 베이커가에서 묵었고",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_022",
+   "expression": "다음 날 아침",
+   "description": "왕이 베이커가로 찾아온 다음 날 아침",
+   "timeline": "main",
+   "source_text": "다음 날 아침 우리가 토스트와 커피를 앞에 두고 있을 때",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_023",
+   "expression": "아침 여덟 시",
+   "description": "홈즈가 왕과 브라이오니 로지 방문을 예정한 시각",
+   "timeline": "main",
+   "source_text": "아침 여덟 시일세",
+   "certainty": "explicit"
+  },
+  {
+   "time_id": "TIME_024",
+   "expression": "어제",
+   "description": "왕이 베이커가에 찾아온 날 기준으로 어제",
+   "timeline": "main",
+   "source_text": "결혼! 언제 말이오? / 어제입니다",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T14:25:19Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 36.55
+ },
+ "_merge": {
+  "spec": "handoff/chunked_extract_spec.md",
+  "chunks": [
+   "episode_02_c01.json",
+   "episode_02_c02.json",
+   "episode_02_c03.json",
+   "episode_02_c04.json",
+   "episode_02_c05.json"
+  ],
+  "unmapped_new": [
+   "NEW:가위_가는_사람",
+   "NEW:결혼_직후",
+   "NEW:결혼식_당시",
+   "NEW:군중_여러_명",
+   "NEW:근위병_A",
+   "NEW:근위병_B",
+   "NEW:근위병_두_명",
+   "NEW:나이_든_여인",
+   "NEW:대륙판_지명_사전",
+   "NEW:대륙판_지명_사전 (서가에서 꺼냄)",
+   "NEW:변장_직후",
+   "NEW:부랑자_A",
+   "NEW:부랑자_B",
+   "NEW:분홍빛_편지지",
+   "NEW:브라이오니_로지_앞_군중",
+   "NEW:성직자",
+   "NEW:소동_전_대화",
+   "NEW:소동_종료_후",
+   "NEW:소동_중",
+   "NEW:소동_직후",
+   "NEW:아이린의_편지",
+   "NEW:여섯_시_이십오_분_전후",
+   "NEW:왕과_아이린의_함께_찍힌_사진",
+   "NEW:이_편지_도망_직후",
+   "NEW:일곱_시_전",
+   "NEW:잘_차려입은_청년들"
+  ]
+ },
+ "events": [
+  {
+   "event_id": "EVENT_2_1",
+   "scene_id": "scene_2_1",
+   "order": 1,
+   "title": "서문: 홈즈에 대한 왓슨의 회상적 서술",
+   "summary": "왓슨이 결혼 후 홈즈를 거의 만나지 못하게 된 경위와, 홈즈가 범죄 연구에 매진하며 코카인과 약물 사이를 오가는 생활을 하고 있었음을 서술한다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "memory",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_008",
+    "CHAR_009"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "홈즈가 코카인과 약물 사이를 주마다 오가는 생활을 하고 있다는 것",
+     "source_text": "코카인과 야심 사이, 약물이 주는 몽롱함과 그 자신의 예리한 본성이 주는 격렬한 에너지 사이를 주마다 오갔다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "홈즈의 다양한 사건 해결 이력 (오데사 트레포프 살인, 트링코말리 앳킨슨 형제 사건, 네덜란드 왕가 임무)",
+     "source_text": "오데사에서 일어난 트레포프 살인 사건으로 그가 소환되었다는 것, 트링코말리에서 앳킨슨 형제의 기이한 비극을 해결했다는 것, 그리고 마지막으로 네덜란드 왕가를 위해 더없이 은밀하고 성공적으로 완수했다는 임무에 대한 것들이었다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "아이린 애들러가 고인이며, 홈즈의 기억에 미심쩍고 의문스럽게 남아 있다는 것",
+     "source_text": "미심쩍고 의문스러운 기억으로 남은 고인 아이린 애들러였다"
+    },
+    {
+     "entity": "CHAR_008",
+     "field": "alive",
+     "assumes": "false (고인)",
+     "source_text": "미심쩍고 의문스러운 기억으로 남은 고인 아이린 애들러였다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "왓슨이 결혼 후 홈즈를 거의 만나지 못하게 된 배경 설명",
+   "result": "홈즈의 현재 생활상과 사건 해결 이력이 정리됨",
+   "source_text": "내가 결혼한 뒤로 그 결혼이 우리 둘을 서로에게서 멀어지게 만들어, 나는 근래 홈즈를 거의 만나지 못하고 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_2",
+   "scene_id": "scene_2_2",
+   "order": 2,
+   "title": "왓슨이 베이커가를 방문",
+   "summary": "1888년 3월 20일 밤, 왕진에서 돌아오는 길에 왓슨이 베이커가를 방문해 홈즈를 다시 만난다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_002",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "어느 날 밤—1888년 3월 20일이었다—나는 환자를 왕진하고 돌아오는 길이었고(그 무렵 나는 다시 일반 개업의로 돌아와 있었다), 그 길이 나를 베이커가로 이끌었다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그의 방에는 환하게 불이 켜져 있었고, 내가 올려다보는 순간에도 나는 그의 크고 마른 몸이 블라인드에 비친 어두운 실루엣으로 두 번 지나가는 것을 보았다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "왕진 복귀 상태 (밖에서 돌아오는 중)",
+     "source_text": "환자를 왕진하고 돌아오는 길이었고"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "자신이 다시 일반 개업의로 활동하고 있다는 것",
+     "source_text": "그 무렵 나는 다시 일반 개업의로 돌아와 있었다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "거리를 서성이고 있을 수 있는 보행 가능 상태, 두 손을 등 뒤로 맞잡고 빠르고 열의에 찬 걸음으로 방 안을 왕복",
+     "source_text": "그는 머리를 가슴 위로 떨구고 두 손을 등 뒤로 맞잡은 채, 빠르고 열의에 찬 걸음으로 방 안을 서성이고 있었다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "추리와 관찰에 완전히 집중할 수 있는 정신 상태 (약물 몽상에서 깨어난 직후)",
+     "source_text": "그는 약물이 빚어낸 몽상에서 깨어나, 어떤 새로운 문제의 냄새를 뜨뜨겁게 좇고 있었다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈가 새 문제에 착수하여 열의에 찬 상태라는 것",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그는 다시 일에 착수한 것이었다. 그는 약물이 빚어낸 몽상에서 깨어나, 어떤 새로운 문제의 냄새를 뜨뜨겁게 좇고 있었다"
+    }
+   ],
+   "cause": "왕진에서 돌아오는 길에 베이커가를 지나가게 됨",
+   "result": "왓슨이 홈즈의 방으로 안내됨",
+   "source_text": "나는 초인종을 울렸고, 한때 부분적으로 내 방이기도 했던 그 방으로 안내되었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_3",
+   "scene_id": "scene_2_3",
+   "order": 3,
+   "title": "재회 후 홈즈의 외모 관찰에 대한 대화",
+   "summary": "홈즈가 왓슨의 체중 증가와 재개업을 추리해 맞히고, 왓슨은 감탄과 당혹을 표한다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_002",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_006"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "구두 안쪽에 굳은 진흙을 떼어낸 여섯 개의 칼자국이 있는 상태 (왼쪽 구두)",
+     "source_text": "불빛이 닿는 자네 왼쪽 구두 안쪽을 보니, 가죽이 거의 나란한 여섯 개의 칼자국으로 긁혀 있는 게 내 눈에 보이더군"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "오른손 검지에 질산은 검은 자국이 있는 신사 복장",
+     "source_text": "어떤 신사가 요오드포름 냄새를 풍기며, 오른손 검지에 질산은 검은 자국을 묻히고, 톱해트 오른쪽이 볼록하게 튀어나온 채—청진기를 그 안에 숨겨 놓았다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_006 (코담배/시가) — 시가 상자를 왓슨에게 던져 줌",
+     "source_text": "자신의 시가 상자를 던져 건네고"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_2",
+     "assumes": "왓슨이 왕진복에서 갈아입고 왔더라도 구두의 진흙 자국은 그대로 남아 있다 (왓슨은 '옷은 갈아입었으니'라고 말함)",
+     "source_text": "옷은 갈아입었으니 자네가 그걸 어떻게 추리해 냈는지 상상도 안 되는군"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈의 관찰력은 구두 안쪽의 칼자국, 손가락의 화학 약품 자국, 모자 안의 청진기 같은 미세한 흔적까지 읽어낸다는 것",
+     "via": "direct",
+     "retained": true,
+     "source_text": "불빛이 닿는 자네 왼쪽 구두 안쪽을 보니, 가죽이 거의 나란한 여섯 개의 칼자국으로 긁혀 있는 게 내 눈에 보이더군"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "자신이 7파운드 반 정도 쪘다는 것",
+     "via": "told",
+     "retained": true,
+     "source_text": "왓슨, 지난번 봤을 때보다 7파운드 반은 는 것 같은데"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "자신이 다시 일반 개업의로 돌아왔다는 것이 홈즈에게 드러났다는 것",
+     "via": "inference",
+     "retained": true,
+     "source_text": "그리고 다시 개업했군, 그것도 보이네"
+    }
+   ],
+   "cause": "왓슨이 방문하여 재회함",
+   "result": "두 사람이 본격적인 대화로 들어감",
+   "source_text": "“결혼 생활이 자네에게 잘 맞는 모양이군,” 그가 말했다. “왓슨, 지난번 봤을 때보다 7파운드 반은 는 것 같은데.”",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_4",
+   "scene_id": "scene_2_3",
+   "order": 4,
+   "title": "계단 개수 논쟁과 관찰 vs 보기의 차이",
+   "summary": "홈즈가 '보기는 하지만 관찰하지는 않는다'며, 베이커가 계단이 17개라고 단언해 왓슨을 놀라게 한다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_002",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "베이커가 계단이 정확히 17개라는 사실 (수백 번 보았고 관찰함)",
+     "source_text": "나는 그 계단이 열일곱 개라는 것을 알고 있네, 보기도 하고 관찰도 했으니까"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_2",
+     "assumes": "이 대화는 EVENT_2_2(왓슨의 방문)가 진행 중인 같은 자리, 같은 시간에서 일어남",
+     "source_text": "예를 들어, 자네는 현관에서 이 방으로 올라오는 계단을 여러 번 보았을 걸세"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "베이커가에서 응접실로 이어지는 계단이 17개라는 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "나는 그 계단이 열일곱 개라는 것을 알고 있네"
+    }
+   ],
+   "cause": "왓슨이 '나의 눈도 자네 눈만큼 좋다고 믿는다'고 말함",
+   "result": "홈즈의 '관찰 vs 보기' 원칙이 명확해짐",
+   "source_text": "“그렇겠지,” 그가 담배에 불을 붙이며 안락의자에 몸을 던지듯 앉으며 대답했다. “자네는 보기는 하지만, 관찰하지는 않아. 그 차이는 분명하네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_5",
+   "scene_id": "scene_2_3",
+   "order": 5,
+   "title": "분홍빛 편지지의 등장",
+   "summary": "홈즈가 분홍빛 편지지 한 장을 던져 주며 마지막 우편으로 왔다고 말하고, 왓슨에게 소리 내어 읽으라고 한다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_002",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "NEW:분홍빛_편지지"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "NEW:분홍빛_편지지",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "탁자 위에 펼쳐져 있던 두툼한 분홍빛 편지지 한 장을 던져 건넸다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "이 편지가 마지막 우편으로 도착했다는 사실 (왓슨에게 정보를 주기 전에도 알고 있었음)",
+     "source_text": "“마지막 우편으로 왔다네,” 그가 말했다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_3",
+     "assumes": "같은 자리·같은 시간에서 진행 중인 대화의 연속",
+     "source_text": "그건 그렇고, 자네가 이런 작은 문제들에 흥미가 있고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "이른바 '새 문제'의 정체가 분홍빛 편지이며, 오늘 마지막 우편으로 도착했다는 것",
+     "via": "direct",
+     "retained": true,
+     "source_text": "탁자 위에 펼쳐져 있던 두툼한 분홍빛 편지지 한 장을 던져 건넸다. “마지막 우편으로 왔다네,” 그가 말했다"
+    }
+   ],
+   "cause": "대화 도중 홈즈가 편지를 꺼냄",
+   "result": "왓슨이 편지를 읽게 됨",
+   "source_text": "그는 탁자 위에 펼쳐져 있던 두툼한 분홍빛 편지지 한 장을 던져 건넸다. “마지막 우편으로 왔다네,” 그가 말했다. “소리 내어 읽어 보게.”",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_6",
+   "scene_id": "scene_2_3",
+   "order": 6,
+   "title": "편지 내용 낭독",
+   "summary": "왓슨이 날짜·서명·주소 없는 분홍빛 편지를 소리 내어 읽는다. 내용은 오늘 밤 8시 15분 전에 가면을 쓴 신사가 방문하겠다는 것.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_002",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "NEW:분홍빛_편지지"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "NEW:분홍빛_편지지",
+     "field": "body_status",
+     "assumes": "날짜도, 서명도, 주소도 없는 무기명 상태",
+     "source_text": "그 편지에는 날짜도, 서명도, 주소도 없었다"
+    },
+    {
+     "entity": "NEW:분홍빛_편지지",
+     "field": "body_status",
+     "assumes": "두툼하고 질기고 빳빳한 종이, 한 묶음에 반 크라운이 넘는 값",
+     "source_text": "이런 종이는 한 묶음에 반 크라운 밑으로는 살 수 없을 걸세. 유난히 질기고 빳빳하군"
+    },
+    {
+     "entity": "NEW:분홍빛_편지지",
+     "field": "body_status",
+     "assumes": "빛에 비추면 'E', 'g', 'P', 'G', 't' 문자가 종이 질감에 짜여 있음",
+     "source_text": "빛에 비춰 보게. / 종이의 질감 속에 짜여 들어간 대문자 'E'와 소문자 'g', 그리고 'P', 대문자 'G'와 소문자 't'를 보았다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_5",
+     "assumes": "EVENT_2_5의 편지지가 그 자리에 그대로 놓여 있어 왓슨이 읽을 수 있는 상태",
+     "source_text": "그는 탁자 위에 펼쳐져 있던 두툼한 분홍빛 편지지 한 장을 던져 건넸다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "오늘 밤 8시 15분 전에 가면을 쓴 신사가 홈즈를 방문하겠다는 사실, 그리고 편지 작성자가 '최근 유럽의 어느 왕가에 대한 봉사'를 알고 있다는 것",
+     "via": "direct",
+     "retained": true,
+     "source_text": "오늘 밤 여덟 시 십오 분 전에, 선생을 찾아뵙고자 하는 신사가 있습니다"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "편지를 소리 내어 읽은 것은 왓슨의 목소리 (홈즈 본인이 이미 알고 있을 정보일 수 있음)",
+     "via": "inference",
+     "retained": true,
+     "source_text": "“소리 내어 읽어 보게.”"
+    }
+   ],
+   "cause": "홈즈가 편지를 던져 읽으라고 함",
+   "result": "편지 내용에 '오늘 밤 8시 15분 전 방문, 가면 착용, 유럽 왕가 봉사와 관련된 의뢰'임이 드러남",
+   "source_text": "“오늘 밤 여덟 시 십오 분 전에,” 편지에는 이렇게 쓰여 있었다. “선생을 찾아뵙고자 하는 신사가 있습니다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_7",
+   "scene_id": "scene_2_3",
+   "order": 7,
+   "title": "편지지 산지 추적 — 보헤미아산 결론",
+   "summary": "홈즈가 종이에 짜인 'E g P G t' 표식을 독일어 'Gesellschaft' 'Papier'로 해석하고, 대륙판 지명 사전을 뒤져 '에그리아'(보헤미아, 칼스바트 인근)에서 제조되었음을 추론한다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_002",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "NEW:분홍빛_편지지",
+    "NEW:대륙판_지명_사전"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "'Gt' = 독일어 'Gesellschaft' (회사)의 축약, 'P' = 'Papier' (종이)",
+     "source_text": "소문자 't'가 붙은 'G'는 'Gesellschaft'를 나타내는 것으로, 독일어로 '회사'라는 뜻이지"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "'Eg' = 지명, '에그리아'는 보헤미아 칼스바트 인근에 위치",
+     "source_text": "에글로, 에글로니츠—여기 있군, 에그리아. 독일어권 나라에 있군—보헤미아에, 칼스바트에서 멀지 않은 곳이야"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "NEW:대륙판_지명_사전 (서가에서 꺼냄)",
+     "source_text": "서가에서 두꺼운 갈색 책을 꺼내 왔다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_6",
+     "assumes": "EVENT_2_6의 편지지가 여전히 그 자리에 있으며, 그 종이 표식을 기준으로 분석이 진행됨",
+     "source_text": "빛에 비춰 보게"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "분홍빛 편지지는 보헤미아의 에그리아(칼스바트 인근)에서 만들어진 것",
+     "via": "inference",
+     "retained": true,
+     "source_text": "“그 종이는 보헤미아에서 만들어졌군,” 내가 말했다"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "편지 작성자는 보헤미아(또는 그 종이를 들여온 인물)와 관련 있을 가능성이 높다는 것",
+     "via": "inference",
+     "retained": true,
+     "source_text": "발렌슈타인이 죽은 곳으로 유명하며, 수많은 유리 공장과 제지 공장이 있다"
+    }
+   ],
+   "cause": "편지 종이에 짜인 문자 표식 발견",
+   "result": "편지지의 산지가 보헤미아 에그리아로 특정됨",
+   "source_text": "“그 종이는 보헤미아에서 만들어졌군,” 내가 말했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_8",
+   "scene_id": "scene_2_1",
+   "order": 1,
+   "title": "편지 분석을 통한 의뢰인 정체 추정",
+   "summary": "홈즈가 보헤미아 왕의 서신을 분석해 '보헤미아 종이를 쓴 독일인'이 편지 위에 있음을 추론하고, 그가 지금 도착할 거라고 말함.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_014",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "편지 문장 구조가 독일식 어순(자기 동사를 무례하게 다룸)을 따른다",
+     "source_text": "이 문장의 특이한 구조를 눈치챘나—'선생에 관한 이러한 평판을 저희는 각처에서 전해 들었습니다.' 프랑스인이나 러시아인이라면 그렇게 쓰지 않았을 걸세. 자기 동사를 그렇게 무례하게 다루는 것은 독일인뿐이지."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "편지가 쓰인 종이가 보헤미아산임을 식별함",
+     "source_text": "보헤미아 종이에 편지를 쓰고"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "베이커가에 보헤미아 왕의 의뢰 편지가 도착한 상태.",
+   "result": "홈즈가 의뢰인이 이미 문 앞에 도달했음을 인지함.",
+   "source_text": "그리고 내가 틀리지 않았다면, 우리의 모든 의문을 풀어 줄 그가 지금 오는군.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_9",
+   "scene_id": "scene_2_1",
+   "order": 2,
+   "title": "쌍두마차의 도착",
+   "summary": "쌍두마차의 말발굽·바퀴 소리, 이어 힘찬 초인종이 울려 의뢰인이 도착했음을 알림.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_014",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_035"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_035",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_035",
+     "field": "possesses",
+     "assumes": "쌍두마차(브루엄)와 말 두 필",
+     "source_text": "근사한 작은 브루엄 마차와 훌륭한 말 한 쌍이군."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_8",
+     "assumes": "EVENT_2_1의 편지를 쓴 바로 그 사람이 이 마차의 승객이다.",
+     "source_text": "그리고 내가 틀리지 않았다면, 우리의 모든 의문을 풀어 줄 그가 지금 오는군. / 말발굽 소리와 연석에 마찰하는 바퀴 소리가 날카롭게 들려왔고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "쌍두마차(브루엄)와 값비싼 말 한 쌍, 마차 전체 가격이 300기니 이상이라는 정보",
+     "via": "direct",
+     "retained": true,
+     "source_text": "근사한 작은 브루엄 마차와 훌륭한 말 한 쌍이군. 한 마리에 백오십 기니는 하겠어."
+    }
+   ],
+   "cause": "보헤미아 왕이 의뢰를 위해 베이커가를 방문함.",
+   "result": "초인종이 울리고, 홈즈가 의뢰인 출입을 준비함.",
+   "source_text": "말발굽 소리와 연석에 마찰하는 바퀴 소리가 날카롭게 들려왔고, 이어 초인종이 힘차게 울렸다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_10",
+   "scene_id": "scene_2_1",
+   "order": 3,
+   "title": "왓슨의 퇴장 시도",
+   "summary": "왓슨이 자리를 비키려 하나, 홈즈가 그의 손목을 붙잡고 동석을 고수함.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_014",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "홈즈가 손목을 붙잡을 만큼 근접해 있음",
+     "source_text": "홈즈가 내 손목을 붙잡아 다시 의자에 앉혔다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "왓슨이 의뢰인과의 만남에서 자리를 피하려 함.",
+   "result": "왓슨이 안락의자에 다시 앉아 만남에 동석하게 됨.",
+   "source_text": "나는 일어나 나가려 했지만, 홈즈가 내 손목을 붙잡아 다시 의자에 앉혔다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_11",
+   "scene_id": "scene_2_2",
+   "order": 4,
+   "title": "보헤미아 왕의 도착과 복면 등장",
+   "summary": "거대한 체격의 남자가 검은 가면을 쓴 채 응접실로 들어와 편지 수령 여부를 물음.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_014",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_009"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_009",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_009",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_010",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "키가 6피트 6인치는 족히 되어 보이는 한 남자가 헤라클레스와 같은 가슴과 팔다리를 하고 들어왔다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_009",
+     "field": "possesses",
+     "assumes": "챙이 넓은 모자",
+     "source_text": "그는 챙이 넓은 모자를 손에 들고 있었고"
+    },
+    {
+     "entity": "CHAR_009",
+     "field": "body_status",
+     "assumes": "얼굴에 검은 가면 착용(광대뼈 아래까지 내려옴)",
+     "source_text": "얼굴 윗부분에는 광대뼈 아래까지 내려오는 검은 가면을 쓰고 있었는데"
+    },
+    {
+     "entity": "CHAR_009",
+     "field": "knows",
+     "assumes": "홈즈에게 보낸 편지에 대한 회신을 받았다",
+     "source_text": "내 편지를 받았소?"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_8",
+     "assumes": "들어온 남자는 EVENT_2_1에서 편지를 쓴 독일인과 동일인물이다.",
+     "source_text": "보헤미아 종이에 편지를 쓰고 / 뚜렷한 독일 억양이 섞인 채 물었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "의뢰인의 외모(거대한 체격, 화려한 옷차림, 검은 가면, 독일 억양) 정보",
+     "via": "direct",
+     "retained": true,
+     "source_text": "키가 6피트 6인치는 족히 되어 보이는 한 남자가 헤라클레스와 같은 가슴과 팔다리를 하고 들어왔다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "의뢰인의 외모(거대한 체격, 화려한 옷차림, 검은 가면, 독일 억양) 정보",
+     "via": "direct",
+     "retained": true,
+     "source_text": "키가 6피트 6인치는 족히 되어 보이는 한 남자가 헤라클레스와 같은 가슴과 팔다리를 하고 들어왔다."
+    }
+   ],
+   "cause": "초인종과 노크 소리, 홈즈의 '들어오시오'.",
+   "result": "의뢰인이 응접실에 입장함.",
+   "source_text": "들어오시오! 홈즈가 말했다. / 키가 6피트 6인치는 족히 되어 보이는 한 남자가",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_12",
+   "scene_id": "scene_2_2",
+   "order": 5,
+   "title": "자격 확인과 비밀 유지 합의",
+   "summary": "의뢰인은 자신과 '폰 크람 백작' 칭호 모두 가짜임을 고백하고, 양측은 2년간 비밀을 유지하기로 약속함.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_014",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_009"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_009",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_009",
+     "field": "location",
+     "from": "LOC_010",
+     "to": "LOC_010",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "우리의 낯선 방문객이 다시 자리에 앉으며"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_009",
+     "field": "knows",
+     "assumes": "자신이 고용한 분(대공가)에게서 대리인으로 알려지고 싶지 않음",
+     "source_text": "나를 고용한 그 지엄하신 분께서는 자신의 대리인이 당신들에게 알려지지 않기를 원하시고"
+    },
+    {
+     "entity": "CHAR_009",
+     "field": "body_status",
+     "assumes": "얼굴에 가면을 계속 쓴 상태",
+     "source_text": "이 가면은 양해해 주시오"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_11",
+     "assumes": "EVENT_2_4에서 가면을 쓴 채 들어온 남자가 이 사건의 발화자로 동일 인물이다.",
+     "source_text": "우리의 낯선 방문객이 / 이 가면은 양해해 주시오"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "의뢰인이 '폰 크람 백작'이 아니라 보헤미아 대공가 소속의 가짜 칭호의 인물이라는 점",
+     "via": "direct",
+     "retained": true,
+     "source_text": "방금 내가 말한 칭호도 실은 정확히 내 것이 아님을 지금 바로 고백해야겠소."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "사건이 보헤미아 세습 왕가(오름슈타인 대공가)와 연루되어 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이 사안은 오름슈타인 대공가—보헤미아의 세습 왕가—를 연루시키고 있소."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "사건이 보헤미아 세습 왕가(오름슈타인 대공가)와 연루되어 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "이 사안은 오름슈타인 대공가—보헤미아의 세습 왕가—를 연루시키고 있소."
+    }
+   ],
+   "cause": "의뢰인이 가면과 가짜 칭호의 비밀을 풀어놓으며 사건 배경을 설명함.",
+   "result": "2년간의 비밀 유지 약속이 체결됨.",
+   "source_text": "먼저 두 사람 모두에게 이 년 동안 절대 비밀을 지킬 것을 약속받아야겠소.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_13",
+   "scene_id": "scene_2_2",
+   "order": 6,
+   "title": "가면 벗기와 정체 폭로",
+   "summary": "의뢰인이 자리에서 일어나 절망적으로 가면을 벗어 던지며 자신이 왕임을 고백함.",
+   "location_id": "LOC_010",
+   "time_id": "NEW:이_편지_도망_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_009"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_009",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_009",
+     "field": "body_status",
+     "from": "얼굴에 검은 가면 착용",
+     "to": "얼굴의 가면 제거됨",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "절망적인 몸짓과 함께 얼굴에서 가면을 뜯어내 바닥에 내던졌다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_009",
+     "field": "knows",
+     "assumes": "이미 자기 정체가 홈즈에게 간파되었음을 자각",
+     "source_text": "당신 말이 맞소. 나는 왕이오. 어찌 그것을 숨기려 하겠소?"
+    },
+    {
+     "entity": "CHAR_009",
+     "field": "body_status",
+     "assumes": "당시 황태자였으므로 약혼 발표에 따른 정식 권한 부족(서른 살짜리 황태자)",
+     "source_text": "그때 나는 아직 황태자였소. 젊었지. 지금도 겨우 서른이오."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_11",
+     "assumes": "EVENT_2_4의 가면을 쓴 남자가 보헤미아 왕 본인이다(가면을 벗자 정체가 드러남).",
+     "source_text": "당신 말이 맞소, 나는 왕이오. / 얼굴에서 가면을 뜯어내"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "의뢰인이 보헤미아 왕 빌헬름 고츠라이히 지기스몬트 폰 오름슈타인임이 직접 확인됨",
+     "via": "direct",
+     "retained": true,
+     "source_text": "나는 왕이오. 어찌 그것을 숨기려 하겠소?"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "의뢰인이 보헤미아 왕 본인임이 확인됨",
+     "via": "direct",
+     "retained": true,
+     "source_text": "나는 왕이오. 어찌 그것을 숨기려 하겠소?"
+    }
+   ],
+   "cause": "홈즈가 이미 왕의 정체를 알고 있음을 시사한 발언.",
+   "result": "왕이 가면을 벗고 정체를 명시적으로 고백함.",
+   "source_text": "그 남자는 의자에서 벌떡 일어나 걷잡을 수 없는 동요 속에 방 안을 오가며 서성였다. 그러고는 절망적인 몸짓과 함께 얼굴에서 가면을 뜯어내 바닥에 내던졌다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_14",
+   "scene_id": "scene_2_3",
+   "order": 7,
+   "title": "사건 경위 설명 요청",
+   "summary": "왕이 사건을 본격 설명하기 시작. 프라하에서 익명으로 왔다고 밝힘.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_014",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_009"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_009",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_009",
+     "field": "body_status",
+     "assumes": "창백하고 넓은 이마(안색이 창백함)",
+     "source_text": "창백하고 넓은 이마를 손으로 쓸어내리며"
+    },
+    {
+     "entity": "CHAR_009",
+     "field": "knows",
+     "assumes": "대리인에게 맡기면 대리인의 손아귀에 빠질 수 있다는 위험 인식",
+     "source_text": "사안이 너무나 미묘해서 대리인에게 맡겼다가는 스스로 그자의 손아귀에 들어가게 될 것 같았소."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_12",
+     "assumes": "왕은 비밀 유지 약속을 받은 뒤 사건 설명에 들어갔다.",
+     "source_text": "하지만 사안이 너무나 미묘해서 대리인에게 맡겼다가는"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "왕이 프라하에서 익명으로 직접 왔다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "나는 당신과 상의하기 위해 프라하에서 익명으로 왔소."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "왕이 프라하에서 익명으로 직접 왔다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "나는 당신과 상의하기 위해 프라하에서 익명으로 왔소."
+    }
+   ],
+   "cause": "홈즈의 '전하께서 사건을 말씀해 주신다면' 발언.",
+   "result": "왕이 사건 본론—아이린 애들러와의 관계—을 꺼내기 시작함.",
+   "source_text": "그럼, 부디 상의해 주십시오, 홈즈가 다시 눈을 감으며 말했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_15",
+   "scene_id": "scene_2_3",
+   "order": 8,
+   "title": "왓슨의 색인 검색",
+   "summary": "홈즈가 왓슨에게 자신의 인물 색인에서 아이린 애들러의 이력을 찾아보게 함. 그녀의 프로필이 유대인 랍비와 참모 지휘관 사이에 끼어 있음이 확인됨.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_014",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [
+    "CHAR_009"
+   ],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "사람과 사물에 관한 기사를 정리해 둔 색인 시스템",
+     "source_text": "그는 오래전부터 사람들과 사물에 관한 모든 기사를 정리해 두는 체계를 갖추고 있어서"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "색인에서 특정 인물을 즉석에서 찾을 수 있음",
+     "source_text": "이 경우 나는 그녀의 이력이 어느 유대인 랍비의 이력과 심해어에 관한 논문을 쓴 어느 참모 지휘관의 이력 사이에 끼워져 있는 것을 찾아냈다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_14",
+     "assumes": "사건 설명 중 '아이린 애들러' 이름이 거론된 직후 일어난 일이다.",
+     "source_text": "나는 그 유명한 모험가 아이린 애들러와 알게 되었소. / 박사, 미안하지만 내 색인에서 그녀를 찾아봐 주게"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "아이린 애들러의 약력: 1858년 뉴저지 출생, 콘트랄토, 라 스칼라 출연, 바르샤바 제국 오페라단 프리마돈나, 은퇴 후 런던 거주",
+     "via": "document",
+     "retained": true,
+     "source_text": "흠! 1858년 뉴저지 출생. 콘트랄토—흠! 라 스칼라—흠! 바르샤바 제국 오페라단 프리마돈나—그래! 오페라 무대에서 은퇴—하! 지금은 런던에 거주—그렇군!"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "아이린 애들러의 약력: 1858년 뉴저지 출생, 콘트랄토, 라 스칼라 출연, 바르샤바 제국 오페라단 프리마돈나, 은퇴 후 런던 거주",
+     "via": "document",
+     "retained": true,
+     "source_text": "흠! 1858년 뉴저지 출생. 콘트랄토—흠! 라 스칼라—흠! 바르샤바 제국 오페라단 프리마돈나—그래! 오페라 무대에서 은퇴—하! 지금은 런던에 거주—그렇군!"
+    }
+   ],
+   "cause": "왕이 사건 설명 도중 '아이린 애들러' 이름을 꺼냄.",
+   "result": "홈즈가 그녀의 약력을 확인하고 본론으로 들어감.",
+   "source_text": "박사, 미안하지만 내 색인에서 그녀를 찾아봐 주게, 홈즈가 눈을 뜨지 않은 채 중얼거렸다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_16",
+   "scene_id": "scene_2_3",
+   "order": 9,
+   "title": "사진 협박 사건의 전모",
+   "summary": "왕이 다섯 번의 회수 시도 실패와 사진의 존재, 그리고 클로틸데 로트만 폰 작센마이닝겐과의 약혼 발표 예정(다음 주 월요일)을 설명함.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_014",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_009"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_009",
+   "objects": [
+    "NEW:왕과_아이린의_함께_찍힌_사진"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_008",
+     "field": "possesses",
+     "assumes": "왕과의 합동 사진(회수 시도 대상)",
+     "source_text": "우리 둘이 함께 찍힌 사진이오."
+    },
+    {
+     "entity": "CHAR_008",
+     "field": "location",
+     "assumes": "현재 런던에 거주",
+     "source_text": "지금은 런던에 거주"
+    },
+    {
+     "entity": "CHAR_008",
+     "field": "knows",
+     "assumes": "왕의 약혼 발표 일정을 인지하고 있음",
+     "source_text": "그녀가 약혼이 공식적으로 발표되는 날 그것을 보내겠다고 말했기 때문이오."
+    },
+    {
+     "entity": "CHAR_009",
+     "field": "knows",
+     "assumes": "약혼 상대(클로틸데 로트만 폰 작센마이닝겐)의 가문이 원칙이 엄격함을 인지",
+     "source_text": "당신도 그 가문의 엄격한 원칙을 알고 있을 것이오."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_15",
+     "assumes": "색인 검색으로 '아이린 애들러 = 런던 거주 오페라 은퇴 프리마돈나'가 확인된 상태에서 왕이 사진 협박 본론을 펼침.",
+     "source_text": "전하, 제가 이해한 바로는, 전하께서는 이 젊은 여인과 얽히게 되셨고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "왕과 아이린 사이에 사진 한 장이 존재하며, 그 사진이 회수 5회 모두 실패함",
+     "via": "told",
+     "retained": true,
+     "source_text": "다섯 번 시도했소. 두 번은 내가 매수한 도둑들이 그녀의 집을 뒤졌소."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "왕이 스칸디나비아 왕의 둘째 딸 클로틸데 로트만 폰 작센마이닝겐과 곧 결혼할 예정임",
+     "via": "told",
+     "retained": true,
+     "source_text": "나는 곧 결혼할 예정이오. / 스칸디나비아 왕의 둘째 딸, 클로틸데 로트만 폰 작센마이닝겐과 말이오."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "약혼 공식 발표일은 다음 주 월요일이며, 그날 아이린이 사진을 보낼 위협을 했음",
+     "via": "told",
+     "retained": true,
+     "source_text": "그녀가 약혼이 공식적으로 발표되는 날 그것을 보내겠다고 말했기 때문이오. 그날은 다음 월요일이오."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "왕과 아이린 사이에 사진 한 장이 존재하며, 그 사진이 회수 5회 모두 실패함",
+     "via": "told",
+     "retained": true,
+     "source_text": "다섯 번 시도했소. 두 번은 내가 매수한 도둑들이 그녀의 집을 뒤졌소."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "왕이 스칸디나비아 왕의 둘째 딸 클로틸데 로트만 폰 작센마이닝겐과 곧 결혼할 예정임",
+     "via": "told",
+     "retained": true,
+     "source_text": "스칸디나비아 왕의 둘째 딸, 클로틸데 로트만 폰 작센마이닝겐과 말이오."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "약혼 공식 발표일은 다음 주 월요일이며, 그날 아이린이 사진을 보낼 위협을 했음",
+     "via": "told",
+     "retained": true,
+     "source_text": "그녀가 약혼이 공식적으로 발표되는 날 그것을 보내겠다고 말했기 때문이오. 그날은 다음 월요일이오."
+    }
+   ],
+   "cause": "왕이 '몇 통의 위험한 편지'를 썼다는 발언을 홈즈가 사진 회수 의도로 해석함.",
+   "result": "사건의 본질(사진 회수 불가, 협박, 시한)이 모두 밝혀짐.",
+   "source_text": "전하, 제가 이해한 바로는, 전하께서는 이 젊은 여인과 얽히게 되셨고, 그녀에게 몇 통의 위험한 편지를 쓰셨으며, 지금은 그 편지들을 돌려받고자 하시는군요.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_17",
+   "scene_id": "scene_2_3",
+   "order": 10,
+   "title": "왕의 체류처 통보와 의뢰 마무리",
+   "summary": "왕이 랭엄 호텔에 '폰 크람 백작'으로 머물고 있음을 밝히고, 홈즈는 진척 편지를 보내겠다고 함.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_014",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_009"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_009",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_009",
+     "field": "location",
+     "from": "LOC_010",
+     "to": "LOC_017",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "물론이오. 랭엄 호텔에서 폰 크람 백작이라는 이름으로 나를 찾을 수 있소."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_009",
+     "field": "body_status",
+     "assumes": "오름슈타인(보헤미아 왕가) 이름 대신 '폰 크람 백작'이라는 가명을 사용 중",
+     "source_text": "물론이오. 랭엄 호텔에서 폰 크람 백작이라는 이름으로 나를 찾을 수 있소."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_16",
+     "assumes": "약혼 발표가 다음 주 월요일로 예정된 상황에서 왕이 런던에 남는다는 결정",
+     "source_text": "아, 그럼 아직 사흘이 있군요. / 전하께서는 물론 당분간 런던에 머무르시겠지요?"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "왕의 체류처는 랭엄 호텔이며 가명은 '폰 크람 백작'임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "물론이오. 랭엄 호텔에서 폰 크람 백작이라는 이름으로 나를 찾을 수 있소."
+    }
+   ],
+   "cause": "홈즈의 '당분간 런던에 머무르시겠지요?' 질문.",
+   "result": "의뢰인의 연락 방법이 확정됨.",
+   "source_text": "전하께서는 물론 당분간 런던에 머무르시겠지요? / 물론이오. 랭엄 호텔에서 폰 크람 백작이라는 이름으로 나를 찾을 수 있소.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_18",
+   "scene_id": "scene_2_1",
+   "order": 1,
+   "title": "왕의 의뢰와 비용 전달",
+   "summary": "보헤미아 왕이 홈즈에게 사진 회수 의뢰를 확정하고, 섀미가죽 주머니에 든 금화 300파운드와 지폐 700파운드를 탁자 위에 놓는다. 홈즈는 영수증을 써서 건네고, 마드무아젤의 주소(세인트존스 우드, 서펜타인 애비뉴, 브라이오니 로지)를 적으며 사진의 캐비닛 판형 여부를 묻는다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_016",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_009",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_009",
+   "objects": [
+    "OBJ_017",
+    "OBJ_018"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_017",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "왕은 망토 아래에서 두툼한 섀미가죽 주머니를 꺼내 탁자 위에 놓았다."
+    },
+    {
+     "entity": "CHAR_009",
+     "field": "possesses",
+     "from": "OBJ_017",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "왕은 망토 아래에서 두툼한 섀미가죽 주머니를 꺼내 탁자 위에 놓았다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "브라이오니 로지에 마드무아젤(아이린 애들러)이 거주함",
+     "source_text": "세인트존스 우드, 서펜타인 애비뉴, 브라이오니 로지요."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "브라이오니 로지 주소 (세인트존스 우드, 서펜타인 애비뉴)",
+     "via": "told",
+     "retained": true,
+     "source_text": "세인트존스 우드, 서펜타인 애비뉴, 브라이오니 로지요."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "회수 대상 사진의 크기(캐비닛 판형 가능성)",
+     "via": "inference",
+     "retained": true,
+     "source_text": "그 사진은 캐비닛 판형이었습니까?"
+    }
+   ],
+   "cause": "왕이 사진 회수를 의뢰함",
+   "result": "홈즈가 비용을 인수하고 마드무아젤 주소를 받아 적음. 내일 오후 세 시에 왓슨과 만나기로 함.",
+   "source_text": "왕은 망토 아래에서 두툼한 섀미가죽 주머니를 꺼내 탁자 위에 놓았다. … 홈즈는 수첩 한 장에 영수증을 휘갈겨 써서 그에게 건넸다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_19",
+   "scene_id": "scene_2_2",
+   "order": 1,
+   "title": "와이튼이 베이커가에서 홈즈를 기다림",
+   "summary": "세 시 정각에 왓슨이 베이커가 응접실에 도착하지만 홈즈는 부재중이다. 하숙집 주인이 아침 여덟 시가 조금 지나 홈즈가 나섰다고 알려준다. 왓슨은 벽난로 곁에 앉아 홈즈의 조사를 기다리며 사건에 깊은 흥미를 느낀다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_017",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_010",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "세 시 정각에 나는 베이커가에 있었지만, 홈즈는 아직 돌아오지 않았다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "홈즈가 보헤미아 왕의 의뢰를 받아 조사에 나섰음",
+     "source_text": "나는 이미 그의 조사에 깊은 흥미를 느끼고 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈가 그날 아침 8시가 조금 지나 집을 나섰음",
+     "via": "told",
+     "retained": true,
+     "source_text": "하숙집 주인은 그가 아침 여덟 시가 조금 지나 집을 나섰다고 알려 주었다."
+    }
+   ],
+   "cause": "홈즈가 약속 시간(세 시)에 아직 돌아오지 않음",
+   "result": "왓슨이 벽난로 곁에서 홈즈를 기다리기로 결심함",
+   "source_text": "세 시 정각에 나는 베이커가에 있었지만, 홈즈는 아직 돌아오지 않았다. 하숙집 주인은 그가 아침 여덟 시가 조금 지나 집을 나섰다고 알려 주었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_20",
+   "scene_id": "scene_2_2",
+   "order": 2,
+   "title": "홈즈가 마부로 변장하여 귀환",
+   "summary": "거의 네 시에 술 취한 듯한 꾀죄죄한 마부로 변장한 남자가 응접실로 들어온다. 왓슨은 세 번 다시 보아서야 홈즈임을 알아본다. 홈즈는 침실로 사라졌다가 5분 후 트위드 정장 차림으로 재등장하여 유쾌하게 웃어 댄다.",
+   "location_id": "LOC_010",
+   "time_id": "TIME_018",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "from": "트위드 정장 차림",
+     "to": "실직한 마부로 변장(꾀죄죄하고 구레나룻, 얼굴 벌겋고 옷차림 지저분)",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "트위드 정장 차림",
+     "certainty": "explicit",
+     "source_text": "술 취한 듯 보이는 마부 하나가—꾀죄죄하고 구레나룻을 기른, 얼굴이 벌겋고 옷차림이 지저분한—방 안으로 걸어 들어왔다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "from": "실직한 마부로 변장",
+     "to": "트위드 정장 차림의 점잖은 모습",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "오 분 뒤 예전처럼 트위드 정장 차림의 점잖은 모습으로 다시 나타났다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "뛰어난 변장술 (왓슨이 세 번 다시 봐야 알아볼 정도)",
+     "source_text": "나는 내 친구의 놀라운 변장 솜씨에 익숙해져 있었음에도, 그것이 정말 그라는 것을 확신하기까지 세 번은 다시 보아야 했다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_19",
+     "assumes": "EVENT_2_2에서 왓슨이 기다리는 동안 응접실이 비어 있었으므로, 홈즈는 응접실로 직접 들어왔어야 함",
+     "source_text": "문이 열린 것은 거의 네 시가 다 되어서였고, 술 취한 듯 보이는 마부 하나가…방 안으로 걸어 들어왔다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈가 마부로 변장해 돌아왔다는 사실 및 그 변장의 정체",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그것이 정말 그라는 것을 확신하기까지 세 번은 다시 보아야 했다."
+    }
+   ],
+   "cause": "아침 8시경부터의 조사 마치고 귀환",
+   "result": "홈즈가 변장을 풀고 트위드 정장으로 환복함",
+   "source_text": "문이 열린 것은 거의 네 시가 다 되어서였고, 술 취한 듯 보이는 마부 하나가—꾀죄죄하고 구레나룻을 기른, 얼굴이 벌겋고 옷차림이 지저분한—방 안으로 걸어 들어왔다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_21",
+   "scene_id": "scene_2_2",
+   "order": 3,
+   "title": "브라이오니 로지 답사와 외관 정찰",
+   "summary": "홈즈는 아침 8시 조금 지나 실직한 마부 신분으로 집을 나서 마구간 유대망을 통해 브라이오니 로지 위치를 알아낸다. 이층 별장, 처브 자물쇠, 우측 응접실의 긴 창문과 어처구니없는 영국식 창문 걸쇠, 마차 창고 지붕에서 복도 창문 접근 가능 여부 등을 살핀다.",
+   "location_id": "LOC_004",
+   "time_id": "TIME_019",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_002"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "실직한 마부로 변장(꾀죄죄하고 구레나룻 기름, 얼굴 벌겋고 옷차림 지저분)",
+     "source_text": "나는 오늘 아침 여덟 시가 조금 지나 실직한 마부의 신분으로 집을 나섰네."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "마부들 사이의 유대망과 동업 정신을 통해 정보 입수 가능",
+     "source_text": "말을 다루는 사람들 사이에는 놀라운 유대감과 동업 정신이 있지. 그들 중 하나가 되면, 알아야 할 것은 다 알게 되네."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "주변 사람들(마부 등)을 거들게 하는 화술·현금 지불 능력",
+     "source_text": "나는 마부들이 말을 손질하는 것을 거들었고, 그 대가로 이 페니와 흑맥주 한 잔, 살담배 두 줌"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "브라이오니 로지의 물리적 배치(뒤뜰, 이층집, 처브 자물쇠, 우측 응접실 긴 창문과 창문 걸쇠, 마차 창고 지붕에서 복도 창 접근 가능)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "뒤뜰이 있는 아담한 별장 같은 집인데, 앞쪽은 길가까지 바짝 붙여 지어졌고, 이층집이었네. 문에는 처브 자물쇠가 달려 있었지. 오른쪽에 큰 응접실이 있는데…마차 창고 지붕 위에서 복도 창문에 손이 닿을 수 있다는 점만은 눈에 띄었네."
+    }
+   ],
+   "cause": "사진 회수 의뢰를 받은 후 정보 수집 단계 진행",
+   "result": "브라이오니 로지의 침투 가능한 물리적 경로 파악",
+   "source_text": "나는 오늘 아침 여덟 시가 조금 지나 실직한 마부의 신분으로 집을 나섰네. … 나는 곧 브라이오니 로지를 찾아냈어.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_22",
+   "scene_id": "scene_2_2",
+   "order": 4,
+   "title": "서펜타인 마구간에서 정보 수집",
+   "summary": "홈즈가 마구간에서 마부들을 거들며 페니, 흑맥주, 살담배를 받고, 아이린 애들러에 대한 정보를 얻는다. 그녀는 매일 다섯 시에 마차를 타고 나가 저녁 7시에 돌아오고, 단 한 남자(고드프리 노턴)가 자주 방문한다.",
+   "location_id": "LOC_005",
+   "time_id": "TIME_019",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_002"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "실직한 마부로 변장 중",
+     "source_text": "나는 오늘 아침 여덟 시가 조금 지나 실직한 마부의 신분으로 집을 나섰네."
+    },
+    {
+     "entity": "CHAR_010",
+     "field": "ability",
+     "assumes": "마차를 시키고, 고드프리 노턴을 서펜타인 마구간에서 열두 번 넘게 태워다 줄 만큼의 정기적 방문 관계",
+     "source_text": "마부들이 그를 서펜타인 마구간에서 열두 번도 넘게 집까지 태워다 주었으니 그에 대해 속속들이 알고 있었네."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_21",
+     "assumes": "EVENT_2_4의 외관 정찰과 같은 날 진행된 정보 수집 활동",
+     "source_text": "그런 다음 나는 거리를 어슬렁거리다가, 예상했던 대로 정원 담 한쪽을 따라 뻗은 골목에 마구간 구역이 있는 것을 발견했네."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "아이린 애들러의 일과(매일 5시 외출, 7시 귀가, 음악회 외엔 외출 드묾)",
+     "via": "told",
+     "retained": true,
+     "source_text": "매일 다섯 시에 마차를 타고 나갔다가 저녁 식사를 위해 정확히 일곱 시에 돌아오네. 노래하는 때를 빼면 좀처럼 다른 시간에는 외출하지 않네."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "고드프리 노턴의 외모 및 방문 빈도(하루 1~2회)",
+     "via": "told",
+     "retained": true,
+     "source_text": "남자 방문객은 단 한 사람뿐이지만, 대신 자주 오지. 그는 검은 머리에 잘생기고 씩씩한 사내로, 하루에 한 번은 꼭 오고, 종종 두 번씩도 오네."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "고드프리 노턴의 신원과 직업(이너 템플의 변호사)",
+     "via": "told",
+     "retained": true,
+     "source_text": "이너 템플의 고드프리 노턴이라는 사람이야."
+    }
+   ],
+   "cause": "브라이오니 로지 물리적 정찰 후 거주자 정보 파악 단계로 이동",
+   "result": "아이린의 외출 패턴과 고드프리 노턴의 방문 정보 입수",
+   "source_text": "그런 다음 나는 거리를 어슬렁거리다가, 예상했던 대로 정원 담 한쪽을 따라 뻗은 골목에 마구간 구역이 있는 것을 발견했네. … 이너 템플의 고드프리 노턴이라는 사람이야.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_23",
+   "scene_id": "scene_2_2",
+   "order": 5,
+   "title": "고드프리 노턴의 브라이오니 로지 방문 (1차)",
+   "summary": "이륜마차에서 내린 잘생긴 매부리코 콧수염의 신사가 서두르며 브라이오니 로지 응접실로 들어간다. 약 30분간 흥분한 몸짓으로 팔을 휘저으며 왔다 갔다 하는 모습이 창문으로 언뜻언뜻 보였고, 더 허둥지둥한 모습으로 나온다.",
+   "location_id": "LOC_004",
+   "time_id": "TIME_019",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_010"
+   ],
+   "witness_character_ids": [
+    "CHAR_001"
+   ],
+   "main_actor_character_id": "CHAR_010",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_010",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_004",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "이륜마차 한 대가 브라이오니 로지 앞에 서더니 한 신사가 뛰어내렸네."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_010",
+     "field": "ability",
+     "assumes": "브라이오니 로지 집을 '자기 집처럼' 드나들 수 있는 친분",
+     "source_text": "문을 연 하녀를 완전히 제집처럼 편안한 태도로 스치듯 지나쳐 들어갔네."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_22",
+     "assumes": "이 장면은 홈즈가 마구간에서 정보를 얻은 후 브라이오니 로지 근처로 돌아온 시점임",
+     "source_text": "그들이 해 줄 수 있는 이야기를 다 듣고 나서, 나는 다시 브라이오니 로지 근처를 서성이며 작전을 궁리하기 시작했네."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "고드프리 노턴의 외모(눈에 띄게 잘생김, 검은 머리, 매부리코, 콧수염)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "눈에 띄게 잘생긴 남자로, 검은 머리에 매부리코, 콧수염을 기르고 있었지—분명 내가 들었던 그 남자였네."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "고드프리 노턴이 응접실에서 흥분한 몸짓을 보임 (아내·아닌지 불명)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "응접실 창문을 통해 그가 흥분한 몸짓으로 팔을 휘저으며 왔다 갔다 하는 모습을 언뜻언뜻 볼 수 있었네."
+    }
+   ],
+   "cause": "아이린과 어떤 문제가 생긴 것으로 추정되는 만남",
+   "result": "고드프리 노턴이 서둘러 교회(세인트 모니카 교회) 행 마차를 부름",
+   "source_text": "이륜마차 한 대가 브라이오니 로지 앞에 서더니 한 신사가 뛰어내렸네. … 그는 몹시 서두르는 기색이었고, 마부에게 기다리라고 소리친 뒤, 문을 연 하녀를 완전히 제집처럼 편안한 태도로 스치듯 지나쳐 들어갔네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_24",
+   "scene_id": "scene_2_2",
+   "order": 6,
+   "title": "고드프리 노턴이 세인트 모니카 교회 행을 명함",
+   "summary": "브라이오니 로지에서 나온 고드프리 노턴이 마차에 오르며 금시계를 꺼내 확인하고, '먼저 리전트가의 그로스 앤 행키로, 그다음 에지웨어 로드의 세인트 모니카 교회로. 이십 분 안에 도착하면 반 기니'라고 외친다.",
+   "location_id": "LOC_004",
+   "time_id": "TIME_019",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_010"
+   ],
+   "witness_character_ids": [
+    "CHAR_001"
+   ],
+   "main_actor_character_id": "CHAR_010",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_010",
+     "field": "possesses",
+     "assumes": "금시계",
+     "source_text": "마차에 올라서면서 그는 주머니에서 금시계를 꺼내 진지하게 들여다보더니"
+    },
+    {
+     "entity": "CHAR_010",
+     "field": "knows",
+     "assumes": "세인트 모니카 교회가 결혼식 거행 장소라는 점",
+     "source_text": "먼저 리전트가의 그로스 앤 행키로, 그다음은 에지웨어 로드의 세인트 모니카 교회로."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_23",
+     "assumes": "EVENT_2_6의 브라이오니 로지 방문 직후 시점이며, 사이 시간 경과 없음",
+     "source_text": "이윽고 그가 나왔는데, 아까보다도 더 허둥지둥한 모습이었네."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "고드프리 노턴이 교회(세인트 모니카 교회) 행임을 외친 사실",
+     "via": "direct",
+     "retained": true,
+     "source_text": "먼저 리전트가의 그로스 앤 행키로, 그다음은 에지웨어 로드의 세인트 모니카 교회로. 이십 분 안에 도착하면 반 기니를 주지!"
+    }
+   ],
+   "cause": "EVENT_2_6에서의 만남 이후 교회로 향할 결정",
+   "result": "마차가 교회로 향함",
+   "source_text": "'전속력으로 몰아 주게,' 그가 소리쳤네. '먼저 리전트가의 그로스 앤 행키로, 그다음은 에지웨어 로드의 세인트 모니카 교회로. 이십 분 안에 도착하면 반 기니를 주지!'",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_25",
+   "scene_id": "scene_2_2",
+   "order": 7,
+   "title": "아이린 애들러의 교회 행 마차 출발",
+   "summary": "고드프리 노턴의 마차가 떠난 직후, 말쑥한 랜도 마차가 다가와 마구간에서처럼 단정한 차림이 아닌 채(외투 단추 반쯤, 넥타이 삐져나옴) 도착한다. 여자가 현관에서 튀어나와 몸을 던지며 '세인트 모니카 교회로, 이십 분 안에 도착하면 반 소버린'이라고 외친다.",
+   "location_id": "LOC_004",
+   "time_id": "TIME_019",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_008"
+   ],
+   "witness_character_ids": [
+    "CHAR_001"
+   ],
+   "main_actor_character_id": "CHAR_008",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_008",
+     "field": "location",
+     "from": "LOC_004",
+     "to": "LOC_018",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "inferred",
+     "source_text": "'세인트 모니카 교회로, 존,' 그녀가 외쳤네. '이십 분 안에 도착하면 반 소버린을 주겠어.'"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_008",
+     "field": "knows",
+     "assumes": "고드프리 노턴이 세인트 모니카 교회로 갔다는 사실(같은 목적지)",
+     "source_text": "이건 놓치기엔 너무 아까운 기회였네, 왓슨. … '세인트 모니카 교회로, 존,' 그녀가 외쳤네."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_24",
+     "assumes": "EVENT_2_7의 교회 행 마차 출발 직후 시점이며, 사이 시간 경과가 거의 없음(같은 거리·같은 행선지 추격)",
+     "source_text": "그들은 그렇게 떠났고, 나도 뒤따라가야 하지 않을까 막 고민하고 있을 때, 골목 위쪽에서 말쑥한 작은 랜도 마차 한 대가 다가왔네."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "아이린 애들러의 외모(남자가 목숨을 걸 만한 얼굴, 사랑스러움) - 언뜻 보았을 뿐",
+     "via": "direct",
+     "retained": true,
+     "source_text": "나는 그 순간 그녀를 언뜻 보았을 뿐이지만, 그녀는 남자가 목숨을 걸 만한 얼굴을 가진 사랑스러운 여인이었네."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "아이린 애들러도 세인트 모니카 교회로 향함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "'세인트 모니카 교회로, 존,' 그녀가 외쳤네. '이십 분 안에 도착하면 반 소버린을 주겠어.'"
+    }
+   ],
+   "cause": "고드프리 노턴이 떠난 직후 그녀도 뒤따라가려 함 (원문 추정)",
+   "result": "아이린의 랜도 마차가 교회로 향함",
+   "source_text": "마차가 채 멈추기도 전에 그녀가 현관문에서 튀어나와 그 안으로 몸을 던졌네. … '세인트 모니카 교회로, 존,' 그녀가 외쳤네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_26",
+   "scene_id": "scene_2_2",
+   "order": 8,
+   "title": "홈즈의 추격과 교회 도착",
+   "summary": "홈즈는 마차를 잡고 '세인트 모니카 교회로, 이십 분 안에 도착하면 반 소버린'이라 외치고 쫓아간다. 12시 25분 전 출발. 교회 도착 시 이륜마차와 랜도 마차가 모두 문 앞에 멈춰 있고, 홈즈는 옆 통로로 슬쩍 들어간다.",
+   "location_id": "LOC_018",
+   "time_id": "TIME_020",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_004",
+     "to": "LOC_018",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "LOC_001",
+     "certainty": "explicit",
+     "source_text": "내가 도착했을 때 이륜마차와 랜도 마차 모두, 김이 오르는 말들을 끌고 문 앞에 서 있었네."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "수상쩍은 손님을 거절 전에 재빨리 승차시키는 화술·판단력",
+     "source_text": "마부는 나같이 초라한 손님을 보고 두 번이나 망설였지만, 그가 거절하기 전에 내가 먼저 올라탔네."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_25",
+     "assumes": "EVENT_2_8에서 아이린이 출발한 직후 홈즈도 같은 행선지로 출발",
+     "source_text": "이건 놓치기엔 너무 아까운 기회였네, 왓슨. 나는 뛰어서 쫓아갈까, 아니면 그녀의 랜도 뒤에 매달릴까 저울질하고 있는데 마침 마차 한 대가 거리를 지나갔네."
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "EVENT_2_7·EVENT_2_8에서 본 두 사람 교행 정보를 추적",
+   "result": "홈즈가 교회 안으로 침투",
+   "source_text": "'세인트 모니카 교회로,' 내가 말했네. '이십 분 안에 도착하면 반 소버린을 주지.' … 내가 도착했을 때 이륜마차와 랜도 마차 모두, 김이 오르는 말들을 끌고 문 앞에 서 있었네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_27",
+   "scene_id": "scene_2_2",
+   "order": 9,
+   "title": "교회 제단에서의 발견과 고드프리 노턴의 호소",
+   "summary": "교구 안에는 홈즈가 뒤쫓은 두 사람과 그들을 타이르는 듯한 성의를 입은 성직자 한 사람, 모두 제단 앞에 서 있다. 홈즈가 옆 통로로 어슬렁거리자 셋이 돌아보고, 고드프리 노턴이 힘껏 달려와 '감사합니다, 당신이면 되겠습니다. 딱 삼 분밖에 안 남았습니다. 안 그러면 정식으로 성립되지 않아요'라고 말한다.",
+   "location_id": "LOC_018",
+   "time_id": "TIME_020",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_008",
+    "CHAR_010",
+    "NEW:성직자"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_010",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "NEW:성직자",
+     "field": "ability",
+     "assumes": "결혼식을 집전할 수 있는 성직 (성의를 입음)",
+     "source_text": "그 안에는 내가 뒤쫓아 온 두 사람과, 그들을 타이르는 듯한 성의를 입은 성직자 한 사람 말고는 아무도 없었네."
+    },
+    {
+     "entity": "CHAR_010",
+     "field": "knows",
+     "assumes": "결혼식에 증인 둘이 필요하며, 한 명(본인 외)이 부족함",
+     "source_text": "그렇지 않으면 정식으로 성립되지 않아요."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_26",
+     "assumes": "EVENT_2_9에서 홈즈가 교회 안으로 들어간 직후의 시점이며, 사이 시간 경과 없음",
+     "source_text": "나는 교회에 우연히 들어온 다른 한가한 사람처럼 옆 통로를 어슬렁거리며 올라갔네. 그런데 놀랍게도, 제단에 있던 세 사람이 갑자기 나를 향해 돌아섰고,"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "교회 안에서 아이린·고드프리·성직자가 제단 앞에 함께 서 있음(결혼 의식 추정)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그 안에는 내가 뒤쫓아 온 두 사람과, 그들을 타이르는 듯한 성의를 입은 성직자 한 사람 말고는 아무도 없었네. 셋 모두 제단 앞에 무리 지어 서 있었지."
+    }
+   ],
+   "cause": "홈즈가 교회 안으로 침투함",
+   "result": "고드프리 노턴이 홈즈에게 증인 역할을 요청함 (원문 미완)",
+   "source_text": "'감사합니다,' 그가 외쳤네. '당신이면 되겠습니다. 오세요! 오세요!' … '이보세요, 이리 오세요, 딱 삼 분밖에 안 남았습니다. 안 그러면 정식으로 성립되지 않아요.'",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_28",
+   "scene_id": "scene_2_1",
+   "order": 1,
+   "title": "결혼식에서 증인 역할 수행",
+   "summary": "홈즈가 교회 제단에서 아이린 애들러와 고드프리 노턴의 결혼식 증인으로 끌려가 결혼을 거들게 되고, 신부로부터 소버린 금화 한 닢을 받는다.",
+   "location_id": "LOC_018",
+   "time_id": "NEW:결혼식_당시",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_008",
+    "CHAR_010"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_011"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_011",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "신부는 내게 소버린 금화 한 닢을 주었고, 나는 이 일을 기념해 그것을 시곗줄에 달고 다닐 생각이네."
+    },
+    {
+     "entity": "CHAR_008",
+     "field": "alive",
+     "from": "true",
+     "to": "true",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "처녀 아이린 애들러와 총각 고드프리 노턴을 안전하게 맺어 주는 일을 거들고 있었네."
+    },
+    {
+     "entity": "CHAR_010",
+     "field": "alive",
+     "from": "true",
+     "to": "true",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "처녀 아이린 애들러와 총각 고드프리 노턴을 안전하게 맺어 주는 일을 거들고 있었네."
+    },
+    {
+     "entity": "CHAR_010",
+     "field": "body_status",
+     "from": "총각",
+     "to": "신랑",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "한쪽에서는 신랑이, 다른 한쪽에서는 신부가 나에게 감사 인사를 건네는"
+    },
+    {
+     "entity": "CHAR_008",
+     "field": "body_status",
+     "from": "처녀",
+     "to": "신부(아내)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "한쪽에서는 신랑이, 다른 한쪽에서는 신부가 나에게 감사 인사를 건네는"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "결혼식 증인 역할을 수행할 수 있는 상태(결혼 허가증 서명 능력 포함)",
+     "source_text": "성직자는 어떤 형태로든 증인 없이는 절대 결혼시켜 주지 않겠다고 버텼던 것 같은데, 마침 내가 운 좋게 나타나 준 덕에"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "결혼 허가증에 형식적 하자가 있음",
+     "source_text": "아무래도 결혼 허가증에 무슨 형식적 하자가 있었던 모양이고"
+    },
+    {
+     "entity": "CHAR_010",
+     "field": "knows",
+     "assumes": "결혼 허가증에 형식적 하자가 있음",
+     "source_text": "아무래도 결혼 허가증에 무슨 형식적 하자가 있었던 모양이고"
+    },
+    {
+     "entity": "CHAR_008",
+     "field": "knows",
+     "assumes": "결혼 허가증에 형식적 하자가 있음",
+     "source_text": "아무래도 결혼 허가증에 무슨 형식적 하자가 있었던 모양이고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "아이린 애들러와 고드프리 노턴이 결혼함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "처녀 아이린 애들러와 총각 고드프리 노턴을 안전하게 맺어 주는 일을 거들고 있었네."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "결혼 허가증에 형식적 하자가 있음",
+     "via": "inference",
+     "retained": true,
+     "source_text": "아무래도 결혼 허가증에 무슨 형식적 하자가 있었던 모양이고"
+    }
+   ],
+   "cause": "교회에서 결혼식이 진행되는 중, 증인이 부재하여 홈즈가 강제로 끌려가게 됨",
+   "result": "두 사람이 결혼하고, 홈즈는 소버린 금화 한 닢을 받음",
+   "source_text": "나는 거의 끌려가다시피 제단으로 올라갔고, 정신을 차려 보니 어느새 귓가에 속삭여 주는 대로 무언가 응답을 웅얼거리고, 아무것도 모르는 일들을 보증하며, 처녀 아이린 애들러와 총각 고드프리 노턴을 안전하게 맺어 주는 일을 거들고 있었네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_29",
+   "scene_id": "scene_2_1",
+   "order": 2,
+   "title": "교회 문 앞에서 헤어짐",
+   "summary": "결혼 직후 교회 문 앞에서 신랑과 신부가 헤어지고, 신부는 다음 날 다섯 시에 공원으로 마차를 타고 나갈 것이라고 말함.",
+   "location_id": "LOC_018",
+   "time_id": "NEW:결혼_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_008",
+    "CHAR_010"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_010",
+     "field": "knows",
+     "assumes": "아이린이 다섯 시에 공원으로 마차를 탄다는 일정",
+     "source_text": "'저는 평소처럼 다섯 시에 공원으로 마차를 타고 나갈 거예요,' 그녀가 그와 헤어지며 말했네."
+    },
+    {
+     "entity": "CHAR_008",
+     "field": "knows",
+     "assumes": "자신의 마차 산책 일정(다섯 시)",
+     "source_text": "'저는 평소처럼 다섯 시에 공원으로 마차를 타고 나갈 거예요,' 그녀가 그와 헤어지며 말했네."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "아이린이 평소처럼 다섯 시에 공원으로 마차를 타고 나감",
+     "via": "direct",
+     "retained": true,
+     "source_text": "'저는 평소처럼 다섯 시에 공원으로 마차를 타고 나갈 거예요,' 그녀가 그와 헤어지며 말했네."
+    }
+   ],
+   "cause": "결혼식 종료 후 신랑과 신부가 교회 문 앞에서 헤어짐",
+   "result": "홈즈는 일곱 시에 브라이오니 로지에서 그녀를 맞이하기로 계획",
+   "source_text": "하지만 교회 문 앞에서 두 사람은 헤어졌네, 그가 템플로 마차를 몰아 돌아가고 그녀는 자기 집으로 갔지. '저는 평소처럼 다섯 시에 공원으로 마차를 타고 나갈 거예요,' 그녀가 그와 헤어지며 말했네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_30",
+   "scene_id": "scene_2_2",
+   "order": 3,
+   "title": "베이커가에서 작전打ち合わせ",
+   "summary": "홈즈가 왓슨에게 협조를 요청하고, 아이린을 브라이오니 로지에서 맞이할 계획과 연막 로켓 사용 절차를 설명함.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_011",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [
+    "CHAR_026"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_013"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_013",
+     "op": "add",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "평범한 배관공용 연막 로켓일세, 양 끝에 저절로 불이 붙도록 뇌관을 달아 놓았지. 자네가 할 일은 그게 다야."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "OBJ_013",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그가 주머니에서 시가처럼 길쭉하게 말린 물건을 꺼내며 말했다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "차가운 소고기와 맥주 한 잔일세, 그가 초인종을 울리며 대답했다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "자, 그가 우리 하숙집 안주인이 마련해 준 소박한 음식에 허기진 듯 달려들며 말했다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "홈즈의 작전 개요(브라이오니 로지에서 아이린을 맞이할 계획)",
+     "source_text": "우리는 브라이오니 로지에서 그녀를 맞이해야 하네."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "자기 역할(중립 지키기, 창문 가까이 대기, 신호 시 물건 투척, 불 났다고 외치기)",
+     "source_text": "내가 자네에게 보일 테니까. 그리고 내가 손을 이렇게 들면—자네는 내가 건네준 것을 방 안으로 던지고, 동시에 불이 났다고 소리치게."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "body_status",
+     "assumes": "음식을 먹을 수 있는 상태(허기 상태)",
+     "source_text": "그가 우리 하숙집 안주인이 마련해 준 소박한 음식에 허기진 듯 달려들며 말했다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "왓슨이 법을 어기는 것을 꺼리지 않음",
+     "source_text": "법을 어기는 건 상관없나? / 전혀."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "왓슨이 체포 위험을 무릅쓸 의향이 있음",
+     "source_text": "체포될 위험을 무릅쓰는 것도? / 좋은 명분을 위해서라면야."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈의 작전(브라이오니 로지에서 아이린 맞이, 연막 로켓 투척, '불이 났다' 외치기)",
+     "via": "told",
+     "retained": true,
+     "source_text": "내가 자네에게 보일 테니까. 그리고 내가 손을 이렇게 들면—자네는 내가 건네준 것을 방 안으로 던지고, 동시에 불이 났다고 소리치게."
+    }
+   ],
+   "cause": "홈즈가 왓슨의 협조가 필요하여 작전 설명을 요청함",
+   "result": "왓슨이 연막 로켓을 전달받고 역할을 숙지함",
+   "source_text": "평범한 배관공용 연막 로켓일세, 양 끝에 저절로 불이 붙도록 뇌관을 달아 놓았지. 자네가 할 일은 그게 다야.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_31",
+   "scene_id": "scene_2_3",
+   "order": 4,
+   "title": "비국교회 목사로 변장",
+   "summary": "홈즈가 옷과 표정, 몸짓까지 바꿔 마치 비국교회 목사처럼 보이도록 변장한다.",
+   "location_id": "LOC_001",
+   "time_id": "NEW:변장_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "from": "평상복",
+     "to": "비국교회 목사로 변장(넓은 검은 모자, 헐렁한 바지, 흰 넥타이)",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "평상복",
+     "certainty": "explicit",
+     "source_text": "그는 침실로 사라졌다가 몇 분 뒤 마음씨 좋고 순박해 보이는 비국교회 목사의 모습으로 나타났다. 넓은 검은 모자, 헐렁한 바지, 흰 넥타이, 다정한 미소"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "복장·표정·몸짓·영혼까지 완전히 다른 인격으로 바꾸는 변장 능력",
+     "source_text": "홈즈가 옷차림만 바꾼 것이 아니었다. 그의 표정, 몸짓, 그의 영혼 자체가 그가 맡는 새로운 배역마다 함께 달라지는 듯 보였다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈의 변장 능력(옷차림뿐 아니라 표정·몸짓·영혼까지 바뀜)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "홈즈가 옷차림만 바꾼 것이 아니었다. 그의 표정, 몸짓, 그의 영혼 자체가 그가 맡는 새로운 배역마다 함께 달라지는 듯 보였다."
+    }
+   ],
+   "cause": "새로운 역할을 위해 변장이 필요함",
+   "result": "홈즈가 비국교회 목사로 변장 완료",
+   "source_text": "그는 침실로 사라졌다가 몇 분 뒤 마음씨 좋고 순박해 보이는 비국교회 목사의 모습으로 나타났다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_32",
+   "scene_id": "scene_2_4",
+   "order": 5,
+   "title": "브라이오니 로지 앞 정찰",
+   "summary": "홈즈와 왓슨이 여섯 시 십오 분에 베이커가를 나서 서펜타인 애비뉴의 브라이오니 로지 앞에 도착, 가로등이 켜지는 시간에 아이린이 오기를 기다리며 서성인다.",
+   "location_id": "LOC_005",
+   "time_id": "NEW:여섯_시_이십오_분_전후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [
+    "NEW:브라이오니_로지_앞_군중",
+    "NEW:근위병_두_명",
+    "NEW:가위_가는_사람",
+    "NEW:잘_차려입은_청년들"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_001",
+     "to": "LOC_004",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "LOC_001",
+     "certainty": "explicit",
+     "source_text": "우리가 베이커가를 나선 것은 여섯 시 십오 분이었고, 서펜타인 애비뉴에 도착했을 때는 아직 그 시각까지 십 분이 남아 있었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_001",
+     "to": "LOC_004",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "LOC_001",
+     "certainty": "explicit",
+     "source_text": "우리가 베이커가를 나선 것은 여섯 시 십오 분이었고, 서펜타인 애비뉴에 도착했을 때는 아직 그 시각까지 십 분이 남아 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "사진이 아이린의 집 어딘가에 숨겨져 있음(그녀 손에 있지 않음)",
+     "source_text": "캐비닛 크기니까. 여자 옷 속에 쉽게 숨기기에는 너무 크지."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "아이린이 며칠 안에 사진을 사용할 계획임",
+     "source_text": "게다가, 그녀는 며칠 안에 그것을 쓰기로 마음먹은 상태라는 것을 기억하게. 그것은 그녀가 손을 뻗으면 닿을 수 있는 곳에 있어야 하네."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "왕이 아이린을 매복시켜 두 번 수색을 시도함",
+     "source_text": "이미 그런 시도가 두 번이나 있었지."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "사진이 아이린의 집에 있을 것이라는 홈즈의 추론",
+     "source_text": "그녀는 자기 자신의 관리는 믿을 수 있지만, ... 자기 집 안에 있을 수밖에 없어."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "사진은 캐비닛 크기로 아이린의 집 어딘가에 숨겨져 있음",
+     "via": "told",
+     "retained": true,
+     "source_text": "캐비닛 크기니까. 여자 옷 속에 쉽게 숨기기에는 너무 크지. ... 자기 집 안에 있을 수밖에 없어."
+    }
+   ],
+   "cause": "아이린의 마차가 일곱 시에 돌아오기 전에 미리 대기할 필요",
+   "result": "브라이오니 로지 앞이 한적한 동네치고는 활기 있게 묘사됨",
+   "source_text": "우리가 베이커가를 나선 것은 여섯 시 십오 분이었고, 서펜타인 애비뉴에 도착했을 때는 아직 그 시각까지 십 분이 남아 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_33",
+   "scene_id": "scene_2_4",
+   "order": 6,
+   "title": "브라이오니 로지 앞 군중 묘사",
+   "summary": "브라이오니 로지 앞 거리에는 남루한 남자들, 가위 가는 사람, 근위병, 잘 차려입은 청년들이 어슬렁거리며 활기를 띠고 있음이 묘사된다.",
+   "location_id": "LOC_004",
+   "time_id": "NEW:여섯_시_이십오_분_전후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "unknown",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "브라이오니 로지 앞 거리가 한적한 동네치고 활기 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "오히려 조용한 동네의 작은 거리치고는 놀라울 만큼 활기가 넘쳤다."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "브라이오니 로지 앞 거리가 한적한 동네치고 활기 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "오히려 조용한 동네의 작은 거리치고는 놀라울 만큼 활기가 넘쳤다."
+    }
+   ],
+   "cause": "낮 시간대 이후의 거리 자연 묘사",
+   "result": "소동 발생의 무대가 형성됨",
+   "source_text": "오히려 조용한 동네의 작은 거리치고는 놀라울 만큼 활기가 넘쳤다. 한쪽 구석에는 남루한 옷차림의 남자들 한 무리가 담배를 피우며 웃고 있었고, 가위 가는 사람이 바퀴를 굴리고 있었으며, 두 명의 근위병이 보모 아가씨에게 수작을 걸고 있었고, 입에 시가를 문 몇몇 잘 차려입은 젊은이들이 어슬렁거리며 오가고 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_34",
+   "scene_id": "scene_2_5",
+   "order": 7,
+   "title": "사진의 소재 추론",
+   "summary": "홈즈가 결혼이 사진을 양날의 무기로 만들었다고 분석하고, 사진이 캐비닛 크기이므로 아이린의 집 어딘가에 숨겨졌을 것이라고 추론함.",
+   "location_id": "LOC_004",
+   "time_id": "NEW:소동_전_대화",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_005"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "아이린이 은행이나 변호사에게 맡기지 않고 직접 숨겼을 것임",
+     "source_text": "여자는 본래 비밀스러운 존재이고, 자기 손으로 직접 숨기는 것을 좋아하지. 어째서 그것을 다른 사람에게 넘기겠나?"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "사진은 캐비닛 크기임",
+     "source_text": "캐비닛 크기니까."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "결혼이 사진을 양날의 무기로 만들었다는 점",
+     "via": "told",
+     "retained": true,
+     "source_text": "이 결혼이 오히려 사정을 단순하게 만들어 주는군. 이제 그 사진은 양날의 무기가 된 셈이야."
+    }
+   ],
+   "cause": "홈즈가 사진 소재의 논리적 추론을 전개함",
+   "result": "그가 직접 찾는 것이 아니라 아이린이 보여주도록 만들 작전을 고수함",
+   "source_text": "그녀가 그것을 몸에 지니고 다닐 가능성은 극히 낮네. 캐비닛 크기니까. 여자 옷 속에 쉽게 숨기기에는 너무 크지.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_35",
+   "scene_id": "scene_2_5",
+   "order": 8,
+   "title": "마차 도착과 소동",
+   "summary": "아이린의 랜도 마차가 브라이오니 로지 앞에 도착하자, 문을 열려는 부랑자들끼리 싸움이 벌어지고 근위병과 가위 가는 사람까지 가세하여 소동이 커진다.",
+   "location_id": "LOC_004",
+   "time_id": "NEW:일곱_시_전",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "NEW:부랑자_A",
+    "NEW:부랑자_B",
+    "NEW:근위병_A",
+    "NEW:근위병_B",
+    "NEW:가위_가는_사람"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_008"
+   ],
+   "main_actor_character_id": "NEW:부랑자_A",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_008",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_004",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "LOC_004",
+     "certainty": "explicit",
+     "source_text": "마차가 멈추자, 모퉁이에서 어슬렁거리던 남자들 중 하나가 동전 한 닢을 벌어 볼 요량으로 앞으로 뛰어나가 문을 열려 했지만"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_008",
+     "field": "body_status",
+     "assumes": "마차에서 안전하게 내릴 수 있는 신변 상태",
+     "source_text": "순식간에 마차에서 내린 부인은 얼굴이 상기된 채"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_008",
+     "info": "마차 앞 문을 열려는 부랑자들끼리 싸움이 벌어짐",
+     "via": "direct",
+     "retained": true,
+     "source_text": "사나운 말다툼이 벌어졌고, 한쪽 편을 든 두 명의 근위병과, 마찬가지로 다른 편에 열을 올린 가위 가는 사람이 가세하면서 소동은 더욱 커졌다."
+    }
+   ],
+   "cause": "마차 도착 시 부랑자들이 동전을 벌려고 문을 열려 함",
+   "result": "다수의 사람이 개입한 폭력적 소동이 발생함",
+   "source_text": "사나운 말다툼이 벌어졌고, 한쪽 편을 든 두 명의 근위병과, 마찬가지로 다른 편에 열을 올린 가위 가는 사람이 가세하면서 소동은 더욱 커졌다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_36",
+   "scene_id": "scene_2_5",
+   "order": 9,
+   "title": "홈즈의 부인 보호와 쓰러짐",
+   "summary": "홈즈가 아이린 부인을 보호하려 무리 속으로 뛰어들다 비명을 지르며 바닥에 쓰러지고, 얼굴에서 피가 줄줄 흘러내린다.",
+   "location_id": "LOC_004",
+   "time_id": "NEW:소동_중",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_008"
+   ],
+   "witness_character_ids": [
+    "CHAR_002",
+    "NEW:군중_여러_명"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "from": "정상",
+     "to": "얼굴 출혈로 쓰러짐",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "정상",
+     "certainty": "explicit",
+     "source_text": "그러나 그녀에게 다다르는 순간, 그는 비명을 지르며 바닥에 쓰러졌고, 얼굴에서는 피가 줄줄 흘러내렸다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "무리 속으로 뛰어들 수 있는 신체 능력",
+     "source_text": "홈즈는 그 부인을 보호하려고 무리 속으로 뛰어들었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "쓰러진 자신이 부인의 집 안으로 실려 들어갈 구실이 됨",
+     "source_text": "그러면 결국 내가 그 집 안으로 실려 들어가게 될 걸세."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_008",
+     "info": "자신을 보호하려던 신사가 다쳤음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "“저 불쌍한 신사분이 많이 다치셨나요?”"
+    }
+   ],
+   "cause": "소동 중 홈즈가 부인을 보호하려 무리 속으로 뛰어듦",
+   "result": "홈즈가 쓰러지고, 부인은 무사히 계단으로 올라감",
+   "source_text": "그러나 그녀에게 다다르는 순간, 그는 비명을 지르며 바닥에 쓰러졌고, 얼굴에서는 피가 줄줄 흘러내렸다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_37",
+   "scene_id": "scene_2_5",
+   "order": 10,
+   "title": "부인의 다친 사람에 대한 반응",
+   "summary": "부인은 다친 사람을 거리에서 그대로 둘 수 없다며 응접실로 데려가도록 지시한다.",
+   "location_id": "LOC_004",
+   "time_id": "NEW:소동_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_008"
+   ],
+   "witness_character_ids": [
+    "CHAR_002",
+    "NEW:군중_여러_명"
+   ],
+   "main_actor_character_id": "CHAR_008",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_008",
+     "field": "knows",
+     "assumes": "다친 사람이 살아 있으나 위독함",
+     "source_text": "“아니, 아니, 숨이 붙어 있습니다!” 다른 누군가가 외쳤다. “하지만 병원까지 가기 전에 숨이 끊어질 거예요.”"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_008",
+     "info": "다친 사람이 병원까지 가기 전에 숨이 끊길 수 있을 만큼 위독함",
+     "via": "told",
+     "retained": true,
+     "source_text": "“아니, 아니, 숨이 붙어 있습니다!” 다른 누군가가 외쳤다. “하지만 병원까지 가기 전에 숨이 끊어질 거예요.”"
+    }
+   ],
+   "cause": "군중이 다친 사람의 상태를 부인에게 알림",
+   "result": "부인이 그를 집 안으로 들일 것을 지시함",
+   "source_text": "“거리에 누워 있게 둘 수는 없지요. 안으로 데려가도 될까요, 마님?” / “그럼요. 응접실로 데려가세요. 편안한 소파가 있어요.”",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_38",
+   "scene_id": "scene_2_6",
+   "order": 11,
+   "title": "홈즈의 브라이오니 로지 응접실 반입",
+   "summary": "홈즈가 천천히 정중하게 브라이오니 로지 안으로 옮겨져 주된 방 소파에 눕혀진다.",
+   "location_id": "LOC_004",
+   "time_id": "NEW:소동_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_008"
+   ],
+   "witness_character_ids": [
+    "CHAR_002",
+    "NEW:군중_여러_명"
+   ],
+   "main_actor_character_id": "CHAR_008",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_004",
+     "to": "LOC_004",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "LOC_004",
+     "certainty": "explicit",
+     "source_text": "천천히, 그리고 정중하게 그는 브라이오니 로지 안으로 옮겨져 주된 방에 눕혀졌고"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_008",
+     "field": "knows",
+     "assumes": "다친 사람이 숨을 쉬고 있음(살아 있음)",
+     "source_text": "“아, 지금 숨을 쉬는군요.”"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_008",
+     "info": "다친 사람이 아직 숨을 쉬고 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "“아, 지금 숨을 쉬는군요.”"
+    }
+   ],
+   "cause": "부인이 다친 사람을 안으로 들일 것을 지시함",
+   "result": "홈즈가 응접실 소파에 눕혀짐",
+   "source_text": "천천히, 그리고 정중하게 그는 브라이오니 로지 안으로 옮겨져 주된 방에 눕혀졌고",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_39",
+   "scene_id": "scene_2_6",
+   "order": 12,
+   "title": "왓슨의 연막 로켓 준비",
+   "summary": "왓슨이 창가의 자리에서 아이린의 친절한 모습을 보며 부끄러움을 느끼지만, 연막 로켓을 꺼내 작전대로 행동할 마음을 굳게 먹는다.",
+   "location_id": "LOC_004",
+   "time_id": "NEW:소동_종료_후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [
+    "OBJ_013"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_004",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "나는 여전히 창가의 내 자리에서 그 광경을 지켜보았다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "홈즈가 맡긴 작전에서 물러서면 그에 대한 배신이 됨",
+     "source_text": "그럼에도 지금 홈즈가 나에게 맡긴 역할에서 물러선다면 그것은 그에 대한 가장 새까만 배신이 될 것이었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "우리는 아이린을 해치는 것이 아니라 다른 사람을 해치는 것을 막는 것임",
+     "source_text": "결국, 우리는 그녀를 해치는 것이 아니라고 나는 생각했다. 우리는 다만 그녀가 다른 사람을 해치는 것을 막고 있을 뿐이라고."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "아이린이 다친 사람을 돌보는 우아하고 친절한 태도를 보임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "내가 음모를 꾸미고 있는 그 아름다운 존재를 바라보았을 때, 다친 사람을 돌보는 그녀의 우아하고 친절한 태도를 보았을 때"
+    }
+   ],
+   "cause": "홈즈의 지시에 따라 창가에서 대기함",
+   "result": "왓슨이 연막 로켓을 꺼내 준비함",
+   "source_text": "나는 마음을 굳게 먹고 얼스터 코트 밑에서 그 연막 로켓을 꺼냈다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_40",
+   "scene_id": "scene_1_1",
+   "order": 1,
+   "title": "브라이오니 로지에서 거짓 화재 경보 작전 수행",
+   "summary": "홈즈의 신호에 맞춰 왓슨이 로켓을 방 안으로 던지며 '불이야!'를 외쳐, 거리에서 고용된 구경꾼 전체가 일제히 외치게 만들었다.",
+   "location_id": "LOC_004",
+   "time_id": "TIME_021",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [
+    "CHAR_008"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "손바닥에 축축한 붉은 물감을 숨길 수 있을 정도의 손 사용 가능",
+     "source_text": "나는 손바닥에 축축한 붉은 물감을 조금 숨기고 있었네"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "로켓",
+     "source_text": "나는 로켓을 방 안으로 던져 넣으며"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "거리의 구경꾼들이 전부 오늘 저녁 일에 고용된 사람들이라는 정보",
+     "source_text": "거리에 있던 사람 모두가 한패였네. 다들 오늘 저녁 일에 고용된 사람들이었지"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "홈즈가 미리 손으로 신호하여 왓슨에게 로켓 투척을 지시함",
+   "result": "거짓 경보로 군중이 합류하고, 그 소란 가운데 홈즈가 응접실로 옮겨져 아이린의 반응을 관찰할 기회를 얻음",
+   "source_text": "그와 동시에 나는 그가 손을 드는 것을 보았고, 그 신호에 맞춰 나는 로켓을 방 안으로 던져 넣으며 \"불이야!\" 하고 외쳤다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_41",
+   "scene_id": "scene_1_1",
+   "order": 2,
+   "title": "홈즈의 붉은 물감 연기와 응접실 침투",
+   "summary": "홈즈는 붉은 물감으로 얼굴에 피를 칠한 뒤 쓰러져 연기를 맡고, 구경꾼들이 그를 응접실로 옮겨 그 방과 아이린의 침실이 이어진 구조를 확인했다.",
+   "location_id": "LOC_004",
+   "time_id": "TIME_021",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_008",
+    "CHAR_035"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_004",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "그런 다음 그들이 나를 안으로 옮겨 갔네"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "쓰러질 수 있고 손을 얼굴에 갖다 댈 수 있는 신체 사용 가능",
+     "source_text": "나는 앞으로 달려 나가 쓰러지고, 손을 얼굴에 갖다 대고는 가련한 몰골이 되었지"
+    },
+    {
+     "entity": "LOC_004",
+     "field": "condition",
+     "assumes": "응접실과 침실이 이어진 구조",
+     "source_text": "그 방은 그녀의 침실과 이어져 있었고"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_40",
+     "assumes": "EVENT_2_1의 거짓 화재 경보가 진행 중이어야 홈즈가 안으로 옮겨질 수 있다",
+     "source_text": "그런 다음 그들이 나를 안으로 옮겨 갔네"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "응접실과 침실이 이어진 구조",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그 방은 그녀의 침실과 이어져 있었고"
+    }
+   ],
+   "cause": "거리에서 쓰러진 홈즈를 구경꾼들이 응접실로 옮김",
+   "result": "홈즈는 응접실에서 공기가 필요하다며 창문을 열게 한 뒤 사진이 있는 위치를 확인함",
+   "source_text": "그런 다음 그들이 나를 안으로 옮겨 갔네. … 내가 의심하던 그 방이었네. 그 방은 그녀의 침실과 이어져 있었고",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_42",
+   "scene_id": "scene_1_1",
+   "order": 3,
+   "title": "아이린의 본능적 반응과 사진 위치 발각",
+   "summary": "아이린은 화재 경보에 종줄 바로 위 미닫이 판벽 뒤 벽감으로 달려가 사진을 반쯤 꺼냈고, 홈즈는 그 순간 위치를 확인했다.",
+   "location_id": "LOC_004",
+   "time_id": "TIME_021",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_008",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [
+    "CHAR_002",
+    "CHAR_035"
+   ],
+   "main_actor_character_id": "CHAR_008",
+   "objects": [
+    "OBJ_005"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_005",
+     "field": "location",
+     "from": "LOC_004_벽감_미닫이_판벽_뒤",
+     "to": "LOC_004_종줄_위_미닫이_판벽_뒤_벽감",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그 사진은 오른쪽 종줄 바로 위, 미닫이 판벽 뒤 벽감 안에 있었네"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_008",
+     "field": "knows",
+     "assumes": "사진이 미닫이 판벽 뒤 벽감에 있다는 사실과 그 위치를 발각당해도 된다고 판단",
+     "source_text": "그녀는 그것을 지키러 달려갈 것이었지"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "소파에 눕혀진 상태에서 아이린이 사진을 꺼내는 것을 볼 수 있을 정도의 시력·각도",
+     "source_text": "나는 그녀가 그것을 반쯤 꺼내는 순간 언뜻 그것을 보았네"
+    },
+    {
+     "entity": "CHAR_008",
+     "field": "ability",
+     "assumes": "강철 같은 신경조차 흔들릴 정도의 위협 상황에서 가장 소중한 것으로 달려가는 본능적 반응",
+     "source_text": "연기와 고함이 강철 같은 신경조차 흔들어 놓기에 충분했지"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_41",
+     "assumes": "홈즈가 응접실에 누운 채 관찰 중이어야 사진을 언뜻 볼 수 있다",
+     "source_text": "그들이 나를 소파에 눕히자 나는 공기가 필요한 척 손짓했고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "사진은 오른쪽 종줄 바로 위, 미닫이 판벽 뒤 벽감 안에 있다",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그 사진은 오른쪽 종줄 바로 위, 미닫이 판벽 뒤 벽감 안에 있었네"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "아이린에게 사진은 집 안에서 가장 소중한 것",
+     "via": "direct",
+     "retained": true,
+     "source_text": "오늘 우리의 부인에게는 우리가 찾는 그것보다 이 집 안에서 더 소중한 것이 없다는 사실이었네"
+    }
+   ],
+   "cause": "EVENT_2_1의 거짓 화재 경보로 아이린이 본능적으로 사진을 지키러 달려감",
+   "result": "홈즈가 사진의 정확한 위치를 알게 됨",
+   "source_text": "그녀는 아주 훌륭하게 반응했네. 그 사진은 오른쪽 종줄 바로 위, 미닫이 판벽 뒤 벽감 안에 있었네. 그녀는 순식간에 그곳으로 달려갔고, 나는 그녀가 그것을 반쯤 꺼내는 순간 언뜻 그것을 보았네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_43",
+   "scene_id": "scene_1_1",
+   "order": 4,
+   "title": "홈즈의 거짓 경보 외침과 브라이오니 로지 철수",
+   "summary": "홈즈는 거짓 경보였다고 외쳐 아이린이 사진을 다시 넣게 한 뒤 변명하고 집을 빠져나왔다. 사진을 그 자리에서 가져갈 뻔했으나 왕의 마부가 지켜보는 듯하여 보류했다.",
+   "location_id": "LOC_004",
+   "time_id": "TIME_021",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_008",
+    "CHAR_035"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_005"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_005",
+     "field": "location",
+     "from": "LOC_004_종줄_위_미닫이_판벽_뒤_벽감",
+     "to": "LOC_004_종줄_위_미닫이_판벽_뒤_벽감",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "내가 거짓 경보라고 외치자, 그녀는 그것을 다시 넣고"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_004",
+     "to": "unknown",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "나는 일어나 변명을 하고는 그 집을 빠져나왔지"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_035",
+     "field": "knows",
+     "assumes": "홈즈를 유심히 지켜보고 있다는 인식",
+     "source_text": "마부가 들어와 나를 유심히 지켜보고 있어서"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "마부의 시선 하에서 사진 회수를 보류할 정도의 자기 통제",
+     "source_text": "조금이라도 성급하게 굴었다가는 모든 것을 망칠 수 있으니까"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_42",
+     "assumes": "사진이 종줄 위 미닫이 판벽 뒤 벽감에 그대로 있어야 사진 회수 여부를 결정할 수 있다",
+     "source_text": "그녀는 그것을 다시 넣고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "사진이 여전히 종줄 위 미닫이 판벽 뒤 벽감에 있다(회수하지 못함)",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그녀는 그것을 다시 넣고"
+    }
+   ],
+   "cause": "사진 위치를 확인한 뒤 마부가 지켜보는 상황에서 안전을 우선하여 철수 결정",
+   "result": "사진은 그 자리에 남고, 홈즈는 다음 날 왕과 함께 정식 방문하기로 함",
+   "source_text": "내가 거짓 경보라고 외치자, 그녀는 그것을 다시 넣고, 로켓을 힐끗 보고는 방을 뛰쳐나갔고, 그 뒤로는 그녀를 보지 못했네. … 곧바로 그 사진을 손에 넣으려 할지 망설였지만, 마부가 들어와 나를 유심히 지켜보고 있어서 기다리는 편이 안전할 것 같았네.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_44",
+   "scene_id": "scene_1_1",
+   "order": 5,
+   "title": "에지웨어 로드 후미처 대화와 계획 보고",
+   "summary": "홈즈와 왓슨은 소란을 피해 에지웨어 로드로 접어든 뒤, 왓슨의 질문에 대해 화재 경보 작전의 전모를 설명하고 다음 날 아침 여덟 시 왕과 함께 방문하겠다는 계획을 밝혔다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_021",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_004_근처_거리",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그와 동시에 나는 그가 손을 드는 것을 보았고 / 우리는 베이커가에 도착해 문 앞에 멈춰 섰다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "location",
+     "from": "LOC_004_근처_거리",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "우리는 베이커가에 도착해 문 앞에 멈춰 섰다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "사진의 위치",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그것이 어디 있는지는 알고 있네"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "전날 밤 화재 경보 작전으로 사진을 보지 못한 상태(발견 전)",
+     "source_text": "내일 왕과 함께 그 집에 갈 생각이야"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_43",
+     "assumes": "EVENT_2_4에서 사진을 회수하지 못하고 철수한 뒤의 시점",
+     "source_text": "내일 왕과 함께 그 집에 갈 생각이야"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "거리의 구경꾼은 전부 고용된 사람들",
+     "via": "told",
+     "retained": true,
+     "source_text": "거리에 있던 사람 모두가 한패였네"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "사진이 종줄 위 미닫이 판벽 뒤 벽감에 있다",
+     "via": "told",
+     "retained": true,
+     "source_text": "그것이 어디 있는지는 알고 있네"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "다음 날 아침 여덟 시 왕과 함께 브라이오니 로지를 방문할 계획",
+     "via": "told",
+     "retained": true,
+     "source_text": "아침 여덟 시일세"
+    }
+   ],
+   "cause": "브라이오니 로지에서 안전한 거리로 이동 후",
+   "result": "왓슨이 작전의 전모를 알게 되고, 왕에게 전보를 보내는 후속 조치가 예정됨",
+   "source_text": "아주 잘해 주었네, 박사. … 사진의 위치는 알고 있네. … 아침 여덟 시일세.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_45",
+   "scene_id": "scene_1_2",
+   "order": 1,
+   "title": "베이커가 문 앞에서의 의문의 인사",
+   "summary": "홈즈가 문을 열기 위해 주머니를 뒤적일 때, 지나가던 호리호리한 청년이 '안녕히 주무십시오, 셜록 홈즈 씨'라고 인사하며 지나갔다.",
+   "location_id": "LOC_001",
+   "time_id": "TIME_021",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_036"
+   ],
+   "witness_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_036",
+   "objects": [
+    "CHAR_036"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_036",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_001_문_앞",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "그 인사는 서둘러 지나가던 얼스터 코트 차림의 호리호리한 청년에게서 나온 것 같았다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_036",
+     "field": "knows",
+     "assumes": "홈즈의 주소와 신원",
+     "source_text": "안녕히 주무십시오, 셜록 홈즈 씨"
+    },
+    {
+     "entity": "CHAR_036",
+     "field": "ability",
+     "assumes": "홈즈를 인식하고 이름을 붙여 부를 수 있음",
+     "source_text": "안녕히 주무십시오, 셜록 홈즈 씨"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "이 목소리를 이전에 들어 보았다는 인상",
+     "source_text": "전에 들어 본 목소리인데"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_44",
+     "assumes": "EVENT_2_5의 베이커가 도착 직후의 시각",
+     "source_text": "우리는 베이커가에 도착해 문 앞에 멈춰 섰다. 그가 열쇠를 찾아 주머니를 뒤지고 있을 때"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "얼스터 코트 차림의 호리호리한 청년이 자기를 이름으로 인사함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "안녕히 주무십시오, 셜록 홈즈 씨"
+    }
+   ],
+   "cause": "홈즈가 문을 열기 위해 열쇠를 찾는 사이",
+   "result": "홈즈는 그 인사의 발신자가 누구인지 의문을 품게 됨",
+   "source_text": "그가 열쇠를 찾아 주머니를 뒤지고 있을 때, 지나가던 누군가가 말했다. \"안녕히 주무십시오, 셜록 홈즈 씨.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_46",
+   "scene_id": "scene_2_1",
+   "order": 1,
+   "title": "왕의 브루엄 마차로 브라이오니 로지 재방문",
+   "summary": "보헤미아 왕이 브루엄 마차로 베이커가에 와서 셋은 함께 브라이오니 로지를 향해 출발했고, 마차 안에서 홈즈는 아이린이 전날 노턴이라는 영국인 변호사와 결혼했다고 알렸다.",
+   "location_id": "LOC_004",
+   "time_id": "TIME_022",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_009",
+    "CHAR_010"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_009",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_009",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_001",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "보헤미아의 왕이 방 안으로 뛰어들어 왔다"
+    },
+    {
+     "entity": "CHAR_010",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_004",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "다시 브라이오니 로지를 향해 출발했다"
+    },
+    {
+     "entity": "CHAR_010",
+     "field": "knows",
+     "from": "not_knows:아이린이_결혼했다는_사실",
+     "to": "아이린이_전날_고드프리_노턴과_결혼함",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "결혼! 언제 말이오? / 어제입니다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_009",
+     "field": "possesses",
+     "assumes": "브루엄 마차",
+     "source_text": "아니오, 내 브루엄 마차가 기다리고 있소"
+    },
+    {
+     "entity": "CHAR_010",
+     "field": "knows",
+     "assumes": "아이린의 남편이 영국인 변호사 노턴이라는 사실",
+     "source_text": "노턴이라는 영국인 변호사와요"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "아이린이 노턴을 사랑하기를 바람",
+     "source_text": "저는 그러기를 바라고 있습니다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "아이린 애들러가 전날 고드프리 노턴과 결혼함",
+     "via": "told",
+     "retained": true,
+     "source_text": "아이린 애들러는 결혼했습니다 … 노턴이라는 영국인 변호사와요"
+    },
+    {
+     "character_id": "CHAR_009",
+     "info": "아이린이 노턴과 결혼한 사실",
+     "via": "told",
+     "retained": true,
+     "source_text": "아이린 애들러는 결혼했습니다"
+    }
+   ],
+   "cause": "왕이 베이커가에 와서 사진 회수를 재차 시도하기 위해 출발",
+   "result": "셋은 브라이오니 로지에 도착하지만 아이린은 이미 떠난 뒤임",
+   "source_text": "보헤미아의 왕이 방 안으로 뛰어들어 왔다. … 우리는 내려가서 다시 브라이오니 로지를 향해 출발했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_47",
+   "scene_id": "scene_2_2",
+   "order": 1,
+   "title": "브라이오니 로지에서 아이린의 도피 통보",
+   "summary": "브라이오니 로지 문 앞에서 나이 든 여인이 아이린이 남편과 함께 채링 크로스에서 다섯 시 십오 분 기차로 대륙으로 떠났으며 다시는 돌아오지 않을 것이라고 알렸다.",
+   "location_id": "LOC_004",
+   "time_id": "TIME_022",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "NEW:나이_든_여인",
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_009",
+    "CHAR_010"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "NEW:나이_든_여인",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_008",
+     "field": "location",
+     "from": "LOC_004",
+     "to": "unknown_대륙_행",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "마님은 오늘 아침 남편분과 함께 채링 크로스에서 다섯 시 십오 분 기차로 대륙으로 떠나셨습니다요"
+    },
+    {
+     "entity": "CHAR_010",
+     "field": "knows",
+     "from": "not_knows:아이린의_도피",
+     "to": "아이린이_잉글랜드를_떠남",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그녀가 잉글랜드를 떠났다는 말입니까?"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "NEW:나이_든_여인",
+     "field": "knows",
+     "assumes": "아이린이 떠난 사실과 다시는 돌아오지 않을 예정",
+     "source_text": "다시는 돌아오지 않으실 겁니다요"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "도착 직전까지 아이린이 거기에 있을 것이라 짐작",
+     "source_text": "아침 여덟 시일세. 그녀는 아직 일어나지 않았을 테니"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_46",
+     "assumes": "브라이오니 로지 도착과 동시에 진행됨",
+     "source_text": "브라이오니 로지의 문은 열려 있었고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "아이린이 남편과 함께 채링 크로스에서 5시 15분 기차로 대륙으로 떠남",
+     "via": "told",
+     "retained": true,
+     "source_text": "마님은 오늘 아침 남편분과 함께 채링 크로스에서 다섯 시 십오 분 기차로 대륙으로 떠나셨습니다요"
+    },
+    {
+     "character_id": "CHAR_009",
+     "info": "아이린이 잉글랜드를 떠남",
+     "via": "told",
+     "retained": true,
+     "source_text": "그녀가 잉글랜드를 떠났다는 말입니까?"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "아이린이 잉글랜드를 떠남",
+     "via": "told",
+     "retained": true,
+     "source_text": "그녀가 잉글랜드를 떠났다는 말입니까?"
+    }
+   ],
+   "cause": "브라이오니 로지 도착 후 하녀의 통보",
+   "result": "왕과 홈즈는 놀라움과 원통함을 표하고, 응접실로 들어가 잔해를 뒤지게 됨",
+   "source_text": "브라이오니 로지의 문은 열려 있었고, 나이 든 여인 하나가 계단 위에 서 있었다. … 마님은 오늘 아침 남편분과 함께 채링 크로스에서 다섯 시 십오 분 기차로 대륙으로 떠나셨습니다요.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_48",
+   "scene_id": "scene_2_2",
+   "order": 2,
+   "title": "응접실 뒤짐과 사진·편지 발견",
+   "summary": "홈즈는 종줄로 달려가 미닫이 덧문을 뜯어 사진과 편지를 꺼냈고, 사진은 아이린의 야회복 사진이며 편지 겉면에는 '셜록 홈즈 귀하. 찾으러 오실 때까지 보관'이라고 적혀 있었다.",
+   "location_id": "LOC_004",
+   "time_id": "TIME_022",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_009",
+    "CHAR_010"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_005",
+    "NEW:아이린의_편지"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_005",
+     "field": "possesses",
+     "from": "LOC_004_종줄_위_미닫이_판벽_뒤_벽감",
+     "to": "CHAR_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "종줄로 달려가 작은 미닫이 덧문을 뜯어내고, 손을 안으로 밀어 넣어 사진 한 장과 편지 한 통을 꺼냈다"
+    },
+    {
+     "entity": "NEW:아이린의_편지",
+     "field": "possesses",
+     "from": "LOC_004_종줄_위_미닫이_판벽_뒤_벽감",
+     "to": "CHAR_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "손을 안으로 밀어 넣어 사진 한 장과 편지 한 통을 꺼냈다"
+    },
+    {
+     "entity": "OBJ_005",
+     "field": "location",
+     "from": "LOC_004_종줄_위_미닫이_판벽_뒤_벽감",
+     "to": "LOC_004_응접실",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "그 사진은 야회복 차림의 아이린 애들러 자신을 찍은 것이었고"
+    },
+    {
+     "entity": "LOC_004",
+     "field": "condition",
+     "from": "unknown",
+     "to": "가구가 사방으로 흩어지고 선반은 뜯겨져 있으며 서랍은 열려 있음",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "가구는 사방으로 흩어져 있었고, 선반은 뜯겨져 있었으며 서랍은 열려 있었는데"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "미닫이 덧문을 뜯어낼 수 있는 신체 능력",
+     "source_text": "종줄로 달려가 작은 미닫이 덧문을 뜯어내고"
+    },
+    {
+     "entity": "NEW:아이린의_편지",
+     "field": "knows",
+     "assumes": "찾으러 오실 때까지 보관하라는 지시(아이린이 홈즈를 예상하고 남겨둠)",
+     "source_text": "찾으러 오실 때까지 보관"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_47",
+     "assumes": "EVENT_2_8의 하녀 통보 직후 응접실로 진입한 상황",
+     "source_text": "그는 하녀를 밀치고 지나 응접실로 뛰어들었고"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "사진은 야회복 차림의 아이린 애들러 본인",
+     "via": "document",
+     "retained": true,
+     "source_text": "그 사진은 야회복 차림의 아이린 애들러 자신을 찍은 것이었고"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "아이린이 홈즈를 예상하고 편지와 사진을 남겨두었다",
+     "via": "document",
+     "retained": true,
+     "source_text": "편지 겉면에는 \"셜록 홈즈 귀하. 찾으러 오실 때까지 보관\"이라고 적혀 있었다"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "사진은 야회복 차림의 아이린 애들러 본인",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그 사진은 야회복 차림의 아이린 애들러 자신을 찍은 것이었고"
+    },
+    {
+     "character_id": "CHAR_009",
+     "info": "사진은 야회복 차림의 아이린 애들러 본인",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그 사진은 야회복 차림의 아이린 애들러 자신을 찍은 것이었고"
+    }
+   ],
+   "cause": "아이린의 도피 통보 후 응접실로 진입",
+   "result": "사진과 편지가 회수됨",
+   "source_text": "홈즈는 종줄로 달려가 작은 미닫이 덧문을 뜯어내고, 손을 안으로 밀어 넣어 사진 한 장과 편지 한 통을 꺼냈다. 그 사진은 야회복 차림의 아이린 애들러 자신을 찍은 것이었고, 편지 겉면에는 \"셜록 홈즈 귀하. 찾으러 오실 때까지 보관\"이라고 적혀 있었다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_49",
+   "scene_id": "scene_2_3",
+   "order": 1,
+   "title": "아이린의 자정 편지 낭독",
+   "summary": "편지는 전날 밤 자정에 쓰인 것으로, 아이린이 자기를 추적한 정체가 홈즈임을 깨달은 뒤 템플에서 남편과 만나 함께 도피하기로 결심한 경위를 담고 있다.",
+   "location_id": "LOC_004",
+   "time_id": "TIME_022",
+   "timeline": "main",
+   "reality_status": "document",
+   "participant_character_ids": [
+    "CHAR_008",
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_009",
+    "CHAR_010"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_008",
+   "objects": [
+    "NEW:아이린의_편지"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_008",
+     "field": "ability",
+     "assumes": "남장(남장한 노인 목사 모습)을 할 수 있는 배우적 훈련",
+     "source_text": "남장은 저에게 새로운 일이 아니에요. 저는 그것이 주는 자유를 종종 활용하곤 합니다"
+    },
+    {
+     "entity": "CHAR_008",
+     "field": "knows",
+     "assumes": "수개월 전부터 홈즈를 조심하라는 경고를 받은 사실, 왕이 대리인을 고용하면 홈즈일 것이라는 정보, 홈즈의 주소",
+     "source_text": "저는 몇 달 전부터 당신을 조심하라는 경고를 받았습니다. 왕이 대리인을 고용한다면 틀림없이 당신일 것이라는 말도 들었지요. 당신의 주소까지 전해 받었습니다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_48",
+     "assumes": "EVENT_2_9에서 발견된 편지를 셋이 함께 읽는 장면",
+     "source_text": "그 사진을 야회복 차림의 아이린 애들러 자신을 찍은 것이었고, 편지 겉면에는 … 적혀 있었다. 내 친구는 그것을 뜯어 열었고, 우리 셋은 함께 그것을 읽었다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "아이린이 남장(노인 목사 모습)을 해 자기를 미행하고 베이커가까지 따라온 정체였음",
+     "via": "document",
+     "retained": true,
+     "source_text": "하지만 아시다시피 저도 배우로 훈련받은 사람입니다. 남장은 저에게 새로운 일이 아니에요"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "아이린이 베이커가 문 앞에서 '안녕히 주무십시오'라고 인사한 것이 호리호리한 청년이 아니라 남장한 아이린 본인이라는 점",
+     "via": "document",
+     "retained": true,
+     "source_text": "저는 마부 존을 보내 당신을 지켜보게 하고, 위층으로 뛰어 올라가 이른바 제 산책복으로 갈아입고는 … 안녕히 주무시라는 인사를 건네고"
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "아이린이 고드프리 노턴을 사랑하며 그 사랑을 받고 있음",
+     "via": "document",
+     "retained": true,
+     "source_text": "저는 그분보다 나은 남자를 사랑하고, 그의 사랑을 받고 있습니다"
+    },
+    {
+     "character_id": "CHAR_009",
+     "info": "아이린이 노턴의 사랑을 받고 그를 사랑함",
+     "via": "document",
+     "retained": true,
+     "source_text": "저는 그분보다 나은 남자를 사랑하고, 그의 사랑을 받고 있습니다"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "아이린이 고드프리 노턴을 사랑함",
+     "via": "document",
+     "retained": true,
+     "source_text": "저는 그분보다 나은 남자를 사랑하고, 그의 사랑을 받고 있습니다"
+    }
+   ],
+   "cause": "EVENT_2_9에서 편지가 발견되어 셋이 함께 읽음",
+   "result": "왕은 사진이 안전하다고 판단하고, 홈즈는 사진을 자신이 갖고 가겠다고 요청함",
+   "source_text": "편지는 전날 밤 자정에 쓴 것으로, 이렇게 적혀 있었다. \"친애하는 셜록 홈즈 씨—당신은 정말 잘하셨습니다. … 삼가, 아이린 노턴, 결혼 전 성 애들러 올림.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_50",
+   "scene_id": "scene_2_3",
+   "order": 2,
+   "title": "왕의 '더 성공적일 수 없다' 선언",
+   "summary": "왕은 아이린의 말이 불가침이라며 사진이 불태워진 것이나 다름없이 안전하다고 선언하고, 홈즈에게 보답하겠다고 말했다.",
+   "location_id": "LOC_004",
+   "time_id": "TIME_022",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_009",
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_010"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_009",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_009",
+     "field": "knows",
+     "from": "unknown",
+     "to": "아이린이_남편을_사랑함",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "저는 그분보다 나은 남자를 사랑하고, 그의 사랑을 받고 있습니다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_009",
+     "field": "knows",
+     "assumes": "아이린이 자발적으로 사진을 위협 무력화하겠다고 약속한 점, 그녀의 말이 불가침이라 믿는 점",
+     "source_text": "나는 그녀의 말이 불가침이라는 것을 알고 있소"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_49",
+     "assumes": "EVENT_2_10의 편지 낭독 직후 반응",
+     "source_text": "우리 셋이 이 편지를 다 읽었을 때 보헤미아의 왕이 외쳤다"
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "편지 내용을 통해 사진의 위협이 사실상 무력화되었음을 왕이 인식",
+   "result": "왕은 사진을 불태운 것과 동등한 안전 상태로 판단하고 보답 의사를 밝힘",
+   "source_text": "오히려 그 반대요, 친애하는 선생. 이보다 더 성공적일 수는 없소. 나는 그녀의 말이 불가침이라는 것을 알고 있소. 그 사진은 이제 불태워 버린 것이나 다름없이 안전하오.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_2_51",
+   "scene_id": "scene_2_3",
+   "order": 3,
+   "title": "왕의 보답 제안과 홈즈의 사진 요청",
+   "summary": "왕은 에메랄드 뱀 반지를 보답으로 내밀었고, 홈즈는 돈보다 사진 자체를 달라고 요청해 받아냈다.",
+   "location_id": "LOC_004",
+   "time_id": "TIME_022",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_009",
+    "CHAR_001",
+    "CHAR_002",
+    "CHAR_010"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_019",
+    "OBJ_005"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_019",
+     "field": "possesses",
+     "from": "CHAR_009",
+     "to": "unknown",
+     "op": "remove",
+     "volatility": "transient",
+     "decays_to": "unknown",
+     "certainty": "explicit",
+     "source_text": "그는 손가락에서 에메랄드 뱀 반지를 빼내 손바닥 위에 올려 내밀었다"
+    },
+    {
+     "entity": "OBJ_005",
+     "field": "possesses",
+     "from": "CHAR_001",
+     "to": "CHAR_001",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "아이린의 사진 말이오! 물론이오, 원하신다면"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "반화 시점에 사진은 이미 자기가 갖고 있는 상태",
+     "source_text": "전하께는 제가 그보다 더 소중히 여길 만한 것이 있습니다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_2_50",
+     "assumes": "EVENT_2_11의 왕 보답 제안 직후의 응답",
+     "source_text": "이 반지는— / 전하께는 제가 그보다 더 소중히 여길 만한 것이 있습니다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "왕이 사진의 영구 소유를 허가함",
+     "via": "told",
+     "retained": true,
+     "source_text": "아이린의 사진 말이오! 물론이오, 원하신다면"
+    }
+   ],
+   "cause": "왕의 보답 제안에 대한 홈즈의 응답",
+   "result": "홈즈는 사진 영구 보유권을 얻고 사건은 종결됨",
+   "source_text": "이 반지는— / 전하께는 제가 그보다 더 소중히 여길 만한 것이 있습니다 / 이 사진입니다! / 아이린의 사진 말이오! 물론이오, 원하신다면.",
+   "certainty": "explicit"
+  }
+ ]
+}

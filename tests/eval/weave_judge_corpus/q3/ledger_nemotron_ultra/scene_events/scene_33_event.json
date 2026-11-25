@@ -1,0 +1,103 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "서율과 마르타의 대화 - 딸 이야기",
+   "summary": "서율이 마르타에게 3년 전 해안 기지에서 딸 이야기를 자주 했던 것을 언급하며 이번 겨울에도 그럴 줄 알았다고 말한다. 마르타는 펜을 멈추고 서율을 오래 바라본다.",
+   "location_id": "unknown",
+   "time_id": "unknown",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "자신의 딸이 존재함",
+     "source_text": "따님한테는 못 보내시죠. / 못 보내지."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "3년 전 해안 기지에서 근무한 적 있음",
+     "source_text": "3년 전에도 그러셨잖아요. 해안 기지에서."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "당시 딸 이야기를 자주 했음",
+     "source_text": "따님 얘기 자주 하셨는데."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "마르타가 3년 전 해안 기지에서 근무했음을 앎",
+     "source_text": "3년 전에도 그러셨잖아요. 해안 기지에서."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "마르타가 당시 딸 이야기를 자주 했음을 앎",
+     "source_text": "따님 얘기 자주 하셨는데. / 저는 그때 선생님이 딸 얘기 하는 사람이라고 생각했어요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "이번 겨울에도 마르타가 딸 이야기를 할 줄 알았음",
+     "source_text": "그래서 이번 겨울에도 그러실 줄 알았고요."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "마르타가 딸을 못 보내는 상황임을 확인함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "따님한테는 못 보내시죠. / 못 보내지."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "마르타가 3년 전 해안 기지에서 딸 이야기를 자주 했음을 재확인함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "자주 했나. / 자주 했나."
+    }
+   ],
+   "cause": "서율이 마르타의 과거(해안 기지 근무, 딸 이야기)를 화제로 삼음",
+   "result": "마르타가 펜을 멈추고 서율을 오래 바라봄. 서율은 시선을 피하지 않음",
+   "source_text": "\"따님한테는 못 보내시죠.\" 서율이 말했다. 마르타는 수첩에서 눈을 들지 않았다. \"못 보내지.\" \"3년 전에도 그러셨잖아요. 해안 기지에서. 따님 얘기 자주 하셨는데.\" 마르타가 펜을 멈췄다. \"자주 했나.\" \"회진 돌면서요. 저는 그때 선생님이 딸 얘기 하는 사람이라고 생각했어요. 그래서 이번 겨울에도 그러실 줄 알았고요.\" 마르타는 서율을 보았다. 오래 보았다. 서율은 그 시선을 피하지 않았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T10:02:33Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": true,
+  "parse_retried": false,
+  "attempts": 3,
+  "elapsed_sec": 115.76
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [
+  {
+   "location_id": "NEW:닥터스_코먼스_열람실",
+   "name": "닥터스 코먼스의 열람실",
+   "description": "닥터스 코먼스에 딸린 열람실. 오전 내내 조용했다.",
+   "source_text": "닥터스 코먼스의 열람실은 오전 내내 조용했다.",
+   "certainty": "explicit"
+  }
+ ],
+ "objects": [
+  {
+   "object_id": "NEW:고인된_아내의_유언장",
+   "name": "고인이 된 아내의 유언장",
+   "description": "홈즈의 고인된 아내가 남긴 유언장. 딸들이 함께 사는 동안 전액이 계부에게 가고, 각자 결혼할 경우 일정한 연 수입을 청구할 수 있다고 명시되어 있다.",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "고인이 된 아내의 유언장을 펼쳐 놓고",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "NEW:오전_내내",
+   "expression": "오전 내내",
+   "description": "열람실이 조용했던 시간대.",
+   "timeline": "main",
+   "source_text": "닥터스 코먼스의 열람실은 오전 내내 조용했다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "홈즈가 열람실에서 아내의 유언장을 펼치고 시세를 계산하다",
+   "summary": "홈즈는 닥터스 코먼스 열람실에서 고인된 아내의 유언장을 펼쳐 놓고, 딸들의 동거 및 결혼 조건에 따른 투자금의 현재 시세를 계산한다. 농산물 가격 하락으로 총수입이 줄었음을 확인한다.",
+   "location_id": "NEW:닥터스_코먼스_열람실",
+   "time_id": "NEW:오전_내내",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "NEW:고인된_아내의_유언장"
+   ],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "NEW:고인된_아내의_유언장 (펼쳐 놓고 있음)",
+     "source_text": "고인이 된 아내의 유언장을 펼쳐 놓고"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "수첩 (덮음)",
+     "source_text": "숫자를 두 번 확인한 뒤 수첩을 덮었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "유언장 조항의 내용 (딸 동거 시 전액 계부, 결혼 시 연 수입 청구)",
+     "source_text": "조항은 간단했다. 딸들이 함께 사는 동안에는 전액이 계부에게 가고, 각자 결혼할 경우에는 일정한 연 수입을 청구할 수 있었다."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "투자금의 현재 시세와 아내 사후 대비 총수입 감소",
+     "source_text": "농산물 가격이 떨어진 탓에 총수입은 아내가 죽었을 당시보다 상당히 줄어 있었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "유언장 조항 — 딸들이 함께 사는 동안 전액이 계부에게 가고, 각자 결혼할 경우 일정한 연 수입 청구 가능",
+     "via": "direct",
+     "retained": true,
+     "source_text": "조항은 간단했다. 딸들이 함께 사는 동안에는 전액이 계부에게 가고, 각자 결혼할 경우에는 일정한 연 수입을 청구할 수 있었다."
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "농산물 가격 하락으로 투자 총수입이 아내 사후 대비 상당히 줄어 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "농산물 가격이 떨어진 탓에 총수입은 아내가 죽었을 당시보다 상당히 줄어 있었다."
+    }
+   ],
+   "cause": "유언장 조항에 따른 투자금 시세 확인",
+   "result": "총수입이 아내 사후 대비 줄었음을 확인하고 수첩을 덮음",
+   "source_text": "닥터스 코먼스의 열람실은 오전 내내 조용했다. 홈즈는 고인이 된 아내의 유언장을 펼쳐 놓고 투자금의 현재 시세를 계산하고 있었다. 조항은 간단했다. 딸들이 함께 사는 동안에는 전액이 계부에게 가고, 각자 결혼할 경우에는 일정한 연 수입을 청구할 수 있었다. 그는 숫자를 두 번 확인한 뒤 수첩을 덮었다. 농산물 가격이 떨어진 탓에 총수입은 아내가 죽었을 당시보다 상당히 줄어 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:05:09Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 13.5
+ }
+}

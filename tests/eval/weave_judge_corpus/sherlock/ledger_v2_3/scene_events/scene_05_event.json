@@ -1,0 +1,165 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:수첩에_시각을_적은_직후",
+   "expression": "수첩에 시각을 적어 두는 그 순간",
+   "description": "홈즈가 문지방을 조사하고 왓슨이 시각을 기록한 바로 그 시점",
+   "timeline": "main",
+   "source_text": "수첩을 꺼내 시각만 적어 두었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "홈즈가 문지방의 먼지를 렌즈로 조사함",
+   "summary": "홈즈가 무릎을 꿇고 문지방의 먼지를 렌즈로 들여다보며 무언가를 찾았다. 왓슨은 같은 자리를 보았지만 먼지 외에는 발견하지 못했다.",
+   "location_id": "unknown",
+   "time_id": "NEW:수첩에_시각을_적은_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [],
+   "state_changes": [],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_015 (길고 가느다란 지팡이 겸용 렌즈)",
+     "source_text": "문지방의 먼지를 렌즈로 들여다보는"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "무릎을 꿇을 수 있는 신체 상태",
+     "source_text": "무릎을 꿇고 문지방의 먼지를 렌즈로 들여다보는"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "렌즈를 사용해 미세한 흔적을 판별할 수 있는 관찰력",
+     "source_text": "문지방의 먼지를 렌즈로 들여다보는 것을 지켜보았다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "assumes": "수첩",
+     "source_text": "수첩을 꺼내 시각만 적어 두었다."
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "ability",
+     "assumes": "문지방의 먼지에서 별다른 단서를 알아챌 수 없음 (홈즈의 관찰력에 미치지 못함)",
+     "source_text": "같은 자리를 왓슨도 조금 전에 보았지만, 거기에는 그저 먼지가 있었을 뿐이다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "문지방의 먼지(또는 흔적)에서 무언가를 발견함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "보긴 했겠지."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈가 문지방에서 무언가를 보았음",
+     "via": "told",
+     "retained": true,
+     "source_text": "보긴 했겠지. / 홈즈가 대답했다."
+    }
+   ],
+   "cause": "왓슨이 홈즈의 행위를 지켜봄",
+   "result": "홈즈가 '보긴 했겠지'라고만 답하고 끝냄",
+   "source_text": "왓슨은 홈즈가 무릎을 꿇고 문지방의 먼지를 렌즈로 들여다보는 것을 지켜보았다. 그가 무엇을 찾고 있는지는 알 수 없었다. 같은 자리를 왓슨도 조금 전에 보았지만, 거기에는 그저 먼지가 있었을 뿐이다. 홈즈가 짧게 무어라 중얼거리고는 자리에서 일어났다. \"뭘 찾았나?\" 왓슨이 물었다. \"보긴 했겠지.\" 홈즈가 대답했다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "왓슨이 수첩에 시각을 기록함",
+   "summary": "홈즈의 모호한 대답에 더 캐묻지 않고, 왓슨은 수첩에 시각만 적어 두었다.",
+   "location_id": "unknown",
+   "time_id": "NEW:수첩에_시각을_적은_직후",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_002"
+   ],
+   "witness_character_ids": [
+    "CHAR_001"
+   ],
+   "main_actor_character_id": "CHAR_002",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_002",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "NEW:수첩",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "수첩을 꺼내 시각만 적어 두었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "현재 시각 (시각을 적을 수 있어야 하므로)",
+     "source_text": "시각만 적어 두었다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "EVENT_6_1의 문지방 조사 직후의 연속된 시점이며, 장소가 동일하다",
+     "source_text": "더 캐묻지 않고 수첩을 꺼내 시각만 적어 두었다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_002",
+     "info": "홈즈의 '보긴 했겠지'라는 모호한 답변의 의미",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"보긴 했겠지.\" 홈즈가 대답했다. 왓슨은 그것이 대답이 아니라는 것을 알았지만, 더 캐묻지 않고 수첩을 꺼내 시각만 적어 두었다."
+    }
+   ],
+   "cause": "홈즈가 '보긴 했겠지'라고만 답함",
+   "result": "왓슨은 더 묻지 않고 시각만 기록함",
+   "source_text": "왓슨은 그것이 대답이 아니라는 것을 알았지만, 더 캐묻지 않고 수첩을 꺼내 시각만 적어 두었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:03:24Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 12.26
+ }
+}

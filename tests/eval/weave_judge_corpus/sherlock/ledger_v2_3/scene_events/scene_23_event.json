@@ -1,0 +1,282 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "아이자가 마차에서 내려 현관에 도착하다",
+   "summary": "아이자 휘트니가 마차에서 내려 문설주를 붙들었고, 아내 케이트가 현관으로 달려 나와 그의 팔을 붙들어 안으로 들였다.",
+   "location_id": "LOC_026",
+   "time_id": "TIME_041",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_021",
+    "CHAR_022"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_022",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_021",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_026",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "아이자 휘트니는 마차에서 내려 문설주를 붙들었다."
+    },
+    {
+     "entity": "CHAR_022",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_026",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "케이트가 현관으로 달려 나왔다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_021",
+     "field": "body_status",
+     "assumes": "보행·문설주를 붙들 수 있는 신체의 인물이지만 이틀 밤을 소굴에서 보낸 직후라 휘청거림",
+     "source_text": "그는 이틀 밤을 그 소굴에서 보낸 참이었고"
+    },
+    {
+     "entity": "CHAR_022",
+     "field": "knows",
+     "assumes": "남편이 도착했음을 인지함 (현관으로 달려 나옴)",
+     "source_text": "케이트가 현관으로 달려 나왔다"
+    },
+    {
+     "entity": "CHAR_021",
+     "field": "knows",
+     "assumes": "요일을 혼동할 정도로 시간 감각이 흐트러져 있음",
+     "source_text": "요일도 제대로 알지 못했다. \"수요일 아니었나.\""
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [],
+   "cause": "아이자가 이틀 밤을 소굴에서 보낸 뒤 마차로 귀가함",
+   "result": "케이트가 그를 현관에서 맞아 집 안으로 들임",
+   "source_text": "아이자 휘트니는 마차에서 내려 문설주를 붙들었다. 케이트가 현관으로 달려 나왔다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_2",
+   "scene_id": "scene_6_1",
+   "order": 2,
+   "title": "아이자가 이틀 밤을 소굴에서 보낸 사실과 요일 혼동",
+   "summary": "아이자는 이틀 밤을 '그 소굴'에서 보낸 참이었고, 요일도 제대로 알지 못해 '수요일 아니었나'라고 중얼거렸다.",
+   "location_id": "LOC_026",
+   "time_id": "TIME_041",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_021"
+   ],
+   "witness_character_ids": [
+    "CHAR_022"
+   ],
+   "main_actor_character_id": "CHAR_021",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_021",
+     "field": "body_status",
+     "from": "정상",
+     "to": "이틀 밤을 소굴에서 보내 휘청거리는 상태",
+     "op": "set",
+     "volatility": "transient",
+     "decays_to": "정상",
+     "certainty": "inferred",
+     "source_text": "그는 이틀 밤을 그 소굴에서 보낸 참이었고, 요일도 제대로 알지 못했다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_021",
+     "field": "body_status",
+     "assumes": "이틀 밤을 그 소굴(아편굴)에서 보냄 (직전 상태와의 비교)",
+     "source_text": "그는 이틀 밤을 그 소굴에서 보낸 참이었고"
+    },
+    {
+     "entity": "CHAR_021",
+     "field": "knows",
+     "assumes": "현재 요일을 혼동하고 있음 (수요일이라 짐작)",
+     "source_text": "요일도 제대로 알지 못했다. \"수요일 아니었나.\""
+    },
+    {
+     "entity": "CHAR_021",
+     "field": "ability",
+     "assumes": "혼잣말을 중얼거릴 수 있는 의식 상태",
+     "source_text": "그가 중얼거렸다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "현관에 도착한 직후 같은 시점의 연속된 행동이다",
+     "source_text": "그가 중얼거렸다. 아내는 대답하지 않고"
+    }
+   ],
+   "knowledge_gained": [],
+   "cause": "이틀간 아편굴에滞留",
+   "result": "시간 감각 상실, 요일 혼동",
+   "source_text": "그는 이틀 밤을 그 소굴에서 보낸 참이었고, 요일도 제대로 알지 못했다. \"수요일 아니었나.\"",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_3",
+   "scene_id": "scene_6_1",
+   "order": 3,
+   "title": "케이트가 남편의 팔을 붙들어 집 안으로 들이다",
+   "summary": "케이트는 대답하지 않고 아이자의 팔을 붙들어 집 안으로 들였다.",
+   "location_id": "LOC_026",
+   "time_id": "TIME_041",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_022",
+    "CHAR_021"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_022",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_021",
+     "field": "location",
+     "from": "LOC_026",
+     "to": "LOC_026",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "inferred",
+     "source_text": "그의 팔을 붙들어 안으로 들였다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_022",
+     "field": "knows",
+     "assumes": "남편의 혼잣말(요일 혼동)에 답하지 않기로 결심함",
+     "source_text": "아내는 대답하지 않고"
+    },
+    {
+     "entity": "CHAR_022",
+     "field": "body_status",
+     "assumes": "남편의 팔을 붙들어 끌 수 있는 신체 능력",
+     "source_text": "그의 팔을 붙들어 안으로 들였다"
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_1",
+     "assumes": "EVENT_6_1의 현관 도착 직후 시점이며, 장소·인물이 동일하다",
+     "source_text": "케이트가 현관으로 달려 나왔다. ... 아내는 대답하지 않고 그의 팔을 붙들어 안으로 들였다"
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_022",
+     "info": "남편이 이틀 밤을 소굴에서 보냈으며 요일 감각을 잃은 상태임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "그는 이틀 밤을 그 소굴에서 보낸 참이었고, 요일도 제대로 알지 못했다. ... 아내는 대답하지 않고 그의 팔을 붙들어 안으로 들였다."
+    }
+   ],
+   "cause": "아이자가 현관에서 휘청거렸기 때문",
+   "result": "아이자가 집 안으로 들어감",
+   "source_text": "아내는 대답하지 않고 그의 팔을 붙들어 안으로 들였다.",
+   "certainty": "explicit"
+  },
+  {
+   "event_id": "EVENT_6_4",
+   "scene_id": "scene_6_1",
+   "order": 4,
+   "title": "아이자의 주머니가 비어 있음 (셈이 이미 치러진 뒤)",
+   "summary": "아이자의 주머니에는 아무것도 남아 있지 않았다. 셈은 이미 치러진 뒤였고, 그것을 누가 치렀는지는 묻지 않았다.",
+   "location_id": "LOC_026",
+   "time_id": "TIME_041",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_021"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_021",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_021",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "unknown",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "그의 주머니에는 아무것도 남아 있지 않았다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_021",
+     "field": "knows",
+     "assumes": "셈이 이미 치러졌다는 사실을 인지함 (주머니가 빈 이유를 앎)",
+     "source_text": "셈은 이미 치러진 뒤였고"
+    },
+    {
+     "entity": "CHAR_021",
+     "field": "knows",
+     "assumes": "누가 그 셈을 치렀는지 알 수 있지만 묻지 않기로 함",
+     "source_text": "그것을 누가 치렀는지 그는 묻지 않았다."
+    }
+   ],
+   "cross_event_assumptions": [
+    {
+     "with_event_id": "EVENT_6_3",
+     "assumes": "집 안으로 들여진 뒤 같은 시점의 관찰이다",
+     "source_text": "그의 주머니에는 아무것도 남아 있지 않았다."
+    }
+   ],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_021",
+     "info": "소굴에서의 셈(갚음/대가)이 이미 누군가에 의해 처리되었음",
+     "via": "inference",
+     "retained": true,
+     "source_text": "셈은 이미 치러진 뒤였고, 그것을 누가 치렀는지 그는 묻지 않았다."
+    }
+   ],
+   "cause": "이틀간의 소굴 체류로 인한 셈의 처리",
+   "result": "아이자는 주머니가 비어 있음을 인지하고도 그 정체에 묻지 않음",
+   "source_text": "그의 주머니에는 아무것도 남아 있지 않았다. 셈은 이미 치러진 뒤였고, 그것을 누가 치렀는지 그는 묻지 않았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:05:42Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 21.1
+ }
+}

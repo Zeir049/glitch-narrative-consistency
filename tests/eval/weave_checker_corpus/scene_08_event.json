@@ -1,0 +1,75 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "worldview_rules": [
+    {
+      "rule_id": "RULE_010",
+      "content": "넘어짐 수준의 이상도 감지되어 로봇이 즉시 조치한다 (재확인)",
+      "description": "노인이 주저앉자 인근 로봇 두 대가 즉시 부축·상태 확인.",
+      "source_text": "가로수 옆에 서 있던 로봇 두 대가 먼저 움직였다.",
+      "certainty": "explicit"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "NEW:주저앉은_노인",
+      "name": "공원의 백발 노인",
+      "aliases": [],
+      "entity_type": "person",
+      "description": "공원에서 힘이 풀려 주저앉았다가 로봇의 부축으로 일어난 노인.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S08_1",
+      "source_text": "백발의 노인이 힘이 풀렸는지 주저앉았다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "NEW:공원_구조_로봇들",
+      "name": "공원의 구조 로봇들",
+      "aliases": [],
+      "entity_type": "robot",
+      "description": "이상 감지 시 즉시 조치하는 거리 배치 로봇.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S08_1",
+      "source_text": "로봇 두 대가 먼저 움직였다.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [],
+  "objects": [],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S08_1",
+      "order": 1,
+      "title": "주저앉은 노인에 대한 로봇의 즉시 조치",
+      "summary": "공원에서 노인이 주저앉자 알파가 달려가기도 전에 인근 로봇 두 대가 부축하고 상태를 살핀 뒤 제자리로 복귀한다.",
+      "location_id": "LOC_007",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": [
+        "NEW:주저앉은_노인",
+        "NEW:공원_구조_로봇들"
+      ],
+      "witness_character_ids": [
+        "CHAR_002"
+      ],
+      "main_actor_character_id": "NEW:공원_구조_로봇들",
+      "objects": [],
+      "state_changes": [],
+      "assumed_states": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "감지 체계와 로봇 조치가 실제로 즉시 작동함을 확인",
+          "via": "direct",
+          "source_text": "넘어진 것 정도도 다 뜬다더니, 진짜였어."
+        }
+      ],
+      "cause": "노인의 낙상",
+      "result": "노인 회복, 로봇 복귀",
+      "source_text": "내가 달려가기도 전에, 가로수 옆에 서 있던 로봇 두 대가 먼저 움직였다.",
+      "certainty": "explicit"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "정미가 여탕에서 나와 카운터에서 순덕과 대화",
+   "summary": "정미가 여탕에서 나와 카운터에 앉은 순덕에게 오빠(정호)의 이자 납부일과 원금 상황을 묻지만, 순덕은 장부를 덮으며 모른다고 선을 긋고 대화를 끝낸다.",
+   "location_id": "LOC_002",
+   "time_id": "NEW:십이월_첫날_오전_영업시간",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_003",
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [
+    "OBJ_002"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "from": "unknown",
+     "to": "오빠(정호)의 이자 납부일이 다음 달 15일임을 인지함",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "\"엄마. 오빠 이자 부치는 거, 다음 달 십오일이제.\""
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "unknown",
+     "to": "정미가 오빠의 이자 납부일을 알고 있음을 인지함",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "\"그렇다.\""
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "오빠(정호)에게 빚이 있고 이자를 내고 있음",
+     "source_text": "\"오빠 이자 부치는 거, 다음 달 십오일이제.\""
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "원금이 얼마 남았는지 모름",
+     "source_text": "\"그러면 원금은 우짜노. 얼마 남았는데.\""
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "정호의 빚 규모와 원금 잔액을 모름",
+     "source_text": "\"니 오빠 빚이 얼만지 내가 우에 아노.\""
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_002 (장부, 정호 관련 장부 포함)",
+     "source_text": "맨 뒷장에 정미 이름이 적힌 장부였다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_003",
+     "info": "오빠(정호)의 이자 납부일이 다음 달 15일임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "\"엄마. 오빠 이자 부치는 거, 다음 달 십오일이제.\""
+    },
+    {
+     "character_id": "CHAR_003",
+     "info": "어머니(순덕)는 오빠의 빚 원금 잔액을 모름",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"니 오빠 빚이 얼만지 내가 우에 아노. 모르는 거는 모르는 거다.\""
+    },
+    {
+     "character_id": "CHAR_001",
+     "info": "정미가 오빠의 이자 납부일을 알고 있음",
+     "via": "told",
+     "retained": true,
+     "source_text": "\"엄마. 오빠 이자 부치는 거, 다음 달 십오일이제.\""
+    }
+   ],
+   "cause": "정미가 오빠의 빚 상황을 걱정하여 어머니에게 확인하려 함",
+   "result": "순덕은 장부를 덮으며 빚 내역을 모른다고 선을 긋고 대화를 종료함",
+   "source_text": "정미가 여탕에서 나와 손을 닦았다. 카운터에는 순덕이 앉아 있었고 요금 서랍은 닫혀 있었다. \"엄마. 오빠 이자 부치는 거, 다음 달 십오일이제.\" \"그렇다.\" \"그러면 원금은 우짜노. 얼마 남았는데.\" 순덕은 장부를 덮었다. 맨 뒷장에 정미 이름이 적힌 장부였다. \"니 오빠 빚이 얼만지 내가 우에 아노.\" \"엄마.\" \"모르는 거는 모르는 거다. 니 오빠가 말하면 그때 아는 거고.\" 정미는 수건을 개다가 손을 멈췄다. 순덕은 카운터 의자에서 골방 쪽으로 몸을 조금 돌렸다. 그것으로 얘기는 끝이었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:23:37Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 205.01
+ }
+}

@@ -1,0 +1,112 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [
+  {
+   "object_id": "NEW:가온의_종이_메모",
+   "name": "가온의 종이 메모",
+   "description": "가온이 연료 수치 계산을 적은 종이",
+   "first_appearance_event_id": "EVENT_6_1",
+   "source_text": "가온은 식탁에서 종이 한 장에 숫자를 적었다",
+   "certainty": "explicit"
+  }
+ ],
+ "times": [
+  {
+   "time_id": "TIME_011",
+   "expression": "4월 29일",
+   "description": "표결이 있었던 날",
+   "timeline": "main",
+   "source_text": "4월 29일 표결 때 여유가 4,000리터였다",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "가온의 연료 계산 메모 작성",
+   "summary": "가온이 식탁에서 종이에 연료 여유분과 일일 소모량을 계산해 적고 주머니에 넣는다.",
+   "location_id": "LOC_011",
+   "time_id": "TIME_011",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_005"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [
+    "NEW:가온의_종이_메모"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_005",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "NEW:가온의_종이_메모",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "종이를 접어 주머니에 넣었다"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "from": "unknown",
+     "to": "4월 29일 표결 시점 연료 여유분 4,000리터, 계획 일일 소모량 172리터, 실제 소모량 171리터, 일일 1리터 여유",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "4월 29일 표결 때 여유가 4,000리터였다. 그 뒤로 하루 172를 쓰기로 했는데 실제로는 171이었다. 하루에 1리터씩, 그것이 지금 가온이 가진 전부였다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "연료 관리 권한 및 수치 접근 권한이 있음",
+     "source_text": "가온은 식탁에서 종이 한 장에 숫자를 적었다"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "카림이 연료 관련 숫자 정보를 제공함",
+     "source_text": "카림은 숫자만 준다고 했고"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_005",
+     "info": "4월 29일 표결 시점 연료 여유분 4,000리터, 계획 일일 소모량 172리터, 실제 소모량 171리터, 일일 1리터 여유",
+     "via": "direct",
+     "retained": true,
+     "source_text": "4월 29일 표결 때 여유가 4,000리터였다. 그 뒤로 하루 172를 쓰기로 했는데 실제로는 171이었다. 하루에 1리터씩, 그것이 지금 가온이 가진 전부였다"
+    }
+   ],
+   "cause": "연료 상황 파악 및 기록 필요",
+   "result": "연료 수치 메모 작성 및 소지",
+   "source_text": "가온은 식탁에서 종이 한 장에 숫자를 적었다. 4월 29일 표결 때 여유가 4,000리터였다. 그 뒤로 하루 172를 쓰기로 했는데 실제로는 171이었다. 하루에 1리터씩, 그것이 지금 가온이 가진 전부였다. 카림은 숫자만 준다고 했고, 숫자가 달라지면 숫자가 다른 말을 한다. 가온은 적은 것을 지우개로 지우고 종이를 접어 주머니에 넣었다. 아직 아무에게도 보여 줄 숫자가 아니었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:56:10Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 44.08
+ }
+}

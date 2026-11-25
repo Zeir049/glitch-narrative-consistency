@@ -1,0 +1,125 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:5월 14일 21시",
+   "expression": "5월 14일 21시",
+   "description": "서율이 S-2 금고에서 열쇠를 꺼내 설비실 사다리를 타고 내려간 시각",
+   "timeline": "main",
+   "source_text": "5월 14일 21시. 서율은 S-2 금고에서 열쇠를 꺼내 설비실 안쪽 사다리를 타고 4미터를 내려갔다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "서율, 설비실 지하 통로 강철 문 잠금",
+   "summary": "서율이 S-2 금고에서 열쇠를 꺼내 설비실 사다리를 타고 내려가 30미터 지점의 강철 문을 잠근다.",
+   "location_id": "LOC_006",
+   "time_id": "NEW:5월 14일 21시",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_001",
+   "objects": [
+    "OBJ_007"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "location",
+     "from": "LOC_018",
+     "to": "LOC_004",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율은 S-2 금고에서 열쇠를 꺼내 설비실 안쪽 사다리를 타고 4미터를 내려갔다. 30미터 지점의 강철 문을 밀어 닫고"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "from": "unknown",
+     "to": "OBJ_007",
+     "op": "add",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "서율은 S-2 금고에서 열쇠를 꺼내"
+    },
+    {
+     "entity": "LOC_005",
+     "field": "condition",
+     "from": "잠기지 않음",
+     "to": "잠김",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "자물쇠에 열쇠를 넣었다. 뻑뻑했다. 두 번 돌려서 걸렸다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_001",
+     "field": "possesses",
+     "assumes": "OBJ_007 (S-2 금고에서 꺼내기 전부터 소지하거나 금고에 보관 중이었음)",
+     "source_text": "서율은 S-2 금고에서 열쇠를 꺼내"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "body_status",
+     "assumes": "방한복 착용 상태 (영하 36도 환경에서 활동 가능)",
+     "source_text": "통로는 영하 36도였고 방한복 안쪽에서도 무릎이 시렸다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "이 문이 4월 15일 전까지 카림의 것이었고 청문에서 다시 카림의 것이 될 수도 있음을 앎",
+     "source_text": "이 문은 4월 15일 전까지 카림의 것이었고 청문에서 다시 카림의 것이 될 수도 있었다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "사다리 타고 4미터 하강 및 30미터 이동 가능",
+     "source_text": "설비실 안쪽 사다리를 타고 4미터를 내려갔다. 30미터 지점의 강철 문을 밀어 닫고"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "지하 통로 30미터 지점 강철 문의 자물쇠가 뻑뻑하지만 두 번 돌리면 걸림",
+     "via": "direct",
+     "retained": true,
+     "source_text": "자물쇠에 열쇠를 넣었다. 뻑뻑했다. 두 번 돌려서 걸렸다."
+    }
+   ],
+   "cause": "설비실 지하 통로의 강철 문을 잠그기 위해",
+   "result": "강철 문이 잠김, 서율이 통로 안쪽에 위치",
+   "source_text": "5월 14일 21시. 서율은 S-2 금고에서 열쇠를 꺼내 설비실 안쪽 사다리를 타고 4미터를 내려갔다. 통로는 영하 36도였고 방한복 안쪽에서도 무릎이 시렸다. 30미터 지점의 강철 문을 밀어 닫고 자물쇠에 열쇠를 넣었다. 뻑뻑했다. 두 번 돌려서 걸렸다. 서율은 잠긴 문에 잠시 손을 대고 있었다. 이 문은 4월 15일 전까지 카림의 것이었고 청문에서 다시 카림의 것이 될 수도 있었다. 그때까지는 서율의 일이었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:41:33Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 42.33
+ }
+}

@@ -1,0 +1,185 @@
+{
+  "schema_version": 2,
+  "episode": 6,
+  "produced_by": "isolated extractor / claude-opus / 장면 1개·회차 1회 단독 서브에이전트 호출",
+  "run_index": 1,
+  "batch_id": "T2-R1-A",
+  "scene_id": "scene_07",
+  "saw": [
+    "추출_프롬프트_v2_1.md",
+    "eval_corpus/_isolation/entity_list_for_extractor.json",
+    "eval_corpus/scene_07.txt"
+  ],
+  "did_not_see": [
+    "labels.json",
+    "gold_premises.json",
+    "다른 장면",
+    "다른 회차 결과",
+    "기존 scene_XX_event.json",
+    "원장/원작",
+    "소스 코드",
+    "handoff/*"
+  ],
+  "produced_at": "2026-08-07T12:31:40Z",
+  "worldview_rules": [],
+  "characters": [
+    {
+      "character_id": "CHAR_007",
+      "name": "알라인 쉭살 (Allein Schicksal)",
+      "aliases": ["알라인"],
+      "entity_type": "person",
+      "description": "영상 자료를 정리하다 범인 측 계획명 '플랜 A'를 대수롭지 않게 언급하는 인물.",
+      "traits": [
+        {
+          "trait": "말끝을 늘이며 능청스럽게 얼버무리는 말투",
+          "trait_type": "speech",
+          "source_text": "\"글쎄요? 어디서 봤더라~\"",
+          "certainty": "explicit"
+        },
+        {
+          "trait": "중요한 정보를 지나가듯 대수롭지 않게 흘리는 태도",
+          "trait_type": "personality",
+          "source_text": "알라인이 기지개를 켜며 지나가듯 말했다. / 알라인은 대수롭지 않게 화면을 넘겼다.",
+          "certainty": "explicit"
+        }
+      ],
+      "first_appearance_event_id": "EVENT_S07_1",
+      "source_text": "알라인이 기지개를 켜며 지나가듯 말했다.",
+      "certainty": "explicit"
+    },
+    {
+      "character_id": "CHAR_002",
+      "name": "플레이어 ('나', 알파)",
+      "aliases": ["나", "알파"],
+      "entity_type": "person",
+      "description": "알라인과 영상 자료를 정리하던 중 '플랜 A' 언급을 듣고 출처를 되묻는 화자.",
+      "traits": [],
+      "first_appearance_event_id": "EVENT_S07_1",
+      "source_text": "등줄기가 서늘해진 건 기분 탓이라고 해두자.",
+      "certainty": "explicit"
+    }
+  ],
+  "locations": [],
+  "objects": [
+    {
+      "object_id": "OBJ_009",
+      "name": "CCTV 영상 자료",
+      "description": "두 사람이 정리 중이던 영상 자료. 알라인이 화면을 넘기며 보고 있었다.",
+      "first_appearance_event_id": "EVENT_S07_1",
+      "source_text": "\"영상 정리는 이 정도면 됐고요.\" / 알라인은 대수롭지 않게 화면을 넘겼다.",
+      "certainty": "inferred"
+    }
+  ],
+  "times": [],
+  "events": [
+    {
+      "event_id": "EVENT_S07_1",
+      "scene_id": "scene_07",
+      "order": 1,
+      "title": "알라인이 '플랜 A'를 언급하다",
+      "summary": "영상 정리를 마무리하던 알라인이 지나가듯 범인 측 계획 '플랜 A'가 오차 범위 안에서 굴러가고 있다고 말한다. 화자가 출처를 묻자 알라인은 얼버무리고, 화자는 그 이름이 수사 자료 어디에도 없었다는 사실을 떠올린다.",
+      "location_id": "unknown",
+      "time_id": "unknown",
+      "timeline": "future_world",
+      "reality_status": "actual",
+      "participant_character_ids": ["CHAR_007", "CHAR_002"],
+      "witness_character_ids": [],
+      "main_actor_character_id": "CHAR_007",
+      "objects": ["OBJ_009"],
+      "state_changes": [
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "from": "unknown",
+          "to": "범인 측 계획의 이름이 '플랜 A'라는 것",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "explicit",
+          "source_text": "\"어차피 '플랜 A'인지 뭔지는 오차 범위 안에서 굴러가고 있다던데요. 저쪽 계획 말이에요.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "from": "unknown",
+          "to": "알라인이 '플랜 A'의 이름과 진행 상황을 알고 있다는 것",
+          "op": "add",
+          "volatility": "persistent",
+          "certainty": "inferred",
+          "certainty_reason": "원문은 알라인의 발화와 화자의 되물음만 적을 뿐 '알라인이 알고 있다'고 명시하지 않는다 — 정황으로 메운 값",
+          "source_text": "\"...네? 플랜 A요? 그건 어디서 들은 얘기예요?\""
+        }
+      ],
+      "assumed_states": [
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "범인 측 계획의 이름이 '플랜 A'임",
+          "source_text": "\"어차피 '플랜 A'인지 뭔지는 ... 저쪽 계획 말이에요.\""
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "'플랜 A'가 오차 범위 안에서 진행되고 있다는 진행 상황",
+          "source_text": "\"오차 범위 안에서 굴러가고 있다던데요.\""
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "knows",
+          "assumes": "'플랜 A' 정보를 어딘가에서 보거나 들은 경로가 있음 (출처를 특정하지 않음)",
+          "source_text": "\"글쎄요? 어디서 봤더라~\""
+        },
+        {
+          "entity": "CHAR_007",
+          "field": "possesses",
+          "assumes": "OBJ_009 (영상 자료를 손에 두고 화면을 넘기는 중)",
+          "source_text": "알라인은 대수롭지 않게 화면을 넘겼다."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "possesses",
+          "assumes": "OBJ_009 (알라인과 함께 영상 자료를 정리하던 중)",
+          "source_text": "\"영상 정리는 이 정도면 됐고요.\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "수사 자료의 내용을 열람·파악하고 있음 (계획 이름이 없다고 단정할 수 있는 근거)",
+          "source_text": "범인 측의 계획 이름 같은 건 수사 자료 어디에도 없었는데."
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "knows",
+          "assumes": "not_knows: 알라인이 '플랜 A'라는 이름을 알게 된 경로",
+          "source_text": "\"그건 어디서 들은 얘기예요?\""
+        },
+        {
+          "entity": "CHAR_002",
+          "field": "ability",
+          "assumes": "수사 자료의 기재 내용과 들은 정보를 즉시 대조·판별할 수 있음",
+          "source_text": "범인 측의 계획 이름 같은 건 수사 자료 어디에도 없었는데."
+        }
+      ],
+      "cross_event_assumptions": [],
+      "knowledge_gained": [
+        {
+          "character_id": "CHAR_002",
+          "info": "범인 측 계획의 이름이 '플랜 A'이며 오차 범위 안에서 진행 중이라는 언급",
+          "via": "told",
+          "retained": true,
+          "source_text": "\"어차피 '플랜 A'인지 뭔지는 오차 범위 안에서 굴러가고 있다던데요.\""
+        },
+        {
+          "character_id": "CHAR_002",
+          "info": "알라인이 수사 자료에 없는 정보('플랜 A')를 알고 있다",
+          "via": "inference",
+          "retained": true,
+          "source_text": "범인 측의 계획 이름 같은 건 수사 자료 어디에도 없었는데. 등줄기가 서늘해진 건 기분 탓이라고 해두자."
+        }
+      ],
+      "cause": "알라인이 영상 정리를 마무리하며 지나가듯 상대 계획을 언급했다.",
+      "result": "화자가 출처를 물었으나 알라인은 얼버무렸고, 화자는 수사 자료에 없는 이름이라는 점에 서늘함을 느꼈다.",
+      "source_text": "\"어차피 '플랜 A'인지 뭔지는 오차 범위 안에서 굴러가고 있다던데요. 저쪽 계획 말이에요.\" / \"...네? 플랜 A요? 그건 어디서 들은 얘기예요?\" / \"글쎄요? 어디서 봤더라~\"",
+      "certainty": "explicit"
+    }
+  ]
+}

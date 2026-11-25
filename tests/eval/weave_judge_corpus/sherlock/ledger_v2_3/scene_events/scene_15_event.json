@@ -1,0 +1,101 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:순회재판이_끝난_지_얼마_되지_않은_시점",
+   "expression": "순회재판이 끝난 지 얼마 되지 않았을 때",
+   "description": "제임스 매카시가 석방된 직후의 시점",
+   "timeline": "main",
+   "source_text": "순회재판이 끝난 지 얼마 되지 않았고, 이의 제기가 받아들여져 그는 풀려나 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "제임스 매카시가 해서리 농장 문설주에 기대어 서 있음",
+   "summary": "순회재판이 끝나고 이의 제기로 풀려난 제임스 매카시가 브리스틀에서 온 편지를 태운 뒤, 해서리 농장 문설주에 기대어 서 있다. 마당 건너편에서는 하녀가 아버지의 구두를 상자에 담아 헛간으로 옮기고 있으며, 숲 너머 터너 씨 저택 첨탑이 보인다.",
+   "location_id": "LOC_007",
+   "time_id": "NEW:순회재판이_끝난_지_얼마_되지_않은_시점",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_015"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_015",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_015",
+     "field": "alive",
+     "from": "unknown",
+     "to": "true",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "제임스 매카시는 해서리 농장의 문설주에 기대어 서 있었다."
+    },
+    {
+     "entity": "CHAR_015",
+     "field": "location",
+     "from": "unknown",
+     "to": "LOC_007",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "제임스 매카시는 해서리 농장의 문설주에 기대어 서 있었다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_015",
+     "field": "body_status",
+     "assumes": "문설주에 기대어 설 수 있는 신체의 자유",
+     "source_text": "문설주에 기대어 서 있었다"
+    },
+    {
+     "entity": "CHAR_015",
+     "field": "knows",
+     "assumes": "브리스틀에서 온 편지가 발각의 위험을 가져왔다는 점 (태워 버린 행위의 전제)",
+     "source_text": "브리스틀에서 온 편지는 태워 버린 뒤였다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_015",
+     "info": "순회재판이 자신의 결백을 입증해 이의 제기가 받아들여져 석방되었다는 점",
+     "via": "direct",
+     "retained": true,
+     "source_text": "순회재판이 끝난 지 얼마 되지 않았고, 이의 제기가 받아들여져 그는 풀려나 있었다."
+    }
+   ],
+   "cause": "순회재판과 이의 제기 결과",
+   "result": "제임스 매카시가 석방된 상태에서 해서리 농장에서 휴식을 취함",
+   "source_text": "제임스 매카시는 해서리 농장의 문설주에 기대어 서 있었다. 순회재판이 끝난 지 얼마 되지 않았고, 이의 제기가 받아들여져 그는 풀려나 있었다. 브리스틀에서 온 편지는 태워 버린 뒤였다. 마당 건너편에서 하녀가 아버지의 구두를 상자에 담아 헛간으로 옮기고 있었다. 그는 그것을 한참 바라보다가 고개를 돌렸다. 숲 너머로는 터너 씨의 저택 첨탑이 붉게 솟아 있었지만, 그 집에 대해서는 아무것도 묻지 않았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / minimax/minimax-m3:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-08-28T16:04:45Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 9.1
+ }
+}

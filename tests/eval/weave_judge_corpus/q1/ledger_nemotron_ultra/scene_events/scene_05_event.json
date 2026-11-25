@@ -1,0 +1,118 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "문식, 새벽 3시 30분 보일러 점검",
+   "summary": "장문식이 새벽 3시 30분에 쪽방에서 나와 보일러실을 점검하고 연탄을 때기 시작한다.",
+   "location_id": "LOC_007",
+   "time_id": "TIME_038",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_004"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_004",
+   "objects": [
+    "OBJ_011",
+    "OBJ_012",
+    "OBJ_015"
+   ],
+   "state_changes": [
+    {
+     "entity": "CHAR_004",
+     "field": "location",
+     "from": "LOC_008",
+     "to": "LOC_007",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "세 시 반에 문식은 쪽방에서 나와 보일러실 문을 열었다."
+    },
+    {
+     "entity": "OBJ_011",
+     "field": "body_status",
+     "from": "녹물이 차 있음",
+     "to": "비워짐",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "깡통을 들어 배수구에 비웠다. 녹물이 빠져나갔다."
+    },
+    {
+     "entity": "OBJ_012",
+     "field": "body_status",
+     "from": "누수 있음 (한 방울씩 떨어짐)",
+     "to": "누수 여전 (한 방울씩 떨어짐)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "철사 매듭을 손바닥으로 짚어 봤다. 매듭은 그대로였고 물은 한 방울씩 떨어졌다."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_004",
+     "field": "possesses",
+     "assumes": "OBJ_015 (연탄집게)",
+     "source_text": "문식은 연탄집게를 들고 아궁이 쪽으로 돌아섰다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "body_status",
+     "assumes": "보일러 관리 가능한 신체 상태",
+     "source_text": "그는 헝겊으로 감은 관 밑에 받쳐 둔 깡통을 들어 배수구에 비웠다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "ability",
+     "assumes": "보일러 수리·점검 능력 (누수 임시 조치, 연탄 때기)",
+     "source_text": "철사 매듭을 손바닥으로 짚어 봤다. 사람 이마를 짚듯이. 매듭은 그대로였고 물은 한 방울씩 떨어졌다. 오늘은 버틸 것이었다."
+    },
+    {
+     "entity": "CHAR_004",
+     "field": "knows",
+     "assumes": "보일러 상태가 여섯 시까지 버티면 된다는 것",
+     "source_text": "이 물이 여섯 시에 뜨거워지면 그만이었다."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_004",
+     "info": "보일러 누수가 철사 매듭으로 임시 조치되어 있으며 여섯 시까지 버틸 수 있음",
+     "via": "direct",
+     "retained": true,
+     "source_text": "철사 매듭을 손바닥으로 짚어 봤다. 매듭은 그대로였고 물은 한 방울씩 떨어졌다. 오늘은 버틸 것이었다. 이 물이 여섯 시에 뜨거워지면 그만이었다."
+    }
+   ],
+   "cause": "새벽 보일러 가동 시각(여섯 시)을 앞두고 상태 점검 및 연료 투입",
+   "result": "누수 확인(여전), 녹물 배출, 연탄 때기 시작",
+   "source_text": "세 시 반에 문식은 쪽방에서 나와 보일러실 문을 열었다. 쇳덩이가 깨어나는 소리가 났다. 그는 헝겊으로 감은 관 밑에 받쳐 둔 깡통을 들어 배수구에 비웠다. 녹물이 빠져나갔다. 깡통을 도로 관 밑에 놓고 철사 매듭을 손바닥으로 짚어 봤다. 사람 이마를 짚듯이. 매듭은 그대로였고 물은 한 방울씩 떨어졌다. 오늘은 버틸 것이었다. 이 물이 여섯 시에 뜨거워지면 그만이었다. 문식은 연탄집게를 들고 아궁이 쪽으로 돌아섰다. 위층에서는 아직 아무 소리도 나지 않았다. 쪽방 문은 열어 둔 채였고 라디오는 꺼져 있었다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-27T04:50:58Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 10.11
+ }
+}

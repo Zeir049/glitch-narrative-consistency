@@ -1,0 +1,121 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [
+  {
+   "time_id": "NEW:내일_새벽",
+   "expression": "내일 새벽",
+   "description": "최영감이 다시 올 예정인 시간",
+   "timeline": "main",
+   "source_text": "내일 새벽에도 올 사람이었다",
+   "certainty": "explicit"
+  }
+ ],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "최영감의 매수 재시도와 거절",
+   "summary": "최영감이 남탕에서 나와 카운터에서 배순덕에게 목욕탕 매수를 재권유하나 배순덕이 단호히 거절하고, 최영감은 정문으로 나가며 유리문의 안내문을 확인한다.",
+   "location_id": "LOC_002",
+   "time_id": "TIME_050",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_005",
+    "CHAR_002"
+   ],
+   "witness_character_ids": [
+    "CHAR_002"
+   ],
+   "main_actor_character_id": "CHAR_005",
+   "objects": [],
+   "state_changes": [
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "from": "최영감이 매수 의사를 가짐 (이전 화에서 인지)",
+     "to": "최영감이 매수 의사를 유지하며 내일 새벽에도 올 것임",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "내일 새벽에도 올 사람이었다"
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_005",
+     "field": "knows",
+     "assumes": "배순덕이 매도 의사가 없음을 알고 있음",
+     "source_text": "안 판다 캤다"
+    },
+    {
+     "entity": "CHAR_005",
+     "field": "body_status",
+     "assumes": "목욕 후 수건을 목에 걸고 걸어다닐 수 있는 상태",
+     "source_text": "남탕에서 나와 수건을 목에 걸고 카운터 앞에 섰다"
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "ability",
+     "assumes": "매수 제안을 단호히 거절할 의지와 권한이 있음",
+     "source_text": "죽어도 안 판다 캤다"
+    },
+    {
+     "entity": "CHAR_002",
+     "field": "knows",
+     "assumes": "최영감의 매수 제안 내용과 어머니의 거절 의사를 모두 인지함",
+     "source_text": "그 말을 다 들었다"
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "최영감이 내일 새벽에도 매수하러 올 예정임",
+     "via": "inference",
+     "retained": true,
+     "source_text": "내일 새벽에도 올 사람이었다"
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "최영감이 매수가를 사천으로 유지하며 일층 목욕탕 조건도 그대로임",
+     "via": "direct",
+     "retained": true,
+     "source_text": "사천은 그대로다. 일층에 목욕탕 넣는 것도 그대로고."
+    },
+    {
+     "character_id": "CHAR_002",
+     "info": "어머니(배순덕)가 매도를 완강히 거부함",
+     "via": "direct",
+     "retained": true,
+     "source_text": "죽어도 안 판다 캤다"
+    }
+   ],
+   "cause": "최영감이 금호탕 매수를 위해 배순덕을 재차 설득하려 함",
+   "result": "배순덕이 거절하고 최영감이 돌아감. 정호가 대화 내용을 모두 들음",
+   "source_text": "최영감이 남탕에서 나와 수건을 목에 걸고 카운터 앞에 섰다. \"배 여사.\" \"또 그 얘기면 하지 마소.\" \"들어나 보라니까. 사천은 그대로다. 일층에 목욕탕 넣는 것도 그대로고.\" \"안 판다.\" \"무릎 그래 갖고 얼마나 더 하겠노.\" \"죽어도 안 판다 캤다.\" 최영감은 더 말하지 않았다. 화가 난 얼굴은 아니었다. 그는 정문으로 가다가 유리문의 종이를 한 번 보고 나갔다. 순덕은 장부를 덮었다. 내일 새벽에도 올 사람이었다. 정호는 수건을 개면서 그 말을 다 들었다. 아무 말도 하지 않았다.",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-28T14:37:58Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 68.88
+ }
+}

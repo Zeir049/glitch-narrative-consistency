@@ -1,0 +1,91 @@
+{
+ "schema_version": 2,
+ "episode": 6,
+ "worldview_rules": [],
+ "characters": [],
+ "locations": [],
+ "objects": [],
+ "times": [],
+ "events": [
+  {
+   "event_id": "EVENT_6_1",
+   "scene_id": "scene_6_1",
+   "order": 1,
+   "title": "UPS 교체 사실 확인",
+   "summary": "도현이 UPS 뱅크 4개를 3월에 전부 교체했음을 보고하고, 서율이 기존 45분 버티기 정보와 대조한다.",
+   "location_id": "LOC_002",
+   "time_id": "TIME_001",
+   "timeline": "main",
+   "reality_status": "actual",
+   "participant_character_ids": [
+    "CHAR_001",
+    "CHAR_003"
+   ],
+   "witness_character_ids": [],
+   "main_actor_character_id": "CHAR_003",
+   "objects": [
+    "OBJ_015"
+   ],
+   "state_changes": [
+    {
+     "entity": "OBJ_015",
+     "field": "body_status",
+     "from": "구형 UPS (45분 버팀)",
+     "to": "신형 UPS 4뱅크 (3시간 버팀)",
+     "op": "set",
+     "volatility": "persistent",
+     "certainty": "explicit",
+     "source_text": "뱅크 네 개 다 새것이에요. 세 시간 버텨요. ... 3월에 다 갈았어요. 경보 뜬 김에 네 개 전부요."
+    }
+   ],
+   "assumed_states": [
+    {
+     "entity": "CHAR_003",
+     "field": "knows",
+     "assumes": "UPS 교체 작업 내역 및 사양 (3시간 버팀)",
+     "source_text": "3월에 다 갈았어요. 경보 뜬 김에 네 개 전부요. 그래서 그날 새벽에 설비실에 오래 있었던 거고요."
+    },
+    {
+     "entity": "CHAR_001",
+     "field": "knows",
+     "assumes": "기존 UPS 사양 (45분 버팀)",
+     "source_text": "45분 아니야."
+    },
+    {
+     "entity": "CHAR_003",
+     "field": "location",
+     "assumes": "LOC_006 (설비실)",
+     "source_text": "그래서 그날 새벽에 설비실에 오래 있었던 거고요."
+    }
+   ],
+   "cross_event_assumptions": [],
+   "knowledge_gained": [
+    {
+     "character_id": "CHAR_001",
+     "info": "UPS가 3월에 4뱅크 전부 교체되어 3시간 버팀 사양이 됨",
+     "via": "told",
+     "retained": true,
+     "source_text": "뱅크 네 개 다 새것이에요. 세 시간 버텨요. ... 3월에 다 갈았어요."
+    }
+   ],
+   "cause": "서율의 UPS 버티기 시간 질의",
+   "result": "UPS 교체 사실 및 사양 갱신 확인",
+   "source_text": "\"UPS요.\" 도현이 말했다. \"뱅크 네 개 다 새것이에요. 세 시간 버텨요. G2 세워도 서버는 안 내려가요.\" 서율은 도현을 보았다. \"45분 아니야.\" \"그건 옛날 얘기예요.\" 도현은 콘솔 뒤 캐비닛 쪽을 가리켰다. \"3월에 다 갈았어요. 경보 뜬 김에 네 개 전부요. 그래서 그날 새벽에 설비실에 오래 있었던 거고요. 하나만 갈았으면 십 분이면 끝났죠.\"",
+   "certainty": "explicit"
+  }
+ ],
+ "_extraction": {
+  "produced_by": "weave_extract / openrouter / nvidia/nemotron-3-ultra-550b-a55b:free",
+  "prompt": "추출_프롬프트_v2_3.md",
+  "produced_at": "2026-09-29T09:59:10Z",
+  "timelines_given": [
+   "main"
+  ],
+  "temperature": 0.2,
+  "effort": "high",
+  "retried": false,
+  "parse_retried": false,
+  "attempts": 1,
+  "elapsed_sec": 31.77
+ }
+}
